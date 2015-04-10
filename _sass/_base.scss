@@ -293,7 +293,31 @@ pre {
 	}
 }
 
+
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
     height: 6px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 0px;
+}
+
+::-webkit-scrollbar-button:vertical:increment
+::-webkit-scrollbar-button:vertical:decrement {
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+    -webkit-border-radius: 0px;
+    border: 1px solid #ccc;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #ccc;
+    -webkit-border-radius: 3px;
 }
