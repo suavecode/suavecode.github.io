@@ -126,6 +126,8 @@
 
 		margin-top: 88px;
 		@extend .border-box;
+        
+        height: 300px;
 
 		hr {
 			background-color: lighten($black, 50%);
@@ -154,11 +156,14 @@
 			margin-left: -290px;
 		}
 	}
+    
+    .push {
+        height: 300px;
+    }
+    
 }
 
-.footer, .push {
-    height: 4em;
-}
+
 
 /**
  * hero
