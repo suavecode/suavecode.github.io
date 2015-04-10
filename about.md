@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About Me
-subtitle: SOFTWARE ENGINEER / VISUAL DESIGNER
+title: About the Code
+subtitle: Aerospace Conceptual Design 
 permalink: /about/
 ---
 
-## Short Bio
+## Short Description
 
-I'm a software engineer currently based in Cebu, Philippines. I'm passionate about building quality software for mobile, web and the cloud platform. When I'm not writing code, I usually spend my time playing video games, listening to music or drawing.
+A multi-fidelity conceptual design environment. Its purpose is to credibly produce conceptual-level design conclusions for future aircraft incorporating advanced technologies.
 
 &nbsp;
 
