@@ -126,8 +126,6 @@
 
 		margin-top: 88px;
 		@extend .border-box;
-        
-        height: 300px;
 
 		hr {
 			background-color: lighten($black, 50%);
@@ -157,9 +155,6 @@
 		}
 	}
     
-    .push {
-        height: 300px;
-    }
     
 }
 
