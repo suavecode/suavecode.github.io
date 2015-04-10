@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Obligatory Hello World
+title: This is SUAVE!
 date: 2015-04-10 01:22:21
 categories: blog
 ---
