@@ -292,3 +292,8 @@ pre {
 		color: $red !important;
 	}
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
