@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Doodles
-subtitle: Good artists copy, great artists steal.
-permalink: /doodles/
+title: Airplanes
+subtitle: Good airplanes, great airplanes steal.
+permalink: /Airplanes/
 ---
 
 # ![samurai](https://pbs.twimg.com/media/BFtWLSQCUAA-eJL.jpg:large)

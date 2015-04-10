@@ -1,14 +1,12 @@
 # Site settings
-title: Elizar Pepino
-email: jupenz@gmail.com
-greetings: Elizar Pepino
+title: SUAVE
+email: suave-developers@lists.stanford.edu
+greetings: SUAVE
 description: > # this means to ignore newlines until "baseurl:"
-  A self-taught, pragmatic programmer, a coffee lover, and an occasional pixel pusher. Polyglot.
+  A multi-fidelity conceptual design environment. Its purpose is to credibly produce conceptual-level design conclusions for future aircraft incorporating advanced technologies.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://elizarpepino.com" # the base hostname & protocol for your site
-twitter_username: jupenz
-github_username:  elizar
-dribbble_username:  elizarpepino
+url: "http://suavecode.github.io/" # the base hostname & protocol for your site
+github_username:  aerialhedgehog
 permalink: /:title
 
 # Build settings
