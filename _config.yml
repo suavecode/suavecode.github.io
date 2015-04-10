@@ -1,7 +1,6 @@
 # Site settings
 title: SUAVE
 email: suave-developers@lists.stanford.edu
-greetings: SUAVE
 description: > # this means to ignore newlines until "baseurl:"
   A multi-fidelity conceptual design environment. Its purpose is to credibly produce conceptual-level design conclusions for future aircraft incorporating advanced technologies.
 baseurl: "" # the subpath of your site, e.g. /blog/
