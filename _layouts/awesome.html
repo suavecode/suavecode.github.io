@@ -6,12 +6,12 @@
 		<div class="wrapper">
 			<aside class="left-nav">
 			{% include left-nav.html %}
+            <div class="push"></div>
+            {% include main-content-footer.html %}
 			</aside>
 
 			<main class="main-content">
 			{{ content }}
-            <div class="push"></div>
-            {% include main-content-footer.html %}
 			</main>
 		</div>
 	</div>
