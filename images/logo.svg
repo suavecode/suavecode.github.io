@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="204"
-   height="206"
+   width="304"
+   height="308"
    id="svg3146"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="logo_bwb_contour.svg"
+   sodipodi:docname="logo.svg"
    inkscape:export-filename="D:\Dropbox\Research-cloud\Projects\SUAVE_repo\workspace\logo\logo_b2.png"
    inkscape:export-xdpi="300.01077"
    inkscape:export-ydpi="300.01077">
@@ -172,8 +172,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="-84.91525"
-     inkscape:cy="87.08954"
+     inkscape:cx="-9.499986"
+     inkscape:cy="137.77697"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -203,22 +203,22 @@
      id="layer4"
      inkscape:label="title"
      style="display:inline"
-     transform="translate(-270.49999,-379.57375)" />
+     transform="translate(-220.49998,-328.26118)" />
   <g
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="fills"
      style="display:inline"
-     transform="translate(-270.49999,-379.57375)" />
+     transform="translate(-220.49998,-328.26118)" />
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="ring"
      style="display:inline"
-     transform="translate(-270.49999,-379.57375)">
+     transform="translate(-220.49998,-328.26118)">
     <g
        id="g3126"
-       transform="matrix(0.62432226,0,0,0.62432226,139.93995,181.37023)">
+       transform="matrix(0.93648339,0,0,0.93648339,23.659923,30.768459)">
       <flowRoot
          xml:space="preserve"
          id="flowRoot5924-5-6-7"
@@ -387,7 +387,7 @@
     </g>
     <g
        id="g7158-3-2"
-       transform="matrix(0.55541043,0,0,0.62644919,168.29019,251.3232)"
+       transform="matrix(0.83311569,0,0,0.93967382,66.185284,135.69792)"
        style="fill:none;stroke:#ffffff;stroke-opacity:1;display:inline" />
   </g>
   <g
@@ -395,5 +395,5 @@
      id="layer2"
      inkscape:label="S"
      style="display:inline"
-     transform="translate(-270.49999,-379.57375)" />
+     transform="translate(-220.49998,-328.26118)" />
 </svg>
