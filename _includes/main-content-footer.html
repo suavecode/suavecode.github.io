@@ -1,0 +1,34 @@
+<footer>
+	<ul class="social-media-list">
+		{% if site.github_username %}
+		<li>
+			<a href="https://github.com/{{ site.github_username }}">
+				<span class="icon  icon-github">
+					<img src="/images/github.svg">
+				</span>
+			</a>
+		</li>
+		{% endif %}
+
+		{% if site.twitter_username %}
+		<li>
+			<a href="https://twitter.com/{{ site.twitter_username }}">
+				<span class="icon icon-twitter">
+					<img src="/images/twitter.svg">
+				</span>
+			</a>
+		</li>
+		{% endif %}
+		{% if site.dribbble_username %}
+		<li>
+			<a href="https://dribbble.com/{{ site.dribbble_username }}">
+				<span class="icon icon-dribbble">
+					<img src="/images/dribbble.svg">
+				</span>
+			</a>
+		</li>
+		{% endif %}
+	</ul>
+
+	<small>Copyright &copy; 2015 Elizar Pepino. All rights reserved.</small>
+</footer>

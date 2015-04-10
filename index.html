@@ -1,13 +1,31 @@
 ---
-layout: default
-title: Architect Theme by Jason Long
+layout: awesome
 ---
+<div class="page">
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+	<header class="hero">
+	<div class="valign">
+		<h1 class="title">Captain’s Blog</h1>
+		<p class="subtitle">EAT &nbsp;&HorizontalLine;&nbsp; HACK &nbsp;&HorizontalLine;&nbsp; SLEEP</p>
+	</div>
+	</header>
+
+	<section class="content">
+	<ul class="posts">
+		{% for post in site.posts %}
+		<li class="post">
+			<div class="span-1 post-date" post-date="{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}"></div>
+			<div class="span-1 comment-count">
+				<img src="/images/comments.svg" alt="" class="comment-icon">&nbsp;
+				<a data-disqus-identifier="{{ post.url | prepend: site.url }}" href="{{ post.url | prepend: site.url }}/#disqus_thread"> 0 </a>
+			</div>
+			<div class="span-10">
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+	{{ content }}
+	</section>
+
 </div>
