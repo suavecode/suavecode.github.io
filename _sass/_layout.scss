@@ -56,7 +56,9 @@
 
 	.main-nav {
 		h5 {
-			color: lighten($red, 7%);
+			/**color: lighten($red, 7%);
+			**/
+			color: #8C1515
 			font-size: 12px;
 			margin-bottom: 24px;
 		}
