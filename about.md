@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the Code
+title: About
 subtitle: Aerospace Conceptual Design 
 permalink: /about/
 ---

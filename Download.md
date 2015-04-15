@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Download
-subtitle: How to download and install this fantastic piece of software
+subtitle: How to download and install this fantastic tool
 permalink: /Download/
 ---
 
@@ -10,8 +10,10 @@ permalink: /Download/
  * numpy
  * scipy
  * matplotlib
+ * Git
  * setuptools (optional)
  * pip (optional)
+
 
 ### Simple Install
 1. git clone https://github.com/suavecode/SUAVE.git
