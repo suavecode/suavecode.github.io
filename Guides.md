@@ -16,10 +16,10 @@ permalink: /Guides/
 4. Let's just run it as it is for now. Run the script in either the IDE or in a terminal: python tut_mission_B737.py
 5. Enjoy the beautiful plots that created.
 6. Now, let's modifiy the mission and see what changes
-	a. Find mission_setup() and then the cruise segment
-	b. Change the airspeed in segment.airspeed to 500.0 * Units['knots'], notice that SUAVE understands and converts for you units.
-	c. Find the second descent segment, change the descent rate to 800.0 * Unit['feet/min'].
-	d. Rerun the mission as before and notice the changes in the profile.
+	* Find mission_setup() and then the cruise segment
+	* Change the airspeed in segment.airspeed to 500.0 * Units['knots'], notice that SUAVE understands and converts for you units.
+	* Find the second descent segment, change the descent rate to 800.0 * Unit['feet/min'].
+	* Rerun the mission as before and notice the changes in the profile.
 7. Similarly the vehicle parameters can be changed. We will let the user decide what changes they want to explore.
 
 ### Embraer E-190 Tutorial
