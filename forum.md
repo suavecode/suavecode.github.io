@@ -1,12 +1,10 @@
 ---
 layout: page
 title: Forum
-subtitle: Work together!
+subtitle: Working together to design and analyze new and exotic aerospace configurations
 
-permalink: /Develop/
+permalink: /Forum/
 ---
-
- Let's get things done as a group!
  
  <iframe id="forum_embed"
  src="javascript:void(0)"
