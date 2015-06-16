@@ -3,6 +3,7 @@ layout: post
 title: Lithium Air Regional Jet Optimization
 date: 2015-06-15 14:25:00
 categories: blog
+permalink:/lithium_air_optimization
 ---
 
 ### Lithium Air Regional Jet Optimization
