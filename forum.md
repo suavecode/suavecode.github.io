@@ -3,7 +3,7 @@ layout: page
 title: Forum
 subtitle: Working together to design and analyze new and exotic aerospace configurations
 
-permalink: /Forum/
+permalink: /forum/
 ---
  
  <iframe id="forum_embed"

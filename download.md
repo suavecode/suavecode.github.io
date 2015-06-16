@@ -2,7 +2,7 @@
 layout: page
 title: Download
 subtitle: How to download and install this fantastic tool
-permalink: /Download/
+permalink: /download/
 ---
 
 ### Requirements:
