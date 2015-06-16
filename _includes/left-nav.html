@@ -7,7 +7,7 @@
 
 	<nav class="main-nav">
 		<ul>
-		<li><a class="btn page-link {% if page.url == '/about.md' or page.categories != nil %}active{% endif %}" href="/">About</a></li>
+		<li><a class="btn page-link {% if page.url == '/index.html' or page.categories != nil %}active{% endif %}" href="/">About</a></li>
 		{% for _page in site.pages %}
 			{% if _page.title %}
 				<li><a class="btn page-link {% if _page.url == page.url %}active{% endif %}" href="{{ _page.url | prepend: site.baseurl }}">{{ _page.title }}</a></li>
