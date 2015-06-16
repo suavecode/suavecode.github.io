@@ -5,30 +5,18 @@ layout: awesome
 
 
 
-	<header class="hero">
-	<div class="valign">
-		<h1 class="title">Tutorials</h1>
-		<p class="subtitle">Super &nbsp;&HorizontalLine;&nbsp; Useful &nbsp;&HorizontalLine;&nbsp; Aerospace &nbsp;&HorizontalLine;&nbsp; Vehicle &nbsp;&HorizontalLine;&nbsp; Environment </p>
-	</div>
-	</header>
+        <header class="hero">
+                <div class="valign">
+                        <h1 class="title">SUAVE</h1>
+                        <p class="subtitle">Stanford University Aerospace Vehicle Environment</p>
+                </div>
+        </header>
 
-	<section class="content">
-	<ul class="posts">
-		{% for post in site.posts %}
-		<li class="post">
-			<div class="span-1 post-date" post-date="{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}"></div>
-			<div class="span-1 comment-count">
-				<img src="/images/comments.svg" alt="" class="comment-icon">&nbsp;
-				<a data-disqus-identifier="{{ post.url | prepend: site.url }}" href="{{ post.url | prepend: site.url }}/#disqus_thread"> 0 </a>
-			</div>
-			<div class="span-10">
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</div>
-		</li>
-		{% endfor %}
-	</ul>
-	{{ content }}
-	</section>
+        <article class="content">
+                <p>A multi-fidelity conceptual design environment. Its purpose is to credibly produce conceptual-level design conclusions for future aircraft incorporating advanced technologies. It is currently being developed in the <a href="http://adl.stanford.edu">Aerospace Design Lab</a> at Stanford University.</p>
 
-</div>
+                <p>&nbsp;</p>
 
+                <p><img src="../images/Picture4.png" alt="Joined Wing" /></p>
+
+                <p>more soon...</p>
