@@ -9,6 +9,16 @@
 			</a>
 		</li>
 		{% endif %}
+        
+        {% if site.travis_username %}
+		<li>
+			<a href="https://travis-ci.org/{{ site.travisci_username }}">
+				<span class="icon  icon-travis">
+					<img src="/images/travis.svg">
+				</span>
+			</a>
+		</li>
+		{% endif %}
 
 		{% if site.twitter_username %}
 		<li>
