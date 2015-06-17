@@ -38,7 +38,7 @@ If you're new to python we strongly recommend using a scientific python distribu
 Note: In case you were wondering, the pip installer will also install setuptools, a sub-dependency.
 
 ### Simple Install
-This will install a distribution of SUAVE.  If you think you'll be making changes to the package to fit your problem, take a look at the [developer page](develop).
+This will install a distribution of SUAVE.  If you think you'll be making changes to the package to fit your problem, take a look at the [developer page](/develop).
 
 1. Download an extract the code
 2. Change directory into SUAVE/trunk

@@ -10,8 +10,8 @@ permalink: /forum/
  src="javascript:void(0)"
  scrolling="no"
  frameborder="0"
- width="900"
- height="700">
+ width="600"
+ height="800">
 </iframe>
 
 <script type="text/javascript">

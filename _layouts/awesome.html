@@ -2,20 +2,26 @@
 <html>
 	{% include head.html %}
 	<body>
+
 	<div class="page-content">
 		<div class="wrapper">
 			<aside class="left-nav">
+			<div class="verticalLineL">
 			{% include left-nav.html %}
             {% include main-content-footer.html %}
+			
 			</aside>
-
 			<main class="main-content">
 			{{ content }}
+			
 			</main>
+			
 		</div>
 	</div>
+	
 
 	{% include footer.html %}
 
 	</body>
+	
 </html>
