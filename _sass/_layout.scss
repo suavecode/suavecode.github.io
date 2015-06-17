@@ -218,7 +218,8 @@
 	}
 
 	p {
-		color: lighten($black, 40%)
+        color: $dark-grey
+		//color: lighten($black, 40%)
 	}
 
 }

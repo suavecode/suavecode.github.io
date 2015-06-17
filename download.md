@@ -6,45 +6,53 @@ permalink: /download/
 ---
 
 
-Here we go!
+Jump in and design!  Here are some helpful steps for downloading and installing the code.  There are stable releases and beta releases.  Also make sure to check out the license under which the code is available.
+
+## Downloading
 
 ### Stable Release
-Download the latest release of SUAVE here
+Download the latest stable release of SUAVE -- <br>
 [SUAVE Version 0.2.0](https://github.com/suavecode/SUAVE/releases)
 
 
-### Developer Releases
-We publish mostly stable developer releases here
+### Beta Releases
+We'll also pre-publish mostly stable beta releases.  You can find them here -- <br>
 [Developer Releases](https://github.com/suavecode/SUAVE/releases)
 
 
-## Requirements
+### License
 
-SUAVE is developed on python versions 2.4 through 2.7.  
-Let us know if you find that it works on additonal versions.
+We want SUAVE to grow with the community, so it's available under a [CC BY-SA-NC 4.0 License](https://github.com/suavecode/SUAVE/blob/master/LICENSE).  It can be used freely to design and build commercial vehicles.  Please contact us if you are interested in re-publishing SUAVE source code as part of a commercial software.  
 
-If you're new to python we strongly recommend using a scientific python distribution like [Anaconda](http://continuum.io/downloads) or [Enthought Canopy](https://store.enthought.com/downloads).  All the requirements below will come pre-packaged and stuff will just work.
+### Dependencies
 
+SUAVE is developed primarily on Python 2.7. It's known to work on versions 2.4 through 2.7.  Let us know if you find that it works on additonal versions.
 
-#### Package Requirements
+We strongly recommend using a scientific python distribution like [Anaconda](http://continuum.io/downloads) or [Enthought-Canopy](https://store.enthought.com/downloads).  All the package dependencies below will come pre-packaged and stuff will just work.
+
+If you don't have access to a scientific python distribution, you can install the dependent packages separately.  Below are the packages that SUAVE expects in order to run the tutorial cases.  We link to guides on using package managers for linux and mac, and python installers for windows.  If these fail, check out the source forge links for additional installers or source code.
 
 |package     | link  |
 |------------|-------|
-| numpy      | [linux/mac](http://sourceforge.net/projects/numpy/files/NumPy) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) |
-| scipy      | [linux/mac](http://sourceforge.net/projects/scipy/files/scipy) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy) |
-| matplotlib | [linux/mac](http://sourceforge.net/projects/matplotlib/files/matplotlib) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib)  |
-| pip        | [linux/mac](https://pip.pypa.io/en/stable/installing.html) , [windows](https://pip.pypa.io/en/stable/installing.html)  | 
+| numpy      | [linux](http://www.scipy.org/install.html#linux-packages) , [mac](http://www.scipy.org/install.html#mac-packages) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) , [source](http://sourceforge.net/projects/numpy/files/NumPy) |
+| scipy      | [linux](http://www.scipy.org/install.html#linux-packages) , [mac](http://www.scipy.org/install.html#mac-packages) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy) , [source](http://sourceforge.net/projects/scipy/files/scipy) |
+| matplotlib | [linux](http://www.scipy.org/install.html#linux-packages) , [mac](http://www.scipy.org/install.html#mac-packages) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib) , [source](http://sourceforge.net/projects/matplotlib/files/matplotlib) |
+| pip        | [linux](https://pip.pypa.io/en/stable/installing.html#install-pip) , [mac](https://pip.pypa.io/en/stable/installing.html#install-pip) , [windows](https://pip.pypa.io/en/stable/installing.html#install-pip) |
 
-Note: In case you were wondering, the pip installer will also install setuptools, a sub-dependency.
+<br>
+**Note**: For the windows installers, you can pick the latest version, for "cp2.7" (C-Python 2.7), for your architecture (32 or 64bit), and for numpy pick the MKL version (it's faster). <br>
+**Note**: The pip installer above will also install setuptools, a sub-dependency.
 
-### Simple Install
-This will install a distribution of SUAVE.  If you think you'll be making changes to the package to fit your problem, take a look at the [developer page](/develop).
+## Installation
+
+Once you've downloaded the code and prepared the software requrements, you're ready to install!
 
 1. Download an extract the code
-2. Change directory into SUAVE/trunk
+2. Open the directory SUAVE/trunk
 3. Open a command prompt in this folder
-4. Run this command ```python setup.py install```
+4. Run this command: ```python setup.py install```
 
+Now you can check out the [guides](/guides)!
 
-### Developer Install
-If you think you'll be making changes to the 
+After trying out the guides you find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes.
+
