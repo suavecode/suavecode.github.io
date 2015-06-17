@@ -17,7 +17,7 @@ categories: blog
 7. You can try to modify vehicle and/or mission parameters, e see how the payload range diagram is affected. For now, let's add some drag counts to the airplane:
 	* Locate and open the script test_mission_Embraer_E190_constThr.py, in the tutorial folder (this is the script that contains the vehicle and mission setups)
 	* Find base_analysis() and then the Aerodynamics Analysis text block (line 144) 
-	* Add 50 drag counts to the vehicle: aerodynamics.settings.drag_coefficient_increment = 0.0050
+	* Add 50 drag counts to the vehicle: ```aerodynamics.settings.drag_coefficient_increment = 0.0050```
 	* Rerun the script as before and notice the changes in the results.
 8. Similarly the mission parameters can be changed. Again, let's the user decide what changes they want to explore.
 
