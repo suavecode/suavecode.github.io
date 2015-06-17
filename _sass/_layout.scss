@@ -12,6 +12,8 @@
 	padding: $default-padding;
 	text-align: center;
 	overflow: auto;
+	margin: 0px;
+	padding: 0px;
 
 	@extend .border-box;
 
@@ -22,15 +24,18 @@
 	}
 
 	.logo {
-		margin: 30px auto;
+		margin: auto auto;
 		width: 200px;
-		height: 200px;
+		height: 222px;
 		display: block;
 		margin-bottom: $default-margin-bottom;
+		position: relative;
+		top: 30px;
+
 
 		img {
 			width: 100%;
-			height: 100%;
+			height: 90%;
 		}
 
 		span {
@@ -110,6 +115,8 @@
 	overflow: auto;
 	float: left;
 	width: 648px;
+	margin: 0px;
+	padding: 0px;
 	margin-left: $nav-width;
 
 	@extend .border-box;
@@ -176,7 +183,7 @@
 	.title {
 		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 		font-size: 48px;
-		margin-top: 50px;
+		margin-top: 0px;
 		margin-bottom: 4px;
 		line-height: 1.2em;
 		font-weight: normal;
