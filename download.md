@@ -30,14 +30,14 @@ SUAVE is developed primarily on Python 2.7. It's known to work on versions 2.4 t
 
 We strongly recommend using a scientific python distribution like [Anaconda](http://continuum.io/downloads) or [Enthought-Canopy](https://store.enthought.com/downloads).  All the package dependencies below will come pre-packaged and stuff will just work.
 
-If you don't have access to a scientific python distribution, you can install the dependent packages separately.  Below are the packages that SUAVE expects in order to run the tutorial cases.  We link to guides on using package managers for linux and mac, and python installers for windows.  If these fail, check out the source forge links for additional installers or source code.
+If you don't have access to a scientific python distribution, you can install the dependent packages separately.  Below are the packages that SUAVE expects in order to run the tutorial cases.  There are links to guides on using package managers for linux and mac, and python installers for windows.  If these fail, check out the source forge links for additional installers or source code.
 
 |package     | link  |
 |------------|-------|
-| numpy      | [linux](http://www.scipy.org/install.html#linux-packages) , [mac](http://www.scipy.org/install.html#mac-packages) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) , [source](http://sourceforge.net/projects/numpy/files/NumPy) |
-| scipy      | [linux](http://www.scipy.org/install.html#linux-packages) , [mac](http://www.scipy.org/install.html#mac-packages) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy) , [source](http://sourceforge.net/projects/scipy/files/scipy) |
-| matplotlib | [linux](http://www.scipy.org/install.html#linux-packages) , [mac](http://www.scipy.org/install.html#mac-packages) , [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib) , [source](http://sourceforge.net/projects/matplotlib/files/matplotlib) |
-| pip        | [linux](https://pip.pypa.io/en/stable/installing.html#install-pip) , [mac](https://pip.pypa.io/en/stable/installing.html#install-pip) , [windows](https://pip.pypa.io/en/stable/installing.html#install-pip) |
+| numpy      | [linux](http://www.scipy.org/install.html#linux-packages), [mac](http://www.scipy.org/install.html#mac-packages), [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy), [source](http://sourceforge.net/projects/numpy/files/NumPy) |
+| scipy      | [linux](http://www.scipy.org/install.html#linux-packages), [mac](http://www.scipy.org/install.html#mac-packages), [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy), [source](http://sourceforge.net/projects/scipy/files/scipy) |
+| matplotlib | [linux](http://www.scipy.org/install.html#linux-packages), [mac](http://www.scipy.org/install.html#mac-packages), [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib), [source](http://sourceforge.net/projects/matplotlib/files/matplotlib) |
+| pip        | [linux](https://pip.pypa.io/en/stable/installing.html#install-pip), [mac](https://pip.pypa.io/en/stable/installing.html#install-pip), [windows](https://pip.pypa.io/en/stable/installing.html#install-pip) |
 
 <br>
 **Note**: For the windows installers, you can pick the latest version, for "cp2.7" (C-Python 2.7), for your architecture (32 or 64bit), and for numpy pick the MKL version (it's faster). <br>
@@ -47,25 +47,26 @@ If you don't have access to a scientific python distribution, you can install th
 
 Once you've downloaded the code and prepared the software requrements, you're ready to install!
 
-1. Download an extract the code
+1. Download and extract the code
 2. Open the directory SUAVE/trunk
-3. Open a command prompt in this folder
-4. Run this command: ```python setup.py install```
+3. Open a command prompt in that directory
+4. Run this command: ```python setup.py install``` <br>
+   If you are on a linux or mac, you may need to run <br> ```sudo python setup.py install```
 
-Now you can check out the [guides](/guides)!
+If all goes well, you are now able to import SUAVE into your python projects.  Check out the [guides](/guides) for examples!
 
-After trying out the guides you find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes.
+After trying out the guides you may find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes for how to set this up.
 
 
 <br>
 
 ### Dealing with Write Access
 
-You shouldn't need this part of the guide, unless you don't have write-access to the python site-packages  directory.  In that case, you can try these approaches to install SUAVE
+You shouldn't need this part of the guide, unless you don't have write-access to the python site-packages  directory.  In that case, you can try these approaches to install SUAVE.
 
 #### A. Install to local site-packages
 
-This involves the install option --user <br>
+This involves the user install option <br>
 ``` python setup.py install --user ```
 
 
@@ -94,8 +95,8 @@ This involves creating a local directory, and setting up your PYTHONPATH environ
       - Open the start menu and type "environ", this opens the environment variable editor
       - Create or edit the PYTHONPATH "User" environment variable, appending the full path to your custom site-package directory, separating multiple paths with semicolons.  For example: <br>
       	```%PYTHONPATH%;C:/Users/your-user-name/python-site-packages```
-      - After this you'll need to open a new command line window. <br>
-3. Now Install SUAVE
+      - After this you'll need to open a new command line window <br>
+3. Now Install SUAVE <br>
    Using the example of the custom directoy ~/python-site-packages: <br>
    ``` python setup.py install --prefix=~/python-site-packages```
       
