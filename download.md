@@ -56,3 +56,79 @@ Now you can check out the [guides](/guides)!
 
 After trying out the guides you find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes.
 
+
+<br>
+
+### Dealing with Write Access
+
+You shouldn't need this part of the guide, unless you don't have write-access to the python site-packages  directory.  In that case, you can try these approaches to install SUAVE
+
+#### A. Install to local site-packages
+
+This involves the install option --user <br>
+``` python setup.py install --user ```
+
+
+#### B. Start a local site-packages folder 
+
+This involves creating a local directory, and setting up your PYTHONPATH environment variable.
+
+1. Create a local directory.  
+   For example: <br>
+   ```~/python-site-packages``` or <br> 
+   ```C:/Users/your-user-name/python-site-packages```
+2. Append this path to PYTHONPATH
+   - For Unix operating systems
+      - Append this line to your ~/.bashrc file <br>
+         ```export PYTHONPATH = $PYTHONPATH:~/python-site-packages```
+      - And source the bashrc file <br>
+         ```$ source ~/.bashrc```
+         
+   - For MacOS operating systems
+      - Append this line to your ~/.bash_profile file <br>
+         ```export PYTHONPATH = $PYTHONPATH:~/python-site-packages```
+      - And source the bashrc file <br>
+         ```$ source ~/.bash_profile```
+         
+   - For Windows operating systems
+      - Open the start menu and type "environ", this opens the environment variable editor
+      - Create or edit the PYTHONPATH "User" environment variable, appending the full path to your custom site-package directory, separating multiple paths with semicolons.  For example: <br>
+      	```%PYTHONPATH%;C:/Users/your-user-name/python-site-packages```
+      - After this you'll need to open a new command line window. <br>
+3. Now Install SUAVE
+   Using the example of the custom directoy ~/python-site-packages: <br>
+   ``` python setup.py install --prefix=~/python-site-packages```
+      
+#### Additional Options
+
+Additional setup options, such as overriding the default install location, can be found with the following commands: <br>
+`python setup.py install --help` <br>
+`python setup.py uninstall --help` <br>
+`python setup.py develop --help` <br>
+`python setup.py --help` 
+
+<br>
+
+##   Un-Installation
+
+SUAVE requires pip to uninstall.  An alternate approach is provided further below if pip is not available.
+
+#### Un-Installation with pip:
+
+1. Navigate to the SUAVE/trunk directory by command line.
+2. Run the uninstall command. (On unix platforms, these commands may require a sudo ('super-user-do') call.) <br>
+   ```python setup.py uninstall```
+  
+#### Alternate Approach:
+   Use this if you don't have the pip package.
+
+1. Find your site-packages folder.
+    Your site-packages folder is typically located in your python's install directory, unless you manually created it.  You can find it by using the following commands.<br>
+    `$ python ` <br>
+    `>>> import site` <br>
+    `>>> site.getsitepackages()` 
+         
+2. Manually delete any file including the name "SUAVE".  
+   You may also check the file "easy_install.pth", if it exists, for references to the SUAVE package, and delete them.  Never said this would be pretty...  However it is a typical uninstall process for python packages.
+
+

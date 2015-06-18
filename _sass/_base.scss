@@ -98,6 +98,7 @@ figcaption {
  */
 ul, ol {
     margin-left: 0px;
+    margin-right: 0px;
 }
 
 li {
@@ -129,7 +130,7 @@ a {
     color: $burnt-red;
 		text-decoration: none;
 		//font-weight: bold;
-
+        
 /*    &:visited {
         color: darken($burnt-red, 30%);
     }
@@ -141,6 +142,11 @@ a {
     }
 }
 
+a.social-media-link{
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 
 /**
