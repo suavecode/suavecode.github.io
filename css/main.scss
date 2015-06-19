@@ -27,6 +27,35 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+.verticalLineR {
+    border-right: 1px solid #CCCCCC;
+    height: 150%;
+
+}
+
+.verticalLineL {
+    border-left: 1px solid #CCCCCC;;
+    height: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #666666;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+th{
+    border:1px solid #666666;
+    padding: 5px;
+}
+
+td{
+    border:1px solid #666666;
+    padding: 5px;
+}
 
 
 // Using media queries with like this:

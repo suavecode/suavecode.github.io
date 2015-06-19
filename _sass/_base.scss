@@ -18,6 +18,7 @@ $white: #ffffff;
 $black: #000000;
 $dark-grey: lighten($black, 10%);
 $light-grey: lighten($black, 90%);
+$burnt-red: #B3995D;
 
 /**
  * Reset some basic elements
@@ -97,6 +98,7 @@ figcaption {
  */
 ul, ol {
     margin-left: 0px;
+    margin-right: 0px;
 }
 
 li {
@@ -125,13 +127,14 @@ h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $burnt-red;
 		text-decoration: none;
-		font-weight: bold;
-
-    &:visited {
-        color: darken($brand-color, 15%);
+		//font-weight: bold;
+        
+/*    &:visited {
+        color: darken($burnt-red, 30%);
     }
+*/
 
     &:hover {
         color: $red;
@@ -139,6 +142,11 @@ a {
     }
 }
 
+a.social-media-link{
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 
 /**
@@ -169,7 +177,7 @@ article {
 	}
 
 	a {
-		padding: 0px 5px;
+		padding: 0px 0px;
 	}
 }
 
@@ -321,3 +329,4 @@ pre {
     background-color: #ccc;
     -webkit-border-radius: 3px;
 }
+
