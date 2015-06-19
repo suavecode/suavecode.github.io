@@ -12,7 +12,7 @@ If you want to make changes to SUAVE source, or contribute new functionalities b
 
 ## Background
 
-SUAVE is developed via [GitHub](https://github.com/suavecode/SUAVE), and this page will describe how to get started.  There is also a list of open topics available for contribution if you're looking for ideas to get started. 
+SUAVE is developed via [GitHub](https://github.com/suavecode/SUAVE), and this page will describe how to get started.  There is also a list of [open topics](#areas-of-development) available for contribution if you're looking for ideas to get started. 
 
 As a developer, you'll want to [fork](https://help.github.com/articles/fork-a-repo) SUAVE to your personal account.  This creates a copy of the whole SUAVE repository, including all past versions, inside your GitHub account.  Generally you'll want to start from the develop branch, but you can check with the developers if you think it would be more appropriate to work on a feature branch.
 
@@ -46,27 +46,6 @@ Once you've installed git, there a few post-install commands to run, documented 
 If you don't have a github account already, go ahead and sign up!
 
 Then go to the SUAVE github repo at [github.com/suavecode/SUAVE](https://github.com/suavecode/SUAVE) and check out the code!  If you wouldn't mind, tick the “Watch” and “Star” buttons at the top-right of the page, if you think this is a sweet repo.
-
-<br>
-
-## Areas of Development
-
-These are the areas that are under development, including who is working on them, and what could use support.
-
-| Module     | Satuts  |  Lead Institution |
-|------------|--------|-------------------|
-| **Aerodynamics** |  | |
-| - Lift | | |
-| - - Connection to SU2 | | |
-| - - High Lift Correlations| |
-| - - Compressibility Drag| |
-| | |
-| | |
-| | |
-
-
-<br>
-Post to the [forum](/forum) if you're intersted in working on any of these, or to suggest a new module!
 
 <br>
 
@@ -145,7 +124,7 @@ This creates a nice documentation of the changes that were made.  More detail on
 5. Click the "Create Pull Request" button.
 6. The devs will take a look and merge the request.
 
-
+<br>
 
 ## Background on Git
 
@@ -170,4 +149,61 @@ For those interested in learning more about how version control systems (VCSs) s
 - [http://git-scm.com/book/en/v2/Getting-Started-Git-Basics](http://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 
 In addition to Git, there are other popular VCSs such as SVN ([http://tortoisesvn.net/](http://tortoisesvn.net/) and [https://subversion.apache.org/](https://subversion.apache.org/)), with their own sets of pros and cons. However, Git was chosen for SUAVE because SUAVE developers felt it can be easily implemented on Linux, Mac and Windows, and offers them a lot of flexibility and control in terms of developing and maintaining multiple parallel versions (“branches”) with each providing further parallelization (“forks”). For more information about the concepts of branching and forking, refer to http://nvie.com/posts/a-successful-git-branching-model/
+
+
+<br>
+
+## Areas of Development
+
+These are the areas that are under development, including who is working on them, and what could use support.  Post to the [forum](/forum) if you're intersted in working on any of these, or to suggest a new module!
+
+| Module     | Satuts  |  
+|------------|--------|
+| **Aerodynamics** |  |
+| Native Vortex Lattice | Implemented for conventional tube and wing, continuing development |
+| High-Lift Systems     | Basic methods in place |
+| Connection to SU2  | Implemented via manual surrogates, automatic capability needed |
+| Connection to AVL  | Implemented for genreal wings, straight tube fuselage, development needed for control surfaces | 
+| Compressibility Drag | CFD databased can be created for these | 
+| Supersonic Performance | aerodynamics in place, afterburning turbojet in place | 
+| Low-Speed | not started, looking for ability to control aircraft at critical conditions at low speed | 
+| **Propulsion** | |
+| Jet Engine | 1D model in place for Turbofan and Turbojet | 
+| Electric Propulsion | Electric motors in place, correlation based.  Additional fidelities needed |
+| Energy storage | Basic models for Lithium batteries, fuel cells in place.  Additional storage systems for Liquid Natural Gas, Hydrogen are needed.
+| **Mission** | |
+| Segments | needed: taxi, reserve, loiter, dash, and more | 
+| Performance | additional performance methods needed |
+| Payload Range Diagrams ||
+| **Environmental Impact** ||
+| Subsonic Noise | started, correlation methods | 
+| Supersonic Boom | not started, consider sBOOM, or SUBoom that could be open source | 
+| Emissions - NOx ||
+| Emissions - CO2 ||
+| **Stability and Control** ||
+| Static Stability ||
+| Dynamic Stability ||
+| **Structures** ||
+| Weights correlations ||
+| Loads ||
+| Finite Element Modeling ||
+| **Geometry**||
+| Parametric Geometry||
+| Connection to OpenVSP ||
+| Geometry Visualization ||
+| Fuselage Layout ||
+| **Optimization**||
+| Optimization interfaces ||
+| Response Surfaces ||
+| Uncertainty Management ||
+| **Input/Output** ||
+| Data visualization | looking for D3.JS development |
+| Design templates ||
+| **Miscellaneous** ||
+| Multifidelity Approaches ||
+| Aeroelastic Constraints ||
+
+<br>
+
+Back to [Top](#background)!
 
