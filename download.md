@@ -41,13 +41,36 @@ We want SUAVE to grow with the community, so it's available under a [CC BY-SA-NC
 
 ## Installation
 
-### Dependencies
-
 SUAVE is developed primarily on Python 2.7. It's known to work on versions 2.4 through 2.7.  Let us know if you find that it works on additonal versions.
 
-We strongly recommend using a scientific python distribution like [Anaconda](http://continuum.io/downloads) or [Enthought-Canopy](https://store.enthought.com/downloads).  All the package dependencies below will come pre-packaged and stuff will just work.
+We strongly recommend using a scientific python distribution like [Anaconda](http://continuum.io/downloads) or [Enthought-Canopy](https://store.enthought.com/downloads).  All the package dependencies like scipy and numpy will come pre-packaged and stuff will just work.
 
-If you don't have access to a scientific python distribution, you can install the dependent packages separately.  Below are the packages that SUAVE expects in order to run the tutorial cases.  There are links to guides on using package managers for linux and mac, and python installers for windows.  If these fail, check out the source forge links for additional installers or source code.
+If you don't have access to a scientific python distribution, you can install the dependent packages separately.  Check out the specific [dependencies](#dependencies) for more information
+
+### Simple Setup
+
+Once you've downloaded the code and prepared the software requrements, you're ready to install it into python!
+
+1. Download and extract the release archive
+2. Open the directory _SUAVE_Project/Source/trunk_
+3. Open a command prompt in that directory
+4. Run this command: ```python setup.py install``` <br>
+   If you are on a linux or mac, you may need to run <br> ```sudo python setup.py install```
+5. Change to any other folder, open a python shell, and test the new module with the command `import SUAVE`
+
+If all goes well, you are now able to import SUAVE into your python projects.  Check out the [guides](/guides) for examples on using the tutorials!
+
+After trying out the guides you may find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes for how to set this up.
+
+Have fun!  
+
+If you had trouble installing or need to uninstall, there are some more tips ahead.
+
+<br>    
+
+### Dependencies
+
+Below are the packages that SUAVE expects in order to run the tutorial cases.  There are links to guides on using package managers for linux and mac, and python installers for windows.  If these fail, check out the source forge links for additional installers or source code.
 
 |package     | link  |
 |------------|-------|
@@ -60,26 +83,6 @@ If you don't have access to a scientific python distribution, you can install th
 **Note**: For the windows installers, you can pick the latest version, for "cp2.7" (C-Python 2.7), for your architecture (32 or 64bit), and for numpy pick the MKL version (it's faster). <br>
 **Note**: The pip installer above will also install setuptools, a sub-dependency.
 
-
-### Simple Setup
-
-Once you've downloaded the code and prepared the software requrements, you're ready to install it into python!
-
-1. Download and extract the code
-2. Open the directory _SUAVE_Project/Source/trunk_
-3. Open a command prompt in that directory
-4. Run this command: ```python setup.py install``` <br>
-   If you are on a linux or mac, you may need to run <br> ```sudo python setup.py install```
-
-If all goes well, you are now able to import SUAVE into your python projects.  Check out the [guides](/guides) for examples on using the tutorials!
-
-After trying out the guides you may find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes for how to set this up.
-
-Have fun!  
-
-If you had trouble installing or need to uninstall, there are some more tips ahead.
-
-<br>    
 
 ### Dealing with Write Access
 
@@ -121,7 +124,7 @@ This involves creating a local directory, and setting up your PYTHONPATH environ
    Using the example of the custom directoy ~/python-site-packages: <br>
    ``` python setup.py install --prefix=~/python-site-packages```
       
-#### Additional Options
+### Additional Install Options
 
 Additional setup options, such as overriding the default install location, can be found with the following commands: <br>
 `python setup.py install --help` <br>
