@@ -10,19 +10,32 @@ Jump in and design!  Here are some helpful steps for downloading and installing 
 
 ## Downloading
 
+SUAVE comes released as a set of project folders ready for learning and exploration.  The basic folder structure that you have is shown here:
+
+~~~
+SUAVE_Project/    # main project folder, comes with the zip file
+    Source/       # SUAVE source code
+    Tutorials/    # scripts for learning about SUAVE
+    Workspace/    # a space to design new aircraft
+~~~
+
 ### Stable Release
-Download the latest stable release of SUAVE -- <br>
+Download the latest stable release of SUAVE: <br>
 [SUAVE Version 0.2.0](https://github.com/suavecode/SUAVE/releases)
 
 
 ### Beta Releases
-We'll also pre-publish mostly stable beta releases.  You can find them here -- <br>
-[Developer Releases](https://github.com/suavecode/SUAVE/releases)
+We'll also pre-publish mostly stable beta releases.  You can find them here: <br>
+[Beta Releases](https://github.com/suavecode/SUAVE/releases)
 
 
 ### License
 
 We want SUAVE to grow with the community, so it's available under a [CC BY-SA-NC 4.0 License](https://github.com/suavecode/SUAVE/blob/master/LICENSE).  It can be used freely to design and build commercial vehicles.  Please contact us if you are interested in re-publishing SUAVE source code as part of a commercial software.  
+
+<br>
+
+## Installation
 
 ### Dependencies
 
@@ -43,26 +56,30 @@ If you don't have access to a scientific python distribution, you can install th
 **Note**: For the windows installers, you can pick the latest version, for "cp2.7" (C-Python 2.7), for your architecture (32 or 64bit), and for numpy pick the MKL version (it's faster). <br>
 **Note**: The pip installer above will also install setuptools, a sub-dependency.
 
-## Installation
 
-Once you've downloaded the code and prepared the software requrements, you're ready to install!
+### Simple Setup
+
+Once you've downloaded the code and prepared the software requrements, you're ready to install it into python!
 
 1. Download and extract the code
-2. Open the directory SUAVE/trunk
+2. Open the directory _SUAVE_Project/Source/trunk_
 3. Open a command prompt in that directory
 4. Run this command: ```python setup.py install``` <br>
    If you are on a linux or mac, you may need to run <br> ```sudo python setup.py install```
 
-If all goes well, you are now able to import SUAVE into your python projects.  Check out the [guides](/guides) for examples!
+If all goes well, you are now able to import SUAVE into your python projects.  Check out the [guides](/guides) for examples on using the tutorials!
 
 After trying out the guides you may find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes for how to set this up.
 
+Have fun!  
 
-<br>
+If you had trouble installing or need to uninstall, there are some more tips ahead.
+
+<br>    
 
 ### Dealing with Write Access
 
-You shouldn't need this part of the guide, unless you don't have write-access to the python site-packages  directory.  In that case, you can try these approaches to install SUAVE.
+You shouldn't need this part of the guide, unless you are unable to write-access the python site-packages  directory.  In that case, you can try these approaches to install SUAVE.
 
 #### A. Install to local site-packages
 

@@ -49,6 +49,27 @@ Then go to the SUAVE github repo at [github.com/suavecode/SUAVE](https://github.
 
 <br>
 
+## Areas of Development
+
+These are the areas that are under development, including who is working on them, and what could use support.
+
+| Module     | Satuts  |  Lead Institution |
+|------------|--------|-------------------|
+| **Aerodynamics** |  | |
+| - Lift | | |
+| - - Connection to SU2 | | |
+| - - High Lift Correlations| |
+| - - Compressibility Drag| |
+| | |
+| | |
+| | |
+
+
+<br>
+Post to the [forum](/forum) if you're intersted in working on any of these, or to suggest a new module!
+
+<br>
+
 ## Developer Installation
 
 Time to pull code.  If you had previously installed a release distribution according to the download page, you'll want to [uninstall](/download#un-installation) the existing package first.
