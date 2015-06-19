@@ -10,14 +10,7 @@ Jump in and design!  Here are some helpful steps for downloading and installing 
 
 ## Downloading
 
-SUAVE comes released as a set of project folders ready for learning and exploration.  The basic folder structure that you have is shown here:
-
-~~~
-SUAVE_Project/    # main project folder, comes with the zip file
-    Source/       # SUAVE source code
-    Tutorials/    # scripts for learning about SUAVE
-    Workspace/    # a space to design new aircraft
-~~~
+SUAVE comes released as a set of project folders ready for learning and exploration.  
 
 ### Stable Release
 Download the latest stable release of SUAVE: <br>
@@ -28,6 +21,17 @@ Download the latest stable release of SUAVE: <br>
 We'll also pre-publish mostly stable beta releases.  You can find them here: <br>
 [Beta Releases](https://github.com/suavecode/SUAVE/releases)
 
+
+### Folder Structure
+
+The basic folder structure that you find in the archives is shown below.  Add new folders or repositories as necessary.
+
+~~~
+SUAVE_Project/    # main project folder, comes with the zip file
+    Source/       # SUAVE source code
+    Tutorials/    # scripts for learning about SUAVE
+    Workspace/    # a space to design new aircraft
+~~~
 
 ### License
 
