@@ -157,51 +157,52 @@ In addition to Git, there are other popular VCSs such as SVN ([http://tortoisesv
 
 These are the areas that are under development, including who is working on them, and what could use support.  Post to the [forum](/forum) if you're intersted in working on any of these, or to suggest a new module!
 
-| Module     | Satuts  |  
+| Module     | Status  |  
 |------------|--------|
 | **Aerodynamics** |  |
-| Native Vortex Lattice | Implemented for conventional tube and wing, continuing development |
-| High-Lift Systems     | Basic methods in place |
-| Connection to SU2  | Implemented via manual surrogates, automatic capability needed |
-| Connection to AVL  | Implemented for genreal wings, straight tube fuselage, development needed for control surfaces | 
-| Compressibility Drag | CFD databased can be created for these | 
-| Supersonic Performance | aerodynamics in place, afterburning turbojet in place | 
-| Low-Speed | not started, looking for ability to control aircraft at critical conditions at low speed | 
+| Native Vortex Lattice | Implemented for conventional tube and wing, continuing development.|
+| High-Lift Systems     | Basic methods in place.|
+| Connection to SU2  | Implemented via manual surrogates, automatic capability needed.|
+| Connection to AVL  | Implemented for general wings, straight tube fuselage, development needed for control surfaces.| 
+| Compressibility Drag | CFD databased can be created for these.| 
+| Supersonic Performance | Aerodynamics in place, afterburning turbojet in place. | 
+| Low-Speed | Not started, looking for ability to control aircraft at critical conditions at low speed. | 
 | **Propulsion** | |
 | Jet Engine | 1D model in place for Turbofan and Turbojet | 
-| Electric Propulsion | Electric motors in place, correlation based.  Additional fidelities needed |
-| Energy storage | Basic models for Lithium batteries, fuel cells in place.  Additional storage systems for Liquid Natural Gas, Hydrogen are needed.
+| Electric Propulsion | Electric motors in place both with ducted fans and propellers|
+| Turboprop/Piston powered | Pieces are available such as propellers and turbines. They need a prebuilt network.|
+| Energy storage | Basic models for various Lithium batteries, fuel cells in place.  Additional storage systems for Liquid Natural Gas, Hydrogen are needed.
 | **Mission** | |
-| Segments | needed: taxi, reserve, loiter, dash, and more | 
-| Performance | additional performance methods needed |
-| Payload Range Diagrams ||
+| Segments | Needed: taxi, reserve, loiter, dash, and more | 
+| Performance | Additional performance methods needed, landing and takeoff complete. |
+| Payload Range Diagrams | Completed methods.|
 | **Environmental Impact** ||
-| Subsonic Noise | started, correlation methods | 
-| Supersonic Boom | not started, consider sBOOM, or SUBoom that could be open source | 
-| Emissions - NOx ||
-| Emissions - CO2 ||
+| Subsonic Noise | DC-10 based correlations implemented. New methods in developmen.t| 
+| Supersonic Boom | Not started, consider sBOOM, or SUBoom that could be open source.| 
+| Emissions - NOx |No correlations yet.|
+| Emissions - CO2 |No correlations yet.|
 | **Stability and Control** ||
-| Static Stability ||
-| Dynamic Stability ||
+| Static Stability | Correlation methods exist for tube and wing. Derivatives can be pulled from AVL currently.|
+| Dynamic Stability | Both approximation and full linearized methods exist.|
 | **Structures** ||
-| Weights correlations ||
-| Loads ||
-| Finite Element Modeling ||
+| Weights correlations |Implemented for tube/wing, blended wing body, and human powered/solar.|
+| Loads | No methodology for loads determination. Need a V-n diagram.|
+| Finite Element Modeling |FEM-based primary structure weight estimations would be useful for unconventional configurations.|
 | **Geometry**||
-| Parametric Geometry||
-| Connection to OpenVSP ||
-| Geometry Visualization ||
-| Fuselage Layout ||
+| Parametric Geometry|Not currently in SUAVE.|
+| Connection to OpenVSP |Not currently in SUAVE.|
+| Geometry Visualization |Not currently in SUAVE.|
+| Fuselage Layout |Not currently in SUAVE.|
 | **Optimization**||
-| Optimization interfaces ||
-| Response Surfaces ||
-| Uncertainty Management ||
+| Optimization interfaces |Process is started internally, will hopefully share soon.|
+| Response Surfaces |Not implemented.|
+| Uncertainty Management |Hopefully will be able to work with Dakota to accomplish this.|
 | **Input/Output** ||
-| Data visualization | looking for D3.JS development |
-| Design templates ||
+| Data visualization | Looking for D3.JS development. |
+| Design templates |Not implemented|
 | **Miscellaneous** ||
-| Multifidelity Approaches ||
-| Aeroelastic Constraints ||
+| Multifidelity Approaches |Will attempt manage once optimization is established.|
+| Aeroelastic Constraints |Not implemented.|
 
 <br>
 
