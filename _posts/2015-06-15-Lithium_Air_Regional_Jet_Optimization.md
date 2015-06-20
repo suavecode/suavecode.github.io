@@ -6,20 +6,67 @@ categories: blog
 ---
 
 ### Lithium Air Regional Jet Optimization
-1. Open the file called "tut_opt_lithium_air_jet.py" in 
+ Open the file called "tut_opt_lithium_air_jet.py" in 
 a text editor or IDE.
-2. Change the variable called "disp_results" from 0 to 1 (line 23)
-3. Run the program (cd to the folder, then type python tut_opt_lithium_air_jet.py)
-4. Look at the plots or various values (more can be plotted, and are currently commented out)
-   Press enter to close the plots.
-5. Now try to run an optimization case. The initial guess is a python list; the variable order can be
+ Change the variable called "disp_results" from 0 to 1 (line 23)
+<pre><code class="python">
+def main():
+    global iteration_number #use global variable to keep track of how long optimization has gone
+    global disp_results
+    disp_results=0
+</code></pre>
+
+ Run the program (cd to the folder, then type python tut_opt_lithium_air_jet.py)
+
+ Look at the plots or various values (more can be plotted, and are currently commented out). Press enter to close the plots.
+
+ Now try to run an optimization case. The initial guess is a python list
+
+   * The variable order can be
 seen in lines 27-44, along with the corresponding variable scaling factors.
-    * First change disp_results from 1 to 0 (signifying optimization)
-    * Change the target range from 4800 km to 4400 km (line 101)
-    * run the script (python tut_opt_lithium_air_jet.py)
+<pre><code class="python">
+    P_mot        =2E7 /(10.**7.);  
+    climb_alt_1  =.01;  
+    climb_alt_2  =.1;   
+    climb_alt_3  =1;    
+    climb_alt_4  =2;    
+    climb_alt_5  =3;    
+    alpha_rc     =-1.2; 
+    alpha_tc     =-1.3; 
+    wing_sweep   =0.1;  
+    vehicle_S    =45*1./100.;   
+    Vclimb_1     =120.*1./100.; 
+    Vclimb_2     =130.*1./100.;  
+    Vclimb_3     =200.*1./100.;  
+    Vclimb_4     =210.*1./100.;  
+    Vclimb_5     =230.*1./100.;  
+    desc_alt_1   =2.;   
+    desc_alt_2   =1;    
+    cruise_range=2900.*1./1000; 
+</code></pre> 
+
+First change disp_results from 1 to 0 (signifying optimization)
+
+Change the target range from 4800 km to 4400 km (line 101)
+<pre><code class="python">
+  m_guess    = 64204.6490117
+    Ereq_guess = 117167406053.0
+    Preq_guess = 8007935.5158
+    target_range=4800 
+</code></pre>
+
+run the script (python tut_opt_lithium_air_jet.py).
+
     * let it run awhile; feel free to check it intermittently to see the current guess as well as how the optimizer is handling constraints
   
-6. If you're feeling ambitious, try tweaking other parts of the script
+If you're feeling ambitious, try tweaking other parts of the script.
+
  * reduce cruise range in the optimization (the final input)
  * modify or add a constraint (lines 232-291)
-  * try different battery assumptions(uncomment line 449, change from 2000 W-h/kg (default lithium air) to 1500 W-h/kg.
+ * try different battery assumptions(uncomment line 449, change from 2000 W-h/kg (default lithium air) to 1500 W-h/kg.)
+<pre><code class="python">
+ #create battery
+    battery = SUAVE.Components.Energy.Storages.Batteries.Variable_Mass.Lithium_Air()
+    #battery.specific_energy=2000.*Units.Wh/Units.kg
+
+</code></pre>
