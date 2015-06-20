@@ -11,83 +11,14 @@ categories: blog
 
 ## Turbofan Modeling Tutorial
 
-The tutorial shows how the user can set up a conventional aircraft configuration and a mission the aircraft is to fly and then simulate the aircraft's performance over the defined mission. The code is divided into a number of functions that are called from the main function. The descriptions in the functions clearly explain the function's inputs and outputs and the actions performed on the functions.
-
-###Steps to simulate the aircraft's performance over a mission :
-
-1) Locate the tutorial script folder, SUAVE/scripts/tutorial. If using the command line, cd to this directory.
-2) Open the tut_mission_B737.py script in your favorite editor or IDE.
-2) The script is setup to run the B737 on its design mission. Run it in your IDE. If using the command line use the command
-
-<pre><code class="python"> $python tut_gasturbine.py  </code></pre>
+The tutorial describes how the energy network in SUAVE can be used to build a model of a turbofan engine. Once this is clear to the user, then the understanding the setup of the other gasturbine models, the ducted fan and the turbojet should not be very difficult. The turbofan model is built using the different turbofan components as its building blocks and then linking the inputs and outputs of the different components. 
 
 
 
-###Components :
-
-The basic components that can be used to model the turbofan are shown below.
-
-
-####Ram
+###Setting up the Turbofan model
 
 <pre><code class="python">
 
-
-</code></pre>
-
-####Nozzle
-
-<pre><code class="python">
-
-
-</code></pre>
-
-####Compressor
-
-<pre><code class="python">
-
-
-</code></pre>
-
-####Fan
-
-<pre><code class="python">
-
-
-</code></pre>
-
-####Combustor
-
-<pre><code class="python">
-
-
-</code></pre>
-
-####Turbine
-
-<pre><code class="python">
-
-
-</code></pre>
-
-
-####Thrust
-
-<pre><code class="python">
-
-
-</code></pre>
-
-
-
-
-
-
-
-### Assembling the components to obtain a Turbofan Network
-
-
-<pre><code class="python">
 # ------------------------------------------------------------------
 #   Turbofan Network
 # ------------------------------------------------------------------    
@@ -107,6 +38,17 @@ turbofan.nacelle_diameter  = 1.580
 # working fluid
 turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
 
+</code></pre>
+
+
+###Components :
+
+The basic components that can be used to model the turbofan are shown below.
+
+
+####Ram
+
+<pre><code class="python">
 
 # ------------------------------------------------------------------
 #   Component 1 - Ram
@@ -120,6 +62,11 @@ ram.tag = 'ram'
 # add to the network
 turbofan.append(ram)
 
+</code></pre>
+
+####Nozzle
+
+<pre><code class="python">
 
 # ------------------------------------------------------------------
 #  Component 2 - Inlet Nozzle
@@ -135,6 +82,42 @@ inlet_nozzle.pressure_ratio        = 0.98
 # add to network
 turbofan.append(inlet_nozzle)
 
+# ------------------------------------------------------------------
+#  Component 8 - Core Nozzle
+
+# instantiate
+nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
+nozzle.tag = 'core_nozzle'
+
+# setup
+nozzle.polytropic_efficiency = 0.95
+nozzle.pressure_ratio        = 0.99    
+
+# add to network
+turbofan.append(nozzle)
+
+
+# ------------------------------------------------------------------
+#  Component 9 - Fan Nozzle
+
+# instantiate
+nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
+nozzle.tag = 'fan_nozzle'
+
+# setup
+nozzle.polytropic_efficiency = 0.95
+nozzle.pressure_ratio        = 0.99    
+
+# add to network
+turbofan.append(nozzle)
+
+
+
+</code></pre>
+
+####Compressor
+
+<pre><code class="python">
 
 # ------------------------------------------------------------------
 #  Component 3 - Low Pressure Compressor
@@ -164,6 +147,59 @@ compressor.pressure_ratio        = 13.415
 
 # add to network
 turbofan.append(compressor)
+
+
+</code></pre>
+
+####Fan
+
+<pre><code class="python">
+
+
+# ------------------------------------------------------------------
+#  Component 10 - Fan
+
+# instantiate
+fan = SUAVE.Components.Energy.Converters.Fan()   
+fan.tag = 'fan'
+
+# setup
+fan.polytropic_efficiency = 0.93
+fan.pressure_ratio        = 1.7    
+
+# add to network
+turbofan.append(fan)
+
+</code></pre>
+
+####Combustor
+
+<pre><code class="python">
+
+
+# ------------------------------------------------------------------
+#  Component 7 - Combustor
+
+# instantiate    
+combustor = SUAVE.Components.Energy.Converters.Combustor()   
+combustor.tag = 'combustor'
+
+# setup
+combustor.efficiency                = 0.99 
+combustor.alphac                    = 1.0     
+combustor.turbine_inlet_temperature = 1450
+combustor.pressure_ratio            = 0.95
+combustor.fuel_data                 = SUAVE.Attributes.Propellants.Jet_A()    
+
+# add to network
+turbofan.append(combustor)
+
+
+</code></pre>
+
+####Turbine
+
+<pre><code class="python">
 
 
 # ------------------------------------------------------------------
@@ -196,68 +232,13 @@ turbine.polytropic_efficiency = 0.93
 turbofan.append(turbine)
 
 
-# ------------------------------------------------------------------
-#  Component 7 - Combustor
-
-# instantiate    
-combustor = SUAVE.Components.Energy.Converters.Combustor()   
-combustor.tag = 'combustor'
-
-# setup
-combustor.efficiency                = 0.99 
-combustor.alphac                    = 1.0     
-combustor.turbine_inlet_temperature = 1450
-combustor.pressure_ratio            = 0.95
-combustor.fuel_data                 = SUAVE.Attributes.Propellants.Jet_A()    
-
-# add to network
-turbofan.append(combustor)
+</code></pre>
 
 
-# ------------------------------------------------------------------
-#  Component 8 - Core Nozzle
 
-# instantiate
-nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
-nozzle.tag = 'core_nozzle'
+####Thrust
 
-# setup
-nozzle.polytropic_efficiency = 0.95
-nozzle.pressure_ratio        = 0.99    
-
-# add to network
-turbofan.append(nozzle)
-
-
-# ------------------------------------------------------------------
-#  Component 9 - Fan Nozzle
-
-# instantiate
-nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
-nozzle.tag = 'fan_nozzle'
-
-# setup
-nozzle.polytropic_efficiency = 0.95
-nozzle.pressure_ratio        = 0.99    
-
-# add to network
-turbofan.append(nozzle)
-
-
-# ------------------------------------------------------------------
-#  Component 10 - Fan
-
-# instantiate
-fan = SUAVE.Components.Energy.Converters.Fan()   
-fan.tag = 'fan'
-
-# setup
-fan.polytropic_efficiency = 0.93
-fan.pressure_ratio        = 1.7    
-
-# add to network
-turbofan.append(fan)
-
+<pre><code class="python">
 
 # ------------------------------------------------------------------
 #  Component 10 - Thrust
@@ -272,7 +253,17 @@ thrust.tag ='thrust'
 thrust.total_design                       =42383.01818423
 
 # add to network
-turbofan.thrust = thrust    
+turbofan.thrust = thrust   
+
+
+</code></pre>
+
+
+
+
+### Sizing the Turbofan
+
+<pre><code class="python">
 
 #bypass ratio  closer to fan
 
@@ -289,7 +280,7 @@ turbofan_sizing(turbofan,0.8,10000.0)
 
 
 
-###How the components are linked :
+
 
 
 
