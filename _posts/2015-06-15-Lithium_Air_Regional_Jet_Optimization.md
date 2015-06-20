@@ -5,7 +5,10 @@ date: 2015-06-15 14:25:00
 categories: blog
 ---
 
-### Lithium Air Regional Jet Optimization
+##Introduction
+The purpose is this tutorial is to illustrate one way of forming an optimization problem using SUAVE, as well as to highlight some of the more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system capabilities.
+
+##Analysis Mode
  Open the file called "tut_opt_lithium_air_jet.py" in 
 a text editor or IDE.
  Change the variable called "disp_results" from 0 to 1 (line 23)
@@ -20,6 +23,7 @@ def main():
 
  Look at the plots or various values (more can be plotted, and are currently commented out). Press enter to close the plots.
 
+##Optimization Mode
  Now try to run an optimization case. The initial guess is a python list
 
    * The variable order can be
@@ -57,7 +61,7 @@ Change the target range from 4800 km to 4400 km (line 101)
 
 run the script (python tut_opt_lithium_air_jet.py).
 
-    * let it run awhile; feel free to check it intermittently to see the current guess as well as how the optimizer is handling constraints
+* Let it run awhile; feel free to check it intermittently to see the current guess as well as how the optimizer is handling constraints
   
 If you're feeling ambitious, try tweaking other parts of the script.
 
