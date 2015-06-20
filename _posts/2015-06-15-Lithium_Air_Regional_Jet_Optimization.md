@@ -4,6 +4,9 @@ title: Lithium Air Regional Jet Optimization
 date: 2015-06-15 14:25:00
 categories: blog
 ---
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 ##Introduction
 The purpose is this tutorial is to illustrate one way of forming an optimization problem using SUAVE, as well as to highlight some of the more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system capabilities.
@@ -13,10 +16,10 @@ The purpose is this tutorial is to illustrate one way of forming an optimization
 a text editor or IDE.
  Change the variable called "disp_results" from 0 to 1 (line 23)
 <pre><code class="python">
-def main():
-    global iteration_number #use global variable to keep track of how long optimization has gone
-    global disp_results
-    disp_results=0
+    def main():
+        global iteration_number #use global variable to keep track of how long optimization has gone
+        global disp_results
+        disp_results=0
 </code></pre>
 
  Run the program (cd to the folder, then type python tut_opt_lithium_air_jet.py)
@@ -53,7 +56,7 @@ First change disp_results from 1 to 0 (signifying optimization)
 
 Change the target range from 4800 km to 4400 km (line 101)
 <pre><code class="python">
-  m_guess    = 64204.6490117
+    m_guess    = 64204.6490117
     Ereq_guess = 117167406053.0
     Preq_guess = 8007935.5158
     target_range=4800 
