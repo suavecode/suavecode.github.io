@@ -8,6 +8,7 @@ categories: blog
 <script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
+
 ##Introduction
 The purpose is this tutorial is to illustrate one way of forming an optimization problem using SUAVE, as well as to highlight some of the more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system capabilities.
 
@@ -64,7 +65,7 @@ Change the target range from 4800 km to 4400 km (line 101)
 
 run the script (python tut_opt_lithium_air_jet.py).
 
-* Let it run awhile; feel free to check it intermittently to see the current guess as well as how the optimizer is handling constraints
+Let it run awhile; feel free to check it intermittently to see the current guess as well as how the optimizer is handling constraints
   
 If you're feeling ambitious, try tweaking other parts of the script.
 
