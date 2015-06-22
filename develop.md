@@ -24,6 +24,14 @@ Development is done on separate branches.  Our branching model is very similar t
 
 SUAVE merges new code contributions through [pull requests](https://help.github.com/articles/creating-a-pull-request).  As you make changes to your copy of SUAVE, you'll upload them to your GitHub fork, and then when they're ready for review you'll submit them for merge via pull request.
 
+### Style Guide
+
+SUAVE is built on a slightly modified PEP8 style guide, with changes made to implement a data-oriented view of the code. To help support discovering code, the SUAVE folder structure explicitly mirrors the package structure. Flexibility of the package structure is important, so in general all objects live in their own file, with the same file name as the object name. In order to maintain a separation between Analysis and Data structures, there are often parallel package trees inside the main branches of the package, like SUAVE.Methods.Aerodynamics and SUAVE.Analysis.Aerodynamics. Where possible the names of fields that live in the SUAVE package are written out verbosely, avoiding jargon built on mathematical variable names or acronyms.
+
+Templates for new methods and objects can be found in the SUAVE repo's [templates](https://github.com/suavecode/SUAVE/tree/develop/templates) folder.
+
+More detail on the style of SUAVE can be found on the [wiki](https://github.com/suavecode/SUAVE/wiki/Style-Guide).
+
 ### Prerequisites
 
 In addition to the package dependencies listed on the [download](/download#dependencies) page, you will need to install git.
@@ -190,22 +198,23 @@ These are the areas that are under development, including their status, and what
 | Weights correlations |Implemented for tube/wing, blended wing body, and human powered/solar.|
 | Loads | No methodology for loads determination. Need a V-n diagram.|
 | Finite Element Modeling |FEM-based primary structure weight estimations would be useful for unconventional configurations.|
-| **Geometry**| **High Priority** |
+| **Geometry**| **- - High Priority - -** |
 | Parametric Geometry|Not currently in SUAVE.|
 | Connection to OpenVSP |Not currently in SUAVE.|
 | Geometry Visualization |Not currently in SUAVE.|
 | Fuselage Layout | Basic methods in place for Tube/Wing and BWB. More general methods desired. |
-| **Optimization**||
+| **Optimization**| |
 | Optimization Interfaces | Framework defined, initial implementation in place.  Undergoing development. |
 | Response Surfaces | Automatic method not yet implemented. |
 | Uncertainty Management | Planning to use Dakota to accomplish this. |
-| **Input/Output** ||
+| **Input/Output** | |
 | Data visualization | Looking for [D3.JS](http://d3js.org/) development. |
 | Design templates | Not implemented. |
-| **Miscellaneous** ||
+| **Miscellaneous** | |
 | Multifidelity Approaches | Framework identified, undergoing developent.  Suggestions welcomed. |
 | Aeroelastic Constraints | Under consideration, in early development. |
 | Interface to BAD3/4, AEDT | Under development. |
+
 <br>
 
 Back to [Top](#background)!
