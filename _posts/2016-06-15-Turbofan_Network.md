@@ -19,9 +19,7 @@ The tutorial describes how the energy network in SUAVE can be used to build a mo
 
 First the turbofan energy energy network is instantiated. The parameters associated with the network as a whole are assigned.
 
-<pre><code class="python">
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #   Turbofan Network
 # ------------------------------------------------------------------    
 
@@ -37,7 +35,6 @@ turbofan.nacelle_diameter  = 1.580
 
 # working fluid
 turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
-
 </code></pre>
 
 Then the different components are added
@@ -52,9 +49,7 @@ The basic components used to model the turbofan are described below.
 
 The 'Ram' component is used to convert the freestream quantities that are passed into the Turbofan network into stagnation quantities. As the turbofan network as based on a 1D gasdynamic analysis, most of the energy transfer across the different components are modelled as changes in the stagnation quantities. Thus the Ram component acts as a preprocessor converting the input 'Conditions' into quantities required by the network.
 
-<pre><code class="python">
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #   Component 1 - Ram
 
 # to convert freestream static to stagnation quantities
@@ -65,7 +60,6 @@ ram.tag = 'ram'
 
 # add to the network
 turbofan.append(ram)
-
 </code></pre>
 
 ####Nozzle
@@ -73,9 +67,7 @@ turbofan.append(ram)
 The 'Nozzle' component is used to model the inlet diffuser and the outlet fan and compressor nozzles as shown below.
 
 
-<pre><code class="python">
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #  Component 2 - Inlet Nozzle
 
 # instantiate
@@ -103,7 +95,6 @@ nozzle.pressure_ratio        = 0.99
 # add to network
 turbofan.append(nozzle)
 
-
 # ------------------------------------------------------------------
 #  Component 9 - Fan Nozzle
 
@@ -117,18 +108,13 @@ nozzle.pressure_ratio        = 0.99
 
 # add to network
 turbofan.append(nozzle)
-
-
-
 </code></pre>
 
 ####Compressor
 
 Two compressors are used in the turbofan model, a low and a high pressure compressor.
 
-<pre><code class="python">
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #  Component 3 - Low Pressure Compressor
 
 # instantiate 
@@ -141,7 +127,6 @@ compressor.pressure_ratio        = 1.14
 
 # add to network
 turbofan.append(compressor)
-
 
 # ------------------------------------------------------------------
 #  Component 4 - High Pressure Compressor
@@ -156,18 +141,13 @@ compressor.pressure_ratio        = 13.415
 
 # add to network
 turbofan.append(compressor)
-
-
 </code></pre>
 
 ####Fan
 
 A fan component is also added to the network. To model turbojets, the fan component and the fan nozzle are not added but all the othee components remain the same.
 
-<pre><code class="python">
-
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #  Component 10 - Fan
 
 # instantiate
@@ -180,7 +160,6 @@ fan.pressure_ratio        = 1.7
 
 # add to network
 turbofan.append(fan)
-
 </code></pre>
 
 
@@ -188,10 +167,7 @@ turbofan.append(fan)
 
 The combustor component is where the the fuel to air ratio is computed and this is used to compute the sfc and the thrust later in the network.
 
-<pre><code class="python">
-
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #  Component 7 - Combustor
 
 # instantiate    
@@ -207,18 +183,13 @@ combustor.fuel_data                 = SUAVE.Attributes.Propellants.Jet_A()
 
 # add to network
 turbofan.append(combustor)
-
-
 </code></pre>
 
 ####Turbine
 
 The work done by the fan and the compressors is used to compute the turbine work required. This is used to compute the change in the stagnation quantities across the turbine.
 
-<pre><code class="python">
-
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #  Component 5 - Low Pressure Turbine
 
 # instantiate
@@ -231,7 +202,6 @@ turbine.polytropic_efficiency = 0.93
 
 # add to network
 turbofan.append(turbine)
-
 
 # ------------------------------------------------------------------
 #  Component 6 - High Pressure Turbine
@@ -246,8 +216,6 @@ turbine.polytropic_efficiency = 0.93
 
 # add to network
 turbofan.append(turbine)
-
-
 </code></pre>
 
 
@@ -256,9 +224,7 @@ turbofan.append(turbine)
 
 The thrust component takes in the initial (inputs of the inlet nozzle) and final (exit of the fan and core exirt nozzles) stagnation quantities of the network and the fuel to air ratio and computes the specific fuel conspumption (sfc) and thrust generated by the network (turbofan engine).
 
-<pre><code class="python">
-
-# ------------------------------------------------------------------
+<pre><code class="python"># ------------------------------------------------------------------
 #  Component 10 - Thrust
 
 # to compute thrust
@@ -268,12 +234,10 @@ thrust = SUAVE.Components.Energy.Processes.Thrust()
 thrust.tag ='thrust'
 
 # setup
-thrust.total_design                       =42383.01818423
+thrust.total_design =42383.01
 
 # add to network
 turbofan.thrust = thrust   
-
-
 </code></pre>
 
 
@@ -282,9 +246,7 @@ turbofan.thrust = thrust
 
 Once the network is built, it is essential to size the engine with a set of sizing conditions. The sizing function 'turbofan_sizing' takes in the model of the turbofan and the mach number and the altitude for which the turbofan is sized. The sizing thrust is an engine/network property (defined in the 'Setting up the Turbofan model' section above. The function takes these quantities and computes the design mass flow rate through the components. Once sized, the network/engine can be added to the vehicle as shown in the  B737 tutorial.
 
-<pre><code class="python">
-
-#bypass ratio  closer to fan
+<pre><code class="python">#bypass ratio  closer to fan
 
 numerics = Data()
 
@@ -292,8 +254,6 @@ eta=1.0
 
 #size the turbofan
 turbofan_sizing(turbofan,0.8,10000.0)
- 
-
 </code></pre>
 
 
