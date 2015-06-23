@@ -11,8 +11,7 @@ categories: blog
 
 ## Turbofan Modeling Tutorial
 
-The tutorial describes how the energy network in SUAVE can be used to build a model of a turbofan engine. Once this is clear to the user, then the understanding the setup of the other gasturbine models, the ducted fan and the turbojet should not be very difficult. The turbofan model is built using the different turbofan components as its building blocks and then linking the inputs and outputs of the different components. 
-
+The tutorial describes how the energy network in SUAVE can be used to build a model of a turbofan engine. Once this is clear to the user, then the understanding the setup of the other gasturbine models, the ducted fan and the turbojet should not be very difficult. The turbofan model is built using the different turbofan components as its building blocks and then linking the inputs and outputs of the different components. The script to follow is the tut_mission_B737.py script that was used in the [Boeing 737-800 Analysis Tutorial](/Boeing_737-800/)
 
 
 ###Setting up the Turbofan model
