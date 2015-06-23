@@ -187,7 +187,7 @@ These are the areas that are under development, including their status, and what
 | Performance | Additional performance methods needed, landing and takeoff complete. |
 | Payload Range Diagrams | Completed methods.|
 | **Environmental Impact** ||
-| Subsonic Noise | DC-10 based correlations implemented. New methods in development. | 
+| Subsonic Noise | DC-10 based correlations implemented. Noise component method implemented for airframe and engine noise based on empirical and semi-empirical data. | 
 | Supersonic Boom | Not started, consider sBOOM, or SUBoom that could be open source.| 
 | Emissions - NOx |No correlations yet.|
 | Emissions - CO2 |No correlations yet.|
