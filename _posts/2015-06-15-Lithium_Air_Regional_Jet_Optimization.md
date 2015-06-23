@@ -10,7 +10,7 @@ categories: blog
 
 
 ##Introduction
-The purpose is this tutorial is to illustrate one way of forming an optimization problem using SUAVE, as well as to highlight some of the more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system data structures.
+The purpose of this tutorial is to illustrate one way of forming an optimization problem using SUAVE, as well as to highlight some of the more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system data structures.
 
 ##Analysis Mode
  Open the file called "tut_opt_lithium_air_jet.py" in 
