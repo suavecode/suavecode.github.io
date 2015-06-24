@@ -3,6 +3,8 @@ layout: post
 title: Payload Range Diagram
 date: 2015-06-17 23:22:21
 categories: blog
+
+permalink: /guides/payload_range_diagram.html
 ---
 
 ### Embraer E-190 Payload Range Diagram Tutorial

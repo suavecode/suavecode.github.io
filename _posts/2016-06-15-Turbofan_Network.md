@@ -3,6 +3,8 @@ layout: post
 title: Turbofan Network
 date: 2015-06-15 14:20:03
 categories: blog
+
+permalink: /guides/turbofan_network.html
 ---
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">
