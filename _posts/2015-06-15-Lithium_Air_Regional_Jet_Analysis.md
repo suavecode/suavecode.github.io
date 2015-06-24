@@ -57,3 +57,24 @@ Now try changing the motor efficiency from .95 to .9 and running the script (lin
 </code></pre>
 
 Note the sensitivity of vehicle energy requirements to these various propulsion system assumptions.
+
+Now try changing the cruise range of the aircraft (line 640, segment.distance)
+
+ 
+<pre><code class="python">
+    segment = Segments.Cruise.Constant_Speed_Constant_Altitude()
+    segment.tag = "cruise"
+
+    # connect vehicle configuration
+    segment.analyses.extend( analyses.cruise )
+
+    # segment attributes
+    segment.atmosphere = atmosphere
+    segment.planet     = planet
+
+    segment.air_speed  = 230.
+    segment.distance   = 1947. * Units.nmi
+
+</code></pre>
+
+Iterate on the vehicle mass, energy, and power until desired convergence is achieved.
