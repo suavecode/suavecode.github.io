@@ -5,6 +5,7 @@ subtitle: How to download and install this fantastic tool
 permalink: /download/
 ---
 
+<script src="/js/print-email.js"></script>
 
 Jump in and design!  Here are some helpful steps for downloading and installing the code.  There are stable releases and beta releases.  Also make sure to check out the license under which the code is available.
 
@@ -43,7 +44,7 @@ We want SUAVE to grow with the community, so it's available under a <br>[CC BY-S
 <a rel="license"  href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 {: style="text-align: center"}
 
-It can be used freely to design and build commercial vehicles.  Please contact us if you are interested in re-publishing SUAVE source code as part of a commercial software.  
+It can be used freely to design and build commercial vehicles.  Please <script language="javascript" type="text/javascript">printEmailLink('suavecode-info', 'lists.stanford.edu','contact us');</script>  if you are interested in re-publishing SUAVE source code as part of a commercial software.  
 
 <br>
 
