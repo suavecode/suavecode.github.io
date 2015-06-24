@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Lithium Air Regional Jet Optimization
+title: Lithium Air Regional Jet Analysis
 date: 2015-06-15 14:25:00
 categories: blog
+
+permalink: /guides/lithium_air_regional_jet_analysis.html
 ---
 <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">
 <script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>

@@ -12,20 +12,22 @@ Jump in and design!  Here are some helpful steps for downloading and installing 
 
 SUAVE comes released as a set of project folders ready for learning and exploration.  
 
+Please take a few seconds to register with us by filling out the form on the pages linked below. Upon registration, you'll be redirected to the appropriate distribution of the software.  The information we collect is used _only_ for usage statistics by the development team. You'll only be contacted for notification of critical bug fixes and major releases. To get more involved in growing the community, definitely check out the [forum](/forum). Your support is greatly appreciated, it let's us build a better tool for everyone!
+
 ### Stable Release
 Download the latest stable release of SUAVE: <br>
-[SUAVE Version 0.2.0](https://github.com/suavecode/SUAVE/releases)
+[SUAVE Version 0.2.0](/register/)
 (will be released June 24)
 
 
 ### Beta Releases
 We'll also pre-publish mostly stable beta releases.  You can find them here: <br>
-[Beta Releases](https://github.com/suavecode/SUAVE/releases)
+[Beta Releases](/register/)
 
 
 ### Folder Structure
 
-The basic folder structure that you find in the archives is shown below.  Add new folders or repositories as necessary.
+The basic folder structure that you find in the archives is shown below.  You can always add new folders or repositories as necessary to fit your needs.
 
 ~~~
 SUAVE_Project/    # main project folder, comes with the zip file
@@ -36,7 +38,12 @@ SUAVE_Project/    # main project folder, comes with the zip file
 
 ### License
 
-We want SUAVE to grow with the community, so it's available under a [CC BY-SA-NC 4.0 License](https://github.com/suavecode/SUAVE/blob/master/LICENSE).  It can be used freely to design and build commercial vehicles.  Please contact us if you are interested in re-publishing SUAVE source code as part of a commercial software.  
+We want SUAVE to grow with the community, so it's available under a <br>[CC BY-SA-NC 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
+
+<a rel="license"  href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+{: style="text-align: center"}
+
+It can be used freely to design and build commercial vehicles.  Please contact us if you are interested in re-publishing SUAVE source code as part of a commercial software.  
 
 <br>
 
