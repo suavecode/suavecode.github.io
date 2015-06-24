@@ -41,7 +41,7 @@ SUAVE_Project/    # main project folder, comes with the zip file
 
 We want SUAVE to grow with the community, so it's available under a <br>[CC BY-SA-NC 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
 
-<a rel="license"  href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+[![CC BY-NC-SA](/images/cc_by-nc-sa.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 {: style="text-align: center"}
 
 It can be used freely to design and build commercial vehicles.  Please <script language="javascript" type="text/javascript">printEmailLink('suavecode-info', 'lists.stanford.edu','contact us');</script>  if you are interested in re-publishing SUAVE source code as part of a commercial software.  
