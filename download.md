@@ -14,13 +14,13 @@ SUAVE comes released as a set of project folders ready for learning and explorat
 
 ### Stable Release
 Download the latest stable release of SUAVE: <br>
-[SUAVE Version 0.2.0](https://github.com/suavecode/SUAVE/releases)
+[SUAVE Version 0.2.0](/downloadform/)
 (will be released June 24)
 
 
 ### Beta Releases
 We'll also pre-publish mostly stable beta releases.  You can find them here: <br>
-[Beta Releases](https://github.com/suavecode/SUAVE/releases)
+[Beta Releases](/downloadform/)
 
 
 ### Folder Structure
