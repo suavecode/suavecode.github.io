@@ -28,9 +28,10 @@ SUAVE merges new code contributions through [pull requests](https://help.github.
 
 SUAVE is built on a slightly modified PEP8 style guide, with changes made to implement a data-oriented view of the code. To help support discovering code, the SUAVE folder structure explicitly mirrors the package structure. Flexibility of the package structure is important, so in general all objects live in their own file, with the same file name as the object name. In order to maintain a separation between Analysis and Data structures, there are often parallel package trees inside the main branches of the package, like SUAVE.Methods.Aerodynamics and SUAVE.Analysis.Aerodynamics. Where possible the names of fields that live in the SUAVE package are written out verbosely, avoiding jargon built on mathematical variable names or acronyms.
 
+A [full description](https://github.com/suavecode/SUAVE/wiki/Style-Guide) of the style of SUAVE can be found on the [wiki](https://github.com/suavecode/SUAVE/wiki/Style-Guide).
+
 Templates for new methods and objects can be found in the SUAVE repo's [templates](https://github.com/suavecode/SUAVE/tree/develop/templates) folder.
 
-More detail on the style of SUAVE can be found on the [wiki](https://github.com/suavecode/SUAVE/wiki/Style-Guide).
 
 ### Prerequisites
 
