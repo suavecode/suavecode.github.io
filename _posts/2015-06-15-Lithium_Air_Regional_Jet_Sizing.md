@@ -24,7 +24,7 @@ a text editor or IDE.
  Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries
 
 ##Different Propulsion System Assumptions
-Go to line 11, and change the battery specific energy from 2000 W-h/kg to 1500 W-h/kg
+Go to following line (search battery.specific_energy), and change the battery specific energy from 2000 W-h/kg to 1500 W-h/kg
 <pre><code class="python">
     battery = configs.base.energy_network['battery']
     battery.specific_energy=2000*Units.Wh/Units.kg
@@ -46,7 +46,7 @@ Now try changing the motor efficiency from .95 to .9 and running the script (lin
 
 Note the sensitivity of vehicle energy requirements to these various propulsion system assumptions.
 
-Now try changing the cruise range of the aircraft (line 858, segment.distance)
+Now try changing the cruise range of the aircraft (line 868, segment.distance).
 
  
 <pre><code class="python">
@@ -65,3 +65,4 @@ Now try changing the cruise range of the aircraft (line 858, segment.distance)
 
 </code></pre>
 
+Try changing other parameters (e.g. specific power, cruise altitude), and observe their effects on the overall design.
