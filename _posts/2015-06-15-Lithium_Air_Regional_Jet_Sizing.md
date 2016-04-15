@@ -19,12 +19,14 @@ The purpose of this tutorial is to highlight some of SUAVE's more exotic propuls
 a text editor or IDE.
 
 
- Run the program (cd to the folder, then type python tut_lithium_air_jet_sizing.py)
+ Run the program (cd to the folder, then type python tut_lithium_air_jet_sizing.py). 
 
- Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries
+ Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries.
+
+![li air mass](../images/li_air_mass.png)
 
 ##Different Propulsion System Assumptions
-Go to following line (search battery.specific_energy), and change the battery specific energy from 2000 W-h/kg to 1500 W-h/kg
+Go to the following line (search battery.specific_energy), and change the battery specific energy from 2000 W-h/kg to 1500 W-h/kg
 <pre><code class="python">
     battery = configs.base.energy_network['battery']
     battery.specific_energy=2000*Units.Wh/Units.kg
@@ -44,7 +46,7 @@ Now try changing the motor efficiency from .95 to .9 and running the script (lin
     net.motor_efficiency  =.95
 </code></pre>
 
-Note the sensitivity of vehicle energy requirements to these various propulsion system assumptions.
+Note the sensitivity of vehicle energy and mass requirements to these various propulsion system assumptions.
 
 Now try changing the cruise range of the aircraft (line 868, segment.distance).
 
