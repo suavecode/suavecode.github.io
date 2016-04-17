@@ -20,13 +20,16 @@ permalink: /guides/payload_range_diagram.html
 * **reserves**: This will be considered as a fixed fuel reserve for all the diagram points.
  
 5) The tutorial presents the following definition (line 36):
+
 ~~~
 # run payload diagram	
 cruise_segment_tag = "Cruise"
 reserves = 1750.
 payload_range_results = payload_range(vehicle,mission,cruise_segment_tag,reserves)
 ~~~
+
 6) First, let's just run it as it is for now. Run the script in either the IDE or in a terminal: 
+
 ~~~
 $python test_payload_range.py 
 ~~~
@@ -34,6 +37,7 @@ $python test_payload_range.py
 7) After all the calculation the payload diagram will be ploted, and the data will be stored in a file named 'PayloadRangeDiagram.dat', in the folder where you run the script.
 
 8) You can try to modify vehicle and/or mission parameters, e see how the payload range diagram is affected. For now, let's add some drag counts to the airplane:
+
 * Locate and open the script test_mission_Embraer_E190_constThr.py, in the tutorial folder (this is the script that contains the vehicle and mission setups)
 * Locate ``` base_analysis() ``` and then the Aerodynamics Analysis text block (line 144) 
 * Add 50 drag counts to the vehicle (line 132): <br>
