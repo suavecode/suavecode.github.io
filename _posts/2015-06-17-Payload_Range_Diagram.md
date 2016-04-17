@@ -32,7 +32,7 @@ $python test_payload_range.py
 
 6) After all the calculation the payload diagram will be ploted, and the data will be stored in a file named 'PayloadRangeDiagram.dat', in the folder where you run the script.
 
-![Reference Payload Range Diagram] (/images/PayloadRange_ref.pdf)
+![Reference Payload Range Diagram] (/images/PayloadRange_ref.png)
 
 7) You can try to modify vehicle and/or mission parameters, e see how the payload range diagram is affected. For now, let's add some drag counts to the airplane:
 * Locate ``` base_analysis() ``` and then the Aerodynamics Analysis text block (line 129) 
@@ -40,7 +40,7 @@ $python test_payload_range.py
 `aerodynamics.settings.drag_coefficient_increment = 0.0050 `
 * Rerun the script as before and notice the changes in the results.
 
-![Modified Payload Range Diagram] (/images/PayloadRange_+50dc.pdf)
+![Modified Payload Range Diagram] (/images/PayloadRange_+50dc.png)
 
 8) Similarly the mission parameters can be changed. Again, let's the user decide what changes they want to explore.
 
