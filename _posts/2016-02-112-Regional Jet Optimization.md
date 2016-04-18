@@ -3,6 +3,7 @@ layout: post
 title: Regional Jet Optimization
 date: 2015-06-14 23:22:25
 categories: blog
+description: Learn the optimization framework within SUAVE. 
 
 permalink: /guides/regional_jet_optimization.html
 ---
@@ -13,9 +14,9 @@ This tutorial assumes familiarity with SUAVE, and that the user has completed th
 Some important files for the optimization problem can be seen below
 
 
-###Important Files :
+### Important Files :
 
-####Optimize.py:
+#### Optimize.py:
 Defines the optimization framework of the problem, wherein one minimizes an assigned objective, subject to certain constraints, by altering some design variables.
 
  In order to ensure that the subfunctions can communicate with eachother, as well as that SUAVE can communicate with the external optimizer, a special data object called the "nexus" is used. The nexus object contains all of the vehicles, missions, as well as results, altering them at each optimizer iteration, depending on the input parameters defined in Optimize.py.
@@ -70,7 +71,7 @@ Note that in this case, only a single constraint is used; Multiple constraints m
 
 
 
-####Procedure.py:
+#### Procedure.py:
 Links everything together, defining the steps you would use to size and analyze the aircraft at each optimizer iteration.
 
 This file contains a number of subfunctions to alter the vehicle and mission. The function setup() instantiates the procedure, defining the functions that are called at each step of the optimizer in their order of execution. 
@@ -86,23 +87,23 @@ This file contains a number of subfunctions to alter the vehicle and mission. Th
 Each step of the procedure takes as the nexus object as an input, and returns the object as an output, ensuring that the data is available for handling.
    
 
-####Vehicles.py:
+#### Vehicles.py:
  Initializes whatever vehicles are used in the optimization problem. This includes two subfunctions: base_setup(), where the vehicle structure is itself defined, including the fuselage, wing, vertical and horizontal tail, as well as the propulsion system.
 
  configs_setup() takes in the vehicle that was defined in base_setup() and defines other configurations (such as takeoff and landing, which include different flap settings). This may be used to define other parameters, such as changing the sweep angle of a variable-sweep-wing at higher Mach Numbers, or the use of afterburners.
 
-####Missions.py:
+#### Missions.py:
  Initializes the missions that are run at each iteration. In this case, only a single mission is run.
 
-####Analyses.py:
+#### Analyses.py:
  Defines the set of features that are used in this particular problem (e.g. weights correlations, aerodynamics correlations, etc.).
 
 
 
-####Plot_Mission.py:
+#### Plot_Mission.py:
 Plots the mission outputs using matplotlib.
 
-###Running the Problem:
+### Running the Problem:
 1. Locate the tutorial script folder "regional_jet_optimization." If necessary cd to this directory.
 2. Open the Optimize.py script in a text editor or IDE
 
@@ -116,7 +117,7 @@ output = problem.objective()
 open up a terminal, and type "python Optimize.py." You should see a set of output plots.
 
 
-###Running a Sweep of the Inputs
+### Running a Sweep of the Inputs
 Now try running a 2D sweep of the problem to observe the shape of the design space: recomment  "output = problem.objective" then uncomment the following.
 
 <pre><code class="python">
@@ -132,7 +133,7 @@ The labeled lines depict the fuel margin (i.e. fraction of the aircraft remainin
 ![2D Sweep_20](/wing_area_v_cruise_altitude_v_fuel_burn.png)
 
 
-###Optimizing:
+### Optimizing:
 
  Now, try running an Optimization; recomment "variable_sweep(problem)", then comment out 
 <pre><code class="python">

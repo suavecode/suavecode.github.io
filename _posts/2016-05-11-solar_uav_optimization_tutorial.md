@@ -3,6 +3,7 @@ layout: post
 title: Solar UAV Optimization
 date: 2015-06-14 23:22:21
 categories: blog
+description: Use SUAVE’s optimization for unconventional configurations.
 
 permalink: /guides/solar_uav_optimization.html
 ---
@@ -15,7 +16,7 @@ Your objective is simple; get an airplane to fly from here to there. In fact you
 
 Next we will go into detail about some of the required files. *Analyses.py* and *Plot_mission.py* are straightforward from prior tutorials. So we will not go into those in detail, except to say that we are using a UAV weight model in *Analyses.py*.
 
-###Optimize.py:
+### Optimize.py:
 
 Let’s pose the optimization problem first and then setup the rest. We start with the *Nexus* first as usual. With this design problem there are things you are uncertain of and want to solve for.
 
@@ -56,7 +57,7 @@ Finally, the objective. It’s nothing of course! As long as the constraints are
     ])
 </code></pre>
 
-###Vehicles.py:
+### Vehicles.py:
 
 Next, you will setup the vehicle. This is very similar to the prior Solar UAV tutorial. So we will gloss over this, the one noticeable difference is that a lower fidelity energy network is used. This means that most components operate with prescribed efficiencies. For example:
 
@@ -72,7 +73,7 @@ Next, you will setup the vehicle. This is very similar to the prior Solar UAV tu
     ])
 </code></pre>
 
-###Missions.py:
+### Missions.py:
 
 Now for the mission setup. Here we assume it will take 1000 km and the plane will cruise off the coast at 1000 feet in altitude. The distance is a bit longer than the straight line distance, but we're not going to fly through populated areas. The heading, or body rotation, must be set to account for the changes in latitude and longitude to accurately calculate the solar radiation. We will cruise at a constant altitude and assume it takes no time to climb and descend compared to the cruise time.
 
@@ -88,7 +89,7 @@ Now for the mission setup. Here we assume it will take 1000 km and the plane wil
     segment.state.conditions.frames.wind.body_rotations[:,2] = 125.* Units.degrees 
 </code></pre>
 
-###Procedure.py:
+### Procedure.py:
 
 Finally we have the procedure setup. In the procedure, we resize the vehicle, calculate weights, finalize the analyses, solve the mission, and post process.
 
@@ -212,7 +213,7 @@ def post_process(nexus):
     return nexus    
 </code></pre>
 
-###Results
+### Results
 Let’s look at the results: 
 
 <pre><code class="python">

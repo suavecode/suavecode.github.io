@@ -15,7 +15,7 @@ layout: awesome
 	
 
 	<section class="content">
-	<p>These tutorials are organized to help teach you about how to use SUAVE to analyze a variety of vehicles. If you are new to SUAVE it is important that you begin the process by going through the Boeing 737-800 tutorial. All other tutorials have assumed you have that basic knowledge.</p>
+	<p>The tutorials below will help you get started with SUAVE.   We recommend starting with the Boeing 737-800 tutorial and then moving to the Transport Optimization or the Turbofan Network tutorial.  These will allow you to explore the capabilities of SAUVE.</p>
 
 	<ul class="posts">
 		{% for post in site.posts %}
@@ -24,6 +24,9 @@ layout: awesome
 			</div>
 			<div class="span-10">
 				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			<div class="span-10">
+				<font size="2"> {{ post.description}}</a>
+				
 			</div>
 		</li>
 		{% endfor %}

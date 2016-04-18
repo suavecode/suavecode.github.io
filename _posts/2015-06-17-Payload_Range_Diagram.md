@@ -3,6 +3,7 @@ layout: post
 title: Payload Range Diagram
 date: 2015-06-17 23:22:21
 categories: blog
+description: Learn how to use SUAVE for creating a payload-range diagram.
 
 permalink: /guides/payload_range_diagram.html
 ---

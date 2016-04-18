@@ -3,6 +3,7 @@ layout: post
 title: Lithium Air Regional Jet Analysis
 date: 2015-06-15 14:25:00
 categories: blog
+description: Incorporate more novel propulsion configurations.
 
 permalink: /guides/lithium_air_regional_jet_analysis.html
 ---
@@ -11,10 +12,10 @@ permalink: /guides/lithium_air_regional_jet_analysis.html
 <script>hljs.initHighlightingOnLoad();</script>
 
 
-##Introduction
+## Introduction
 The purpose of this tutorial is to highlight some of SUAVE's more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system data structures.
 
-##Baseline Case
+## Baseline Case
  Open the file called "tut_lithium_air_jet.py" in 
 a text editor or IDE.
 
@@ -23,7 +24,7 @@ a text editor or IDE.
 
  Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries
 
-##Different Propulsion System Assumptions
+## Different Propulsion System Assumptions
 Go to line 116, and change the battery specific energy from 2000 W-h/kg to 1500 W-h/kg
 <pre><code class="python">
     battery = configs.base.energy_network['battery']
