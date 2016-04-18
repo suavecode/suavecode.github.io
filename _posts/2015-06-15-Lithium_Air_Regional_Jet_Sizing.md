@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lithium Air Regional Jet Analysis
+title: Lithium Air Regional Jet Sizing
 date: 2015-06-15 14:25:00
 categories: blog
 
@@ -15,16 +15,18 @@ permalink: /guides/lithium_air_regional_jet_analysis.html
 The purpose of this tutorial is to highlight some of SUAVE's more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system data structures.
 
 ##Baseline Case
- Open the file called "tut_lithium_air_jet.py" in 
+ Open the file called "tut_lithium_air_jet_sizing.py" in 
 a text editor or IDE.
 
 
- Run the program (cd to the folder, then type python tut_lithium_air_jet.py)
+ Run the program (cd to the folder, then type python tut_lithium_air_jet_sizing.py). 
 
- Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries
+ Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries.
+
+![li air mass](../images/li_air_mass.png)
 
 ##Different Propulsion System Assumptions
-Go to line 116, and change the battery specific energy from 2000 W-h/kg to 1500 W-h/kg
+Go to the following line (search battery.specific_energy), and change the battery specific energy from 2000 W-h/kg to 1500 W-h/kg
 <pre><code class="python">
     battery = configs.base.energy_network['battery']
     battery.specific_energy=2000*Units.Wh/Units.kg
@@ -33,21 +35,9 @@ Go to line 116, and change the battery specific energy from 2000 W-h/kg to 1500 
 
 run the script (python tut_lithium_air_jet.py).
 
-Iterate on the mass, energy, and power required (lines 201-204, lines 111-112 as you run the mission until desired convergence is achieved. Sizing loops have been stripped out of this script, but will be put back in shortly.
 
-<pre><code class="python">
-    vehicle.mass_properties.max_takeoff               = 92110. #use landing mass as 
-    vehicle.mass_properties.operating_empty           = 34551. 
-    vehicle.mass_properties.takeoff                   = 80721. 
-    vehicle.mass_properties.max_zero_fuel             = 92110. #equivalent landing mass
-</code></pre>
 
-<pre><code class="python">
-    Ereq = 251.58 * 10.**9.
-    Preq = 18.67 * 10.**6.
-</code></pre>
-
-Now try changing the motor efficiency from .95 to .9 and running the script (line 416).
+Now try changing the motor efficiency from .95 to .9 and running the script (line 513).
 
 <pre><code class="python">
     net.nacelle_diameter  = ducted_fan.nacelle_diameter
@@ -56,9 +46,9 @@ Now try changing the motor efficiency from .95 to .9 and running the script (lin
     net.motor_efficiency  =.95
 </code></pre>
 
-Note the sensitivity of vehicle energy requirements to these various propulsion system assumptions.
+Note the sensitivity of vehicle energy and mass requirements to these various propulsion system assumptions.
 
-Now try changing the cruise range of the aircraft (line 640, segment.distance)
+Now try changing the cruise range of the aircraft (line 868, segment.distance).
 
  
 <pre><code class="python">
@@ -77,4 +67,4 @@ Now try changing the cruise range of the aircraft (line 640, segment.distance)
 
 </code></pre>
 
-Iterate on the vehicle mass, energy, and power until desired convergence is achieved.
+Try changing other parameters (e.g. specific power, cruise altitude), and observe their effects on the overall design.
