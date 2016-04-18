@@ -17,15 +17,8 @@ permalink: /guides/lithium_air_regional_jet_analysis.html
 ## Introduction
 The purpose of this tutorial is to highlight some of SUAVE's more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system data structures.
 
-<<<<<<< HEAD:_posts/2015-06-15-Lithium_Air_Regional_Jet_Analysis.md
 ## Baseline Case
- Open the file called "tut_lithium_air_jet.py" in 
-=======
-##Baseline Case
  Open the file called "tut_lithium_air_jet_sizing.py" in a text editor or IDE.
-
-
- Run the program (cd to the folder, then type python tut_lithium_air_jet_sizing.py). 
 
  Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries.
 
@@ -37,9 +30,7 @@ The purpose of this tutorial is to highlight some of SUAVE's more exotic propuls
     battery.specific_power =.67*Units.kW/Units.kg
 </code></pre>
 
-run the script (python tut_lithium_air_jet.py).
-
-
+Run the script (python tut_lithium_air_jet.py).
 
 Now try changing the motor efficiency from .95 to .9 and running the script (line 513).
 

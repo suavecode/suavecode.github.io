@@ -19,7 +19,7 @@ Some important files for the optimization problem can be seen below
 #### Optimize.py:
 Defines the optimization framework of the problem, wherein one minimizes an assigned objective, subject to certain constraints, by altering some design variables.
 
- In order to ensure that the subfunctions can communicate with eachother, as well as that SUAVE can communicate with the external optimizer, a special data object called the "nexus" is used. The nexus object contains all of the vehicles, missions, as well as results, altering them at each optimizer iteration, depending on the input parameters defined in Optimize.py.
+ In order to ensure that the subfunctions can communicate with eachother, as well as that SUAVE can communicate with the external optimizer, a special data object called the "Nexus" is used. The nexus object contains all of the vehicles, missions, as well as results, altering them at each optimizer iteration, depending on the input parameters defined in Optimize.py.
 
 In this particular setup, there are two design variables: wing area and cruise altitude. The objective is fuel burn, while there is only one constraint: fuel margin.. The default inputs are defined in the following lines.
 
@@ -52,7 +52,7 @@ Note that in this case, only a single constraint is used; Multiple constraints m
 
 
 
- This file also defines the "aliasing," i.e. how the design variables, constraints, and objective "map" to the variables used in Procedure.py (which is runs the problem). The aliases for this problem are defined in the lines below.  Note that the first entry refers to the tag defined in either problem.inputs, problem.objective, or problem.constraints.
+This file also defines the "aliasing," i.e. how the design variables, constraints, and objective "map" to the variables used in Procedure.py (which is runs the problem). The aliases for this problem are defined in the lines below.  Note that the first entry refers to the tag defined in either problem.inputs, problem.objective, or problem.constraints.
 
 <pre><code class="python">
     problem.aliases = [
@@ -65,18 +65,14 @@ Note that in this case, only a single constraint is used; Multiple constraints m
     
 </code></pre>
 
- Note that, sometimes, a single input can map to multiple outputs, such as the "wing_area" design variable; in this case, use a list for the outputs, as seen above.
-
-
-
-
+Note that, sometimes, a single input can map to multiple outputs, such as the "wing_area" design variable; in this case, use a list for the outputs, as seen above. The use of a wild card "*", can also allow values to map to multiple outputs. Values to be outputted cannot contain wild cards as that would be ambiguous to an optimizer.
 
 #### Procedure.py:
 Links everything together, defining the steps you would use to size and analyze the aircraft at each optimizer iteration.
 
 This file contains a number of subfunctions to alter the vehicle and mission. The function setup() instantiates the procedure, defining the functions that are called at each step of the optimizer in their order of execution. 
 
-1. simple_sizing defines the geometry of the aircraft based on the input parameters (in this case, wing area and cruise altitude). 
+1. simple_sizing() defines the geometry of the aircraft based on the input parameters (in this case, wing area and cruise altitude). 
 
 2. weights() determines the weight breakdown of the aircraft
 
@@ -90,7 +86,7 @@ Each step of the procedure takes as the nexus object as an input, and returns th
 #### Vehicles.py:
  Initializes whatever vehicles are used in the optimization problem. This includes two subfunctions: base_setup(), where the vehicle structure is itself defined, including the fuselage, wing, vertical and horizontal tail, as well as the propulsion system.
 
- configs_setup() takes in the vehicle that was defined in base_setup() and defines other configurations (such as takeoff and landing, which include different flap settings). This may be used to define other parameters, such as changing the sweep angle of a variable-sweep-wing at higher Mach Numbers, or the use of afterburners.
+configs_setup() takes in the vehicle that was defined in base_setup() and defines other configurations (such as takeoff and landing, which include different flap settings). This may be used to define other parameters, such as changing the sweep angle of a variable-sweep-wing at higher Mach Numbers, or the use of afterburners.
 
 #### Missions.py:
  Initializes the missions that are run at each iteration. In this case, only a single mission is run.
@@ -98,15 +94,13 @@ Each step of the procedure takes as the nexus object as an input, and returns th
 #### Analyses.py:
  Defines the set of features that are used in this particular problem (e.g. weights correlations, aerodynamics correlations, etc.).
 
-
-
 #### Plot_Mission.py:
 Plots the mission outputs using matplotlib.
 
 ### Running the Problem:
 1. Locate the tutorial script folder "regional_jet_optimization." If necessary cd to this directory.
-2. Open the Optimize.py script in a text editor or IDE
 
+2. Open the Optimize.py script in a text editor or IDE
 
 3. Run it with the default set of inputs; uncomment out the following line in Optimize.py;
 
@@ -114,11 +108,11 @@ Plots the mission outputs using matplotlib.
 output = problem.objective()
 </code></pre>
 
-open up a terminal, and type "python Optimize.py." You should see a set of output plots.
+Open up a terminal, and type "python Optimize.py." You should see a set of output plots.
 
 
 ### Running a Sweep of the Inputs
-Now try running a 2D sweep of the problem to observe the shape of the design space: recomment  "output = problem.objective" then uncomment the following.
+Now try running a 2D sweep of the problem to observe the shape of the design space: re-comment  "output = problem.objective" then uncomment the following.
 
 <pre><code class="python">
 variable_sweep(problem)

@@ -9,7 +9,7 @@ permalink: /guides/payload_range_diagram.html
 ---
 
 ### Embraer E-190 Payload Range Diagram Tutorial
-1) Locate the tutorial script folder, SUAVE/scripts/tutorial. If necessary cd to this directory.
+1) Locate the tutorial script folder. If necessary cd to this directory.
 
 2) Open the test_payload_range.py script in your favorite editor or IDE.
 

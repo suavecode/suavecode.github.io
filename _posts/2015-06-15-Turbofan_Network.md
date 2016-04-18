@@ -49,7 +49,7 @@ The basic components used to model the turbofan are described below.
 
 #### Ram
 
-The 'Ram' component is used to convert the freestream quantities that are passed into the Turbofan network into stagnation quantities. As the turbofan network as based on a 1D gasdynamic analysis, most of the energy transfer across the different components are modelled as changes in the stagnation quantities. Thus the Ram component acts as a preprocessor converting the input 'Conditions' into quantities required by the network.
+The 'Ram' component is used to convert the freestream quantities that are passed into the Turbofan network into stagnation quantities. As the turbofan network is based on a 1D gasdynamic analysis, most of the energy transfer across the different components are modelled as changes in the stagnation quantities. Thus the Ram component acts as a preprocessor converting the input 'Conditions' into quantities required by the network.
 
 <pre><code class="python"># ------------------------------------------------------------------
 #   Component 1 - Ram

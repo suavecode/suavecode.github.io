@@ -12,7 +12,7 @@ permalink: /guides/solar_uav_optimization.html
 
 The purpose of this tutorial is to illustrate a different type of problem. We assume you have gone through the first optimization tutorial: Regional Jet Optimization. This tutorial will illustrate a little more complex setup that modifies a mission parameter.
 
-Your objective is simple; get an airplane to fly from here to there. In fact you can pose that as an optimization problem, with some constraints that govern how it works. There is no requirement to minimize this or maximize that. Of course you could try to minimize something, but you just want something that works for now. Later iterations can do fancier things.
+Your objective is simple: get a small UAV to fly from San Francisco to San Diego. In fact you can pose that as an optimization problem, with some constraints that govern how it works. There is no requirement to minimize this or maximize that. Of course you could try to minimize something, but you just want something that works for now. Later iterations can do fancier things.
 
 Next we will go into detail about some of the required files. *Analyses.py* and *Plot_mission.py* are straightforward from prior tutorials. So we will not go into those in detail, except to say that we are using a UAV weight model in *Analyses.py*.
 
