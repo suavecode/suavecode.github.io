@@ -249,12 +249,20 @@ Once the network is built, it is essential to size the engine with a set of sizi
 
 <pre><code class="python">#bypass ratio  closer to fan
 
-numerics = Data()
+#design sizing conditions
+altitude      = 35000.0*Units.ft
+mach_number   = 0.78 
+isa_deviation = 0.
 
-eta=1.0
+# add to network
+turbofan.thrust = thrust
 
-#size the turbofan
-turbofan_sizing(turbofan,0.8,10000.0)
+#size the turbofan (for thrust)
+turbofan_sizing(turbofan,mach_number,altitude)   
+
+#compute the turbofan diameter and engine length
+#note that the second input is to maintain a common interface with other sizing methods
+compute_turbofan_geometry(turbofan,None)
 </code></pre>
 
 
