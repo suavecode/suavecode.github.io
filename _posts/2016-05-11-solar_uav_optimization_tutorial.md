@@ -9,11 +9,7 @@ permalink: /guides/solar_uav_optimization.html
 
 ## Solar UAV Optimization Tutorial
 
-The purpose of this tutorial is to illustrate a different type of problem. We assume you have gone through the first optimization tutorial: Regional Jet Optimization.
-
-For this case imagine that you are a UAV enthusiast that wants to make a long range UAV for fun. You want to make a UAV that could fly almost all the way across California, San Francisco to San Diego. Why? Because it's for fun, so no payload required or anything fancy.
-
-To keep the battery weight down, you want to slap some solar panels on the wings to see if it helps performance. You also don’t know how big the wings should be, how fast it should fly, or how big the motor should be. But you know you want a big UAV, something that can be seen from the ground when it's at altitude. So you are going to make a 15 lb UAV, or 6.75 kgs.
+The purpose of this tutorial is to illustrate a different type of problem. We assume you have gone through the first optimization tutorial: Regional Jet Optimization. This tutorial 
 
 Your objective is simple; get an airplane to fly from here to there. In fact you can pose that as an optimization problem, with some constraints that govern how it works. There is no requirement to minimize this or maximize that. Of course you could try to minimize something, but you just want something that works for now. Later iterations can do fancier things.
 
