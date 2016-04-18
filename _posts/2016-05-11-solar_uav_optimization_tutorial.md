@@ -9,7 +9,7 @@ permalink: /guides/solar_uav_optimization.html
 
 ## Solar UAV Optimization Tutorial
 
-The purpose of this tutorial is to illustrate a different type of problem. We assume you have gone through the first optimization tutorial: Regional Jet Optimization. This tutorial 
+The purpose of this tutorial is to illustrate a different type of problem. We assume you have gone through the first optimization tutorial: Regional Jet Optimization. This tutorial will illustrate a little more complex setup that modifies a mission parameter.
 
 Your objective is simple; get an airplane to fly from here to there. In fact you can pose that as an optimization problem, with some constraints that govern how it works. There is no requirement to minimize this or maximize that. Of course you could try to minimize something, but you just want something that works for now. Later iterations can do fancier things.
 
