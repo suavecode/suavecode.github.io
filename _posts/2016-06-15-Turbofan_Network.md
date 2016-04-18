@@ -26,7 +26,7 @@ First the turbofan energy energy network is instantiated. The parameters associa
 
 #instantiate the gas turbine network
 turbofan = SUAVE.Components.Energy.Networks.Turbofan()
-turbofan.tag = 'turbo_fan'
+turbofan.tag = 'turbofan'
 
 # setup
 turbofan.bypass_ratio      = 5.4
@@ -146,7 +146,7 @@ turbofan.append(compressor)
 
 ####Fan
 
-A fan component is also added to the network. To model turbojets, the fan component and the fan nozzle are not added but all the othee components remain the same.
+A fan component is also added to the network. To model turbojets, the fan component and the fan nozzle are not added but all the other components remain the same.
 
 <pre><code class="python"># ------------------------------------------------------------------
 #  Component 10 - Fan
