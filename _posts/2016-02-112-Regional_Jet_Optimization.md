@@ -3,7 +3,7 @@ layout: post
 title: Regional Jet Optimization
 date: 2015-06-14 23:22:25
 categories: blog
-description: Learn the optimization framework within SUAVE. 
+description: Learn the optimization framework within SUAVE
 
 permalink: /guides/regional_jet_optimization.html
 ---

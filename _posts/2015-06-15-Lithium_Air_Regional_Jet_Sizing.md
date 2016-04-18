@@ -3,7 +3,7 @@ layout: post
 title: Lithium Air Regional Jet Sizing
 date: 2015-06-15 14:25:00
 categories: blog
-description: Incorporate more novel propulsion configurations.
+description: Incorporate more novel propulsion configurations
 
 
 

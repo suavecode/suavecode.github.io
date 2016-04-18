@@ -3,7 +3,7 @@ layout: post
 title: Turbofan Network
 date: 2015-06-15 14:20:03
 categories: blog
-description: Get familiar with SUAVE’s energy and propulsion network.
+description: Get familiar with SUAVE’s energy and propulsion network
 
 permalink: /guides/turbofan_network.html
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Solar UAV Optimization
 date: 2015-06-14 23:22:21
 categories: blog
-description: Use SUAVE’s optimization for unconventional configurations.
+description: Use SUAVE’s optimization for unconventional configurations
 
 permalink: /guides/solar_uav_optimization.html
 ---
