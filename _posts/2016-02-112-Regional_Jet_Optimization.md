@@ -120,11 +120,11 @@ variable_sweep(problem)
 
 Then run the program(python Optimize.py). This could take a few minutes. The results should look like the plot below
 
-![2D Sweep](/wing_area_v_cruise_altitude_v_fuel_burn_5_steps.png)
+![2D Sweep](/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps.png)
 
 The labeled lines depict the fuel margin (i.e. fraction of the aircraft remaining weight that can be loaded with fuel). Positive values indicate a feasible design. Fuel burn is shown in the colored contours. Note that, a smoother plot may be had by changing the number of points in the sweep function, but this will take more time. A carpet plot run using 20 points can be seen below.
 
-![2D Sweep_20](/wing_area_v_cruise_altitude_v_fuel_burn.png)
+![2D Sweep_20](/images/wing_area_v_cruise_altitude_v_fuel_burn.png)
 
 
 ### Optimizing:
@@ -138,7 +138,7 @@ and run python Optimize.py in the terminal.
 
 From the default inputs, the terminal should display an optimum of [ 1.14127857  1.05251198], which corresponds to a wing area of 114.1 m^2, and 10.5 km (which, from the 2D sweep section of this tutorial, is not quite the true minimum, but it is close). A zoomed-in-plot of the objective function shape near the optimum is shown below to illustrate.
 
-![2D Sweep_zoom](/wing_area_v_cruise_altitude_v_fuel_burn_5_steps_zoomed.png)
+![2D Sweep_zoom](/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps_zoomed.png)
 
 
 As can be seen in the plot above, there is a large region of local optima near the "true" optimum
