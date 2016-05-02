@@ -32,7 +32,7 @@ payload_range_results = payload_range(vehicle,mission,cruise_segment_tag,reserve
 6) First, let's just run it as it is for now. Run the script in either the IDE or in a terminal: 
 
 ~~~
-$python test_payload_range.py 
+$python tut_payload_range.py 
 ~~~
 
 7) After all the calculation the payload diagram will be ploted, and the data will be stored in a file named 'PayloadRangeDiagram.dat', in the folder where you run the script.
