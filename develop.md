@@ -190,7 +190,7 @@ These are the areas that are under development, including their status, and what
 | **Environmental Impact** ||
 | Subsonic Noise | DC-10 based correlations implemented. Noise component method implemented for airframe and engine noise based on empirical and semi-empirical data. | 
 | Supersonic Boom | Not started, consider sBOOM, or SUBoom that could be open source.| 
-| Emissions - NOx |No correlations yet.|
+| Emissions - NOx |Correlations implemented|
 | Emissions - CO2 |No correlations yet.|
 | **Stability and Control** ||
 | Static Stability | Correlation methods exist for tube and wing. Derivatives can be pulled from AVL currently. |
@@ -205,7 +205,7 @@ These are the areas that are under development, including their status, and what
 | Geometry Visualization |Not currently in SUAVE.|
 | Fuselage Layout | Basic methods in place for Tube/Wing and BWB. More general methods desired. |
 | **Optimization**| |
-| Optimization Interfaces | Framework defined, initial implementation in place.  Undergoing development. |
+| Optimization Interfaces | Frameworks are complete. |
 | Response Surfaces | Automatic method not yet implemented. |
 | Uncertainty Management | Planning to use Dakota to accomplish this. |
 | **Input/Output** | |

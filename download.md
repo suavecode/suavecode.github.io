@@ -17,14 +17,7 @@ Please take a few seconds to register with us by filling out the form on the pag
 
 ### Stable Release
 Download the latest stable release of SUAVE: <br>
-[SUAVE Version 0.2.0](/register/)
-(will be released June 24)
-
-
-### Beta Releases
-We'll also pre-publish mostly stable beta releases.  You can find them here: <br>
-[Beta Releases](/register/)
-
+[SUAVE Version 0.3.0](/register/)
 
 ### Folder Structure
 
