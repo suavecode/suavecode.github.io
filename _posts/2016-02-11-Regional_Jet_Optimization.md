@@ -8,6 +8,10 @@ description: Learn the optimization framework within SUAVE
 permalink: /guides/regional_jet_optimization.html
 ---
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 ### Regional Jet Optimization Tutorial
 This tutorial assumes familiarity with SUAVE, and that the user has completed the Boeing 737-800 Analysis Tutorial. It teaches the user the structure of running an optimization problem using SUAVE's framework, as well as how to modify it for their own needs 
 
