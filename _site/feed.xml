@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SUAVE</title>
+    <description>A multi-fidelity conceptual design environment. Its purpose is to credibly produce conceptual-level design conclusions for future aircraft incorporating advanced technologies.
+</description>
+    <link>http://suavecode.github.io//</link>
+    <atom:link href="http://suavecode.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 10 Jun 2016 11:51:10 -0700</pubDate>
+    <lastBuildDate>Fri, 10 Jun 2016 11:51:10 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Boeing 737-800</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css&quot; /&gt;
+
+&lt;script src=&quot;//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;h2 id=&quot;boeing-737-800-analysis-tutorial&quot;&gt;Boeing 737-800 Analysis Tutorial&lt;/h2&gt;
+
+&lt;p&gt;The tutorial shows how the user can set up a conventional aircraft configuration and a mission the aircraft is to fly and then simulate the aircraft’s performance over the defined mission. The code is divided into a number of functions that are called from the main function. The descriptions in the functions clearly explain the function’s inputs and outputs and the actions performed on the functions.&lt;/p&gt;
+
+&lt;h3 id=&quot;steps-to-simulate-the-aircrafts-performance-over-a-mission-&quot;&gt;Steps to simulate the aircraft’s performance over a mission :&lt;/h3&gt;
+
+&lt;p&gt;1) Locate the tutorial script folder, /Tutorials, from your project folder as described in the Download guide. If using the command line, cd to this directory.
+2) Open the tut_mission_B737.py script in your favorite editor or IDE.
+2) The script is setup to run the B737 on its design mission. Run it in your IDE. If using the command line use the command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt; $python tut_mission_B737_800.py  &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) A few plots depicting the variation of the different aircraft performance parameters (Cl,Cd,etc) over the course of the mission are shown.&lt;/p&gt;
+
+&lt;h3 id=&quot;important-functions-&quot;&gt;Important Functions :&lt;/h3&gt;
+
+&lt;p&gt;The script is divided into a set of functions that setup different aspects of the modeling process. The important functions are:&lt;/p&gt;
+
+&lt;h4 id=&quot;vehiclesetup&quot;&gt;vehicle_setup()&lt;/h4&gt;
+&lt;p&gt;function is where the aircraft’s geometry is specified.&lt;/p&gt;
+
+&lt;h5 id=&quot;setting-up-a-wing&quot;&gt;Setting up a wing&lt;/h5&gt;
+&lt;p&gt;The code below shows how the main wing of the aircraft is set up. The basic geometric inputs that define the wing are specified. Then the wing is then appended to the vehicle, which is an instance of the aircraft class.&lt;/p&gt;
+
+&lt;p&gt;In SUAVE units are identified through the use of a units package called Pint. Notice, that for the wing sweep that the units are specified in degrees through *Units.deg. To get results into a desired unit use /Units.deg.&lt;/p&gt;
+
+&lt;p&gt;The wing sweep is defined as the sweep of the quarter chord. Additionally, a symmetric wing means that it is symmetric about the root, i.e. there is  right and left side.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;wing = SUAVE.Components.Wings.Main_Wing()
+wing.tag = &#39;main_wing&#39;
+
+wing.aspect_ratio            = 10.18
+wing.sweep                   = 25 * Units.deg
+wing.thickness_to_chord      = 0.1
+wing.taper                   = 0.16
+wing.span_efficiency         = 0.9
+
+wing.spans.projected         = 35.66    
+
+wing.chords.root             = 6.81
+wing.chords.tip              = 1.09
+wing.chords.mean_aerodynamic = 4.235
+
+wing.areas.reference         = 124.862 
+
+wing.twists.root             = 4.0 * Units.degrees
+wing.twists.tip              = -4.0 * Units.degrees
+
+wing.origin                  = [20,0,0]
+wing.aerodynamic_center      = [3,0,0] 
+
+wing.vertical                = False
+wing.symmetric               = True
+wing.high_lift               = True
+
+wing.dynamic_pressure_ratio  = 1.0
+
+vehicle.append_component(wing)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;setting-up-the-fuselage&quot;&gt;Setting up the fuselage&lt;/h5&gt;
+&lt;p&gt;Similar to the wing above, the code below illustrates how a fuselage can be added to the vehicle. Again the user is required to specify the basic fuselage geometric parameters and then add the fuselage object to the vehicle.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;fuselage = SUAVE.Components.Fuselages.Fuselage()
+fuselage.tag = &#39;fuselage&#39;
+
+fuselage.seats_abreast         = 6
+fuselage.seat_pitch            = 1
+
+fuselage.fineness.nose         = 1.6
+fuselage.fineness.tail         = 2.
+
+fuselage.lengths.nose          = 6.4
+fuselage.lengths.tail          = 8.0
+fuselage.lengths.cabin         = 28.85 
+fuselage.lengths.total         = 38.02 
+fuselage.lengths.fore_space    = 6.
+fuselage.lengths.aft_space     = 5.    
+
+fuselage.width                 = 3.74 
+
+fuselage.heights.maximum       = 3.74  
+fuselage.heights.at_quarter_length          = 4. 
+fuselage.heights.at_three_quarters_length   = 4. 
+fuselage.heights.at_wing_root_quarter_chord = 4. 
+
+fuselage.areas.side_projected  = 3.74* 38.02 
+fuselage.areas.wetted          = 446.718 
+fuselage.areas.front_projected = 12.57
+
+fuselage.effective_diameter    = 3.74 
+
+fuselage.differential_pressure = 5.0e4 * Units.pascal # Maximum differential pressure
+
+vehicle.append_component(fuselage)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;setting-up-the-propulsion-system&quot;&gt;Setting up the propulsion system&lt;/h5&gt;
+
+&lt;p&gt;The aircraft uses a turbofan engine. This engine can be constructed piece by piece using the energy network framework. We instantiate the network as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#   Turbofan Network
+# ------------------------------------------------------------------    
+
+#instantiate the gas turbine network
+turbofan = SUAVE.Components.Energy.Networks.Turbofan()
+turbofan.tag = &#39;turbo_fan&#39;
+
+# setup
+turbofan.number_of_engines = 2.0
+turbofan.bypass_ratio      = 5.4
+turbofan.engine_length     = 2.71
+turbofan.nacelle_diameter  = 2.05
+
+# working fluid
+turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next the components of the turbofan are initialized and added to the engine as shown in the energy networks section. The turbofan is composed of an inlet diffuser (nozzle), low and high pressure compressors, a combustor, a fan, a low and high pressure turbine and exit nozzles for the core and the fan.&lt;/p&gt;
+
+&lt;p&gt;Finally the network is added to the aircraft as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;#size the turbofan
+turbofan_sizing(turbofan,mach_number,altitude)   
+
+#computing the engine length and diameter
+compute_engine_geometry(turbofan,None)
+
+print &quot;sls thrust : &quot;,turbofan.sealevel_static_thrust
+print &quot;engine length : &quot;,turbofan.engine_length
+
+# add  gas turbine network gt_engine to the vehicle
+vehicle.append_component(turbofan)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;data-structure-visualization&quot;&gt;Data Structure Visualization&lt;/h4&gt;
+&lt;p&gt;The data structure associated with the Boeing 737-800 can be visualized &lt;a href=&quot;/guides/data_structures/B737.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/guides/data_structures/B737.html&quot;&gt;&lt;img src=&quot;../images/b737_datastructure_preview.png&quot; alt=&quot;Boeing 737 Data Structure&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This visualization shows the hierarchy of data in a SUAVE vehicle. Some of the values are defaulted, for example costs. This is because we are not performing cost analysis on the Boeing 737-800. Additionally, this snapshot of the data structure was taken prior to analysis. Therefore weights have not been calculated and are not part of the data. During the mission analysis component weights will be determined and weights will be populated.&lt;/p&gt;
+
+&lt;h4 id=&quot;configssetup&quot;&gt;configs_setup()&lt;/h4&gt;
+&lt;p&gt;The aircraft geometry created is converted into configurations that can be used to make simple modifications to the geometric parameters while not modifying the aircraft geometry completely. An example of the use of this feature is when high-lift devices need to be deployed during landing and takeoff. Thus a landing and takeoff configuration can be added as shown below and then during say the flaps and slats settings can be set differently for each of the configurations.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#   Cruise Configuration
+# ------------------------------------------------------------------
+
+config = SUAVE.Components.Configs.Config(base_config)
+config.tag = &#39;cruise&#39;
+
+configs.append(config)
+
+# ------------------------------------------------------------------
+#   Takeoff Configuration
+# ------------------------------------------------------------------
+
+config = SUAVE.Components.Configs.Config(base_config)
+config.tag = &#39;takeoff&#39;
+
+config.wings[&#39;main_wing&#39;].flaps.angle = 20. * Units.deg
+config.wings[&#39;main_wing&#39;].slats.angle = 25. * Units.deg
+
+config.V2_VS_ratio = 1.21
+config.maximum_lift_coefficient = 2.
+
+configs.append(config)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;missionsetup&quot;&gt;mission_setup()&lt;/h4&gt;
+&lt;p&gt;To modify the baseline mission that the aircraft flies, go to the mission_setup() function and add or delete segments of the mission&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
+segment.tag = &quot;cruise&quot;
+
+segment.analyses.extend( analyses.cruise )
+
+segment.air_speed  = 230.412 * Units[&#39;m/s&#39;]
+segment.distance   = 4666.08 * Units.km
+mission.append_segment(segment)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;baseanalysis&quot;&gt;base_analysis()&lt;/h4&gt;
+&lt;p&gt;Also to leverage SUAVE’s multifidelity capability and use a different fidelity analysis for any of the disciplines (aerodynamics,propulsion, stability, etc), the base_analysis function can be modified by switching out an analysis module for a different one.&lt;/p&gt;
+
+&lt;h3 id=&quot;other-functions-&quot;&gt;Other Functions :&lt;/h3&gt;
+
+&lt;h4 id=&quot;main&quot;&gt;main()&lt;/h4&gt;
+
+&lt;p&gt;The main function is the driver function for the mission simulation. It calls the various routines in the appropriate order in order to set up the geometry and the mission, evaluate the performance of the aircraft over the mission and return the results.&lt;/p&gt;
+
+&lt;h4 id=&quot;fullsetup&quot;&gt;full_setup()&lt;/h4&gt;
+
+&lt;p&gt;This function (called from the main() function) sets up the aircraft geometry, configs and the missions the aircraft is to be analysed for by calling the vehicle_setup, configs_setup, analyses_setup, mission_setup and missions_setup functions.&lt;/p&gt;
+
+&lt;h4 id=&quot;simplesizing&quot;&gt;simple_sizing()&lt;/h4&gt;
+
+&lt;p&gt;The simple sizing function sizes the aircraft’s geometric components based on the geometric inputs specified by the user in the vehicle_setup() function.&lt;/p&gt;
+
+&lt;h4 id=&quot;baseanalysis-1&quot;&gt;base_analysis()&lt;/h4&gt;
+
+&lt;p&gt;The method takes in the vehicle and assigns different analysis methods (for aero, propulsion, weights, stability) to the analyses object.&lt;/p&gt;
+
+&lt;h4 id=&quot;analysessetup&quot;&gt;analyses_setup()&lt;/h4&gt;
+
+&lt;p&gt;This functions takes in the base analysis and sets up different analysis methods for different configurations.&lt;/p&gt;
+
+&lt;h4 id=&quot;missionssetup&quot;&gt;missions_setup()&lt;/h4&gt;
+
+&lt;p&gt;This method allows the user to set up a variety of missions that need to be evaluated for an aircraft.&lt;/p&gt;
+
+&lt;h4 id=&quot;plotmission&quot;&gt;plot_mission()&lt;/h4&gt;
+
+&lt;p&gt;This is a post processing function that takes in the results data structure and generates the necessary plots.&lt;/p&gt;
+
+&lt;h3 id=&quot;results&quot;&gt;RESULTS&lt;/h3&gt;
+
+&lt;p&gt;The plots shown below should be generated if the mission analysis executes correctly. The results show the aerodynamic, propulsion and mission properties of the B737-800 for the defined mission.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/B737_mission.png&quot; alt=&quot;B737 mission&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/B737_aero.png&quot; alt=&quot;B737 Aerodynamics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/B737_engine.png&quot; alt=&quot;B737 Propulsion&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/B737_drag.png&quot; alt=&quot;B737 Drag&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;modifying-the-aircrafts-geometry-or-mission-&quot;&gt;Modifying the Aircraft’s Geometry or Mission :&lt;/h3&gt;
+
+&lt;p&gt;Suppose we want to simulate a high span variant of the B737-800. The span is increased to 40.0 m. We assume the wing chords, sweep, taper ratio, thickness to chord ratio remain the same. Thus changing the span only changes the aspect ratio and the wing area.&lt;/p&gt;
+
+&lt;p&gt;Now we try to fly the aircraft at a lower cruise speed  of 200m/s at a cruise altitude of 25000 ft&lt;/p&gt;
+
+&lt;p&gt;1) To update the geometry, scroll to the vehicle_setup() function&lt;/p&gt;
+
+&lt;p&gt;2) Modify the parameters of the main wing&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;wing.aspect_ratio            = 10.12      
+wing.spans.projected         = 40.0    
+wing.areas.reference         = 158.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You may also need to update the reference area for the aircraft.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;vehicle.reference_area         =     158.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) Update the mission parameters by moving to the mission_setup() function&lt;/p&gt;
+
+&lt;p&gt;4) First update the end altitude of the final climb segment. Although the original script has the altitude stated in m, courtesy of the Units package it is easy to modify the altitude to 25,000ft without worrying about the units conversion as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
+segment.tag = &quot;climb_3&quot;
+
+segment.analyses.extend( analyses.cruise )
+
+segment.altitude_end = 25000 * Units.ft  
+segment.air_speed    = 226.0  * Units[&#39;m/s&#39;]
+segment.climb_rate   = 3.0    * Units[&#39;m/s&#39;]
+
+mission.append_segment(segment)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5) Next update the cruise segment velocity to  the new speed value&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
+segment.tag = &quot;cruise&quot;
+
+segment.analyses.extend( analyses.cruise )
+
+segment.air_speed  = 200.0 * Units[&#39;m/s&#39;]
+segment.distance   = 4666.08 * Units.km 
+mission.append_segment(segment)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6) Now go back and run the mission for the updated geometry and mission using the steps specified in ‘Steps to run the aircraft on a mission’&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 14 Feb 2016 05:25:00 -0800</pubDate>
+        <link>http://suavecode.github.io//guides/boeing_737-800.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/boeing_737-800.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Concorde</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css&quot; /&gt;
+
+&lt;script src=&quot;//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;h2 id=&quot;concorde-tutorial&quot;&gt;Concorde Tutorial&lt;/h2&gt;
+
+&lt;p&gt;This tutorial gives an overview of changes made to the setup to evaluate a supersonic mission.&lt;/p&gt;
+
+&lt;h3 id=&quot;aerodynamics-module&quot;&gt;Aerodynamics Module:&lt;/h3&gt;
+
+&lt;p&gt;To allow aerodynamic calculations in supersonic flight, we use the zero fidelity supersonic module. This is quite easy to swap with the subsonic zero fidelity model. This model and the zero fidelity subsonic module are in the same directory, so they can be switched by changing a single line in the analysis section:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+aerodynamics = SUAVE.Analyses.Aerodynamics.Supersonic_Zero()
+&lt;/code&gt;
+The supersonic aerodynamics module can still handle the subsonic portions of the flight.&lt;/p&gt;
+
+&lt;h3 id=&quot;wing-additions&quot;&gt;Wing Additions:&lt;/h3&gt;
+
+&lt;p&gt;Some of the calculations are changed to account for different properties that are not automatically captured in the model.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vortex lift is set to true. This causes the vortex lift module to add a Cl increment to the aircraft.&lt;/li&gt;
+  &lt;li&gt;High Mach is set to true. This changes the way that high subsonic compressibility drag is calculated and brings it more in line with Concorde behavior.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;
+    wing.vortex_lift             = True
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+    wing.high_mach               = True
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note also that Concorde does not have a horizontal tail, so this is not included in the vehicle setup.&lt;/p&gt;
+
+&lt;h3 id=&quot;turbojet-module&quot;&gt;Turbojet Module:&lt;/h3&gt;
+
+&lt;p&gt;Since Concorde has a diverging nozzle that allows for supersonic outflow, a modified turbojet is used that can account for this. This turbojet is again switched out with a single line.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+nozzle = SUAVE.Components.Energy.Converters.Supersonic_Nozzle()
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;instead of&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()  
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mission-segments&quot;&gt;Mission Segments:&lt;/h3&gt;
+
+&lt;p&gt;The mission typically flown by Concorde calls for mission segments that are not utilized in the Boeing 737 case. These are Mach number dependent, and require different inputs from the segments previously given. 
+The new mission segments are linear Mach constant rate (climb and descent). Both require a starting and ending Mach number, which will vary linearly in time over the descent. For example check the third climb segment:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;segment = Segments.Climb.Linear_Mach_Constant_Rate(base_segment)
+segment.tag = &quot;climb_3&quot;
+
+segment.analyses.extend( analyses.cruise )
+
+segment.altitude_end = 7.60   * Units.km
+segment.mach_start   = 0.64
+segment.mach_end     = 1.0
+segment.climb_rate   = 5.05  * Units[&#39;m/s&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;takeoff-and-landing-configuration&quot;&gt;Takeoff and Landing Configuration&lt;/h3&gt;
+
+&lt;p&gt;Since Concorde does not have flaps or slats, the takeoff and landing configurations are set to 0 for both. In this case, we are essentially flying the cruise configuration. Since the first and final segments are takeoff and landing segments, these configurations are left in the model for clarity, even though they do not change the analysis.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Jul 2015 07:25:00 -0700</pubDate>
+        <link>http://suavecode.github.io//guides/concorde.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/concorde.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Solar UAV</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css&quot; /&gt;
+
+&lt;script src=&quot;//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;The purpose of this tutorial is to educate users on how to setup a preconfigured solar energy network to work with a high altitude solar UAV. In this tutorial it is assumed that the user has some familiarity with SUAVE having completed the fundamental tutorial for the Boeing 737-800.  You will learn about setting up the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Solar missions,&lt;/li&gt;
+  &lt;li&gt;Human powered/solar weight estimation,&lt;/li&gt;
+  &lt;li&gt;Boundary layer transition&lt;/li&gt;
+  &lt;li&gt;Solar panels,&lt;/li&gt;
+  &lt;li&gt;Batteries,&lt;/li&gt;
+  &lt;li&gt;Electric motors,&lt;/li&gt;
+  &lt;li&gt;Propellers,&lt;/li&gt;
+  &lt;li&gt;Electric network integration in a solar UAV&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Because of the flexible nature of SUAVE, the approach shown is just one way to setup the UAV for analysis. By experimenting and eventually developing your own code you will be able to do far more than what is shown in this tutorial. The original script can be found in /scripts/tutorials/tut_solar_uav.py.&lt;/p&gt;
+
+&lt;h2 id=&quot;vehicle-and-mission&quot;&gt;Vehicle and Mission&lt;/h2&gt;
+
+&lt;p&gt;The vehicle is similar to the Qinetiq Zephyr but far larger at 40 meters in wing span and weighs in at 200 kg. However, it does carry double the payload of the Zephyr at 5 kg and accounts for constant payload power usage. The battery energy density is set to an optimistic estimate of 450 Watt-hours per kg. Additionally, 90 percent of the wings are covered with solar panels that have a 25 percent efficiency.&lt;/p&gt;
+
+&lt;p&gt;This mission exercises the methods developed for solar radiation estimation, propeller and motor integration, as well as the human powered aircraft weight estimation. The mission setup is a constant altitude cruise at 15 km at Mach 0.12 for about 24 hours. The location is over the California Bay Area during the summer solstice.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;This tutorial highlights the differences between setting up a typical aircraft like a Boeing 737 and a solar UAV.&lt;/p&gt;
+
+&lt;h3 id=&quot;mission-setup&quot;&gt;Mission Setup&lt;/h3&gt;
+
+&lt;p&gt;For a solar UAV, the starting location as well as the day and time are critical. So the first segment must be modified to include this information. It is important to note that the start times provided are in “Zulu” time or Greenwich Mean Time. This is typical for aircraft navigation to prevent time zone errors and ambiguity.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;segment.state.numerics.number_control_points = 64
+segment.start_time                           = time.strptime(&quot;Tue, Jun 21 11:30:00  2015&quot;, &quot;%a, %b %d %H:%M:%S %Y&quot;,)
+segment.altitude                             = 15.0  * Units.km 
+segment.mach                                 = 0.12
+segment.distance                             = 3050.0 * Units.km
+segment.battery_energy                       = vehicle.propulsors.network.battery.max_energy*0.2 #Set the battery charge to start
+segment.latitude                             = 37.4300
+segment.longitude                            = -122.1700
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Additionally, this mission is highly simplified. It consists of only one mission segment. To provide ample resolution the number of control points have been increased to 64.&lt;/p&gt;
+
+&lt;h3 id=&quot;structural-weight-sizing&quot;&gt;Structural Weight Sizing&lt;/h3&gt;
+
+&lt;p&gt;The vehicle sizing of the human powered aircraft or solar UAV requires the dimensions of the vehicle like in other weight estimation methods. However, it also requires information about the number of wing ribs and the number of end ribs. The end ribs are relevant for wing designs where the sections can come apart for transportation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;wing.number_ribs             = 26.
+wing.number_end_ribs         = 2.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;wing-boundary-layer-transition&quot;&gt;Wing Boundary Layer Transition&lt;/h3&gt;
+
+&lt;p&gt;The transition location of the boundary layer can have a great impact on the drag of the wing. This is especially important in properly designed low Reynolds number flows when laminar flow can be extended for larger percentages of the surface. The code snippet below is how surfaces have transition points set. These are estimates provided from the designer based on experience.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;wing.transition_x_upper      = 0.6
+wing.transition_x_lower      = 1.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;solar-panels&quot;&gt;Solar Panels&lt;/h3&gt;
+
+&lt;p&gt;The solar panel model is quite simple and only requires a capture area, an efficiency, and mass. In this case we assume that 90% of the wing area is covered in solar panels.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;panel.area                 = vehicle.reference_area * 0.9
+panel.efficiency           = 0.25
+panel.mass_properties.mass = panel.area*(0.60 * Units.kg)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;batteries&quot;&gt;Batteries&lt;/h3&gt;
+
+&lt;p&gt;The batteries are set up with knowledge of the mass of the battery and the specific energy. In this case a futuristic specific energy of 450 Watt-hr/kg is set for lithium ion type batteries. The resistance of the batteries is another important input to determine charging and discharging losses.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;bat = SUAVE.Components.Energy.Storages.Batteries.Constant_Mass.Lithium_Ion()
+bat.mass_properties.mass = 55.0 * Units.kg
+bat.specific_energy      = 450.*Units.Wh/Units.kg
+bat.resistance           = 0.05
+initialize_from_mass(bat,bat.mass_properties.mass)
+net.battery              = bat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;propeller&quot;&gt;Propeller&lt;/h3&gt;
+
+&lt;p&gt;To setup the propeller we will actually design an optimized propeller. This is done through the methods provided by Adkins and Liebeck. The attributes of the propeller design are then seeded to the motor and network to accelerate convergence of the propeller and motor models.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;prop_attributes = Data()
+prop_attributes.number_blades       = 2.0
+prop_attributes.freestream_velocity = 40.0 # freestream m/s
+prop_attributes.angular_velocity    = 150. * Units[&#39;rpm&#39;]
+prop_attributes.tip_radius          = 4.25
+prop_attributes.hub_radius          = 0.05
+prop_attributes.design_Cl           = 0.7
+prop_attributes.design_altitude     = 14.0 * Units.km
+prop_attributes.design_thrust       = 0.0
+prop_attributes.design_power        = 3500.0
+prop_attributes                     = propeller_design(prop_attributes)
+
+prop = SUAVE.Components.Energy.Converters.Propeller()
+prop.prop_attributes = prop_attributes
+net.propeller        = prop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;motor&quot;&gt;Motor&lt;/h3&gt;
+
+&lt;p&gt;This motor model relies on data that is generally available from motor manufacturers. This includes the resistance, no load current, and the speed constant. Additionally, any gearbox is specified here and basic information about the propeller is entered here to help inform the solver when converging the motor and propeller analyses.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;motor = SUAVE.Components.Energy.Converters.Motor()
+motor.resistance           = 0.008
+motor.no_load_current      = 4.5
+motor.speed_constant       = 120. * Units[&#39;rpm&#39;] # RPM/volt converted to (rad/s)/volt      
+motor.propeller_radius     = prop.prop_attributes.tip_radius
+motor.propeller_Cp         = prop.prop_attributes.Cp
+motor.gear_ratio           = 12. # Gear ratio
+motor.gearbox_efficiency   = .98 # Gear box efficiency
+motor.expected_current     = 160. # Expected current
+motor.mass_properties.mass = 2.0
+net.motor                  = motor   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;running&quot;&gt;Running&lt;/h2&gt;
+
+&lt;p&gt;As you should be familiar with by now, running this script is just like any other.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;python tut_solar_uav.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;If all went well the script ran and it provided you with more plots than you ever wanted. Here are some of the plots that were generated when we ran it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/solar_flux.png&quot; alt=&quot;solar_flux&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/battery_charging.png&quot; alt=&quot;battery charging&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/battery_energy.png&quot; alt=&quot;battery energy&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 18 Jun 2015 16:22:20 -0700</pubDate>
+        <link>http://suavecode.github.io//guides/solar_uav.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/solar_uav.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Payload Range Diagram</title>
+        <description>&lt;h3 id=&quot;embraer-e-190-payload-range-diagram-tutorial&quot;&gt;Embraer E-190 Payload Range Diagram Tutorial&lt;/h3&gt;
+&lt;p&gt;1) Locate the tutorial script folder. If necessary cd to this directory.&lt;/p&gt;
+
+&lt;p&gt;2) Open the test_payload_range.py script in your favorite editor or IDE.&lt;/p&gt;
+
+&lt;p&gt;3) Similar to the B737-800 Tutorial, the setup is divided into steps, but in this case the setup is imported from other script (test_mission_Embraer_E190_constThr).&lt;/p&gt;
+
+&lt;p&gt;4) For the Payload Range Diagram, besides the vehicle and mission, the user must provide the following inputs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;cruise_segment_tag&lt;/strong&gt;: You must inform the tag of the segment that will have the length modified in order to comply with required fuel burn for each one of the payload range diagram points.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;reserves&lt;/strong&gt;: This will be considered as a fixed fuel reserve for all the diagram points.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5) The tutorial presents the following definition (line 36):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# run payload diagram	
+cruise_segment_tag = &quot;Cruise&quot;
+reserves = 1750.
+payload_range_results = payload_range(vehicle,mission,cruise_segment_tag,reserves)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;6) First, let’s just run it as it is for now. Run the script in either the IDE or in a terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$python tut_payload_range.py 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;7) After all the calculation the payload diagram will be ploted, and the data will be stored in a file named ‘PayloadRangeDiagram.dat’, in the folder where you run the script.&lt;/p&gt;
+
+&lt;p&gt;8) You can try to modify vehicle and/or mission parameters, e see how the payload range diagram is affected. For now, let’s add some drag counts to the airplane:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Locate and open the script test_mission_Embraer_E190_constThr.py, in the tutorial folder (this is the script that contains the vehicle and mission setups)&lt;/li&gt;
+  &lt;li&gt;Locate &lt;code&gt;base_analysis()&lt;/code&gt; and then the Aerodynamics Analysis text block (line 144)&lt;/li&gt;
+  &lt;li&gt;Add 50 drag counts to the vehicle (line 132): &lt;br /&gt;
+&lt;code&gt;aerodynamics.settings.drag_coefficient_increment = 0.0050 &lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Rerun the script as before and notice the changes in the results.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;9) Similarly the mission parameters can be changed. Again, let’s the user decide what changes they want to explore.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 17 Jun 2015 16:22:21 -0700</pubDate>
+        <link>http://suavecode.github.io//guides/payload_range_diagram.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/payload_range_diagram.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Lithium Air Regional Jet Sizing</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css&quot; /&gt;
+
+&lt;script src=&quot;//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The purpose of this tutorial is to highlight some of SUAVE’s more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE’s propulsion system data structures.&lt;/p&gt;
+
+&lt;h2 id=&quot;baseline-case&quot;&gt;Baseline Case&lt;/h2&gt;
+&lt;p&gt;Open the file called “tut_lithium_air_jet_sizing.py” in a text editor or IDE.&lt;/p&gt;
+
+&lt;p&gt;Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/li_air_mass.png&quot; alt=&quot;li air mass&quot; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    battery = configs.base.energy_network[&#39;battery&#39;]
+    battery.specific_energy=2000*Units.Wh/Units.kg
+    battery.specific_power =.67*Units.kW/Units.kg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Run the script (python tut_lithium_air_jet.py).&lt;/p&gt;
+
+&lt;p&gt;Now try changing the motor efficiency from .95 to .9 and running the script (line 513).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    net.nacelle_diameter  = ducted_fan.nacelle_diameter
+    net.engine_length     = ducted_fan.engine_length    
+    net.number_of_engines = ducted_fan.number_of_engines
+    net.motor_efficiency  =.95
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note the sensitivity of vehicle energy and mass requirements to these various propulsion system assumptions.&lt;/p&gt;
+
+&lt;p&gt;Now try changing the cruise range of the aircraft (line 868, segment.distance).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    segment = Segments.Cruise.Constant_Speed_Constant_Altitude()
+    segment.tag = &quot;cruise&quot;
+
+    # connect vehicle configuration
+    segment.analyses.extend( analyses.cruise )
+
+    # segment attributes
+    segment.atmosphere = atmosphere
+    segment.planet     = planet
+
+    segment.air_speed  = 230.
+    segment.distance   = 1947. * Units.nmi
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Try changing other parameters (e.g. specific power, cruise altitude), and observe their effects on the overall design.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Jun 2015 07:25:00 -0700</pubDate>
+        <link>http://suavecode.github.io//guides/lithium_air_regional_jet_analysis.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/lithium_air_regional_jet_analysis.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Turbofan Network</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css&quot; /&gt;
+
+&lt;script src=&quot;//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;h2 id=&quot;turbofan-modeling-tutorial&quot;&gt;Turbofan Modeling Tutorial&lt;/h2&gt;
+
+&lt;p&gt;The tutorial describes how the energy network in SUAVE can be used to build a model of a turbofan engine. Once this is clear to the user, then the understanding the setup of the other gasturbine models, the ducted fan and the turbojet should not be very difficult. The turbofan model is built using the different turbofan components as its building blocks and then linking the inputs and outputs of the different components. The script to follow is the tut_mission_B737.py script that was used in the &lt;a href=&quot;/guides/boeing_737-800.html&quot;&gt;Boeing 737-800 Analysis Tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-the-turbofan-model&quot;&gt;Setting up the Turbofan model&lt;/h3&gt;
+
+&lt;p&gt;First the turbofan energy energy network is instantiated. The parameters associated with the network as a whole are assigned.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#   Turbofan Network
+# ------------------------------------------------------------------    
+
+#instantiate the gas turbine network
+turbofan = SUAVE.Components.Energy.Networks.Turbofan()
+turbofan.tag = &#39;turbofan&#39;
+
+# setup
+turbofan.bypass_ratio      = 5.4
+turbofan.number_of_engines = 2.0
+turbofan.engine_length     = 2.5
+turbofan.nacelle_diameter  = 1.580
+
+# working fluid
+turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then the different components are added&lt;/p&gt;
+
+&lt;h3 id=&quot;components-&quot;&gt;Components :&lt;/h3&gt;
+
+&lt;p&gt;The basic components used to model the turbofan are described below.&lt;/p&gt;
+
+&lt;h4 id=&quot;ram&quot;&gt;Ram&lt;/h4&gt;
+
+&lt;p&gt;The ‘Ram’ component is used to convert the freestream quantities that are passed into the Turbofan network into stagnation quantities. As the turbofan network is based on a 1D gasdynamic analysis, most of the energy transfer across the different components are modelled as changes in the stagnation quantities. Thus the Ram component acts as a preprocessor converting the input ‘Conditions’ into quantities required by the network.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#   Component 1 - Ram
+
+# to convert freestream static to stagnation quantities
+
+# instantiate
+ram = SUAVE.Components.Energy.Converters.Ram()
+ram.tag = &#39;ram&#39;
+
+# add to the network
+turbofan.append(ram)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;nozzle&quot;&gt;Nozzle&lt;/h4&gt;
+
+&lt;p&gt;The ‘Nozzle’ component is used to model the inlet diffuser and the outlet fan and compressor nozzles as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#  Component 2 - Inlet Nozzle
+
+# instantiate
+inlet_nozzle = SUAVE.Components.Energy.Converters.Compression_Nozzle()
+inlet_nozzle.tag = &#39;inlet_nozzle&#39;
+
+# setup
+inlet_nozzle.polytropic_efficiency = 0.98
+inlet_nozzle.pressure_ratio        = 0.98
+
+# add to network
+turbofan.append(inlet_nozzle)
+
+# ------------------------------------------------------------------
+#  Component 8 - Core Nozzle
+
+# instantiate
+nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
+nozzle.tag = &#39;core_nozzle&#39;
+
+# setup
+nozzle.polytropic_efficiency = 0.95
+nozzle.pressure_ratio        = 0.99    
+
+# add to network
+turbofan.append(nozzle)
+
+# ------------------------------------------------------------------
+#  Component 9 - Fan Nozzle
+
+# instantiate
+nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
+nozzle.tag = &#39;fan_nozzle&#39;
+
+# setup
+nozzle.polytropic_efficiency = 0.95
+nozzle.pressure_ratio        = 0.99    
+
+# add to network
+turbofan.append(nozzle)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;compressor&quot;&gt;Compressor&lt;/h4&gt;
+
+&lt;p&gt;Two compressors are used in the turbofan model, a low and a high pressure compressor.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#  Component 3 - Low Pressure Compressor
+
+# instantiate 
+compressor = SUAVE.Components.Energy.Converters.Compressor()    
+compressor.tag = &#39;low_pressure_compressor&#39;
+
+# setup
+compressor.polytropic_efficiency = 0.91
+compressor.pressure_ratio        = 1.14    
+
+# add to network
+turbofan.append(compressor)
+
+# ------------------------------------------------------------------
+#  Component 4 - High Pressure Compressor
+
+# instantiate
+compressor = SUAVE.Components.Energy.Converters.Compressor()    
+compressor.tag = &#39;high_pressure_compressor&#39;
+
+# setup
+compressor.polytropic_efficiency = 0.91
+compressor.pressure_ratio        = 13.415    
+
+# add to network
+turbofan.append(compressor)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;fan&quot;&gt;Fan&lt;/h4&gt;
+
+&lt;p&gt;A fan component is also added to the network. To model turbojets, the fan component and the fan nozzle are not added but all the other components remain the same.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#  Component 10 - Fan
+
+# instantiate
+fan = SUAVE.Components.Energy.Converters.Fan()   
+fan.tag = &#39;fan&#39;
+
+# setup
+fan.polytropic_efficiency = 0.93
+fan.pressure_ratio        = 1.7    
+
+# add to network
+turbofan.append(fan)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;combustor&quot;&gt;Combustor&lt;/h4&gt;
+
+&lt;p&gt;The combustor component is where the the fuel to air ratio is computed and this is used to compute the sfc and the thrust later in the network.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#  Component 7 - Combustor
+
+# instantiate    
+combustor = SUAVE.Components.Energy.Converters.Combustor()   
+combustor.tag = &#39;combustor&#39;
+
+# setup
+combustor.efficiency                = 0.99 
+combustor.alphac                    = 1.0     
+combustor.turbine_inlet_temperature = 1450
+combustor.pressure_ratio            = 0.95
+combustor.fuel_data                 = SUAVE.Attributes.Propellants.Jet_A()    
+
+# add to network
+turbofan.append(combustor)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;turbine&quot;&gt;Turbine&lt;/h4&gt;
+
+&lt;p&gt;The work done by the fan and the compressors is used to compute the turbine work required. This is used to compute the change in the stagnation quantities across the turbine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#  Component 5 - Low Pressure Turbine
+
+# instantiate
+turbine = SUAVE.Components.Energy.Converters.Turbine()   
+turbine.tag=&#39;low_pressure_turbine&#39;
+
+# setup
+turbine.mechanical_efficiency = 0.99
+turbine.polytropic_efficiency = 0.93     
+
+# add to network
+turbofan.append(turbine)
+
+# ------------------------------------------------------------------
+#  Component 6 - High Pressure Turbine
+
+# instantiate
+turbine = SUAVE.Components.Energy.Converters.Turbine()   
+turbine.tag=&#39;high_pressure_turbine&#39;
+
+# setup
+turbine.mechanical_efficiency = 0.99
+turbine.polytropic_efficiency = 0.93     
+
+# add to network
+turbofan.append(turbine)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;thrust&quot;&gt;Thrust&lt;/h4&gt;
+
+&lt;p&gt;The thrust component takes in the initial (inputs of the inlet nozzle) and final (exit of the fan and core exirt nozzles) stagnation quantities of the network and the fuel to air ratio and computes the specific fuel conspumption (sfc) and thrust generated by the network (turbofan engine).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;# ------------------------------------------------------------------
+#  Component 10 - Thrust
+
+# to compute thrust
+
+# instantiate
+thrust = SUAVE.Components.Energy.Processes.Thrust()       
+thrust.tag =&#39;thrust&#39;
+
+# setup
+thrust.total_design =42383.01
+
+# add to network
+turbofan.thrust = thrust   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;sizing-the-turbofan&quot;&gt;Sizing the Turbofan&lt;/h3&gt;
+
+&lt;p&gt;Once the network is built, it is essential to size the engine with a set of sizing conditions. The sizing function ‘turbofan_sizing’ takes in the model of the turbofan and the mach number and the altitude for which the turbofan is sized. The sizing thrust is an engine/network property (defined in the ‘Setting up the Turbofan model’ section above. The function takes these quantities and computes the design mass flow rate through the components. Once sized, the network/engine can be added to the vehicle as shown in the  B737 tutorial.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;#bypass ratio  closer to fan
+
+#design sizing conditions
+altitude      = 35000.0*Units.ft
+mach_number   = 0.78 
+isa_deviation = 0.
+
+# add to network
+turbofan.thrust = thrust
+
+#size the turbofan (for thrust)
+turbofan_sizing(turbofan,mach_number,altitude)   
+
+#compute the turbofan diameter and engine length
+#note that the second input is to maintain a common interface with other sizing methods
+compute_turbofan_geometry(turbofan,None)
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Mon, 15 Jun 2015 07:20:03 -0700</pubDate>
+        <link>http://suavecode.github.io//guides/turbofan_network.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/turbofan_network.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Regional Jet Optimization</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css&quot; /&gt;
+
+&lt;script src=&quot;//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;h3 id=&quot;regional-jet-optimization-tutorial&quot;&gt;Regional Jet Optimization Tutorial&lt;/h3&gt;
+&lt;p&gt;This tutorial assumes familiarity with SUAVE, and that the user has completed the Boeing 737-800 Analysis Tutorial. It teaches the user the structure of running an optimization problem using SUAVE’s framework, as well as how to modify it for their own needs&lt;/p&gt;
+
+&lt;p&gt;Some important files for the optimization problem can be seen below&lt;/p&gt;
+
+&lt;h3 id=&quot;important-files-&quot;&gt;Important Files :&lt;/h3&gt;
+
+&lt;h4 id=&quot;optimizepy&quot;&gt;Optimize.py:&lt;/h4&gt;
+&lt;p&gt;Defines the optimization framework of the problem, wherein one minimizes an assigned objective, subject to certain constraints, by altering some design variables.&lt;/p&gt;
+
+&lt;p&gt;In order to ensure that the subfunctions can communicate with eachother, as well as that SUAVE can communicate with the external optimizer, a special data object called the “Nexus” is used. The nexus object contains all of the vehicles, missions, as well as results, altering them at each optimizer iteration, depending on the input parameters defined in Optimize.py.&lt;/p&gt;
+
+&lt;p&gt;In this particular setup, there are two design variables: wing area and cruise altitude. The objective is fuel burn, while there is only one constraint: fuel margin.. The default inputs are defined in the following lines.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+   # [ tag, initial, (lb,ub), scaling, units]
+   problem.inputs = np.array([
+       [ &#39;wing_area&#39;      ,  95., ( 90., 130.), 100., Units.meter**2],
+       [ &#39;cruise_altitude&#39;,  11., (  9.,  14.),  10., Units.km      ],
+   ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each input parameter takes in 5 values; a tag (an identification to communicate between the optimizer and SUAVE), an initial value, set of bounds, a scale factor (many optimizers tend to be more effective when the input values are of order 1), as well as the units used.&lt;/p&gt;
+
+&lt;p&gt;The objective and constraints are defined in the lines below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+# [ tag, scaling, units ]
+    problem.objective = np.array([
+        [ &#39;fuel_burn&#39;, 10000, Units.kg ]
+    ])
+
+ # [ tag, sense, edge, scaling, units ]
+    problem.constraints = np.array([
+        [ &#39;design_range_fuel_margin&#39; , &#39;&amp;gt;&#39;, 0., 1E-1, Units.less],
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that in this case, only a single constraint is used; Multiple constraints may be used using a list format, similar to the input variables.&lt;/p&gt;
+
+&lt;p&gt;This file also defines the “aliasing,” i.e. how the design variables, constraints, and objective “map” to the variables used in Procedure.py (which is runs the problem). The aliases for this problem are defined in the lines below.  Note that the first entry refers to the tag defined in either problem.inputs, problem.objective, or problem.constraints.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    problem.aliases = [
+        [ &#39;wing_area&#39;                        ,   [&#39;vehicle_configurations.*.wings.main_wing.areas.reference&#39;,
+                                                  &#39;vehicle_configurations.*.reference_area&#39;                    ]],  
+        [ &#39;cruise_altitude&#39;                  ,    &#39;missions.base.segments.climb_5.altitude_end&#39;                 ],
+        [ &#39;fuel_burn&#39;                        ,    &#39;summary.base_mission_fuelburn&#39;                               ],
+        [ &#39;design_range_fuel_margin&#39;         ,    &#39;summary.max_zero_fuel_margin&#39;                                ],
+    ]    
+    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that, sometimes, a single input can map to multiple outputs, such as the “wing_area” design variable; in this case, use a list for the outputs, as seen above. The use of a wild card “*”, can also allow values to map to multiple outputs. Values to be outputted cannot contain wild cards as that would be ambiguous to an optimizer.&lt;/p&gt;
+
+&lt;h4 id=&quot;procedurepy&quot;&gt;Procedure.py:&lt;/h4&gt;
+&lt;p&gt;Links everything together, defining the steps you would use to size and analyze the aircraft at each optimizer iteration.&lt;/p&gt;
+
+&lt;p&gt;This file contains a number of subfunctions to alter the vehicle and mission. The function setup() instantiates the procedure, defining the functions that are called at each step of the optimizer in their order of execution.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;simple_sizing() defines the geometry of the aircraft based on the input parameters (in this case, wing area and cruise altitude).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;weights() determines the weight breakdown of the aircraft&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;mission() decides which missions are run at each step, as well as the design mission of the aircraft&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;post_process() handles the results from the missions, outputting the constraints and objective value&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Each step of the procedure takes as the nexus object as an input, and returns the object as an output, ensuring that the data is available for handling.&lt;/p&gt;
+
+&lt;h4 id=&quot;vehiclespy&quot;&gt;Vehicles.py:&lt;/h4&gt;
+&lt;p&gt;Initializes whatever vehicles are used in the optimization problem. This includes two subfunctions: base_setup(), where the vehicle structure is itself defined, including the fuselage, wing, vertical and horizontal tail, as well as the propulsion system.&lt;/p&gt;
+
+&lt;p&gt;configs_setup() takes in the vehicle that was defined in base_setup() and defines other configurations (such as takeoff and landing, which include different flap settings). This may be used to define other parameters, such as changing the sweep angle of a variable-sweep-wing at higher Mach Numbers, or the use of afterburners.&lt;/p&gt;
+
+&lt;h4 id=&quot;missionspy&quot;&gt;Missions.py:&lt;/h4&gt;
+&lt;p&gt;Initializes the missions that are run at each iteration. In this case, only a single mission is run.&lt;/p&gt;
+
+&lt;h4 id=&quot;analysespy&quot;&gt;Analyses.py:&lt;/h4&gt;
+&lt;p&gt;Defines the set of features that are used in this particular problem (e.g. weights correlations, aerodynamics correlations, etc.).&lt;/p&gt;
+
+&lt;h4 id=&quot;plotmissionpy&quot;&gt;Plot_Mission.py:&lt;/h4&gt;
+&lt;p&gt;Plots the mission outputs using matplotlib.&lt;/p&gt;
+
+&lt;h3 id=&quot;running-the-problem&quot;&gt;Running the Problem:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Locate the tutorial script folder “regional_jet_optimization.” If necessary cd to this directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open the Optimize.py script in a text editor or IDE&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run it with the default set of inputs; uncomment out the following line in Optimize.py;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+output = problem.objective()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open up a terminal, and type “python Optimize.py.” You should see a set of output plots.&lt;/p&gt;
+
+&lt;h3 id=&quot;running-a-sweep-of-the-inputs&quot;&gt;Running a Sweep of the Inputs&lt;/h3&gt;
+&lt;p&gt;Now try running a 2D sweep of the problem to observe the shape of the design space: re-comment  “output = problem.objective” then uncomment the following.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+variable_sweep(problem)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then run the program(python Optimize.py). This could take a few minutes. The results should look like the plot below&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps.png&quot; alt=&quot;2D Sweep&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The labeled lines depict the fuel margin (i.e. fraction of the aircraft remaining weight that can be loaded with fuel). Positive values indicate a feasible design. Fuel burn is shown in the colored contours. Note that, a smoother plot may be had by changing the number of points in the sweep function, but this will take more time. A carpet plot run using 20 points can be seen below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/wing_area_v_cruise_altitude_v_fuel_burn.png&quot; alt=&quot;2D Sweep_20&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;optimizing&quot;&gt;Optimizing:&lt;/h3&gt;
+
+&lt;p&gt;Now, try running an Optimization; recomment “variable_sweep(problem)”, then comment out&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+output = scipy_setup.SciPy_Solve(problem,solver=&#39;SLSQP&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and run python Optimize.py in the terminal.&lt;/p&gt;
+
+&lt;p&gt;From the default inputs, the terminal should display an optimum of [ 1.14127857  1.05251198], which corresponds to a wing area of 114.1 m^2, and 10.5 km (which, from the 2D sweep section of this tutorial, is not quite the true minimum, but it is close). A zoomed-in-plot of the objective function shape near the optimum is shown below to illustrate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps_zoomed.png&quot; alt=&quot;2D Sweep_zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As can be seen in the plot above, there is a large region of local optima near the “true” optimum&lt;/p&gt;
+
+&lt;p&gt;Now, try starting the optimization from a different “initial guess;” one can either modify the input parameters in the initial formulation (the relevant lines are repeated below)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    #   [ tag                            , initial, (lb,ub)             , scaling , units ]
+    problem.inputs = np.array([
+        [ &#39;wing_area&#39;                    ,  95    , (   90. ,   130.   ) ,   100. , Units.meter**2],
+        [ &#39;cruise_altitude&#39;              ,  11    , (   9   ,    14.   ) ,   10.  , Units.km],
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or set up the optimization problem and change the inputs manually by uncommenting the following lines.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    inputs                                   = [1.28, 1.38]
+    scaling                                  = problem.optimization_problem.inputs[:,3] #have to rescale inputs to start problem from here
+    scaled_inputs                            = np.multiply(inputs,scaling)
+    problem.optimization_problem.inputs[:,1] = scaled_inputs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The latter starts the optimization problem above the feasible region (wing area =128 m^2, altitude = 13.8 km), and results in a fuel burn that is 30 kg lower than the result using the initial guess; this illustrates the important of choosing a starting point when running optimization problem. Additionally, this demonstrates SUAVE’s ability to handle even strongly infeasible cases, and that it can converge to a feasible case even when starting from an infeasible set of initial inputs. Plots of the default optimization history for both sets of inputs can be seen below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/optimization_path.png&quot; alt=&quot;Opt History&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point, explore other starting points, or alter the vehicle or mission properties in Vehicles.py or Missions.py. Additionally, feel free to start using this as the basis for creating custom optimization scripts.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Jun 2015 16:22:25 -0700</pubDate>
+        <link>http://suavecode.github.io//guides/regional_jet_optimization.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/regional_jet_optimization.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Solar UAV Optimization</title>
+        <description>&lt;h2 id=&quot;solar-uav-optimization-tutorial&quot;&gt;Solar UAV Optimization Tutorial&lt;/h2&gt;
+
+&lt;p&gt;The purpose of this tutorial is to illustrate a different type of problem. We assume you have gone through the first optimization tutorial: Regional Jet Optimization. This tutorial will illustrate a little more complex setup that modifies a mission parameter.&lt;/p&gt;
+
+&lt;p&gt;Your objective is simple: get a small UAV to fly from San Francisco to San Diego. In fact you can pose that as an optimization problem, with some constraints that govern how it works. There is no requirement to minimize this or maximize that. Of course you could try to minimize something, but you just want something that works for now. Later iterations can do fancier things.&lt;/p&gt;
+
+&lt;p&gt;Next we will go into detail about some of the required files. &lt;em&gt;Analyses.py&lt;/em&gt; and &lt;em&gt;Plot_mission.py&lt;/em&gt; are straightforward from prior tutorials. So we will not go into those in detail, except to say that we are using a UAV weight model in &lt;em&gt;Analyses.py&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;optimizepy&quot;&gt;Optimize.py:&lt;/h3&gt;
+
+&lt;p&gt;Let’s pose the optimization problem first and then setup the rest. We start with the &lt;em&gt;Nexus&lt;/em&gt; first as usual. With this design problem there are things you are uncertain of and want to solve for.&lt;/p&gt;
+
+&lt;p&gt;You’re not sure if you really need any solar panels on the airplane, so to start there will be none. The solar ratio is the ratio of wing area to solar area. A value of 1 would the whole top of the wing covered with solar panels.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+	  # [ tag , initial, [lb,ub], scaling, units ]
+    problem.inputs = np.array([
+        [ &#39;wing_area&#39;       ,   0.5, (  0.1,    1.5 ),    0.5, Units.meter      ],
+        [ &#39;aspect_ratio&#39;    ,  10.0, (  5.0,   20.0 ),   10.0, Units.less       ], 
+        [ &#39;dynamic_pressure&#39;, 125.0, (  1.0, 2000.0 ),  125.0, Units.pascals    ], 
+        [ &#39;solar_ratio&#39;     ,   0.0, (  0.0,    0.97),    1.0, Units.less       ], 
+        [ &#39;kv&#39;              , 800.0, ( 10.0, 1500.0 ),  800.0, Units[&#39;rpm/volt&#39;]], 
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next come the constraints. The first constraint is that the battery energy can never go negative, the math behind this will be elaborated on later. The next constraint is that the plane must have a battery. Finally there are limits to coefficients of lift and throttle settings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+      # [ tag, sense, edge, scaling, units ]
+    problem.constraints = np.array([
+        [ &#39;energy_constraint&#39;, &#39;=&#39;, 0.0, 1.0, Units.less],
+        [ &#39;battery_mass&#39;     , &#39;&amp;gt;&#39;, 0.0, 1.0, Units.kg  ],       
+        [ &#39;CL&#39;               , &#39;&amp;gt;&#39;, 0.0, 1.0, Units.less],
+        [ &#39;Throttle_min&#39;     , &#39;&amp;gt;&#39;, 0.0, 1.0, Units.less],
+        [ &#39;Throttle_max&#39;     , &#39;&amp;gt;&#39;, 0.0, 1.0, Units.less],
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice here that all constraints are greater than zero. This is because SciPy’s SLSQP optimization algorithm assumes this form. To correct for these, the values are adjusted in Procedure.py. Other optimization packages such as PyOpt don’t require this strict form.&lt;/p&gt;
+
+&lt;p&gt;Finally, the objective. It’s nothing of course! As long as the constraints are met, the goal of the design is satisfied.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    # [ tag, scaling, units ]
+    problem.objective = np.array([
+         [ &#39;Nothing&#39;, 1. , Units.kg],
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;vehiclespy&quot;&gt;Vehicles.py:&lt;/h3&gt;
+
+&lt;p&gt;Next, you will setup the vehicle. This is very similar to the prior Solar UAV tutorial. So we will gloss over this, the one noticeable difference is that a lower fidelity energy network is used. This means that most components operate with prescribed efficiencies. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    # Component 4 the Motor
+    motor = SUAVE.Components.Energy.Converters.Motor_Lo_Fid()
+    kv                         = 800. * Units[&#39;rpm/volt&#39;] # RPM/volt is standard
+    motor                      = size_from_kv(motor, kv)    
+    motor.gear_ratio           = 1. # Gear ratio, no gearbox
+    motor.gearbox_efficiency   = 1. # Gear box efficiency, no gearbox
+    motor.motor_efficiency     = 0.825;
+    net.motor                  = motor  
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;missionspy&quot;&gt;Missions.py:&lt;/h3&gt;
+
+&lt;p&gt;Now for the mission setup. Here we assume it will take 1000 km and the plane will cruise off the coast at 1000 feet in altitude. The distance is a bit longer than the straight line distance, but we’re not going to fly through populated areas. The heading, or body rotation, must be set to account for the changes in latitude and longitude to accurately calculate the solar radiation. We will cruise at a constant altitude and assume it takes no time to climb and descend compared to the cruise time.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+    segment.state.numerics.number_control_points = 50
+    segment.dynamic_pressure = 115.0 * Units.pascals
+    segment.start_time       = time.strptime(&quot;Tue, Jun 21  11:00:00  2016&quot;, &quot;%a, %b %d %H:%M:%S %Y&quot;,)
+    segment.altitude         = 1000.0 * Units.feet
+    segment.distance         = 1000.0 * Units.km
+    segment.charge_ratio     = 1.0
+    segment.latitude         = 37.4
+    segment.longitude        = -122.15
+    segment.state.conditions.frames.wind.body_rotations[:,2] = 125.* Units.degrees 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;procedurepy&quot;&gt;Procedure.py:&lt;/h3&gt;
+
+&lt;p&gt;Finally we have the procedure setup. In the procedure, we resize the vehicle, calculate weights, finalize the analyses, solve the mission, and post process.&lt;/p&gt;
+
+&lt;p&gt;Some notes about sizing. Each wing component (main wing, horizontal tail, and vertical tail) needs the surfaces sized based on its area and aspect ratio. Next the solar panels are sized based on the wing area and solar_ratio. Finally the motor is resized based on correlations for the speed constant of the motor.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+def simple_sizing(nexus):
+    
+    # Pull out the vehicle
+    vec = nexus.vehicle_configurations.base
+    
+    # Change the dynamic pressure based on the, add a factor of safety   
+    vec.envelope.maximum_dynamic_pressure = nexus.missions.mission.segments.cruise.dynamic_pressure*1.2
+    
+    # Scale the horizontal and vertical tails based on the main wing area
+    vec.wings.horizontal_stabilizer.areas.reference = 0.15 * vec.reference_area
+    vec.wings.vertical_stabilizer.areas.reference   = 0.08 * vec.reference_area
+
+    # wing spans,areas, and chords
+    for wing in vec.wings:
+        
+        # Unpack
+        AR = wing.aspect_ratio
+        S  = wing.areas.reference
+        
+        # Set the spans
+        wing.spans.projected = np.sqrt(AR*S)
+        
+        # Set all of the areas for the surfaces
+        wing.areas.wetted   = 2.0 * S
+        wing.areas.exposed  = 1.0 * wing.areas.wetted
+        wing.areas.affected = 1.0 * wing.areas.wetted   
+        
+        # Set all of the chord lengths
+        chord = wing.areas.reference/wing.spans.projected
+        wing.chords.mean_aerodynamic = chord
+        wing.chords.mean_geometric   = chord
+        wing.chords.root             = chord
+        wing.chords.tip              = chord
+
+    # Size solar panel area
+    wing_area                   = vec.reference_area
+    spanel                      = vec.propulsors.network.solar_panel
+    sratio                      = spanel.ratio
+    solar_area                  = wing_area*sratio
+    spanel.area                 = solar_area
+    spanel.mass_properties.mass = solar_area*(0.60 * Units.kg)    
+    
+    # Resize the motor
+    motor = vec.propulsors.network.motor
+    kv    = motor.speed_constant
+    motor = size_from_kv(motor, kv)    
+    
+    # diff the new data
+    vec.store_diff()
+
+    return nexus
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here the battery is sized and charged. The battery weight consists of everything that is left over from sizing.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+def weights_battery(nexus):
+
+    # Evaluate weights for all of the configurations
+    config = nexus.analyses.base
+    config.weights.evaluate() 
+    
+    vec     = nexus.vehicle_configurations.base
+    payload = vec.propulsors.network.payload.mass_properties.mass  
+    msolar  = vec.propulsors.network.solar_panel.mass_properties.mass
+    MTOW    = vec.mass_properties.max_takeoff
+    empty   = vec.weight_breakdown.empty
+    mmotor  = vec.propulsors.network.motor.mass_properties.mass
+    
+    # Calculate battery mass
+    batmass = MTOW - empty - payload - msolar -mmotor
+    bat     = vec.propulsors.network.battery
+    initialize_from_mass(bat,batmass)
+    vec.propulsors.network.battery.mass_properties.mass = batmass
+        
+    # Set Battery Charge
+    maxcharge = nexus.vehicle_configurations.base.propulsors.network.battery.max_energy
+    charge    = maxcharge
+    
+    nexus.missions.mission.segments.cruise.battery_energy = charge 
+
+    return nexus
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The next we run the mission and post process the results. The post_process function will setup the information of importance for the user. The energy constraint is a way of ensuring that nowhere in the mission the battery energy goes negative. The coefficient of lift is limited to 1.2. The throttle is limited to 0.9, to make sure there is excess throttle to climb. Throttle is also limited from going negative. Finally, the objective, nothing is specified to be zero.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+def post_process(nexus):
+    
+    # Unpack
+    mis = nexus.missions.mission.segments.cruise
+    vec = nexus.vehicle_configurations.base
+    res = nexus.results.mission.segments.cruise.conditions
+    
+    # Final Energy
+    maxcharge    = vec.propulsors.network.battery.max_energy
+    
+    # Energy constraints, the battery doesn&#39;t go to zero anywhere, using a P norm
+    p                    = 8.    
+    energies             = res.propulsion.battery_energy[:,0]/np.abs(maxcharge)
+    energies[energies&amp;gt;0] = 0.0 # Exclude the values greater than zero
+    energy_constraint    = np.sum((np.abs(energies)**p))**(1/p) 
+
+    # CL max constraint, it is the same throughout the mission
+    CL = res.aerodynamics.lift_coefficient[0]
+    
+    # Pack up
+    summary = nexus.summary
+    summary.CL                = 1.2 - CL
+    summary.energy_constraint = energy_constraint
+    summary.throttle_min      = res.propulsion.throttle[0]
+    summary.throttle_max      = 0.9 - res.propulsion.throttle[0]
+    summary.nothing           = 0.0
+    
+    return nexus    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;results&quot;&gt;Results&lt;/h3&gt;
+&lt;p&gt;Let’s look at the results:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: [0.0]
+            Iterations: 4
+            Function evaluations: 29
+            Gradient evaluations: 4
+[ 1.12963146  1.43880081  1.39329626  0.65589785  0.97171879]
+Design Variable Table:
+
+[[&#39;wing_area&#39; 0.5648157324099996 (0.1, 1.5) 0.5 1.0]
+ [&#39;aspect_ratio&#39; 14.388008119672202 (5.0, 20.0) 10.0 1.0]
+ [&#39;dynamic_pressure&#39; 174.16203234031317 (1.0, 2000.0) 125.0 1.0]
+ [&#39;solar_ratio&#39; 0.6558978486767236 (0.0, 0.97) 1.0 1.0]
+ [&#39;kv&#39; 777.3750338508712 (10.0, 1500.0) 800.0 0.10471975511965977]]
+
+Constraint Table:
+
+[[&#39;energy_constraint&#39; 0.0 &#39;=&#39; 0.0 1.0 &amp;lt;Quantity(1.0, &#39;less&#39;)&amp;gt;]
+ [&#39;battery_mass&#39; 4.939962596982861 &#39;&amp;gt;&#39; 0.0 1.0 &amp;lt;Quantity(1.0, &#39;kilogram&#39;)&amp;gt;]
+ [&#39;CL&#39; 0.5309682332699428 &#39;&amp;gt;&#39; 0.0 1.0 &amp;lt;Quantity(1.0, &#39;less&#39;)&amp;gt;]
+ [&#39;Throttle_min&#39; 0.7319219623084848 &#39;&amp;gt;&#39; 0.0 1.0 &amp;lt;Quantity(1.0, &#39;less&#39;)&amp;gt;]
+ [&#39;Throttle_max&#39; 0.1680780376915152 &#39;&amp;gt;&#39; 0.0 1.0 &amp;lt;Quantity(1.0, &#39;less&#39;)&amp;gt;]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Okay looks like SciPy found a feasible solution without too much time. Now let’s review the plots.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/opt_battery_energy.png&quot; alt=&quot;battery_energy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So we can tell now that the battery energy doesn’t go all the way to zero. Let’s look at how the solar flux varies throughout the day and how that affects the draw from the battery.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/opt_solar_flux.png&quot; alt=&quot;solar flux&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/opt_battery_draw.png&quot; alt=&quot;battery draw&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So maybe those solar panels actually are worth it. They seem to decrease the load on the battery considerably during the daytime.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 14 Jun 2015 16:22:21 -0700</pubDate>
+        <link>http://suavecode.github.io//guides/solar_uav_optimization.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//guides/solar_uav_optimization.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Frequently Asked Questions</title>
+        <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css&quot; /&gt;
+
+&lt;script src=&quot;//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+&lt;p&gt;Alright, you dove in and now you’re stuck. You’ve come to a good starting point. If this FAQ fails you then we suggest you go through tutorials, maybe our &lt;a href=&quot;http://adl.stanford.edu/papers/suave-open-source.pdf&quot;&gt;paper&lt;/a&gt;, send us a question in the forum, or if all else fails start reading code. Don’t worry the code is more readable than most engineering textbooks.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-do-i-get-started&quot;&gt;How do I get started?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-version-of-python-should-i-use&quot;&gt;What version of Python should I use?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#can-i-use-suave-for-my-own-research&quot;&gt;Can I use SUAVE for my own research?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-can-i-contribute&quot;&gt;How can I contribute?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-can-i-best-get-in-touch-with-you&quot;&gt;How can I best get in touch with you?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#i-am-having-trouble-with-my-suave-code-where-can-i-find-help&quot;&gt;I am having trouble with my SUAVE code. Where can I find help?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#where-can-i-see-the-recent-additions-to-the-suave-environment&quot;&gt;Where can I see the recent additions to the SUAVE environment?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#are-there-plans-to-make-a-graphical-user-interface&quot;&gt;Are there plans to make a Graphical User Interface?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-is-a-mission-solved&quot;&gt;How is a mission solved?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-can-i-be-more-suave&quot;&gt;How can I be more SUAVE?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-can-suave-do-for-me&quot;&gt;What can SUAVE do for me?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#will-suave-change-the-world&quot;&gt;Will SUAVE change the world?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#will-suave-give-me-super-powers&quot;&gt;Will SUAVE give me super powers?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-do-i-get-started&quot;&gt;How do I get started?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Download SUAVE’s current release on our &lt;a href=&quot;/download/&quot;&gt;download&lt;/a&gt; page. Specific steps and further instructions for additional software requirements are also listed there.&lt;/li&gt;
+  &lt;li&gt;Get familiar with the code using our &lt;a href=&quot;guides/&quot;&gt;guides&lt;/a&gt;. Be sure to start the &lt;a href=&quot;/guides/boeing_737-800.html&quot;&gt;BOEING 737 Tutorial&lt;/a&gt; for a basic introduction and the Regional Jet Optimization For the optimization tools&lt;/li&gt;
+  &lt;li&gt;Ask any remaining questions on the &lt;a href=&quot;/forum&quot;&gt;forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-version-of-python-should-i-use&quot;&gt;What version of Python should I use?&lt;/h2&gt;
+&lt;p&gt;SUAVE has been proven to work on 32bit versions of Python 2.7.&lt;/p&gt;
+
+&lt;h2 id=&quot;can-i-use-suave-for-my-own-research&quot;&gt;Can I use SUAVE for my own research?&lt;/h2&gt;
+&lt;p&gt;Yes, you may! Please cite our papers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://adl.stanford.edu/papers/suave-open-source.pdf&quot;&gt;T. Lukaczyk, A. Wendorff, E. Botero, T. MacDonald, T. Momose, A. Variyar, J. M. Vegh, M. Colonno, T. Economon, J. J. Alonso, T. Orra, C. Ilario, “SUAVE: An Open-Source Environment for Multi-Fidelity Conceptual Vehicle Design”, 16th AIAA Multidisciplinary Analysis and Optimization Conference, Dallas, TX, June 2015.&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://adl.stanford.edu/papers/suave-optimization.pdf&quot;&gt;E. Botero, A. Wendorff, T. MacDonald, A. Variyar, J. M. Vegh, T. Lukaczyk, J. J. Alonso, T. Orra, C. Ilario da Silva. “SUAVE: An Open-Source Environment for Conceptual Vehicle Design and Optimization”, 54th AIAA Aerospace Sciences Meeting, San Diego, CA, January 2016.&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-can-i-contribute&quot;&gt;How can I contribute?&lt;/h2&gt;
+&lt;p&gt;We encourage SUAVE users to expand the environment according to their personal interests.  The main areas to be developed are listed &lt;a href=&quot;/develop/#areas-of-development&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-can-i-best-get-in-touch-with-you&quot;&gt;How can I best get in touch with you?&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&quot;/forum&quot;&gt;forum&lt;/a&gt; is our main point of contact for SUAVE discussions.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-am-having-trouble-with-my-suave-code-where-can-i-find-help&quot;&gt;I am having trouble with my SUAVE code. Where can I find help?&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&quot;/forum&quot;&gt;forum&lt;/a&gt; is your best friend.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-can-i-see-the-recent-additions-to-the-suave-environment&quot;&gt;Where can I see the recent additions to the SUAVE environment?&lt;/h2&gt;
+&lt;p&gt;Go and check the develop branch on our &lt;a href=&quot;https://github.com/suavecode/SUAVE&quot;&gt;GitHub site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;are-there-plans-to-make-a-graphical-user-interface&quot;&gt;Are there plans to make a Graphical User Interface?&lt;/h2&gt;
+&lt;p&gt;The core development team is currently not planning on developing a GUI, but you can help! Contact us via the &lt;a href=&quot;/forum&quot;&gt;forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-is-a-mission-solved&quot;&gt;How is a mission solved?&lt;/h2&gt;
+
+&lt;p&gt;A mission is divided into segments, for example climb, cruise, etc…  Then the segment is divided into discrete points that are cosine spaced in time. These make up Chebyshev collocation points. One of the beauties of this method is the integration and differentiation operator. So if you know the velocity at every point, then you can get accelerations and vice-versa.&lt;/p&gt;
+
+&lt;p&gt;The default value is 16 points in each segment for SUAVE. However, our internal numerical experiments have shown highly accurate results with ~0.1% error with only 4 control points and ~.0001% error with 8 as measured from a very highly refined answered.&lt;/p&gt;
+
+&lt;p&gt;For each control point there are various unknowns and residuals. An example of an unknown would be pitch angle, and a residual would be the forces in the Z direction. After performing an analysis using the unknowns the residuals are calculated. These unknowns and residuals are iterated through a hybrid solver (much like a Newton method) in SciPy to converge the residual to zero. Voila, with a little magic you have results!&lt;/p&gt;
+
+&lt;h2 id=&quot;how-can-i-be-more-suave&quot;&gt;How can I be more SUAVE?&lt;/h2&gt;
+&lt;p&gt;Try running SUAVE daily. Unpeer reviewed non-statistical unpublished research has shown time and again that SUAVE developers are amazing. That is because they work with SUAVE on a daily basis. This gives them power over aerospace that only super humans posses. In turn that power is manifested in confidence, smoothness, and elegance that every human will adore.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-can-suave-do-for-me&quot;&gt;What can SUAVE do for me?&lt;/h2&gt;
+&lt;p&gt;SUAVE is designed to make cool airplanes. This will make you rich, famous, and more attractive.&lt;/p&gt;
+
+&lt;h2 id=&quot;will-suave-change-the-world&quot;&gt;Will SUAVE change the World?&lt;/h2&gt;
+&lt;p&gt;Certainly. Why is this even a question?&lt;/p&gt;
+
+&lt;h2 id=&quot;will-suave-give-me-super-powers&quot;&gt;Will SUAVE give me super powers?&lt;/h2&gt;
+&lt;p&gt;Unfortunately SUAVE cannot give you super powers. However there is hope, SUAVE is the perfect starting point to perform conceptual design studies on your flying Iron Man suit (some code development required). The energy network in SUAVE is ideal for modeling the arc reactor and the power transfer to the propulsors. Although you will not gain super powers from SUAVE it might still make you a super hero, or maybe a super villain should you choose that route.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Jun 2010 07:20:00 -0700</pubDate>
+        <link>http://suavecode.github.io//faq.html</link>
+        <guid isPermaLink="true">http://suavecode.github.io//faq.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
