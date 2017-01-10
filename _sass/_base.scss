@@ -1,0 +1,332 @@
+/**
+ * DEFAULTS
+ */
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.5em;
+
+$content-width: 960px;
+$spacing-unit: 0px;
+
+$nav-width: 320px;
+$default-padding: 24px;
+$default-margin-bottom: 44px;
+
+/* COLORS */
+$red: #8c1515;
+$white: #ffffff;
+$black: #000000;
+$dark-grey: lighten($black, 10%);
+$light-grey: lighten($black, 90%);
+$burnt-red: #B3995D;
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+	margin-bottom: 24px;
+	border: 0;
+	height: 1px;
+	background-color: #000000;
+	opacity: 0.2;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 500;
+    color: $text-color;
+    background-color: $background-color;
+		@media screen and (min-width: 960px) {
+			background: url('/images/bg.jpg') top center repeat-y;
+		}
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: 24px;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2 {
+	font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $burnt-red;
+		text-decoration: none;
+		//font-weight: bold;
+        
+/*    &:visited {
+        color: darken($burnt-red, 30%);
+    }
+*/
+
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+
+a.social-media-link{
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    border-left: 4px solid $grey-color-light;
+    padding: 6px 12px;
+		margin: 24px;
+    font-size: 14px;
+		font-weight: normal;
+		line-height: 21px;
+		opacity: 0.8;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+article {
+	margin-bottom: 120px;
+
+	&.content {
+		ul, ol {
+			margin-left: 20px;
+		}
+	}
+
+	a {
+		padding: 0px 0px;
+	}
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+		font-weight: normal;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+    
+
+}
+
+.border-box {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+@mixin round-corner($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.valign {
+	position: relative;
+	top: 50%;
+
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+   > img {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+    }
+}
+
+.btn {
+	color: $white !important;
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 14px;
+	text-decoration: none !important;
+	background-color: $red;
+	border: 2px solid $red;
+	@include round-corner(3px);
+
+	&:hover {
+		background-color: lighten($red, 4%);
+	}
+
+	&.active {
+		background-color: lighten($white, 17%);
+		color: $red !important;
+	}
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 0px;
+}
+
+::-webkit-scrollbar-button:vertical:increment
+::-webkit-scrollbar-button:vertical:decrement {
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+    -webkit-border-radius: 0px;
+    border: 1px solid #ccc;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #ccc;
+    -webkit-border-radius: 3px;
+}
+

@@ -1,0 +1,18 @@
+	&nbsp
+	<a href="/" class="logo"><img src="/images/logo.svg" alt="SUAVE Code"><span>{{site.title}}</span></a>
+
+	<section>
+		<h1 class="greetings">{{ site.greetings }}</h1>
+		{{ site.description | markdownify }}
+	</section>
+	<nav class="main-nav">
+		<ul>
+		<li><a class="btn page-link {% if page.url == '/index.html' %}active{% endif %}" href="/">About</a></li>
+		<li><a class="btn page-link {% if page.url == '/download/' %}active{% endif %}" href="/download/">Download</a></li>
+		<li><a class="btn page-link {% if page.url == '/guides/index.html' or page.categories != nil %}active{% endif %}" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link {% if page.url == '/develop/' %}active{% endif %}" href="/develop/">Develop</a></li>
+		<li><a class="btn page-link {% if page.url == '/forum/' %}active{% endif %}" href="/forum/">Forum</a></li>
+		
+		</ul>
+	</nav>
+
