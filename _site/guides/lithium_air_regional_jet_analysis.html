@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Lithium Air Regional Jet Sizing - SUAVE</title>
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://suavecode.github.io//guides/lithium_air_regional_jet_analysis.html">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
+	<script src="/js/main.js" type="text/javascript"></script>
+</head>
+
+	
+<!--	<a href="https://github.com/suavecode/SUAVE"><img style="position: absolute; z-index: 10; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>-->
+	<body>
+
+	<div class="page-content">
+		<div class="wrapper">
+			<aside class="left-nav">
+			<div class="verticalLineL">
+				&nbsp
+	<a href="/" class="logo"><img src="/images/logo.svg" alt="SUAVE Code"><span>SUAVE</span></a>
+
+	<section>
+		<h1 class="greetings"></h1>
+		<p>A multi-fidelity conceptual design environment. Its purpose is to credibly produce conceptual-level design conclusions for future aircraft incorporating advanced technologies.</p>
+
+	</section>
+	<nav class="main-nav">
+		<ul>
+		<li><a class="btn page-link " href="/">About</a></li>
+		<li><a class="btn page-link " href="/download/">Download</a></li>
+		<li><a class="btn page-link active" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link " href="/develop/">Develop</a></li>
+		<li><a class="btn page-link " href="/forum/">Forum</a></li>
+		
+		</ul>
+	</nav>
+
+
+            <footer>
+	<div class="social-media-list">
+		<a class="social-media-link" href="https://github.com/suavecode/SUAVE">
+            <span class="icon  icon-github">
+                <img src="/images/github.svg">
+            </span>
+		</a> 
+        
+	    <a class="social-media-link" href="https://travis-ci.org/suavecode/SUAVE">
+            <span class="icon  icon-travis">
+                <img src="/images/travis.svg">
+            </span>
+		</a>
+
+		
+		
+	</div>
+        
+    <br>
+    
+	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+</footer>
+
+			
+			</aside>
+			<main class="main-content">
+			<div class="single-post">
+
+	<div class="verticalLineR">
+
+	<header class="hero">
+	<div class="valign">
+		<h1 class="title">Lithium Air Regional Jet Sizing</h1>
+	</div>
+	</header>
+
+	<article class="content">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css" />
+
+<script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<h2 id="introduction">Introduction</h2>
+<p>The purpose of this tutorial is to highlight some of SUAVE’s more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE’s propulsion system data structures.</p>
+
+<h2 id="baseline-case">Baseline Case</h2>
+<p>Open the file called “tut_lithium_air_jet_sizing.py” in a text editor or IDE.</p>
+
+<p>Look over the plots, to gain a feel for the various idiosyncrasies of the design. Note the significant rise in aircraft mass, as a result of the lithium-air batteries.</p>
+
+<p><img src="../images/li_air_mass.png" alt="li air mass" /></p>
+
+<pre><code class="python">
+    battery = configs.base.energy_network['battery']
+    battery.specific_energy=2000*Units.Wh/Units.kg
+    battery.specific_power =.67*Units.kW/Units.kg
+</code></pre>
+
+<p>Run the script (python tut_lithium_air_jet.py).</p>
+
+<p>Now try changing the motor efficiency from .95 to .9 and running the script (line 513).</p>
+
+<pre><code class="python">
+    net.nacelle_diameter  = ducted_fan.nacelle_diameter
+    net.engine_length     = ducted_fan.engine_length    
+    net.number_of_engines = ducted_fan.number_of_engines
+    net.motor_efficiency  =.95
+</code></pre>
+
+<p>Note the sensitivity of vehicle energy and mass requirements to these various propulsion system assumptions.</p>
+
+<p>Now try changing the cruise range of the aircraft (line 868, segment.distance).</p>
+
+<pre><code class="python">
+    segment = Segments.Cruise.Constant_Speed_Constant_Altitude()
+    segment.tag = "cruise"
+
+    # connect vehicle configuration
+    segment.analyses.extend( analyses.cruise )
+
+    # segment attributes
+    segment.atmosphere = atmosphere
+    segment.planet     = planet
+
+    segment.air_speed  = 230.
+    segment.distance   = 1947. * Units.nmi
+
+</code></pre>
+
+<p>Try changing other parameters (e.g. specific power, cruise altitude), and observe their effects on the overall design.</p>
+
+	</article>
+
+	<div class="content">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES * * */
+			var disqus_shortname = '';
+			var disqus_identifier = 'http://suavecode.github.io//guides/lithium_air_regional_jet_analysis.html';
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	</div>
+
+</div>
+
+			
+			</main>
+			
+		</div>
+	</div>
+	
+
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', '', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES * * */
+	var disqus_shortname = '';
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function () {
+	var s = document.createElement('script'); s.async = true;
+	s.type = 'text/javascript';
+	s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+</script>
+
+
+	</body>
+	
+</html>
