@@ -171,7 +171,7 @@ These are the areas that are under development, including their status, and what
 | **Aerodynamics** |  |
 | Native Vortex Lattice | Implemented for conventional tube and wing, continuing development. |
 | High-Lift Systems     | Basic methods in place. Interested in more advanced methods. |
-| Connection to SU2  | Implemented via manual surrogates, automatic capability needed. |
+| Connection to SU2  | Automatic capabilities. Further development and tuning would be appreciated. |
 | Connection to AVL  | Implemented for general wings, straight tube fuselage, development needed for control surfaces. | 
 | Compressibility Drag | CFD databased can be created for these. | 
 | Arbitrary Airfoil Data for Lifting Surfaces | Airfoil data from any source as functions of Alpha, Re, Ma used for performance computations.  Use advanced compressibility effects available from CFD. | 
@@ -199,10 +199,10 @@ These are the areas that are under development, including their status, and what
 | Weights correlations |Implemented for tube/wing, blended wing body, and human powered/solar.|
 | Loads | No methodology for loads determination. Need a V-n diagram.|
 | Finite Element Modeling |FEM-based primary structure weight estimations would be useful for unconventional configurations.|
-| **Geometry**| **- - High Priority - -** |
-| Parametric Geometry|Not currently in SUAVE.|
-| Connection to OpenVSP |Not currently in SUAVE.|
-| Geometry Visualization |Not currently in SUAVE.|
+| **Geometry**| |
+| Connection to OpenVSP | API interface to create VSP files implemented. Need connection to import VSP into SUAVE format.|
+| Geometry Visualization | Currently only OpenVSP is used. Early developments with GeoMACH|
+| Internal Stuctural Design | Methods needed for modeling of internal members. Current OpenVSP versions cannot handle internal structures.|
 | Fuselage Layout | Basic methods in place for Tube/Wing and BWB. More general methods desired. |
 | **Optimization**| |
 | Optimization Interfaces | Frameworks are complete. |
@@ -212,9 +212,9 @@ These are the areas that are under development, including their status, and what
 | Data visualization | Looking for [D3.JS](http://d3js.org/) development. |
 | Design templates | Not implemented. |
 | **Miscellaneous** | |
-| Multifidelity Approaches | Framework identified, undergoing developent.  Suggestions welcomed. |
+| Multifidelity Approaches | Undergoing developent.  Suggestions welcomed. |
 | Aeroelastic Constraints | Under consideration, in early development. |
-| Interface to BAD3/4, AEDT | Under development. |
+| Interface to BAD3/4, AEDT | AEDT interfaces completed in other branches.|
 
 <br>
 
