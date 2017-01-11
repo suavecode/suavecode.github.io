@@ -77,6 +77,7 @@ Below are the packages that SUAVE expects in order to run the tutorial cases.  T
 | scipy      | [linux](http://www.scipy.org/install.html#linux-packages), [mac](http://www.scipy.org/install.html#mac-packages), [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy), [source](http://sourceforge.net/projects/scipy/files/scipy) |
 | matplotlib | [linux](http://www.scipy.org/install.html#linux-packages), [mac](http://www.scipy.org/install.html#mac-packages), [windows](http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib), [source](http://sourceforge.net/projects/matplotlib/files/matplotlib) |
 | pip        | [linux](https://pip.pypa.io/en/stable/installing.html#install-pip), [mac](https://pip.pypa.io/en/stable/installing.html#install-pip), [windows](https://pip.pypa.io/en/stable/installing.html#install-pip) |
+| scikit-learn       | [linux](http://scikit-learn.org/stable/install.html), [mac](http://scikit-learn.org/stable/install.html), [windows](http://scikit-learn.org/stable/install.html) |
 
 <br>
 **Note**: For the windows installers, you can pick the latest version, for "cp2.7" (C-Python 2.7), for your architecture (32 or 64bit), and for numpy pick the MKL version (it's faster). <br>
