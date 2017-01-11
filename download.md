@@ -32,10 +32,7 @@ SUAVE_Project/    # main project folder, comes with the zip file
 
 ### License
 
-We want SUAVE to grow with the community, so it's available under a <br>[CC BY-SA-NC 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
-
-[![CC BY-NC-SA](/images/cc_by-nc-sa.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-{: style="text-align: center"}
+We want SUAVE to grow with the community, so it's available under a <br>[LGPL 2.1 License](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html).  
 
 Please <script language="javascript" type="text/javascript">printEmailLink('suavecode-info', 'lists.stanford.edu','contact us');</script>  if you are interested in re-publishing SUAVE source code as part of a commercial software.  
 
