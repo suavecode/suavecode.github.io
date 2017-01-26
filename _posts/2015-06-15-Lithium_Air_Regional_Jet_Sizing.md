@@ -7,7 +7,7 @@ description: Incorporate more novel propulsion configurations
 
 
 
-permalink: /guides/lithium_air_regional_jet_analysis.html
+permalink: /guides/lithium_air_regional_jet_sizing.html
 ---
 <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">
 <script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
@@ -15,7 +15,7 @@ permalink: /guides/lithium_air_regional_jet_analysis.html
 
 
 ## Introduction
-The purpose of this tutorial is to highlight some of SUAVE's more exotic propulsion system capabilities. This tutorial assumes that the user has completed the Boeing 737-800 tutorial, and has some familiarity with SUAVE's propulsion system data structures.
+The purpose of this tutorial is to highlight some of SUAVE's more exotic propulsion system capabilities, as well as the sizing methodology recently introduced
 
 ## Baseline Case
  Open the file called "tut_lithium_air_jet_sizing.py" in a text editor or IDE.
