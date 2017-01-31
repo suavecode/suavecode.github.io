@@ -3,7 +3,7 @@ layout: post
 title: Lithium Air Regional Jet Sizing
 date: 2015-06-15 14:25:00
 categories: blog
-description: Incorporate more novel propulsion configurations
+description: Incorporate more novel propulsion configurations, introduce sizing methodology
 
 
 
@@ -32,8 +32,9 @@ The purpose of this tutorial is to highlight some of SUAVE's more exotic propuls
     battery.specific_power =.67*Units.kW/Units.kg
 </code></pre>
 
-Run the script (python tut_lithium_air_jet.py), and observe the plots
+Run the script (python tut_lithium_air_jet.py), and observe the plots. 
 
+## Sizing Procedure
 Now try changing the motor efficiency from .95 to .9 and running the script by going to Vehicle.py 
 
 <pre><code class="python">
@@ -61,7 +62,12 @@ Now try changing the cruise range of the aircraft. Go to Mission.py, find the cr
 
 Try changing other parameters (e.g. specific power, cruise altitude), and observe their effects on the overall design.
 
-Now look into how a an aircraft sizing problem is set up within SUAVE. Go to the function "run_sizing_loop" within Sizing.py. The default initial guesses for your sizing parameters can be seen in the lines below
+Now look into how a an aircraft sizing problem is set up within SUAVE. A diagram of the process with a summary can be seen below, for reference
+
+
+![sizing_diagram](../images/sizing_diagram.png)
+
+Go to the function "run_sizing_loop" within Sizing.py. The default initial guesses for your sizing parameters can be seen in the lines below
 
 <pre><code class="python">
     #initial guesses
@@ -70,7 +76,7 @@ Now look into how a an aircraft sizing problem is set up within SUAVE. Go to the
     Preq_guess=  200000. 
  
   
-    scaling       = np.array([1E4,1E9,1E6])
+    scaling       = np.array([1E4,1E11,1E7])
     y             = np.array([m_guess, Ereq_guess, Preq_guess])/scaling
     min_y         = [.05, 1E-5,10.]
     max_y         = [10., 10., 10.]
@@ -124,6 +130,7 @@ This function acts as an interface to allow communication between the Sizing_Loo
 <pre><code class="python">
     #run size aircraft geometry/mass based on guess
     simple_sizing(nexus)
+    analyses.finalize()
     results = evaluate_mission(configs,mission)
     
 </code></pre>
