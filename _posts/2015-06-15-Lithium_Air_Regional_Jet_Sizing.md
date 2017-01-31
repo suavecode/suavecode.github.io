@@ -32,7 +32,6 @@ The purpose of this tutorial is to highlight some of SUAVE's more exotic propuls
     battery.specific_power =.67*Units.kW/Units.kg
 </code></pre>
 
-Run the script (python tut_lithium_air_jet.py), and observe the plots. 
 
 ## Sizing Procedure
 Now try changing the motor efficiency from .95 to .9 and running the script by going to Vehicle.py 

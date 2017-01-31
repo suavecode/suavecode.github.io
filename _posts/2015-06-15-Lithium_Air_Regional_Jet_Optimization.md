@@ -14,7 +14,7 @@ permalink: /guides/lithium_air_regional_jet_optimization.html
 <script>hljs.initHighlightingOnLoad();</script>
 
 ## Introduction
-The purpose of this tutorial is to introduce the user to the sizing/optimization process, which uses machine learning regression techniques to accelerate the convergence process.
+The purpose of this tutorial is to introduce the user to the sizing/optimization process, which uses machine learning regression techniques to accelerate convergence.
 
 The user, is he/she so chooses, could directly run Optimize.py (located in Tutorials/Lithium_Air_Jet_Sizing). However this would be a relatively slow process (~5,200 SUAVE mission evaluations), due to the fact that each step in the optimizer would have to use the same initial guess for y to converge on mass, energy, and power. Here we're going to be smarter, and tabulate the converged solutions, using them to inform the initial guesses. Go to Sizing.py, in the "setup" function, and uncomment "procedure.write_optimization."
 
@@ -68,4 +68,4 @@ At this point, it is worth looking into changes to the optimizer options to ensu
         return
 </code></pre>
 
-Note that, the "sense_step," that is, the finite differencing step is set to 1E-2 (it is recommended to set the finite differencing step to the square root of the solution tolerance). Now try running the problem (type "python Optimize.py" while in the Lithium_Air_Sizing), and observe the weight reduction as well as the number of iterations it takes to converge. Feel free to play with the optimization options, as well as sizing options to observe there impact on the solution path
+Note that, the "sense_step," that is, the finite differencing step is set to 1E-2 (it is recommended to set the finite differencing step to the square root of the solution tolerance). Now try running the problem (type "python Optimize.py" while in the Lithium_Air_Sizing), and observe the weight reduction as well as the number of iterations it takes to converge; in this case, it takes ~1,000 SUAVE sizing/mission evaluations to converge, decreasing computational cost by a factor of 5. Feel free to play with the optimization options, as well as sizing options to observe there impact on the solution path.
