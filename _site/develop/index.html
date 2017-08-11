@@ -143,17 +143,17 @@
   <li>To get your own copy of the source, with links into real-time updates, you need to <img src="/images/fork-button.png" alt="fork" height="25px" /> the repo.  This button is on the top-right of the page too.</li>
   <li>This will copy the repo and take you to your fork, notice that your web-browser’s URL has changed to include your username.</li>
   <li>Now you can <a href="http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository">clone</a> your fork to your computer.  Find the clone url of your fork on the right hand side of the page and copy it.  You can use the https url. <br /> <img src="/images/clone-example.png" alt="clone" height="90px" /></li>
-  <li>Open a command prompt, in a directory that you want to start the repository (for example in the SUAVE_Project folder), and run the git clone command <br /> <code>git clone &lt;git url&gt;</code> <br /> Now you should have the source code! You can rename this folder to “Source” if you want to keep the recommended <a href="/download#folder-structure">folder structure</a>.</li>
-  <li>Change directory into the trunk folder and run a developer installation command.  <br /> <code>python setup.py develop</code> <br /> Now you have a developer version of SUAVE installed!  You can make changes to the source in this directory and the changes will appear the next time you run python, without having to rebuild or reinstall.</li>
-  <li>Test the installation by changing to any other directory, then start a python shell, and run the command <br /> <code>&gt;&gt;&gt; import SUAVE</code><br /><code>&gt;&gt;&gt; print SUAVE.__file__</code><br /> This should print the file path to the SUAVE package init.py file in your trunk directory.</li>
+  <li>Open a command prompt, in a directory that you want to start the repository (for example in the SUAVE_Project folder), and run the git clone command <br /> <code class="highlighter-rouge">git clone &lt;git url&gt;</code> <br /> Now you should have the source code! You can rename this folder to “Source” if you want to keep the recommended <a href="/download#folder-structure">folder structure</a>.</li>
+  <li>Change directory into the trunk folder and run a developer installation command.  <br /> <code class="highlighter-rouge">python setup.py develop</code> <br /> Now you have a developer version of SUAVE installed!  You can make changes to the source in this directory and the changes will appear the next time you run python, without having to rebuild or reinstall.</li>
+  <li>Test the installation by changing to any other directory, then start a python shell, and run the command <br /> <code class="highlighter-rouge">&gt;&gt;&gt; import SUAVE</code><br /><code class="highlighter-rouge">&gt;&gt;&gt; print SUAVE.__file__</code><br /> This should print the file path to the SUAVE package init.py file in your trunk directory.</li>
 </ol>
 
 <h4 id="some-notes">Some Notes</h4>
 
 <ul>
-  <li>You may need to run a sudo (super user do) command to install SUAVE when working on linux or mac systems:  <code>sudo python setup.py develop</code></li>
-  <li>The same strategies for dealing with write access can be used here, by simply replacing any <code>install</code> keywords with <code>develop</code></li>
-  <li>To uninstall the developer version, run the command <code>python setup.py develop --uninstall</code></li>
+  <li>You may need to run a sudo (super user do) command to install SUAVE when working on linux or mac systems:  <code class="highlighter-rouge">sudo python setup.py develop</code></li>
+  <li>The same strategies for dealing with write access can be used here, by simply replacing any <code class="highlighter-rouge">install</code> keywords with <code class="highlighter-rouge">develop</code></li>
+  <li>To uninstall the developer version, run the command <code class="highlighter-rouge">python setup.py develop --uninstall</code></li>
 </ul>
 
 <p><br /></p>
@@ -168,10 +168,10 @@
 
 <ol>
   <li>Inspect your current “remote”, this is the url of the repository to which your clone listens. 
-In the SUAVE Source directory for the cloned repo, type <br /> <code>git remote –v</code> and it should show the “origin” directory for “fetch” and “push”. These are the remote urls for your own fork.</li>
-  <li>Add an upstream remote to the main suavecode/SUAVE repository using <br /><code>git remote add upstream https://github.com/suavecode/SUAVE.git</code></li>
-  <li>Run <code>git remote -v</code> again to see the new remotes.</li>
-  <li>Finally, download the code for the upstream remote with <br /> <code>git fetch upstream</code>.</li>
+In the SUAVE Source directory for the cloned repo, type <br /> <code class="highlighter-rouge">git remote –v</code> and it should show the “origin” directory for “fetch” and “push”. These are the remote urls for your own fork.</li>
+  <li>Add an upstream remote to the main suavecode/SUAVE repository using <br /><code class="highlighter-rouge">git remote add upstream https://github.com/suavecode/SUAVE.git</code></li>
+  <li>Run <code class="highlighter-rouge">git remote -v</code> again to see the new remotes.</li>
+  <li>Finally, download the code for the upstream remote with <br /> <code class="highlighter-rouge">git fetch upstream</code>.</li>
 </ol>
 
 <h3 id="changing-branches">Changing branches</h3>
@@ -179,22 +179,22 @@ In the SUAVE Source directory for the cloned repo, type <br /> <code>git remote 
 <p>You should work on the develop branch in general, it will have the most updated changes from the community.</p>
 
 <ol>
-  <li>Inspect your branches with <code>git branch -a</code>.  You’ll see all the branches, for both upstream and origin.  Generally you should only work off the origin branches</li>
-  <li>Start a new branch with <code>git branch develop origin/develop</code>. This comand aliases the branch “origin/develop” with the name “develop”.</li>
-  <li>Checkout the branch, <code>git checkout develop</code>.</li>
-  <li>You can see your current branch with, <code>git branch</code>,  the one you have checked out will have a star next to it.</li>
+  <li>Inspect your branches with <code class="highlighter-rouge">git branch -a</code>.  You’ll see all the branches, for both upstream and origin.  Generally you should only work off the origin branches</li>
+  <li>Start a new branch with <code class="highlighter-rouge">git branch develop origin/develop</code>. This comand aliases the branch “origin/develop” with the name “develop”.</li>
+  <li>Checkout the branch, <code class="highlighter-rouge">git checkout develop</code>.</li>
+  <li>You can see your current branch with, <code class="highlighter-rouge">git branch</code>,  the one you have checked out will have a star next to it.</li>
   <li>Commit all your changes to the current branch before checking out another branch, otherwise the changes will be lost.</li>
-  <li>To dump any changes that you don’t want, <code>git stash</code>, will be helpful.</li>
+  <li>To dump any changes that you don’t want, <code class="highlighter-rouge">git stash</code>, will be helpful.</li>
 </ol>
 
 <h3 id="store-changes-to-your-github-fork">Store changes to your GitHub fork</h3>
 
 <ol>
   <li>Edit the code as you need on your machine</li>
-  <li>Inspect git’s view of the changes you’ve made with <code>git status</code>.  This shows what files are new, changed and not yet part of the repo’s history.</li>
-  <li>Add the changed files to your commit with <code>git add &lt;path to file&gt;</code>, or to add all the changes with <code>git add -a</code> (be careful with this one).  The add command does not make the changes part of your repo’s history!  You can do multiple add commands for example.</li>
-  <li>Commit them to the history on your machine with <br /><code>git commit -m 'your message for the commit'</code><br />  Make sure to include a nice description.  This command only affects your local repository!  You can do multiple commits before sending them to the cloud.</li>
-  <li>Push the new commits to GitHub with <code>git push origin</code>.  This will send all the commits to your fork on GitHub.  This serves as a backup copy for you, and is needed to share the changes with the upstream suavecode repository via pull-requests.</li>
+  <li>Inspect git’s view of the changes you’ve made with <code class="highlighter-rouge">git status</code>.  This shows what files are new, changed and not yet part of the repo’s history.</li>
+  <li>Add the changed files to your commit with <code class="highlighter-rouge">git add &lt;path to file&gt;</code>, or to add all the changes with <code class="highlighter-rouge">git add -a</code> (be careful with this one).  The add command does not make the changes part of your repo’s history!  You can do multiple add commands for example.</li>
+  <li>Commit them to the history on your machine with <br /><code class="highlighter-rouge">git commit -m 'your message for the commit'</code><br />  Make sure to include a nice description.  This command only affects your local repository!  You can do multiple commits before sending them to the cloud.</li>
+  <li>Push the new commits to GitHub with <code class="highlighter-rouge">git push origin</code>.  This will send all the commits to your fork on GitHub.  This serves as a backup copy for you, and is needed to share the changes with the upstream suavecode repository via pull-requests.</li>
 </ol>
 
 <h3 id="get-new-changes-from-upstream">Get new changes from upstream</h3>
@@ -202,10 +202,10 @@ In the SUAVE Source directory for the cloned repo, type <br /> <code>git remote 
 <p>In this example the upstream/develop branch is merged into the fork/develop branch.</p>
 
 <ol>
-  <li>Checkout your local develp branch with <br /><code>git checkout develop</code>.</li>
-  <li>Fetch updates from the upstream repository with <br /><code>git fetch upstream</code>.</li>
-  <li>Merge the changes from the upstream into your fork with <br /><code>git merge upstream/develop</code>.</li>
-  <li>Push these changes to your fork on GitHub, <br /><code>git push origin master</code>.</li>
+  <li>Checkout your local develp branch with <br /><code class="highlighter-rouge">git checkout develop</code>.</li>
+  <li>Fetch updates from the upstream repository with <br /><code class="highlighter-rouge">git fetch upstream</code>.</li>
+  <li>Merge the changes from the upstream into your fork with <br /><code class="highlighter-rouge">git merge upstream/develop</code>.</li>
+  <li>Push these changes to your fork on GitHub, <br /><code class="highlighter-rouge">git push origin master</code>.</li>
 </ol>
 
 <h3 id="share-your-changes-with-upstream">Share your changes with upstream</h3>
@@ -279,7 +279,7 @@ In the SUAVE Source directory for the cloned repo, type <br /> <code>git remote 
     </tr>
     <tr>
       <td>Connection to SU2</td>
-      <td>Implemented via manual surrogates, automatic capability needed.</td>
+      <td>Automatic capabilities. Further development and tuning would be appreciated.</td>
     </tr>
     <tr>
       <td>Connection to AVL</td>
@@ -391,19 +391,19 @@ In the SUAVE Source directory for the cloned repo, type <br /> <code>git remote 
     </tr>
     <tr>
       <td><strong>Geometry</strong></td>
-      <td><strong>- - High Priority - -</strong></td>
-    </tr>
-    <tr>
-      <td>Parametric Geometry</td>
-      <td>Not currently in SUAVE.</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Connection to OpenVSP</td>
-      <td>Not currently in SUAVE.</td>
+      <td>API interface to create VSP files implemented. Need connection to import VSP into SUAVE format.</td>
     </tr>
     <tr>
       <td>Geometry Visualization</td>
-      <td>Not currently in SUAVE.</td>
+      <td>Currently only OpenVSP is used. Early developments with GeoMACH</td>
+    </tr>
+    <tr>
+      <td>Internal Stuctural Design</td>
+      <td>Methods needed for modeling of internal members. Current OpenVSP versions cannot handle internal structures.</td>
     </tr>
     <tr>
       <td>Fuselage Layout</td>
@@ -443,7 +443,7 @@ In the SUAVE Source directory for the cloned repo, type <br /> <code>git remote 
     </tr>
     <tr>
       <td>Multifidelity Approaches</td>
-      <td>Framework identified, undergoing developent.  Suggestions welcomed.</td>
+      <td>Undergoing developent.  Suggestions welcomed.</td>
     </tr>
     <tr>
       <td>Aeroelastic Constraints</td>
@@ -451,7 +451,7 @@ In the SUAVE Source directory for the cloned repo, type <br /> <code>git remote 
     </tr>
     <tr>
       <td>Interface to BAD3/4, AEDT</td>
-      <td>Under development.</td>
+      <td>AEDT interfaces completed in other branches.</td>
     </tr>
   </tbody>
 </table>
