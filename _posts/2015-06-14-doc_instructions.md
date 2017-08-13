@@ -10,7 +10,7 @@ permalink: /guides/docs.html
 
 ### How to Read (and Write) the Documentation
 
-This is an explanation of how documentation is built in SUAVE so that the user can know what to look for and how to write it if they wish to add their own code.
+This is an explanation of how documentation is built in SUAVE so that the user can know what to look for and how to write it if they wish to add their own code. The doxygen page is available [here](/doxygen).
 
 ### Docstrings
 

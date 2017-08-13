@@ -14,7 +14,7 @@ This is an overview of how optimization is done in SUAVE. A specific tutorial ca
 
 ### Nexus Class
 
-The Nexus class is the underlying data structure that is used for optimization. It is created to hold all data and functionality needed to link together optimizers and the various analysis modules in SUAVE. Detailed information on each of the functions can be found in our [doxygen site](dox_link).
+The Nexus class is the underlying data structure that is used for optimization. It is created to hold all data and functionality needed to link together optimizers and the various analysis modules in SUAVE. Detailed information on each of the functions can be found on our [doxygen page](/doxygen).
 
 ### Standard Optimization File Structure
 
