@@ -1,0 +1,6 @@
+var classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion_1_1Lithium__Ion =
+[
+    [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion_1_1Lithium__Ion.html#ae795b271329eaaf29ac6601954531bfc", null ],
+    [ "specific_energy", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion_1_1Lithium__Ion.html#a69a0d26fe86cdc7258bf96f2e70aef73", null ],
+    [ "specific_power", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion_1_1Lithium__Ion.html#a59313342cb39243bb18a9c4db03f5f11", null ]
+];

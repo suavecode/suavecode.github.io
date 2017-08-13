@@ -1,0 +1,8 @@
+var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7 =
+[
+    [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a00abe2b17d918ec7e9444a4e17dd5075", null ],
+    [ "air_speed_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a8ac186fce3147771184f518da49309e9", null ],
+    [ "air_speed_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a211059093e2b63971f53b3b29cbe2cc1", null ],
+    [ "altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a0acce9610081c654dc2d9eefb0033e79", null ],
+    [ "throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a9c3834d7b80dbf89ee79ef10d8909c8f", null ]
+];
