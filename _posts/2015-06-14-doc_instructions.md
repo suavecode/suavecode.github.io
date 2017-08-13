@@ -57,51 +57,45 @@ The source of any methods that have been implemented. Simple methods like basic 
 
 * Inputs
 
-This should contain any variables or functions passed to the function. If the passed variable is a data structure, the components that are used should be listed. Each item should include a description if it is not obvious from the name, and any relevant units. It may 
+This should contain any variables or functions passed to the function. If the passed variable is a data structure, the components that are used should be listed. Each item should include a description if it is not obvious from the name. It should also include any relevant units. In addition, information about the variable type or any other information that might be important can be added here.
 
-### Example Case
+* Outputs
 
-This is the docstring from [Supersonic_Nozzle]()
+This should contain the same information as in the inputs. It may also contain information on variables that are modified but not explicitly returned.
 
-        """ This computes the output values from the input values according to
-        equations from the source.
+* Properties Used
+
+This carries the same information as input and outputs. It typically contains variables that are properties of the parent class but are not modified. There is some overlap with inputs and outputs, but either category is acceptable as long as the variable is documented.
+
+#### Function Docstring Template
+
+This is a template docstring:
+
+        """<Description>
         
         Assumptions:
-        Constant polytropic efficiency and pressure ratio
+        <assumptions>
         
         Source:
-        https://web.stanford.edu/~cantwell/AA283_Course_Material/AA283_Course_Notes/
+        <source>
         
         Inputs:
-          conditions data class with conditions.freestream.
-            isentropic_expansion_factor         [Unitless]
-            specific_heat_at_constant_pressure  [J/(kg K)]
-            pressure                            [Pa]
-            stagnation_pressure                 [Pa]
-            stagnation_temperature              [K]
-            universal_gas_constant              [J/(kg K)] (this is a bad name)
-            mach_number                         [Unitless]
-                
-          self.inputs.
-            stagnation_temperature              [K]
-            stagnation_pressure                 [Pa]
+        <inputs>
                    
         Outputs:
-          self.outputs.
-            stagnation_temperature              [K]  
-            stagnation_pressure                 [Pa]
-            stagnation_enthalpy                 [J/kg]
-            mach_number                         [Unitless]
-            static_temperature                  [K]
-            static_enthalpy                     [J/kg]
-            velocity                            [m/s]
-            static_pressure                     [Pa]
-            area_ratio                          [Unitless]
+        <outputs>
                 
         Properties Used:
-          self.
-            pressure_ratio                      [Unitless]
-            polytropic_efficiency               [Unitless]
-            """       
+        <properties>
             
-The docstring is broken into 
+### Doxygen Grouping Tags
+
+Tags are used to put files into groups that match the SUAVE file structure. `@defgroup` tags define a group and should be placed in the init file. An example is shown here:
+
+	## @defgroup Analyses-Aerodynamics Aerodynamics
+	# These are the analyses that control aerodynamic evaluations.
+	# @ingroup Analyses
+	
+In this example, `Analyses-Aerodynamics` is the doxygen tag for the group, while the group appears in the documentation as `Aerodynamics`, the next part of the string. The tag is based on the file structure (Analyses/Aerodynamics here). Since this is a subgroup of Analyses, `@ingroup Analyses` is used here, with `Analyses` as the doxygen tag for the next level up.
+
+In files, the `@ingroup` tag should be inserted before all classes and stand-alone functions. The tag should match the tag in the folder init file's `@defgroup` string.
