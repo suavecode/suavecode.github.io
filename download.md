@@ -9,6 +9,8 @@ permalink: /download/
 
 Jump in and design!  Here are some helpful steps for downloading and installing the code.  There are stable releases and beta releases.  Also make sure to check out the license under which the code is available.
 
+<br>
+
 ## Downloading
 
 SUAVE comes released as a set of project folders ready for learning and exploration.  
@@ -17,24 +19,17 @@ Please take a few seconds to register with us by filling out the form on the pag
 
 ### Stable Release
 Download the latest stable release of SUAVE: <br>
-[SUAVE Version 0.9.0](/register/)
-
-### Folder Structure
-
-The basic folder structure that you find in the archives is shown below.  You can always add new folders or repositories as necessary to fit your needs.
-
-~~~
-SUAVE_Project/    # main project folder, comes with the zip file
-    Source/       # SUAVE source code
-    Tutorials/    # scripts for learning about SUAVE
-    Workspace/    # a space to design new aircraft
-~~~
+[SUAVE Version 1.0.0](/register/)
 
 ### License
 
 We want SUAVE to grow with the community, so it's available under a <br>[LGPL 2.1 License](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html).  
 
 Please <script language="javascript" type="text/javascript">printEmailLink('suavecode-info', 'lists.stanford.edu','contact us');</script>  if you are interested in re-publishing SUAVE source code as part of a commercial software.  
+
+### Tutorials
+
+We also update our tutorials repository with every release to show new users some of the capabilities and how to use the code. The tutorial files can be found [here](https://github.com/suavecode/Tutorials). If you would like to use these, you may either follow the Github download instructions on the [develop](/develop) page, but using `https://github.com/suavecode/Tutorials.git`, or you can download the files as a .zip using the "clone or download" button on the [Tutorials Github page](https://github.com/suavecode/Tutorials).
 
 <br>
 
@@ -51,13 +46,13 @@ If you don't have access to a scientific python distribution, you can install th
 Once you've downloaded the code and prepared the software requrements, you're ready to install it into python!
 
 1. Download and extract the release archive
-2. Open the directory _SUAVE_Project/Source/trunk_
+2. Open the directory SUAVE/trunk
 3. Open a command prompt in that directory
 4. Run this command: ```python setup.py install``` <br>
    If you are on a linux or mac, you may need to run <br> ```sudo python setup.py install```
 5. Change to any other folder, open a python shell, and test the new module with the command `import SUAVE`
 
-If all goes well, you are now able to import SUAVE into your python projects.  Check out the [guides](/guides) for examples on using the tutorials!
+If all goes well, you are now able to import SUAVE into your python projects.  If you've downloaded the tutorials as well, check out the [guides](/guides) for examples on using thems!
 
 After trying out the guides you may find you want to make changes to the innards of the package to fit your problem, take a look at the [develop](/develop) notes for how to set this up.
 

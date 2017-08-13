@@ -12,7 +12,7 @@ If you want to make changes to SUAVE source, or contribute new functionalities b
 
 ## Background
 
-SUAVE is developed via [GitHub](https://github.com/suavecode/SUAVE), and this page will describe how to get started.  There is also a list of [open topics](#areas-of-development) available for contribution if you're looking for ideas to get started. 
+SUAVE is developed via [GitHub](https://github.com/suavecode/SUAVE), and this page will describe how to get started.  There is also a list of [open topics](https://github.com/suavecode/SUAVE/projects/2) available for contribution if you're looking for ideas to get started. 
 
 As a developer, you'll want to [fork](https://help.github.com/articles/fork-a-repo) SUAVE to your personal account.  This creates a copy of the whole SUAVE repository, including all past versions, inside your GitHub account.  Generally you'll want to start from the develop branch, but you can check with the developers if you think it would be more appropriate to work on a feature branch.
 
@@ -28,7 +28,7 @@ SUAVE merges new code contributions through [pull requests](https://help.github.
 
 SUAVE is built on a slightly modified PEP8 style guide, with changes made to implement a data-oriented view of the code. To help support discovering code, the SUAVE folder structure explicitly mirrors the package structure. Flexibility of the package structure is important, so in general all objects live in their own file, with the same file name as the object name. In order to maintain a separation between Analysis and Data structures, there are often parallel package trees inside the main branches of the package, like SUAVE.Methods.Aerodynamics and SUAVE.Analysis.Aerodynamics. Where possible the names of fields that live in the SUAVE package are written out verbosely, avoiding jargon built on mathematical variable names or acronyms.
 
-A [full description](https://github.com/suavecode/SUAVE/wiki/Style-Guide) of the style of SUAVE can be found on the [wiki](https://github.com/suavecode/SUAVE/wiki/Style-Guide).
+A full description of the style of SUAVE can be found on the [Guides page](/guides).
 
 Templates for new methods and objects can be found in the SUAVE repo's [templates](https://github.com/suavecode/SUAVE/tree/develop/templates) folder.
 
@@ -42,7 +42,7 @@ In addition to the package dependencies listed on the [download](/download#depen
 [Git](https://en.wikipedia.org/wiki/Git_(software)) is an advanced distributed version control system. It is the core of the majority of current open source projects.  Here are some instructions for installing git on your machine.<br>
 [linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux) , [mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac) , [windows](http://msysgit.github.io/) , [more info](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
 
-There are several [GUI's](http://git-scm.com/downloads/guis) available to help manage the repository.  On windows [TortoiseGit](https://code.google.com/p/tortoisegit/) is also useful one.
+There are several [GUI's](http://git-scm.com/downloads/guis) available to help manage the repository.  On Windows [TortoiseGit](https://code.google.com/p/tortoisegit/) is a useful one.
 
 If you're going to install TortoiseGit on windows, when installing the git client (MsysGit), uncheck “Windows Explorer Integration”.  And when installing TortoiseGit, select “Checkout as-is, Unix-style line endings”
 
@@ -54,7 +54,7 @@ Once you've installed git, there a few post-install commands to run, documented 
 
 If you don't have a github account already, go ahead and sign up!
 
-Then go to the SUAVE github repo at [github.com/suavecode/SUAVE](https://github.com/suavecode/SUAVE) and check out the code!  If you wouldn't mind, tick the “Watch” and “Star” buttons at the top-right of the page, if you think this is a sweet repo.
+Then, go to the SUAVE github repo at [github.com/suavecode/SUAVE](https://github.com/suavecode/SUAVE) and check out the code!  If you wouldn't mind, tick the “Watch” and “Star” buttons at the top-right of the page, if you think this is a useful repo.
 
 <br>
 
@@ -66,7 +66,7 @@ Time to pull code.  If you had previously installed a release distribution accor
 2. To get your own copy of the source, with links into real-time updates, you need to ![fork](/images/fork-button.png){:height="25px"} the repo.  This button is on the top-right of the page too.  
 3. This will copy the repo and take you to your fork, notice that your web-browser's URL has changed to include your username. 
 4. Now you can [clone](http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository) your fork to your computer.  Find the clone url of your fork on the right hand side of the page and copy it.  You can use the https url. <br> ![clone](/images/clone-example.png){:height="90px"} 
-5. Open a command prompt, in a directory that you want to start the repository (for example in the SUAVE_Project folder), and run the git clone command <br> `git clone <git url>` <br> Now you should have the source code! You can rename this folder to "Source" if you want to keep the recommended [folder structure](/download#folder-structure).
+5. Open a command prompt, in a directory that you want to start the repository (for example in the SUAVE_Project folder), and run the git clone command <br> `git clone <git url>` <br> Now you should have the source code.
 6.  Change directory into the trunk folder and run a developer installation command.  <br> `python setup.py develop` <br> Now you have a developer version of SUAVE installed!  You can make changes to the source in this directory and the changes will appear the next time you run python, without having to rebuild or reinstall.
 7.  Test the installation by changing to any other directory, then start a python shell, and run the command <br> `>>> import SUAVE`<br>`>>> print SUAVE.__file__`<br> This should print the file path to the SUAVE package init.py file in your trunk directory.
 
@@ -88,7 +88,7 @@ As you make changes to your code, you'll want to [add](http://git-scm.com/docs/g
 Below is a summary of setting the upstream remote.  There are a good references for this process [here](https://help.github.com/articles/configuring-a-remote-for-a-fork/) and [here](https://help.github.com/articles/syncing-a-fork/), and more via a google search for "git update fork".  
 
 1. Inspect your current "remote", this is the url of the repository to which your clone listens. 
-   In the SUAVE Source directory for the cloned repo, type <br> `git remote –v` and it should show the “origin” directory for “fetch” and “push”. These are the remote urls for your own fork.
+   In the directory for the cloned repo, type <br> `git remote –v` and it should show the “origin” directory for “fetch” and “push”. These are the remote urls for your own fork.
 2. Add an upstream remote to the main suavecode/SUAVE repository using <br>`git remote add upstream https://github.com/suavecode/SUAVE.git`
 3. Run `git remote -v` again to see the new remotes.
 4. Finally, download the code for the upstream remote with <br> `git fetch upstream`.
@@ -164,59 +164,20 @@ In addition to Git, there are other popular VCSs such as SVN ([http://tortoisesv
 
 ## Areas of Development
 
-These are the areas that are under development, including their status, and what could use support.  Post to the [forum](/forum) if you're intersted in working on any of these, or to suggest a new module!
+### Short Term Feature Development
 
-| Module     | Status  |  
-|------------|--------|
-| **Aerodynamics** |  |
-| Native Vortex Lattice | Implemented for conventional tube and wing, continuing development. |
-| High-Lift Systems     | Basic methods in place. Interested in more advanced methods. |
-| Connection to SU2  | Automatic capabilities. Further development and tuning would be appreciated. |
-| Connection to AVL  | Implemented for general wings, straight tube fuselage, development needed for control surfaces. | 
-| Compressibility Drag | CFD databased can be created for these. | 
-| Arbitrary Airfoil Data for Lifting Surfaces | Airfoil data from any source as functions of Alpha, Re, Ma used for performance computations.  Use advanced compressibility effects available from CFD. | 
-| Supersonic Performance | Aerodynamics in place, afterburning turbojet in place. | 
-| Low-Speed | Not started, looking for ability to control aircraft at critical conditions at low speed. | 
-| **Propulsion** | |
-| Jet Engine | 1D model in place for Turbofan and Turbojet. | 
-| Electric Propulsion | Electric motors in place both with ducted fans and propellers. |
-| Turboprop/Piston Powered | Pieces are available such as propellers and turbines. They need a prebuilt network. |
-| Energy storage | Basic models for various Lithium batteries, fuel cells in place.  Additional storage systems for Liquid Natural Gas, Hydrogen are needed.
-| NetworkX Infrastructure | Development needed, to generalize energy network framework using a graph package. |
-| **Mission** | |
-| Segments | Needed: taxi, reserve, loiter, dash, and more | 
-| Performance | Additional performance methods needed, landing and takeoff complete. |
-| Payload Range Diagrams | Completed methods.|
-| **Environmental Impact** ||
-| Subsonic Noise | DC-10 based correlations implemented. Noise component method implemented for airframe and engine noise based on empirical and semi-empirical data. | 
-| Supersonic Boom | Not started, consider sBOOM, or SUBoom that could be open source.| 
-| Emissions - NOx |Correlations implemented|
-| Emissions - CO2 |No correlations yet.|
-| **Stability and Control** ||
-| Static Stability | Correlation methods exist for tube and wing. Derivatives can be pulled from AVL currently. |
-| Dynamic Stability | Both approximation and full linearized methods exist. In need of better estimates for center of gravity and moments of inertia. |
-| **Structures** ||
-| Weights correlations |Implemented for tube/wing, blended wing body, and human powered/solar.|
-| Loads | No methodology for loads determination. Need a V-n diagram.|
-| Finite Element Modeling |FEM-based primary structure weight estimations would be useful for unconventional configurations.|
-| **Geometry**| |
-| Connection to OpenVSP | API interface to create VSP files implemented. Need connection to import VSP into SUAVE format.|
-| Geometry Visualization | Currently only OpenVSP is used. Early developments with GeoMACH|
-| Internal Stuctural Design | Methods needed for modeling of internal members. Current OpenVSP versions cannot handle internal structures.|
-| Fuselage Layout | Basic methods in place for Tube/Wing and BWB. More general methods desired. |
-| **Optimization**| |
-| Optimization Interfaces | Frameworks are complete. |
-| Response Surfaces | Automatic method not yet implemented. |
-| Uncertainty Management | Planning to use Dakota to accomplish this. |
-| **Input/Output** | |
-| Data visualization | Looking for [D3.JS](http://d3js.org/) development. |
-| Design templates | Not implemented. |
-| **Miscellaneous** | |
-| Multifidelity Approaches | Undergoing developent.  Suggestions welcomed. |
-| Aeroelastic Constraints | Under consideration, in early development. |
-| Interface to BAD3/4, AEDT | AEDT interfaces completed in other branches.|
+These are the areas that are under development or suggested for development are available in our [Github projects tab](https://github.com/suavecode/SUAVE/projects). There are two active projects that include feature development. One is the list of items we plan to accomplish for our [next release](https://github.com/suavecode/SUAVE/projects/1). The other is a general [feature development](https://github.com/suavecode/SUAVE/projects/2) project, which contains features that we would like to have but are not currently priorities for the next release.
 
-<br>
+Post to the [forum](/forum) if you're intersted in working on any of these, or to suggest a new module!
+
+### Long Term Development Goals
+
+Looking farther into the future, we have some key items envisioned for the next major release of SUAVE. So far these are:
+
+* Upgrade to Python 3
+* Integration with a standardized parameter storage interface such as [CPACS](https://software.dlr.de/p/cpacs/home/)
+
+We're always happy to hear feedback on what our users think is important in this kind of tool, so if you have another idea go ahead and ask about it on our [forum](/forum).
 
 Back to [Top](#background)!
 
