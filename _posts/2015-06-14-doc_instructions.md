@@ -74,19 +74,26 @@ This is a template docstring:
         """<Description>
         
         Assumptions:
-        <assumptions>
+        <any assumptions>
         
         Source:
         <source>
         
         Inputs:
-        <inputs>
-                   
+        <input1> <units>
+        <input2> <units>
+        ..
+        
         Outputs:
-        <outputs>
-                
+        <output1> <units>
+        <output2> <units>
+        ..
+
         Properties Used:
-        <properties>
+        <property1> <units>
+        <property2> <units>
+        ..
+        """   
             
 ### Doxygen Grouping Tags
 
