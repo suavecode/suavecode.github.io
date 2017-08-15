@@ -1,0 +1,10 @@
+var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d =
+[
+    [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a687290d12bc2f749359f4a1cce1fb1b2", null ],
+    [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a6d5b90c476592a501e96410fed1a77d8", null ],
+    [ "auxiliary_battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a97968b4bfe2d75ab6d5b7a90fa4bb77c", null ],
+    [ "motor_efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#ac2a253f9d6159394e51b62e508b12138", null ],
+    [ "primary_battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#afa0fa5859a60c2d241d67456a23f4530", null ],
+    [ "propulsor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#aae3f5349d0f99351fb89f167dbfffe49", null ],
+    [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a9da26c5f784beb335652fbe2a8519ec2", null ]
+];

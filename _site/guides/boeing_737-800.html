@@ -37,6 +37,7 @@
 		<li><a class="btn page-link " href="/">About</a></li>
 		<li><a class="btn page-link " href="/download/">Download</a></li>
 		<li><a class="btn page-link active" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link active" href="/documentation/">Documentation</a></li>
 		<li><a class="btn page-link " href="/develop/">Develop</a></li>
 		<li><a class="btn page-link " href="/forum/">Forum</a></li>
 		
@@ -89,17 +90,17 @@
 
 <h2 id="boeing-737-800-analysis-tutorial">Boeing 737-800 Analysis Tutorial</h2>
 
-<p>The tutorial shows how the user can set up a conventional aircraft configuration and a mission the aircraft is to fly and then simulate the aircraft’s performance over the defined mission. The code is divided into a number of functions that are called from the main function. The descriptions in the functions clearly explain the function’s inputs and outputs and the actions performed on the functions.</p>
+<p>This tutorial shows how the user can setup a conventional configuration aircraft, a mission the aircraft is to fly, and then simulate the aircraft’s performance over the defined mission. The code is divided into a number of functions that are called from the main function.</p>
 
 <h3 id="steps-to-simulate-the-aircrafts-performance-over-a-mission-">Steps to simulate the aircraft’s performance over a mission :</h3>
 
-<p>1) Locate the tutorial script folder, /Tutorials, from your project folder as described in the Download guide. If using the command line, cd to this directory.
-2) Open the tut_mission_B737.py script in your favorite editor or IDE.
-2) The script is setup to run the B737 on its design mission. Run it in your IDE. If using the command line use the command</p>
+<p>1) Locate the folder where you have the tutorial repository. If using the command line, cd to this directory.</p>
 
-<pre><code class="python"> $python tut_mission_B737_800.py  </code></pre>
+<p>2) Open the tut_mission_B737.py script in your favorite editor or IDE. The script is setup to run the B737 on its design mission. Run it in your IDE. If using the command line use the command</p>
 
-<p>3) A few plots depicting the variation of the different aircraft performance parameters (Cl,Cd,etc) over the course of the mission are shown.</p>
+<pre><code class="python"> python tut_mission_B737_800.py  </code></pre>
+
+<p>3) A few plots depicting the variation of the different aircraft performance parameters over the course of the mission are shown.</p>
 
 <h3 id="important-functions-">Important Functions :</h3>
 
@@ -109,122 +110,115 @@
 <p>function is where the aircraft’s geometry is specified.</p>
 
 <h5 id="setting-up-a-wing">Setting up a wing</h5>
-<p>The code below shows how the main wing of the aircraft is set up. The basic geometric inputs that define the wing are specified. Then the wing is then appended to the vehicle, which is an instance of the aircraft class.</p>
+<p>The code below shows how the main wing of the aircraft is set up. The basic geometric inputs that define the wing are specified. Then the wing is then appended to the vehicle, which is an instance of the aircraft class. </p>
 
 <p>In SUAVE units are identified through the use of a units package called Pint. Notice, that for the wing sweep that the units are specified in degrees through *Units.deg. To get results into a desired unit use /Units.deg.</p>
 
 <p>The wing sweep is defined as the sweep of the quarter chord. Additionally, a symmetric wing means that it is symmetric about the root, i.e. there is  right and left side.</p>
 
-<pre><code class="python">wing = SUAVE.Components.Wings.Main_Wing()
-wing.tag = 'main_wing'
+<pre><code class="python">
+    wing = SUAVE.Components.Wings.Main_Wing()
+    wing.tag = 'main_wing'
+    
+    wing.aspect_ratio            = 10.18
+    wing.sweeps.quarter_chord    = 25 * Units.deg
+    wing.thickness_to_chord      = 0.1
+    wing.taper                   = 0.1
+    wing.span_efficiency         = 0.9
+    wing.spans.projected         = 34.32 * Units.meter
+    wing.chords.root             = 7.760 * Units.meter
+    wing.chords.tip              = 0.782 * Units.meter
+    wing.chords.mean_aerodynamic = 4.235 * Units.meter
+    wing.areas.reference         = 124.862 * Units['meters**2']  
+    wing.twists.root             = 4.0 * Units.degrees
+    wing.twists.tip              = 0.0 * Units.degrees
+    wing.origin                  = [13.61,0,-1.27] # meters
+    wing.vertical                = False
+    wing.symmetric               = True
+    wing.high_lift               = True
+    wing.dynamic_pressure_ratio  = 1.0
 
-wing.aspect_ratio            = 10.18
-wing.sweep                   = 25 * Units.deg
-wing.thickness_to_chord      = 0.1
-wing.taper                   = 0.16
-wing.span_efficiency         = 0.9
-
-wing.spans.projected         = 35.66    
-
-wing.chords.root             = 6.81
-wing.chords.tip              = 1.09
-wing.chords.mean_aerodynamic = 4.235
-
-wing.areas.reference         = 124.862 
-
-wing.twists.root             = 4.0 * Units.degrees
-wing.twists.tip              = -4.0 * Units.degrees
-
-wing.origin                  = [20,0,0]
-wing.aerodynamic_center      = [3,0,0] 
-
-wing.vertical                = False
-wing.symmetric               = True
-wing.high_lift               = True
-
-wing.dynamic_pressure_ratio  = 1.0
-
-vehicle.append_component(wing)
 </code></pre>
 
 <h5 id="setting-up-the-fuselage">Setting up the fuselage</h5>
 <p>Similar to the wing above, the code below illustrates how a fuselage can be added to the vehicle. Again the user is required to specify the basic fuselage geometric parameters and then add the fuselage object to the vehicle.</p>
 
-<pre><code class="python">fuselage = SUAVE.Components.Fuselages.Fuselage()
-fuselage.tag = 'fuselage'
-
-fuselage.seats_abreast         = 6
-fuselage.seat_pitch            = 1
-
-fuselage.fineness.nose         = 1.6
-fuselage.fineness.tail         = 2.
-
-fuselage.lengths.nose          = 6.4
-fuselage.lengths.tail          = 8.0
-fuselage.lengths.cabin         = 28.85 
-fuselage.lengths.total         = 38.02 
-fuselage.lengths.fore_space    = 6.
-fuselage.lengths.aft_space     = 5.    
-
-fuselage.width                 = 3.74 
-
-fuselage.heights.maximum       = 3.74  
-fuselage.heights.at_quarter_length          = 4. 
-fuselage.heights.at_three_quarters_length   = 4. 
-fuselage.heights.at_wing_root_quarter_chord = 4. 
-
-fuselage.areas.side_projected  = 3.74* 38.02 
-fuselage.areas.wetted          = 446.718 
-fuselage.areas.front_projected = 12.57
-
-fuselage.effective_diameter    = 3.74 
-
-fuselage.differential_pressure = 5.0e4 * Units.pascal # Maximum differential pressure
-
-vehicle.append_component(fuselage)
+<pre><code class="python">  
+    fuselage = SUAVE.Components.Fuselages.Fuselage()
+    fuselage.tag = 'fuselage'
+    
+    fuselage.number_coach_seats    = vehicle.passengers
+    fuselage.seats_abreast         = 6
+    fuselage.seat_pitch            = 1     * Units.meter
+    fuselage.fineness.nose         = 1.6
+    fuselage.fineness.tail         = 2.
+    fuselage.lengths.nose          = 6.4   * Units.meter
+    fuselage.lengths.tail          = 8.0   * Units.meter
+    fuselage.lengths.cabin         = 28.85 * Units.meter
+    fuselage.lengths.total         = 38.02 * Units.meter
+    fuselage.lengths.fore_space    = 6.    * Units.meter
+    fuselage.lengths.aft_space     = 5.    * Units.meter
+    fuselage.width                 = 3.74  * Units.meter
+    fuselage.heights.maximum       = 3.74  * Units.meter
+    fuselage.effective_diameter    = 3.74     * Units.meter
+    fuselage.areas.side_projected  = 142.1948 * Units['meters**2'] 
+    fuselage.areas.wetted          = 446.718  * Units['meters**2'] 
+    fuselage.areas.front_projected = 12.57    * Units['meters**2'] 
+    fuselage.differential_pressure = 5.0e4 * Units.pascal # Maximum differential pressure
+    
+    fuselage.heights.at_quarter_length          = 3.74 * Units.meter
+    fuselage.heights.at_three_quarters_length   = 3.65 * Units.meter
+    fuselage.heights.at_wing_root_quarter_chord = 3.74 * Units.meter
+    
+    # add to vehicle
+    vehicle.append_component(fuselage)
 </code></pre>
 
 <h5 id="setting-up-the-propulsion-system">Setting up the propulsion system</h5>
 
 <p>The aircraft uses a turbofan engine. This engine can be constructed piece by piece using the energy network framework. We instantiate the network as shown below.</p>
 
-<pre><code class="python"># ------------------------------------------------------------------
-#   Turbofan Network
-# ------------------------------------------------------------------    
+<pre><code class="python">
+    # ------------------------------------------------------------------
+    #   Turbofan Network
+    # ------------------------------------------------------------------    
+    
+    #instantiate the gas turbine network
+    turbofan = SUAVE.Components.Energy.Networks.Turbofan()
+    turbofan.tag = 'turbofan'
+    
+    # setup
+    turbofan.number_of_engines = 2
+    turbofan.bypass_ratio      = 5.4
+    turbofan.engine_length     = 2.71 * Units.meter
+    turbofan.nacelle_diameter  = 2.05 * Units.meter
+    turbofan.origin            = [[13.72, 4.86,-1.9],[13.72, -4.86,-1.9]] # meters
+    
+    #compute engine areas
+    turbofan.areas.wetted      = 1.1*np.pi*turbofan.nacelle_diameter*turbofan.engine_length
+    
+    # working fluid
+    turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
 
-#instantiate the gas turbine network
-turbofan = SUAVE.Components.Energy.Networks.Turbofan()
-turbofan.tag = 'turbo_fan'
-
-# setup
-turbofan.number_of_engines = 2.0
-turbofan.bypass_ratio      = 5.4
-turbofan.engine_length     = 2.71
-turbofan.nacelle_diameter  = 2.05
-
-# working fluid
-turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
 </code></pre>
 
-<p>Next the components of the turbofan are initialized and added to the engine as shown in the energy networks section. The turbofan is composed of an inlet diffuser (nozzle), low and high pressure compressors, a combustor, a fan, a low and high pressure turbine and exit nozzles for the core and the fan.</p>
+<p>Next the components of the turbofan are initialized and added to the engine as shown in the energy networks section. The turbofan is composed of an inlet diffuser (nozzle), low and high pressure compressors, a combustor, a fan, a high and low pressure turbine, and exit nozzles for the core and the fan. </p>
 
 <p>Finally the network is added to the aircraft as shown below.</p>
 
-<pre><code class="python">#size the turbofan
+<pre><code class="python">
+#size the turbofan
 turbofan_sizing(turbofan,mach_number,altitude)   
-
-#computing the engine length and diameter
-compute_engine_geometry(turbofan,None)
-
-print "sls thrust : ",turbofan.sealevel_static_thrust
-print "engine length : ",turbofan.engine_length
+    
+# add  gas turbine network turbofan to the vehicle 
+vehicle.append_component(turbofan)  
 
 # add  gas turbine network gt_engine to the vehicle
 vehicle.append_component(turbofan)  
 </code></pre>
 
 <h4 id="data-structure-visualization">Data Structure Visualization</h4>
-<p>The data structure associated with the Boeing 737-800 can be visualized <a href="/guides/data_structures/B737.html">here</a>.</p>
+<p>The data structure associated with the Boeing 737-800 can be visualized <a href="/guides/data_structures/B737.html">here</a>. </p>
 
 <p><a href="/guides/data_structures/B737.html"><img src="../images/b737_datastructure_preview.png" alt="Boeing 737 Data Structure" /></a></p>
 
@@ -233,42 +227,40 @@ vehicle.append_component(turbofan)
 <h4 id="configssetup">configs_setup()</h4>
 <p>The aircraft geometry created is converted into configurations that can be used to make simple modifications to the geometric parameters while not modifying the aircraft geometry completely. An example of the use of this feature is when high-lift devices need to be deployed during landing and takeoff. Thus a landing and takeoff configuration can be added as shown below and then during say the flaps and slats settings can be set differently for each of the configurations.</p>
 
-<pre><code class="python"># ------------------------------------------------------------------
-#   Cruise Configuration
-# ------------------------------------------------------------------
+<pre><code class="python">
+    # ------------------------------------------------------------------
+    #   Cruise Configuration
+    # ------------------------------------------------------------------
+    config = SUAVE.Components.Configs.Config(base_config)
+    config.tag = 'cruise'
+    configs.append(config)
 
-config = SUAVE.Components.Configs.Config(base_config)
-config.tag = 'cruise'
+    # ------------------------------------------------------------------
+    #   Takeoff Configuration
+    # ------------------------------------------------------------------
+    config = SUAVE.Components.Configs.Config(base_config)
+    config.tag = 'takeoff'
+    config.wings['main_wing'].flaps.angle = 20. * Units.deg
+    config.wings['main_wing'].slats.angle = 25. * Units.deg
+    config.max_lift_coefficient_factor    = 1.
 
-configs.append(config)
-
-# ------------------------------------------------------------------
-#   Takeoff Configuration
-# ------------------------------------------------------------------
-
-config = SUAVE.Components.Configs.Config(base_config)
-config.tag = 'takeoff'
-
-config.wings['main_wing'].flaps.angle = 20. * Units.deg
-config.wings['main_wing'].slats.angle = 25. * Units.deg
-
-config.V2_VS_ratio = 1.21
-config.maximum_lift_coefficient = 2.
-
-configs.append(config)
+    configs.append(config)
 </code></pre>
 
 <h4 id="missionsetup">mission_setup()</h4>
 <p>To modify the baseline mission that the aircraft flies, go to the mission_setup() function and add or delete segments of the mission</p>
 
-<pre><code class="python">segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
-segment.tag = "cruise"
+<pre><code class="python">
+    segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
+    segment.tag = "cruise"
 
-segment.analyses.extend( analyses.cruise )
+    segment.analyses.extend( analyses.cruise )
 
-segment.air_speed  = 230.412 * Units['m/s']
-segment.distance   = 4666.08 * Units.km
-mission.append_segment(segment)
+    segment.air_speed  = 230.412 * Units['m/s']
+    segment.distance   = 2490. * Units.nautical_miles
+
+    # add to mission
+    mission.append_segment(segment)
 </code></pre>
 
 <h4 id="baseanalysis">base_analysis()</h4>
@@ -326,9 +318,10 @@ mission.append_segment(segment)
 
 <p>2) Modify the parameters of the main wing</p>
 
-<pre><code class="python">wing.aspect_ratio            = 10.12      
-wing.spans.projected         = 40.0    
-wing.areas.reference         = 158.0
+<pre><code class="python">
+wing.aspect_ratio            = 10.12      
+wing.spans.projected         = 40.0  * Units.meter
+wing.areas.reference         = 158.0 * Units['meters**2'] 
 </code></pre>
 
 <p>You may also need to update the reference area for the aircraft.</p>
@@ -352,7 +345,7 @@ segment.climb_rate   = 3.0    * Units['m/s']
 mission.append_segment(segment)
 </code></pre>
 
-<p>5) Next update the cruise segment velocity to  the new speed value</p>
+<p>5) Next update the cruise segment velocity to  the new speed value  </p>
 
 <pre><code class="python">segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
 segment.tag = "cruise"
@@ -360,7 +353,9 @@ segment.tag = "cruise"
 segment.analyses.extend( analyses.cruise )
 
 segment.air_speed  = 200.0 * Units['m/s']
-segment.distance   = 4666.08 * Units.km 
+segment.distance   = 2490. * Units.nautical_miles
+
+# add to mission
 mission.append_segment(segment)
 </code></pre>
 

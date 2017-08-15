@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Using the Documentation - SUAVE</title>
+	<meta name="description" content="How to Read (and Write) the DocumentationThis is an explanation of how documentation is built in SUAVE so that the user can know what to look for and how to ...">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://suavecode.github.io//guides/docs.html">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
+	<script src="/js/main.js" type="text/javascript"></script>
+</head>
+
+	
+<!--	<a href="https://github.com/suavecode/SUAVE"><img style="position: absolute; z-index: 10; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>-->
+	<body>
+
+	<div class="page-content">
+		<div class="wrapper">
+			<aside class="left-nav">
+			<div class="verticalLineL">
+				&nbsp
+	<a href="/" class="logo"><img src="/images/logo.svg" alt="SUAVE Code"><span>SUAVE</span></a>
+
+	<section>
+		<h1 class="greetings"></h1>
+		<p>A multi-fidelity conceptual design environment. Its purpose is to credibly produce conceptual-level design conclusions for future aircraft incorporating advanced technologies.</p>
+
+	</section>
+	<nav class="main-nav">
+		<ul>
+		<li><a class="btn page-link " href="/">About</a></li>
+		<li><a class="btn page-link " href="/download/">Download</a></li>
+		<li><a class="btn page-link active" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link active" href="/documentation/">Documentation</a></li>
+		<li><a class="btn page-link " href="/develop/">Develop</a></li>
+		<li><a class="btn page-link " href="/forum/">Forum</a></li>
+		
+		</ul>
+	</nav>
+
+
+            <footer>
+	<div class="social-media-list">
+		<a class="social-media-link" href="https://github.com/suavecode/SUAVE">
+            <span class="icon  icon-github">
+                <img src="/images/github.svg">
+            </span>
+		</a> 
+        
+	    <a class="social-media-link" href="https://travis-ci.org/suavecode/SUAVE">
+            <span class="icon  icon-travis">
+                <img src="/images/travis.svg">
+            </span>
+		</a>
+
+		
+		
+	</div>
+        
+    <br>
+    
+	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+</footer>
+
+			
+			</aside>
+			<main class="main-content">
+			<div class="single-post">
+
+	<div class="verticalLineR">
+
+	<header class="hero">
+	<div class="valign">
+		<h1 class="title">Using the Documentation</h1>
+	</div>
+	</header>
+
+	<article class="content">
+	<h3 id="how-to-read-and-write-the-documentation">How to Read (and Write) the Documentation</h3>
+
+<p>This is an explanation of how documentation is built in SUAVE so that the user can know what to look for and how to write it if they wish to add their own code. The doxygen page is available <a href="/doxygen">here</a>.</p>
+
+<h3 id="docstrings">Docstrings</h3>
+
+<p>All classes and functions in SUAVE have docstrings have docstrings. These give the user an understanding of what the function does and information on the input and output variables. </p>
+
+<h4 id="classes">Classes</h4>
+
+<p>For a class, the docstring has three parts:</p>
+
+<ul>
+  <li>General description</li>
+  <li>Assumptions</li>
+  <li>Source</li>
+</ul>
+
+<p>The general description provides a brief summary of what the class is used for. Assumptions list any significant assumptions are important in how it is used. This may be listed as None or N/A if there are no important assumptions. The source section should provide the general source of methods in the class. If there is no overall source, a message like ‘see sources in functions’ may be appropriate. There are also cases where a source is not relevant, such as simple geometric functions, and may also be listed as None or N/A.</p>
+
+<h4 id="class-docstring-template">Class Docstring Template</h4>
+
+<p>This is the general template that can be used when creating a new class. It should be placed directly under the class declaration.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>"""&lt;Description&gt;
+
+Assumptions:
+&lt;any assumptions&gt;
+
+Source:
+&lt;source&gt;
+"""
+</code></pre>
+</div>
+
+<h4 id="functions">Functions</h4>
+
+<p>For functions there are six categories:</p>
+
+<ul>
+  <li>Description</li>
+</ul>
+
+<p>This is a general description of what the function does. It should also include any key information that does not fit into one of the other categories.</p>
+
+<ul>
+  <li>Assumptions</li>
+</ul>
+
+<p>This should contain any assumptions made by the function. None or N/A can be used if none are used.</p>
+
+<ul>
+  <li>Source</li>
+</ul>
+
+<p>The source of any methods that have been implemented. Simple methods like basic geometric relations do not need a source.</p>
+
+<ul>
+  <li>Inputs</li>
+</ul>
+
+<p>This should contain any variables or functions passed to the function. If the passed variable is a data structure, the components that are used should be listed. Each item should include a description if it is not obvious from the name. It should also include any relevant units. In addition, information about the variable type or any other information that might be important can be added here.</p>
+
+<ul>
+  <li>Outputs</li>
+</ul>
+
+<p>This should contain the same information as in the inputs. It may also contain information on variables that are modified but not explicitly returned.</p>
+
+<ul>
+  <li>Properties Used</li>
+</ul>
+
+<p>This carries the same information as input and outputs. It typically contains variables that are properties of the parent class but are not modified. There is some overlap with inputs and outputs, but either category is acceptable as long as the variable is documented.</p>
+
+<h4 id="function-docstring-template">Function Docstring Template</h4>
+
+<p>This is a template docstring:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    """&lt;Description&gt;
+    
+    Assumptions:
+    &lt;any assumptions&gt;
+    
+    Source:
+    &lt;source&gt;
+    
+    Inputs:
+    &lt;input1&gt; &lt;units&gt;
+    &lt;input2&gt; &lt;units&gt;
+    ..
+    
+    Outputs:
+    &lt;output1&gt; &lt;units&gt;
+    &lt;output2&gt; &lt;units&gt;
+    ..
+
+    Properties Used:
+    &lt;property1&gt; &lt;units&gt;
+    &lt;property2&gt; &lt;units&gt;
+    ..
+    """   
+</code></pre>
+</div>
+
+<h3 id="doxygen-grouping-tags">Doxygen Grouping Tags</h3>
+
+<p>Tags are used to put files into groups that match the SUAVE file structure. <code class="highlighter-rouge">@defgroup</code> tags define a group and should be placed in the init file. An example is shown here:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>## @defgroup Analyses-Aerodynamics Aerodynamics
+# These are the analyses that control aerodynamic evaluations.
+# @ingroup Analyses
+</code></pre>
+</div>
+
+<p>In this example, <code class="highlighter-rouge">Analyses-Aerodynamics</code> is the doxygen tag for the group, while the group appears in the documentation as <code class="highlighter-rouge">Aerodynamics</code>, the next part of the string. The tag is based on the file structure (Analyses/Aerodynamics here). Since this is a subgroup of Analyses, <code class="highlighter-rouge">@ingroup Analyses</code> is used here, with <code class="highlighter-rouge">Analyses</code> as the doxygen tag for the next level up.</p>
+
+<p>In files, the <code class="highlighter-rouge">@ingroup</code> tag should be inserted before all classes and stand-alone functions. The tag should match the tag in the folder init file’s <code class="highlighter-rouge">@defgroup</code> string.</p>
+
+	</article>
+
+	<div class="content">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES * * */
+			var disqus_shortname = '';
+			var disqus_identifier = 'http://suavecode.github.io//guides/docs.html';
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	</div>
+
+</div>
+
+			
+			</main>
+			
+		</div>
+	</div>
+	
+
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', '', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES * * */
+	var disqus_shortname = '';
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function () {
+	var s = document.createElement('script'); s.async = true;
+	s.type = 'text/javascript';
+	s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+</script>
+
+
+	</body>
+	
+</html>
