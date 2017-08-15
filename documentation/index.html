@@ -1,0 +1,50 @@
+---
+layout: awesome
+---
+
+<div class="page">
+
+	<div class="verticalLineR">
+
+	<header class="hero">
+	<div class="valign">
+		<h1 class="title">Documentation</h1>
+		<p class="subtitle"> Everything you ever wanted to know to be SUAVE </p>
+	</div>
+	</header>
+	
+
+	<section class="content">
+	<p> A direct link 
+	to the documentation for individual functions is <a href="http://suave.stanford.edu/doxygen">here</a>.</p>
+
+	<ul class="posts">
+		{% for post in site.categories.documentation %}
+		<li class="post">
+			<div class="span-1 comment-count">
+			</div>
+			<div class="span-10">
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			<div class="span-10">
+				<font size="2"> <a class="post-desc" href="{{ post.url | prepend: site.baseurl }}">{{ post.description }}</a>
+				
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+	
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>	
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+	
+	</section>
+
+</div>
+
