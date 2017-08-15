@@ -112,11 +112,11 @@ Then run the program again. This could take a few minutes. The results should lo
 
 ![2D Sweep](/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps.png)
 
-The labeled lines depict the fuel margin (i.e. fraction of the aircraft remaining weight that can be loaded with fuel). Positive values indicate a feasible design. Fuel burn is shown in the colored contours. Note that a smoother plot may be created by changing the number of points in the sweep function, but this will take more time. A carpet plot run using 20 points can be seen below. A local minimum is now visible.
+The labeled lines depict the fuel margin (i.e. fraction of the aircraft remaining weight that can be loaded with fuel). Positive values indicate a feasible design. Fuel burn is shown in the colored contours. Note that a smoother plot may be created by changing the number of points in the sweep function, but this will take more time. A carpet plot run using 400 points on can be seen below. A local minimum is now visible.
 
 ![2D Sweep_20](/images/wing_area_v_cruise_altitude_v_fuel_burn.png)
 
-Note: If you run this 20 point case yourself you may see messages indicating that a segment did not converge. This is normal and can happen when a mission is run far from a feasible point. In this case, it does not have a negative impact on the results.
+Note: If you run this 400 point case yourself you may see messages indicating that a segment did not converge. This is normal and can happen when a mission is run far from a feasible point. In this case, it does not have a negative impact on the results.
 
 ### Optimizing:
 
