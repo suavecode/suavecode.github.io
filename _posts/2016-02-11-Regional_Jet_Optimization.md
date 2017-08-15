@@ -112,25 +112,22 @@ Then run the program again. This could take a few minutes. The results should lo
 
 ![2D Sweep](/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps.png)
 
-The labeled lines depict the fuel margin (i.e. fraction of the aircraft remaining weight that can be loaded with fuel). Positive values indicate a feasible design. Fuel burn is shown in the colored contours. Note that a smoother plot may be created by changing the number of points in the sweep function, but this will take more time. A carpet plot run using 20 points can be seen below.
+The labeled lines depict the fuel margin (i.e. fraction of the aircraft remaining weight that can be loaded with fuel). Positive values indicate a feasible design. Fuel burn is shown in the colored contours. Note that a smoother plot may be created by changing the number of points in the sweep function, but this will take more time. A carpet plot run using 20 points can be seen below. A local minimum is now visible.
 
 ![2D Sweep_20](/images/wing_area_v_cruise_altitude_v_fuel_burn.png)
 
+Note: If you run this 20 point case yourself you may see messages indicating that a segment did not converge. This is normal and can happen when a mission is run far from a feasible point. In this case, it does not have a negative impact on the results.
 
 ### Optimizing:
 
- Now try running an Optimization. Recomment `variable_sweep(problem)` then uncomment the line below:
+ Now try running an Optimization. Recomment `variable_sweep(problem)` then uncomment the lines below:
 
 	output = scipy_setup.SciPy_Solve(problem,solver='SLSQP')
+    print output
 
 and run the file again.
 
-From the default inputs, the terminal (or IDE output) should display an optimum of [ 1.14127857  1.05251198], which corresponds to a wing area of 114.1 m^2, and 10.5 km (which, from the 2D sweep section of this tutorial, is not quite the true minimum, but it is close). A zoomed-in-plot of the objective function shape near the optimum is shown below to illustrate.
-
-![2D Sweep_zoom](/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps_zoomed.png)
-
-
-As can be seen in the plot above, there is a local optimum near the true optimum.
+From the default inputs, the terminal (or IDE output) should display an optimum of [ 1.08980937  1.02089232], which corresponds to a wing area of 109 m^2, and 10.2 km. It appears to have found the local minimum.
 
 Now try starting the optimization from a different initial guess. You can either modify the input parameters in the initial formulation (the relevant lines are repeated below with the modification)
 
@@ -149,11 +146,10 @@ or set up the optimization problem and change the inputs manually by uncommentin
     										   rescale inputs to start problem from here
     scaled_inputs                            = np.multiply(inputs,scaling)
     problem.optimization_problem.inputs[:,1] = scaled_inputs
+    output = scipy_setup.SciPy_Solve(problem,solver='SLSQP')
+    print output        
 
 
- This starts the optimization problem above the feasible region (wing area = 128 m^2, altitude = 13.8 km), and results in a fuel burn that is 30 kg lower than the result using the initial guess. This illustrates the important of choosing a starting point when running optimization problem. Additionally, this demonstrates SUAVE's ability to handle infeasible cases, showing that it can converge to a feasible case even when starting from an infeasible set of initial inputs. Plots of the default optimization history for both sets of inputs can be seen below.
-
-![Opt History](/images/optimization_path.png)
-
+ This starts the optimization problem above the feasible region (wing area = 128 m^2, altitude = 13.8 km), and results in a fuel burn that is 30 kg lower than the result using the initial guess. This illustrates the important of choosing a starting point when running optimization problem. Additionally, this demonstrates SUAVE's ability to handle infeasible cases, showing that it can converge to a feasible case even when starting from an infeasible set of initial inputs.
 
 At this point, you can explore other starting points, or alter the vehicle or mission properties in Vehicles.py or Missions.py. Additionally, feel free to start using this as the basis for creating custom optimization scripts.
