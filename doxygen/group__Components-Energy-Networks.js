@@ -8,15 +8,6 @@ var group__Components_Energy_Networks =
       [ "propulsor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan_1_1Battery__Ducted__Fan.html#a122cf7faaa300ac90724b4bad1be7c98", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan_1_1Battery__Ducted__Fan.html#ac60dafe42beba94bd1f313c2a329ad3d", null ]
     ] ],
-    [ "Battery_Ducted_Fan_Parallel_Hybrid", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html", [
-      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a687290d12bc2f749359f4a1cce1fb1b2", null ],
-      [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a6d5b90c476592a501e96410fed1a77d8", null ],
-      [ "auxiliary_battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a97968b4bfe2d75ab6d5b7a90fa4bb77c", null ],
-      [ "motor_efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#ac2a253f9d6159394e51b62e508b12138", null ],
-      [ "primary_battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#afa0fa5859a60c2d241d67456a23f4530", null ],
-      [ "propulsor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#aae3f5349d0f99351fb89f167dbfffe49", null ],
-      [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan__Parallel__Hybrid_1_1Battc2b0401828a0427c88400fbb1bcfcf1d.html#a9da26c5f784beb335652fbe2a8519ec2", null ]
-    ] ],
     [ "Battery_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a5139599762ddccd4077654b2797e0957", null ],
       [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac90f964684965af5c1d2d6b936ff769c", null ],
@@ -55,33 +46,33 @@ var group__Components_Energy_Networks =
       [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html#ae845b8ec30319de8b8ced55dfa4694e8", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html#a8909a2f8395ae333ce6080a57c69d3d0", null ]
     ] ],
-    [ "Lift_Forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html", [
-      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a70da1341e8a327f1a4647e9613601863", null ],
-      [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#ada609dfe53e8ed938726421966e03a47", null ],
-      [ "residuals", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a5c669167bb6583a6c74b014c891dd4cc", null ],
-      [ "residuals_no_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a13370553f57a134e82491c9fd28ffe1a", null ],
-      [ "residuals_no_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a2aaaa06df4872f6377df6aef529d22a6", null ],
-      [ "unpack_unknowns", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#ae28833488e1f15551c7481147726284d", null ],
-      [ "unpack_unknowns_no_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#aa6ff8ff8c2b09b442860d73a9c71a7f3", null ],
-      [ "unpack_unknowns_no_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a0189fcccc5ff170b38374fd1f6631a2d", null ],
-      [ "avionics", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a9e60dcdebe35c4633b29761b79b3de1b", null ],
-      [ "battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#af2ca157af33b504ffad5331268a6db38", null ],
-      [ "engine_length_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#aa930858a6f7c869d7b1283b7b133daf7", null ],
-      [ "engine_length_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a5dbbae599c054a4c1b0595f28af2d309", null ],
-      [ "esc_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a43f0a6b71747bb045ee9819faf7e3ec5", null ],
-      [ "esc_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a1f69f8bcef612362d21d6151b79c75c1", null ],
-      [ "motor_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#af45fc281583b6c7fc329e93810bcf67e", null ],
-      [ "motor_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#ab41a35a115f49f8ca9617ea4817f18f6", null ],
-      [ "nacelle_diameter_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a953f74fdd172b24bd44b921518b699a2", null ],
-      [ "nacelle_diameter_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a6c7147181917549e44f7b0b6f142b8ba", null ],
-      [ "number_of_engines_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a1a02d2e17e737685e12044c43aff300a", null ],
-      [ "number_of_engines_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a1880338cda033740b78bf225dfd551e0", null ],
-      [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a6aa7c868fd51dbb06b24fa9762183be9", null ],
-      [ "propeller_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#aa23be534a4e872268a8cbd2c3ab11008", null ],
-      [ "propeller_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#abb971dd482411273280c33cd5cf9111f", null ],
-      [ "thrust_angle_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a7a6de6d291e84c8314b88bef6dc96e24", null ],
-      [ "thrust_angle_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#a60f7d7d0ae4b9adc1114c22becbb62da", null ],
-      [ "voltage", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward.html#ac7c75644feb40764cb254be46a4690b0", null ]
+    [ "Lift_Forward_Propulsor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#afd87d2bfe77ec721d7d2906f59be0d4e", null ],
+      [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#ac5469c50045189cdb7547ced33d5bc75", null ],
+      [ "residuals", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#aaa03db06698262649d381fb49d69bbc5", null ],
+      [ "residuals_no_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a6f8f4d7d44725572096949e0c828afa4", null ],
+      [ "residuals_no_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a74f34d84aa713128a3aa46e15b203544", null ],
+      [ "unpack_unknowns", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#ac12098092fc0bfbae840a6d67b94fe3f", null ],
+      [ "unpack_unknowns_no_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a0b7970cc3ef094b20726b78e870e0d19", null ],
+      [ "unpack_unknowns_no_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#aa6dd02a97ca33ecd03ac69bcbb15f6b4", null ],
+      [ "avionics", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a24c2053186d852ece1eff31f9b7e956e", null ],
+      [ "battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#ad0d2f722f1bcfc3ede2ec4f0c13745ea", null ],
+      [ "engine_length_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a6e643605b2f49c672bcdba39d639d534", null ],
+      [ "engine_length_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a45071eb02d503df88f51503e79caf9c4", null ],
+      [ "esc_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a4edbe78bd0d0a62b87b82d9b90ded4d9", null ],
+      [ "esc_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a2b66db9ed5f08d1e7e005a21de08fb90", null ],
+      [ "motor_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a6f91cc73b15a13e250f45d7fd5ead622", null ],
+      [ "motor_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#aa2d26258f9a305a228b2725b5c7afab5", null ],
+      [ "nacelle_diameter_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a7d74faa9e080a5fd7160888528a325e2", null ],
+      [ "nacelle_diameter_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a0d90c8fcd95b2d256cf12dee97c52984", null ],
+      [ "number_of_engines_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a69020f423210df779a6119e9e038696f", null ],
+      [ "number_of_engines_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a344010ecccbaf493228be38aaa07fa6f", null ],
+      [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#ab07579e1fa696a88aa90453e75ae3a5d", null ],
+      [ "propeller_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#aedeb8238bf3336aa82a19ca1648608cf", null ],
+      [ "propeller_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a1dcae720f83d60448b332ece68ca2929", null ],
+      [ "thrust_angle_forward", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a1593cb285295240e0ae7e4a3e17bb7cd", null ],
+      [ "thrust_angle_lift", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a6ce206b9be9c6439998986897417be3b", null ],
+      [ "voltage", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html#a488383f726c21ae44e1dd0f320efa32d", null ]
     ] ],
     [ "Propulsor_Surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#ac3623a6164073e210b9a47c9ac179675", null ],
@@ -97,6 +88,11 @@ var group__Components_Energy_Networks =
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#ab1a2cd84ddf70535cf8be599b02c00eb", null ],
       [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a987fb867374d30397995a8bc306c4887", null ],
       [ "thrust_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#acc030cf367c0a0aed49beb116503287d", null ]
+    ] ],
+    [ "Ramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet.html#a6a768c023b410be59f9b8fb017d56fa0", null ],
+      [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet.html#a38173d1141d4e1e6f53f44c812cb8bc5", null ],
+      [ "size", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet.html#aa4932e67dca52aaad7e8cb37d651029f", null ]
     ] ],
     [ "Solar", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a1b845035b4dfa9e54c0487e6d9c1c55b", null ],

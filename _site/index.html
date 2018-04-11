@@ -10,8 +10,8 @@
 ">
 
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://suavecode.github.io//">
-	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+	<link rel="canonical" href="http://localhost:4000/">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://localhost:4000/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
 	<script src="/js/main.js" type="text/javascript"></script>
@@ -37,7 +37,7 @@
 		<ul>
 		<li><a class="btn page-link " href="/">About</a></li>
 		<li><a class="btn page-link " href="/download/">Download</a></li>
-		<li><a class="btn page-link " href="/guides/">Guides</a></li>
+		<li><a class="btn page-link " href="/guides/">Tutorials</a></li>
 		<li><a class="btn page-link " href="/documentation/">Documentation</a></li>
 		<li><a class="btn page-link " href="/develop/">Develop</a></li>
 		<li><a class="btn page-link " href="/forum/">Forum</a></li>
@@ -66,7 +66,7 @@
         
     <br>
     
-	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+	<small>Copyright &copy; 2017 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
 </footer>
 
 			
@@ -86,30 +86,14 @@
                 <p>SUAVE is a conceptual level aircraft design environment built with the ability to analyze and optimize both conventional and unconventional designs. This capability is achieved in part by allowing analysis information for aircraft to be drawn from multiple sources. Many other software tools for aircraft conceptual design rely on fixed empirical correlations and other handbook approximation. SUAVE instead provides a framework that can be used to design aircraft featuring advanced technologies by augmenting relevant correlations with physics-based methods. </p>
 
                 <p><img src="../images/bwb_inside.png" alt="Blended Wing Body" /></p>
+
+<p>While SUAVE is quite capable as built today, its most important strength is in the ease of creating and adding new vehicles, mission types, analyses, and optimizers. This flexibility is aided by SUAVE's status as an open-source Python code. Development is currently led by the <a href="http://adl.stanford.edu">Aerospace Design Lab</a> at Stanford University. If you're interested in joining us, please visit our <a href="/develop">develop page</a> for general instructions or reach out to us though our <a href="/forum">forum</a> or email.</p>
                 
-                <p>SUAVE is an open source suite constructed as a modular set of analysis tools written in Python. Additional capabilities can be incorporated using extensible interfaces and prototyped with a top-level script. The flexibility of the environment allows the creation of arbitrary mission profiles, unconventional propulsion networks, and right-fidelity at right-time discipline analyses. SUAVE is currently being developed in the <a href="http://adl.stanford.edu">Aerospace Design Lab</a> at Stanford University. </p>
-                
-                <h3> Capabilities Available </h3>
-                
-                <p> SUAVE's current capabilities include the following:</p>
-                <ul>
-                  <li>Aerodynamics for subsonic and supersonic flight</li>
-                  <li>Weight correlations for tube-and-wing aircraft, BWBs, human-powered aircraft, and small UAVs</li>
-                  <li>VTOL mission segments</li>
-                  <li>Static and dynamic stability</li>
-                  <li>Energy networks for gas turbine, battery, fuel cell, and solar panel-based vehicles</li>
-                  <li>Noise correlations for tube-and-wing aircraft and components</li>
-                  <li>Basic performance estimation methods</li>
-                  <li>Aerodynamic and stability analysis with AVL</li>
-                  <li>Geometry output through OpenVSP</li>
-                  <li>Euler CFD through SU2</li>
-                  <li>Single and multi-fidelity optimization with capability to add new optimizers</li>
-                </ul>
                 
                 <h3> Publications </h3>
                 
                 <p>
-                We've recently presented papers on the technical background of SUAVE as applied to the analysis and optimization of aerospace vehicles. The first paper describes the models available and the motivations for the programming structures used in the package. The second paper details the schematics of setting up optimization problems and sample results. 
+                We've recently presented papers on the technical background of SUAVE as applied to the analysis and optimization of aerospace vehicles. The first paper describes the initial models available and the motivations for the programming structures used in the package. The second paper details the schematics of setting up optimization problems and sample results. The third paper shows how higher fidelity models can be incorporated into the code. Finally, the fourth paper shows how optimization can be performed with multiple levels of fidelity.
                 </p>
                 
                 <p><a href="http://adl.stanford.edu/papers/suave-open-source.pdf">

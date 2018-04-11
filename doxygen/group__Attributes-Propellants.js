@@ -39,14 +39,6 @@ var group__Attributes_Propellants =
       [ "specific_energy", "classSUAVE_1_1Attributes_1_1Propellants_1_1Jet__A1_1_1Jet__A1.html#ac61316ed1e19b313a44e35e5b201464b", null ],
       [ "tag", "classSUAVE_1_1Attributes_1_1Propellants_1_1Jet__A1_1_1Jet__A1.html#a11ded8f919e4fd3a403566fb9fd69a4d", null ]
     ] ],
-    [ "Liquid_H2", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html", [
-      [ "__defaults__", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html#ae548823af03b7d1aed9f005b5160f6d5", null ],
-      [ "density", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html#a376ec197ca01f9df5aaa4acb416a9b5b", null ],
-      [ "energy_density", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html#a3721d9c07826ab7617a0755078a0fef3", null ],
-      [ "reactant", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html#a595763fd177b028276ebe8dca0529c50", null ],
-      [ "specific_energy", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html#a0f4a5fad35d915b576b584c18077ff23", null ],
-      [ "tag", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html#a23fdac9fe8cf1bd831ff54039de65266", null ]
-    ] ],
     [ "Liquid_Natural_Gas", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__Natural__Gas_1_1Liquid__Natural__Gas.html", [
       [ "__defaults__", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__Natural__Gas_1_1Liquid__Natural__Gas.html#af68453a6c62a42495fd182677f31e63a", null ],
       [ "density", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__Natural__Gas_1_1Liquid__Natural__Gas.html#aba3b4bfc3847a541fcfc252493dc5b6f", null ],

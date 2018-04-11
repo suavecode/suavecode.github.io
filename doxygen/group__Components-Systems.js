@@ -7,6 +7,5 @@ var group__Components_Systems =
       [ "mass_properties", "classSUAVE_1_1Components_1_1Systems_1_1System_1_1System.html#ac257d2d78c0da7c92ddd9cf16256bfe5", null ],
       [ "position", "classSUAVE_1_1Components_1_1Systems_1_1System_1_1System.html#ae3836f93b6ac5c6bab29ec4074b8ff38", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Systems_1_1System_1_1System.html#a4fa86faee2bbe57bbd444c14417e1e76", null ]
-    ] ],
-    [ "Container", "classSUAVE_1_1Components_1_1Systems_1_1System_1_1Container.html", null ]
+    ] ]
 ];

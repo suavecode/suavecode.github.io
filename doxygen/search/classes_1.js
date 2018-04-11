@@ -16,7 +16,6 @@ var searchData=
   ['aviation_5fgasoline',['Aviation_Gasoline',['../classSUAVE_1_1Attributes_1_1Propellants_1_1Aviation__Gasoline_1_1Aviation__Gasoline.html',1,'SUAVE::Attributes::Propellants::Aviation_Gasoline']]],
   ['avionics',['Avionics',['../classSUAVE_1_1Components_1_1Energy_1_1Peripherals_1_1Avionics_1_1Avionics.html',1,'SUAVE::Components::Energy::Peripherals::Avionics']]],
   ['avl',['AVL',['../classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html',1,'SUAVE.Analyses.Stability.AVL.AVL'],['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL_1_1AVL.html',1,'SUAVE.Analyses.Aerodynamics.AVL.AVL']]],
-  ['avl2',['AVL2',['../classSUAVE_1_1Analyses_1_1Stability_1_1AVL2_1_1AVL2.html',1,'SUAVE::Analyses::Stability::AVL2']]],
   ['avl_5fdiscretization_5fsettings',['AVL_Discretization_Settings',['../classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings.html',1,'SUAVE::Methods::Aerodynamics::AVL::Data::Settings']]],
   ['avl_5finviscid',['AVL_Inviscid',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html',1,'SUAVE::Analyses::Aerodynamics::AVL_Inviscid']]]
 ];

@@ -9,8 +9,8 @@
 	<meta name="description" content="How to Read (and Write) the DocumentationThis is an explanation of how documentation is built in SUAVE so that the user can know what to look for and how to ...">
 
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://suavecode.github.io//guides/docs.html">
-	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+	<link rel="canonical" href="http://localhost:4000/guides/docs.html">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://localhost:4000/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
 	<script src="/js/main.js" type="text/javascript"></script>
@@ -36,7 +36,7 @@
 		<ul>
 		<li><a class="btn page-link " href="/">About</a></li>
 		<li><a class="btn page-link " href="/download/">Download</a></li>
-		<li><a class="btn page-link active" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link active" href="/guides/">Tutorials</a></li>
 		<li><a class="btn page-link active" href="/documentation/">Documentation</a></li>
 		<li><a class="btn page-link " href="/develop/">Develop</a></li>
 		<li><a class="btn page-link " href="/forum/">Forum</a></li>
@@ -65,7 +65,7 @@
         
     <br>
     
-	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+	<small>Copyright &copy; 2017 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
 </footer>
 
 			
@@ -88,7 +88,7 @@
 
 <h3 id="docstrings">Docstrings</h3>
 
-<p>All classes and functions in SUAVE have docstrings have docstrings. These give the user an understanding of what the function does and information on the input and output variables. </p>
+<p>All classes and functions in SUAVE have docstrings have docstrings. These give the user an understanding of what the function does and information on the input and output variables.</p>
 
 <h4 id="classes">Classes</h4>
 
@@ -106,7 +106,7 @@
 
 <p>This is the general template that can be used when creating a new class. It should be placed directly under the class declaration.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>"""&lt;Description&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"""&lt;Description&gt;
 
 Assumptions:
 &lt;any assumptions&gt;
@@ -114,8 +114,7 @@ Assumptions:
 Source:
 &lt;source&gt;
 """
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="functions">Functions</h4>
 
@@ -161,7 +160,7 @@ Source:
 
 <p>This is a template docstring:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    """&lt;Description&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    """&lt;Description&gt;
     
     Assumptions:
     &lt;any assumptions&gt;
@@ -184,18 +183,16 @@ Source:
     &lt;property2&gt; &lt;units&gt;
     ..
     """   
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="doxygen-grouping-tags">Doxygen Grouping Tags</h3>
 
 <p>Tags are used to put files into groups that match the SUAVE file structure. <code class="highlighter-rouge">@defgroup</code> tags define a group and should be placed in the init file. An example is shown here:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>## @defgroup Analyses-Aerodynamics Aerodynamics
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## @defgroup Analyses-Aerodynamics Aerodynamics
 # These are the analyses that control aerodynamic evaluations.
 # @ingroup Analyses
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>In this example, <code class="highlighter-rouge">Analyses-Aerodynamics</code> is the doxygen tag for the group, while the group appears in the documentation as <code class="highlighter-rouge">Aerodynamics</code>, the next part of the string. The tag is based on the file structure (Analyses/Aerodynamics here). Since this is a subgroup of Analyses, <code class="highlighter-rouge">@ingroup Analyses</code> is used here, with <code class="highlighter-rouge">Analyses</code> as the doxygen tag for the next level up.</p>
 
@@ -208,7 +205,7 @@ Source:
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES * * */
 			var disqus_shortname = '';
-			var disqus_identifier = 'http://suavecode.github.io//guides/docs.html';
+			var disqus_identifier = 'http://localhost:4000/guides/docs.html';
 
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {

@@ -9,8 +9,8 @@
 	<meta name="description" content="Optimization Code Structure">
 
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://suavecode.github.io//guides/optimization.html">
-	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+	<link rel="canonical" href="http://localhost:4000/guides/optimization.html">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://localhost:4000/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
 	<script src="/js/main.js" type="text/javascript"></script>
@@ -36,7 +36,7 @@
 		<ul>
 		<li><a class="btn page-link " href="/">About</a></li>
 		<li><a class="btn page-link " href="/download/">Download</a></li>
-		<li><a class="btn page-link active" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link active" href="/guides/">Tutorials</a></li>
 		<li><a class="btn page-link active" href="/documentation/">Documentation</a></li>
 		<li><a class="btn page-link " href="/develop/">Develop</a></li>
 		<li><a class="btn page-link " href="/forum/">Forum</a></li>
@@ -65,7 +65,7 @@
         
     <br>
     
-	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+	<small>Copyright &copy; 2017 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
 </footer>
 
 			
@@ -98,35 +98,32 @@
 
 <p>This is the top level file that is run to perform the optimization. Inputs, objective, constraints, and aliases are specified here. The inputs have an initial value, bounds, a scaling factor, and the units used. This provides later functions with the information needed to vary the parameters. Units.less indicates a unitless quantity. SI units are the default in SUAVE’s internal calculations, so Units.meter will not modify the internal value, while something like Units.foot will.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>problem.inputs = np.array([
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>problem.inputs = np.array([
     [ 'wing_area'     ,  125.  , (   120.   ,   180.   )  ,   100.  , Units.meter**2],
     [ 'aspect_ratio'  ,  3.3   , (   2.0    ,   6.0    )  ,   10.   , Units.less],
 ])
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Constraints and the objective are similar. Both have scaling quantities and constraints also have bounds.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>problem.constraints = np.array([
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>problem.constraints = np.array([
     [ 'design_range_fuel_margin', '&gt;', 0., 1E-1, Units.less]
 ])
 
 problem.objective = np.array([
     ['fuel_burn_rate', 1., Units.kg/Units.s]
 ])
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Finally we have aliases. This provides the optimization process with the position of the various parameters in the data structure. Aliases are used so that short names can be used for variables and a single variable can control multiple items in the data structure. Controlling multiple items can be important if different vehicle configurations are used at different points in the mission, and one of the vehicle parameters should change in the same way for all of the configurations. We can use * as a wildcard. This is used below to change the aspect ratio of the main wing in every vehicle configuration.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>problem.aliases = [
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>problem.aliases = [
     [ 'wing_area'       ,   ['vehicle_configurations.base.wings.main_wing.areas.reference',
                                               'vehicle_configurations.base.reference_area']],
     [ 'aspect_ratio'    ,    'vehicle_configurations.*.wings.main_wing.aspect_ratio'       ],
     [ 'fuel_burn_rate'  ,    'summary.fuel_burn_rate'                                      ],
 ]    
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This file then specifies the configurations, analyses, missions, and procedure that will be used. This are typically contained in separate files and more details on each are below. Once all of this is specified, the desired optimizer is called with the nexus class created by this setup.</p>
 
@@ -152,7 +149,7 @@ problem.objective = np.array([
 
 <h3 id="optimizer-interface">Optimizer Interface</h3>
 
-<p>The other step that must be taken to perform an optimization is to convert the standardized input above into values that can be used by the selected optimizer. This is done through a separate script for each optimizer, all of which are found in the <a href="doxygen_link_here">optimization folder</a>. </p>
+<p>The other step that must be taken to perform an optimization is to convert the standardized input above into values that can be used by the selected optimizer. This is done through a separate script for each optimizer, all of which are found in the <a href="doxygen_link_here">optimization folder</a>.</p>
 
 <p>For example, if we are using PyOpt to optimize, we might use <code class="highlighter-rouge">output = pyopt_setup.Pyopt_Solve(problem,solver='SNOPT')</code> in the main function of the top level optimizer. This function reads the inputs, constraints, and objective and converts them to a format that the selected optimizer (SNOPT here) can understand.</p>
 
@@ -170,7 +167,7 @@ problem.objective = np.array([
 
 <p>Multiple levels of fidelity are designed to be relatively easy to incorporate in SUAVE, but there are still a few things to keep in mind. First, the chosen optimizer must support multi-fidelity and be able to change the <code class="highlighter-rouge">nexus.fidelity_level</code> value. Once this is done, it is also important to remember that the mission is set up based on the analyses. This means that if a change is made to  the analyses then the mission must be rebuilt with the new settings. As an example, code below for changing the analysis level is shown. This is a function that has been added to the procedure file.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>def set_fidelity_level(nexus):
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def set_fidelity_level(nexus):
     
     if nexus.has_key('fidelity_level') == False:
         print 'Fidelity level not set, defaulting to 1'
@@ -190,8 +187,7 @@ problem.objective = np.array([
     nexus.missions = mission_as2.setup(nexus.analyses)
     
     return nexus
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Here we see that <code class="highlighter-rouge">nexus.missions</code> has been updated in addition to <code class="highlighter-rouge">nexus.analyses</code>, since failing to do this would have the mission run with the previous analysis settings.</p>
 
@@ -201,7 +197,7 @@ problem.objective = np.array([
 
 <p>The key items that will be needed for most optimizers are shown below, taken from the PyOpt setup:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>inp = problem.optimization_problem.inputs
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>inp = problem.optimization_problem.inputs
 obj = problem.optimization_problem.objective
 con = problem.optimization_problem.constraints  
    
@@ -211,28 +207,25 @@ ini = inp[:,1] # Initials
 bnd = inp[:,2] # Bounds
 scl = inp[:,3] # Scale
 typ = inp[:,4] # Type
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>These can be scaled with two helper functions that are part of the SUAVE distribution:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>from SUAVE.Optimization import helper_functions as help_fun
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from SUAVE.Optimization import helper_functions as help_fun
 
 bnd_constraints    = help_fun.scale_const_bnds(con)
 scaled_constraints = help_fun.scale_const_values(con,bnd_constraints)
 x                  = ini/scl
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>What happens next is entirely dependent on what optimizer you want to use. Some may require that constraint bounds happen at 0 or are either &gt; or &lt;. However this setup is done, you will likely need to create a function that can accept the problem and inputs and give required outputs such as the objective value and constraints. In the PyOpt case, this is done with a simple wrapper and an added function:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mywrap = lambda x:PyOpt_Problem(problem,x)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mywrap = lambda x:PyOpt_Problem(problem,x)
+</code></pre></div></div>
 
 <p>…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>def PyOpt_Problem(problem,x):
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def PyOpt_Problem(problem,x):
    
 	obj   = problem.objective(x)
 	const = problem.all_constraints(x).tolist()
@@ -247,8 +240,7 @@ x                  = ini/scl
 	print const
    
 	return obj,const,fail
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Please visit our <a href="/forum">forum</a> if you have any other questions on how the optimizer interface works or how to convert the values to what you need.</p>
 
@@ -259,7 +251,7 @@ x                  = ini/scl
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES * * */
 			var disqus_shortname = '';
-			var disqus_identifier = 'http://suavecode.github.io//guides/optimization.html';
+			var disqus_identifier = 'http://localhost:4000/guides/optimization.html';
 
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {

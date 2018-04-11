@@ -10,8 +10,8 @@
 ">
 
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://suavecode.github.io//develop/">
-	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+	<link rel="canonical" href="http://localhost:4000/develop/">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://localhost:4000/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
 	<script src="/js/main.js" type="text/javascript"></script>
@@ -37,7 +37,7 @@
 		<ul>
 		<li><a class="btn page-link " href="/">About</a></li>
 		<li><a class="btn page-link " href="/download/">Download</a></li>
-		<li><a class="btn page-link " href="/guides/">Guides</a></li>
+		<li><a class="btn page-link " href="/guides/">Tutorials</a></li>
 		<li><a class="btn page-link " href="/documentation/">Documentation</a></li>
 		<li><a class="btn page-link active" href="/develop/">Develop</a></li>
 		<li><a class="btn page-link " href="/forum/">Forum</a></li>
@@ -66,7 +66,7 @@
         
     <br>
     
-	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+	<small>Copyright &copy; 2017 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
 </footer>
 
 			
@@ -84,20 +84,20 @@
 	</header>
 
 	<article class="content">
-		<p>If you want to make changes to SUAVE source, or contribute new functionalities back to the community, this is the page for you!  </p>
+		<p>If you want to make changes to SUAVE source, or contribute new functionalities back to the community, this is the page for you!</p>
 
 <h2 id="background">Background</h2>
 
-<p>SUAVE is developed via <a href="https://github.com/suavecode/SUAVE">GitHub</a>, and this page will describe how to get started.  There is also a list of <a href="https://github.com/suavecode/SUAVE/projects/2">open topics</a> available for contribution if you’re looking for ideas to get started. </p>
+<p>SUAVE is developed via <a href="https://github.com/suavecode/SUAVE">GitHub</a>, and this page will describe how to get started.  There is also a list of <a href="https://github.com/suavecode/SUAVE/projects/2">open topics</a> available for contribution if you’re looking for ideas to get started.</p>
 
 <p>As a developer, you’ll want to <a href="https://help.github.com/articles/fork-a-repo">fork</a> SUAVE to your personal account.  This creates a copy of the whole SUAVE repository, including all past versions, inside your GitHub account.  Generally you’ll want to start from the develop branch, but you can check with the developers if you think it would be more appropriate to work on a feature branch.</p>
 
 <p>Development is done on separate branches.  Our branching model is very similar to <a href="http://nvie.com/posts/a-successful-git-branching-model/">this one</a>.  Basically there are three types of branches.</p>
 
 <ul>
-  <li>master – stable, latest release and fixes </li>
-  <li>develop – current development, generally the branch for you to start with </li>
-  <li>feature-* – feature specific branches, using names with underscores, check with the developer email list if you think this a better place to contribute </li>
+  <li>master – stable, latest release and fixes</li>
+  <li>develop – current development, generally the branch for you to start with</li>
+  <li>feature-* – feature specific branches, using names with underscores, check with the developer email list if you think this a better place to contribute</li>
 </ul>
 
 <p>SUAVE merges new code contributions through <a href="https://help.github.com/articles/creating-a-pull-request">pull requests</a>.  As you make changes to your copy of SUAVE, you’ll upload them to your GitHub fork, and then when they’re ready for review you’ll submit them for merge via pull request.</p>
@@ -117,7 +117,7 @@
 <h4 id="git-client">Git-Client</h4>
 
 <p><a href="https://en.wikipedia.org/wiki/Git_(software)">Git</a> is an advanced distributed version control system. It is the core of the majority of current open source projects.  Here are some instructions for installing git on your machine.<br />
-<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux">linux</a> , <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac">mac</a> , <a href="http://msysgit.github.io/">windows</a> , <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">more info</a> </p>
+<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux">linux</a> , <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac">mac</a> , <a href="http://msysgit.github.io/">windows</a> , <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">more info</a></p>
 
 <p>There are several <a href="http://git-scm.com/downloads/guis">GUI’s</a> available to help manage the repository.  On Windows <a href="https://code.google.com/p/tortoisegit/">TortoiseGit</a> is a useful one.</p>
 
@@ -140,10 +140,10 @@
 <p>Time to pull code.  If you had previously installed a release distribution according to the download page, you’ll want to <a href="/download#un-installation">uninstall</a> the existing package first.</p>
 
 <ol>
-  <li>Go to the SUAVE github <a href="https://github.com/suavecode/SUAVE">repo</a>.  </li>
-  <li>To get your own copy of the source, with links into real-time updates, you need to <img src="/images/fork-button.png" alt="fork" height="25px" /> the repo.  This button is on the top-right of the page too.  </li>
-  <li>This will copy the repo and take you to your fork, notice that your web-browser’s URL has changed to include your username. </li>
-  <li>Now you can <a href="http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository">clone</a> your fork to your computer.  Find the clone url of your fork on the right hand side of the page and copy it.  You can use the https url. <br /> <img src="/images/clone-example.png" alt="clone" height="90px" /> </li>
+  <li>Go to the SUAVE github <a href="https://github.com/suavecode/SUAVE">repo</a>.</li>
+  <li>To get your own copy of the source, with links into real-time updates, you need to <img src="/images/fork-button.png" alt="fork" height="25px" /> the repo.  This button is on the top-right of the page too.</li>
+  <li>This will copy the repo and take you to your fork, notice that your web-browser’s URL has changed to include your username.</li>
+  <li>Now you can <a href="http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository">clone</a> your fork to your computer.  Find the clone url of your fork on the right hand side of the page and copy it.  You can use the https url. <br /> <img src="/images/clone-example.png" alt="clone" height="90px" /></li>
   <li>Open a command prompt, in a directory that you want to start the repository (for example in the SUAVE_Project folder), and run the git clone command <br /> <code class="highlighter-rouge">git clone &lt;git url&gt;</code> <br /> Now you should have the source code.</li>
   <li>Change directory into the trunk folder and run a developer installation command.  <br /> <code class="highlighter-rouge">python setup.py develop</code> <br /> Now you have a developer version of SUAVE installed!  You can make changes to the source in this directory and the changes will appear the next time you run python, without having to rebuild or reinstall.</li>
   <li>Test the installation by changing to any other directory, then start a python shell, and run the command <br /> <code class="highlighter-rouge">&gt;&gt;&gt; import SUAVE</code><br /><code class="highlighter-rouge">&gt;&gt;&gt; print SUAVE.__file__</code><br /> This should print the file path to the SUAVE package init.py file in your trunk directory.</li>
@@ -165,7 +165,7 @@
 
 <h3 id="setting-the-upstream">Setting the upstream</h3>
 
-<p>Below is a summary of setting the upstream remote.  There are a good references for this process <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork/">here</a> and <a href="https://help.github.com/articles/syncing-a-fork/">here</a>, and more via a google search for “git update fork”.  </p>
+<p>Below is a summary of setting the upstream remote.  There are a good references for this process <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork/">here</a> and <a href="https://help.github.com/articles/syncing-a-fork/">here</a>, and more via a google search for “git update fork”.</p>
 
 <ol>
   <li>Inspect your current “remote”, this is the url of the repository to which your clone listens. 
@@ -177,7 +177,7 @@ In the directory for the cloned repo, type <br /> <code class="highlighter-rouge
 
 <h3 id="changing-branches">Changing branches</h3>
 
-<p>You should work on the develop branch in general, it will have the most updated changes from the community.  </p>
+<p>You should work on the develop branch in general, it will have the most updated changes from the community.</p>
 
 <ol>
   <li>Inspect your branches with <code class="highlighter-rouge">git branch -a</code>.  You’ll see all the branches, for both upstream and origin.  Generally you should only work off the origin branches</li>
@@ -200,11 +200,11 @@ In the directory for the cloned repo, type <br /> <code class="highlighter-rouge
 
 <h3 id="get-new-changes-from-upstream">Get new changes from upstream</h3>
 
-<p>In this example the upstream/develop branch is merged into the fork/develop branch.  </p>
+<p>In this example the upstream/develop branch is merged into the fork/develop branch.</p>
 
 <ol>
   <li>Checkout your local develp branch with <br /><code class="highlighter-rouge">git checkout develop</code>.</li>
-  <li>Fetch updates from the upstream repository with <br /><code class="highlighter-rouge">git fetch upstream</code>.  </li>
+  <li>Fetch updates from the upstream repository with <br /><code class="highlighter-rouge">git fetch upstream</code>.</li>
   <li>Merge the changes from the upstream into your fork with <br /><code class="highlighter-rouge">git merge upstream/develop</code>.</li>
   <li>Push these changes to your fork on GitHub, <br /><code class="highlighter-rouge">git push origin master</code>.</li>
 </ol>
@@ -217,7 +217,7 @@ In the directory for the cloned repo, type <br /> <code class="highlighter-rouge
   <li>Commit and push all your changes to your fork on GitHub.</li>
   <li>Open a browser and navigate to your branch on the GitHub website.</li>
   <li>Click the “Compare and Review” button.</li>
-  <li>Review the changes for any unexpected differences.  </li>
+  <li>Review the changes for any unexpected differences.</li>
   <li>Click the “Create Pull Request” button.</li>
   <li>The devs will take a look and merge the request.</li>
 </ol>

@@ -3,7 +3,9 @@ var group__Components_Energy_Converters =
     [ "Combustor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#a2a0f7c8f68137486dd2fec4e90f64ad2", null ],
       [ "compute", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#ab7ff2679c7aa46e60388a448b7d44120", null ],
+      [ "compute_rayleigh", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#a8aa11c99e7ed4fa7baa65c351d14a546", null ],
       [ "alphac", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#abad75b1005d3585a7a56d4848997b5f9", null ],
+      [ "area_ratio", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#aa467ad467292f60503afd8880a30ae23", null ],
       [ "fuel_data", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#a167de0d8770cf94173f256e36921e3ed", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#ab3a4977f8218e87a868b4693c7d06873", null ],
       [ "turbine_inlet_temperature", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#a42bc5e129081949bec715e938e3a7536", null ]
@@ -11,6 +13,7 @@ var group__Components_Energy_Converters =
     [ "Compression_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html#aac9c90445bd9c7d1bdfd4fad2f668b1e", null ],
       [ "compute", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html#acdaf2c6eec5fbe7f8f56b2254b6461a0", null ],
+      [ "compressibility_effects", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html#a20017416230653893b8558056ad4115b", null ],
       [ "polytropic_efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html#a189581236c66eaa42b59787a0a21fab6", null ],
       [ "pressure_ratio", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html#a001dd3301c2cefa6421b41c417338534", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html#adc44bf1576cef3fbefa090fd7468bbe5", null ]
@@ -119,6 +122,9 @@ var group__Components_Energy_Converters =
     [ "Supersonic_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#a861ed50883715716b13cf3d2e21e8ede", null ],
       [ "compute", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#a2356fafa6315dd101857f0d18b95098e", null ],
+      [ "compute_limited_geometry", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#a6423b5f273dc7fba4eb077fe141d88fe", null ],
+      [ "max_area_ratio", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#ad79c8e2283d71ee9d50ad9f79b3ed974", null ],
+      [ "min_area_ratio", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#acb06406357c68df0c4f8cab2e5a267b7", null ],
       [ "polytropic_efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#af9f1fbb06060df1c3b0af8f339c2ab9f", null ],
       [ "pressure_ratio", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#a781262fe820e701c453715717494bbb9", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html#a7bf619594c30ca8ea126f5e0b5177d0a", null ]

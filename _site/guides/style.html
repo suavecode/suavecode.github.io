@@ -9,8 +9,8 @@
 	<meta name="description" content="">
 
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://suavecode.github.io//guides/style.html">
-	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+	<link rel="canonical" href="http://localhost:4000/guides/style.html">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://localhost:4000/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
 	<script src="/js/main.js" type="text/javascript"></script>
@@ -36,7 +36,7 @@
 		<ul>
 		<li><a class="btn page-link " href="/">About</a></li>
 		<li><a class="btn page-link " href="/download/">Download</a></li>
-		<li><a class="btn page-link active" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link active" href="/guides/">Tutorials</a></li>
 		<li><a class="btn page-link active" href="/documentation/">Documentation</a></li>
 		<li><a class="btn page-link " href="/develop/">Develop</a></li>
 		<li><a class="btn page-link " href="/forum/">Forum</a></li>
@@ -65,7 +65,7 @@
         
     <br>
     
-	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+	<small>Copyright &copy; 2017 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
 </footer>
 
 			
@@ -90,13 +90,13 @@
 
 <h2 id="suave-code-style-guide">SUAVE Code Style Guide</h2>
 
-<p>SUAVE is built on a slightly modified PEP8 style guide, with changes made to implement a data-oriented view of the code.  To help support discovering code, the SUAVE folder structure explicitly mirrors the package structure.  Flexibility of the package structure is important, so in general all objects live in their own file, with the same file name as the object name.  In order to maintain a separation between Analysis and Data structures, there are often parallel package trees inside the main branches of the package, like SUAVE.Methods.Aerodynamics and SUAVE.Analysis.Aerodynamics.  Where possible the names of fields that live in the SUAVE package are written out verbosely, avoiding jargon built on mathematical variable names or acronyms. </p>
+<p>SUAVE is built on a slightly modified PEP8 style guide, with changes made to implement a data-oriented view of the code.  To help support discovering code, the SUAVE folder structure explicitly mirrors the package structure.  Flexibility of the package structure is important, so in general all objects live in their own file, with the same file name as the object name.  In order to maintain a separation between Analysis and Data structures, there are often parallel package trees inside the main branches of the package, like SUAVE.Methods.Aerodynamics and SUAVE.Analysis.Aerodynamics.  Where possible the names of fields that live in the SUAVE package are written out verbosely, avoiding jargon built on mathematical variable names or acronyms.</p>
 
 <p>Templates for new methods and objects can be found in the SUAVE repo’s <a href="https://github.com/suavecode/SUAVE/tree/develop/templates">templates</a> folder.</p>
 
 <h3 id="naming-convention">Naming Convention</h3>
 
-<p>In terms of typography – </p>
+<p>In terms of typography –</p>
 
 <ul>
   <li><code class="highlighter-rouge">any_variable_name</code> - lower case with underscore <br />
@@ -150,7 +150,7 @@ As you write more code, and follow the SUAVE style of keeping one file per objec
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES * * */
 			var disqus_shortname = '';
-			var disqus_identifier = 'http://suavecode.github.io//guides/style.html';
+			var disqus_identifier = 'http://localhost:4000/guides/style.html';
 
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {

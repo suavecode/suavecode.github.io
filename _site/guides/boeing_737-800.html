@@ -9,8 +9,8 @@
 	<meta name="description" content="">
 
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://suavecode.github.io//guides/boeing_737-800.html">
-	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://suavecode.github.io//feed.xml" />
+	<link rel="canonical" href="http://localhost:4000/guides/boeing_737-800.html">
+	<link rel="alternate" type="application/rss+xml" title="SUAVE" href="http://localhost:4000/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://momentjs.com/downloads/moment.js" type="text/javascript"></script>
 	<script src="/js/main.js" type="text/javascript"></script>
@@ -36,7 +36,7 @@
 		<ul>
 		<li><a class="btn page-link " href="/">About</a></li>
 		<li><a class="btn page-link " href="/download/">Download</a></li>
-		<li><a class="btn page-link active" href="/guides/">Guides</a></li>
+		<li><a class="btn page-link active" href="/guides/">Tutorials</a></li>
 		<li><a class="btn page-link active" href="/documentation/">Documentation</a></li>
 		<li><a class="btn page-link " href="/develop/">Develop</a></li>
 		<li><a class="btn page-link " href="/forum/">Forum</a></li>
@@ -65,7 +65,7 @@
         
     <br>
     
-	<small>Copyright &copy; 2015 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
+	<small>Copyright &copy; 2017 <br> Stanford Aerospace Design Lab <br> All rights reserved</small>
 </footer>
 
 			
@@ -106,11 +106,11 @@
 
 <p>The script is divided into a set of functions that setup different aspects of the modeling process. The important functions are:</p>
 
-<h4 id="vehiclesetup">vehicle_setup()</h4>
+<h4 id="vehicle_setup">vehicle_setup()</h4>
 <p>function is where the aircraft’s geometry is specified.</p>
 
 <h5 id="setting-up-a-wing">Setting up a wing</h5>
-<p>The code below shows how the main wing of the aircraft is set up. The basic geometric inputs that define the wing are specified. Then the wing is then appended to the vehicle, which is an instance of the aircraft class. </p>
+<p>The code below shows how the main wing of the aircraft is set up. The basic geometric inputs that define the wing are specified. Then the wing is then appended to the vehicle, which is an instance of the aircraft class.</p>
 
 <p>In SUAVE units are identified through the use of a units package called Pint. Notice, that for the wing sweep that the units are specified in degrees through *Units.deg. To get results into a desired unit use /Units.deg.</p>
 
@@ -202,7 +202,7 @@
 
 </code></pre>
 
-<p>Next the components of the turbofan are initialized and added to the engine as shown in the energy networks section. The turbofan is composed of an inlet diffuser (nozzle), low and high pressure compressors, a combustor, a fan, a high and low pressure turbine, and exit nozzles for the core and the fan. </p>
+<p>Next the components of the turbofan are initialized and added to the engine as shown in the energy networks section. The turbofan is composed of an inlet diffuser (nozzle), low and high pressure compressors, a combustor, a fan, a high and low pressure turbine, and exit nozzles for the core and the fan.</p>
 
 <p>Finally the network is added to the aircraft as shown below.</p>
 
@@ -218,13 +218,13 @@ vehicle.append_component(turbofan)
 </code></pre>
 
 <h4 id="data-structure-visualization">Data Structure Visualization</h4>
-<p>The data structure associated with the Boeing 737-800 can be visualized <a href="/guides/data_structures/B737.html">here</a>. </p>
+<p>The data structure associated with the Boeing 737-800 can be visualized <a href="/guides/data_structures/B737.html">here</a>.</p>
 
 <p><a href="/guides/data_structures/B737.html"><img src="../images/b737_datastructure_preview.png" alt="Boeing 737 Data Structure" /></a></p>
 
 <p>This visualization shows the hierarchy of data in a SUAVE vehicle. Some of the values are defaulted, for example costs. This is because we are not performing cost analysis on the Boeing 737-800. Additionally, this snapshot of the data structure was taken prior to analysis. Therefore weights have not been calculated and are not part of the data. During the mission analysis component weights will be determined and weights will be populated.</p>
 
-<h4 id="configssetup">configs_setup()</h4>
+<h4 id="configs_setup">configs_setup()</h4>
 <p>The aircraft geometry created is converted into configurations that can be used to make simple modifications to the geometric parameters while not modifying the aircraft geometry completely. An example of the use of this feature is when high-lift devices need to be deployed during landing and takeoff. Thus a landing and takeoff configuration can be added as shown below and then during say the flaps and slats settings can be set differently for each of the configurations.</p>
 
 <pre><code class="python">
@@ -247,7 +247,7 @@ vehicle.append_component(turbofan)
     configs.append(config)
 </code></pre>
 
-<h4 id="missionsetup">mission_setup()</h4>
+<h4 id="mission_setup">mission_setup()</h4>
 <p>To modify the baseline mission that the aircraft flies, go to the mission_setup() function and add or delete segments of the mission</p>
 
 <pre><code class="python">
@@ -263,7 +263,7 @@ vehicle.append_component(turbofan)
     mission.append_segment(segment)
 </code></pre>
 
-<h4 id="baseanalysis">base_analysis()</h4>
+<h4 id="base_analysis">base_analysis()</h4>
 <p>Also to leverage SUAVE’s multifidelity capability and use a different fidelity analysis for any of the disciplines (aerodynamics,propulsion, stability, etc), the base_analysis function can be modified by switching out an analysis module for a different one.</p>
 
 <h3 id="other-functions-">Other Functions :</h3>
@@ -272,27 +272,27 @@ vehicle.append_component(turbofan)
 
 <p>The main function is the driver function for the mission simulation. It calls the various routines in the appropriate order in order to set up the geometry and the mission, evaluate the performance of the aircraft over the mission and return the results.</p>
 
-<h4 id="fullsetup">full_setup()</h4>
+<h4 id="full_setup">full_setup()</h4>
 
 <p>This function (called from the main() function) sets up the aircraft geometry, configs and the missions the aircraft is to be analysed for by calling the vehicle_setup, configs_setup, analyses_setup, mission_setup and missions_setup functions.</p>
 
-<h4 id="simplesizing">simple_sizing()</h4>
+<h4 id="simple_sizing">simple_sizing()</h4>
 
 <p>The simple sizing function sizes the aircraft’s geometric components based on the geometric inputs specified by the user in the vehicle_setup() function.</p>
 
-<h4 id="baseanalysis-1">base_analysis()</h4>
+<h4 id="base_analysis-1">base_analysis()</h4>
 
 <p>The method takes in the vehicle and assigns different analysis methods (for aero, propulsion, weights, stability) to the analyses object.</p>
 
-<h4 id="analysessetup">analyses_setup()</h4>
+<h4 id="analyses_setup">analyses_setup()</h4>
 
 <p>This functions takes in the base analysis and sets up different analysis methods for different configurations.</p>
 
-<h4 id="missionssetup">missions_setup()</h4>
+<h4 id="missions_setup">missions_setup()</h4>
 
 <p>This method allows the user to set up a variety of missions that need to be evaluated for an aircraft.</p>
 
-<h4 id="plotmission">plot_mission()</h4>
+<h4 id="plot_mission">plot_mission()</h4>
 
 <p>This is a post processing function that takes in the results data structure and generates the necessary plots.</p>
 
@@ -345,7 +345,7 @@ segment.climb_rate   = 3.0    * Units['m/s']
 mission.append_segment(segment)
 </code></pre>
 
-<p>5) Next update the cruise segment velocity to  the new speed value  </p>
+<p>5) Next update the cruise segment velocity to  the new speed value</p>
 
 <pre><code class="python">segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
 segment.tag = "cruise"
@@ -369,7 +369,7 @@ mission.append_segment(segment)
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES * * */
 			var disqus_shortname = '';
-			var disqus_identifier = 'http://suavecode.github.io//guides/boeing_737-800.html';
+			var disqus_identifier = 'http://localhost:4000/guides/boeing_737-800.html';
 
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {

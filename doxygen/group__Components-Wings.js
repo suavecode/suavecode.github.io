@@ -3,24 +3,10 @@ var group__Components_Wings =
     [ "Airfoils", "group__Components-Wings-Airfoils.html", "group__Components-Wings-Airfoils" ],
     [ "Control_Surface", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#a3a781f5847d12f2774321c3ef8b2247c", null ],
-      [ "append_section", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#ac0a1c6961466410eaa6bd591ad1fca87", null ],
-      [ "chord_fraction", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#abd6a13a3747efe88025a3277287b4479", null ],
-      [ "deflection_symmetry", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#a6908765e912ce272389bda3146169344", null ],
-      [ "origin", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#a74db06d548ae7e82b4dd48054a754fbb", null ],
-      [ "sections", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#afb80fcb8c180feaf713cfedef57c2c36", null ],
-      [ "span", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#a936396e8d7bdfbcafdccdc4c39856f07", null ],
-      [ "span_fraction", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#af1eddf963b206c1a6674362635cd6599", null ],
-      [ "tag", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#a0a059df92df4d4f8128ceb506e493857", null ],
-      [ "transformation_matrix", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#a2789056b29248fdcfa03622e6b3b4543", null ]
+      [ "append_section", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html#ac0a1c6961466410eaa6bd591ad1fca87", null ]
     ] ],
     [ "Control_Surface_Section", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html", [
-      [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#a855cf0fac5ec39dd04d67cd0f438687b", null ],
-      [ "chord", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#a69ebb4c8a8f1c3caeb689db0b4d5dee3", null ],
-      [ "chord_fraction", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#a5d3a35050fc9de243056f398ae7e3a38", null ],
-      [ "origins", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#a8e4a9b5f6f656fbc9b7c9d270079588c", null ],
-      [ "points", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#ad4ba1071868ae657b0f56bfec5a7e558", null ],
-      [ "tag", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#a05110407d81479085d737cab64708438", null ],
-      [ "twist", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#ac3d3b88e5a603e1f21a7c9ae20aa6219", null ]
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html#a855cf0fac5ec39dd04d67cd0f438687b", null ]
     ] ],
     [ "Horizontal_Tail", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail.html#a674bb83b6f89d403ae41c506caaedc1d", null ]
@@ -31,6 +17,7 @@ var group__Components_Wings =
     [ "Segment", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a61224a8134dae53d9b10a6db3a4af800", null ],
       [ "append_airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a47fc0861956a7eae28e13a4f5e1ee7c7", null ],
+      [ "append_control_surface", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#aaab654b3bbb6547ca992644fc3dbd300", null ],
       [ "Airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#afea77873575432d9f76c0216b53913b0", null ],
       [ "control_surfaces", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a18d1010aa92045660148a35417f8b9bf", null ],
       [ "dihedral_outboard", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a9f87970e346855bfdc2b7184e8a44dad", null ],
@@ -74,7 +61,6 @@ var group__Components_Wings =
       [ "vertical", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#ab9ad1ec9e6ded8c581c6d8df09ae9e40", null ],
       [ "vortex_lift", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a485b7de08ab568d8945d7543809b75b0", null ]
     ] ],
-    [ "Container", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container.html", null ],
     [ "AVL_Discretization_Settings", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings.html", [
       [ "__defaults__", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings.html#adccbf59a4db06215311385b49df11865", null ],
       [ "chordwise_elements", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings.html#a1d8433619c928a46f38cbef5d1a5127c", null ],

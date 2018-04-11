@@ -8,8 +8,7 @@ var group__Methods_Aerodynamics_AVL =
     [ "read_results", "group__Methods-Aerodynamics-AVL.html#ga111943e9a93d2fb37656998659a3a5f0", null ],
     [ "run_analysis", "group__Methods-Aerodynamics-AVL.html#ga6c754c0ccd7480bbb1a9cc8bacf3f696", null ],
     [ "translate_conditions_to_cases", "group__Methods-Aerodynamics-AVL.html#ga7b721494da52b639d291d6fb7b9b8bf6", null ],
-    [ "untrimmed", "group__Methods-Aerodynamics-AVL.html#ga7c71f08e28c210a3cb355a8b43f7b5f7", null ],
-    [ "write_geometry", "group__Methods-Aerodynamics-AVL.html#ga2d8dde8c597e20fc1a4ef7d6c966c939", null ],
+    [ "write_geometry", "group__Methods-Aerodynamics-AVL.html#ga803c61fd15f149adf3cb052e2500e860", null ],
     [ "write_input_deck", "group__Methods-Aerodynamics-AVL.html#ga5b4b731f90586149f6889a0ba256040a", null ],
     [ "write_run_cases", "group__Methods-Aerodynamics-AVL.html#ga3aa7cb9305ca87e3ab5655d63d805f9e", null ]
 ];

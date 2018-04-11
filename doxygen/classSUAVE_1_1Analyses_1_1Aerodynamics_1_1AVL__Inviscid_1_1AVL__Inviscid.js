@@ -9,6 +9,7 @@ var classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid =
     [ "current_status", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ad8d7881165eb8c63bd430a38f1f38a21", null ],
     [ "geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ab3413e0de53e813c992c5693fe668c9b", null ],
     [ "keep_files", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ac204dd9a499b67b481b39e4e8a5db082", null ],
+    [ "regression_flag", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ad1c94fdf93f1b71429a2988e70af7d0c", null ],
     [ "settings", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a2bc68b59e7ead5a51ef3ab08c738b5fb", null ],
     [ "surrogates", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a8b545d9a8168b3ae0da29f0319dc3b44", null ],
     [ "tag", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a9bdf600c35e259c1a8b4a7f79628dcf0", null ],

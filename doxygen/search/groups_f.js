@@ -9,7 +9,6 @@ var searchData=
   ['systems',['Systems',['../group__Components-Systems.html',1,'']]],
   ['su2',['SU2',['../group__Input__Output-SU2.html',1,'']]],
   ['suave',['SUAVE',['../group__Input__Output-SUAVE.html',1,'']]],
-  ['su2_5feuler',['SU2_Euler',['../group__Methods-Aerodynamics-SU2__Euler.html',1,'']]],
   ['supersonic_5fzero',['Supersonic_Zero',['../group__Methods-Aerodynamics-Supersonic__Zero.html',1,'']]],
   ['supporting_5ffunctions',['Supporting_Functions',['../group__Methods-Flight__Dynamics-Dynamic__Stability-Full__Linearized__Equations-Supporting__Functions.html',1,'']]],
   ['static_5fstability',['Static_Stability',['../group__Methods-Flight__Dynamics-Static__Stability.html',1,'']]],

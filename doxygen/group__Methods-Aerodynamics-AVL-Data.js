@@ -47,17 +47,12 @@ var group__Methods_Aerodynamics_AVL_Data =
       [ "configuration", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Inputs_1_1Inputs.html#ab55d4b081fa697bd8c74c7fccd00d3b8", null ],
       [ "input_files", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Inputs_1_1Inputs.html#a95c24e5276665b97da9a46f0417ee3f4", null ]
     ] ],
-    [ "Results", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Results_1_1Results.html", [
-      [ "__defaults__", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Results_1_1Results.html#a89aecce3b18d27e1c19ec3ca3f4d382f", null ],
-      [ "aerodynamics", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Results_1_1Results.html#a4ad2c8f107349d23d3e0422d55c3b42e", null ],
-      [ "stability", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Results_1_1Results.html#a430468bfa01067a3d3873fdbb4f107fe", null ]
-    ] ],
     [ "Settings", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html", [
       [ "__defaults__", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html#a79d49c59a2bf93ffbb3fc030d4a0e0e4", null ],
       [ "discretization", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html#a4079c122f98eef755e4fe7758070ead0", null ],
       [ "filenames", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html#a23d7675f5d82f81dabaa0b43787cdb30", null ],
       [ "flow_symmetry", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html#a21260b2f900e83e052b5e9c566f6da13", null ],
-      [ "num_control_surfaces", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html#ac691e98b5c4c257afddd332eff988449", null ],
+      [ "number_control_surfaces", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html#aa0531d36e2db82e210b1157c4100216a", null ],
       [ "run_cases", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html#a56dd550b4e50698cc5792ab8a9b50ec5", null ]
     ] ],
     [ "Wing", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing.html", [

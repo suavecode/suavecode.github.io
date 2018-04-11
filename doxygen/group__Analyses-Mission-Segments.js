@@ -32,8 +32,5 @@ var group__Analyses_Mission_Segments =
     ] ],
     [ "Simple", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Simple_1_1Simple.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Simple_1_1Simple.html#a80e4962f423662c0f31df02278deab7e", null ]
-    ] ],
-    [ "Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Simple_1_1Container.html", [
-      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Simple_1_1Container.html#a2df84b54616783b4e06053ca36038620", null ]
     ] ]
 ];
