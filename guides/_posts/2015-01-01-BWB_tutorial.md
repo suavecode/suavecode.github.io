@@ -18,13 +18,13 @@ The purpose of this tutorial is to show the analysis settings used to generate g
 
 # Other Software You need
 
-For the full tool chain 3 additional pieces of software are needed. These are OpenVSP, GMSH, and SU2. These are all open source and freely available online.
+For the full tool chain 3 additional pieces of software are needed. These are OpenVSP, Gmsh, and SU2. These are all open source and freely available online.
 
-First, you will need [OpenVSP](http://openvsp.org) compiled with Python support. Unfortunately, you cannot use the precompiled binary versions of OpenVSP. You must compile it from scratch. This tutorial was tested with version 3.13.1.
+First, you will need [OpenVSP](http://openvsp.org) compiled with Python support. Unfortunately, you cannot use the precompiled binary versions of OpenVSP. You must compile it from scratch. This tutorial was tested with version 3.15.0.
 
-Second, you must install [GMSH](http://gmsh.info). In this case you can use the precompiled binaries. Make sure to add GMSH to your command line path, so it can be called from the terminal. This tutorial was tested with version 3.0.4.
+Second, you must install [Gmsh](http://gmsh.info). In this case you can use the precompiled binaries. Make sure to add Gmsh to your command line path so it can be called from the terminal. This tutorial was tested with version 3.0.6.
 
-Finally, you need to install [SU2](http://su2.stanford.edu). If you want parallel support then you must also compile the code. Otherwise, you can the precompiled versions. This tutorial was tested with version 5.0.0.
+Finally, you need to install [SU2](https://su2code.github.io/). If you want parallel support then you must also compile the code. Otherwise, you can the precompiled versions. This tutorial was tested with version 6.0.0.
 
 # Vehicle Setup
 
@@ -166,9 +166,9 @@ def configs_setup(vehicle):
 
 # Analyses Setup
 
-Here we setup the SU2 analysis. We left commented out the parallel setting if you want to parallelize the computation along with the number of processors to use.
+Here we setup the SU2 analysis. We commented out the parallel setting but you may use these if you want to parallelize the computation.
 
-The next setting which is commented out is the input file for pregenerated CFD data. We have included an example of this, so even if you don't have SU2 and GMSH installed you can still run this file to generate the surrogate and run the mission.
+The next setting which is commented out is the input file for pregenerated CFD data. We have included an example of this, so even if you don't have SU2 and Gmsh installed you can still run this file to generate the surrogate and run the mission. A 10 iteration limit is used so that the tutorial can be run in a reasonable amount of time (~15 min). Data for runs with the 10 iteration limit and 1500 iteration limit are provided.
 
 After that we specify the points we want to use to generate the SU2-based lift surrogate. SUAVE has default values for these, but we suggest the user specify their own Mach numbers and angles of attack.
 
@@ -183,7 +183,8 @@ Next we set up a bit of mesh refinement by modifying the source parameters at sp
     
     #aerodynamics.process.compute.lift.inviscid.settings.parallel   = True
     #aerodynamics.process.compute.lift.inviscid.settings.processors = 12  
-    #aerodynamics.process.compute.lift.inviscid.training_file       = 'base_data.txt'
+    #aerodynamics.process.compute.lift.inviscid.training_file       = 'base_data_1500.txt'
+    aerodynamics.process.compute.lift.inviscid.settings.maximum_iterations = 10
     aerodynamics.settings.drag_coefficient_increment = 0.0000
     
     aerodynamics.process.compute.lift.inviscid.training.Mach             = np.array([.3, .5, .7, .85]) 
