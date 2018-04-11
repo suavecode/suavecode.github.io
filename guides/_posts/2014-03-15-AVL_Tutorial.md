@@ -1,11 +1,11 @@
 ---
 layout: post
-Title: Boeing 737-800 Using AVL
-date: 2018-03-14 13:25:00
+title: AVL - Boeing 737-800
+date: 2014-03-14 13:25:00
 categories: blog
 description: Setup and analyze an aircraft using Athena Vortex Lattice (AVL)
 
-permalink: /guides/Boeing_737-800_AVL.html
+permalink: /guides/AVL_Tutorial.html
 ---
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">
