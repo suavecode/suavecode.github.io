@@ -59,7 +59,7 @@ format.
 2. Secondly, if control surfaces are defined either the full wing or its segments, the data structure created in step 1 is 
 further divided into sections at instances where the control surfaces begin and end. This is shown images below.
 
-     <img src="https://github.com/suavecode/suavecode.github.io/blob/develop/images/B737_avl.PNG" width="300" height="200">       <img src="https://github.com/suavecode/suavecode.github.io/blob/develop/images/B737_avl_wing.PNG" width="300" height="200">
+  <img src="/images/B737_avl.PNG" width="300" height="200">    <img src="/images/B737_avl_wing.PNG" width="300" height="200">
 
 The above steps describing wing geometry parameterization are found in **create_avl_datasturcture.py** script. Along with 
 the creation of wing geometry, the SAUVE-AVL wrapper allows the user to refine the accuracy of the analysis by modifying the
