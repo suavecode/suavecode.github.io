@@ -2667,7 +2667,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/logo_no_suave.pdf");
+		background-image: url("../../images/logo_no_text.svg");
 		background-position: center center;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -2714,7 +2714,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 5em 0 3em 0;
+		padding: 3em 0 1em 0;
 	}
 
 		.wrapper.style1 {
@@ -2861,7 +2861,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				height: 20em;
+				height: 25em;
 			}
 
 		/* Wrapper */
