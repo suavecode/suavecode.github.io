@@ -2113,8 +2113,7 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		text-decoration: none;
-	}
-
+		}
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2150,6 +2149,15 @@ input, select, textarea {
 			.icon.major:before {
 				font-size: 55px;
 			}
+			
+
+
+	.icon2 > img {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle; }
+
 
 /* Lists */
 
@@ -2756,8 +2764,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 4em 0 0em 0;
-		text-align: center;
+		padding: 4em 0 0 0;
+		text-align: left;
 	}
 
 		#footer a {
