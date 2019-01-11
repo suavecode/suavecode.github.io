@@ -1986,7 +1986,7 @@ input, select, textarea {
 		}
 
 	footer {
-		margin: 0 0 3em 0;
+		margin: 0 0 0 0;
 	}
 
 		footer > :last-child {
@@ -2122,6 +2122,7 @@ input, select, textarea {
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
+			font-size: 30px;
 		}
 
 		.icon > .label {
@@ -2712,20 +2713,16 @@ input, select, textarea {
 			background: #fff;
 		}
 
-		.wrapper.style2 {
-			background-color: #fff;
-			background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");
-			background-position: top left,						bottom left,					top left;
-			background-size: 100% 6em,						100% 6em,						auto;
-			background-repeat: no-repeat,						no-repeat,						repeat;
-		}
+		/*.wrapper.style2 {*/
+			/*background-color: #fff;*/
+			/*background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");*/
+			/*background-position: top left,						bottom left,					top left;*/
+			/*background-size: 100% 6em,						100% 6em,						auto;*/
+			/*background-repeat: no-repeat,						no-repeat,						repeat;*/
+		/*}*/
 
 		.wrapper.style3 {
 			background-color: #8C1515;
-			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			color: #fff;
 		}
 
@@ -2742,7 +2739,7 @@ input, select, textarea {
 
 	#cta {
 		text-align: center;
-		padding: 3.5em 0;
+		padding: 1.0em 0;
 	}
 
 		#cta header h2 {
@@ -2759,8 +2756,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 4em 0 4em 0;
-		text-align: right;
+		padding: 4em 0 0em 0;
+		text-align: center;
 	}
 
 		#footer a {
@@ -2862,7 +2859,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 3em 0 1em 0;
+				padding: 2em 0 0 0;
 			}
 
 		/* CTA */
@@ -3334,8 +3331,8 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 2em 20px;
-				text-align: left;
+				padding: 2em 0;
+				text-align: center;
 			}
 
 	}
