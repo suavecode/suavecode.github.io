@@ -51,6 +51,12 @@ table {
 	border-spacing: 0;
 }
 
+.highlight_code {
+background-color: #eeeefe;
+background-image: none
+/*linear-gradient(to right, #ffe359 0%, #fff2ac 100%);*/
+}
+
 body {
 	-webkit-text-size-adjust: none;
 }

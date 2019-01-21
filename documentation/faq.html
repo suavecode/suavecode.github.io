@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Code Style</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<!--<div id="header">-->
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="../index.html"> SUAVE</a></li>
+								<li><a href="../download.html">Download</a></li>
+								<li><a href="../tutorials.html">Tutorials</a></li>
+								<li class="current"><a href="../documentation.html">Documentation</a></li>
+								<li><a href="../forum.html">Forum</a></li>
+								<li><a href="../publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="../images/github_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="../images/travis_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="../images/coveralls.svg">
+									</span>
+									</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+							
+
+						<h2 id="suave-code-style-guide">SUAVE Code Style Guide</h2>
+						
+						<p>SUAVE is built on a slightly modified PEP8 style guide, with changes made to implement a data-oriented view of the code.  To help support discovering code, the SUAVE folder structure explicitly mirrors the package structure.  Flexibility of the package structure is important, so in general all objects live in their own file, with the same file name as the object name.  In order to maintain a separation between Analysis and Data structures, there are often parallel package trees inside the main branches of the package, like SUAVE.Methods.Aerodynamics and SUAVE.Analysis.Aerodynamics.  Where possible the names of fields that live in the SUAVE package are written out verbosely, avoiding jargon built on mathematical variable names or acronyms.</p>
+						
+						<p>Templates for new methods and objects can be found in the SUAVE repo’s <a href="https://github.com/suavecode/SUAVE/tree/develop/templates">templates</a> folder.</p>
+						
+						<h3 id="naming-convention">Naming Convention</h3>
+						
+						<p>In terms of typography –</p>
+						
+						<ul>
+						<li><code class="highlight_code">any_variable_name</code> - lower case with underscore <br />
+						This includes working variables and instantiated objects.</li>
+						<li><code class="highlight_code">field_name</code> - lower case with underscore
+						Any field of an object should be lower case.</li>
+						<li><code class="highlight_code">function_name</code> - lower case with underscore</li>
+						<li><code class="highlight_code">Class_Type</code> - upper case with underscore <br />
+						The underscores are chosen here to permit the inclusion of acronyms if needed and to maintain symmetry with field name styling.</li>
+						<li><code class="highlight_code">Package_Name</code> - upper case with underscore <br />
+						For example folders within the SUAVE package.</li>
+						</ul>
+						
+						<p>In terms of naming –</p>
+						
+						<ul>
+						<li>Chunk similar field types under a containing field</li>
+						<li>Bias names towards being specific</li>
+						<li>Write out field name verbosely, but try to keep short</li>
+						</ul>
+						
+						<h3 id="development-life-cycle">Development Life Cycle</h3>
+						
+						<p>As you develop new features for SUAVE, this is generally how you can expect your feature to evolve, in terms of its level of abstraction, and where it lives.</p>
+						
+						<ol>
+						<li>
+						<p>Prototype <br />
+						Either a new function or class.  You may want to test these within a separate folder. If you are developing a new analysis approach, for example for aerodynamics or weights, you can usually start with a function.  If you are working off of an object like a wing, you can abstract the objects as needed.  Generally the lowest level object you’ll use is the SUAVE.Core.Data class.  <br />
+						A lot of development can be accomplished in a local environment.</p>
+						</li>
+						<li>Initial Integration <br />
+						Once you’re comfortable that your new feature works robustly, and that it has been tested, it’s time to integrate it into SUAVE.  Here are some tips for identifying where it could live.
+						<ul>
+						<li>SUAVE.Methods - if it’s a python function.  Ping the <a href="http:suavecode.github.io/forum">forum</a> if you want to double check your decision!</li>
+						<li>SUAVE.Analyses - if it’s an object that manages an analysis like aerodynamics</li>
+						<li>SUAVE.Components - if it’s a data storage container for a vehicle component like a wing or landing gear</li>
+						<li>SUAVE.Attributes - if it’s a data storage container for any other type of object, like atmospheres or water<br /></li>
+						</ul>
+						
+						<p>At this point you might want to initiate a pull request to contribute the code back to the main repository.<br /></p>
+						</li>
+						<li>Full-Blown Subpackage <br />
+						As you write more code, and follow the SUAVE style of keeping one file per object, you will need to create a folder to contain a subpackage.  This step may come later in the life of your code, so don’t rush to it if you don’t need the extra overhead.</li>
+						</ol>
+
+	</article>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="#">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="tutorials.html">Tutorials</a></li>
+									<li><a href="documentation.html">Documentation</a></li>
+									<li><a href="forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

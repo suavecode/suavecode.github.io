@@ -1,7 +1,0 @@
-var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Dynamic__Pressure__Constantd76ab8dcac489a382504762fcf2af994 =
-[
-    [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Dynamic__Pressure__Constantd76ab8dcac489a382504762fcf2af994.html#ab1723f047fa6d695e59f2d664b433e4a", null ],
-    [ "altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Dynamic__Pressure__Constantd76ab8dcac489a382504762fcf2af994.html#a2f69bc726928d18ce67c085726d0177b", null ],
-    [ "distance", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Dynamic__Pressure__Constantd76ab8dcac489a382504762fcf2af994.html#a9abea90b164a73098a749e1a11557e95", null ],
-    [ "dynamic_pressure", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Dynamic__Pressure__Constantd76ab8dcac489a382504762fcf2af994.html#a0eb01c172c4f38d2be4d6222d052a2ae", null ]
-];
