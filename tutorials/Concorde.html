@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>No Sidebar - Arcana by HTML5 UP</title>
+		<title>Concorde - SUAVE Tutorial</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -67,34 +67,70 @@
 							<!-- Content -->
 
 								<article>
-									<header>
-										<h2>No Sidebar</h2>
-										<p>All content, all the time.</p>
-									</header>
+								<h2 id="concorde-tutorial">Concorde Tutorial</h2>
 
-									<span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+<p>This tutorial gives an overview of changes made to the setup to evaluate a supersonic mission.</p>
 
-									<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-									consequat etiam lorem ipsum dolor sit amet nullam.</p>
+<h3 id="aerodynamics-module">Aerodynamics Module:</h3>
 
-									<h3>And Yet Another Subheading</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-									justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-									ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-									vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-									Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-									rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-									Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-									Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+<p>To allow aerodynamic calculations in supersonic flight, we use the zero fidelity supersonic module. This is quite easy to swap with the subsonic zero fidelity model. This model and the zero fidelity subsonic module are in the same directory, so they can be switched by changing a single line in the analysis section:</p>
 
-									<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-									quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-									Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-									fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-									Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-									Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+<div class="highlight_code"><div class="highlight_code"><pre><code>aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()
+</code></pre></div></div>
+
+<p>to</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre><code>aerodynamics = SUAVE.Analyses.Aerodynamics.Supersonic_Zero()
+</code></pre></div></div>
+<p>The supersonic aerodynamics module can still handle the subsonic portions of the flight.</p>
+
+<h3 id="wing-additions">Wing Additions:</h3>
+
+<p>Some of the calculations are changed to account for different properties that are not automatically captured in the model.</p>
+
+<ul>
+  <li>Vortex lift is set to true. This causes the vortex lift module to add a CL increment to the aircraft.</li>
+  <li>High Mach is set to true. This changes the way that high subsonic compressibility drag is calculated and brings it more in line with Concorde behavior.</li>
+</ul>
+
+<div class="highlight_code"><div class="highlight_code"><pre><code>    wing.vortex_lift             = True
+</code></pre></div></div>
+
+<div class="highlight_code"><div class="highlight_code"><pre><code>    wing.high_mach               = True
+</code></pre></div></div>
+
+<p>Note also that Concorde does not have a horizontal tail, so this is not included in the vehicle setup.</p>
+
+<h3 id="turbojet-module">Turbojet Module:</h3>
+
+<p>Since Concorde has a diverging nozzle that allows for supersonic outflow, a modified turbojet is used that can account for this. This turbojet component is again switched out with a single line.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre><code>nozzle = SUAVE.Components.Energy.Converters.Supersonic_Nozzle()
+</code></pre></div></div>
+
+<p>instead of</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre><code>nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()  
+</code></pre></div></div>
+
+<h3 id="mission-segments">Mission Segments:</h3>
+
+<p>The mission typically flown by Concorde calls for mission segments that are not utilized in the Boeing 737 case. These are Mach number dependent, and require different inputs from the segments previously given. The new mission segments are linear Mach constant rate (climb and descent). Both require a starting and ending Mach number, which will vary linearly in time over the descent. For an example, check the third climb segment:</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre><code>segment = Segments.Climb.Linear_Mach_Constant_Rate(base_segment)
+segment.tag = "climb_3"
+
+segment.analyses.extend( analyses.cruise )
+
+segment.altitude_end = 7.60   * Units.km
+segment.mach_start   = 0.64
+segment.mach_end     = 1.0
+segment.climb_rate   = 5.05  * Units['m/s']
+</code></pre></div></div>
+
+<h3 id="takeoff-and-landing-configuration">Takeoff and Landing Configuration</h3>
+
+<p>Since Concorde does not have flaps or slats, specific takeoff and landing configurations are not used.</p>
 								</article>
 
 						</div>
