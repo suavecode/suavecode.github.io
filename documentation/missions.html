@@ -135,7 +135,7 @@
 		
 		<p>In addition, a user may want to modify how the mission is flown, as is done with the many other segments currently available. They may want to modify how the mission is solved, such as is done in our single point evaluation segments where finite differencing is not relevant.</p>
 		
-		<p>Here we will explain the process of modifying our constant speed constant rate climb segment to be constant throttle constant speed. This still uses 2D force balance but changes the profile. There are four functions that are modified here. The first is shown below. The functions can be found in <a href="">here</a> and <a href="">here</a></p>
+		<p>Here we will explain the process of modifying our constant speed constant rate climb segment to be constant throttle constant speed. This still uses 2D force balance but changes the profile. There are four functions that are modified here. The first is shown below. The functions can be found in <a href="https://github.com/suavecode/SUAVE/blob/develop/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Speed_Constant_Rate.py#L16">here</a> and <a href="https://github.com/suavecode/SUAVE/blob/develop/trunk/SUAVE/Methods/Missions/Segments/Climb/Constant_Throttle_Constant_Speed.py#L49">here</a></p>
 		
 		<div class="highlighter-rouge"><div class="highlight_code"><pre class="highlight_code"><code>def initialize_conditions(segment,state):
 		
@@ -312,6 +312,7 @@
 		
 		<p>If you have any questions that are not answered in other tutorials or the FAQ please ask on our <a href="/forum">forum</a> page. This is also the place to go if you want help building a more elaborate evaluation, such as one that includes moments.</p>
 
+		<br>
 	</article>
 						</div>
 					</div>

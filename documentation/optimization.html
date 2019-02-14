@@ -69,7 +69,7 @@
 	<article class="content">
 	<h2 id="optimization-code-structure">Optimization Code Structure</h2>
 
-<p>This is an overview of how optimization is done in SUAVE. A specific tutorial case is also available <a href="/guides/regional_jet_optimization.html">here</a>.</p>
+<p>This is an overview of how optimization is done in SUAVE. A specific tutorial case is also available <a href="http://suave.stanford.edu/tutorials/jet_optimization.html">here</a>.</p>
 
 <h3 id="nexus-class">Nexus Class</h3>
 
@@ -134,7 +134,7 @@ problem.objective = np.array([
 
 <h3 id="optimizer-interface">Optimizer Interface</h3>
 
-<p>The other step that must be taken to perform an optimization is to convert the standardized input above into values that can be used by the selected optimizer. This is done through a separate script for each optimizer, all of which are found in the <a href="doxygen_link_here">optimization folder</a>.</p>
+<p>The other step that must be taken to perform an optimization is to convert the standardized input above into values that can be used by the selected optimizer. This is done through a separate script for each optimizer, all of which are found in the <a href="https://github.com/suavecode/SUAVE/tree/develop/trunk/SUAVE/Optimization">optimization folder</a>.</p>
 
 <p>For example, if we are using PyOpt to optimize, we might use <code class="highlight_code">output = pyopt_setup.Pyopt_Solve(problem,solver='SNOPT')</code> in the main function of the top level optimizer. This function reads the inputs, constraints, and objective and converts them to a format that the selected optimizer (SNOPT here) can understand.</p>
 
@@ -229,6 +229,7 @@ x                  = ini/scl
 
 <p>Please visit our <a href="http://suave.stanford.edu/forum.html">forum</a> if you have any other questions on how the optimizer interface works or how to convert the values to what you need.</p>
 
+<br>
 	</article>
 						</div>
 					</div>
