@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Boeing 737-800 with AVL - SUAVE Tutorial</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://suave.stanford.edu/index.html/assets/css/main.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/download.html">Download</a></li>
+								<li class="current"><a href="http://suave.stanford.edu/index.html/tutorials.html">Tutorials</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="http://suave.stanford.edu/index.html/images/github_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="http://suave.stanford.edu/index.html/images/travis_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="http://suave.stanford.edu/index.html/images/coveralls.svg">
+									</span>
+									</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+<h2 id="boeing-737-using-avl">Boeing 737 Using AVL</h2>
+
+<p>SUAVE was built upon the philosophy of creating a conceptualizing space that enables the user to have maximum design, 
+analysis and optimization flexibility. In SUAVE, the aerodynamics and stability module is set up to permit multiple fidelity
+levels of analysis. The addition of  Athena Vortex Lattice (AVL), a vortex lattice method (VLM) code developed by Professor
+Mark Drela at MIT, extends SUAVE aerodynamic and stability analysis of aircraft configurations whose geometry have prior 
+posed difficulty in obtaining accurate results. Examples include oblique wings, joined wings, canard configurations and 
+blended-wing-bodies (BWB). For this example we use the Boeing 737-800 used in the Boeing 737-800 Tutorial.</p>
+
+<h3 id="downloading-avl">Downloading AVL</h3>
+<p>The tutorial assumes that AVL is available on your machine and can be called using just “avl” in the command line. AVL can be downloaded <a href="http://web.mit.edu/drela/Public/web/avl/">here</a> for all platforms.</p>
+
+<h3 id="steps-to-simulate-the-aircrafts-performance-over-a-mission">Steps to simulate the aircraft’s performance over a mission</h3>
+<ol>
+  <li>Locate the folder where you have the tutorial repository. If using the command line, cd to this directory.</li>
+  <li>Open the tut_mission_B737_AVL.py script in your favorite editor or IDE. The script is setup to run the B737 on its design
+mission. Run it in your IDE. If using the command line use the command.</li>
+</ol>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code> python tut_mission_B737_800_AVL.py  </code></pre></div></div>
+
+<p>It is very simple to interchange analysis tools in SUAVE. AVL is no exception. To study an aircraft in SUAVE using AVL, simply change the two lines in the analysis_set up shown below form Fidelity_Zero (SUAVE’s first order approximation method) to AVL.</p>
+
+<p>Replace line 109</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code> aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero() </code></pre></div></div>
+<p>with</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>  aerodynamics = SUAVE.Analyses.Aerodynamics.AVL() </code></pre></div></div>
+
+<p>SUAVE launches AVL from the command line, runs analyses and then reads in the files. This process is done automatically. All
+subroutines described later in this tutorial are done in the background. Since running a full stability analysis at each 
+point in the mission can be extremely expensive, a surrogate model is built for the aerodynamic coefficients, stability
+derivatives, and neutral point locations by running through a set of representative angles of attack and mach numbers.</p>
+
+<ol>
+  <li>A few plots depicting the variation of the different aircraft performance parameters over the course of the mission are shown.</li>
+</ol>
+
+<h3 id="important-functions">Important Functions:</h3>
+<p>The important functions used in this tutorial are exactly the same as the ones used in the Boeing Boeing 737-800 Analysis 
+Tutorial. Refer to this section in this tutorial <a href="http://suave.stanford.edu/guides/boeing_737-800.html">here</a>.</p>
+<h3 id="subroutines-unique-to-suave-avl">Subroutines Unique to SUAVE-AVL</h3>
+<p><em>Excluding the functions <strong>tut_mission_B737_AVL.py</strong> script, all of the subroutine python scripts described below are located
+in the SUAVE/Methods/Aerodynamics/AVL repository</em>.</p>
+<h4 id="geometry-creation---wing">Geometry Creation - Wing</h4>
+<p>Parameters defining the aircraft geometry in the in the vehicle_setup() are translated to an AVL file format using embedded 
+subroutines. Shown below is an example of the translation of the wing geometry from the vehicle-setup() function to AVL file
+format.</p>
+<ol>
+  <li>Firstly, if the wing defined by segments, a data structure is created to store the geometry parameters (chord length,twist,span location) of the beginning and end of each segment. For example the 737-800 wing below will be divided into three segments - yehudi, inboard and outboard wing).</li>
+  <li>Secondly, if control surfaces are defined either the full wing or its segments, the data structure created in step 1 is 
+further divided into sections at instances where the control surfaces begin and end. This is shown images below.</li>
+</ol>
+
+<p><img src="/images/B737_avl.PNG" width="400" height="300" />    <img src="/images/B737_avl_wing.PNG" width="400" height="300" /></p>
+
+<p>The above steps describing wing geometry parameterization are found in <strong>create_avl_datasturcture.py</strong> script. Along with 
+the creation of wing geometry, the SAUVE-AVL wrapper allows the user to refine the accuracy of the analysis by modifying the
+vortex spacing placed on the wings. The number of chordwise/spanwise horseshoe vertices can also be modified. This is located in the Analyses/Aerodynamics/<strong>AVL_Inviscid.py</strong> (for Aerodynamics)  and Analyses/Stability/<strong>AVL.py</strong> (for Stability) scripts below.</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>  # Default spanwise vortex density 
+  self.settings.spanwise_vortex_density  = 1.5
+</code></pre></div></div>
+
+<h4 id="geometry-creation---fuselage">Geometry Creation - Fuselage</h4>
+<p>Despite AVL having the capability of modelling bodies, a decision was made to model the fuselage as a wake-producing, lifting surface. The entire body is defined by a series of vertical and horizontal chords that create a cross when viewed from the front.</p>
+
+<h4 id="defining-flight-conditions">Defining Flight Conditions</h4>
+<p>This is done in the <strong>translate_data.py</strong> script which translates flight conditions parameters defined in the 
+<strong>mission_setup()</strong> to an AVL data structure to be used in run cases. This script also stores AVL results into SUAVE’s 
+results data structures.</p>
+<h4 id="writing-run-cases">Writing Run Cases</h4>
+<p>Uses information in the AVL run case data structure created in <strong>translate_data.py</strong>  to write an AVL format run case to be
+used by the AVL executable. This is done in <strong>write_run_cases.py</strong> script.</p>
+<h4 id="writing-commend-instructions-for-avl-executable">Writing Commend Instructions for AVL executable</h4>
+<p>This is a sequence of commands used to load AVL files into the executable, perform aerodynamic and stability analyses, and 
+save results. This is done in <strong>write_input_deck.py</strong> script.</p>
+<h4 id="reading-results">Reading Results</h4>
+<p>Opens saved AVL result files and stores data in a data structure used to create aerodynamic and stability surrogate models.
+This is done in <strong>read_results.py</strong> script.</p>
+
+<h3 id="results">Results</h3>
+<p>The plots shown below should be generated if the mission analysis executes correctly. The results show the aerodynamic, propulsion and mission properties of the B737-800 for the defined mission.</p>
+
+<p><img src="/images/B737_AVL_Altitude_sfc_weight.png" alt="B737 mission" /></p>
+
+<p><img src="/images/B737_AVL_Aerodynamic_Coefficients.png" alt="B737 Aerodynamics" /></p>
+
+<p><img src="/images/B737_AVL_Aerodynamic_Forces.png" alt="B737 Propulsion" /></p>
+
+<p><img src="/images/B737_AVL_Drag_Components.png" alt="B737 Drag" /></p>
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="registration.html">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

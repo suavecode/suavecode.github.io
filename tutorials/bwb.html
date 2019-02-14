@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Blended Wing Body with CFD - SUAVE Tutorial</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://suave.stanford.edu/index.html/assets/css/main.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/download.html">Download</a></li>
+								<li class="current"><a href="http://suave.stanford.edu/index.html/tutorials.html">Tutorials</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="http://suave.stanford.edu/index.html/images/github_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="http://suave.stanford.edu/index.html/images/travis_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="http://suave.stanford.edu/index.html/images/coveralls.svg">
+									</span>
+									</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+<h2 id="blended-wing-body-using-cfd">Blended Wing Body using CFD</h2>
+
+<p>The purpose of this tutorial is to show the analysis settings used to generate geometry, a mesh, and run CFD via SU2 from SUAVE. It will also show how to add individual wing segments. We assume you are familiar with SUAVE and have some CFD experience already. For this example we use a Blended Wing Body (BWB). The BWB used here is similar to the Boeing BWB-450 by Liebeck.</p>
+
+<h1 id="other-software-you-need">Other Software You need</h1>
+
+<p>For the full tool chain 3 additional pieces of software are needed. These are OpenVSP, Gmsh, and SU2. These are all open source and freely available online.</p>
+
+<p>First, you will need <a href="http://openvsp.org">OpenVSP</a> compiled with Python support. Unfortunately, you cannot use the precompiled binary versions of OpenVSP. You must compile it from scratch. This tutorial was tested with version 3.15.0.</p>
+
+<p>Second, you must install <a href="http://gmsh.info">Gmsh</a>. In this case you can use the precompiled binaries. Make sure to add Gmsh to your command line path so it can be called from the terminal. This tutorial was tested with version 3.0.6.</p>
+
+<p>Finally, you need to install <a href="https://su2code.github.io/">SU2</a>. If you want parallel support then you must also compile the code. Otherwise, you can the precompiled versions. This tutorial was tested with version 6.0.0.</p>
+
+<h1 id="vehicle-setup">Vehicle Setup</h1>
+
+<p>Here we see how to construct multi-segment wings. With multiple segments we can build more complex shapes such as cranks, yehudis, and winglets. We also show how to specify an airfoil on the wing or on a wing segment. If an airfoil is not specified, it will default to a symmertic airfoil.</p>
+
+<p>This BWB is broken down into 7 segments. We first specify the top level parameters of the wing and then add each segment sequentially as shown below.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+
+
+    # ------------------------------------------------------------------        
+    #   Main Wing
+    # ------------------------------------------------------------------        
+
+    wing = SUAVE.Components.Wings.Main_Wing()
+    wing.tag = 'main_wing'
+
+    wing.aspect_ratio            = 289.**2 / (7840. * 2)
+    wing.thickness_to_chord      = 0.15
+    wing.taper                   = 0.0138
+    wing.span_efficiency         = 0.95
+    wing.spans.projected         = 289.0 * Units.feet    
+    wing.chords.root             = 145.0 * Units.feet
+    wing.chords.tip              = 3.5   * Units.feet
+    wing.chords.mean_aerodynamic = 86.   * Units.feet
+    wing.areas.reference         = 15680. * Units.feet**2   
+    wing.sweeps.quarter_chord    = 33. * Units.degrees
+    wing.twists.root             = 0.0 * Units.degrees
+    wing.twists.tip              = 0.0 * Units.degrees
+    wing.dihedral                = 2.5 * Units.degrees
+    wing.origin                  = [0.,0.,0]
+    wing.aerodynamic_center      = [0,0,0] 
+    wing.vertical                = False
+    wing.symmetric               = True
+    wing.high_lift               = True
+    wing.dynamic_pressure_ratio  = 1.0
+
+    segment = SUAVE.Components.Wings.Segment()
+    segment.tag                   = 'section_1'
+    segment.percent_span_location = 0.0
+    segment.twist                 = 0. * Units.deg
+    segment.root_chord_percent    = 1.
+    segment.dihedral_outboard     = 0. * Units.degrees
+    segment.sweeps.quarter_chord  = 30.0 * Units.degrees
+    segment.thickness_to_chord    = 0.165 
+    wing.Segments.append(segment)    
+    
+    segment = SUAVE.Components.Wings.Segment()
+    segment.tag                   = 'section_2'
+    segment.percent_span_location = 0.052
+    segment.twist                 = 0. * Units.deg
+    segment.root_chord_percent    = 0.921
+    segment.dihedral_outboard     = 0.   * Units.degrees
+    segment.sweeps.quarter_chord  = 52.5 * Units.degrees
+    segment.thickness_to_chord    = 0.167    
+    wing.Segments.append(segment)   
+
+    segment = SUAVE.Components.Wings.Segment()
+    segment.tag                   = 'section_3'
+    segment.percent_span_location = 0.138
+    segment.twist                 = 0. * Units.deg
+    segment.root_chord_percent    = 0.76
+    segment.dihedral_outboard     = 1.85 * Units.degrees
+    segment.sweeps.quarter_chord  = 36.9 * Units.degrees  
+    segment.thickness_to_chord    = 0.171    
+    wing.Segments.append(segment)   
+    
+    segment = SUAVE.Components.Wings.Segment()
+    segment.tag                   = 'section_4'
+    segment.percent_span_location = 0.221
+    segment.twist                 = 0. * Units.deg
+    segment.root_chord_percent    = 0.624
+    segment.dihedral_outboard     = 1.85 * Units.degrees
+    segment.sweeps.quarter_chord  = 30.4 * Units.degrees    
+    segment.thickness_to_chord    = 0.175
+    wing.Segments.append(segment)       
+    
+    segment = SUAVE.Components.Wings.Segment()
+    segment.tag                   = 'section_5'
+    segment.percent_span_location = 0.457
+    segment.twist                 = 0. * Units.deg
+    segment.root_chord_percent    = 0.313
+    segment.dihedral_outboard     = 1.85  * Units.degrees
+    segment.sweeps.quarter_chord  = 30.85 * Units.degrees
+    segment.thickness_to_chord    = 0.118
+    wing.Segments.append(segment)       
+    
+    segment = SUAVE.Components.Wings.Segment()
+    segment.tag                   = 'section_6'
+    segment.percent_span_location = 0.568
+    segment.twist                 = 0. * Units.deg
+    segment.root_chord_percent    = 0.197
+    segment.dihedral_outboard     = 1.85 * Units.degrees
+    segment.sweeps.quarter_chord  = 34.3 * Units.degrees
+    segment.thickness_to_chord    = 0.10
+    wing.Segments.append(segment)     
+    
+    segment = SUAVE.Components.Wings.Segment()
+    segment.tag                   = 'section_7'
+    segment.percent_span_location = 0.97
+    segment.twist                 = 0. * Units.deg
+    segment.root_chord_percent    = 0.086
+    segment.dihedral_outboard     = 73. * Units.degrees
+    segment.sweeps.quarter_chord  = 55. * Units.degrees
+    segment.thickness_to_chord    = 0.10
+    wing.Segments.append(segment)      
+
+    # add to vehicle
+    vehicle.append_component(wing)
+
+</code></pre></div></div>
+
+<p>Once we build the vehicle we can write the OpenVSP file. If there are multiple configurations then you will need multiple writes to OpenVSP. We highly suggest you only have one configuration when possible to minimize computational costs. Also note that while the tip section was not defined here (meaning the top level tip values were used), it can also be added with <code class="highlighter-rouge">segment.percent_span_location = 1.</code>.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+# ----------------------------------------------------------------------
+#   Define the Configurations
+# ---------------------------------------------------------------------
+
+def configs_setup(vehicle):
+
+    # ------------------------------------------------------------------
+    #   Initialize Configurations
+    # ------------------------------------------------------------------
+
+    configs = SUAVE.Components.Configs.Config.Container()
+
+    base_config = SUAVE.Components.Configs.Config(vehicle)
+    base_config.tag = 'base'
+    configs.append(base_config)
+    
+    write(vehicle,base_config.tag) 
+
+
+    # done!
+    return configs
+
+</code></pre></div></div>
+
+<h1 id="analyses-setup">Analyses Setup</h1>
+
+<p>Here we setup the SU2 analysis. We commented out the parallel setting but you may use these if you want to parallelize the computation.</p>
+
+<p>The next setting which is commented out is the input file for pregenerated CFD data. We have included an example of this, so even if you don’t have SU2 and Gmsh installed you can still run this file to generate the surrogate and run the mission. A 10 iteration limit is used so that the tutorial can be run in a reasonable amount of time (~15 min). Data for runs with the 10 iteration limit and 1500 iteration limit are provided.</p>
+
+<p>After that we specify the points we want to use to generate the SU2-based lift surrogate. SUAVE has default values for these, but we suggest the user specify their own Mach numbers and angles of attack.</p>
+
+<p>Next we set up a bit of mesh refinement by modifying the source parameters at specific segments. Here we reduce the source length in the root area which refines the mesh there. This is optional as sources will also be added by default if these options are not specified.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+
+    # ------------------------------------------------------------------
+    #  Aerodynamics Analysis
+    aerodynamics = SUAVE.Analyses.Aerodynamics.SU2_Euler()
+    aerodynamics.geometry = vehicle
+    
+    #aerodynamics.process.compute.lift.inviscid.settings.parallel   = True
+    #aerodynamics.process.compute.lift.inviscid.settings.processors = 12  
+    #aerodynamics.process.compute.lift.inviscid.training_file       = 'base_data_1500.txt'
+    aerodynamics.process.compute.lift.inviscid.settings.maximum_iterations = 10
+    aerodynamics.settings.drag_coefficient_increment = 0.0000
+    
+    aerodynamics.process.compute.lift.inviscid.training.Mach             = np.array([.3, .5, .7, .85]) 
+    aerodynamics.process.compute.lift.inviscid.training.angle_of_attack  = np.array([0.,3.,6.]) * Units.deg    
+    
+    wing_segments = vehicle.wings.main_wing.Segments
+    wing_segments.section_1.vsp_mesh = Data()
+    wing_segments.section_1.vsp_mesh.inner_radius  = 4.
+    wing_segments.section_1.vsp_mesh.outer_radius  = 4.
+    wing_segments.section_1.vsp_mesh.inner_length  = .14
+    wing_segments.section_1.vsp_mesh.outer_length  = .14
+    
+    wing_segments.section_2.vsp_mesh = Data()
+    wing_segments.section_2.vsp_mesh.inner_radius  = 4.
+    wing_segments.section_2.vsp_mesh.outer_radius  = 4.
+    wing_segments.section_2.vsp_mesh.inner_length  = .14
+    wing_segments.section_2.vsp_mesh.outer_length  = .14
+    
+    wing_segments.section_3.vsp_mesh = Data()
+    wing_segments.section_3.vsp_mesh.inner_radius  = 4.
+    wing_segments.section_3.vsp_mesh.outer_radius  = 4.
+    wing_segments.section_3.vsp_mesh.inner_length  = .14
+    wing_segments.section_3.vsp_mesh.outer_length  = .14
+    
+    wing_segments.section_4.vsp_mesh = Data()
+    wing_segments.section_4.vsp_mesh.inner_radius  = 4.
+    wing_segments.section_4.vsp_mesh.outer_radius  = 2.8
+    wing_segments.section_4.vsp_mesh.inner_length  = .14
+    wing_segments.section_4.vsp_mesh.outer_length  = .14      
+    
+    analyses.append(aerodynamics)
+
+
+</code></pre></div></div>
+
+<p>The rest of the code runs as usual. However, we add in an extra plot which shows the surrogate and the points that were used to build it.</p>
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="registration.html">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -4,6 +4,7 @@ var classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment =
     [ "append_airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a47fc0861956a7eae28e13a4f5e1ee7c7", null ],
     [ "append_control_surface", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#aaab654b3bbb6547ca992644fc3dbd300", null ],
     [ "Airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#afea77873575432d9f76c0216b53913b0", null ],
+    [ "areas", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a58c917c9cc37d7f2de79a05e1398a23d", null ],
     [ "control_surfaces", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a18d1010aa92045660148a35417f8b9bf", null ],
     [ "dihedral_outboard", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a9f87970e346855bfdc2b7184e8a44dad", null ],
     [ "percent_span_location", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a693876b634b417655e245b0d89e81651", null ],

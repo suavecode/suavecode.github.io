@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Simple Install</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://suave.stanford.edu/index.html/assets/css/main.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li class="current"><a href="http://suave.stanford.edu/index.html/download.html">Download</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/tutorials.html">Tutorials</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="http://suave.stanford.edu/index.html/images/github_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="http://suave.stanford.edu/index.html/images/travis_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="http://suave.stanford.edu/index.html/images/coveralls.svg">
+									</span>
+									</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+										
+										<section>
+											<h3>Downloads</h3>
+											<ul class="links">
+												<li><a href="standard_install.html">Standard Install</a></li>
+												<li><a href="develop_install.html">Develop Install</a></li>
+											</ul>
+										</section>
+
+								</div>
+							</div>
+							<div class="col-8  col-12-narrower imp-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+
+
+											<h2 id="downloading">Downloading</h2>
+
+											<p>SUAVE comes released as a set of project folders ready for learning and exploration.</p>
+
+											<p>Please take a few seconds to register with us by filling out the form on the pages linked below. Upon registration, you’ll be redirected to the appropriate distribution of the software.  The information we collect is used <em>only</em> for usage statistics by the development team. You’ll only be contacted for notification of critical bug fixes and major releases. To get more involved in growing the community, definitely check out the <a href="http://suave.stanford.edu/forum.html">forum</a>. Your support is greatly appreciated, it let’s us build a better tool for everyone!</p>
+
+											<h3 id="stable-release">Stable Release</h3>
+											<p>Download the latest stable release of SUAVE: <br />
+											<a href="registration.html/">SUAVE Version 2.0.0</a></p>
+
+											<h3 id="license">License</h3>
+
+											<p>We want SUAVE to grow with the community, so it’s available under a <br /><a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">LGPL 2.1 License</a>.</p>
+
+											<p>Please <a href="mailto:suavecode-info@lists.stanford.edu?Subject=SUAVE%20CODE%20Questions" target="_top">contact us</a> if you are interested in re-publishing SUAVE source code as part of a commercial software.</p>
+
+											<h3 id="tutorials">Tutorials</h3>
+
+											<p>We also update our tutorials repository with every release to show new users some of the capabilities and how to use the code. The tutorial files can be found <a href="https://github.com/suavecode/Tutorials">here</a>. If you would like to use these, you may either follow the Github download instructions on the <a href="/develop">develop</a> page, but using <code class="highlight_code">https://github.com/suavecode/Tutorials.git</code>, or you can download the files as a .zip using the “clone or download” button on the <a href="https://github.com/suavecode/Tutorials">Tutorials Github page</a>.</p>
+
+											<p><br /></p>
+
+											<h2 id="installation">Installation</h2>
+
+											<p>SUAVE is developed primarily on Python 3. It’s known to work on versions 3.6 and above .  Let us know if you find that it works on additonal versions.</p>
+
+											<p>We strongly recommend using a scientific python distribution like <a href="http://continuum.io/downloads">Anaconda</a> or <a href="https://store.enthought.com/downloads">Enthought-Canopy</a>.  All the package dependencies like scipy and numpy will come pre-packaged and stuff will just work.</p>
+
+											<p>If you don’t have access to a scientific python distribution, you can install the dependent packages separately.  Check out the specific <a href="#dependencies">dependencies</a> for more information</p>
+
+											<h3 id="simple-setup">Simple Setup</h3>
+
+											<p>Once you’ve downloaded the code and prepared the software requrements, you’re ready to install it into python!</p>
+
+											<ol>
+											  <li>Download and extract the release archive</li>
+											  <li>Open the directory SUAVE/trunk</li>
+											  <li>Open a command prompt in that directory</li>
+											  <li>Run this command: <code class="highlight_code">python setup.py install</code> <br />
+											If you are on a linux or mac, you may need to run <br /> <code class="highlight_code">sudo python setup.py install</code></li>
+											  <li>Change to any other folder, open a python shell, and test the new module with the command <code class="highlight_code">import SUAVE</code></li>
+											</ol>
+
+											<p>If all goes well, you are now able to import SUAVE into your python projects.  If you’ve downloaded the tutorials as well, check out the <a href="http://suave.stanford.edu/tutorials.html">guides</a> for examples on using thems!</p>
+
+											<p>After trying out the guides you may find you want to make changes to the innards of the package to fit your problem, take a look at the <a href="/develop">develop</a> notes for how to set this up.</p>
+
+											<p>Have fun!</p>
+
+											<p>If you had trouble installing or need to uninstall, there are some more tips ahead.</p>
+
+											<p><br /></p>
+
+											<h3 id="dependencies">Dependencies</h3>
+
+											<p>Below are the packages that SUAVE expects in order to run the tutorial cases.  There are links to guides on using package managers for linux and mac, and python installers for windows.  If these fail, check out the source forge links for additional installers or source code.</p>
+
+											<table>
+											  <thead>
+											    <tr>
+											      <th>package</th>
+											      <th>link</th>
+											    </tr>
+											  </thead>
+											  <tbody>
+											    <tr>
+											      <td>numpy</td>
+											      <td><a href="http://www.scipy.org/install.html#linux-packages">linux</a>, <a href="http://www.scipy.org/install.html#mac-packages">mac</a>, <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy">windows</a>, <a href="http://sourceforge.net/projects/numpy/files/NumPy">source</a></td>
+											    </tr>
+											    <tr>
+											      <td>scipy</td>
+											      <td><a href="http://www.scipy.org/install.html#linux-packages">linux</a>, <a href="http://www.scipy.org/install.html#mac-packages">mac</a>, <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy">windows</a>, <a href="http://sourceforge.net/projects/scipy/files/scipy">source</a></td>
+											    </tr>
+											    <tr>
+											      <td>matplotlib</td>
+											      <td><a href="http://www.scipy.org/install.html#linux-packages">linux</a>, <a href="http://www.scipy.org/install.html#mac-packages">mac</a>, <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib">windows</a>, <a href="http://sourceforge.net/projects/matplotlib/files/matplotlib">source</a></td>
+											    </tr>
+											    <tr>
+											      <td>pip</td>
+											      <td><a href="https://pip.pypa.io/en/stable/installing.html#install-pip">linux</a>, <a href="https://pip.pypa.io/en/stable/installing.html#install-pip">mac</a>, <a href="https://pip.pypa.io/en/stable/installing.html#install-pip">windows</a></td>
+											    </tr>
+											    <tr>
+											      <td>scikit-learn</td>
+											      <td><a href="http://scikit-learn.org/stable/install.html">linux</a>, <a href="http://scikit-learn.org/stable/install.html">mac</a>, <a href="http://scikit-learn.org/stable/install.html">windows</a></td>
+											    </tr>
+											  </tbody>
+											</table>
+
+											<p><br />
+											<strong>Note</strong>: For the windows installers, you can pick the latest version, for “cp2.7” (C-Python 3.6), for your architecture (32 or 64bit), and for numpy pick the MKL version (it’s faster). <br />
+											<strong>Note</strong>: The pip installer above will also install setuptools, a sub-dependency.</p>
+
+											<h3 id="dealing-with-write-access">Dealing with Write Access</h3>
+
+											<p>You shouldn’t need this part of the guide, unless you are unable to write-access the python site-packages  directory.  In that case, you can try these approaches to install SUAVE.</p>
+
+											<h4 id="a-install-to-local-site-packages">A. Install to local site-packages</h4>
+
+											<p>This involves the user install option <br />
+											<code class="highlight_code">python setup.py install --user</code></p>
+
+											<h4 id="b-start-a-local-site-packages-folder">B. Start a local site-packages folder</h4>
+
+											<p>This involves creating a local directory, and setting up your PYTHONPATH environment variable.</p>
+
+											<ol>
+											  <li>Create a local directory.<br />
+											For example: <br />
+											<code class="highlight_code">~/python-site-packages</code> or <br />
+											<code class="highlight_code">C:/Users/your-user-name/python-site-packages</code></li>
+											  <li>Append this path to PYTHONPATH
+											    <ul>
+											      <li>For Unix operating systems
+											        <ul>
+											          <li>Append this line to your ~/.bashrc file <br />
+											 <code class="highlight_code">export PYTHONPATH = $PYTHONPATH:~/python-site-packages</code></li>
+											          <li>And source the bashrc file <br />
+											 <code class="highlight_code">$ source ~/.bashrc</code></li>
+											        </ul>
+											      </li>
+											      <li>For MacOS operating systems
+											        <ul>
+											          <li>Append this line to your ~/.bash_profile file <br />
+											 <code class="highlight_code">export PYTHONPATH = $PYTHONPATH:~/python-site-packages</code></li>
+											          <li>And source the bashrc file <br />
+											 <code class="highlight_code">$ source ~/.bash_profile</code></li>
+											        </ul>
+											      </li>
+											      <li>For Windows operating systems
+											        <ul>
+											          <li>Open the start menu and type “environ”, this opens the environment variable editor</li>
+											          <li>Create or edit the PYTHONPATH “User” environment variable, appending the full path to your custom site-package directory, separating multiple paths with semicolons.  For example: <br />
+											 	<code class="highlight_code">%PYTHONPATH%;C:/Users/your-user-name/python-site-packages</code></li>
+											          <li>After this you’ll need to open a new command line window <br /></li>
+											        </ul>
+											      </li>
+											    </ul>
+											  </li>
+											  <li>Now Install SUAVE <br />
+											Using the example of the custom directoy ~/python-site-packages: <br />
+											<code class="highlight_code">python setup.py install --prefix=~/python-site-packages</code></li>
+											</ol>
+
+											<h3 id="additional-install-options">Additional Install Options</h3>
+
+											<p>Additional setup options, such as overriding the default install location, can be found with the following commands: <br />
+											<code class="highlight_code">python setup.py install --help</code> <br />
+											<code class="highlight_code">python setup.py uninstall --help</code> <br />
+											<code class="highlight_code">python setup.py develop --help</code> <br />
+											<code class="highlight_code">python setup.py --help</code></p>
+
+											<p><br /></p>
+
+											<h2 id="un-installation">Un-Installation</h2>
+
+											<p>SUAVE requires pip to uninstall.  An alternate approach is provided further below if pip is not available.</p>
+
+											<h4 id="un-installation-with-pip">Un-Installation with pip:</h4>
+
+											<ol>
+											  <li>Navigate to the SUAVE/trunk directory by command line.</li>
+											  <li>Run the uninstall command. (On unix platforms, these commands may require a sudo (‘super-user-do’) call.) <br />
+											<code class="highlight_code">python setup.py uninstall</code></li>
+											</ol>
+
+											<h4 id="alternate-approach">Alternate Approach:</h4>
+											<p>Use this if you don’t have the pip package.</p>
+
+											<ol>
+											  <li>
+											    <p>Find your site-packages folder.
+											 Your site-packages folder is typically located in your python’s install directory, unless you manually created it.  You can find it by using the following commands.<br />
+											 <code class="highlight_code">$ python </code> <br />
+											 <code class="highlight_code">&gt;&gt;&gt; import site</code> <br />
+											 <code class="highlight_code">&gt;&gt;&gt; site.getsitepackages()</code></p>
+											  </li>
+											  <li>
+											    <p>Manually delete any file including the name “SUAVE”.<br />
+											You may also check the file “easy_install.pth”, if it exists, for references to the SUAVE package, and delete them.  Never said this would be pretty…  However it is a typical uninstall process for python packages.</p>
+											  </li>
+											</ol>
+
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="registration.html">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="http://suave.stanford.edu/index.html/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/index.html/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/index.html/forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -11,6 +11,7 @@ var searchData=
   ['new_5ftensor',['new_tensor',['../group__Methods-Geometry-Three__Dimensional.html#ga16788464c8acdf43da2e3f00c0e3b00c',1,'SUAVE::Methods::Geometry::Three_Dimensional::angles_to_dcms']]],
   ['newton_5fraphson_5fupdate',['newton_raphson_update',['../classSUAVE_1_1Sizing_1_1Sizing__Loop_1_1Sizing__Loop.html#afee06f0c84b5023393a68b8163024939',1,'SUAVE::Sizing::Sizing_Loop::Sizing_Loop']]],
   ['nexus',['Nexus',['../classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html',1,'SUAVE::Optimization::Nexus']]],
+  ['nickel',['Nickel',['../classSUAVE_1_1Attributes_1_1Solids_1_1Nickel_1_1Nickel.html',1,'SUAVE::Attributes::Solids::Nickel']]],
   ['noise',['Noise',['../classSUAVE_1_1Analyses_1_1Noise_1_1Noise_1_1Noise.html',1,'SUAVE::Analyses::Noise::Noise']]],
   ['normal_5fshock',['normal_shock',['../group__Methods-Propulsion.html#gab5feaa0bf6416dfd4852ca8833236690',1,'SUAVE::Methods::Propulsion::nozzle_calculations']]],
   ['nose_5flanding_5fgear',['Nose_Landing_Gear',['../classSUAVE_1_1Components_1_1Landing__Gear_1_1Nose__Landing__Gear_1_1Nose__Landing__Gear.html',1,'SUAVE::Components::Landing_Gear::Nose_Landing_Gear']]],

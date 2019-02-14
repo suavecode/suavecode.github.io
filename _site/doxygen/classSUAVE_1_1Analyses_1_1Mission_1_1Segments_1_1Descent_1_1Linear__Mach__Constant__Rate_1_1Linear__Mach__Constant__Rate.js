@@ -1,9 +1,0 @@
-var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate =
-[
-    [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate.html#aabd70bf6c064eba2425ab03d501bc362", null ],
-    [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate.html#a532a94b40f26577b5292c260538f661c", null ],
-    [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate.html#a55f9dbc099bdc473c3ad9a9fd42d053d", null ],
-    [ "climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate.html#a833105ed7f276464e01d8c53f20537cd", null ],
-    [ "mach_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate.html#aafbc811cbfe78bcd603a7f6cc2af6e48", null ],
-    [ "mach_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate.html#aa056e902972480320d0ced21d1789840", null ]
-];

@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Using the Documentation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://suave.stanford.edu/index.html/assets/css/main.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/download.html">Download</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/tutorials.html">Tutorials</a></li>
+								<li class="current"><a href="http://suave.stanford.edu/index.html/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="http://suave.stanford.edu/index.html/images/github_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="http://suave.stanford.edu/index.html/images/travis_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="http://suave.stanford.edu/index.html/images/coveralls.svg">
+									</span>
+									</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+						<article class="content">
+				<h3 id="how-to-read-and-write-the-documentation">How to Read (and Write) the Documentation</h3>
+			
+			<p>This is an explanation of how documentation is built in SUAVE so that the user can know what to look for and how to write it if they wish to add their own code. The doxygen page is available <a href="/doxygen">here</a>.</p>
+			
+			<h3 id="docstrings">Docstrings</h3>
+			
+			<p>All classes and functions in SUAVE have docstrings have docstrings. These give the user an understanding of what the function does and information on the input and output variables.</p>
+			
+			<h4 id="classes">Classes</h4>
+			
+			<p>For a class, the docstring has three parts:</p>
+			
+			<ul>
+			<li>General description</li>
+			<li>Assumptions</li>
+			<li>Source</li>
+			</ul>
+			
+			<p>The general description provides a brief summary of what the class is used for. Assumptions list any significant assumptions are important in how it is used. This may be listed as None or N/A if there are no important assumptions. The source section should provide the general source of methods in the class. If there is no overall source, a message like ‘see sources in functions’ may be appropriate. There are also cases where a source is not relevant, such as simple geometric functions, and may also be listed as None or N/A.</p>
+			
+			<h4 id="class-docstring-template">Class Docstring Template</h4>
+			
+			<p>This is the general template that can be used when creating a new class. It should be placed directly under the class declaration.</p>
+			
+			<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>"""&lt;Description&gt;
+			
+			Assumptions:
+			&lt;any assumptions&gt;
+			
+			Source:
+			&lt;source&gt;
+			"""
+			</code></pre></div></div>
+			
+			<h4 id="functions">Functions</h4>
+			
+			<p>For functions there are six categories:</p>
+			
+			<ul>
+			<li>Description</li>
+			</ul>
+			
+			<p>This is a general description of what the function does. It should also include any key information that does not fit into one of the other categories.</p>
+			
+			<ul>
+			<li>Assumptions</li>
+			</ul>
+			
+			<p>This should contain any assumptions made by the function. None or N/A can be used if none are used.</p>
+			
+			<ul>
+			<li>Source</li>
+			</ul>
+			
+			<p>The source of any methods that have been implemented. Simple methods like basic geometric relations do not need a source.</p>
+			
+			<ul>
+			<li>Inputs</li>
+			</ul>
+			
+			<p>This should contain any variables or functions passed to the function. If the passed variable is a data structure, the components that are used should be listed. Each item should include a description if it is not obvious from the name. It should also include any relevant units. In addition, information about the variable type or any other information that might be important can be added here.</p>
+			
+			<ul>
+			<li>Outputs</li>
+			</ul>
+			
+			<p>This should contain the same information as in the inputs. It may also contain information on variables that are modified but not explicitly returned.</p>
+			
+			<ul>
+			<li>Properties Used</li>
+			</ul>
+			
+			<p>This carries the same information as input and outputs. It typically contains variables that are properties of the parent class but are not modified. There is some overlap with inputs and outputs, but either category is acceptable as long as the variable is documented.</p>
+			
+			<h4 id="function-docstring-template">Function Docstring Template</h4>
+			
+			<p>This is a template docstring:</p>
+			
+			<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>    """&lt;Description&gt;
+			
+			Assumptions:
+			&lt;any assumptions&gt;
+			
+			Source:
+			&lt;source&gt;
+			
+			Inputs:
+			&lt;input1&gt; &lt;units&gt;
+			&lt;input2&gt; &lt;units&gt;
+			..
+			
+			Outputs:
+			&lt;output1&gt; &lt;units&gt;
+			&lt;output2&gt; &lt;units&gt;
+			..
+			
+			Properties Used:
+			&lt;property1&gt; &lt;units&gt;
+			&lt;property2&gt; &lt;units&gt;
+			..
+			"""   
+			</code></pre></div></div>
+			
+			<h3 id="doxygen-grouping-tags">Doxygen Grouping Tags</h3>
+			
+			<p>Tags are used to put files into groups that match the SUAVE file structure. <code class="highlight_code">@defgroup</code> tags define a group and should be placed in the init file. An example is shown here:</p>
+			
+			<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>## @defgroup Analyses-Aerodynamics Aerodynamics
+			# These are the analyses that control aerodynamic evaluations.
+			# @ingroup Analyses
+			</code></pre></div></div>
+			
+			<p>In this example, <code class="highlight_code">Analyses-Aerodynamics</code> is the doxygen tag for the group, while the group appears in the documentation as <code class="highlight_code">Aerodynamics</code>, the next part of the string. The tag is based on the file structure (Analyses/Aerodynamics here). Since this is a subgroup of Analyses, <code class="highlight_code">@ingroup Analyses</code> is used here, with <code class="highlight_code">Analyses</code> as the doxygen tag for the next level up.</p>
+			
+			<p>In files, the <code class="highlight_code">@ingroup</code> tag should be inserted before all classes and stand-alone functions. The tag should match the tag in the folder init file’s <code class="highlight_code">@defgroup</code> string.</p>
+
+	</article>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="registration.html">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

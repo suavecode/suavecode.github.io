@@ -1,73 +1,184 @@
----
-layout: awesome
----
-<div class="page">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SUAVE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
-        <div class="verticalLineR">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
 
-        <header class="hero">
-                <div class="valign">
-                        <h1 class="title">SUAVE</h1>
-                        <p class="subtitle">An Aerospace Vehicle Environment for Designing Future Aircraft</p>
-                </div>
-        </header>
-        <article class="content">
-                <p>SUAVE is a conceptual level aircraft design environment built with the ability to analyze and optimize both conventional and unconventional designs. This capability is achieved in part by allowing analysis information for aircraft to be drawn from multiple sources. Many other software tools for aircraft conceptual design rely on fixed empirical correlations and other handbook approximation. SUAVE instead provides a framework that can be used to design aircraft featuring advanced technologies by augmenting relevant correlations with physics-based methods. </p>
+		
+		
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
 
-                <p><img src="../images/bwb_inside.png" alt="Blended Wing Body" /></p>
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li><a href="http://suave.stanford.edu/download.html">Download</a></li>								
+								<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+								<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="images/github_white.svg">
+										<p hidden id="github">GitHub</p>
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="images/travis_white.svg">
+										<p hidden id="travis">Travis CI</p>
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="images/coveralls.svg">
+										<p hidden id="coveralls">Coveralls</p>
+									</span>
+									</a></li>
+							</ul>
+						</nav>
 
-<p>While SUAVE is quite capable as built today, its most important strength is in the ease of creating and adding new vehicles, mission types, analyses, and optimizers. This flexibility is aided by SUAVE's status as an open-source Python code. Development is currently led by the <a href="http://adl.stanford.edu">Aerospace Design Lab</a> at Stanford University. If you're interested in joining us, please visit our <a href="/develop">develop page</a> for general instructions or reach out to us though our <a href="/forum">forum</a> or email.</p>
-                
-                
-                <h3> Publications </h3>
-                
-                <p>
-                We've recently presented papers on the technical background of SUAVE as applied to the analysis and optimization of aerospace vehicles. The first paper describes the initial models available and the motivations for the programming structures used in the package. The second paper details the schematics of setting up optimization problems and sample results. The third paper shows how higher fidelity models can be incorporated into the code. Finally, the fourth paper shows how optimization can be performed with multiple levels of fidelity.
-                </p>
-                
-                <p><a href="http://adl.stanford.edu/papers/suave-open-source.pdf">
-T. Lukaczyk, A. Wendorff, E. Botero, T. MacDonald, T. Momose, A. Variyar, J. M. Vegh, M. Colonno, T. Economon, J. J. Alonso, T. Orra, C. Ilario, "SUAVE: An Open-Source Environment for Multi-Fidelity Conceptual Vehicle Design", 16th AIAA Multidisciplinary Analysis and Optimization Conference, Dallas, TX, June 2015.
-                </a></p>
-                
-                 <p><a href="http://adl.stanford.edu/papers/suave-optimization.pdf">
-E. Botero, A. Wendorff, T. MacDonald, A. Variyar, J. M. Vegh, T. Lukaczyk, J. J. Alonso, T. Orra, C. Ilario da Silva. "SUAVE: An Open-Source Environment for Conceptual Vehicle Design and Optimization", 54th AIAA Aerospace Sciences Meeting, San Diego, CA, January 2016.
-                </a></p>
+				</div>
 
-                 <p><a href="http://adl.stanford.edu/papers/suave-hi-fi.pdf">
-T. MacDonald, E. Botero, J. M. Vegh, A. Variyar, J. J. Alonso, T. Orra, C. Ilario da Silva. "SUAVE: An Open-Source Environment Enabling Unconventional Designs through Higher Fidelity", 55th AIAA Aerospace Sciences Meeting, Grapevine, TX, January 2017.
-                </a></p>
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>SUAVE 2.0 Now Released!</h2>
+						<a href="latest_release.html" class="button">Learn More</a>
+					</header>
+				</section>
+				
+				<section id="Blurb" class="wrapper style3">
+					<div class="container">
+					
+						<p>SUAVE is a conceptual level aircraft design environment built with the ability to analyze and optimize both conventional and unconventional designs.
+						This capability is achieved in part by allowing analysis information for aircraft to be drawn from multiple sources.
+						Many other software tools for aircraft conceptual design rely on fixed empirical correlations and other handbook approximation.
+						SUAVE instead provides a framework that can be used to design aircraft featuring advanced technologies by augmenting relevant correlations with physics-based methods.
+						</p>
+					</div>
+				</section>
+			<!-- Highlights -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon major fa-plane"></i>
+									<h3>Open Source</h3>
+									<p>Released in LGPL 2.1. The open source license
+									enables commercial industry and academia to collaborate together.</p>
+								</div>
 
-                 <p><a href="http://adl.stanford.edu/papers/suave-mf-opt.pdf">
-T. MacDonald, M. Clarke, E. Botero, J. M. Vegh, J. J. Alonso. "SUAVE: An Open-Source Environment Enabling Multi-fidelity Vehicle Optimization", 16th AIAA Multidisciplinary Analysis and Optimization Conference, Denver, CO, June 2017.
-                </a></p>
-                
-                <h3> Partners </h3>
-                
-                <a class="ADL" href="http://adl.stanford.edu">
-                <img src="/images/adl.png" height="70">
-                    </span>
-                </a>
-                
-                <br>
-                
-                 <a class="Embraer" href="http://www.embraer.com">
-                <img src="/images/Embraer.png" height="65">
-                    </span>
-                </a>
-                
-                <br>
-                
-                <a class="FAA" href="http://www.faa.gov">
-                <img src="/images/FAA.png"  height="65">
-                    </span>
-                </a>
-                                
-                <br>
-                
-                <a class="wingware" href="https://wingware.com">
-                <img src="/images/wingware-logo.png" height="65">
-                    </span>
-                </a>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon major fa-space-shuttle"></i>
+									<h3>Python 3</h3>
+									<p>Built on the latest versions of SciPy, NumPy, and scikit-learn for maximum portability and flexibility.</p>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon major fa-fighter-jet"></i>
+									<h3>Conceptual Design</h3>
+									<p>Physics based analysis combined with proven
+									correlations allows SUAVE to perform multifidelity optimization.</p>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
 
-                
-                
+			<!-- Gigantic Heading -->
+				<section class="wrapper style2">
+					<div class="container">
+						<header class="major">
+							<h2>Supersonics, eVTOLs, Solar UAVs, Airliners, MultiCopters...</h2>
+							<p>SUAVE: Aerospace Conceptual Design Environment</p>
+						</header>
+					</div>
+				</section>
+
+			<!-- CTA -->
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Are you ready to design the future of aerospace?</h2>
+							<a href="download.html" class="button">Download</a>
+						</header>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="registration.html">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

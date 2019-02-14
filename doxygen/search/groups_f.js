@@ -5,6 +5,7 @@ var searchData=
   ['sizing',['Sizing',['../group__Analyses-Sizing.html',1,'']]],
   ['stability',['Stability',['../group__Analyses-Stability.html',1,'']]],
   ['structures',['Structures',['../group__Analyses-Structures.html',1,'']]],
+  ['solids',['Solids',['../group__Attributes-Solids.html',1,'']]],
   ['storages',['Storages',['../group__Components-Energy-Storages.html',1,'']]],
   ['systems',['Systems',['../group__Components-Systems.html',1,'']]],
   ['su2',['SU2',['../group__Input__Output-SU2.html',1,'']]],

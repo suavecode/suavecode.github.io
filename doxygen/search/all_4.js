@@ -7,6 +7,7 @@ var searchData=
   ['dataordered',['DataOrdered',['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html',1,'SUAVE::Core::DataOrdered']]],
   ['datcom',['datcom',['../group__Methods-Flight__Dynamics-Static__Stability-Approximations.html#ga38877c856f6e41a0969d9d7f12023907',1,'SUAVE::Methods::Flight_Dynamics::Static_Stability::Approximations::datcom']]],
   ['datta_5fdischarge',['datta_discharge',['../group__Methods-Power-Battery-Discharge.html#ga2bac69c7b319cbf510379a320ab83922',1,'SUAVE::Methods::Power::Battery::Discharge::datta_discharge']]],
+  ['de_5flaval_5fnozzle',['de_Laval_Nozzle',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1de__Laval__Nozzle_1_1de__Laval__Nozzle.html',1,'SUAVE::Components::Energy::Converters::de_Laval_Nozzle']]],
   ['deep_5fget',['deep_get',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a3bbf5c11c2462b89b0a3df6dcaacf501',1,'SUAVE.Core.Data.Data.deep_get()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a89768631688e7af93fad7bb22a1aa5fd',1,'SUAVE.Core.DataOrdered.DataOrdered.deep_get()']]],
   ['deep_5fset',['deep_set',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a84ba0de5ac002c9fd4fc2953f5d452d4',1,'SUAVE.Core.Data.Data.deep_set()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#afa98044ceb5edb5a614a5d058c6b93a1',1,'SUAVE.Core.DataOrdered.DataOrdered.deep_set()']]],
   ['default_5fformat',['default_format',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#add51f2c695a5642f18b8e8c1bfe18b92',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],

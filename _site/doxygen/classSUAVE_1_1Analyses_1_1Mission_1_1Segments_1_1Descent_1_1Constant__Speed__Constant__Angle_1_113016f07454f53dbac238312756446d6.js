@@ -1,8 +1,0 @@
-var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle_1_113016f07454f53dbac238312756446d6 =
-[
-    [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle_1_113016f07454f53dbac238312756446d6.html#a196ee3d4d062a6d50c967e67106b6114", null ],
-    [ "air_speed", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle_1_113016f07454f53dbac238312756446d6.html#ab65eb0ec80ac2813a4680da642ae6fa7", null ],
-    [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle_1_113016f07454f53dbac238312756446d6.html#a3f3a26a19a34597691602e182e61ab00", null ],
-    [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle_1_113016f07454f53dbac238312756446d6.html#afb7d66ea4d3e838ee14b6a6305249dcf", null ],
-    [ "descent_angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle_1_113016f07454f53dbac238312756446d6.html#a5e3e5ccf847de44bad50edc23fba581c", null ]
-];

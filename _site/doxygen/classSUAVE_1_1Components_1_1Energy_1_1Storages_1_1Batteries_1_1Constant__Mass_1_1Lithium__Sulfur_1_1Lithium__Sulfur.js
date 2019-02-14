@@ -1,6 +1,0 @@
-var classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Sulfur_1_1Lithium__Sulfur =
-[
-    [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Sulfur_1_1Lithium__Sulfur.html#a379ba3c396d7a65ce7b8a02251a824f2", null ],
-    [ "specific_energy", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Sulfur_1_1Lithium__Sulfur.html#ae47ff0eae461618101c7e10358b5f3f6", null ],
-    [ "specific_power", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Sulfur_1_1Lithium__Sulfur.html#a11b840e1979e226f5fe1911cb20acf34", null ]
-];

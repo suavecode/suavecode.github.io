@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Turbofan Network - SUAVE Tutorial</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://suave.stanford.edu/index.html/assets/css/main.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/download.html">Download</a></li>
+								<li class="current"><a href="http://suave.stanford.edu/index.html/tutorials.html">Tutorials</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="http://suave.stanford.edu/index.html/images/github_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="http://suave.stanford.edu/index.html/images/travis_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="http://suave.stanford.edu/index.html/images/coveralls.svg">
+									</span>
+									</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+								<h2 id="turbofan-modeling-tutorial">Turbofan Modeling Tutorial</h2>
+
+<p>This tutorial describes how the energy network framework in SUAVE can be used to build a model of a turbofan engine. Once this is clear to the user, understanding the setup of the other gasturbine models, the ducted fan and the turbojet will be much easier. The turbofan model is built with several turbofan components as its building blocks. These are then linked together through their inputs and outputs. The script to follow is the tut_mission_B737.py script that was used in the <a href="/guides/boeing_737-800.html">Boeing 737-800 Analysis Tutorial</a></p>
+
+<h3 id="setting-up-the-turbofan-model">Setting up the Turbofan model</h3>
+
+<p>First the turbofan energy network is instantiated. The parameters associated with the network as a whole are assigned.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#   Turbofan Network
+# ------------------------------------------------------------------    
+
+#instantiate the gas turbine network
+turbofan = SUAVE.Components.Energy.Networks.Turbofan()
+turbofan.tag = 'turbofan'
+
+# setup
+turbofan.bypass_ratio      = 5.4
+turbofan.number_of_engines = 2.0
+turbofan.engine_length     = 2.5
+turbofan.nacelle_diameter  = 1.580
+
+# working fluid
+turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
+</code></pre></div></div>
+
+<p>Then the different components are added</p>
+
+<h3 id="components">Components</h3>
+
+<p>The basic components used to model the turbofan are described below.</p>
+
+<h4 id="ram">Ram</h4>
+
+<p>The ‘Ram’ component is used to convert the freestream quantities that are passed into the turbofan network into stagnation quantities. As the turbofan network is based on a 1D gasdynamic analysis, most of the energy transfer across the different components are modelled as changes in the stagnation quantities. Thus the Ram component acts as a preprocessor converting the input conditions into quantities required by the network.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#   Component 1 - Ram
+
+# to convert freestream static to stagnation quantities
+
+# instantiate
+ram = SUAVE.Components.Energy.Converters.Ram()
+ram.tag = 'ram'
+
+# add to the network
+turbofan.append(ram)
+</code></pre></div></div>
+
+<h4 id="nozzle">Nozzle</h4>
+
+<p>The ‘Nozzle’ component is used to model the inlet diffuser, the outlet fan, and the compressor nozzles as shown below.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#  Component 2 - Inlet Nozzle
+
+# instantiate
+inlet_nozzle = SUAVE.Components.Energy.Converters.Compression_Nozzle()
+inlet_nozzle.tag = 'inlet_nozzle'
+
+# setup
+inlet_nozzle.polytropic_efficiency = 0.98
+inlet_nozzle.pressure_ratio        = 0.98
+
+# add to network
+turbofan.append(inlet_nozzle)
+
+# ------------------------------------------------------------------
+#  Component 8 - Core Nozzle
+
+# instantiate
+nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
+nozzle.tag = 'core_nozzle'
+
+# setup
+nozzle.polytropic_efficiency = 0.95
+nozzle.pressure_ratio        = 0.99    
+
+# add to network
+turbofan.append(nozzle)
+
+# ------------------------------------------------------------------
+#  Component 9 - Fan Nozzle
+
+# instantiate
+nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
+nozzle.tag = 'fan_nozzle'
+
+# setup
+nozzle.polytropic_efficiency = 0.95
+nozzle.pressure_ratio        = 0.99    
+
+# add to network
+turbofan.append(nozzle)
+</code></pre></div></div>
+
+<h4 id="compressor">Compressor</h4>
+
+<p>Two compressors are used in the turbofan model, a low and a high pressure compressor.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#  Component 3 - Low Pressure Compressor
+
+# instantiate 
+compressor = SUAVE.Components.Energy.Converters.Compressor()    
+compressor.tag = 'low_pressure_compressor'
+
+# setup
+compressor.polytropic_efficiency = 0.91
+compressor.pressure_ratio        = 1.14    
+
+# add to network
+turbofan.append(compressor)
+
+# ------------------------------------------------------------------
+#  Component 4 - High Pressure Compressor
+
+# instantiate
+compressor = SUAVE.Components.Energy.Converters.Compressor()    
+compressor.tag = 'high_pressure_compressor'
+
+# setup
+compressor.polytropic_efficiency = 0.91
+compressor.pressure_ratio        = 13.415    
+
+# add to network
+turbofan.append(compressor)
+</code></pre></div></div>
+
+<h4 id="fan">Fan</h4>
+
+<p>A fan component is also added to the network. If you were to model a turbojet, the fan component and the fan nozzle would not be added but all the other components would remain the same.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#  Component 10 - Fan
+
+# instantiate
+fan = SUAVE.Components.Energy.Converters.Fan()   
+fan.tag = 'fan'
+
+# setup
+fan.polytropic_efficiency = 0.93
+fan.pressure_ratio        = 1.7    
+
+# add to network
+turbofan.append(fan)
+</code></pre></div></div>
+
+<h4 id="combustor">Combustor</h4>
+
+<p>The combustor component is where the the fuel to air ratio is computed. It is also used to compute the sfc and the thrust later in the network.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#  Component 7 - Combustor
+
+# instantiate    
+combustor = SUAVE.Components.Energy.Converters.Combustor()   
+combustor.tag = 'combustor'
+
+# setup
+combustor.efficiency                = 0.99 
+combustor.turbine_inlet_temperature = 1450
+combustor.pressure_ratio            = 0.95
+combustor.fuel_data                 = SUAVE.Attributes.Propellants.Jet_A()    
+
+# add to network
+turbofan.append(combustor)
+</code></pre></div></div>
+
+<h4 id="turbine">Turbine</h4>
+
+<p>The work done by the fan and the compressors is used to compute the turbine work required. This is used to compute the change in the stagnation quantities across the turbine.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#  Component 5 - Low Pressure Turbine
+
+# instantiate
+turbine = SUAVE.Components.Energy.Converters.Turbine()   
+turbine.tag='low_pressure_turbine'
+
+# setup
+turbine.mechanical_efficiency = 0.99
+turbine.polytropic_efficiency = 0.93     
+
+# add to network
+turbofan.append(turbine)
+
+# ------------------------------------------------------------------
+#  Component 6 - High Pressure Turbine
+
+# instantiate
+turbine = SUAVE.Components.Energy.Converters.Turbine()   
+turbine.tag='high_pressure_turbine'
+
+# setup
+turbine.mechanical_efficiency = 0.99
+turbine.polytropic_efficiency = 0.93     
+
+# add to network
+turbofan.append(turbine)
+</code></pre></div></div>
+
+<h4 id="thrust">Thrust</h4>
+
+<p>The thrust component takes in the initial (inputs of the inlet nozzle) and final (exit of the fan and core exirt nozzles) stagnation quantities of the network and the fuel to air ratio and computes the specific fuel conspumption (sfc) and thrust generated by the network (turbofan engine).</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+#  Component 10 - Thrust
+
+# to compute thrust
+
+# instantiate
+thrust = SUAVE.Components.Energy.Processes.Thrust()       
+thrust.tag ='thrust'
+
+# setup
+thrust.total_design =42383.01
+
+# add to network
+turbofan.thrust = thrust   
+</code></pre></div></div>
+
+<h3 id="sizing-the-turbofan">Sizing the Turbofan</h3>
+
+<p>Once the network is built, it is essential to size the engine with a set of sizing conditions. The sizing function ‘turbofan_sizing’ takes in the model of the turbofan and the mach number and the altitude for which the turbofan is sized. The sizing thrust is an engine/network property (defined in the ‘Setting up the Turbofan model’ section above). The function takes these quantities and computes the design mass flow rate through the components. Once sized, the network/engine can be added to the vehicle as shown in the  B737 tutorial.</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>#bypass ratio  closer to fan
+
+#design sizing conditions
+altitude      = 35000.0*Units.ft
+mach_number   = 0.78 
+isa_deviation = 0.
+
+# add to network
+turbofan.thrust = thrust
+
+#size the turbofan (for thrust)
+turbofan_sizing(turbofan,mach_number,altitude)   
+
+#compute the turbofan diameter and engine length
+#note that the second input is to maintain a common interface with other sizing methods
+compute_turbofan_geometry(turbofan,None)
+</code></pre></div></div>
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="registration.html">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

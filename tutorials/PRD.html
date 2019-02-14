@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Payload Range Diagram - SUAVE Tutorial</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://suave.stanford.edu/index.html/assets/css/main.css" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-132339206-1');
+		</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<div id="header">
+				
+					<!-- Logo -->
+					<a hidden id="logo">SUAVE</a>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/download.html">Download</a></li>
+								<li class="current"><a href="http://suave.stanford.edu/index.html/tutorials.html">Tutorials</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/index.html/publications.html">Publications</a></li>
+								<li><a href="https://github.com/suavecode/SUAVE">
+									<span class="icon2 icon-github">
+										<img src="http://suave.stanford.edu/index.html/images/github_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://travis-ci.org/suavecode/SUAVE">
+									<span class="icon2 icon-travis">
+										<img src="http://suave.stanford.edu/index.html/images/travis_white.svg">
+									</span>
+									</a></li>
+								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
+									<span class="icon2 icon-coveralls">
+										<img src="http://suave.stanford.edu/index.html/images/coveralls.svg">
+									</span>
+									</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+	<h3 id="embraer-e-190-payload-range-diagram-tutorial">Embraer E-190 Payload Range Diagram Tutorial</h3>
+<p>1) Locate the tutorial script folder.</p>
+
+<p>2) Open the test_payload_range.py script in your favorite editor or IDE.</p>
+
+<p>3) Similar to the B737-800 Tutorial, the setup is divided into steps.</p>
+
+<p>4) For the Payload Range Diagram, besides the vehicle and mission, the user must provide the following inputs:</p>
+
+<ul>
+  <li><strong>cruise_segment_tag</strong>: You must enter the tag of the segment which will have its length modified in order to comply with required fuel burn for each one of the payload range diagram points.</li>
+  <li><strong>reserves</strong>: This will be considered as a fixed fuel reserve for all the diagram points.</li>
+</ul>
+
+<p>5) The tutorial presents the following definition:</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># run payload diagram	
+cruise_segment_tag = "Cruise"
+reserves = 1750.
+payload_range_results = payload_range(vehicle,mission,cruise_segment_tag,reserves)
+</code></pre></div></div>
+
+<p>6) First, let’s just run it as it is for now. Run the script in either the IDE or in a terminal as <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>python tut_payload_range.py</code></pre></div></div></p>
+
+<p>7) After the calculations are completed, the payload diagram will be plotted and the data will be stored in a file named ‘PayloadRangeDiagram.dat’. This is in the folder where you run the script.</p>
+
+<p>8) You can try to modify vehicle and/or mission parameters and see how the payload range diagram is affected. For now, let’s add some drag counts to the airplane:</p>
+
+<ul>
+  <li>Locate and open the script test_mission_Embraer_E190_constThr.py, in the tutorial folder (this is the script that contains the vehicle and mission setups)</li>
+  <li>Locate <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>base_analysis()</code></pre></div></div> and then the Aerodynamics Analysis text block (line 113)</li>
+  <li>Add 50 drag counts to the vehicle (line 115): <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>aerodynamics.settings.drag_coefficient_increment = 0.0050 </code></pre></div></div></li>
+  <li>Rerun the script as before and notice the changes in the results.</li>
+</ul>
+
+<p>9) Similarly the mission parameters can be changed. Again, this lets the user decide what changes they want to explore.</p>
+
+
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Download</h3>
+								<ul class="links">
+									<li><a href="registration.html">Registration</a></li>
+									<li><a href="https://github.com/suavecode/SUAVE">Github Site</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Learn</h3>
+								<ul class="links">
+									<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>External Links</h3>
+								<ul class="links">
+									<li><a href="http://adl.stanford.edu">Aerospace Design Lab</a></li>
+									<li><a href="https://aa.stanford.edu">Stanford Aero/Astro</a></li>
+									<li><a href="https://su2code.github.io">SU2</a></li>
+								</ul>
+							</section>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Stanford Aerospace Design Lab <br/> 
+								All rights reserved</li>
+							</ul>
+
+						</div>
+
+				</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

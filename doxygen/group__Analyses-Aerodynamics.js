@@ -23,7 +23,7 @@ var group__Analyses_Aerodynamics =
       [ "build_surrogate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#aa2a251b450d7a8bad81203841b9367e8", null ],
       [ "evaluate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a5239bbcd5e0f5bcef56f07626ff903d5", null ],
       [ "evaluate_conditions", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a55e806c99124a4651a2bd74cd27b73a2", null ],
-      [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a2c9bfba28deb4c834ead25ce3af9ba01", null ],
+      [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a23a413d5e680564e03e4e64b8f1cb85a", null ],
       [ "sample_training", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a8a56e051851235864dc8839d57ed9023", null ],
       [ "current_status", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ad8d7881165eb8c63bd430a38f1f38a21", null ],
       [ "geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ab3413e0de53e813c992c5693fe668c9b", null ],
@@ -58,7 +58,6 @@ var group__Analyses_Aerodynamics =
       [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Markup_1_1Markup.html#ae245433bcbe8036e917c4f0b4d21f7d2", null ],
       [ "geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Markup_1_1Markup.html#a665085a816238c4015570a5b7a960791", null ],
       [ "process", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Markup_1_1Markup.html#ab4fdd63d93a0248bd487e6e9626bf3c3", null ],
-      [ "settings", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Markup_1_1Markup.html#a48fb50f5fb9852e928eb6e3161e03b97", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Markup_1_1Markup.html#a73c36817237275ada1b38de1b17f647b", null ]
     ] ],
     [ "Process_Geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Process__Geometry_1_1Process__Geometry.html", [

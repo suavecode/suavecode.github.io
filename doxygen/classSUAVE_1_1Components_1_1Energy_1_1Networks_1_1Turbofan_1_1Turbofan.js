@@ -9,5 +9,7 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan =
     [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a5985a59648a18ea778c429c5cf2ac948", null ],
     [ "nacelle_diameter", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a1bf3a72eac55b30fc00ddc8cdc099d26", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#ac838a4ddc129e87df7fe82977d42caad", null ],
+    [ "OpenVSP_flow_through", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#ad71e3cc0e8a88d101a605d3e52c28dc8", null ],
+    [ "SFC_adjustment", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a03e991a7a9e667101a88861cd7f88595", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a643c70b63ac983fcf945798e9cbc1bcf", null ]
 ];
