@@ -9,7 +9,7 @@
 		<title>Develop Install</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="http://suave.stanford.edu/assets/css/main.css" />
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
@@ -32,25 +32,25 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="../index.html"> SUAVE</a></li>
-								<li class="current"><a href="../download.html">Download</a></li>
-								<li><a href="../tutorials.html">Tutorials</a></li>
-								<li><a href="../documentation.html">Documentation</a></li>
-								<li><a href="../forum.html">Forum</a></li>
-								<li><a href="../publications.html">Publications</a></li>
+								<li><a href="http://suave.stanford.edu/index.html"> SUAVE</a></li>
+								<li class="current"><a href="http://suave.stanford.edu/download.html">Download</a></li>
+								<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+								<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+								<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
+								<li><a href="http://suave.stanford.edu/publications.html">Publications</a></li>
 								<li><a href="https://github.com/suavecode/SUAVE">
 									<span class="icon2 icon-github">
-										<img src="../images/github_white.svg">
+										<img src="http://suave.stanford.edu/images/github_white.svg">
 									</span>
 									</a></li>
 								<li><a href="https://travis-ci.org/suavecode/SUAVE">
 									<span class="icon2 icon-travis">
-										<img src="../images/travis_white.svg">
+										<img src="http://suave.stanford.edu/images/travis_white.svg">
 									</span>
 									</a></li>
 								<li><a href="https://coveralls.io/github/suavecode/SUAVE">
 									<span class="icon2 icon-coveralls">
-										<img src="../images/coveralls.svg">
+										<img src="http://suave.stanford.edu/images/coveralls.svg">
 									</span>
 									</a></li>
 							</ul>
@@ -114,7 +114,7 @@
 
 											<p>SUAVE is built on a slightly modified PEP8 style guide, with changes made to implement a data-oriented view of the code. To help support discovering code, the SUAVE folder structure explicitly mirrors the package structure. Flexibility of the package structure is important, so in general all objects live in their own file, with the same file name as the object name. In order to maintain a separation between Analysis and Data structures, there are often parallel package trees inside the main branches of the package, like SUAVE.Methods.Aerodynamics and SUAVE.Analysis.Aerodynamics. Where possible the names of fields that live in the SUAVE package are written out verbosely, avoiding jargon built on mathematical variable names or acronyms.</p>
 
-											<p>A full description of the style of SUAVE can be found on the <a href="../guides">Guides page</a>.</p>
+											<p>A full description of the style of SUAVE can be found on the <a href="http://suave.stanford.edu/guides">Guides page</a>.</p>
 
 											<p>Templates for new methods and objects can be found in the SUAVE repo’s <a href="https://github.com/suavecode/SUAVE/tree/develop/templates">templates</a> folder.</p>
 
@@ -149,9 +149,9 @@
 
 											<ol>
 											  <li>Go to the SUAVE github <a href="https://github.com/suavecode/SUAVE">repo</a>.</li>
-											  <li>To get your own copy of the source, with links into real-time updates, you need to <img src="../images/fork-button.png" alt="fork" height="25px" /> the repo.  This button is on the top-right of the page too.</li>
+											  <li>To get your own copy of the source, with links into real-time updates, you need to <img src="http://suave.stanford.edu/images/fork-button.png" alt="fork" height="25px" /> the repo.  This button is on the top-right of the page too.</li>
 											  <li>This will copy the repo and take you to your fork, notice that your web-browser’s URL has changed to include your username.</li>
-											  <li>Now you can <a href="http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository">clone</a> your fork to your computer.  Find the clone url of your fork on the right hand side of the page and copy it.  You can use the https url. <br /> <img src="../images/clone-example.png" alt="clone" height="90px" /></li>
+											  <li>Now you can <a href="http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository">clone</a> your fork to your computer.  Find the clone url of your fork on the right hand side of the page and copy it.  You can use the https url. <br /> <img src="http://suave.stanford.edu/images/clone-example.png" alt="clone" height="90px" /></li>
 											  <li>Open a command prompt, in a directory that you want to start the repository (for example in the SUAVE_Project folder), and run the git clone command <br /> <code class="highlight_code">git clone &lt;git url&gt;</code> <br /> Now you should have the source code.</li>
 											  <li>Change directory into the trunk folder and run a developer installation command.  <br /> <code class="highlight_code">python setup.py develop</code> <br /> Now you have a developer version of SUAVE installed!  You can make changes to the source in this directory and the changes will appear the next time you run python, without having to rebuild or reinstall.</li>
 											  <li>Test the installation by changing to any other directory, then start a python shell, and run the command <br /> <code class="highlight_code">&gt;&gt;&gt; import SUAVE</code><br /><code class="highlight_code">&gt;&gt;&gt; print SUAVE.__file__</code><br /> This should print the file path to the SUAVE package init.py file in your trunk directory.</li>
@@ -268,7 +268,7 @@
 
 											<p>These are the areas that are under development or suggested for development are available in our <a href="https://github.com/suavecode/SUAVE/projects">Github projects tab</a>. There are two active projects that include feature development. One is the list of items we plan to accomplish for our <a href="https://github.com/suavecode/SUAVE/projects/1">next release</a>. The other is a general <a href="https://github.com/suavecode/SUAVE/projects/2">feature development</a> project, which contains features that we would like to have but are not currently priorities for the next release.</p>
 
-											<p>Post to the <a href="../forum.html">forum</a> if you’re intersted in working on any of these, or to suggest a new module!</p>
+											<p>Post to the <a href="http://suave.stanford.edu/forum.html">forum</a> if you’re intersted in working on any of these, or to suggest a new module!</p>
 
 											<h3 id="long-term-development-goals">Long Term Development Goals</h3>
 
@@ -278,7 +278,7 @@
 											  <li>Integration with a standardized parameter storage interface such as <a href="https://software.dlr.de/p/cpacs/home/">CPACS</a></li>
 											</ul>
 
-											<p>We’re always happy to hear feedback on what our users think is important in this kind of tool, so if you have another idea go ahead and ask about it on our <a href="../forum.html">forum</a>.</p>
+											<p>We’re always happy to hear feedback on what our users think is important in this kind of tool, so if you have another idea go ahead and ask about it on our <a href="http://suave.stanford.edu/forum.html">forum</a>.</p>
 
 											<p>Back to <a href="#background">Top</a>!</p>
 											</header>
@@ -306,9 +306,9 @@
 							<section class="col-3 col-6-narrower col-12-mobilep">
 								<h3>Learn</h3>
 								<ul class="links">
-									<li><a href="../tutorials.html">Tutorials</a></li>
-									<li><a href="../documentation.html">Documentation</a></li>
-									<li><a href="../forum.html">Forum</a></li>
+									<li><a href="http://suave.stanford.edu/tutorials.html">Tutorials</a></li>
+									<li><a href="http://suave.stanford.edu/documentation.html">Documentation</a></li>
+									<li><a href="http://suave.stanford.edu/forum.html">Forum</a></li>
 								</ul>
 							</section>
 							<section class="col-3 col-6-narrower col-12-mobilep">
