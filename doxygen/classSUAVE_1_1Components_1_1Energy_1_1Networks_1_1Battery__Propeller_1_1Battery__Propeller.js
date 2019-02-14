@@ -2,8 +2,8 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Batt
 [
     [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a5139599762ddccd4077654b2797e0957", null ],
     [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac90f964684965af5c1d2d6b936ff769c", null ],
-    [ "residuals", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#af75bca55504a4c158b844178cc3560d6", null ],
-    [ "unpack_unknowns", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#abdfc2d6560f02a7b2cf8bfb5291a321d", null ],
+    [ "residuals", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#abfecc7d018b5270bebec061917c27657", null ],
+    [ "unpack_unknowns", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a227e4fba4d8897f97d19b5c8de2ba597", null ],
     [ "avionics", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#af76a5d8fc73c74267da6634b39c667b4", null ],
     [ "battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a9aa5e4c3240b6f6ee44b77d56486639e", null ],
     [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a683e8ecb8cd5f57e0d73f9faaabdb458", null ],

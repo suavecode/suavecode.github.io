@@ -319,6 +319,15 @@ var annotated_dup =
           [ "Weights_BWB", null, [
             [ "Weights_BWB", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB" ]
           ] ],
+          [ "Weights_Electric_Helicopter", null, [
+            [ "Weights_Electric_Helicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter" ]
+          ] ],
+          [ "Weights_Electric_Stopped_Rotor", null, [
+            [ "Weights_Electric_Stopped_Rotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor" ]
+          ] ],
+          [ "Weights_Electric_Tiltrotor", null, [
+            [ "Weights_Electric_Tiltrotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor" ]
+          ] ],
           [ "Weights_Tube_Wing", null, [
             [ "Weights_Tube_Wing", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing" ]
           ] ],
@@ -403,11 +412,58 @@ var annotated_dup =
           [ "Jet_A1", null, [
             [ "Jet_A1", "classSUAVE_1_1Attributes_1_1Propellants_1_1Jet__A1_1_1Jet__A1.html", "classSUAVE_1_1Attributes_1_1Propellants_1_1Jet__A1_1_1Jet__A1" ]
           ] ],
+          [ "JP7", null, [
+            [ "JP7", "classSUAVE_1_1Attributes_1_1Propellants_1_1JP7_1_1JP7.html", "classSUAVE_1_1Attributes_1_1Propellants_1_1JP7_1_1JP7" ]
+          ] ],
+          [ "Liquid_H2", null, [
+            [ "Liquid_H2", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2" ]
+          ] ],
           [ "Liquid_Natural_Gas", null, [
             [ "Liquid_Natural_Gas", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__Natural__Gas_1_1Liquid__Natural__Gas.html", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__Natural__Gas_1_1Liquid__Natural__Gas" ]
           ] ],
+          [ "LOX_LH2", null, [
+            [ "LOX_LH2", "classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__LH2_1_1LOX__LH2.html", "classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__LH2_1_1LOX__LH2" ]
+          ] ],
+          [ "LOX_RP1", null, [
+            [ "LOX_RP1", "classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__RP1_1_1LOX__RP1.html", "classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__RP1_1_1LOX__RP1" ]
+          ] ],
           [ "Propellant", null, [
             [ "Propellant", "classSUAVE_1_1Attributes_1_1Propellants_1_1Propellant_1_1Propellant.html", "classSUAVE_1_1Attributes_1_1Propellants_1_1Propellant_1_1Propellant" ]
+          ] ]
+        ] ],
+        [ "Solids", null, [
+          [ "Acrylic", null, [
+            [ "Acrylic", "classSUAVE_1_1Attributes_1_1Solids_1_1Acrylic_1_1Acrylic.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Acrylic_1_1Acrylic" ]
+          ] ],
+          [ "Aluminum", null, [
+            [ "Aluminum", "classSUAVE_1_1Attributes_1_1Solids_1_1Aluminum_1_1Aluminum.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Aluminum_1_1Aluminum" ]
+          ] ],
+          [ "Aluminum_Rib", null, [
+            [ "Aluminum_Rib", "classSUAVE_1_1Attributes_1_1Solids_1_1Aluminum__Rib_1_1Aluminum__Rib.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Aluminum__Rib_1_1Aluminum__Rib" ]
+          ] ],
+          [ "Bidirectional_Carbon_Fiber", null, [
+            [ "Bidirectional_Carbon_Fiber", "classSUAVE_1_1Attributes_1_1Solids_1_1Bidirectional__Carbon__Fiber_1_1Bidirectional__Carbon__Fiber.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Bidirectional__Carbon__Fiber_1_1Bidirectional__Carbon__Fiber" ]
+          ] ],
+          [ "Carbon_Fiber_Honeycomb", null, [
+            [ "Carbon_Fiber_Honeycomb", "classSUAVE_1_1Attributes_1_1Solids_1_1Carbon__Fiber__Honeycomb_1_1Carbon__Fiber__Honeycomb.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Carbon__Fiber__Honeycomb_1_1Carbon__Fiber__Honeycomb" ]
+          ] ],
+          [ "Epoxy", null, [
+            [ "Epoxy", "classSUAVE_1_1Attributes_1_1Solids_1_1Epoxy_1_1Epoxy.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Epoxy_1_1Epoxy" ]
+          ] ],
+          [ "Nickel", null, [
+            [ "Nickel", "classSUAVE_1_1Attributes_1_1Solids_1_1Nickel_1_1Nickel.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Nickel_1_1Nickel" ]
+          ] ],
+          [ "Paint", null, [
+            [ "Paint", "classSUAVE_1_1Attributes_1_1Solids_1_1Paint_1_1Paint.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Paint_1_1Paint" ]
+          ] ],
+          [ "Solid", null, [
+            [ "Solid", "classSUAVE_1_1Attributes_1_1Solids_1_1Solid_1_1Solid.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Solid_1_1Solid" ]
+          ] ],
+          [ "Steel", null, [
+            [ "Steel", "classSUAVE_1_1Attributes_1_1Solids_1_1Steel_1_1Steel.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Steel_1_1Steel" ]
+          ] ],
+          [ "Unidirectional_Carbon_Fiber", null, [
+            [ "Unidirectional_Carbon_Fiber", "classSUAVE_1_1Attributes_1_1Solids_1_1Unidirectional__Carbon__Fiber_1_1Unidirectional__Carbon__Fiber.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Unidirectional__Carbon__Fiber_1_1Unidirectional__Carbon__Fiber" ]
           ] ]
         ] ]
       ] ],
@@ -438,6 +494,9 @@ var annotated_dup =
             [ "Compressor", null, [
               [ "Compressor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compressor_1_1Compressor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compressor_1_1Compressor" ]
             ] ],
+            [ "de_Laval_Nozzle", null, [
+              [ "de_Laval_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1de__Laval__Nozzle_1_1de__Laval__Nozzle.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1de__Laval__Nozzle_1_1de__Laval__Nozzle" ]
+            ] ],
             [ "Expansion_Nozzle", null, [
               [ "Expansion_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Expansion__Nozzle_1_1Expansion__Nozzle.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Expansion__Nozzle_1_1Expansion__Nozzle" ]
             ] ],
@@ -464,6 +523,9 @@ var annotated_dup =
             ] ],
             [ "Ram", null, [
               [ "Ram", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Ram_1_1Ram.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Ram_1_1Ram" ]
+            ] ],
+            [ "Rocket_Combustor", null, [
+              [ "Rocket_Combustor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rocket__Combustor_1_1Rocket__Combustor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rocket__Combustor_1_1Rocket__Combustor" ]
             ] ],
             [ "Shaft_Power_Off_Take", null, [
               [ "Shaft_Power_Off_Take", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Shaft__Power__Off__Take_1_1Shaft__Power__Off__Take.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Shaft__Power__Off__Take_1_1Shaft__Power__Off__Take" ]
@@ -508,11 +570,17 @@ var annotated_dup =
             [ "Lift_Forward_Propulsor", null, [
               [ "Lift_Forward_Propulsor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor" ]
             ] ],
+            [ "Liquid_Rocket", null, [
+              [ "Liquid_Rocket", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket" ]
+            ] ],
             [ "Propulsor_Surrogate", null, [
               [ "Propulsor_Surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate" ]
             ] ],
             [ "Ramjet", null, [
               [ "Ramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet" ]
+            ] ],
+            [ "Scramjet", null, [
+              [ "Scramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Scramjet_1_1Scramjet.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Scramjet_1_1Scramjet" ]
             ] ],
             [ "Solar", null, [
               [ "Solar", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar" ]
@@ -536,6 +604,9 @@ var annotated_dup =
             ] ]
           ] ],
           [ "Processes", null, [
+            [ "Rocket_Thrust", null, [
+              [ "Rocket_Thrust", "classSUAVE_1_1Components_1_1Energy_1_1Processes_1_1Rocket__Thrust_1_1Rocket__Thrust.html", "classSUAVE_1_1Components_1_1Energy_1_1Processes_1_1Rocket__Thrust_1_1Rocket__Thrust" ]
+            ] ],
             [ "Solar_Radiation", null, [
               [ "Solar_Radiation", "classSUAVE_1_1Components_1_1Energy_1_1Processes_1_1Solar__Radiation_1_1Solar__Radiation.html", "classSUAVE_1_1Components_1_1Energy_1_1Processes_1_1Solar__Radiation_1_1Solar__Radiation" ]
             ] ],
@@ -564,6 +635,11 @@ var annotated_dup =
                   [ "Lithium_Air", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Variable__Mass_1_1Lithium__Air_1_1Lithium__Air.html", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Variable__Mass_1_1Lithium__Air_1_1Lithium__Air" ]
                 ] ]
               ] ]
+            ] ],
+            [ "Fuel_Tanks", null, [
+              [ "Fuel_Tank", null, [
+                [ "Fuel_Tank", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Fuel__Tanks_1_1Fuel__Tank_1_1Fuel__Tank.html", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Fuel__Tanks_1_1Fuel__Tank_1_1Fuel__Tank" ]
+              ] ]
             ] ]
           ] ]
         ] ],
@@ -574,6 +650,9 @@ var annotated_dup =
           [ "Fuselage", null, [
             [ "Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container.html", null ],
             [ "Fuselage", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage" ]
+          ] ],
+          [ "Segment", null, [
+            [ "Segment", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment" ]
           ] ]
         ] ],
         [ "Landing_Gear", null, [

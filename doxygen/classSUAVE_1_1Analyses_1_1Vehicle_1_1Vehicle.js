@@ -1,6 +1,6 @@
 var classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle =
 [
-    [ "__init__", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#aac80b206b29af7818940de54f437ebec", null ],
+    [ "__init__", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a20dcf0e9da5171dfd224aa0558fd70e9", null ],
     [ "__defaults__", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a6fbadfc951c25c01c181e75c8b07db75", null ],
     [ "append", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a47da109afe71d431d2c6e31b12ce51e9", null ],
     [ "get_root", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a7432f659914e8bc502addeb53b571bc8", null ],

@@ -1,7 +1,7 @@
 var classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs =
 [
     [ "assertEqual", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html#a0c0e2b1e640261526b45d75815041eed", null ],
-    [ "assertRaisesMsg", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html#af0f187e9627726c315aa2addfc3372b8", null ],
+    [ "assertRaisesMsg", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html#a0d683aa00ff259ade2ecfbf37648d833", null ],
     [ "q1", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html#a369fea855eac711f52da20a83b2c42f7", null ],
     [ "q2", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html#ad738197b70e5b38c835aa534e623fa0d", null ],
     [ "qi", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html#acaa99eee28562bc9eeb3b5a925ad7cf1", null ],

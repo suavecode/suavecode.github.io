@@ -1,11 +1,11 @@
 var classSUAVE_1_1Core_1_1Data_1_1Data =
 [
-    [ "__init__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a9662296ec537f32756a3db527d76f0d8", null ],
+    [ "__init__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a53cdb6dff3faeb47d13b68f989012733", null ],
     [ "__defaults__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#aaf592cb5828e2e77556cb96137be6509", null ],
     [ "__delattr__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a2540d3d9f85dbedb84b4a677d559a6b3", null ],
     [ "__getattribute__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a3a9e65571555260186c6ae54cfeeea3c", null ],
     [ "__iter__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a98f17bb9cd886ccc1110c3c18d1c12d3", null ],
-    [ "__new__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a348c73ed2549fa7ffbe432e03bbffcd8", null ],
+    [ "__new__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a5bf781781988c1d31bd4c2deca7fdb08", null ],
     [ "__setattr__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#aaceda3bf72e5beb15e59bf079edba2ce", null ],
     [ "__str__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a7847accf45dc18262cb7ceca42f74156", null ],
     [ "append", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a69c46e0c3a6b4e0edc62596ab0af232b", null ],

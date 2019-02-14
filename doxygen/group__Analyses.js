@@ -13,26 +13,26 @@ var group__Analyses =
     [ "Structures", "group__Analyses-Structures.html", "group__Analyses-Structures" ],
     [ "Weights", "group__Analyses-Weights.html", "group__Analyses-Weights" ],
     [ "Analysis", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html", [
-      [ "__call__", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#afeeaf88c2424003602f1a4c0503ed4fd", null ],
+      [ "__call__", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#ae5813c73fa29c7dd6fb999b6a265fb60", null ],
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#ab23ae346b8d6ad343384bc9b0f3bb712", null ],
-      [ "compile", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#ae1183f13918b2bdcb0bf6d0aa94ef4f8", null ],
-      [ "evaluate", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#a0c950af6a4ce899d2a29fccef38f47d7", null ],
-      [ "finalize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#a070b60f6b134baf09c60583901c5176a", null ],
-      [ "initialize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#a460a311d6ac29134ff52b7bec21b13f5", null ],
+      [ "compile", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#a33b2657e98251b7ec3a201edfd51c1f7", null ],
+      [ "evaluate", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#a16d3d5ec27475d3bd228ad03ea9358aa", null ],
+      [ "finalize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#a644094b6eebfa2710b27204563808fd3", null ],
+      [ "initialize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#a28621453cc992ab64118d243b333d8c2", null ],
       [ "features", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#ad4391599de0c0ccb845a5eb4c31a7247", null ],
       [ "settings", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#aec47523bf171175d934cdbbb23e53327", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#ad2dbbc94e7f1e2518410e2f8a1ea5af3", null ]
     ] ],
     [ "Container", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html", [
-      [ "__call__", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a7882a6fa0c914c5e89206af1c9a91052", null ],
-      [ "compile", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a9f2fedb5cf37d61979893a6cde2f2642", null ],
-      [ "evaluate", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#ada471c993860c5f8301461e92a626dbd", null ],
-      [ "finalize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a83403e3f9b2b827c152ab0700f568405", null ],
-      [ "initialize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a775721af25dbdc38938223151f1370ad", null ]
+      [ "__call__", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a5a7662f791c347cbbb79fbc808bb3043", null ],
+      [ "compile", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a62525fbe0d455c054df2e966beb1c407", null ],
+      [ "evaluate", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a151f09847fa322363a306fdf1b8e960a", null ],
+      [ "finalize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a69a9ef648673b691187a24bbb1044a13", null ],
+      [ "initialize", "classSUAVE_1_1Analyses_1_1Analysis_1_1Container.html#a55a3295967a8c063aecf424e76163a94", null ]
     ] ],
     [ "Process", "classSUAVE_1_1Analyses_1_1Process_1_1Process.html", [
-      [ "__call__", "classSUAVE_1_1Analyses_1_1Process_1_1Process.html#af4161c87be7d7b6c2ace43ca2ecad54e", null ],
-      [ "evaluate", "classSUAVE_1_1Analyses_1_1Process_1_1Process.html#a85d9cc1c2a36047100d9ce8abee28bda", null ]
+      [ "__call__", "classSUAVE_1_1Analyses_1_1Process_1_1Process.html#a52be80007c80252af1aca26453f65b10", null ],
+      [ "evaluate", "classSUAVE_1_1Analyses_1_1Process_1_1Process.html#adc5a542daa2ea034c52865c7d8b05aff", null ]
     ] ],
     [ "Settings", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings.html#aa2d3d070627f1559b8929bc2ed280a0b", null ],
@@ -49,7 +49,7 @@ var group__Analyses =
       [ "training", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#a24906c9735ddd0f6775997b00bcab98e", null ]
     ] ],
     [ "Vehicle", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html", [
-      [ "__init__", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#aac80b206b29af7818940de54f437ebec", null ],
+      [ "__init__", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a20dcf0e9da5171dfd224aa0558fd70e9", null ],
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a6fbadfc951c25c01c181e75c8b07db75", null ],
       [ "append", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a47da109afe71d431d2c6e31b12ce51e9", null ],
       [ "get_root", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a7432f659914e8bc502addeb53b571bc8", null ],

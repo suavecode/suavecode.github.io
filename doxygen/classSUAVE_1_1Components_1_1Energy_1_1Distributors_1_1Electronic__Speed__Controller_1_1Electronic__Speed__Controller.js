@@ -1,7 +1,7 @@
 var classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller =
 [
     [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html#ade7b4c9066bfdee04532a683a20849b7", null ],
-    [ "currentin", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html#ad8605cbf070de0139fee6ece5116580f", null ],
+    [ "currentin", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html#a07846d752fbd6202138fcdacf69719a0", null ],
     [ "voltageout", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html#a59e19c06939c4420d52a3f645e9b0c20", null ],
     [ "efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html#af2049585ddd8e6ba97dc13591526b273", null ]
 ];

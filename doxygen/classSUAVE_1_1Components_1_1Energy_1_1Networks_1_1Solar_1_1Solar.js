@@ -2,8 +2,8 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar =
 [
     [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a1b845035b4dfa9e54c0487e6d9c1c55b", null ],
     [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a03837081f89d8b2f3e50455f44411e41", null ],
-    [ "residuals", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#afc4852d79b60415d25511fc2a6bb1930", null ],
-    [ "unpack_unknowns", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a7d95eeb99fa7ca3bd14e4c5f833f09c8", null ],
+    [ "residuals", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#aab86666a7580790e990512521b58e5da", null ],
+    [ "unpack_unknowns", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ad248090876d7a5f6246379b8c8b34a26", null ],
     [ "avionics", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a1f33f40e58f05ee58ed0669fe5302e72", null ],
     [ "battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ac16762f88873f88419a0d851b4d7c5f0", null ],
     [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a9e7c3492cc016f11fd98c3a47317961f", null ],

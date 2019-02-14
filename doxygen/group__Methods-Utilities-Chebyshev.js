@@ -1,5 +1,5 @@
 var group__Methods_Utilities_Chebyshev =
 [
-    [ "chebyshev_data", "group__Methods-Utilities-Chebyshev.html#ga52d35a64916a9bce3b636e296f4ef53b", null ],
-    [ "linear_data", "group__Methods-Utilities-Chebyshev.html#ga63215eedc2e365dd6273325e8a142b48", null ]
+    [ "chebyshev_data", "group__Methods-Utilities-Chebyshev.html#ga981c893b8ddd22558db27cb6a73ff757", null ],
+    [ "linear_data", "group__Methods-Utilities-Chebyshev.html#gac83ee04f724538788375ce2d449302ea", null ]
 ];

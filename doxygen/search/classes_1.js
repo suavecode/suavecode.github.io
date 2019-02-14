@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['acrylic',['Acrylic',['../classSUAVE_1_1Attributes_1_1Solids_1_1Acrylic_1_1Acrylic.html',1,'SUAVE::Attributes::Solids::Acrylic']]],
   ['aerodas',['AERODAS',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AERODAS_1_1AERODAS.html',1,'SUAVE::Analyses::Aerodynamics::AERODAS']]],
   ['aerodynamic',['Aerodynamic',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Aerodynamic_1_1Aerodynamic.html',1,'SUAVE::Analyses::Mission::Segments::Aerodynamic']]],
   ['aerodynamics',['Aerodynamics',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html',1,'SUAVE.Analyses.Aerodynamics.Aerodynamics.Aerodynamics'],['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html',1,'SUAVE.Analyses.Mission.Segments.Conditions.Aerodynamics.Aerodynamics']]],
@@ -8,7 +9,9 @@ var searchData=
   ['airfoil',['Airfoil',['../classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil.html',1,'SUAVE::Components::Wings::Airfoils::Airfoil']]],
   ['airport',['Airport',['../classSUAVE_1_1Attributes_1_1Airports_1_1Airport_1_1Airport.html',1,'SUAVE::Attributes::Airports::Airport']]],
   ['all_5fat_5fonce',['All_At_Once',['../classSUAVE_1_1Analyses_1_1Mission_1_1All__At__Once_1_1All__At__Once.html',1,'SUAVE::Analyses::Mission::All_At_Once']]],
+  ['aluminum',['Aluminum',['../classSUAVE_1_1Attributes_1_1Solids_1_1Aluminum_1_1Aluminum.html',1,'SUAVE::Attributes::Solids::Aluminum']]],
   ['aluminum_5fair',['Aluminum_Air',['../classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Variable__Mass_1_1Aluminum__Air_1_1Aluminum__Air.html',1,'SUAVE::Components::Energy::Storages::Batteries::Variable_Mass::Aluminum_Air']]],
+  ['aluminum_5frib',['Aluminum_Rib',['../classSUAVE_1_1Attributes_1_1Solids_1_1Aluminum__Rib_1_1Aluminum__Rib.html',1,'SUAVE::Attributes::Solids::Aluminum_Rib']]],
   ['analysis',['Analysis',['../classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html',1,'SUAVE::Analyses::Analysis']]],
   ['atmosphere',['Atmosphere',['../classSUAVE_1_1Attributes_1_1Atmospheres_1_1Atmosphere_1_1Atmosphere.html',1,'SUAVE::Attributes::Atmospheres::Atmosphere']]],
   ['atmospheric',['Atmospheric',['../classSUAVE_1_1Analyses_1_1Atmospheric_1_1Atmospheric_1_1Atmospheric.html',1,'SUAVE::Analyses::Atmospheric::Atmospheric']]],

@@ -1,8 +1,8 @@
 var group__Methods_Missions_Segments_Descent =
 [
-    [ "expand_state", "group__Methods-Missions-Segments-Descent.html#gaf42a40b22cba7bb56609d82dd1b675d9", null ],
-    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#gabbd9496321d7bc45c1796b734d2f4b38", null ],
-    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#gac8fb34b9581a8fa70713a2ad9d5fa03b", null ],
-    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#gad7dddc4ee25bf0b1e76687a266ad0025", null ],
-    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#ga217350b7498475f50bd2893122404dfa", null ]
+    [ "expand_state", "group__Methods-Missions-Segments-Descent.html#ga898644367b4428d8823439b7e6655d5d", null ],
+    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#ga709d141110269a5584e1e1e5ad75db85", null ],
+    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#gad6c9b018b7f2c6fd8fb86153bd10ce32", null ],
+    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#gaf838417b317552701252b4a4088ad671", null ],
+    [ "initialize_conditions", "group__Methods-Missions-Segments-Descent.html#ga8a3eb0f2d72ac083762d76c50e462263", null ]
 ];

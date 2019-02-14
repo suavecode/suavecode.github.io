@@ -1,18 +1,18 @@
 var group__Core =
 [
     [ "Container", "classSUAVE_1_1Core_1_1Container_1_1Container.html", [
-      [ "__init__", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a7cbac1bbad1dd3279655f10d8315ffb2", null ],
+      [ "__init__", "classSUAVE_1_1Core_1_1Container_1_1Container.html#ade60f359bbe42e43d4688674fca339a4", null ],
       [ "__defaults__", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a566ffa56d67a534512525e5212065568", null ],
       [ "append", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a0f2652c760244b0128b854b9dce9a774", null ],
       [ "extend", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a6e9b7dbfa8ffa88162d698d32318b22d", null ]
     ] ],
     [ "Data", "classSUAVE_1_1Core_1_1Data_1_1Data.html", [
-      [ "__init__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a9662296ec537f32756a3db527d76f0d8", null ],
+      [ "__init__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a53cdb6dff3faeb47d13b68f989012733", null ],
       [ "__defaults__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#aaf592cb5828e2e77556cb96137be6509", null ],
       [ "__delattr__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a2540d3d9f85dbedb84b4a677d559a6b3", null ],
       [ "__getattribute__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a3a9e65571555260186c6ae54cfeeea3c", null ],
       [ "__iter__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a98f17bb9cd886ccc1110c3c18d1c12d3", null ],
-      [ "__new__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a348c73ed2549fa7ffbe432e03bbffcd8", null ],
+      [ "__new__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a5bf781781988c1d31bd4c2deca7fdb08", null ],
       [ "__setattr__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#aaceda3bf72e5beb15e59bf079edba2ce", null ],
       [ "__str__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a7847accf45dc18262cb7ceca42f74156", null ],
       [ "append", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a69c46e0c3a6b4e0edc62596ab0af232b", null ],
@@ -29,7 +29,7 @@ var group__Core =
       [ "values", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a39740d68c8db37fceca74366dac74470", null ]
     ] ],
     [ "DataOrdered", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html", [
-      [ "__init__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a32224efd77bc24aea74d33999e4481f2", null ],
+      [ "__init__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a8e20af0ef213f277078958966e6fa7c5", null ],
       [ "__defaults__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a45c6bab8cd0a7b4aa27464d642cd7a5e", null ],
       [ "__delattr__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a44eb78bf6c80590d5cb5fc726c7f3184", null ],
       [ "__eq__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a645e8940eb0f28f92e629b125d79e0e1", null ],
@@ -37,7 +37,7 @@ var group__Core =
       [ "__iter__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a727a22d1550136cdd217dc06981483db", null ],
       [ "__iter__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a727a22d1550136cdd217dc06981483db", null ],
       [ "__len__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a1474cad96213dedce62249375071e51c", null ],
-      [ "__new__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#ae7f8ca82a6526fdd42b49a4d4cd5bc0e", null ],
+      [ "__new__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#add46625ec81f96d6b591547ea41b034a", null ],
       [ "__reduce__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#ad384e66a99054e3a8f12c83b6a84c93d", null ],
       [ "__repr__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a14e6ece7703001986b937d76716150c6", null ],
       [ "__setattr__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#afc623fdd952face9c05101a11e71baed", null ],
@@ -51,6 +51,7 @@ var group__Core =
       [ "get", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a0fa21939a6607e52c6ec64f0df530da6", null ],
       [ "get_bases", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a70121d322ad7d8f87ed8a493d9a91531", null ],
       [ "has_key", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a0b2be2982aab545624276df6126050a0", null ],
+      [ "hasattr", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a66994af42b97fb5d3c01bf1b301ddce2", null ],
       [ "items", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a636e98cfed893d934ebfa3802beedfb7", null ],
       [ "iteritems", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#aa217f7f5308b213b95df7ee5d5cfeda1", null ],
       [ "iterkeys", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a2b50d5ad6676e71674d02afbbdf08bed", null ],

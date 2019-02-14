@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['objective',['objective',['../classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a1eda3512dfde03334eff1fff6c8d5784',1,'SUAVE.Optimization.Nexus.Nexus.objective()'],['../group__Methods-Missions-Segments-Climb.html#gafbdcd0f752087b5ec8b144fd917ec3e5',1,'SUAVE.Methods.Missions.Segments.Climb.Optimized.objective()']]],
+  ['objective',['objective',['../classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a1eda3512dfde03334eff1fff6c8d5784',1,'SUAVE.Optimization.Nexus.Nexus.objective()'],['../group__Methods-Missions-Segments-Climb.html#gabee9e9494aba31c073479f3959e47804',1,'SUAVE.Methods.Missions.Segments.Climb.Optimized.objective()']]],
+  ['oblique_5fshock_5frelations',['oblique_shock_relations',['../group__Methods-Aerodynamics-Common-Gas__Dynamics.html#gaba4cd75ec86510b8e824a5ced3cd0a89',1,'SUAVE::Methods::Aerodynamics::Common::Gas_Dynamics::Oblique_Shock']]],
   ['omega',['omega',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#ad9ab86d7bab611ffdc596a6c65dc86c2',1,'SUAVE.Components.Energy.Converters.Motor.Motor.omega()'],['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html#a0e3d5a3b41ca71612ed130bfc64fc132',1,'SUAVE.Components.Energy.Converters.Motor_Lo_Fid.Motor_Lo_Fid.omega()']]],
   ['ones_5frow',['ones_row',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html#a52e41e484aba6222e3b6bf431812280a',1,'SUAVE::Analyses::Mission::Segments::Conditions::Conditions::Conditions']]],
   ['ones_5frow_5fm1',['ones_row_m1',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html#ab683000137a722593d20fd2453d2377a',1,'SUAVE::Analyses::Mission::Segments::Conditions::Conditions::Conditions']]],
