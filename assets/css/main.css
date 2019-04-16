@@ -2673,7 +2673,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-image: url("http://suave.stanford.edu/../images/logo_no_text.svg");
+		background-image: url("https://suave.stanford.edu/../images/logo_no_text.svg");
 		background-position: center center;
 		background-size: contain;
 		background-repeat: no-repeat;
