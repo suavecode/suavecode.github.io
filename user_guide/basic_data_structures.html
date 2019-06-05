@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>SUAVE User Guide</title>
+		<title>SUAVE User Guide - Basic Data Structures</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -70,17 +70,15 @@
 										<section>
 											<h3>User Guide</h3>
 											<ul class="links">
-												<li><a href="https://suave.stanford.edu/user_guide/basic_data_structures.html">Basic Data Structures</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/attributes.html">Attributes</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/components.html">Components</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/vehicles.html">Vehicles</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/methods.html">Methods</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/input_output.html">Input/Output</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/analyses.html">Analyses</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/missions.html">Missions</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/optimization.html">Optimization</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/development.html">Development</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/support.html">Support</a></li>
+												<li><a href="https://suave.stanford.edu/user_guide/intro.html">User Guide Intro</a></li>
+											</ul>
+
+											<h3>Basic Data Structures</h3>
+											<ul class="links">
+												<li><a href="basic_data_structures/data.html">Data</a></li>
+												<li><a href="basic_data_structures/container.html">Container</a></li>
+												<li><a href="basic_data_structures/units.html">Units</a></li>
+												<li><a href="basic_data_structures/transferring.html">Transferring SUAVE Data</a></li>
 											</ul>
 										</section>
 
@@ -93,12 +91,59 @@
 
 										<article>
 											<header>
-												<h2>User Guide</h2>
+												<h2>Basic Data Structures</h2>
 												<p>
-													Intro Text.
+													This section details the basic data structures SUAVE uses to store
+													and manage everything from physical constants and material data to
+													mission simulation and vehicle optimization results. This page has
+													a brief overview of each data type, and their dedicated pages detail
+													their methods and child classes.
 												</p>
 
-												<h3>Subsection Header</h3>
+												<h3>Data</h3>
+												<p>
+													The most basic of SUAVE data types is the Data class. It takes the
+													native Python dictionary data type and adds the ability to assign a
+													tag to the dictionary, and access its values using the '.' operator,
+													as in:
+
+													<div class="highlight_code"><div class="highlight_code"><pre><code>
+Data.Key = Value
+													</code></pre></div></div>
+
+													Many, many SUAVE classes inherit directly from the Data class, but
+													the most closely related classes are the DataOrdered class (which
+													similarly adds tag and '.' usage to Python's OrderedDict data type),
+													and the Diffed_Data class (used for copying a pre-existing data
+													structure).
+
+												</p>
+
+												<h3>Container</h3>
+												<p>
+													The Container data type inherits from SUAVE's Data class, and is
+													thus itself a dictionary with tag and '.' use, as well as the Data
+													classes extra methods. Data classes can themselves contain other
+													Data classes in a nested fashion, but Containers are designed to
+													contain many instances of similar Data structures.
+												</p>
+
+												<p>
+													A typical example is that a vehicle has a Container called "Wings"
+													which contains every one of the vehicle's wings. Similarly, a
+													mission might contain many segments. Thus, in addition to the basic
+													methods associated with the Data class, Containers have extra
+													methods which allow new items to be neatly added in. The most
+													closely related class are the ContainerOrdered class which adds
+													ordering to the Data structures contained within it.
+												</p>
+
+												<h3>Units</h3>
+												<p>
+													Subsection Text.
+												</p>
+
+												<h3>Transferring SUAVE Data</h3>
 												<p>
 													Subsection Text.
 												</p>
