@@ -140,12 +140,50 @@ Data.Key = Value
 
 												<h3>Units</h3>
 												<p>
-													Subsection Text.
+													Units in SUAVE are handled using
+                                                    <a href="https://pint.readthedocs.io/en/0.9/">Pint</a>. The default
+                                                    units are thus all SI: meter/kilogram/second. If left "naked" or
+                                                    unmodified by a Pint unit class, the unit is treated as the SI unit
+                                                    appropriate to the measure. Pint's unit classes act to both multiply
+                                                    a parameter by the appropriate conversion factor, and tag it with
+                                                    the new unit.
+                                                </p>
+                                                <p>
+                                                    For instance, if you have a wing that's one foot long,
+                                                    you can write it as:
+
+                                                    <div class="highlight_code"><div class="highlight_code"><pre><code>
+from SUAVE.Core import Units
+
+wing.spans.projected = 1. * Units.ft
+													</code></pre></div></div>
+
+                                                The wing span will then be stored as 1 foot, but treated numerically as
+                                                0.3048 meters inside methods, without the method needing to be written
+                                                to handle imperial units.
+
 												</p>
+
+
 
 												<h3>Transferring SUAVE Data</h3>
 												<p>
-													Subsection Text.
+													SUAVE models are most naturally written out as Python code
+													defining all relevant parameters, and may be shared between users as
+													.py files, or another text format containing all specifications.
+												</p>
+												<p>
+
+													However, mission results and other "online" data is not readily
+													available within a written vehicle specification or mission setup.
+													Also, users may wish to share data with others not familiar with
+													SUAVE, so we have also made it possible to output SUAVE data,
+													including vehicles, mission specifications, or results data.
+												</p>
+												<p>
+													The appropriate functions for outputing any SUAVE data stored as a
+													Data Object into JSON or XML format may be found in the
+													SUAVE.Input_Output.SUAVE and SUAVE.Input_Output.XML sublibraries.
 												</p>
 											</header>
 
