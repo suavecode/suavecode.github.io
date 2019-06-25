@@ -70,17 +70,14 @@
 										<section>
 											<h3>User Guide</h3>
 											<ul class="links">
-												<li><a href="https://suave.stanford.edu/user_guide/basic_data_structures.html">Basic Data Structures</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/attributes.html">Attributes</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/components.html">Components</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/vehicles.html">Vehicles</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/methods.html">Methods</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/input_output.html">Input/Output</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/analyses.html">Analyses</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/missions.html">Missions</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/optimization.html">Optimization</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/development.html">Development</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/support.html">Support</a></li>
+												<li><a href="https://suave.stanford.edu/user_guide/intro.html">User Guide Intro</a></li>
+											</ul>
+
+											<h3>Attributes</h3>
+											<ul class="links">
+												<li><a href="attributes/substances.html">Substances</a></li>
+												<li><a href="attributes/Locations.html">Locations</a></li>
+												<li><a href="attributes/Constants.html">Constants</a></li>
 											</ul>
 										</section>
 
@@ -93,14 +90,49 @@
 
 										<article>
 											<header>
-												<h2>User Guide</h2>
+												<h2>Attributes</h2>
 												<p>
-													Intro Text.
+													Attributes are how SUAVE provides data and information outside of
+													vehicle and mission parameters, but still necessary or useful for
+													mission simulation. Not typically modified by the end user,
+													attributes provide information on material properties, atmospheric
+													and weather conditions, and basic physical constants
 												</p>
 
-												<h3>Subsection Header</h3>
+												<h3>Substances</h3>
 												<p>
-													Subsection Text.
+													SUAVE's material property library includes solids like aluminum and
+													carbon fiber composites which are given strength, density, and other
+													pertinent attributes. It also has data on gases and liquids such as
+													water and steam, CO2, and air including thermochemical constants and
+													composition proportions for mixtures like air. For propellants and
+													fuels, SUAVE stores specific energy, and critical temperatures.
+												</p>
+
+												<h3>Locations</h3>
+												<p>
+													Location data includes atmospheric data, like the 1976 US Standard
+													Atmophere, from which data on pressure, density, etc. can be queried
+													on an altitude basis. It also includes a data structure for
+													assigning attributes to specific arrival and departure airports,
+													though at present SUAVE does not come pre-packaged with data for
+													specific airports.
+												</p>
+												<p>
+													SUAVE does, however, come pre-packaged with data for Earth as a
+													planet including its mean radius, sea level gravity and Hitchhiker's
+													Guide status. It also includes a generalized Planet data structure
+													for evaluation of vehicles mean for deployment on Mars, Venus, or
+													in the atmospheres of the gas giants of the solar system.
+												</p>
+
+												<h3>Constants</h3>
+												<p>
+													The Constant class in SUAVE inherits from the Data class and is
+													meant to hold data that does not change. This may be physical
+													constants or else data that is to be monitored for change through
+													the progress of a mission. SUAVE does not come with any additional
+													physical constants hard-coded in this section of the library.
 												</p>
 											</header>
 

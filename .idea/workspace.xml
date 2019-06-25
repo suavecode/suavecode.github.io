@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34dc2b4b-0ac8-45b8-9b24-2d5255ee52a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_guide/basic_data_structures.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_guide/basic_data_structures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_guide/attributes.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_guide/attributes.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_guide/basic_data_structures.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="185" column="116" selection-start-line="185" selection-start-column="116" selection-end-line="185" selection-end-column="116" />
+            <state relative-caret-position="480">
+              <caret line="109" column="62" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user_guide/attributes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="125" column="77" selection-start-line="125" selection-start-column="77" selection-end-line="125" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -62,6 +70,7 @@
         <option value="$PROJECT_DIR$/user_guide/methods.html" />
         <option value="$PROJECT_DIR$/user_guide/intro.html" />
         <option value="$PROJECT_DIR$/user_guide/basic_data_structures.html" />
+        <option value="$PROJECT_DIR$/user_guide/attributes.html" />
       </list>
     </option>
   </component>
@@ -139,18 +148,18 @@
       <workItem from="1559676439221" duration="606000" />
       <workItem from="1559693518470" duration="14380000" />
       <workItem from="1560182148325" duration="1221000" />
-      <workItem from="1561402887176" duration="2251000" />
+      <workItem from="1561402887176" duration="4697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18458000" />
+    <option name="totallyTimeSpent" value="20904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="683" y="0" width="683" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28971255" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18154311" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,9 +231,6 @@
     <entry file="file://$PROJECT_DIR$/user_guide/analyses.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_guide/attributes.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/user_guide/components.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -264,13 +270,6 @@
     <entry file="file://$PROJECT_DIR$/../SUAVE/trunk/SUAVE/Core/ContainerOrdered.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_guide/basic_data_structures.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="185" column="116" selection-start-line="185" selection-start-column="116" selection-end-line="185" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../SUAVE/trunk/SUAVE/Core/Container.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -289,6 +288,20 @@
             <element signature="n#section#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_guide/basic_data_structures.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="109" column="62" selection-start-line="109" selection-start-column="62" selection-end-line="109" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_guide/attributes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="125" column="77" selection-start-line="125" selection-start-column="77" selection-end-line="125" selection-end-column="77" />
         </state>
       </provider>
     </entry>
