@@ -70,17 +70,18 @@
 										<section>
 											<h3>User Guide</h3>
 											<ul class="links">
-												<li><a href="https://suave.stanford.edu/user_guide/basic_data_structures.html">Basic Data Structures</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/attributes.html">Attributes</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/components.html">Components</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/vehicles.html">Vehicles</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/methods.html">Methods</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/input_output.html">Input/Output</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/analyses.html">Analyses</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/missions.html">Missions</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/optimization.html">Optimization</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/development.html">Development</a></li>
-												<li><a href="https://suave.stanford.edu/user_guide/support.html">Support</a></li>
+												<li><a href="https://suave.stanford.edu/user_guide/intro.html">User Guide Intro</a></li>
+											</ul>
+
+											<h3>Components</h3>
+											<ul class="links">
+												<li><a href="components/fuselages.html">Fuselages</a></li>
+												<li><a href="components/wings.html">Wings</a></li>
+												<li><a href="components/landing_gear.html">Landing Gear</a></li>
+												<li><a href="components/payloads.html">Payloads</a></li>
+												<li><a href="components/systems.html">Systems</a></li>
+												<li><a href="components/energy.html">Energy Networks</a></li>
+												<li><a href="components/costs.html">Costs</a></li>
 											</ul>
 										</section>
 
@@ -93,15 +94,106 @@
 
 										<article>
 											<header>
-												<h2>User Guide</h2>
+												<h2>Components</h2>
 												<p>
-													Intro Text.
+													Components are SUAVE's data structure for modeling and storing
+													information regarding the various pieces of an aircraft. Each
+													analysis method in SUAVE requires some component or a combination
+													of components to be defined and assigned certain paramaters.
+												</p>
+												<p>
+													Once a component has been defined, it is typically appended to a
+													Container data structure that holds all of the similar components
+													for a vehicle model. Main and secondary wings, elevators, etc. are
+													all collected in a "Wings" Container. Main and nose landing gears
+													are collected in a "Landing Gear" container. These Containers are
+													then appended to the Vehicle data structure (covered in the next
+													section) to assemble a completed vehicle model.
 												</p>
 
-												<h3>Subsection Header</h3>
 												<p>
-													Subsection Text.
+													Most methods and analyses in SUAVE are designed to work on the
+													Vehicle level, even if they only require a subset of Components to
+													be defined. Thus, it's good practice to append your Components into
+													Containers and your Containers into a Vehicle, even if you're only
+													going to, for example, run a particular aerodynamic analysis on a
+													wing.
 												</p>
+
+												<h3>Fuselages</h3>
+												<p>
+													Fuselages are SUAVE's data type for passenger and cargo storage
+													bodies. It has attributes for physical location/origin of the body
+													relative to the reference origin of the vehicle, the body's
+													aerodynamic center, and a variety of geometric parameters, such as
+													its height, width, and length.
+												</p>
+
+												<p>
+													Fuselages can be separated into Segments. Each Segment is its own
+													independent data structure, stored on the fuselage in an Ordered
+													Container. Segments can be designate particular locations inside
+													fuselage, such as the cockpit, passenger cabin, and cargo cell, or
+													to vary the geometry of the fuselage.
+												</p>
+
+												<h3>Wings</h3>
+												<p>
+													Wings are SUAVE's data type for most primary aerodynamic surfaces on
+													an aircraft. This includes main wings and empennage, as well as
+													designated control surfaces. They store various attributes such as
+													span, chord, and airfoil, and may be separated into Segments to
+													vary these properties, as with fuselages.
+												</p>
+
+												<h3>Landing Gear</h3>
+												<p>
+													Landing Gear is SUAVE's data type for the wheels and struts used to
+													support an aircraft while in contact with the ground. The parent
+													Landing Gear class has few attributes to keep it general across
+													different types of aircraft, but the Main Landing Gear and Nose
+													Landing Gear child classes include attritubes for strut length,
+													number of wheels, tyre diameter, etc. This makes them suitable for
+													use primarily with tube-and-wing civil transport aircraft.
+												</p>
+
+												<h3>Payloads</h3>
+												<p>
+													Payloads are SUAVE's data type for things which may be carried by
+													the aircraft but are not part of it as it sits empty. This may
+													include passengers or cargo, and the class therefore has few
+													native attributes to keep it general.
+												</p>
+
+												<h3>Systems</h3>
+												<p>
+													Systems are SUAVE's data type for onboard hydraulic, electric, and
+													other secondary systems. This may include avionics, environmental
+													control systems, or anything else which the model must account for.
+													As such it is also a very general data type with few native
+													attributes, though it is common to add those necessary to the
+													analysis methods being used, such as power draw.
+												</p>
+
+												<h3>Energy Networks</h3>
+												<p>
+													Energy Networks are a complex structure incorporating a wide variety
+													of components and models, including turbofan engines, battery and
+													hybrid electric power trains, and rocket motors. Little can be said
+													in brief about SUAVE's energy networks - each is closely tied to
+													its associated analytic methods and these must be be considered in
+													detail to grasp how different sub-components and their attributes
+													interact.
+												</p>
+
+												<h3>Costs</h3>
+												<p>
+													Costs and other non-physical elements of the vehicle may also be
+													modeled as Components to ensure that they are consistent across
+													analyses. Attributes such as depreciation lifetime, industrial
+													costs, and crew rates are stored in this data structure.
+												</p>
+
 											</header>
 
 
