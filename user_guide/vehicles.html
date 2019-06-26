@@ -82,6 +82,11 @@
 												<li><a href="https://suave.stanford.edu/user_guide/development.html">Development</a></li>
 												<li><a href="https://suave.stanford.edu/user_guide/support.html">Support</a></li>
 											</ul>
+
+											<h3>Vehicles</h3>
+											<ul class="links">
+												<li><a href="vehicles/configs.html">Configurations</a></li>
+											</ul>
 										</section>
 
 								</div>
@@ -93,14 +98,49 @@
 
 										<article>
 											<header>
-												<h2>User Guide</h2>
+												<h2>Vehicles</h2>
 												<p>
-													Intro Text.
+													Vehicles are SUAVE's over-arching data type for assembling
+													Containers of Components into one, cohesive data structure. In
+													addition to the Containers, it stores attributes on total vehicle
+													mass properties, passenger capacity, and the vehicle's operating
+													flight envelope.
+												</p>
+												<p>
+													Most analyses in SUAVE are written to operate on a Vehicle data
+													structure, and so components should be assembled into Containers
+													and Containers into Vehicles, even if only certain components or
+													certain attributes are necessary to run an analysis.
 												</p>
 
-												<h3>Subsection Header</h3>
+												<h3>Configurations</h3>
 												<p>
-													Subsection Text.
+													It's common for users to wish to study several different slight
+													variations on the same vehicle, or have that vehicle modify itself
+													slightly throughout a mission simulation. Studying different
+													proposed wings appended to the same fuselage, or deployment of slats
+													or flaps during take-off and landing are typical examples.
+												</p>
+												<p>
+													The Configuration data-type exists to facilitate such cases. Each
+													Configuration is created from a reference, "base configuration", and
+													needs only its differences from that base configuration designated.
+												</p>
+												<p>
+													Thus, typical procedure in such cases is to define the common set of
+													Components across all Configurations of the Vehicle, and create a
+													base configuration comprised of Containers of those Components.
+													Then, separate Configurations can be created using differentiated
+													componentry. Then, all the different Configurations are assembled
+													into one, top-level Vehicle data structure that stores all the
+													different Configurations.
+												</p>
+												<p>
+													Analyses which are designed to run on Vehicle data structure will
+													either just as easily run on a specific configuration, or if run
+													inside a mission, will identify the Configuration being used at
+													the moment, such as the case of flap deployment during a landing
+													segment.
 												</p>
 											</header>
 
