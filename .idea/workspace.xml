@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34dc2b4b-0ac8-45b8-9b24-2d5255ee52a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/user_guide/attributes.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_guide/attributes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_guide/basic_data_structures.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_guide/basic_data_structures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_guide/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_guide/components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_guide/vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_guide/vehicles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_guide/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/user_guide/methods.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_guide/components.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+            <state relative-caret-position="243">
+              <caret line="85" selection-start-line="85" selection-end-line="94" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -42,11 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_guide/vehicles.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
               <caret line="142" column="60" selection-start-line="142" selection-start-column="60" selection-end-line="142" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user_guide/methods.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="225" column="115" selection-start-line="225" selection-start-column="115" selection-end-line="225" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -63,17 +69,16 @@
         <option value="$PROJECT_DIR$/tutorials.html" />
         <option value="$PROJECT_DIR$/user guide/user_guide_template.html" />
         <option value="$PROJECT_DIR$/user_guide/user_guide_template.html" />
-        <option value="$PROJECT_DIR$/user_guide/methods.html" />
         <option value="$PROJECT_DIR$/user_guide/intro.html" />
         <option value="$PROJECT_DIR$/user_guide/attributes.html" />
         <option value="$PROJECT_DIR$/user_guide/basic_data_structures.html" />
         <option value="$PROJECT_DIR$/user_guide/components.html" />
         <option value="$PROJECT_DIR$/user_guide/vehicles.html" />
+        <option value="$PROJECT_DIR$/user_guide/methods.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -92,11 +97,6 @@
             <path>
               <item name="suavecode.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="suavecode.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="suavecode.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="suavecode.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="user_guide" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -146,18 +146,18 @@
       <workItem from="1559676439221" duration="606000" />
       <workItem from="1559693518470" duration="14380000" />
       <workItem from="1560182148325" duration="1221000" />
-      <workItem from="1561402887176" duration="9803000" />
+      <workItem from="1561402887176" duration="14219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26010000" />
+    <option name="totallyTimeSpent" value="30426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3850227" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4398074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -235,9 +235,6 @@
     <entry file="file://$PROJECT_DIR$/user_guide/input_output.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_guide/methods.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/user_guide/missions.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -290,10 +287,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_guide/components.html">
+    <entry file="file://$PROJECT_DIR$/user_guide/vehicles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+        <state relative-caret-position="254">
+          <caret line="142" column="60" selection-start-line="142" selection-start-column="60" selection-end-line="142" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -304,10 +301,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_guide/vehicles.html">
+    <entry file="file://$PROJECT_DIR$/user_guide/components.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="142" column="60" selection-start-line="142" selection-start-column="60" selection-end-line="142" selection-end-column="60" />
+        <state relative-caret-position="243">
+          <caret line="85" selection-start-line="85" selection-end-line="94" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_guide/methods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="225" column="115" selection-start-line="225" selection-start-column="115" selection-end-line="225" selection-end-column="115" />
         </state>
       </provider>
     </entry>

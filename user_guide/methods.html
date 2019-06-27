@@ -82,6 +82,18 @@
 												<li><a href="https://suave.stanford.edu/user_guide/development.html">Development</a></li>
 												<li><a href="https://suave.stanford.edu/user_guide/support.html">Support</a></li>
 											</ul>
+
+											<h3>Methods</h3>
+											<ul class="links">
+												<li><a href="methods/aerodynamics.html">Aerodynamics</a></li>
+												<li><a href="methods/propulsion.html">Propulsion</a></li>
+												<li><a href="methods/weights.html">Weights</a></li>
+												<li><a href="methods/cg.html">Center of Gravity</a></li>
+												<li><a href="methods/dynamics.html">Flight Dynamics</a></li>
+												<li><a href="methods/costs.html">Costs</a></li>
+												<li><a href="methods/geometry.html">Geometry</a></li>
+												<li><a href="methods/noise.html">Noise</a></li>
+											</ul>
 										</section>
 
 								</div>
@@ -93,15 +105,127 @@
 
 										<article>
 											<header>
-												<h2>User Guide</h2>
+												<h2>Methods</h2>
 												<p>
-													Intro Text.
+													Methods are where the proverbial rubber begins to meet the road in
+													SUAVE. Up until this point, the User Guide has covered primarily how
+													SUAVE stores and organizes data. Methods are how SUAVE uses that
+													data to calculate performance and characteristics of the vehicle.
+												</p>
+												<p>
+													Methods themselves are design to be relatively "atomic" -
+													self-contained, straight-forward input-output functions. This both
+													allows some of them to be broken out of SUAVE entirely and used in
+													much the same way as NumPy or SciPy functions, but "within" SUAVE
+													it allows them to be swapped in and out or assembled into more
+													complicated Analyses, which are covered in a separate section.
+												</p>
+												<p>
+													Generally speaking, SUAVE Methods are sensitive to their input
+													parameters and data types. They are "Garbage In, Garbage Out" and
+													are not robust against non-physical or physically impossible setups.
+													If methods seem to be returning non-sensical, non-numerical, or
+													unconverging values, they are likely reflecting the physical
+													impossibility of the inputs.
+												</p>
+												<p>
+													Because the Methods can be driven to such extremes by a wide
+													variety of conditions, there is little customized error handling.
+													The burden lies on the user to ensure that their input models and
+													data are sensible and well structured.
 												</p>
 
-												<h3>Subsection Header</h3>
+												<h3>Aerodynamics</h3>
 												<p>
-													Subsection Text.
+													Aerodynamic Methods are those used to solve aerodynamic equations
+													for input vehicle/wing geometries. They include lifting line and
+													potential flow solvers like the Weissinger Vortex Lattice and
+													Athena Vortex Lattice methods, as well inviscid and Euler CFD
+													solutions through interface with the SU2 CFD package.
 												</p>
+												<p>
+													They are typically used to resolve lift and drag vectors for
+													aerodynamic surfaces and vehicles. Where the solver also
+													provides pertinent stability information, processing of this
+													information is performed with a separate and Analysis.
+												</p>
+
+												<h3>Propulsion</h3>
+												<p>
+													Propusion Methods include those used in the analysis of propulsion
+													systems, including turbofans, propeller systems, and rocket motors.
+													They include methods for sizing these systems and resolving thrust
+													vectors.
+												</p>
+												<p>
+													Because propulsors are usually highly coupled to the energy network
+													of a vehicle, many of these methods are only meaningful when used to
+													analyze a fully described energy network. For instance, use of
+													propeller methods on a battery powered vehicle without consideration
+													of the stateof charge and available voltage of the battery may
+													overestimate the thrust the propeller could provide.
+												</p>
+
+												<h3>Weights</h3>
+												<p>
+													Weights are those Methods concerned with estimating the mass and
+													weight of a vehicle and its various components. At present, these
+													Methods are separated into two types - Correlations, and Buildups.
+												</p>
+												<p>
+													Correlation methods use historical data to estimate the weight of a
+													new aircraft of similar configuration and operational plan. SUAVE
+													utilizes Methods of this type to estimate the weight of most
+													aircraft including tube-and-wing civil transports, general aviation
+													craft, and blended-wing-bodies. Buildups use ground-up physics based
+													component sizing to arrive at a weight estimate. SUAVE uses Methods
+													of this type for electric vertical take-off and landing aircraft.
+												</p>
+
+												<h3>Center of Gravity</h3>
+												<p>
+													Center of Gravity (CG) Methods estimate the location of a vehicle's
+													CG, the CGs of its components, and fuel loads. These methods are
+													typically coupled with methods in the Flight Dynamics library for
+													estimating vehicle stability parameters, but may be used
+													independently if desired. They  require all components to be
+													assigned individual origin attributes in a consistent and cohesive
+													manner.
+												</p>
+
+												<h3>Flight Dynamics</h3>
+												<p>
+													Flight Dynamics Methods are those concerned with estimating a
+													vehicle's static and dynamic stability margins and derivatives. They
+													are built into SUAVE and may therefore be used separately from or
+													in addition to aerodynamic solvers such as AVL which provide
+													similar information.
+												</p>
+
+												<h3>Costs</h3>
+												<p>
+													Cost Methods estimate the industrial and operating costs of a
+													vehicle based on the physical and Cost attributes assigned to the
+													model.
+												</p>
+
+												<h3>Geometry</h3>
+												<p>
+													Geometry Methods are largely supporting methods used in substeps of
+													other Methods, such as processing data for airfoils, cross-sectional
+													areas inside of jet engines, or projected planforms of aerodynamic
+													surfaces. They may however, also prove useful when used outside of
+													SUAVE Methods as independent functions.
+												</p>
+
+												<h3>Noise</h3>
+												<p>
+													Noise Methods are used to estimate jet-wash, propeller, airframe,
+													and other sources of operational noise when the aircraft is in
+													operation. At present, SUAVE's methods for noise estimation include
+													a number of correlative and low-fidelity physics based methods.
+												</p>
+
 											</header>
 
 
