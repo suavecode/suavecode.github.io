@@ -1,0 +1,27 @@
+var classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor =
+[
+    [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab833e90e7d5e2cb7c17bee2b80992675", null ],
+    [ "spin", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#acff541e7c6cf5860866bb4ecf785657b", null ],
+    [ "spin_variable_pitch", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a4cc085b33e45c24ae89f4b280c775770", null ],
+    [ "airfoil_geometry", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ad3e7fd29793aebf2e0030ca39191da54", null ],
+    [ "airfoil_polar_stations", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ace1d4a9042bd1bb3abad66dbca318b64", null ],
+    [ "airfoil_polars", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a99c9544c74ccb880ef7889c186a02942", null ],
+    [ "blade_solidity", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a2a3d51e1b992fc03ee93b556068b6bdf", null ],
+    [ "chord_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab54405a6aec7eded875833c01ef3defc", null ],
+    [ "design_power", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a2ffb97db8a087618a72a74e840ae15db", null ],
+    [ "design_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a3a3feab05b3f4d7ba1961f40bb7bdf7f", null ],
+    [ "ducted", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a46afb4730adba1334f988a601d975cea", null ],
+    [ "hub_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#af854269995b7d5a41d2d1e3a433342da", null ],
+    [ "induced_hover_velocity", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a272e0608d00e12db54d8e8298f35c67f", null ],
+    [ "induced_power_factor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#afd0e03d06cf0260cdbcd8ff733d9b36b", null ],
+    [ "lift_curve_slope", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a2a38f8ee7ca70ac12f88e950ad9fb31e", null ],
+    [ "mid_chord_aligment", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a6ec61cf9a683353e215bbd865396e0ce", null ],
+    [ "number_blades", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a86671659dc4c44d63c595cdc01b7e298", null ],
+    [ "profile_drag_coefficient", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab0ef9bdfd91458a665946ac271792c41", null ],
+    [ "radius_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a49e083b347b7e12ac11efee651c9512e", null ],
+    [ "rotation", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a547c8185c841015282a685f59807e1e9", null ],
+    [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ac3348559a077a26203eaea601350a0cc", null ],
+    [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a40d5fe462aab26f30f12b223d793d7cc", null ],
+    [ "tip_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a710f9e1f5b9696d106a8fab0aa4b238e", null ],
+    [ "twist_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a95d4b9e108a813756c3a39036139d351", null ]
+];

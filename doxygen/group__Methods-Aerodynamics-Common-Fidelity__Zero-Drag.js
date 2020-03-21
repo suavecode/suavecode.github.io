@@ -2,6 +2,7 @@ var group__Methods_Aerodynamics_Common_Fidelity__Zero_Drag =
 [
     [ "compressibility_drag_wing", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#gaf20021fe8411a06607c40c0ddcfd7dca", null ],
     [ "compressibility_drag_wing_total", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga9492a72b7d9418c9b3260611ca92a178", null ],
+    [ "compute_parasite_drag", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga105c8a2462a994b30cc32cea275fcd76", null ],
     [ "induced_drag_aircraft", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#gaa045d2ec0dd318f054992b90a5c77a7b", null ],
     [ "miscellaneous_drag_aircraft_ESDU", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga1ab07fbded997c9136f554f34dbe2a17", null ],
     [ "parasite_drag_fuselage", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga6f2ba6214fc6c9cf197abd4314974783", null ],

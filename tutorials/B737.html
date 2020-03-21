@@ -98,6 +98,10 @@
 									<p>The wing sweep is defined as the sweep of the quarter chord. Additionally, a symmetric wing means that it is symmetric about the root, i.e. there is  right and left side.</p>
 
 									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">
+# ------------------------------------------------------------------        
+#   Main Wing
+# ------------------------------------------------------------------        
+
 wing = SUAVE.Components.Wings.Main_Wing()
 wing.tag = 'main_wing'
 
@@ -118,12 +122,49 @@ wing.vertical                = False
 wing.symmetric               = True
 wing.high_lift               = True
 wing.dynamic_pressure_ratio  = 1.0
+
+# ------------------------------------------------------------------
+#   Flaps
+# ------------------------------------------------------------------
+
+flap                       = SUAVE.Components.Wings.Control_Surfaces.Flap() 
+flap.tag                   = 'flap' 
+flap.span_fraction_start   = 0.10 
+flap.span_fraction_end     = 0.75   
+flap.deflection            = 0.0 * Units.degrees
+flap.configuration_type    = 'double_slotted'
+flap.chord_fraction        = 0.30   
+wing.append_control_surface(flap)   
+	
+slat                       = SUAVE.Components.Wings.Control_Surfaces.Slat() 
+slat.tag                   = 'slat' 
+slat.span_fraction_start   = 0.324 
+slat.span_fraction_end     = 0.963     
+slat.deflection            = 0.0 * Units.degrees
+slat.chord_fraction        = 0.1  	 
+wing.append_control_surface(slat)  
+	
+aileron                       = SUAVE.Components.Wings.Control_Surfaces.Aileron() 
+aileron.tag                   = 'aileron' 
+aileron.span_fraction_start   = 0.7 
+aileron.span_fraction_end     = 0.963 
+aileron.deflection            = 0.0 * Units.degrees
+aileron.chord_fraction        = 0.16    
+wing.append_control_surface(aileron)    
+
+# add to vehicle
+vehicle.append_component(wing)   
+
 									</code></pre></div></div>
 
 									<h5 id="setting-up-the-fuselage">Setting up the fuselage</h5>
 									<p>Similar to the wing above, the code below illustrates how a fuselage can be added to the vehicle. Again the user is required to specify the basic fuselage geometric parameters and then add the fuselage object to the vehicle.</p>
 
 									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>  
+# ------------------------------------------------------------------
+#  Fuselage
+# ------------------------------------------------------------------
+
 fuselage = SUAVE.Components.Fuselages.Fuselage()
 fuselage.tag = 'fuselage'
 
@@ -187,14 +228,12 @@ turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
 									<p>Finally the network is added to the aircraft as shown below.</p>
 
 									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+
 #size the turbofan
 turbofan_sizing(turbofan,mach_number,altitude)   
-	
-# add  gas turbine network turbofan to the vehicle 
-vehicle.append_component(turbofan)  
 
-# add  gas turbine network gt_engine to the vehicle
-vehicle.append_component(turbofan)  
+# add  gas turbine network turbofan to the vehicle 
+vehicle.append_component(turbofan)     
 									</code></pre></div></div>
 
 									<h4 id="data-structure-visualization">Data Structure Visualization</h4>
@@ -220,8 +259,8 @@ configs.append(config)
 # ------------------------------------------------------------------
 config = SUAVE.Components.Configs.Config(base_config)
 config.tag = 'takeoff'
-config.wings['main_wing'].flaps.angle = 20. * Units.deg
-config.wings['main_wing'].slats.angle = 25. * Units.deg
+config.wings['main_wing'].control_surfaces.flap.deflection = 20. * Units.deg
+config.wings['main_wing'].control_surfaces.slat.deflection = 25. * Units.deg
 config.max_lift_coefficient_factor    = 1.
 
 configs.append(config)

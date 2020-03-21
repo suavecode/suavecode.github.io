@@ -11,7 +11,7 @@ var searchData=
   ['get_5fieconstraints',['get_ieconstraints',['../group__Methods-Missions-Segments.html#ga92eef3823782034e0401cb473a6f2eb8',1,'SUAVE::Methods::Missions::Segments::optimize']]],
   ['get_5fname',['get_name',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#a52fc0919e39a5ed8fe52b74db841ad2f',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],
   ['get_5fobjective',['get_objective',['../group__Methods-Missions-Segments.html#gab46860b50110e128ca4739f8d77ebfa2',1,'SUAVE::Methods::Missions::Segments::optimize']]],
-  ['get_5fproblem_5fpyopt',['get_problem_pyopt',['../group__Methods-Missions-Segments.html#ga855f9ac3d9bc2fda12c6a0d714bbdef9',1,'SUAVE::Methods::Missions::Segments::optimize']]],
+  ['get_5fproblem_5fpyopt',['get_problem_pyopt',['../group__Methods-Missions-Segments.html#gad44cf44c86e577aba6a2c938cfe920d2',1,'SUAVE::Methods::Missions::Segments::optimize']]],
   ['get_5froot',['get_root',['../classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a7432f659914e8bc502addeb53b571bc8',1,'SUAVE::Analyses::Vehicle::Vehicle']]],
   ['get_5fsymbol',['get_symbol',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#a231bac0fb58eed32470c45563c97525d',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],
   ['get_5fvalues',['get_values',['../group__Optimization.html#ga1aa3646193316aec4b76b6347e22f01b',1,'SUAVE::Optimization::helper_functions']]],

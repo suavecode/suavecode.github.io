@@ -6,6 +6,7 @@ var classSUAVE_1_1Components_1_1Envelope_1_1Envelope =
     [ "alt_vc", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html#a9fa1d524f7072f9d99a79b7a4960e59f", null ],
     [ "gust", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html#a817cbf39aeec6758432ee3eab3f4b882", null ],
     [ "limit_load", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html#ad9653f50cbbd9323878da353fe49e6fe", null ],
+    [ "limit_loads", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html#a112b162587abd43e313aede02cfcf9c9", null ],
     [ "maneuver", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html#a49d434a90895935ad7a89d77db9f763e", null ],
     [ "max_ceiling", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html#a3d0278765533a69d81e74c9da73d6677", null ],
     [ "maximum_dynamic_pressure", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html#a510c802653d940134add99ab206a186c", null ],

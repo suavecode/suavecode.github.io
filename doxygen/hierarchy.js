@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "SUAVE.Optimization.Package_Setups.additive_setup.Additive_Solver", "classSUAVE_1_1Optimization_1_1Package__Setups_1_1additive__setup_1_1Additive__Solver.html", null ],
     [ "Container", null, [
       [ "SUAVE.Components.Wings.Segment.SegmentContainer", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1SegmentContainer.html", null ]
     ] ],
@@ -30,6 +31,8 @@ var hierarchy =
     [ "ContentHandler", null, [
       [ "SUAVE.Input_Output.XML.load.TreeBuilder", "classSUAVE_1_1Input__Output_1_1XML_1_1load_1_1TreeBuilder.html", null ]
     ] ],
+    [ "SUAVE.Methods.Aerodynamics.Supersonic_Zero.Drag.Cubic_Spline_Blender.Cubic_Spline_Blender", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1Supersonic__Zero_1_1Drag_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender.html", null ],
+    [ "SUAVE.Methods.Utilities.Cubic_Spline_Blender.Cubic_Spline_Blender", "classSUAVE_1_1Methods_1_1Utilities_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender.html", null ],
     [ "Data_Base", null, [
       [ "SUAVE.Input_Output.XML.Data.Attributes", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Attributes.html", null ],
       [ "SUAVE.Input_Output.XML.Data.Data", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html", null ]
@@ -43,9 +46,10 @@ var hierarchy =
         [ "SUAVE.Methods.Aerodynamics.AVL.Data.Cases.Run_Case", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Run__Case.html", null ],
         [ "SUAVE.Methods.Aerodynamics.AVL.Data.Configuration.Configuration", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Configuration_1_1Configuration.html", null ],
         [ "SUAVE.Methods.Aerodynamics.AVL.Data.Inputs.Inputs", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Inputs_1_1Inputs.html", null ],
-        [ "SUAVE.Methods.Aerodynamics.AVL.Data.Settings.AVL_Discretization_Settings", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings.html", null ],
         [ "SUAVE.Methods.Aerodynamics.AVL.Data.Settings.Settings", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html", null ],
         [ "SUAVE.Methods.Aerodynamics.AVL.Data.Wing.Control_Surface", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface.html", null ],
+        [ "SUAVE.Methods.Aerodynamics.AVL.Data.Wing.Control_Surface_Data", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Data.html", null ],
+        [ "SUAVE.Methods.Aerodynamics.AVL.Data.Wing.Control_Surface_Results", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Results.html", null ],
         [ "SUAVE.Methods.Aerodynamics.AVL.Data.Wing.Section", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html", null ],
         [ "SUAVE.Methods.Aerodynamics.AVL.Data.Wing.Wing", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing.html", null ],
         [ "SUAVE.Optimization.Nexus.Nexus", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html", null ],
@@ -128,7 +132,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "Data", null, [
-      [ "SUAVE.Analyses.Aerodynamics.Results.Results", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html", null ],
       [ "SUAVE.Analyses.Analysis.Analysis", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html", [
         [ "SUAVE.Analyses.Aerodynamics.Aerodynamics.Aerodynamics", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html", [
           [ "SUAVE.Analyses.Aerodynamics.Lifting_Line.Lifting_Line", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html", null ],
@@ -151,8 +154,6 @@ var hierarchy =
         ] ],
         [ "SUAVE.Analyses.Costs.Costs.Costs", "classSUAVE_1_1Analyses_1_1Costs_1_1Costs_1_1Costs.html", null ],
         [ "SUAVE.Analyses.Energy.Energy.Energy", "classSUAVE_1_1Analyses_1_1Energy_1_1Energy_1_1Energy.html", null ],
-        [ "SUAVE.Analyses.Geometry.Geometry.Geometry", "classSUAVE_1_1Analyses_1_1Geometry_1_1Geometry_1_1Geometry.html", null ],
-        [ "SUAVE.Analyses.Loads.Loads.Loads", "classSUAVE_1_1Analyses_1_1Loads_1_1Loads_1_1Loads.html", null ],
         [ "SUAVE.Analyses.Mission.Segments.Segment.Segment", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html", [
           [ "SUAVE.Analyses.Mission.Segments.Segment.Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Container.html", null ],
           [ "SUAVE.Analyses.Mission.Segments.Simple.Simple", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Simple_1_1Simple.html", [
@@ -200,7 +201,10 @@ var hierarchy =
                 [ "SUAVE.Analyses.Mission.Segments.Hover.Descent.Descent", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Hover_1_1Descent_1_1Descent.html", null ]
               ] ],
               [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Altitude.Set_Speed_Set_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude_1_1Set__Speed__Set__Altitude.html", null ],
-              [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Throttle.Set_Speed_Set_Throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle.html", null ]
+              [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Throttle.Set_Speed_Set_Throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle.html", null ],
+              [ "SUAVE.Analyses.Mission.Segments.Transition.Constant_Acceleration_Constant_Angle_Linear_Climb.Constant_Acceleration_Constant_Angle_Linear_Climb", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html", null ],
+              [ "SUAVE.Analyses.Mission.Segments.Transition.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html", null ],
+              [ "SUAVE.Analyses.Mission.Segments.Transition.Lift_Cruise_Optimized.Lift_Cruise_Optimized", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Lift__Cruise__Optimized_1_1Lift__Cruise__Optimized.html", null ]
             ] ]
           ] ]
         ] ],
@@ -213,13 +217,11 @@ var hierarchy =
           [ "SUAVE.Analyses.Stability.AVL.AVL", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html", null ],
           [ "SUAVE.Analyses.Stability.Fidelity_Zero.Fidelity_Zero", "classSUAVE_1_1Analyses_1_1Stability_1_1Fidelity__Zero_1_1Fidelity__Zero.html", null ]
         ] ],
-        [ "SUAVE.Analyses.Structures.Structures.Structures", "classSUAVE_1_1Analyses_1_1Structures_1_1Structures_1_1Structures.html", null ],
-        [ "SUAVE.Analyses.Surrogate.Surrogate", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html", null ],
         [ "SUAVE.Analyses.Weights.Weights.Weights", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights_1_1Weights.html", [
           [ "SUAVE.Analyses.Weights.Weights_BWB.Weights_BWB", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB.html", null ],
-          [ "SUAVE.Analyses.Weights.Weights_Electric_Helicopter.Weights_Electric_Helicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html", null ],
-          [ "SUAVE.Analyses.Weights.Weights_Electric_Stopped_Rotor.Weights_Electric_Stopped_Rotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html", null ],
-          [ "SUAVE.Analyses.Weights.Weights_Electric_Tiltrotor.Weights_Electric_Tiltrotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html", null ],
+          [ "SUAVE.Analyses.Weights.Weights_Electric_Lift_Cruise.Weights_Electric_Lift_Cruise", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html", null ],
+          [ "SUAVE.Analyses.Weights.Weights_Electric_Multicopter.Weights_Electric_Multicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html", null ],
+          [ "SUAVE.Analyses.Weights.Weights_Electric_Vectored_Thrust.Weights_Electric_Vectored_Thrust", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html", null ],
           [ "SUAVE.Analyses.Weights.Weights_Tube_Wing.Weights_Tube_Wing", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing.html", null ],
           [ "SUAVE.Analyses.Weights.Weights_UAV.Weights_UAV", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__UAV_1_1Weights__UAV.html", null ]
         ] ]
@@ -239,21 +241,16 @@ var hierarchy =
       ] ],
       [ "SUAVE.Analyses.Settings.Settings", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings.html", null ],
       [ "SUAVE.Attributes.Airports.Airport.Airport", "classSUAVE_1_1Attributes_1_1Airports_1_1Airport_1_1Airport.html", null ],
-      [ "SUAVE.Attributes.Airports.Runway.Runway", "classSUAVE_1_1Attributes_1_1Airports_1_1Runway_1_1Runway.html", null ],
       [ "SUAVE.Attributes.Constants.Constant.Constant", "classSUAVE_1_1Attributes_1_1Constants_1_1Constant_1_1Constant.html", [
         [ "SUAVE.Attributes.Constants.Composition.Composition", "classSUAVE_1_1Attributes_1_1Constants_1_1Composition_1_1Composition.html", null ],
         [ "SUAVE.Attributes.Planets.Planet.Planet", "classSUAVE_1_1Attributes_1_1Planets_1_1Planet_1_1Planet.html", [
-          [ "SUAVE.Attributes.Planets.Earth.Earth", "classSUAVE_1_1Attributes_1_1Planets_1_1Earth_1_1Earth.html", null ],
-          [ "SUAVE.Attributes.Planets.Mars.Mars", "classSUAVE_1_1Attributes_1_1Planets_1_1Mars_1_1Mars.html", null ]
+          [ "SUAVE.Attributes.Planets.Earth.Earth", "classSUAVE_1_1Attributes_1_1Planets_1_1Earth_1_1Earth.html", null ]
         ] ]
       ] ],
       [ "SUAVE.Attributes.Gases.Gas.Gas", "classSUAVE_1_1Attributes_1_1Gases_1_1Gas_1_1Gas.html", [
         [ "SUAVE.Attributes.Gases.Air.Air", "classSUAVE_1_1Attributes_1_1Gases_1_1Air_1_1Air.html", null ],
         [ "SUAVE.Attributes.Gases.CO2.CO2", "classSUAVE_1_1Attributes_1_1Gases_1_1CO2_1_1CO2.html", null ],
         [ "SUAVE.Attributes.Gases.Steam.Steam", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html", null ]
-      ] ],
-      [ "SUAVE.Attributes.Liquids.Liquid.Liquid", "classSUAVE_1_1Attributes_1_1Liquids_1_1Liquid_1_1Liquid.html", [
-        [ "SUAVE.Attributes.Liquids.Water.Water", "classSUAVE_1_1Attributes_1_1Liquids_1_1Water_1_1Water.html", null ]
       ] ],
       [ "SUAVE.Attributes.Propellants.Propellant.Propellant", "classSUAVE_1_1Attributes_1_1Propellants_1_1Propellant_1_1Propellant.html", [
         [ "SUAVE.Attributes.Propellants.Aviation_Gasoline.Aviation_Gasoline", "classSUAVE_1_1Attributes_1_1Propellants_1_1Aviation__Gasoline_1_1Aviation__Gasoline.html", null ],
@@ -283,8 +280,7 @@ var hierarchy =
         [ "SUAVE.Components.Envelope.Envelope", "classSUAVE_1_1Components_1_1Envelope_1_1Envelope.html", null ],
         [ "SUAVE.Components.Lofted_Body.Curve", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Curve.html", null ],
         [ "SUAVE.Components.Lofted_Body.Section", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html", [
-          [ "SUAVE.Components.Wings.Airfoils.Airfoil.Airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil.html", null ],
-          [ "SUAVE.Components.Wings.Control_Surface.Control_Surface_Section", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html", null ]
+          [ "SUAVE.Components.Wings.Airfoils.Airfoil.Airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil.html", null ]
         ] ],
         [ "SUAVE.Components.Lofted_Body.Segment", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Segment.html", [
           [ "SUAVE.Components.Fuselages.Segment.Segment", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment.html", null ],
@@ -301,12 +297,15 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Converters.Fan.Fan", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Fan_1_1Fan.html", null ],
             [ "SUAVE.Components.Energy.Converters.Fuel_Cell.Fuel_Cell", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Fuel__Cell_1_1Fuel__Cell.html", null ],
             [ "SUAVE.Components.Energy.Converters.Gearbox.Gearbox", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Gearbox_1_1Gearbox.html", null ],
+            [ "SUAVE.Components.Energy.Converters.Generator_Zero_Fid.Generator_Zero_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Generator__Zero__Fid_1_1Generator__Zero__Fid.html", null ],
+            [ "SUAVE.Components.Energy.Converters.Internal_Combustion_Engine.Internal_Combustion_Engine", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine.html", null ],
             [ "SUAVE.Components.Energy.Converters.Motor.Motor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html", null ],
             [ "SUAVE.Components.Energy.Converters.Motor_Lo_Fid.Motor_Lo_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html", null ],
             [ "SUAVE.Components.Energy.Converters.Propeller.Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html", null ],
             [ "SUAVE.Components.Energy.Converters.Propeller_Lo_Fid.Propeller_Lo_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller__Lo__Fid_1_1Propeller__Lo__Fid.html", null ],
             [ "SUAVE.Components.Energy.Converters.Ram.Ram", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Ram_1_1Ram.html", null ],
             [ "SUAVE.Components.Energy.Converters.Rocket_Combustor.Rocket_Combustor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rocket__Combustor_1_1Rocket__Combustor.html", null ],
+            [ "SUAVE.Components.Energy.Converters.Rotor.Rotor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html", null ],
             [ "SUAVE.Components.Energy.Converters.Shaft_Power_Off_Take.Shaft_Power_Off_Take", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Shaft__Power__Off__Take_1_1Shaft__Power__Off__Take.html", null ],
             [ "SUAVE.Components.Energy.Converters.Solar_Panel.Solar_Panel", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Solar__Panel_1_1Solar__Panel.html", null ],
             [ "SUAVE.Components.Energy.Converters.Supersonic_Nozzle.Supersonic_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html", null ],
@@ -338,29 +337,34 @@ var hierarchy =
               [ "SUAVE.Components.Wings.Vertical_Tail.Vertical_Tail", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html", null ]
             ] ]
           ] ],
-          [ "SUAVE.Components.Payloads.Payload.Payload", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload.html", [
-            [ "SUAVE.Components.Payloads.Cargo.Cargo", "classSUAVE_1_1Components_1_1Payloads_1_1Cargo_1_1Cargo.html", null ],
-            [ "SUAVE.Components.Payloads.Person.Person", "classSUAVE_1_1Components_1_1Payloads_1_1Person_1_1Person.html", null ],
-            [ "SUAVE.Components.Payloads.Satellite.Satellite", "classSUAVE_1_1Components_1_1Payloads_1_1Satellite_1_1Satellite.html", null ]
-          ] ],
+          [ "SUAVE.Components.Payloads.Payload.Payload", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload.html", null ],
           [ "SUAVE.Components.Propulsors.Propulsor.Propulsor", "classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor.html", [
             [ "SUAVE.Components.Energy.Networks.Battery_Ducted_Fan.Battery_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan_1_1Battery__Ducted__Fan.html", null ],
             [ "SUAVE.Components.Energy.Networks.Battery_Propeller.Battery_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html", null ],
             [ "SUAVE.Components.Energy.Networks.Dual_Battery_Ducted_Fan.Dual_Battery_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Dual__Battery__Ducted__Fan_1_1Dual__Battery__Ducted__Fan.html", null ],
             [ "SUAVE.Components.Energy.Networks.Ducted_Fan.Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html", null ],
-            [ "SUAVE.Components.Energy.Networks.Lift_Forward_Propulsor.Lift_Forward_Propulsor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html", null ],
+            [ "SUAVE.Components.Energy.Networks.Internal_Combustion_Propeller.Internal_Combustion_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller_1_1Internal__Combustion__Propeller.html", null ],
+            [ "SUAVE.Components.Energy.Networks.Lift_Cruise.Lift_Cruise", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html", null ],
             [ "SUAVE.Components.Energy.Networks.Liquid_Rocket.Liquid_Rocket", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket.html", null ],
             [ "SUAVE.Components.Energy.Networks.Propulsor_Surrogate.Propulsor_Surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html", null ],
             [ "SUAVE.Components.Energy.Networks.Ramjet.Ramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet.html", null ],
             [ "SUAVE.Components.Energy.Networks.Scramjet.Scramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Scramjet_1_1Scramjet.html", null ],
+            [ "SUAVE.Components.Energy.Networks.Serial_Hybrid_Ducted_Fan.Serial_Hybrid_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Serial__Hybrid__Ducted__Fan_1_1Serial__Hybrid__Ducted__Fan.html", null ],
             [ "SUAVE.Components.Energy.Networks.Solar.Solar", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html", null ],
             [ "SUAVE.Components.Energy.Networks.Solar_Low_Fidelity.Solar_Low_Fidelity", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html", null ],
             [ "SUAVE.Components.Energy.Networks.Turbofan.Turbofan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html", null ],
-            [ "SUAVE.Components.Energy.Networks.Turbojet_Super.Turbojet_Super", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html", null ]
-          ] ]
+            [ "SUAVE.Components.Energy.Networks.Turbojet_Super.Turbojet_Super", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html", null ],
+            [ "SUAVE.Components.Energy.Networks.Vectored_Thrust.Vectored_Thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html", null ]
+          ] ],
+          [ "SUAVE.Components.Systems.System.System", "classSUAVE_1_1Components_1_1Systems_1_1System_1_1System.html", null ]
         ] ],
-        [ "SUAVE.Components.Systems.System.System", "classSUAVE_1_1Components_1_1Systems_1_1System_1_1System.html", null ],
-        [ "SUAVE.Components.Wings.Control_Surface.Control_Surface", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html", null ]
+        [ "SUAVE.Components.Wings.Control_Surfaces.Control_Surface.Control_Surface", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html", [
+          [ "SUAVE.Components.Wings.Control_Surfaces.Aileron.Aileron", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Aileron_1_1Aileron.html", null ],
+          [ "SUAVE.Components.Wings.Control_Surfaces.Elevator.Elevator", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Elevator_1_1Elevator.html", null ],
+          [ "SUAVE.Components.Wings.Control_Surfaces.Flap.Flap", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Flap_1_1Flap.html", null ],
+          [ "SUAVE.Components.Wings.Control_Surfaces.Rudder.Rudder", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Rudder_1_1Rudder.html", null ],
+          [ "SUAVE.Components.Wings.Control_Surfaces.Slat.Slat", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Slat_1_1Slat.html", null ]
+        ] ]
       ] ],
       [ "SUAVE.Components.Costs.Costs.Industrial_Costs", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Industrial__Costs.html", null ],
       [ "SUAVE.Components.Costs.Costs.Operating_Costs", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Operating__Costs.html", null ],

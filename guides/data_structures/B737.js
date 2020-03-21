@@ -334,7 +334,7 @@ treeJSON = d3.json("B737.json", function(error, treeData) {
             }
         });
 
-        // Update the nodes…
+        // Update the nodesï¿½
         node = svgGroup.selectAll("g.node")
             .data(nodes, function(d) {
                 return d.id || (d.id = ++i);
@@ -433,7 +433,7 @@ treeJSON = d3.json("B737.json", function(error, treeData) {
         nodeExit.select("text")
             .style("fill-opacity", 0);
 
-        // Update the links…
+        // Update the linksï¿½
         var link = svgGroup.selectAll("path.link")
             .data(links, function(d) {
                 return d.target.id;

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -112,8 +112,8 @@ $(document).ready(function(){initNavTree('group__Methods-Weights-Buildups-Common
 Functions</h2></td></tr>
 <tr class="memitem:gaf8650ce6b96c5aa3f90dc9a482ea3f55"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Buildups-Common.html#gaf8650ce6b96c5aa3f90dc9a482ea3f55">SUAVE.Methods.Weights.Buildups.Common.fuselage.fuselage</a> (config, maximum_g_load=3.8, landing_impact_factor=3.5, safety_factor=1.5)</td></tr>
 <tr class="separator:gaf8650ce6b96c5aa3f90dc9a482ea3f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae756d83c61207facf243450d0961c003"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Buildups-Common.html#gae756d83c61207facf243450d0961c003">SUAVE.Methods.Weights.Buildups.Common.prop.prop</a> (prop, maximum_thrust, chord_to_radius_ratio=0.1, thickness_to_chord_ratio=0.12, root_to_radius_ratio=0.1, moment_to_lift_ratio=0.02, spanwise_analysis_points=5, safety_factor=1.5, margin_factor=1.2, forward_web_locations=[0.25, 0.35], shear_center=0.25, speed_of_sound=340.294, tip_max_mach_number=0.65)</td></tr>
-<tr class="separator:gae756d83c61207facf243450d0961c003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58f49e5e32cb0736074c842b48aec44a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Buildups-Common.html#ga58f49e5e32cb0736074c842b48aec44a">SUAVE.Methods.Weights.Buildups.Common.prop.prop</a> (prop, maximum_thrust, chord_to_radius_ratio=0.1, thickness_to_chord=0.12, root_to_radius_ratio=0.1, moment_to_lift_ratio=0.02, spanwise_analysis_points=5, safety_factor=1.5, margin_factor=1.2, forward_web_locations=[0.25, 0.35], shear_center=0.25, speed_of_sound=340.294, tip_max_mach_number=0.65)</td></tr>
+<tr class="separator:ga58f49e5e32cb0736074c842b48aec44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga023fd2faaeb307a459bb67cc4fb0cba9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Buildups-Common.html#ga023fd2faaeb307a459bb67cc4fb0cba9">SUAVE.Methods.Weights.Buildups.Common.wing.wing</a> (wing, config, max_thrust, num_analysis_points=10, safety_factor=1.5, max_g_load=3.8, moment_to_lift_ratio=0.02, lift_to_drag_ratio=7, forward_web_locations=[0.25, 0.35], rear_web_locations=[0.65, 0.75], shear_center_location=0.25, margin_factor=1.2)</td></tr>
 <tr class="separator:ga023fd2faaeb307a459bb67cc4fb0cba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56b54b8bbc727bc6327de44928783281"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Buildups-Common.html#ga56b54b8bbc727bc6327de44928783281">SUAVE.Methods.Weights.Buildups.Common.wiring.wiring</a> (config, motor_spanwise_locations, max_power_draw)</td></tr>
@@ -172,8 +172,8 @@ Functions</h2></td></tr>
     Assumes an elliptical fuselage. Intended for use with the following
     SUAVE vehicle types, but may be used elsewhere:
 
-        Electric Helicopter
-        Electric Tiltrotor
+        Electric Multicopter
+        Electric Vectored_Thrust
         Electric Stopped Rotor
 
     Originally written as part of an AA 290 project intended for trade study
@@ -197,8 +197,8 @@ Functions</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="gae756d83c61207facf243450d0961c003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae756d83c61207facf243450d0961c003">&#9670;&nbsp;</a></span>prop()</h2>
+<a id="ga58f49e5e32cb0736074c842b48aec44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58f49e5e32cb0736074c842b48aec44a">&#9670;&nbsp;</a></span>prop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +225,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>thickness_to_chord_ratio</em> = <code>0.12</code>, </td>
+          <td class="paramname"><em>thickness_to_chord</em> = <code>0.12</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -292,7 +292,7 @@ Functions</h2></td></tr>
         prop,
         maximum_thrust,
         chord_to_radius_ratio = 0.1,
-        thickness_to_chord_ratio = 0.12,
+        thickness_to_chord = 0.12,
         root_to_radius_ratio = 0.1,
         moment_to_lift_ratio = 0.02,
         spanwise_analysis_points = 5,
@@ -311,8 +311,8 @@ Functions</h2></td></tr>
     Intended for use with the following SUAVE vehicle types, but may be used
     elsewhere:
 
-        Electric Helicopter
-        Electric Tiltrotor
+        Electric Multicopter
+        Electric Vectored_Thrust
         Electric Stopped Rotor
 
     Originally written as part of an AA 290 project inteded for trade study
@@ -326,7 +326,7 @@ Functions</h2></td></tr>
         prop                        SUAVE Propeller Data Structure
         maximum_thrust              Maximum Design Thrust               [N]
         chord_to_radius_ratio       Chord to Blade Radius               [Unitless]
-        thickness_to_chord_ratio    Blade Thickness to Chord            [Unitless]
+        thickness_to_chord          Blade Thickness to Chord            [Unitless]
         root_to_radius_ratio        Root Structure to Blade Radius      [Unitless]
         moment_to_lift_ratio        Coeff. of Moment to Coeff. of Lift  [Unitless]
         spanwise_analysis_points    Analysis Points for Sizing          [Unitless]
@@ -452,12 +452,12 @@ Functions</h2></td></tr>
     Intended for use with the following SUAVE vehicle types, but may be used
     elsewhere:
 
-        Electric Helicopter
-        Electric Tiltrotor
+        Electric Multicopter
+        Electric Vectored_Thrust
         Electric Stopped Rotor
 
     Originally written as part of an AA 290 project intended for trade study
-    of the above vehicle types plus an electricHelicopter.
+    of the above vehicle types plus an electric Multicopter.
     
     Sources:
     Project Vahana Conceptual Trade Study
@@ -529,8 +529,8 @@ Functions</h2></td></tr>
     Intended for use with the following SUAVE vehicle types, but may be used
     elsewhere:
 
-        Electric Helicopter
-        Electric Tiltrotor
+        Electric Multicopter
+        Electric Vectored_Thrust
         Electric Stopped Rotor
 
     Originally written as part of an AA 290 project intended for trade study

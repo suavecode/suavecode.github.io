@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -236,27 +236,27 @@ Source:
 Unknown
 
 Inputs:
-vehicle.max_lift_coefficient_factor [Unitless]
-vehicle.reference_area              [m^2]
-vehicle.wings. 
-  areas.reference                   [m^2]
-  thickness_to_chord                [Unitless]
-  chords.mean_aerodynamic           [m]
-  sweeps.quarter_chord              [radians]
-  taper                             [Unitless]
-  flaps.chord                       [m]
-  flaps.angle                       [radians]
-  slats.angle                       [radians]
-  areas.affected                    [m^2]
-  flaps.type                        [string]
-conditions.freestream.
-  velocity                          [m/s]
-  density                           [kg/m^3]
-  dynamic_viscosity                 [N s/m^2]
-
-Outputs:
-Cl_max_ls (maximum CL)              [Unitless]
-Cd_ind    (induced drag)            [Unitless]
+vehicle.max_lift_coefficient_factor        [Unitless]
+vehicle.reference_area                     [m^2]
+vehicle.wings.                             
+  areas.reference                          [m^2]
+  thickness_to_chord                       [Unitless]
+  chords.mean_aerodynamic                  [m]
+  sweeps.quarter_chord                     [radians]
+  taper                                    [Unitless]
+  flaps.chord                              [m]
+ control_surfaces.flap.deflection          [radians]
+ control_surfaces.slat.deflection          [radians]
+  areas.affected                           [m^2]
+  control_surfaces.flap.configuration_type [string]
+conditions.freestream.                     
+  velocity                                 [m/s]
+  density                                  [kg/m^3]
+  dynamic_viscosity                        [N s/m^2]
+                                           
+Outputs:                                   
+Cl_max_ls (maximum CL)                     [Unitless]
+Cd_ind    (induced drag)                   [Unitless]
 
 Properties Used:
 N/A

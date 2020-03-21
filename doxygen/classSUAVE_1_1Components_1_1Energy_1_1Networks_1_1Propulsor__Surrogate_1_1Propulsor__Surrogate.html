@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -126,6 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0431c37a2355c55c6b956c8a0f34c117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a983089ddf1aee9c63dd67cb54be750bc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a983089ddf1aee9c63dd67cb54be750bc">build_surrogate</a> (self)</td></tr>
 <tr class="separator:a983089ddf1aee9c63dd67cb54be750bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76551bf11a9ec031c7fbeef6a5843cb7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a76551bf11a9ec031c7fbeef6a5843cb7">extended_thrust_surrogate</a> (self, thr_surrogate, cond, lo_blender, hi_blender)</td></tr>
+<tr class="separator:a76551bf11a9ec031c7fbeef6a5843cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9ed00b3a5949739966b7c0b5cca69b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a8a9ed00b3a5949739966b7c0b5cca69b">extended_sfc_surrogate</a> (self, sfc_surrogate, cond, lo_blender, hi_blender)</td></tr>
+<tr class="separator:a8a9ed00b3a5949739966b7c0b5cca69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -159,10 +163,55 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:adb1c55a957e8fa9e6b31853e2d61031f"><td class="memItemLeft" align="right" valign="top"><a id="adb1c55a957e8fa9e6b31853e2d61031f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>surrogate_type</b></td></tr>
 <tr class="separator:adb1c55a957e8fa9e6b31853e2d61031f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac391c39298130b04a895ade66665303d"><td class="memItemLeft" align="right" valign="top"><a id="ac391c39298130b04a895ade66665303d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>altitude_input_scale</b></td></tr>
+<tr class="separator:ac391c39298130b04a895ade66665303d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b162b21353393b828d783b50ff13d0"><td class="memItemLeft" align="right" valign="top"><a id="ab9b162b21353393b828d783b50ff13d0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>thrust_input_scale</b></td></tr>
+<tr class="separator:ab9b162b21353393b828d783b50ff13d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1d09af601ff633fd64614d4456be42"><td class="memItemLeft" align="right" valign="top"><a id="a7e1d09af601ff633fd64614d4456be42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>sfc_anchor</b></td></tr>
+<tr class="separator:a7e1d09af601ff633fd64614d4456be42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63132f084a783b1cbbae4c5183eca60d"><td class="memItemLeft" align="right" valign="top"><a id="a63132f084a783b1cbbae4c5183eca60d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>sfc_anchor_scale</b></td></tr>
+<tr class="separator:a63132f084a783b1cbbae4c5183eca60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8823c556243f9c01a4dcdb24f81f4f7c"><td class="memItemLeft" align="right" valign="top"><a id="a8823c556243f9c01a4dcdb24f81f4f7c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>sfc_anchor_conditions</b></td></tr>
+<tr class="separator:a8823c556243f9c01a4dcdb24f81f4f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb1fae5f925f775c1d2dc6e915ea319"><td class="memItemLeft" align="right" valign="top"><a id="a3bb1fae5f925f775c1d2dc6e915ea319"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>thrust_anchor</b></td></tr>
+<tr class="separator:a3bb1fae5f925f775c1d2dc6e915ea319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a31b560d4fbbd88dd5edd05614d21d"><td class="memItemLeft" align="right" valign="top"><a id="a40a31b560d4fbbd88dd5edd05614d21d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>thrust_anchor_scale</b></td></tr>
+<tr class="separator:a40a31b560d4fbbd88dd5edd05614d21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d57549ba3e802d3d16581bb0efab747"><td class="memItemLeft" align="right" valign="top"><a id="a6d57549ba3e802d3d16581bb0efab747"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>thrust_anchor_conditions</b></td></tr>
+<tr class="separator:a6d57549ba3e802d3d16581bb0efab747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4997d99bac3bba04d4a8af46bf68f88"><td class="memItemLeft" align="right" valign="top"><a id="af4997d99bac3bba04d4a8af46bf68f88"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>sfc_rubber_scale</b></td></tr>
+<tr class="separator:af4997d99bac3bba04d4a8af46bf68f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6511d3ab97266a77e2ac6790e9bf5449"><td class="memItemLeft" align="right" valign="top"><a id="a6511d3ab97266a77e2ac6790e9bf5449"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>use_extended_surrogate</b></td></tr>
+<tr class="separator:a6511d3ab97266a77e2ac6790e9bf5449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9a1455e0c21a9bfaa5ef0c22ff77f2"><td class="memItemLeft" align="right" valign="top"><a id="a3b9a1455e0c21a9bfaa5ef0c22ff77f2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>sfc_input_scale</b></td></tr>
+<tr class="separator:a3b9a1455e0c21a9bfaa5ef0c22ff77f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor.html">SUAVE.Components.Propulsors.Propulsor.Propulsor</a></td></tr>
 <tr class="memitem:a297d16d03533b9da160be9d970073588 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="a297d16d03533b9da160be9d970073588"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
 <tr class="separator:a297d16d03533b9da160be9d970073588 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858187796822a9a4c783cd74aab0d717 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="a858187796822a9a4c783cd74aab0d717"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_engines</b></td></tr>
+<tr class="separator:a858187796822a9a4c783cd74aab0d717 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb86b97c48b3de4244e5b0b1a6eb1596 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="afb86b97c48b3de4244e5b0b1a6eb1596"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>nacelle_diameter</b></td></tr>
+<tr class="separator:afb86b97c48b3de4244e5b0b1a6eb1596 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace561d0f1785a664db4b0819bbd52ac1 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="ace561d0f1785a664db4b0819bbd52ac1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>engine_length</b></td></tr>
+<tr class="separator:ace561d0f1785a664db4b0819bbd52ac1 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a272c60a24251274736178759b23670 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="a7a272c60a24251274736178759b23670"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>areas</b></td></tr>
+<tr class="separator:a7a272c60a24251274736178759b23670 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component.html">SUAVE.Components.Physical_Component.Physical_Component</a></td></tr>
 <tr class="memitem:a262d78a38d51f7f484f930155843edff inherit pub_attribs_classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component"><td class="memItemLeft" align="right" valign="top"><a id="a262d78a38d51f7f484f930155843edff"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
@@ -189,7 +238,7 @@ Public Attributes</h2></td></tr>
     A .csv file is read in, a surrogate made, that surrogate is used during the mission analysis.
     
     You need to use build surrogate first when setting up the vehicle to make this work.
-
+    
     Assumptions:
     The input format for this should be Altitude, Mach, Throttle, Thrust, SFC
     
@@ -211,8 +260,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This sets the default values for the network to function.
-    
+<pre class="fragment">This sets the default values for the network to function
+
     Assumptions:
     None
     
@@ -296,7 +345,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Calculate thrust given the current state of the vehicle
-    
+
     Assumptions:
     None
     
@@ -312,6 +361,138 @@ Public Attributes</h2></td></tr>
     
     Properties Used:
     Defaulted values
+</pre> 
+</div>
+</div>
+<a id="a8a9ed00b3a5949739966b7c0b5cca69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9ed00b3a5949739966b7c0b5cca69b">&#9670;&nbsp;</a></span>extended_sfc_surrogate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Energy.Networks.Propulsor_Surrogate.Propulsor_Surrogate.extended_sfc_surrogate </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sfc_surrogate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lo_blender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>hi_blender</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Fixes sfc values outside of the standard throttle range in order to provide
+    reasonable values outside of the typical surrogate coverage area. 
+    
+    Assumptions:
+    None
+    
+    Source:
+    N/A
+    
+    Inputs:
+    sfc_surrogate     - Trained sklearn surrogate that outputs a scaled sfc value
+    cond              - nx3 numpy array with input conditions for the surrogate
+    lo_blender        - Cubic spline blending class that is used at the low throttle cutoff
+    hi_blender        - Cubic spline blending class that is used at the high throttle cutoff
+    
+    Outputs:
+    sfcs              [nondim]
+    
+    Properties Used:
+    None
+</pre> 
+</div>
+</div>
+<a id="a76551bf11a9ec031c7fbeef6a5843cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76551bf11a9ec031c7fbeef6a5843cb7">&#9670;&nbsp;</a></span>extended_thrust_surrogate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Energy.Networks.Propulsor_Surrogate.Propulsor_Surrogate.extended_thrust_surrogate </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>thr_surrogate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lo_blender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>hi_blender</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Fixes thrust values outside of the standard throttle range in order to provide
+    reasonable values outside of the typical surrogate coverage area. 
+    
+    Assumptions:
+    None
+    
+    Source:
+    N/A
+    
+    Inputs:
+    thr_surrogate     - Trained sklearn surrogate that outputs a scaled thrust value
+    cond              - nx3 numpy array with input conditions for the surrogate
+    lo_blender        - Cubic spline blending class that is used at the low throttle cutoff
+    hi_blender        - Cubic spline blending class that is used at the high throttle cutoff
+    
+    Outputs:
+    T                 [nondim]
+    
+    Properties Used:
+    None
 </pre> 
 </div>
 </div>

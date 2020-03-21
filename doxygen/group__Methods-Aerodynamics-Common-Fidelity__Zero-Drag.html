@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -126,6 +126,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga4b936aba6e18986d224e4da07a539ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga56e33b81d00acf5955c775938336000e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga56e33b81d00acf5955c775938336000e">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Drag.parasite_drag_wing.parasite_drag_wing</a> (state, settings, geometry)</td></tr>
 <tr class="separator:ga56e33b81d00acf5955c775938336000e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga105c8a2462a994b30cc32cea275fcd76"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga105c8a2462a994b30cc32cea275fcd76">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Drag.parasite_drag_wing.compute_parasite_drag</a> (re, mac_w, Mc, Tc, xtu, xtl, sweep_w, t_c_w, Sref, Swet, C)</td></tr>
+<tr class="separator:ga105c8a2462a994b30cc32cea275fcd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade82a1b666fd867c5687b582e5429836"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#gade82a1b666fd867c5687b582e5429836">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Drag.parasite_total.parasite_total</a> (state, settings, geometry)</td></tr>
 <tr class="separator:gade82a1b666fd867c5687b582e5429836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e471c95aef417660ee39886cdbdbc66"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga0e471c95aef417660ee39886cdbdbc66">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Drag.spoiler_drag.spoiler_drag</a> (state, settings, geometry)</td></tr>
@@ -242,6 +244,122 @@ geometry.reference_area                                                         
 
 Outputs:
 total_compressibility_drag                                                                [Unitless]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="ga105c8a2462a994b30cc32cea275fcd76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga105c8a2462a994b30cc32cea275fcd76">&#9670;&nbsp;</a></span>compute_parasite_drag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Drag.parasite_drag_wing.compute_parasite_drag </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>re</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mac_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Mc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Tc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xtu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xtl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sweep_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>t_c_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Sref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Swet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>C</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Computes the parasite drag due to wings
+
+Assumptions:
+Basic fit
+
+Source:
+adg.stanford.edu (Stanford AA241 A/B Course Notes)
+
+Inputs:
+re (Reynolds Number)    [Unitless]
+mac_w (Wing MAC)        [m]
+Mc (Mach Number)        [Unitless]
+Tc (Temperature)        [K]
+xtu (Upper Transition)  [Unitless] (percent of chord)
+xtl (Lower Transition)  [Unitless] (percent of chord)
+sweep_w (Wing Sweep)    [rad]
+t_c_w (Wing t/c)        [Unitless]
+Sref (Wing Ref Area)    [m^2]
+Swet (Wing Wetted Area) [m^2]
+C (Form Factor)         [Unitless]
+  
+Outputs:
+(u is upper, l is lower)
+wing_parasite_drag                 [Unitless]
+k_w    (Form Factor)               [Unitless]
+cf_w_u (Skin Friction Coefficient) [Unitless]
+cf_w_l                             [Unitless]
+k_comp_u (Compressibility Factor)  [Unitless]
+k_comp_l                           [Unitless]
+k_reyn_u (Reynolds Factor)         [Unitless]
+k_reyn_l                           [Unitless]
 
 Properties Used:
 N/A
@@ -571,7 +689,7 @@ Assumptions:
 Basic fit
 
 Source:
-adg.stanford.edu (Stanford AA241 A/B Course Notes)
+http://aerodesign.stanford.edu/aircraftdesign/aircraftdesign.html (Stanford AA241 A/B Course Notes)
 
 Inputs:
 settings.wing_parasite_drag_form_factor      [Unitless]

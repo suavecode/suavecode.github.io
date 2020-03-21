@@ -1,9 +1,11 @@
 var searchData=
 [
   ['acrylic',['Acrylic',['../classSUAVE_1_1Attributes_1_1Solids_1_1Acrylic_1_1Acrylic.html',1,'SUAVE::Attributes::Solids::Acrylic']]],
+  ['additive_5fsolver',['Additive_Solver',['../classSUAVE_1_1Optimization_1_1Package__Setups_1_1additive__setup_1_1Additive__Solver.html',1,'SUAVE::Optimization::Package_Setups::additive_setup']]],
   ['aerodas',['AERODAS',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AERODAS_1_1AERODAS.html',1,'SUAVE::Analyses::Aerodynamics::AERODAS']]],
   ['aerodynamic',['Aerodynamic',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Aerodynamic_1_1Aerodynamic.html',1,'SUAVE::Analyses::Mission::Segments::Aerodynamic']]],
   ['aerodynamics',['Aerodynamics',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html',1,'SUAVE.Analyses.Aerodynamics.Aerodynamics.Aerodynamics'],['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html',1,'SUAVE.Analyses.Mission.Segments.Conditions.Aerodynamics.Aerodynamics']]],
+  ['aileron',['Aileron',['../classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Aileron_1_1Aileron.html',1,'SUAVE::Components::Wings::Control_Surfaces::Aileron']]],
   ['air',['Air',['../classSUAVE_1_1Attributes_1_1Gases_1_1Air_1_1Air.html',1,'SUAVE::Attributes::Gases::Air']]],
   ['aircraft',['Aircraft',['../classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Aircraft_1_1Aircraft.html',1,'SUAVE::Methods::Aerodynamics::AVL::Data::Aircraft']]],
   ['airfoil',['Airfoil',['../classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil.html',1,'SUAVE::Components::Wings::Airfoils::Airfoil']]],
@@ -19,6 +21,5 @@ var searchData=
   ['aviation_5fgasoline',['Aviation_Gasoline',['../classSUAVE_1_1Attributes_1_1Propellants_1_1Aviation__Gasoline_1_1Aviation__Gasoline.html',1,'SUAVE::Attributes::Propellants::Aviation_Gasoline']]],
   ['avionics',['Avionics',['../classSUAVE_1_1Components_1_1Energy_1_1Peripherals_1_1Avionics_1_1Avionics.html',1,'SUAVE::Components::Energy::Peripherals::Avionics']]],
   ['avl',['AVL',['../classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html',1,'SUAVE.Analyses.Stability.AVL.AVL'],['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL_1_1AVL.html',1,'SUAVE.Analyses.Aerodynamics.AVL.AVL']]],
-  ['avl_5fdiscretization_5fsettings',['AVL_Discretization_Settings',['../classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings.html',1,'SUAVE::Methods::Aerodynamics::AVL::Data::Settings']]],
   ['avl_5finviscid',['AVL_Inviscid',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html',1,'SUAVE::Analyses::Aerodynamics::AVL_Inviscid']]]
 ];

@@ -17,32 +17,32 @@ var group__Analyses_Weights =
       [ "tag", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB.html#a63b040cecfd2d1adcad13a91cad5f4b5", null ],
       [ "vehicle", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB.html#a9a5d8ea00331456f8a423aa1d2562c34", null ]
     ] ],
-    [ "Weights_Electric_Helicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html", [
-      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html#a9e93657c754e354b9840ed5f26471256", null ],
-      [ "evaluate", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html#a5cd305c29869ff344a307d13575d5ce8", null ],
-      [ "finalize", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html#a24efe0877df1e1f0e9b7360619659818", null ],
-      [ "mass_properties", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html#aea0625184998003ef972b6d53475d977", null ],
-      [ "settings", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html#ac2e57094c92a7299209021ea6ba68329", null ],
-      [ "tag", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html#a0f48218ed032ee8e8f3c173e6db14c8e", null ],
-      [ "vehicle", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html#a1e0ab51fda1a1f1b44fadd594ab04815", null ]
+    [ "Weights_Electric_Lift_Cruise", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html", [
+      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html#ae3caf7d038004347ed9a5a670fc1ae14", null ],
+      [ "evaluate", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html#a18755f5148833eb1d591c55f78cdfd8f", null ],
+      [ "finalize", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html#a01c149689cc081032566be9e23751888", null ],
+      [ "mass_properties", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html#a9921742ddc8541ee77d509331f52c7ae", null ],
+      [ "settings", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html#a989170f6dc6de451486b7debedc51cfd", null ],
+      [ "tag", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html#ace5ca151e9ea8c6c72dd375c8664b70c", null ],
+      [ "vehicle", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html#a77003dd34d26f427a8c2bce224fee0a9", null ]
     ] ],
-    [ "Weights_Electric_Stopped_Rotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html", [
-      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html#abed385efcf24a133156e50ffab253fec", null ],
-      [ "evaluate", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html#ae3fdbb11cace83945b57c4d74c6b181b", null ],
-      [ "finalize", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html#a94bf02b46692cb5ea64aaebe760fadee", null ],
-      [ "mass_properties", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html#ac4f078d0370b5de210270ad90c611a1f", null ],
-      [ "settings", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html#ad86d3e7e98a33e10f00edb2f869040f8", null ],
-      [ "tag", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html#a65457fdb74a9aa7e1a070e61709bc4e4", null ],
-      [ "vehicle", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html#acf5e692cb93e0d80a08ff018962e1396", null ]
+    [ "Weights_Electric_Multicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html", [
+      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html#a41d2eaa02dd233df563d7f3c6b9d0dac", null ],
+      [ "evaluate", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html#a4ad9c10e786ee9cd49045b60982ad223", null ],
+      [ "finalize", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html#a44a1602e56ec334b973ef931a9545015", null ],
+      [ "mass_properties", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html#aa63343cc6d6df7220ea62a0833961184", null ],
+      [ "settings", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html#a46a89a6f04469e9df4a19337aefa9fcc", null ],
+      [ "tag", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html#a717b465267b852fca683d15c47cacdd0", null ],
+      [ "vehicle", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html#a360772c162930dd718e6a74b7d298f2b", null ]
     ] ],
-    [ "Weights_Electric_Tiltrotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html", [
-      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html#a0ff27dd4b66cd60e36d7230778ab7206", null ],
-      [ "evaluate", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html#a4cd1a5b3de6690dc31c06121b7747a62", null ],
-      [ "finalize", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html#af5a540d9c32890a69a008ea664ba3022", null ],
-      [ "mass_properties", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html#a61ac6f5ba59bc3a1ad130dbdfb8fe61a", null ],
-      [ "settings", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html#a46cb64ad66b10df91f77059df7ffb046", null ],
-      [ "tag", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html#ae70c770cb0d4da52433de02a822c5b80", null ],
-      [ "vehicle", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html#aa2173a13112410e9cdfd47d084c77a2b", null ]
+    [ "Weights_Electric_Vectored_Thrust", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html", [
+      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html#aea6843586fd7340a8fa771f364d6058b", null ],
+      [ "evaluate", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html#aecc4ff364f2d5ea7e19ff48bf26bddd7", null ],
+      [ "finalize", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html#a338f12d723bacf5aeeba9f0454d03e29", null ],
+      [ "mass_properties", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html#a34417f11fa433e692ed2447baccd9b3c", null ],
+      [ "settings", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html#a3e531f7d3c6e218d2078093153230ccb", null ],
+      [ "tag", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html#ae053afa78726e3b359a190eb203cc22a", null ],
+      [ "vehicle", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html#adc8a277ec4dc1001fd4e56370a42db18", null ]
     ] ],
     [ "Weights_Tube_Wing", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing.html#a0ac33c072e13422a12ecdbb92c7852d9", null ],

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -114,8 +114,8 @@ Functions</h2></td></tr>
 <tr class="separator:gae198f3808f41194e690b4ea8c4137c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e6153003ae73397bf8d06367e10e9ba"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#ga3e6153003ae73397bf8d06367e10e9ba">SUAVE.Methods.Propulsion.ducted_fan_sizing.ducted_fan_sizing</a> (ducted_fan, mach_number=None, altitude=None, delta_isa=0, conditions=None)</td></tr>
 <tr class="separator:ga3e6153003ae73397bf8d06367e10e9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7448a7c9da5a37c6912b33fd90c98306"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#ga7448a7c9da5a37c6912b33fd90c98306">SUAVE.Methods.Propulsion.electric_motor_sizing.size_from_kv</a> (motor, kv)</td></tr>
-<tr class="separator:ga7448a7c9da5a37c6912b33fd90c98306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaceccf2f0fd7ef2c51ac7752700230dc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#gaaceccf2f0fd7ef2c51ac7752700230dc">SUAVE.Methods.Propulsion.electric_motor_sizing.size_from_kv</a> (motor)</td></tr>
+<tr class="separator:gaaceccf2f0fd7ef2c51ac7752700230dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae720e196160d2c3fdc45c57ff3e2f4bb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#gae720e196160d2c3fdc45c57ff3e2f4bb">SUAVE.Methods.Propulsion.fm_id.fm_id</a> (M, gamma)</td></tr>
 <tr class="memdesc:gae720e196160d2c3fdc45c57ff3e2f4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">fm_id.py  <a href="group__Methods-Propulsion.html#gae720e196160d2c3fdc45c57ff3e2f4bb">More...</a><br /></td></tr>
 <tr class="separator:gae720e196160d2c3fdc45c57ff3e2f4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -819,8 +819,8 @@ Source:
 https://web.stanford.edu/~cantwell/AA210A_Course_Material/AA210A_Course_Notes/</pre> 
 </div>
 </div>
-<a id="ga7448a7c9da5a37c6912b33fd90c98306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7448a7c9da5a37c6912b33fd90c98306">&#9670;&nbsp;</a></span>size_from_kv()</h2>
+<a id="gaaceccf2f0fd7ef2c51ac7752700230dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaceccf2f0fd7ef2c51ac7752700230dc">&#9670;&nbsp;</a></span>size_from_kv()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -829,18 +829,8 @@ https://web.stanford.edu/~cantwell/AA210A_Course_Material/AA210A_Course_Notes/</
           <td class="memname">def SUAVE.Methods.Propulsion.electric_motor_sizing.size_from_kv </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>motor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>motor</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>kv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -851,7 +841,7 @@ Gur, O., Rosen, A, AIAA 2008-5916.
 
 Inputs:
 motor    (to be modified)
-kv       motor speed constant
+  kv       motor speed constant
 
 Outputs:
 motor.
