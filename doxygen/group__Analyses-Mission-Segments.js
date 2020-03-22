@@ -7,6 +7,7 @@ var group__Analyses_Mission_Segments =
     [ "Ground", "group__Analyses-Mission-Segments-Ground.html", null ],
     [ "Hover", "group__Analyses-Mission-Segments-Hover.html", "group__Analyses-Mission-Segments-Hover" ],
     [ "Single_Point", "group__Analyses-Mission-Segments-Single__Point.html", "group__Analyses-Mission-Segments-Single__Point" ],
+    [ "Transition", "group__Analyses-Mission-Segments-Transition.html", "group__Analyses-Mission-Segments-Transition" ],
     [ "Aerodynamic", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Aerodynamic_1_1Aerodynamic.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Aerodynamic_1_1Aerodynamic.html#aed8adfea20e60c1456b6d163e6ad9279", null ],
       [ "temperature_deviation", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Aerodynamic_1_1Aerodynamic.html#ae878a8247dcffc628bdaccf944b08aaf", null ]

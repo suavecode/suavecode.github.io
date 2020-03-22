@@ -5,6 +5,7 @@ var classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section =
     [ "airfoil_coord_file", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#abd0183b7faac5f2c02397afb471aa667", null ],
     [ "chord", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#a7b76228bb44c3a1e477439185e428af6", null ],
     [ "control_surfaces", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#afc85152833f0c6c44bc1cf9bd960b756", null ],
+    [ "naca_airfoil", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#a62572473e0f2954248391fcfd6651905", null ],
     [ "origin", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#a1e74b5c3cbee04e629ebf425b6ee75d4", null ],
     [ "tag", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#a2e01bb6c59e37d1e6b37571b0709da36", null ],
     [ "twist", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#ab9c9fb32b0c7178626a8b105e696064d", null ]

@@ -4,13 +4,10 @@ var group__Analyses =
     [ "Atmospheric", "group__Analyses-Atmospheric.html", "group__Analyses-Atmospheric" ],
     [ "Costs", "group__Analyses-Costs.html", "group__Analyses-Costs" ],
     [ "Energy", "group__Analyses-Energy.html", "group__Analyses-Energy" ],
-    [ "Geometry", "group__Analyses-Geometry.html", "group__Analyses-Geometry" ],
-    [ "Loads", "group__Analyses-Loads.html", "group__Analyses-Loads" ],
     [ "Mission", "group__Analyses-Mission.html", "group__Analyses-Mission" ],
     [ "Noise", "group__Analyses-Noise.html", "group__Analyses-Noise" ],
     [ "Sizing", "group__Analyses-Sizing.html", "group__Analyses-Sizing" ],
     [ "Stability", "group__Analyses-Stability.html", "group__Analyses-Stability" ],
-    [ "Structures", "group__Analyses-Structures.html", "group__Analyses-Structures" ],
     [ "Weights", "group__Analyses-Weights.html", "group__Analyses-Weights" ],
     [ "Analysis", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html", [
       [ "__call__", "classSUAVE_1_1Analyses_1_1Analysis_1_1Analysis.html#ae5813c73fa29c7dd6fb999b6a265fb60", null ],
@@ -38,15 +35,6 @@ var group__Analyses =
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings.html#aa2d3d070627f1559b8929bc2ed280a0b", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings.html#a8a826847043dbb77d04ceceef7302c5d", null ],
       [ "verbose_process", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings.html#a5b24b1eb97fd67544c9fe3b5b7d8c551", null ]
-    ] ],
-    [ "Surrogate", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html", [
-      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#a63d74ea95e3ee3d75b421763b1b7eab0", null ],
-      [ "build_surrogate", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#ae64ef8c0d281e8bf19f00ffaa42e1ad6", null ],
-      [ "evaluate", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#abbabba1804ca34f98a001e05a97e9438", null ],
-      [ "finalize", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#ab1a1e389cc333127b68d622554f188c0", null ],
-      [ "sample_training", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#a7fd280baca4ac2ad8a73e4858b2c3906", null ],
-      [ "surrogates", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#a1728feddc45a65ba7a71ee8ba510fb70", null ],
-      [ "training", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html#a24906c9735ddd0f6775997b00bcab98e", null ]
     ] ],
     [ "Vehicle", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html", [
       [ "__init__", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html#a20dcf0e9da5171dfd224aa0558fd70e9", null ],

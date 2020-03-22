@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['nasa_5fmotor',['nasa_motor',['../group__Methods-Weights-Correlations-Propulsion.html#gacfa3e8be417d0f1bd08a7c9e52c8aa60',1,'SUAVE::Methods::Weights::Correlations::Propulsion::nasa_motor']]],
   ['new_5fchild',['new_child',['../classSUAVE_1_1Plugins_1_1pint_1_1compat_1_1ChainMap.html#a7eeedde1c0cba8c8db7f7f854ee11666',1,'SUAVE::Plugins::pint::compat::ChainMap']]],
   ['new_5felement',['new_element',['../classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html#ab2f9787baaa120ff1560f526463d17f2',1,'SUAVE::Input_Output::XML::Data::Data']]],
   ['new_5ffm_5fnode',['new_fm_node',['../group__Input__Output-FreeMind.html#gaf43ad7381411b769d5f77845db310576',1,'SUAVE::Input_Output::FreeMind::save']]],

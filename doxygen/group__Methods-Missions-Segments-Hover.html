@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -171,50 +171,8 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="gaf14905f3c14633f36fecc73f2b3e345b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf14905f3c14633f36fecc73f2b3e345b">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Missions.Segments.Hover.Hover.initialize_conditions </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>segment</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Hover.py. </p>
-<p>Created: Jan 2016, E. Botero Modified: </p><pre class="fragment">Sets the specified conditions which are given for the segment type.
-
-Assumptions:
-Descent segment with a constant rate.
-
-Source:
-N/A
-
-Inputs:
-segment.altitude                            [meters]
-segment.tim                                 [second]
-state.numerics.dimensionless.control_points [Unitless]
-state.conditions.frames.inertial.time       [seconds]
-
-Outputs:
-conditions.frames.inertial.velocity_vector  [meters/second]
-conditions.frames.inertial.position_vector  [meters]
-conditions.freestream.altitude              [meters]
-conditions.frames.inertial.time             [seconds]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
 <a id="gafb2a4517f4b78efbf735c71cbecf9b5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafb2a4517f4b78efbf735c71cbecf9b5a">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb2a4517f4b78efbf735c71cbecf9b5a">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,6 +202,48 @@ segment.altitude_end                                [meters]
 segment.descent_rate                                [meters/second]
 segment.state.numerics.dimensionless.control_points [Unitless]
 segment.state.conditions.frames.inertial.time       [seconds]
+
+Outputs:
+conditions.frames.inertial.velocity_vector  [meters/second]
+conditions.frames.inertial.position_vector  [meters]
+conditions.freestream.altitude              [meters]
+conditions.frames.inertial.time             [seconds]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="gaf14905f3c14633f36fecc73f2b3e345b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf14905f3c14633f36fecc73f2b3e345b">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Hover.Hover.initialize_conditions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hover.py. </p>
+<p>Created: Jan 2016, E. Botero Modified: May 2019, T. MacDonald Mar 2020, M. Clarke </p><pre class="fragment">Sets the specified conditions which are given for the segment type.
+
+Assumptions:
+Descent segment with a constant rate.
+
+Source:
+N/A
+
+Inputs:
+segment.altitude                            [meters]
+segment.tim                                 [second]
+state.numerics.dimensionless.control_points [Unitless]
+state.conditions.frames.inertial.time       [seconds]
 
 Outputs:
 conditions.frames.inertial.velocity_vector  [meters/second]

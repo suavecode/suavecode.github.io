@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0e3d5a3b41ca71612ed130bfc64fc132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ff976700d1e5f089b06bb788c7cbd1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html#a55ff976700d1e5f089b06bb788c7cbd1">current</a> (self, conditions)</td></tr>
 <tr class="separator:a55ff976700d1e5f089b06bb788c7cbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484e0b1906135ed2b6a7e24917cf6c38"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html#a484e0b1906135ed2b6a7e24917cf6c38">power_lo</a> (self, conditions)</td></tr>
+<tr class="separator:a484e0b1906135ed2b6a7e24917cf6c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -150,6 +152,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa153f6a56e0ac6c9fad72d00cb29e479"><td class="memItemLeft" align="right" valign="top"><a id="aa153f6a56e0ac6c9fad72d00cb29e479"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>motor_efficiency</b></td></tr>
 <tr class="separator:aa153f6a56e0ac6c9fad72d00cb29e479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d1722911d2c8f1e8bb7838afce54a1"><td class="memItemLeft" align="right" valign="top"><a id="ac1d1722911d2c8f1e8bb7838afce54a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rated_power</b></td></tr>
+<tr class="separator:ac1d1722911d2c8f1e8bb7838afce54a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109ea2576133b76ef826aa6beb09eeb9"><td class="memItemLeft" align="right" valign="top"><a id="a109ea2576133b76ef826aa6beb09eeb9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rated_voltage</b></td></tr>
+<tr class="separator:a109ea2576133b76ef826aa6beb09eeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component.html">SUAVE.Components.Energy.Energy_Component.Energy_Component</a></td></tr>
 <tr class="memitem:acfd2e28f6bda810670943a55b453aa25 inherit pub_attribs_classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component"><td class="memItemLeft" align="right" valign="top"><a id="acfd2e28f6bda810670943a55b453aa25"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
@@ -329,6 +337,56 @@ self.
   no_load_current                        [A]
   gear_ratio                             [-]
   speed_constant                         [radian/s/V]
+</pre> 
+</div>
+</div>
+<a id="a484e0b1906135ed2b6a7e24917cf6c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484e0b1906135ed2b6a7e24917cf6c38">&#9670;&nbsp;</a></span>power_lo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Energy.Converters.Motor_Lo_Fid.Motor_Lo_Fid.power_lo </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>conditions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Calculates the motor's power output
+    
+Assumptions: 
+    
+Source:
+N/A
+    
+Inputs: 
+self.
+   inputs.voltage         [V] 
+    
+Outputs:
+self.outputs.
+   outputs.power          [W]
+   outputs.current        [A]
+   
+Properties Used:
+self.
+
+  motor_efficiency        [-] 
+  rated_power             [W] 
+  rated_voltage           [V] 
 </pre> 
 </div>
 </div>

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -117,13 +117,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga219a67f302a34af561324cdb77799c7d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Propulsion.html#ga219a67f302a34af561324cdb77799c7d">SUAVE.Methods.Weights.Correlations.Propulsion.engine_piston.engine_piston</a> (max_power, kwt2=5.22, xwt=.780)</td></tr>
 <tr class="separator:ga219a67f302a34af561324cdb77799c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4910a296a5c344da2cae7b81c05895c1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Propulsion.html#ga4910a296a5c344da2cae7b81c05895c1">SUAVE.Methods.Weights.Correlations.Propulsion.hts_motor.hts_motor</a> (max_power)</td></tr>
-<tr class="memdesc:ga4910a296a5c344da2cae7b81c05895c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">hts_motor.py  <a href="group__Methods-Weights-Correlations-Propulsion.html#ga4910a296a5c344da2cae7b81c05895c1">More...</a><br /></td></tr>
 <tr class="separator:ga4910a296a5c344da2cae7b81c05895c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa6dd0b5a3adb2b4948101434f55a197a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Propulsion.html#gaa6dd0b5a3adb2b4948101434f55a197a">SUAVE.Methods.Weights.Correlations.Propulsion.integrated_propulsion.integrated_propulsion</a> (engine_jet, num_eng, engine_wt_factor=1.6)</td></tr>
 <tr class="memdesc:gaa6dd0b5a3adb2b4948101434f55a197a"><td class="mdescLeft">&#160;</td><td class="mdescRight">integrated_propulsion.py  <a href="group__Methods-Weights-Correlations-Propulsion.html#gaa6dd0b5a3adb2b4948101434f55a197a">More...</a><br /></td></tr>
 <tr class="separator:gaa6dd0b5a3adb2b4948101434f55a197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec6d717c50436eda2cf455782f446a9f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Propulsion.html#gaec6d717c50436eda2cf455782f446a9f">SUAVE.Methods.Weights.Correlations.Propulsion.integrated_propulsion_general_aviation.integrated_propulsion_general_aviation</a> (engine_piston, num_eng, engine_wt_factor=2.575, engine_wt_exp=.922)</td></tr>
 <tr class="separator:gaec6d717c50436eda2cf455782f446a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfa3e8be417d0f1bd08a7c9e52c8aa60"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Propulsion.html#gacfa3e8be417d0f1bd08a7c9e52c8aa60">SUAVE.Methods.Weights.Correlations.Propulsion.nasa_motor.nasa_motor</a> (torque, kwt2=.3928, xwt=.8587)</td></tr>
+<tr class="separator:gacfa3e8be417d0f1bd08a7c9e52c8aa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Contains some methods for calculating different propulsion system weights. </p>
@@ -176,7 +177,7 @@ Inputs:
         xwt
         
 Outputs:
-        weight- weight of the motor                                [kilograms]
+        mass- weight of the motor                                [kilograms]
     
 Properties Used:
         N/A
@@ -277,16 +278,14 @@ Properties Used:
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>hts_motor.py </p>
-<p>Created: Jan 2014, M. Vegh, Modified: Feb 2014, A. Wendorff Feb 2016, E. Botero </p><pre class="fragment">Calculate the weight of a high temperature superconducting motor
+<pre class="fragment">Calculate the weight of a high temperature superconducting motor
 
    Assumptions:
        calculated from fit of commercial available motors
        
    Source: [10] Snyder, C., Berton, J., Brown, G. et all
        'Propulsion Investigation for Zero and Near-Zero Emissions Aircraft,' NASA STI Program,
-       NASA Glenn,  2009.012
+       NASA Glenn,  2009.012. page 12
        
    Inputs:
        max_power- maximum power the motor can deliver safely   [Watts]
@@ -405,6 +404,59 @@ Properties Used:
     
     Outputs:
             weight - weight of the full propulsion system [kilograms]</pre> 
+</div>
+</div>
+<a id="gacfa3e8be417d0f1bd08a7c9e52c8aa60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacfa3e8be417d0f1bd08a7c9e52c8aa60">&#9670;&nbsp;</a></span>nasa_motor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Weights.Correlations.Propulsion.nasa_motor.nasa_motor </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>torque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>kwt2</em> = <code>.3928</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xwt</em> = <code>.8587</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Calculate the weight of an air-cooled motor    
+weight correlation; weight=kwt2*(max_power**xwt)
+    
+Assumptions:
+        calculated from fit of high power-to-weight motors
+        
+Source: NDARC Theory Manual, Page 213
+https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20170011656.pdf
+
+Inputs:
+        torque- maximum torque the motor can deliver safely      [N-m]
+        kwt2
+        xwt
+        
+Outputs:
+        mass- mass of the motor                                [kilograms]
+    
+Properties Used:
+        N/A
+</pre> 
 </div>
 </div>
 </div><!-- contents -->

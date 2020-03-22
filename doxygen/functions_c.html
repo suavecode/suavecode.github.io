@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -107,6 +107,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>calculate_correction()
 : <a class="el" href="classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#a8acaabb3bd8cb0d67d6d33dd69f4cb2f">SUAVE.Optimization.Package_Setups.TRMM.Trust_Region_Optimization.Trust_Region_Optimization</a>
 </li>
+<li>calculate_power()
+: <a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Generator__Zero__Fid_1_1Generator__Zero__Fid.html#a0e4ec1949824115c13e6ba0606b53d47">SUAVE.Components.Energy.Converters.Generator_Zero_Fid.Generator_Zero_Fid</a>
+</li>
 <li>characters()
 : <a class="el" href="classSUAVE_1_1Input__Output_1_1XML_1_1load_1_1TreeBuilder.html#afffaa835c4ac61a90c652c2a098442dd">SUAVE.Input_Output.XML.load.TreeBuilder</a>
 </li>
@@ -137,17 +140,17 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html#a74c47863b401000230e9de230cadb38f">SUAVE.Components.Energy.Converters.Turbine.Turbine</a>
 , <a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Processes_1_1Rocket__Thrust_1_1Rocket__Thrust.html#aded48da4e8bf71672758c413c7cd51a8">SUAVE.Components.Energy.Processes.Rocket_Thrust.Rocket_Thrust</a>
 , <a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Processes_1_1Thrust_1_1Thrust.html#a65285d08cd9bf97245c4b0933e23b9d2">SUAVE.Components.Energy.Processes.Thrust.Thrust</a>
+, <a class="el" href="classSUAVE_1_1Methods_1_1Aerodynamics_1_1Supersonic__Zero_1_1Drag_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender.html#aeb32772385d70b536506f803147dc5c2">SUAVE.Methods.Aerodynamics.Supersonic_Zero.Drag.Cubic_Spline_Blender.Cubic_Spline_Blender</a>
+, <a class="el" href="classSUAVE_1_1Methods_1_1Utilities_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender.html#aa80ca48b142c80fe3d791547f6dce500">SUAVE.Methods.Utilities.Cubic_Spline_Blender.Cubic_Spline_Blender</a>
 , <a class="el" href="classSUAVE_1_1Surrogate_1_1Surrogate__Problem_1_1Surrogate__Problem.html#ae2f195b54e2c25ed08009ba54272ecfa">SUAVE.Surrogate.Surrogate_Problem.Surrogate_Problem</a>
 </li>
 <li>compute_absolute_viscosity()
 : <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Air_1_1Air.html#a01a524cdc8c8032501ff41f2a2679407">SUAVE.Attributes.Gases.Air.Air</a>
 , <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#a617bf03d6569307125d9188411ff961c">SUAVE.Attributes.Gases.Steam.Steam</a>
-, <a class="el" href="classSUAVE_1_1Attributes_1_1Liquids_1_1Water_1_1Water.html#afed25d8331b81ad9da36630f1c9ce0d8">SUAVE.Attributes.Liquids.Water.Water</a>
 </li>
 <li>compute_cp()
 : <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Air_1_1Air.html#af2049f5193f71254180aa25263b253a9">SUAVE.Attributes.Gases.Air.Air</a>
 , <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#a6d54b52a4fef07da7ad816a87220f6ec">SUAVE.Attributes.Gases.Steam.Steam</a>
-, <a class="el" href="classSUAVE_1_1Attributes_1_1Liquids_1_1Water_1_1Water.html#a2f39eb3e6e84ed4134aa572bccb21261">SUAVE.Attributes.Liquids.Water.Water</a>
 </li>
 <li>compute_cv()
 : <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#ab8cf99ffa6a286f6004342fe26f2c930">SUAVE.Attributes.Gases.Steam.Steam</a>
@@ -155,9 +158,6 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>compute_density()
 : <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Air_1_1Air.html#a7e7724b5a0f3b55f1d22207de5eb95c3">SUAVE.Attributes.Gases.Air.Air</a>
 , <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#acc6343cdaff57cd4beb66d049443772f">SUAVE.Attributes.Gases.Steam.Steam</a>
-</li>
-<li>compute_forces()
-: <a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html#a6702f0aabc084054884871464a89261b">SUAVE.Analyses.Aerodynamics.Aerodynamics.Aerodynamics</a>
 </li>
 <li>compute_gamma()
 : <a class="el" href="classSUAVE_1_1Attributes_1_1Gases_1_1Air_1_1Air.html#a30b8f6bcf3ad36115e67d482ec406602">SUAVE.Attributes.Gases.Air.Air</a>

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -124,6 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af941ec8976ff2b39156a3e3ceb25f1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ab86d7bab611ffdc596a6c65dc86c2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#ad9ab86d7bab611ffdc596a6c65dc86c2">omega</a> (self, conditions)</td></tr>
 <tr class="separator:ad9ab86d7bab611ffdc596a6c65dc86c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9aefb10ee059b66793dff9bb6a5712"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a1e9aefb10ee059b66793dff9bb6a5712">torque</a> (self, conditions)</td></tr>
+<tr class="separator:a1e9aefb10ee059b66793dff9bb6a5712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1e0e7b0011c6a14ac0897820fc4cb8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a8c1e0e7b0011c6a14ac0897820fc4cb8">voltage_current</a> (self, conditions)</td></tr>
+<tr class="separator:a8c1e0e7b0011c6a14ac0897820fc4cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f50c2270b78bede450b3e9db6c195f3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a4f50c2270b78bede450b3e9db6c195f3">current</a> (self, conditions)</td></tr>
 <tr class="separator:a4f50c2270b78bede450b3e9db6c195f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -153,6 +157,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4f7b6aa5b6e6bb31cfec03cbcf5aad35"><td class="memItemLeft" align="right" valign="top"><a id="a4f7b6aa5b6e6bb31cfec03cbcf5aad35"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>expected_current</b></td></tr>
 <tr class="separator:a4f7b6aa5b6e6bb31cfec03cbcf5aad35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e905af25b21f3134d10fc7e925913b3"><td class="memItemLeft" align="right" valign="top"><a id="a3e905af25b21f3134d10fc7e925913b3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>interpolated_func</b></td></tr>
+<tr class="separator:a3e905af25b21f3134d10fc7e925913b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component.html">SUAVE.Components.Energy.Energy_Component.Energy_Component</a></td></tr>
 <tr class="memitem:acfd2e28f6bda810670943a55b453aa25 inherit pub_attribs_classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component"><td class="memItemLeft" align="right" valign="top"><a id="acfd2e28f6bda810670943a55b453aa25"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
@@ -254,7 +261,6 @@ None
 <pre class="fragment">Calculates the motor's current
 
 Assumptions:
-Cp (power coefficient) is constant
 
 Source:
 N/A
@@ -265,8 +271,7 @@ self.inputs.voltage    [V]
 Outputs:
 self.outputs.current   [A]
 conditions.
-  propulsion.etam      [-]
-i                      [A]
+  propulsion.etam      [-] 
 
 Properties Used:
 self.
@@ -334,6 +339,109 @@ self.
   gear_ratio                             [-]
   speed_constant                         [radian/s/V]
   propeller_radius                       [m]
+</pre> 
+</div>
+</div>
+<a id="a1e9aefb10ee059b66793dff9bb6a5712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9aefb10ee059b66793dff9bb6a5712">&#9670;&nbsp;</a></span>torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Energy.Converters.Motor.Motor.torque </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>conditions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Calculates the motor's torque
+
+Assumptions:
+
+Source:
+N/A
+
+Inputs:
+
+Outputs:
+self.outputs.torque    [N-m] 
+
+Properties Used:
+self.
+  gear_ratio           [-]
+  speed_constant       [radian/s/V]
+  resistance           [ohm]
+  outputs.omega        [radian/s]
+  gearbox_efficiency   [-]
+  expected_current     [A]
+  no_load_current      [A]
+  inputs.volage        [V]
+</pre> 
+</div>
+</div>
+<a id="a8c1e0e7b0011c6a14ac0897820fc4cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1e0e7b0011c6a14ac0897820fc4cb8">&#9670;&nbsp;</a></span>voltage_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Energy.Converters.Motor.Motor.voltage_current </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>conditions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Calculates the motor's voltage and current
+
+Assumptions:
+
+Source:
+N/A
+
+Inputs:
+
+Outputs:
+self.outputs.current   [A]
+conditions.
+  propulsion.volage    [V]
+conditions.
+  propulsion.etam      [-] 
+
+Properties Used:
+self.
+  gear_ratio           [-]
+  speed_constant       [radian/s/V]
+  resistance           [ohm]
+  outputs.omega        [radian/s]
+  gearbox_efficiency   [-]
+  expected_current     [A]
+  no_load_current      [A]
 </pre> 
 </div>
 </div>
