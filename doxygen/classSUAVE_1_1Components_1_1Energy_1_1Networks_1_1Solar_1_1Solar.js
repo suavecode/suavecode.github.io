@@ -16,5 +16,5 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar =
     [ "solar_flux", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ad9c27f16e7457864328b37d4111abda0", null ],
     [ "solar_logic", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a70294c7d2ddd2f3b719e7777e9845d6b", null ],
     [ "solar_panel", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#af1a064708a49ca2d7bb64912724e69b2", null ],
-    [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a28f5aacd5ba78c3de21f5af4f4808f9b", null ]
+    [ "use_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ac34ffb60cd093e18d6309e402937af34", null ]
 ];

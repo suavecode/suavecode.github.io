@@ -4,7 +4,7 @@ var group__Analyses_Stability =
       [ "__call__", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#ae7f5a136d4f914773b415c5c017b176d", null ],
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a9f37075e2a9c2fbc72f7cd566644e76f", null ],
       [ "build_surrogate", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a5347926425ec1203182205229dc97d64", null ],
-      [ "evaluate_conditions", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a657bb443e967af278f6c71dd9984e51f", null ],
+      [ "evaluate_conditions", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#acb082048b7b042c5d9e94907df4ed41c", null ],
       [ "finalize", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#af45ebff1bbb70f893a8acf375a3bf22b", null ],
       [ "sample_training", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a562e6b7c59034a322413caecdaf20a0b", null ],
       [ "configuration", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a8eea7bc16140884d265413b200d0b8d4", null ],
@@ -12,8 +12,8 @@ var group__Analyses_Stability =
       [ "geometry", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a986baf42d99f5aceecd129b0e96dfeef", null ],
       [ "keep_files", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#afa2cccd337ca32296250e3a064452d2e", null ],
       [ "regression_flag", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#ad5d2e9deaab9a701dc9d2f507a1a6aad", null ],
+      [ "save_regression_results", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a8ad0f326ce4bd4fcbd2c5951ca881de5", null ],
       [ "settings", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a7166eeacc3407b0cf419bd38540d2bce", null ],
-      [ "stability_model", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a5df82e27a841c273c87e0ad921e694e0", null ],
       [ "surrogates", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a0531b41b4becb72563a55c5a1a512064", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#acb0b333f0664e897af228b7636682b7b", null ],
       [ "training", "classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a93ec6a80598d06260202387cdc472a85", null ],
@@ -24,8 +24,7 @@ var group__Analyses_Stability =
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Stability_1_1Fidelity__Zero_1_1Fidelity__Zero.html#abf23a7cc154b9b9cf5f7a54b2e7d746d", null ],
       [ "finalize", "classSUAVE_1_1Analyses_1_1Stability_1_1Fidelity__Zero_1_1Fidelity__Zero.html#a8aca95c7e34ed2d1edffd84bd1c666e0", null ],
       [ "configuration", "classSUAVE_1_1Analyses_1_1Stability_1_1Fidelity__Zero_1_1Fidelity__Zero.html#abe2bec1edafc16f467d0820d9be8c7bd", null ],
-      [ "geometry", "classSUAVE_1_1Analyses_1_1Stability_1_1Fidelity__Zero_1_1Fidelity__Zero.html#a12aff85dcdb231a271e89e02070b17c7", null ],
-      [ "stability_model", "classSUAVE_1_1Analyses_1_1Stability_1_1Fidelity__Zero_1_1Fidelity__Zero.html#afe4778c57eb22a50bc9b2011534dfc06", null ]
+      [ "geometry", "classSUAVE_1_1Analyses_1_1Stability_1_1Fidelity__Zero_1_1Fidelity__Zero.html#a12aff85dcdb231a271e89e02070b17c7", null ]
     ] ],
     [ "Stability", "classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability.html#ad9415b49f7e7abbf438c580408d04fd6", null ],

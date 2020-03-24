@@ -27,9 +27,6 @@ var annotated_dup =
           [ "Process_Geometry", null, [
             [ "Process_Geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Process__Geometry_1_1Process__Geometry.html", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Process__Geometry_1_1Process__Geometry" ]
           ] ],
-          [ "Results", null, [
-            [ "Results", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results" ]
-          ] ],
           [ "SU2_Euler", null, [
             [ "SU2_Euler", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1SU2__Euler_1_1SU2__Euler.html", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1SU2__Euler_1_1SU2__Euler" ]
           ] ],
@@ -75,16 +72,6 @@ var annotated_dup =
         [ "Energy", null, [
           [ "Energy", null, [
             [ "Energy", "classSUAVE_1_1Analyses_1_1Energy_1_1Energy_1_1Energy.html", "classSUAVE_1_1Analyses_1_1Energy_1_1Energy_1_1Energy" ]
-          ] ]
-        ] ],
-        [ "Geometry", null, [
-          [ "Geometry", null, [
-            [ "Geometry", "classSUAVE_1_1Analyses_1_1Geometry_1_1Geometry_1_1Geometry.html", "classSUAVE_1_1Analyses_1_1Geometry_1_1Geometry_1_1Geometry" ]
-          ] ]
-        ] ],
-        [ "Loads", null, [
-          [ "Loads", null, [
-            [ "Loads", "classSUAVE_1_1Analyses_1_1Loads_1_1Loads_1_1Loads.html", "classSUAVE_1_1Analyses_1_1Loads_1_1Loads_1_1Loads" ]
           ] ]
         ] ],
         [ "Mission", null, [
@@ -255,6 +242,17 @@ var annotated_dup =
               [ "Set_Speed_Set_Throttle", null, [
                 [ "Set_Speed_Set_Throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle" ]
               ] ]
+            ] ],
+            [ "Transition", null, [
+              [ "Constant_Acceleration_Constant_Angle_Linear_Climb", null, [
+                [ "Constant_Acceleration_Constant_Angle_Linear_Climb", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15" ]
+              ] ],
+              [ "Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", null, [
+                [ "Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506" ]
+              ] ],
+              [ "Lift_Cruise_Optimized", null, [
+                [ "Lift_Cruise_Optimized", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Lift__Cruise__Optimized_1_1Lift__Cruise__Optimized.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Lift__Cruise__Optimized_1_1Lift__Cruise__Optimized" ]
+              ] ]
             ] ]
           ] ],
           [ "Sequential_Segments", null, [
@@ -301,14 +299,6 @@ var annotated_dup =
             [ "Stability", "classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability.html", "classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability" ]
           ] ]
         ] ],
-        [ "Structures", null, [
-          [ "Structures", null, [
-            [ "Structures", "classSUAVE_1_1Analyses_1_1Structures_1_1Structures_1_1Structures.html", "classSUAVE_1_1Analyses_1_1Structures_1_1Structures_1_1Structures" ]
-          ] ]
-        ] ],
-        [ "Surrogate", null, [
-          [ "Surrogate", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate.html", "classSUAVE_1_1Analyses_1_1Surrogate_1_1Surrogate" ]
-        ] ],
         [ "Vehicle", null, [
           [ "Vehicle", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle.html", "classSUAVE_1_1Analyses_1_1Vehicle_1_1Vehicle" ]
         ] ],
@@ -319,14 +309,14 @@ var annotated_dup =
           [ "Weights_BWB", null, [
             [ "Weights_BWB", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB" ]
           ] ],
-          [ "Weights_Electric_Helicopter", null, [
-            [ "Weights_Electric_Helicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Helicopter_1_1Weights__Electric__Helicopter" ]
+          [ "Weights_Electric_Lift_Cruise", null, [
+            [ "Weights_Electric_Lift_Cruise", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise" ]
           ] ],
-          [ "Weights_Electric_Stopped_Rotor", null, [
-            [ "Weights_Electric_Stopped_Rotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Stopped__Rotor_1_1Weights__Electric__Stopped__Rotor" ]
+          [ "Weights_Electric_Multicopter", null, [
+            [ "Weights_Electric_Multicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter" ]
           ] ],
-          [ "Weights_Electric_Tiltrotor", null, [
-            [ "Weights_Electric_Tiltrotor", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Tiltrotor_1_1Weights__Electric__Tiltrotor" ]
+          [ "Weights_Electric_Vectored_Thrust", null, [
+            [ "Weights_Electric_Vectored_Thrust", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust" ]
           ] ],
           [ "Weights_Tube_Wing", null, [
             [ "Weights_Tube_Wing", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing" ]
@@ -340,9 +330,6 @@ var annotated_dup =
         [ "Airports", null, [
           [ "Airport", null, [
             [ "Airport", "classSUAVE_1_1Attributes_1_1Airports_1_1Airport_1_1Airport.html", "classSUAVE_1_1Attributes_1_1Airports_1_1Airport_1_1Airport" ]
-          ] ],
-          [ "Runway", null, [
-            [ "Runway", "classSUAVE_1_1Attributes_1_1Airports_1_1Runway_1_1Runway.html", "classSUAVE_1_1Attributes_1_1Airports_1_1Runway_1_1Runway" ]
           ] ]
         ] ],
         [ "Atmospheres", null, [
@@ -380,20 +367,9 @@ var annotated_dup =
             [ "Steam", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam" ]
           ] ]
         ] ],
-        [ "Liquids", null, [
-          [ "Liquid", null, [
-            [ "Liquid", "classSUAVE_1_1Attributes_1_1Liquids_1_1Liquid_1_1Liquid.html", "classSUAVE_1_1Attributes_1_1Liquids_1_1Liquid_1_1Liquid" ]
-          ] ],
-          [ "Water", null, [
-            [ "Water", "classSUAVE_1_1Attributes_1_1Liquids_1_1Water_1_1Water.html", "classSUAVE_1_1Attributes_1_1Liquids_1_1Water_1_1Water" ]
-          ] ]
-        ] ],
         [ "Planets", null, [
           [ "Earth", null, [
             [ "Earth", "classSUAVE_1_1Attributes_1_1Planets_1_1Earth_1_1Earth.html", "classSUAVE_1_1Attributes_1_1Planets_1_1Earth_1_1Earth" ]
-          ] ],
-          [ "Mars", null, [
-            [ "Mars", "classSUAVE_1_1Attributes_1_1Planets_1_1Mars_1_1Mars.html", "classSUAVE_1_1Attributes_1_1Planets_1_1Mars_1_1Mars" ]
           ] ],
           [ "Planet", null, [
             [ "Planet", "classSUAVE_1_1Attributes_1_1Planets_1_1Planet_1_1Planet.html", "classSUAVE_1_1Attributes_1_1Planets_1_1Planet_1_1Planet" ]
@@ -509,6 +485,12 @@ var annotated_dup =
             [ "Gearbox", null, [
               [ "Gearbox", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Gearbox_1_1Gearbox.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Gearbox_1_1Gearbox" ]
             ] ],
+            [ "Generator_Zero_Fid", null, [
+              [ "Generator_Zero_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Generator__Zero__Fid_1_1Generator__Zero__Fid.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Generator__Zero__Fid_1_1Generator__Zero__Fid" ]
+            ] ],
+            [ "Internal_Combustion_Engine", null, [
+              [ "Internal_Combustion_Engine", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine" ]
+            ] ],
             [ "Motor", null, [
               [ "Motor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor" ]
             ] ],
@@ -526,6 +508,9 @@ var annotated_dup =
             ] ],
             [ "Rocket_Combustor", null, [
               [ "Rocket_Combustor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rocket__Combustor_1_1Rocket__Combustor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rocket__Combustor_1_1Rocket__Combustor" ]
+            ] ],
+            [ "Rotor", null, [
+              [ "Rotor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor" ]
             ] ],
             [ "Shaft_Power_Off_Take", null, [
               [ "Shaft_Power_Off_Take", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Shaft__Power__Off__Take_1_1Shaft__Power__Off__Take.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Shaft__Power__Off__Take_1_1Shaft__Power__Off__Take" ]
@@ -567,8 +552,11 @@ var annotated_dup =
             [ "Ducted_Fan", null, [
               [ "Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan" ]
             ] ],
-            [ "Lift_Forward_Propulsor", null, [
-              [ "Lift_Forward_Propulsor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Forward__Propulsor_1_1Lift__Forward__Propulsor" ]
+            [ "Internal_Combustion_Propeller", null, [
+              [ "Internal_Combustion_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller_1_1Internal__Combustion__Propeller.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller_1_1Internal__Combustion__Propeller" ]
+            ] ],
+            [ "Lift_Cruise", null, [
+              [ "Lift_Cruise", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise" ]
             ] ],
             [ "Liquid_Rocket", null, [
               [ "Liquid_Rocket", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket" ]
@@ -582,6 +570,9 @@ var annotated_dup =
             [ "Scramjet", null, [
               [ "Scramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Scramjet_1_1Scramjet.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Scramjet_1_1Scramjet" ]
             ] ],
+            [ "Serial_Hybrid_Ducted_Fan", null, [
+              [ "Serial_Hybrid_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Serial__Hybrid__Ducted__Fan_1_1Serial__Hybrid__Ducted__Fan.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Serial__Hybrid__Ducted__Fan_1_1Serial__Hybrid__Ducted__Fan" ]
+            ] ],
             [ "Solar", null, [
               [ "Solar", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar" ]
             ] ],
@@ -593,6 +584,9 @@ var annotated_dup =
             ] ],
             [ "Turbojet_Super", null, [
               [ "Turbojet_Super", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super" ]
+            ] ],
+            [ "Vectored_Thrust", null, [
+              [ "Vectored_Thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust" ]
             ] ]
           ] ],
           [ "Peripherals", null, [
@@ -678,18 +672,9 @@ var annotated_dup =
           [ "Mass_Properties", "classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties.html", "classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties" ]
         ] ],
         [ "Payloads", null, [
-          [ "Cargo", null, [
-            [ "Cargo", "classSUAVE_1_1Components_1_1Payloads_1_1Cargo_1_1Cargo.html", "classSUAVE_1_1Components_1_1Payloads_1_1Cargo_1_1Cargo" ]
-          ] ],
           [ "Payload", null, [
             [ "Container", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Container.html", null ],
             [ "Payload", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload.html", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload" ]
-          ] ],
-          [ "Person", null, [
-            [ "Person", "classSUAVE_1_1Components_1_1Payloads_1_1Person_1_1Person.html", "classSUAVE_1_1Components_1_1Payloads_1_1Person_1_1Person" ]
-          ] ],
-          [ "Satellite", null, [
-            [ "Satellite", "classSUAVE_1_1Components_1_1Payloads_1_1Satellite_1_1Satellite.html", "classSUAVE_1_1Components_1_1Payloads_1_1Satellite_1_1Satellite" ]
           ] ]
         ] ],
         [ "Physical_Component", null, [
@@ -713,9 +698,25 @@ var annotated_dup =
               [ "Airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil.html", "classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil" ]
             ] ]
           ] ],
-          [ "Control_Surface", null, [
-            [ "Control_Surface", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface" ],
-            [ "Control_Surface_Section", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surface_1_1Control__Surface__Section" ]
+          [ "Control_Surfaces", null, [
+            [ "Aileron", null, [
+              [ "Aileron", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Aileron_1_1Aileron.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Aileron_1_1Aileron" ]
+            ] ],
+            [ "Control_Surface", null, [
+              [ "Control_Surface", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface" ]
+            ] ],
+            [ "Elevator", null, [
+              [ "Elevator", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Elevator_1_1Elevator.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Elevator_1_1Elevator" ]
+            ] ],
+            [ "Flap", null, [
+              [ "Flap", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Flap_1_1Flap.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Flap_1_1Flap" ]
+            ] ],
+            [ "Rudder", null, [
+              [ "Rudder", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Rudder_1_1Rudder.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Rudder_1_1Rudder" ]
+            ] ],
+            [ "Slat", null, [
+              [ "Slat", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Slat_1_1Slat.html", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Slat_1_1Slat" ]
+            ] ]
           ] ],
           [ "Horizontal_Tail", null, [
             [ "Horizontal_Tail", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail.html", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail" ]
@@ -795,15 +796,28 @@ var annotated_dup =
                 [ "Inputs", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Inputs_1_1Inputs.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Inputs_1_1Inputs" ]
               ] ],
               [ "Settings", null, [
-                [ "AVL_Discretization_Settings", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1AVL__Discretization__Settings" ],
                 [ "Settings", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings" ]
               ] ],
               [ "Wing", null, [
                 [ "Control_Surface", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface" ],
+                [ "Control_Surface_Data", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Data.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Data" ],
+                [ "Control_Surface_Results", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Results.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Results" ],
                 [ "Section", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section" ],
                 [ "Wing", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing" ]
               ] ]
             ] ]
+          ] ],
+          [ "Supersonic_Zero", null, [
+            [ "Drag", null, [
+              [ "Cubic_Spline_Blender", null, [
+                [ "Cubic_Spline_Blender", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1Supersonic__Zero_1_1Drag_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1Supersonic__Zero_1_1Drag_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender" ]
+              ] ]
+            ] ]
+          ] ]
+        ] ],
+        [ "Utilities", null, [
+          [ "Cubic_Spline_Blender", null, [
+            [ "Cubic_Spline_Blender", "classSUAVE_1_1Methods_1_1Utilities_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender.html", "classSUAVE_1_1Methods_1_1Utilities_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender" ]
           ] ]
         ] ]
       ] ],
@@ -812,6 +826,9 @@ var annotated_dup =
           [ "Nexus", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus" ]
         ] ],
         [ "Package_Setups", null, [
+          [ "additive_setup", null, [
+            [ "Additive_Solver", "classSUAVE_1_1Optimization_1_1Package__Setups_1_1additive__setup_1_1Additive__Solver.html", "classSUAVE_1_1Optimization_1_1Package__Setups_1_1additive__setup_1_1Additive__Solver" ]
+          ] ],
           [ "TRMM", null, [
             [ "Trust_Region", null, [
               [ "Trust_Region", "classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region_1_1Trust__Region.html", "classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region_1_1Trust__Region" ]

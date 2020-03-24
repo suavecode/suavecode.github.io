@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -124,8 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a41444575f97d7ce4a60ab05e25d4c39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac182b46b7d513c7745520f5421cc4cd4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#ac182b46b7d513c7745520f5421cc4cd4">evaluate_model</a> (self, problem, x, der_flag=True)</td></tr>
 <tr class="separator:ac182b46b7d513c7745520f5421cc4cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4714077a34faa3add6305b6aa14bd62c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#a4714077a34faa3add6305b6aa14bd62c">evaluate_corrected_model</a> (self, x, problem=None, corrections=None, tr=None)</td></tr>
-<tr class="separator:a4714077a34faa3add6305b6aa14bd62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe6735c35a588f86fd7326acd12ebaa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#a8fe6735c35a588f86fd7326acd12ebaa">evaluate_corrected_model</a> (self, x, problem=None, corrections=None, tr=None, return_cons=False)</td></tr>
+<tr class="separator:a8fe6735c35a588f86fd7326acd12ebaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba95060955b293232cd7215397584c4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#acba95060955b293232cd7215397584c4">evaluate_constraints</a> (self, x, problem=None, corrections=None, tr=None, lb=None, ub=None)</td></tr>
 <tr class="separator:acba95060955b293232cd7215397584c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae762fcbbe9ff61309c645680cf7ac24b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#ae762fcbbe9ff61309c645680cf7ac24b">calculate_constraint_violation</a> (self, gval, lb, ub)</td></tr>
@@ -138,6 +138,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a17eb1c88e9ccfafe1062a9fb44316ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b053bf1bf439b9e0a7c152b8b1b7faf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#a8b053bf1bf439b9e0a7c152b8b1b7faf">update_tr_size</a> (self, rho, tr, accepted)</td></tr>
 <tr class="separator:a8b053bf1bf439b9e0a7c152b8b1b7faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af674f5240a676b1ce0b7bfd06458ff31"><td class="memItemLeft" align="right" valign="top"><a id="af674f5240a676b1ce0b7bfd06458ff31"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_SLSQP_constraints</b> (self, con, problem, corrections, tr)</td></tr>
+<tr class="separator:af674f5240a676b1ce0b7bfd06458ff31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01877d2aec26bbe67846e72c0fcd2d1b"><td class="memItemLeft" align="right" valign="top"><a id="a01877d2aec26bbe67846e72c0fcd2d1b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>unpack_constraints_slsqp</b> (self, x, con_ind, sign, edge, problem, corrections, tr)</td></tr>
+<tr class="separator:a01877d2aec26bbe67846e72c0fcd2d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSUAVE_1_1Core_1_1Data_1_1Data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSUAVE_1_1Core_1_1Data_1_1Data')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSUAVE_1_1Core_1_1Data_1_1Data.html">SUAVE.Core.Data.Data</a></td></tr>
 <tr class="memitem:a3a9e65571555260186c6ae54cfeeea3c inherit pub_methods_classSUAVE_1_1Core_1_1Data_1_1Data"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1Data_1_1Data.html#a3a9e65571555260186c6ae54cfeeea3c">__getattribute__</a> (self, k)</td></tr>
 <tr class="separator:a3a9e65571555260186c6ae54cfeeea3c inherit pub_methods_classSUAVE_1_1Core_1_1Data_1_1Data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -563,8 +569,8 @@ self.calculate_constraint_violation(..)
 </pre> 
 </div>
 </div>
-<a id="a4714077a34faa3add6305b6aa14bd62c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4714077a34faa3add6305b6aa14bd62c">&#9670;&nbsp;</a></span>evaluate_corrected_model()</h2>
+<a id="a8fe6735c35a588f86fd7326acd12ebaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe6735c35a588f86fd7326acd12ebaa">&#9670;&nbsp;</a></span>evaluate_corrected_model()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -597,7 +603,13 @@ self.calculate_constraint_violation(..)
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>tr</em> = <code>None</code>&#160;</td>
+          <td class="paramname"><em>tr</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>return_cons</em> = <code>False</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -8,7 +8,6 @@ var searchData=
   ['make_5fbnds',['make_bnds',['../group__Methods-Missions-Segments.html#gaeecd675d5c13fdca781220883cabcb4e',1,'SUAVE::Methods::Missions::Segments::optimize']]],
   ['make_5fstructure',['make_structure',['../group__Optimization-Package__Setups.html#gaea0f7002ef7f26f7ace5bc50bf7b869b',1,'SUAVE::Optimization::Package_Setups::ipopt_setup']]],
   ['markup',['Markup',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Markup_1_1Markup.html',1,'SUAVE::Analyses::Aerodynamics::Markup']]],
-  ['mars',['Mars',['../classSUAVE_1_1Attributes_1_1Planets_1_1Mars_1_1Mars.html',1,'SUAVE::Attributes::Planets::Mars']]],
   ['mass_5fproperties',['Mass_Properties',['../classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties.html',1,'SUAVE::Components::Mass_Properties']]],
   ['measurement',['Measurement',['../classSUAVE_1_1Plugins_1_1pint_1_1measurement_1_1Measurement.html',1,'SUAVE::Plugins::pint::measurement']]],
   ['merge_5fsub_5fsegment_5fstates',['merge_sub_segment_states',['../group__Methods-Missions-Segments-Common.html#ga977b59a06b3c24da4465eaf408b46568',1,'SUAVE::Methods::Missions::Segments::Common::Sub_Segments']]],

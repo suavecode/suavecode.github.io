@@ -53,8 +53,10 @@ table, th, td {
 }
 
 .highlight_code {
+font-family: monospace;
 background-color: #eeeefe;
-background-image: none
+background-image: none;
+
 /*linear-gradient(to right, #ffe359 0%, #fff2ac 100%);*/
 }
 

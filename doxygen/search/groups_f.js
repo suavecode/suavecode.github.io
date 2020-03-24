@@ -4,7 +4,6 @@ var searchData=
   ['single_5fpoint',['Single_Point',['../group__Analyses-Mission-Segments-Single__Point.html',1,'']]],
   ['sizing',['Sizing',['../group__Analyses-Sizing.html',1,'']]],
   ['stability',['Stability',['../group__Analyses-Stability.html',1,'']]],
-  ['structures',['Structures',['../group__Analyses-Structures.html',1,'']]],
   ['solids',['Solids',['../group__Attributes-Solids.html',1,'']]],
   ['storages',['Storages',['../group__Components-Energy-Storages.html',1,'']]],
   ['systems',['Systems',['../group__Components-Systems.html',1,'']]],

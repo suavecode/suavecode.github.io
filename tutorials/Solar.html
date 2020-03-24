@@ -100,7 +100,7 @@
 <p>For a solar UAV, the starting location as well as the day and time are critical. So the first segment must be modified to include this information. It is important to note that the start times provided are in “Zulu” time or Greenwich Mean Time. This is typical for aircraft navigation to prevent time zone errors and ambiguity.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre><code>segment.state.numerics.number_control_points = 64
-segment.start_time                           = time.strptime("Tue, Jun 21 11:30:00  2015", "%a, %b %d %H:%M:%S %Y",)
+segment.start_time                           = time.strptime("Tue, Jun 21 11:30:00  2020", "%a, %b %d %H:%M:%S %Y",)
 segment.altitude                             = 15.0  * Units.km 
 segment.mach                                 = 0.12
 segment.distance                             = 3050.0 * Units.km
@@ -153,37 +153,37 @@ net.battery              = bat
 <p>To setup the propeller we will actually design an optimized propeller. This is done through the methods provided by Adkins and Liebeck. The attributes of the propeller design are then seeded to the motor and network to accelerate convergence of the propeller and motor models.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre><code>prop_attributes = Data()
-prop_attributes.number_blades       = 2.0
-prop_attributes.freestream_velocity = 40.0 # freestream m/s
-prop_attributes.angular_velocity    = 150. * Units['rpm']
-prop_attributes.tip_radius          = 4.25
-prop_attributes.hub_radius          = 0.05
-prop_attributes.design_Cl           = 0.7
-prop_attributes.design_altitude     = 14.0 * Units.km
-prop_attributes.design_thrust       = 0.0
-prop_attributes.design_power        = 3500.0
-prop_attributes                     = propeller_design(prop_attributes)
-
 prop = SUAVE.Components.Energy.Converters.Propeller()
-prop.prop_attributes = prop_attributes
-net.propeller        = prop
+prop.number_blades       = 2.0
+prop.freestream_velocity = 40.0 * Units['m/s']# freestream
+prop.angular_velocity    = 150. * Units['rpm']
+prop.tip_radius          = 4.25 * Units.meters
+prop.hub_radius          = 0.05 * Units.meters
+prop.design_Cl           = 0.7
+prop.design_altitude     = 14.0 * Units.km
+prop.design_thrust       = None
+prop.design_power        = 3500.0 * Units.watts
+prop                     = propeller_design(prop)
+
+net.propeller            = prop
 </code></pre></div></div>
 
 <h3 id="motor">Motor</h3>
 
 <p>This motor model relies on data that is generally available from motor manufacturers. This includes the resistance, no load current, and the speed constant. Additionally, any gearbox is specified here and basic information about the propeller is entered here to help inform the solver when converging the motor and propeller analyses.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>motor = SUAVE.Components.Energy.Converters.Motor()
+<div class="highlight_code"><div class="highlight_code"><pre><code>
+motor = SUAVE.Components.Energy.Converters.Motor()
 motor.resistance           = 0.008
-motor.no_load_current      = 4.5
-motor.speed_constant       = 120. * Units['rpm'] # RPM/volt converted to (rad/s)/volt      
-motor.propeller_radius     = prop.prop_attributes.tip_radius
-motor.propeller_Cp         = prop.prop_attributes.Cp
+motor.no_load_current      = 4.5  * Units.ampere
+motor.speed_constant       = 120. * Units['rpm'] # RPM/volt converted to (rad/s)/volt    
+motor.propeller_radius     = prop.tip_radius
+motor.propeller_Cp         = prop.power_coefficient
 motor.gear_ratio           = 12. # Gear ratio
 motor.gearbox_efficiency   = .98 # Gear box efficiency
 motor.expected_current     = 160. # Expected current
-motor.mass_properties.mass = 2.0
-net.motor                  = motor   
+motor.mass_properties.mass = 2.0  * Units.kg
+net.motor                  = motor    
 </code></pre></div></div>
 
 <h2 id="running">Running</h2>

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -130,8 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a56e051851235864dc8839d57ed9023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a251b450d7a8bad81203841b9367e8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#aa2a251b450d7a8bad81203841b9367e8">build_surrogate</a> (self)</td></tr>
 <tr class="separator:aa2a251b450d7a8bad81203841b9367e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e806c99124a4651a2bd74cd27b73a2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a55e806c99124a4651a2bd74cd27b73a2">evaluate_conditions</a> (self, run_conditions)</td></tr>
-<tr class="separator:a55e806c99124a4651a2bd74cd27b73a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20601d3fc0173ea8ab26791ff404715"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#af20601d3fc0173ea8ab26791ff404715">evaluate_conditions</a> (self, run_conditions, trim_aircraft)</td></tr>
+<tr class="separator:af20601d3fc0173ea8ab26791ff404715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html">SUAVE.Analyses.Mission.Segments.Conditions.Conditions.Conditions</a></td></tr>
 <tr class="memitem:a52e41e484aba6222e3b6bf431812280a inherit pub_methods_classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html#a52e41e484aba6222e3b6bf431812280a">ones_row</a> (self, cols)</td></tr>
 <tr class="separator:a52e41e484aba6222e3b6bf431812280a inherit pub_methods_classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +152,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac204dd9a499b67b481b39e4e8a5db082"><td class="memItemLeft" align="right" valign="top"><a id="ac204dd9a499b67b481b39e4e8a5db082"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>keep_files</b></td></tr>
 <tr class="separator:ac204dd9a499b67b481b39e4e8a5db082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8290b6a12685797096c4646584deae"><td class="memItemLeft" align="right" valign="top"><a id="acb8290b6a12685797096c4646584deae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>save_regression_results</b></td></tr>
+<tr class="separator:acb8290b6a12685797096c4646584deae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d7881165eb8c63bd430a38f1f38a21"><td class="memItemLeft" align="right" valign="top"><a id="ad8d7881165eb8c63bd430a38f1f38a21"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>current_status</b></td></tr>
 <tr class="separator:ad8d7881165eb8c63bd430a38f1f38a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,8 +353,8 @@ self.surrogates.
   span_efficiency_factor [-] e</pre> 
 </div>
 </div>
-<a id="a55e806c99124a4651a2bd74cd27b73a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55e806c99124a4651a2bd74cd27b73a2">&#9670;&nbsp;</a></span>evaluate_conditions()</h2>
+<a id="af20601d3fc0173ea8ab26791ff404715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20601d3fc0173ea8ab26791ff404715">&#9670;&nbsp;</a></span>evaluate_conditions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +369,13 @@ self.surrogates.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>run_conditions</em>&#160;</td>
+          <td class="paramname"><em>run_conditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>trim_aircraft</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

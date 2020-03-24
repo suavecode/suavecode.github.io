@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a562e6b7c59034a322413caecdaf20a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5347926425ec1203182205229dc97d64"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a5347926425ec1203182205229dc97d64">build_surrogate</a> (self)</td></tr>
 <tr class="separator:a5347926425ec1203182205229dc97d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a657bb443e967af278f6c71dd9984e51f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#a657bb443e967af278f6c71dd9984e51f">evaluate_conditions</a> (self, run_conditions)</td></tr>
-<tr class="separator:a657bb443e967af278f6c71dd9984e51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb082048b7b042c5d9e94907df4ed41c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Stability_1_1AVL_1_1AVL.html#acb082048b7b042c5d9e94907df4ed41c">evaluate_conditions</a> (self, run_conditions, trim_aircraft)</td></tr>
+<tr class="separator:acb082048b7b042c5d9e94907df4ed41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability.html">SUAVE.Analyses.Stability.Stability.Stability</a></td></tr>
 <tr class="memitem:a5d0b08724b00a16cf37e4847a1097911 inherit pub_methods_classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability.html#a5d0b08724b00a16cf37e4847a1097911">evaluate</a> (self, conditions)</td></tr>
 <tr class="separator:a5d0b08724b00a16cf37e4847a1097911 inherit pub_methods_classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +154,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:afa2cccd337ca32296250e3a064452d2e"><td class="memItemLeft" align="right" valign="top"><a id="afa2cccd337ca32296250e3a064452d2e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>keep_files</b></td></tr>
 <tr class="separator:afa2cccd337ca32296250e3a064452d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad0f326ce4bd4fcbd2c5951ca881de5"><td class="memItemLeft" align="right" valign="top"><a id="a8ad0f326ce4bd4fcbd2c5951ca881de5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>save_regression_results</b></td></tr>
+<tr class="separator:a8ad0f326ce4bd4fcbd2c5951ca881de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e02a873dd1c9343fd8aad6958cc6745"><td class="memItemLeft" align="right" valign="top"><a id="a5e02a873dd1c9343fd8aad6958cc6745"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>current_status</b></td></tr>
 <tr class="separator:a5e02a873dd1c9343fd8aad6958cc6745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986baf42d99f5aceecd129b0e96dfeef"><td class="memItemLeft" align="right" valign="top"><a id="a986baf42d99f5aceecd129b0e96dfeef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>geometry</b></td></tr>
+<tr class="separator:a986baf42d99f5aceecd129b0e96dfeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7166eeacc3407b0cf419bd38540d2bce"><td class="memItemLeft" align="right" valign="top"><a id="a7166eeacc3407b0cf419bd38540d2bce"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>settings</b></td></tr>
 <tr class="separator:a7166eeacc3407b0cf419bd38540d2bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,12 +178,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8eea7bc16140884d265413b200d0b8d4"><td class="memItemLeft" align="right" valign="top"><a id="a8eea7bc16140884d265413b200d0b8d4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b></td></tr>
 <tr class="separator:a8eea7bc16140884d265413b200d0b8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986baf42d99f5aceecd129b0e96dfeef"><td class="memItemLeft" align="right" valign="top"><a id="a986baf42d99f5aceecd129b0e96dfeef"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>geometry</b></td></tr>
-<tr class="separator:a986baf42d99f5aceecd129b0e96dfeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df82e27a841c273c87e0ad921e694e0"><td class="memItemLeft" align="right" valign="top"><a id="a5df82e27a841c273c87e0ad921e694e0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>stability_model</b></td></tr>
-<tr class="separator:a5df82e27a841c273c87e0ad921e694e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d2e9deaab9a701dc9d2f507a1a6aad"><td class="memItemLeft" align="right" valign="top"><a id="ad5d2e9deaab9a701dc9d2f507a1a6aad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>regression_flag</b></td></tr>
 <tr class="separator:ad5d2e9deaab9a701dc9d2f507a1a6aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,7 +236,7 @@ None
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Evaluates moment coefficient, stability deriviatives and neutral point using available surrogates.
+<pre class="fragment">Evaluates moment coefficient, stability and body axis deriviatives and neutral point using available surrogates.
 
 Assumptions:
 None
@@ -251,8 +251,8 @@ state.conditions.
 
 Outputs:
 results
-    results.static_stability
-    results.dynamic_stability
+    results.stability.static
+    results.stability.dynamic
 
 
 Properties Used:
@@ -293,8 +293,7 @@ Outputs:
 None
 
 Properties Used:
-N/A
-</pre> 
+N/A</pre> 
 <p>Reimplemented from <a class="el" href="classSUAVE_1_1Analyses_1_1Stability_1_1Stability_1_1Stability.html#ad9415b49f7e7abbf438c580408d04fd6">SUAVE.Analyses.Stability.Stability.Stability</a>.</p>
 
 </div>
@@ -340,8 +339,8 @@ No others
 </pre> 
 </div>
 </div>
-<a id="a657bb443e967af278f6c71dd9984e51f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a657bb443e967af278f6c71dd9984e51f">&#9670;&nbsp;</a></span>evaluate_conditions()</h2>
+<a id="acb082048b7b042c5d9e94907df4ed41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb082048b7b042c5d9e94907df4ed41c">&#9670;&nbsp;</a></span>evaluate_conditions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,7 +355,13 @@ No others
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>run_conditions</em>&#160;</td>
+          <td class="paramname"><em>run_conditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>trim_aircraft</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

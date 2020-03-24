@@ -6,7 +6,6 @@ var group__Analyses_Aerodynamics =
     ] ],
     [ "Aerodynamics", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html#a102129619dc160ce8f979301029b3921", null ],
-      [ "compute_forces", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html#a6702f0aabc084054884871464a89261b", null ],
       [ "evaluate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html#a9684f9fe2c620a8715c73a4a43319fa1", null ],
       [ "finalize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html#afc822038b10ccbcb3cefdb1a416d137f", null ],
       [ "geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html#a1d2366be5c23f5d574e37280b708e67b", null ],
@@ -22,13 +21,14 @@ var group__Analyses_Aerodynamics =
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a2674aeb739fbede3df8174cc5971117c", null ],
       [ "build_surrogate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#aa2a251b450d7a8bad81203841b9367e8", null ],
       [ "evaluate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a5239bbcd5e0f5bcef56f07626ff903d5", null ],
-      [ "evaluate_conditions", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a55e806c99124a4651a2bd74cd27b73a2", null ],
+      [ "evaluate_conditions", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#af20601d3fc0173ea8ab26791ff404715", null ],
       [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a23a413d5e680564e03e4e64b8f1cb85a", null ],
       [ "sample_training", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a8a56e051851235864dc8839d57ed9023", null ],
       [ "current_status", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ad8d7881165eb8c63bd430a38f1f38a21", null ],
       [ "geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ab3413e0de53e813c992c5693fe668c9b", null ],
       [ "keep_files", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ac204dd9a499b67b481b39e4e8a5db082", null ],
       [ "regression_flag", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#ad1c94fdf93f1b71429a2988e70af7d0c", null ],
+      [ "save_regression_results", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#acb8290b6a12685797096c4646584deae", null ],
       [ "settings", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a2bc68b59e7ead5a51ef3ab08c738b5fb", null ],
       [ "surrogates", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a8b545d9a8168b3ae0da29f0319dc3b44", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1AVL__Inviscid_1_1AVL__Inviscid.html#a9bdf600c35e259c1a8b4a7f79628dcf0", null ],
@@ -63,13 +63,6 @@ var group__Analyses_Aerodynamics =
     [ "Process_Geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Process__Geometry_1_1Process__Geometry.html", [
       [ "__init__", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Process__Geometry_1_1Process__Geometry.html#aa49d1aa4ac6443b62296f0c02ae074be", null ],
       [ "evaluate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Process__Geometry_1_1Process__Geometry.html#a0247365f3e5fa2e49af9d0580f4a6233", null ]
-    ] ],
-    [ "Results", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html", [
-      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html#a6551eed89371b92d55be76da3790a0ad", null ],
-      [ "drag_coefficient", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html#a6365a549c4318ab31ee88413aee9db73", null ],
-      [ "drag_force_vector", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html#aaeb551a3283ce47264ab96346139747f", null ],
-      [ "lift_coefficient", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html#a3bb03ae797eb7dd2284c87bc3460a410", null ],
-      [ "lift_force_vector", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Results_1_1Results.html#a9c4f578990cf7afea65efed34822885e", null ]
     ] ],
     [ "SU2_Euler", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1SU2__Euler_1_1SU2__Euler.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1SU2__Euler_1_1SU2__Euler.html#a0437ac33b2fea2955ce838566cfd37a9", null ],

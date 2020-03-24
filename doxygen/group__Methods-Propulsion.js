@@ -14,6 +14,6 @@ var group__Methods_Propulsion =
     [ "rayleigh", "group__Methods-Propulsion.html#ga7343e43e60f66f0486c780fccae07fd0", null ],
     [ "scramjet_sizing", "group__Methods-Propulsion.html#ga1f7790df2723b1121dbdbe0fd795adde", null ],
     [ "shock_train", "group__Methods-Propulsion.html#gaa391dbea29bed7099ae2de99774ac536", null ],
-    [ "size_from_kv", "group__Methods-Propulsion.html#ga7448a7c9da5a37c6912b33fd90c98306", null ],
+    [ "size_from_kv", "group__Methods-Propulsion.html#gaaceccf2f0fd7ef2c51ac7752700230dc", null ],
     [ "turbofan_emission_index", "group__Methods-Propulsion.html#ga073857d84ade0f28134bf8340dfc3330", null ]
 ];

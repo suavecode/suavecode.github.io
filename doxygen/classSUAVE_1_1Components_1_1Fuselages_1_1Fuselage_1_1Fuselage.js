@@ -3,7 +3,6 @@ var classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage =
     [ "__defaults__", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a13a4cd81f10d72cd1bbfbc756d69ca25", null ],
     [ "append_fuel_tank", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a615394f9cefa0cb72b775efa71dde7b3", null ],
     [ "append_segment", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a71849cc67e000a19806a3a134c8de503", null ],
-    [ "append_segment", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a71849cc67e000a19806a3a134c8de503", null ],
     [ "aerodynamic_center", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a804b9a97a7090359a6ba48d636714e1f", null ],
     [ "aft_centerbody_area", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#ae569f01643b85dfeb3da55275897144d", null ],
     [ "aft_centerbody_taper", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a928c49bd07c05f4e278827f08b0a976f", null ],
@@ -23,5 +22,8 @@ var classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage =
     [ "Segments", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a60d47dc740536a8703505ce95da44bb3", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#aeb1aab02a525f21939d7b5e5b11375f3", null ],
     [ "vsp_data", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#ac17ea88a9708643456699bf3a980c5fd", null ],
-    [ "width", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a2d18b6bcb752bfb5d39974806c0079e8", null ]
+    [ "width", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a2d18b6bcb752bfb5d39974806c0079e8", null ],
+    [ "x_rotation", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a9e7dfc07cbbd08d981d59eed910052a4", null ],
+    [ "y_rotation", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#a57bae7168626693898f7e40286b7fdc9", null ],
+    [ "z_rotation", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html#af2c1b6de77d2a27de9a07555f29c9f39", null ]
 ];

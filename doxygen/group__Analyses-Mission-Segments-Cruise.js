@@ -56,5 +56,14 @@ var group__Analyses_Mission_Segments_Cruise =
       [ "air_speed_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a211059093e2b63971f53b3b29cbe2cc1", null ],
       [ "altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a0acce9610081c654dc2d9eefb0033e79", null ],
       [ "throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Throttle__Constant__Altitud087b9361606d9421bb3adf969d22c3d7.html#a9c3834d7b80dbf89ee79ef10d8909c8f", null ]
+    ] ],
+    [ "Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html", [
+      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html#a31fbf08d8144c277d4bfda0631e50c99", null ],
+      [ "acceleration", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html#a6c4e4a1fb50660d742ede7ae4dbe9f08", null ],
+      [ "air_speed_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html#ad85a7a383869cbd3e1dcb6dbf7ff2885", null ],
+      [ "air_speed_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html#a28aae4ef202de2e0f4e7b993c17997ff", null ],
+      [ "altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html#a7d5044ac9cc23c1bfa077e5449a58fe8", null ],
+      [ "pitch_final", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html#a93c7ce4f34d99bce16ba1660b29e3f09", null ],
+      [ "pitch_initial", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html#a9c02dc766a23e181917ea43c83df1ddd", null ]
     ] ]
 ];
