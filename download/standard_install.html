@@ -125,8 +125,8 @@
 											  <li>Download and extract the release archive</li>
 											  <li>Open the directory SUAVE/trunk</li>
 											  <li>Open a command prompt in that directory</li>
-											  <li>Run this command: <code class="highlight_code">python setup.py install</code> <br />
-											If you are on a linux or mac, you may need to run <br /> <code class="highlight_code">sudo python setup.py install</code></li>
+											  <li>Run this command: <code class="highlight_code">python3 setup.py install</code> <br />
+											If you are on a linux or mac, you may need to run <br /> <code class="highlight_code">sudo python3 setup.py install</code></li>
 											  <li>Change to any other folder, open a python shell, and test the new module with the command <code class="highlight_code">import SUAVE</code></li>
 											</ol>
 
@@ -176,7 +176,7 @@
 											</table>
 
 											<p><br />
-											<strong>Note</strong>: For the windows installers, you can pick the latest version, for “cp2.7” (C-Python 3.6), for your architecture (32 or 64bit), and for numpy pick the MKL version (it’s faster). <br />
+											<strong>Note</strong>: For the windows installers, you can pick the latest version, for Python 3.6, for your architecture (32 or 64bit), and for numpy pick the MKL version (it’s faster). <br />
 											<strong>Note</strong>: The pip installer above will also install setuptools, a sub-dependency.</p>
 
 											<h3 id="dealing-with-write-access">Dealing with Write Access</h3>
@@ -186,7 +186,7 @@
 											<h4 id="a-install-to-local-site-packages">A. Install to local site-packages</h4>
 
 											<p>This involves the user install option <br />
-											<code class="highlight_code">python setup.py install --user</code></p>
+											<code class="highlight_code">python3 setup.py install --user</code></p>
 
 											<h4 id="b-start-a-local-site-packages-folder">B. Start a local site-packages folder</h4>
 
@@ -227,16 +227,16 @@
 											  </li>
 											  <li>Now Install SUAVE <br />
 											Using the example of the custom directoy ~/python-site-packages: <br />
-											<code class="highlight_code">python setup.py install --prefix=~/python-site-packages</code></li>
+											<code class="highlight_code">python3 setup.py install --prefix=~/python-site-packages</code></li>
 											</ol>
 
 											<h3 id="additional-install-options">Additional Install Options</h3>
 
 											<p>Additional setup options, such as overriding the default install location, can be found with the following commands: <br />
-											<code class="highlight_code">python setup.py install --help</code> <br />
-											<code class="highlight_code">python setup.py uninstall --help</code> <br />
-											<code class="highlight_code">python setup.py develop --help</code> <br />
-											<code class="highlight_code">python setup.py --help</code></p>
+											<code class="highlight_code">python3 setup.py install --help</code> <br />
+											<code class="highlight_code">python3 setup.py uninstall --help</code> <br />
+											<code class="highlight_code">python3 setup.py develop --help</code> <br />
+											<code class="highlight_code">python3 setup.py --help</code></p>
 
 											<p><br /></p>
 
@@ -249,7 +249,7 @@
 											<ol>
 											  <li>Navigate to the SUAVE/trunk directory by command line.</li>
 											  <li>Run the uninstall command. (On unix platforms, these commands may require a sudo (‘super-user-do’) call.) <br />
-											<code class="highlight_code">python setup.py uninstall</code></li>
+											<code class="highlight_code">python3 setup.py uninstall</code></li>
 											</ol>
 
 											<h4 id="alternate-approach">Alternate Approach:</h4>
@@ -259,7 +259,7 @@
 											  <li>
 											    <p>Find your site-packages folder.
 											 Your site-packages folder is typically located in your python’s install directory, unless you manually created it.  You can find it by using the following commands.<br />
-											 <code class="highlight_code">$ python </code> <br />
+											 <code class="highlight_code">$ python3 </code> <br />
 											 <code class="highlight_code">&gt;&gt;&gt; import site</code> <br />
 											 <code class="highlight_code">&gt;&gt;&gt; site.getsitepackages()</code></p>
 											  </li>
