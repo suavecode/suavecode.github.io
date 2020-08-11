@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -112,8 +112,6 @@ $(document).ready(function(){initNavTree('group__Methods-Aerodynamics-Supersonic
 Functions</h2></td></tr>
 <tr class="memitem:gaf1caf451d7ebd8f7449065933f6e1bf5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Supersonic__Zero-Lift.html#gaf1caf451d7ebd8f7449065933f6e1bf5">SUAVE.Methods.Aerodynamics.Supersonic_Zero.Lift.vortex_lift.vortex_lift</a> (state, settings, geometry)</td></tr>
 <tr class="separator:gaf1caf451d7ebd8f7449065933f6e1bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16916def179bf2c8fb842f664aaefd36"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Supersonic__Zero-Lift.html#ga16916def179bf2c8fb842f664aaefd36">SUAVE.Methods.Aerodynamics.Supersonic_Zero.Lift.wing_compressibility.wing_compressibility</a> (state, settings, geometry)</td></tr>
-<tr class="separator:ga16916def179bf2c8fb842f664aaefd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions to perform low-fidelity lift calculations for supersonics. </p>
@@ -169,63 +167,6 @@ Outputs:
 state.conditions.aerodynamics.
   lift_breakdown.vortex_lift          [-] CL due to vortex lift
 wings_lift                            [-] Total CL at this point
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
-<a id="ga16916def179bf2c8fb842f664aaefd36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16916def179bf2c8fb842f664aaefd36">&#9670;&nbsp;</a></span>wing_compressibility()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Aerodynamics.Supersonic_Zero.Lift.wing_compressibility.wing_compressibility </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>geometry</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Corrects a wings lift based on compressibility, allow supersonic mach number
-
-Assumptions:
-wing capable of vortex lift
-
-Source:
-https://stanford.edu/~cantwell/AA200_Course_Material/AA200_Course_Notes/
-
-Inputs:
-settings.fuselage_lift_correction  [-]
-state.conditions.
-  freestream.mach_number           [-]
-  aerodynamics.angle_of_attack     [radians]
-  aerodynamics.lift_coefficient    [-]
-
-Outputs:
-state.conditions.aerodynamics.
-  lift_breakdown.compressible_wings [-] CL for the wings
-  lift_coefficient                  [-]
-wings_lift_comp                     [-]
 
 Properties Used:
 N/A

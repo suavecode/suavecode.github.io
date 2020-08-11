@@ -9,8 +9,6 @@ var searchData=
   ['read_5fkeys',['read_keys',['../group__Input__Output-GMSH.html#gaa484f4d146a301568057e11512616e75',1,'SUAVE::Input_Output::GMSH::write_geo_file']]],
   ['read_5foptimization_5foutputs',['read_optimization_outputs',['../group__Optimization.html#ga613cf06b11e991c3932ac2404687c1bb',1,'SUAVE::Optimization::read_optimization_outputs']]],
   ['read_5fresults',['read_results',['../group__Methods-Aerodynamics-AVL.html#ga111943e9a93d2fb37656998659a3a5f0',1,'SUAVE::Methods::Aerodynamics::AVL::read_results']]],
-  ['read_5fsizing_5finputs',['read_sizing_inputs',['../group__Sizing.html#ga5080520bcc9bf040df348fb54023e7fa',1,'SUAVE::Sizing::read_sizing_inputs']]],
-  ['read_5fsizing_5fresiduals',['read_sizing_residuals',['../group__Sizing.html#gac28780106a33f9eec4965bc8208bea78',1,'SUAVE::Sizing::read_sizing_residuals']]],
   ['read_5fsuave_5fjson_5fdict',['read_SUAVE_json_dict',['../group__Input__Output-SUAVE.html#ga61c7ff6f78f784c40163d57c60b370bf',1,'SUAVE::Input_Output::SUAVE::load']]],
   ['remove_5fcontext',['remove_context',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#a6f605d51cf518aef11fbf1e3cd84eb4a',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],
   ['remove_5fcontexts',['remove_contexts',['../classSUAVE_1_1Plugins_1_1pint_1_1context_1_1ContextChain.html#a5f6e660044e5ca4e2abe5459f71b0741',1,'SUAVE::Plugins::pint::context::ContextChain']]],

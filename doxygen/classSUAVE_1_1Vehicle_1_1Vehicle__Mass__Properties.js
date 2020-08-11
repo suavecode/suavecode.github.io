@@ -5,6 +5,12 @@ var classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties =
     [ "center_of_gravity", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#ad36a0a734f8ae4b41f05e283661c586f", null ],
     [ "crew", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#a39046a61d2b3ed8b384979511664d599", null ],
     [ "fuel", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#affb84ea67f2a0b653e28e89508600ecb", null ],
+    [ "generative_design_char_max_bounds", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#adc0bef021dc3d87224247bc59763d6e5", null ],
+    [ "generative_design_char_min_bounds", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#a7b2f4e790b10f791ca74b82cf64f8f24", null ],
+    [ "generative_design_characteristics", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#ad0344e991b9ede653865ac7b9ca9e356", null ],
+    [ "generative_design_max_per_vehicle", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#aa3c8f7e9eb55d9d96916a7d8d166fd7c", null ],
+    [ "generative_design_minimum", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#a191eaacd413eff5750357aa1b4f1e51c", null ],
+    [ "generative_design_special_parent", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#aaa9c637e89cbe7a255894b91ce81d938", null ],
     [ "landing", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#a07f79f8b79143a05e0b7ca66682064cf", null ],
     [ "max_cargo", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#af57c262dd32191437d3ee529406e17e9", null ],
     [ "max_fuel", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#ad32f98f3ed16911912400e1b7e24140e", null ],
@@ -15,6 +21,7 @@ var classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties =
     [ "operating_empty", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#ac40e731a21e2e1bb5184af4cdd318b94", null ],
     [ "passenger", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#a68699c58cb0d984fd6d59abb422c659e", null ],
     [ "payload", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#a7626274633166b37c23dd5236ec70925", null ],
+    [ "tag", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#ac4d3be566140d1dceac66e0e54b2f6cd", null ],
     [ "takeoff", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#a5c8f0a58b0892e19cae442c9630423d9", null ],
     [ "zero_fuel_center_of_gravity", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html#afb63d59caed1c5937f3596caa7feec43", null ]
 ];

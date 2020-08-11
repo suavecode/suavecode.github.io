@@ -8,6 +8,7 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar =
     [ "battery", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ac16762f88873f88419a0d851b4d7c5f0", null ],
     [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a9e7c3492cc016f11fd98c3a47317961f", null ],
     [ "esc", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a33cfb357ddf776d510b8501cdadfc777", null ],
+    [ "generative_design_minimum", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a6bceea89276535bd146105703912d348", null ],
     [ "motor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#aaedcd0dd93c8c610bdfb6760269bf3a1", null ],
     [ "nacelle_diameter", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a072998c85626b49f300270c8e4b5a8c9", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#af9d3157b48236320e321b822a10427fb", null ],
@@ -16,5 +17,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar =
     [ "solar_flux", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ad9c27f16e7457864328b37d4111abda0", null ],
     [ "solar_logic", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a70294c7d2ddd2f3b719e7777e9845d6b", null ],
     [ "solar_panel", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#af1a064708a49ca2d7bb64912724e69b2", null ],
+    [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a28f5aacd5ba78c3de21f5af4f4808f9b", null ],
     [ "use_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ac34ffb60cd093e18d6309e402937af34", null ]
 ];

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -115,8 +115,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga8a44f526125ceed65e6d2f27fe5aa82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf280c435b3294c568c1b374d0ff7c3b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Common.html#gacf280c435b3294c568c1b374d0ff7c3b">SUAVE.Methods.Weights.Correlations.Common.payload.payload</a> (TOW, empty, num_pax, wt_cargo, wt_passenger=195 *Units.lbs, wt_baggage=30 *Units.lbs)</td></tr>
 <tr class="separator:gacf280c435b3294c568c1b374d0ff7c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeaee339d59dc928ac31ef8a65ddbde33"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Common.html#gaeaee339d59dc928ac31ef8a65ddbde33">SUAVE.Methods.Weights.Correlations.Common.wing_main.wing_main</a> (S_gross_w, b, lambda_w, t_c_w, sweep_w, Nult, TOW, wt_zf)</td></tr>
-<tr class="separator:gaeaee339d59dc928ac31ef8a65ddbde33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9526f565df470e017e31887ed472f35b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-Common.html#ga9526f565df470e017e31887ed472f35b">SUAVE.Methods.Weights.Correlations.Common.wing_main.wing_main</a> (wing, Nult, TOW, wt_zf, rho, sigma, area_fraction=1)</td></tr>
+<tr class="separator:ga9526f565df470e017e31887ed472f35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provides structural weight correlations for aircraft components applicable to all aircraft configurations. </p>
@@ -247,8 +247,8 @@ Properties Used:
 </pre> 
 </div>
 </div>
-<a id="gaeaee339d59dc928ac31ef8a65ddbde33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeaee339d59dc928ac31ef8a65ddbde33">&#9670;&nbsp;</a></span>wing_main()</h2>
+<a id="ga9526f565df470e017e31887ed472f35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9526f565df470e017e31887ed472f35b">&#9670;&nbsp;</a></span>wing_main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,31 +257,7 @@ Properties Used:
           <td class="memname">def SUAVE.Methods.Weights.Correlations.Common.wing_main.wing_main </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>S_gross_w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>lambda_w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>t_c_w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>sweep_w</em>, </td>
+          <td class="paramname"><em>wing</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -299,7 +275,25 @@ Properties Used:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>wt_zf</em>&#160;</td>
+          <td class="paramname"><em>wt_zf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sigma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>area_fraction</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -316,14 +310,20 @@ Assumptions:
     from 15 transport aircraft 
 
 Source: 
-    N/A
+    http://aerodesign.stanford.edu/aircraftdesign/AircraftDesign.html
+    search for: Derivation of the Wing Weight Index
     
 Inputs:
-    S_gross_w - area of the wing                 [meters**2]
-    b - span of the wing                         [meters**2]
-    lambda_w - taper ratio of the wing           [dimensionless]
-    t_c_w - thickness-to-chord ratio of the wing [dimensionless]
-    sweep_w - sweep of the wing                  [radians]
+    wing
+         .span.projected                         [meters**2]
+         .taper                                  [dimensionless]
+         .sweeps.quarter_chord                   [radians]
+         .thickness_to_chord                     [dimensionless]
+         .Segments
+             .root_chord_percent                 [dimensionless]
+             .thickness_to_chord                 [dimensionless]
+             .percent_span_location              [dimensionless]
+
     Nult - ultimate load factor of the aircraft  [dimensionless]
     TOW - maximum takeoff weight of the aircraft [kilograms]
     wt_zf - zero fuel weight of the aircraft     [kilograms]

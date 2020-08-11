@@ -13,5 +13,6 @@ var searchData=
   ['propulsion',['Propulsion',['../group__Methods-Propulsion.html',1,'']]],
   ['propulsion',['Propulsion',['../group__Methods-Weights-Correlations-Propulsion.html',1,'']]],
   ['package_5fsetups',['Package_Setups',['../group__Optimization-Package__Setups.html',1,'']]],
+  ['plots',['Plots',['../group__Plots.html',1,'']]],
   ['plugins',['Plugins',['../group__Plugins.html',1,'']]]
 ];

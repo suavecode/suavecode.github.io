@@ -16,6 +16,6 @@ var searchData=
   ['segments',['Segments',['../group__Methods-Missions-Segments.html',1,'']]],
   ['single_5fpoint',['Single_Point',['../group__Methods-Missions-Segments-Single__Point.html',1,'']]],
   ['sizing',['Sizing',['../group__Methods-Power-Battery-Sizing.html',1,'']]],
-  ['sizing',['Sizing',['../group__Methods-Power-Fuel__Cell-Sizing.html',1,'(Global Namespace)'],['../group__Sizing.html',1,'(Global Namespace)']]],
+  ['sizing',['Sizing',['../group__Methods-Power-Fuel__Cell-Sizing.html',1,'']]],
   ['surrogate',['Surrogate',['../group__Surrogate.html',1,'']]]
 ];

@@ -24,7 +24,6 @@ var searchData=
   ['do_5frecursive',['do_recursive',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a365c9e20c7ae33418f7b2f3930588671',1,'SUAVE::Core::Data::Data']]],
   ['drag_5fdiv',['drag_div',['../group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga234ba915950ed8f64df047c0a9d3cb54',1,'SUAVE::Methods::Aerodynamics::Supersonic_Zero::Drag::compressibility_drag_total']]],
   ['drag_5ftotal',['drag_total',['../group__Methods-Aerodynamics-AERODAS.html#ga49ea8af4f8a59c3a756eac1e498732b2',1,'SUAVE::Methods::Aerodynamics::AERODAS::AERODAS_setup']]],
-  ['dual_5fbattery_5fducted_5ffan',['Dual_Battery_Ducted_Fan',['../classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Dual__Battery__Ducted__Fan_1_1Dual__Battery__Ducted__Fan.html',1,'SUAVE::Components::Energy::Networks::Dual_Battery_Ducted_Fan']]],
   ['ducted_5ffan',['Ducted_Fan',['../classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html',1,'SUAVE::Components::Energy::Networks::Ducted_Fan']]],
   ['ducted_5ffan_5fsizing',['ducted_fan_sizing',['../group__Methods-Propulsion.html#ga3e6153003ae73397bf8d06367e10e9ba',1,'SUAVE::Methods::Propulsion::ducted_fan_sizing']]],
   ['dutch_5froll',['dutch_roll',['../group__Methods-Flight__Dynamics-Dynamic__Stability-Approximations.html#ga31ade80e6cc5c5bc4f5dffa28ca2e22d',1,'SUAVE::Methods::Flight_Dynamics::Dynamic_Stability::Approximations::dutch_roll']]],

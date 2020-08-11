@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -532,49 +532,8 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="ga20eade063eeffaf3b2e177e543e01900"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20eade063eeffaf3b2e177e543e01900">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[8/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Linear_Mach_Constant_Rate.initialize_conditions </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>segment</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Sets the specified conditions which are given for the segment type.
-
-Assumptions:
-Linearly changing mach number, with a constant rate of climb
-
-Source:
-N/A
-
-Inputs:
-segment.climb_rate                                  [meters/second]
-segment.mach_start                                  [Unitless]
-segment.mach_end                                    [Unitless]
-segment.altitude_end                                [meters]
-segment.state.numerics.dimensionless.control_points [Unitless]
-conditions.freestream.density                       [kilograms/meter^3]
-
-Outputs:
-conditions.frames.inertial.velocity_vector  [meters/second]
-conditions.frames.inertial.position_vector  [meters]
-conditions.freestream.altitude              [meters]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
 <a id="gacaf2bb91cc18422b48bba0c71112c7c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacaf2bb91cc18422b48bba0c71112c7c4">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gacaf2bb91cc18422b48bba0c71112c7c4">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,6 +567,47 @@ conditions.frames.inertial.velocity_vector  [meters/second]
 conditions.frames.inertial.position_vector  [meters]
 conditions.freestream.altitude              [meters]
 conditions.frames.inertial.time             [seconds]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="ga20eade063eeffaf3b2e177e543e01900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20eade063eeffaf3b2e177e543e01900">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[9/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Linear_Mach_Constant_Rate.initialize_conditions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the specified conditions which are given for the segment type.
+
+Assumptions:
+Linearly changing mach number, with a constant rate of climb
+
+Source:
+N/A
+
+Inputs:
+segment.climb_rate                                  [meters/second]
+segment.mach_start                                  [Unitless]
+segment.mach_end                                    [Unitless]
+segment.altitude_end                                [meters]
+segment.state.numerics.dimensionless.control_points [Unitless]
+conditions.freestream.density                       [kilograms/meter^3]
+
+Outputs:
+conditions.frames.inertial.velocity_vector  [meters/second]
+conditions.frames.inertial.position_vector  [meters]
+conditions.freestream.altitude              [meters]
 
 Properties Used:
 N/A
