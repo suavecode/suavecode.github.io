@@ -318,8 +318,8 @@ var annotated_dup =
           [ "Weights_Electric_Vectored_Thrust", null, [
             [ "Weights_Electric_Vectored_Thrust", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust" ]
           ] ],
-          [ "Weights_Tube_Wing", null, [
-            [ "Weights_Tube_Wing", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Tube__Wing_1_1Weights__Tube__Wing" ]
+          [ "Weights_Transport", null, [
+            [ "Weights_Transport", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Transport_1_1Weights__Transport.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Transport_1_1Weights__Transport" ]
           ] ],
           [ "Weights_UAV", null, [
             [ "Weights_UAV", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__UAV_1_1Weights__UAV.html", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__UAV_1_1Weights__UAV" ]
@@ -546,9 +546,6 @@ var annotated_dup =
             [ "Battery_Propeller", null, [
               [ "Battery_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller" ]
             ] ],
-            [ "Dual_Battery_Ducted_Fan", null, [
-              [ "Dual_Battery_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Dual__Battery__Ducted__Fan_1_1Dual__Battery__Ducted__Fan.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Dual__Battery__Ducted__Fan_1_1Dual__Battery__Ducted__Fan" ]
-            ] ],
             [ "Ducted_Fan", null, [
               [ "Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan" ]
             ] ],
@@ -642,11 +639,12 @@ var annotated_dup =
         ] ],
         [ "Fuselages", null, [
           [ "Fuselage", null, [
-            [ "Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container.html", null ],
+            [ "Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container" ],
             [ "Fuselage", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage" ]
           ] ],
           [ "Segment", null, [
-            [ "Segment", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment" ]
+            [ "Segment", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment" ],
+            [ "Segment_Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment__Container.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment__Container" ]
           ] ]
         ] ],
         [ "Landing_Gear", null, [
@@ -661,11 +659,9 @@ var annotated_dup =
           ] ]
         ] ],
         [ "Lofted_Body", null, [
-          [ "Curve", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Curve.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Curve" ],
-          [ "CurveContainer", "classSUAVE_1_1Components_1_1Lofted__Body_1_1CurveContainer.html", null ],
           [ "Lofted_Body", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body" ],
           [ "Section", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section" ],
-          [ "SectionContainer", "classSUAVE_1_1Components_1_1Lofted__Body_1_1SectionContainer.html", null ],
+          [ "Section_Container", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container" ],
           [ "Segment", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Segment.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Segment" ]
         ] ],
         [ "Mass_Properties", null, [
@@ -722,16 +718,18 @@ var annotated_dup =
             [ "Horizontal_Tail", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail.html", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail" ]
           ] ],
           [ "Main_Wing", null, [
-            [ "Main_Wing", "classSUAVE_1_1Components_1_1Wings_1_1Main__Wing_1_1Main__Wing.html", "classSUAVE_1_1Components_1_1Wings_1_1Main__Wing_1_1Main__Wing" ]
+            [ "Main_Wing", "classSUAVE_1_1Components_1_1Wings_1_1Main__Wing_1_1Main__Wing.html", "classSUAVE_1_1Components_1_1Wings_1_1Main__Wing_1_1Main__Wing" ],
+            [ "Segment_Container", "classSUAVE_1_1Components_1_1Wings_1_1Main__Wing_1_1Segment__Container.html", "classSUAVE_1_1Components_1_1Wings_1_1Main__Wing_1_1Segment__Container" ]
           ] ],
           [ "Segment", null, [
             [ "Segment", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment" ],
-            [ "SegmentContainer", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1SegmentContainer.html", null ]
+            [ "Segment_Container", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment__Container.html", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment__Container" ]
           ] ],
           [ "Vertical_Tail", null, [
             [ "Vertical_Tail", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail" ]
           ] ],
           [ "Wing", null, [
+            [ "Container", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container.html", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container" ],
             [ "Wing", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing" ]
           ] ]
         ] ]
@@ -921,11 +919,6 @@ var annotated_dup =
           ] ]
         ] ]
       ] ],
-      [ "Sizing", null, [
-        [ "Sizing_Loop", null, [
-          [ "Sizing_Loop", "classSUAVE_1_1Sizing_1_1Sizing__Loop_1_1Sizing__Loop.html", "classSUAVE_1_1Sizing_1_1Sizing__Loop_1_1Sizing__Loop" ]
-        ] ]
-      ] ],
       [ "Surrogate", null, [
         [ "Surrogate_Problem", null, [
           [ "Surrogate_Problem", "classSUAVE_1_1Surrogate_1_1Surrogate__Problem_1_1Surrogate__Problem.html", "classSUAVE_1_1Surrogate_1_1Surrogate__Problem_1_1Surrogate__Problem" ]
@@ -934,6 +927,7 @@ var annotated_dup =
       [ "Vehicle", null, [
         [ "Costs", "classSUAVE_1_1Vehicle_1_1Costs.html", "classSUAVE_1_1Vehicle_1_1Costs" ],
         [ "Vehicle", "classSUAVE_1_1Vehicle_1_1Vehicle.html", "classSUAVE_1_1Vehicle_1_1Vehicle" ],
+        [ "Vehicle_Mass_Container", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Container.html", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Container" ],
         [ "Vehicle_Mass_Properties", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties" ]
       ] ]
     ] ]

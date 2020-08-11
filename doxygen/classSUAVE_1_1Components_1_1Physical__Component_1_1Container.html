@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -111,10 +111,12 @@ Inheritance diagram for SUAVE.Components.Physical_Component.Container:</div>
  <div class="center">
   <img src="classSUAVE_1_1Components_1_1Physical__Component_1_1Container.png" usemap="#SUAVE.Components.Physical_5FComponent.Container_map" alt=""/>
   <map id="SUAVE.Components.Physical_5FComponent.Container_map" name="SUAVE.Components.Physical_5FComponent.Container_map">
-<area href="classSUAVE_1_1Components_1_1Component_1_1Container.html" alt="SUAVE.Components.Component.Container" shape="rect" coords="320,56,630,80"/>
+<area href="classSUAVE_1_1Components_1_1Component_1_1Container.html" alt="SUAVE.Components.Component.Container" shape="rect" coords="640,56,950,80"/>
 <area href="classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container.html" alt="SUAVE.Components.Fuselages.Fuselage.Container" shape="rect" coords="0,168,310,192"/>
 <area href="classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Container.html" alt="SUAVE.Components.Payloads.Payload.Container" shape="rect" coords="320,168,630,192"/>
 <area href="classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Container.html" alt="SUAVE.Components.Propulsors.Propulsor.Container" shape="rect" coords="640,168,950,192"/>
+<area href="classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container.html" alt="SUAVE.Components.Wings.Wing.Container" shape="rect" coords="960,168,1270,192"/>
+<area href="classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Container.html" alt="SUAVE.Vehicle.Vehicle_Mass_Container" shape="rect" coords="1280,168,1590,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -122,6 +124,8 @@ Inheritance diagram for SUAVE.Components.Physical_Component.Container:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae51f620275537cac1c60ba136c68735e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html#ae51f620275537cac1c60ba136c68735e">sum_mass</a> (self)</td></tr>
 <tr class="separator:ae51f620275537cac1c60ba136c68735e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5629c0cc965bad4c8799fd7616f3e4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html#a7c5629c0cc965bad4c8799fd7616f3e4">total_moment</a> (self)</td></tr>
+<tr class="separator:a7c5629c0cc965bad4c8799fd7616f3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -167,7 +171,42 @@ Additional Inherited Members</h2></td></tr>
     None
     
     Outputs:
+    mass  [kg]
+    
+    Properties Used:
     None
+</pre> 
+</div>
+</div>
+<a id="a7c5629c0cc965bad4c8799fd7616f3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5629c0cc965bad4c8799fd7616f3e4">&#9670;&nbsp;</a></span>total_moment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Physical_Component.Container.total_moment </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">will recursively search the data tree and sum
+    any Comp.Mass_Properties.mass, and return the total sum of moments
+    
+    Assumptions:
+    None
+    
+    Source:
+    N/A
+    
+    Inputs:
+    None
+    
+    Outputs:
+    total moment [kg*m]
     
     Properties Used:
     None

@@ -14,6 +14,7 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vector
     [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html#abf758f2100621270b12dc2e22921b77a", null ],
     [ "pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html#a119a847a37d1373a0101bf6e42a80497", null ],
     [ "rotor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html#a440fbced6c23b7bc70a717716d329362", null ],
+    [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html#a0774f19e611a4b85d9bebb32215c944c", null ],
     [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html#a0d1a91b88cdfc8c327bcf70cc7ab6fe5", null ],
     [ "thrust_angle_end", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html#aac11f6eb14d0cc5502d76163bc66ae30", null ],
     [ "thrust_angle_start", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html#af508f853b156917b975ecf2f44d76c80", null ],

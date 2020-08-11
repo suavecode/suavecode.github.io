@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -110,70 +110,12 @@ $(document).ready(function(){initNavTree('group__Methods-Geometry-Two__Dimension
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabbca63e71ae9b78043c985ea40db0bab"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Geometry-Two__Dimensional-Cross__Section-Propulsion.html#gabbca63e71ae9b78043c985ea40db0bab">SUAVE.Methods.Geometry.Two_Dimensional.Cross_Section.Propulsion.compute_ducted_fan_geometry.compute_ducted_fan_geometry</a> (ducted_fan, conditions)</td></tr>
-<tr class="separator:gabbca63e71ae9b78043c985ea40db0bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ac328d4ae5282b2e4ce66d519777c73"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Geometry-Two__Dimensional-Cross__Section-Propulsion.html#ga3ac328d4ae5282b2e4ce66d519777c73">SUAVE.Methods.Geometry.Two_Dimensional.Cross_Section.Propulsion.compute_turbofan_geometry.compute_turbofan_geometry</a> (turbofan, conditions)</td></tr>
 <tr class="separator:ga3ac328d4ae5282b2e4ce66d519777c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Geometry functions for two dimensional propulsion measurements. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabbca63e71ae9b78043c985ea40db0bab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabbca63e71ae9b78043c985ea40db0bab">&#9670;&nbsp;</a></span>compute_ducted_fan_geometry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Geometry.Two_Dimensional.Cross_Section.Propulsion.compute_ducted_fan_geometry.compute_ducted_fan_geometry </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ducted_fan</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>conditions</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Estimates geometry for a ducted fan.
-
-Assumptions:
-None
-
-Source:
-None
-
-Inputs:
-ducted_fan.thrust.
-  mass_flow_rate_design [kg/s]
-ducted_fan.fan_nozzle.
-  outputs.velocity      [m/s]
-  outputs.density       [kg/m^3]
-  outputs.area_ratio    [-]
-conditions.freestream.
-  velocity              [m/s]
-  density               [kg/m^3]
-
-Outputs:
-ducted_fan.
-  areas.maximum         [m^2]
-  areas.wetted          [m^2]
-  nacelle_diameter      [m]
-  engine_length         [m]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
 <a id="ga3ac328d4ae5282b2e4ce66d519777c73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3ac328d4ae5282b2e4ce66d519777c73">&#9670;&nbsp;</a></span>compute_turbofan_geometry()</h2>
 

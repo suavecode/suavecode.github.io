@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -113,11 +113,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4e87ff62f818432568067a6cda74a05d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga4e87ff62f818432568067a6cda74a05d">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.aircraft_total.aircraft_total</a> (state, settings, geometry)</td></tr>
 <tr class="memdesc:ga4e87ff62f818432568067a6cda74a05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">aircraft_total.py  <a href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga4e87ff62f818432568067a6cda74a05d">More...</a><br /></td></tr>
 <tr class="separator:ga4e87ff62f818432568067a6cda74a05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c2789a33e72d260743d9bb8759cc2ea"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga5c2789a33e72d260743d9bb8759cc2ea">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.compute_induced_velocity_matrix.compute_induced_velocity_matrix</a> (VD, n_sw, n_cw, theta_w, mach)</td></tr>
+<tr class="separator:ga5c2789a33e72d260743d9bb8759cc2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b9d2ca05360fd677af93e0f53f72d83"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga0b9d2ca05360fd677af93e0f53f72d83">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.compute_RHS_matrix.compute_RHS_matrix</a> (n_sw, n_cw, delta, phi, conditions, geometry, sur_flag, slipstream)</td></tr>
+<tr class="separator:ga0b9d2ca05360fd677af93e0f53f72d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3394d7f07884e216694845d41e0e6c93"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga3394d7f07884e216694845d41e0e6c93">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.compute_vortex_distribution.compute_vortex_distribution</a> (geometry, settings)</td></tr>
+<tr class="separator:ga3394d7f07884e216694845d41e0e6c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga38e30b3ac48254c01f9207ca16fba688"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga38e30b3ac48254c01f9207ca16fba688">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.fuselage_correction.fuselage_correction</a> (state, settings, geometry)</td></tr>
 <tr class="memdesc:ga38e30b3ac48254c01f9207ca16fba688"><td class="mdescLeft">&#160;</td><td class="mdescRight">fuselage_correction.py  <a href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga38e30b3ac48254c01f9207ca16fba688">More...</a><br /></td></tr>
 <tr class="separator:ga38e30b3ac48254c01f9207ca16fba688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea0227579ef637d7c743a509a9e81769"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#gaea0227579ef637d7c743a509a9e81769">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.weissinger_vortex_lattice.weissinger_vortex_lattice</a> (conditions, configuration, wing)</td></tr>
-<tr class="separator:gaea0227579ef637d7c743a509a9e81769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8fa48b728d2b8b9de26be98f7f31afb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#gaf8fa48b728d2b8b9de26be98f7f31afb">SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.VLM.VLM</a> (conditions, settings, geometry)</td></tr>
+<tr class="separator:gaf8fa48b728d2b8b9de26be98f7f31afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Lift methods that are directly specified by analyses. </p>
@@ -173,6 +179,233 @@ aircraft_lift_total (lift coefficient)            [Unitless]
 Properties Used:
 N/A
 </pre> 
+</div>
+</div>
+<a id="ga5c2789a33e72d260743d9bb8759cc2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c2789a33e72d260743d9bb8759cc2ea">&#9670;&nbsp;</a></span>compute_induced_velocity_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.compute_induced_velocity_matrix.compute_induced_velocity_matrix </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>VD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>n_sw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>n_cw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>theta_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mach</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This computes the induced velocitys are each control point 
+of the vehicle vortex lattice 
+
+Assumptions: 
+Trailing vortex legs infinity are alligned to freestream
+
+Source:  
+None
+
+Inputs: 
+VD       - vehicle vortex distribution      [Unitless] 
+n_sw     - number_panels_spanwise           [Unitless]
+n_cw     - number_panels_chordwise          [Unitless] 
+mach                                        [Unitless] 
+theta_w  - freestream wake angle            [radians]
+
+Outputs:                                
+C_mn     - total induced velocity matrix    [Unitless] 
+DW_mn    - induced downwash velocity matrix [Unitless] 
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="ga0b9d2ca05360fd677af93e0f53f72d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b9d2ca05360fd677af93e0f53f72d83">&#9670;&nbsp;</a></span>compute_RHS_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.compute_RHS_matrix.compute_RHS_matrix </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>n_sw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>n_cw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>conditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>geometry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sur_flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>slipstream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This computes the right hand side matrix for the VLM. In this
+function, induced velocites from propeller wake are also included 
+when relevent and where specified    
+
+Assumptions:
+Slipstream effect is not a function of time. 
+Axial Variation of slipstream does not include swirl 
+
+Source:  
+Stone, R. Hugh. "Aerodynamic modeling of the wing-propeller 
+interaction for a tail-sitter unmanned air vehicle." Journal 
+of Aircraft 45.1 (2008): 198-210.
+
+Inputs:
+geometry
+    propulsors                               [Unitless]  
+    vehicle vortex distribution              [Unitless] 
+conditions.
+    aerodynamics.angle_of_attack             [radians] 
+    freestream.velocity                      [m/s]
+n_sw        - number_panels_spanwise         [Unitless]
+n_cw        - number_panels_chordwise        [Unitless]
+sur_flag    - use_surrogate flag             [Unitless]
+slipstream  - include_slipstream_effect flag [Unitless] 
+delta, phi  - flow tangency angles           [radians]
+   
+Outputs:                                   
+RHS                                        [Unitless] 
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="ga3394d7f07884e216694845d41e0e6c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3394d7f07884e216694845d41e0e6c93">&#9670;&nbsp;</a></span>compute_vortex_distribution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.compute_vortex_distribution.compute_vortex_distribution </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>geometry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>settings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Compute the coordinates of panels, vortices , control points
+and geometry used to build the influence coefficient matrix.
+
+
+Assumptions: 
+Below is a schematic of the coordinates of an arbitrary panel  
+
+XA1 ____________________________ XB1    
+   |                            |
+   |        bound vortex        |
+XAH|  ________________________  |XBH
+   | |           XCH          | |
+   | |                        | |
+   | |                        | |     
+   | |                        | |
+   | |                        | |
+   | |           0 &lt;--control | |       
+   | |          XC     point  | |  
+   | |                        | |
+   XA2 |_|________________________|_|XB2
+     |                        |     
+     |       trailing         |  
+     |   &lt;--  vortex   --&gt;    |  
+     |         legs           | 
+         
+
+Source:  
+None
+
+Inputs:
+geometry.wings                                [Unitless]  
+   
+Outputs:                                   
+VD - vehicle vortex distribution              [Unitless] 
+
+Properties Used:
+N/A </pre> 
 </div>
 </div>
 <a id="ga38e30b3ac48254c01f9207ca16fba688"></a>
@@ -231,14 +464,14 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="gaea0227579ef637d7c743a509a9e81769"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaea0227579ef637d7c743a509a9e81769">&#9670;&nbsp;</a></span>weissinger_vortex_lattice()</h2>
+<a id="gaf8fa48b728d2b8b9de26be98f7f31afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8fa48b728d2b8b9de26be98f7f31afb">&#9670;&nbsp;</a></span>VLM()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.weissinger_vortex_lattice.weissinger_vortex_lattice </td>
+          <td class="memname">def SUAVE.Methods.Aerodynamics.Common.Fidelity_Zero.Lift.VLM.VLM </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>conditions</em>, </td>
@@ -247,13 +480,13 @@ N/A
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>configuration</em>, </td>
+          <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>wing</em>&#160;</td>
+          <td class="paramname"><em>geometry</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -262,34 +495,62 @@ N/A
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Uses the vortex lattice method to compute the lift coefficient and induced drag component
+<pre class="fragment">Uses the vortex lattice method to compute the lift, induced drag and moment coefficients  
 
 Assumptions:
 None
 
 Source:
-An Introduction to Theoretical and Computational Aerodynamics by Jack Moran
+1. Aerodynamics for Engineers, Sixth Edition by John Bertin &amp; Russel Cummings 
+Pgs. 379-397(Literature)
+
+2. Low-Speed Aerodynamics, Second Edition by Joseph katz, Allen Plotkin
+Pgs. 331-338(Literature), 579-586 (Fortran Code implementation)
+
+3. Yahyaoui, M. "Generalized Vortex Lattice Method for Predicting Characteristics of Wings
+with Flap and Aileron Deflection" , World Academy of Science, Engineering and Technology 
+International Journal of Mechanical, Aerospace, Industrial and Mechatronics Engineering 
+Vol:8 No:10, 2014
+
 
 Inputs:
-wing.
-  spans.projected                       [m]
-  chords.root                           [m]
-  chords.tip                            [m]
-  sweeps.quarter_chord                  [radians]
-  taper                                 [Unitless]
-  twists.root                           [radians]
-  twists.tip                            [radians]
-  symmetric                             [Boolean]
-  aspect_ratio                          [Unitless]
-  areas.reference                       [m^2]
-  vertical                              [Boolean]
-configuration.number_panels_spanwise    [Unitless]
-configuration.number_panels_chordwise   [Unitless]
-conditions.aerodynamics.angle_of_attack [radians]
-
-Outputs:
-Cl                                      [Unitless]
-Cd                                      [Unitless]
+geometry.
+   wing.
+     spans.projected                       [m]
+     chords.root                           [m]
+     chords.tip                            [m]
+     sweeps.quarter_chord                  [radians]
+     taper                                 [Unitless]
+     twists.root                           [radians]
+     twists.tip                            [radians]
+     symmetric                             [Boolean]
+     aspect_ratio                          [Unitless]
+     areas.reference                       [m^2]
+     vertical                              [Boolean]
+     origin                                [m]
+   fuselage.
+    origin                                 [m]
+    width                                  [m]
+    heights.maximum                        [m]      
+    lengths.nose                           [m]    
+    lengths.tail                           [m]     
+    lengths.total                          [m]     
+    lengths.cabin                          [m]     
+    fineness.nose                          [Unitless]
+    fineness.tail                          [Unitless]
+    
+   settings.number_panels_spanwise         [Unitless]
+   settings.number_panels_chordwise        [Unitless]
+   settings.use_surrogate                  [Unitless]
+   settings.include_slipstream_effect      [Unitless]
+   conditions.aerodynamics.angle_of_attack [radians]
+   conditions.freestream.mach_number       [Unitless]
+   
+Outputs:                                   
+CL                                         [Unitless]
+Cl                                         [Unitless]
+CDi                                        [Unitless]
+Cdi                                        [Unitless]
 
 Properties Used:
 N/A

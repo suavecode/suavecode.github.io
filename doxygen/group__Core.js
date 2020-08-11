@@ -4,7 +4,8 @@ var group__Core =
       [ "__init__", "classSUAVE_1_1Core_1_1Container_1_1Container.html#ade60f359bbe42e43d4688674fca339a4", null ],
       [ "__defaults__", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a566ffa56d67a534512525e5212065568", null ],
       [ "append", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a0f2652c760244b0128b854b9dce9a774", null ],
-      [ "extend", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a6e9b7dbfa8ffa88162d698d32318b22d", null ]
+      [ "extend", "classSUAVE_1_1Core_1_1Container_1_1Container.html#a6e9b7dbfa8ffa88162d698d32318b22d", null ],
+      [ "get_children", "classSUAVE_1_1Core_1_1Container_1_1Container.html#ac8cc25ab031c7085e6b1e961ff562fcd", null ]
     ] ],
     [ "Data", "classSUAVE_1_1Core_1_1Data_1_1Data.html", [
       [ "__init__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a53cdb6dff3faeb47d13b68f989012733", null ],
@@ -35,11 +36,10 @@ var group__Core =
       [ "__eq__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a645e8940eb0f28f92e629b125d79e0e1", null ],
       [ "__getitem__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a2a4d54c5646822649f356d80ed8d5001", null ],
       [ "__iter__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a727a22d1550136cdd217dc06981483db", null ],
-      [ "__iter__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a727a22d1550136cdd217dc06981483db", null ],
+      [ "__iter_basic__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#aa500118acb942ad788ee2694f764104e", null ],
       [ "__len__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a1474cad96213dedce62249375071e51c", null ],
       [ "__new__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#add46625ec81f96d6b591547ea41b034a", null ],
       [ "__reduce__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#ad384e66a99054e3a8f12c83b6a84c93d", null ],
-      [ "__repr__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a14e6ece7703001986b937d76716150c6", null ],
       [ "__setattr__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#afc623fdd952face9c05101a11e71baed", null ],
       [ "__setitem__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#ad4449f7906047b8638173be32929176d", null ],
       [ "__str__", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#abce8790556fa9730b7fdbd99f85a6416", null ],

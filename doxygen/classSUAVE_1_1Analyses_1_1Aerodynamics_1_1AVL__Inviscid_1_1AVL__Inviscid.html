@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -149,12 +149,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9bdf600c35e259c1a8b4a7f79628dcf0"><td class="memItemLeft" align="right" valign="top"><a id="a9bdf600c35e259c1a8b4a7f79628dcf0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
 <tr class="separator:a9bdf600c35e259c1a8b4a7f79628dcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac204dd9a499b67b481b39e4e8a5db082"><td class="memItemLeft" align="right" valign="top"><a id="ac204dd9a499b67b481b39e4e8a5db082"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>keep_files</b></td></tr>
-<tr class="separator:ac204dd9a499b67b481b39e4e8a5db082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb8290b6a12685797096c4646584deae"><td class="memItemLeft" align="right" valign="top"><a id="acb8290b6a12685797096c4646584deae"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>save_regression_results</b></td></tr>
-<tr class="separator:acb8290b6a12685797096c4646584deae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d7881165eb8c63bd430a38f1f38a21"><td class="memItemLeft" align="right" valign="top"><a id="ad8d7881165eb8c63bd430a38f1f38a21"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>current_status</b></td></tr>
 <tr class="separator:ad8d7881165eb8c63bd430a38f1f38a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +167,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8b545d9a8168b3ae0da29f0319dc3b44"><td class="memItemLeft" align="right" valign="top"><a id="a8b545d9a8168b3ae0da29f0319dc3b44"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>surrogates</b></td></tr>
 <tr class="separator:a8b545d9a8168b3ae0da29f0319dc3b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac204dd9a499b67b481b39e4e8a5db082"><td class="memItemLeft" align="right" valign="top"><a id="ac204dd9a499b67b481b39e4e8a5db082"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>keep_files</b></td></tr>
+<tr class="separator:ac204dd9a499b67b481b39e4e8a5db082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8290b6a12685797096c4646584deae"><td class="memItemLeft" align="right" valign="top"><a id="acb8290b6a12685797096c4646584deae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>save_regression_results</b></td></tr>
+<tr class="separator:acb8290b6a12685797096c4646584deae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1c94fdf93f1b71429a2988e70af7d0c"><td class="memItemLeft" align="right" valign="top"><a id="ad1c94fdf93f1b71429a2988e70af7d0c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>regression_flag</b></td></tr>
 <tr class="separator:ad1c94fdf93f1b71429a2988e70af7d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,25 +267,20 @@ N/A
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Builds a surrogate based on sample evalations using a Guassian process.
-
 Assumptions:
 None
-
 Source:
 N/A
-
 Inputs:
 self.training.
   coefficients             [-] CL and CD
   span efficiency factor   [-] e 
-  grid_points              [radians,-] angles of attack and mach numbers 
-
+  grid_points              [radians,-] angles of attack and Mach numbers 
 Outputs:
 self.surrogates.
-  lift_coefficient       &lt;Guassian process surrogate&gt;
-  drag_coefficient       &lt;Guassian process surrogate&gt;
-  span_efficiency_factor &lt;Guassian process surrogate&gt;
-
+  lift_coefficient        
+  drag_coefficient        
+  span_efficiency_factor  
 Properties Used:
 No others
 </pre> 
@@ -480,21 +475,16 @@ self.geometry.tag
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Call methods to run AVL for sample point evaluation.
-
 Assumptions:
 Returned drag values are not meaningful.
-
 Source:
 N/A
-
 Inputs:
 see properties used
-
 Outputs:
 self.training.
   coefficients     [-] CL and CD
-  grid_points      [radians,-] angles of attack and mach numbers 
-
+  grid_points      [radians,-] angles of attack and Mach numbers 
 Properties Used:
 self.geometry.tag  &lt;string&gt;
 self.training.     

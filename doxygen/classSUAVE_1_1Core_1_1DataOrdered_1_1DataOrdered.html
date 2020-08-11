@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -136,8 +136,6 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>hasattr</b> (self, k)<
 <tr class="separator:a727a22d1550136cdd217dc06981483db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce8790556fa9730b7fdbd99f85a6416"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#abce8790556fa9730b7fdbd99f85a6416">__str__</a> (self, indent='')</td></tr>
 <tr class="separator:abce8790556fa9730b7fdbd99f85a6416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14e6ece7703001986b937d76716150c6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a14e6ece7703001986b937d76716150c6">__repr__</a> (self)</td></tr>
-<tr class="separator:a14e6ece7703001986b937d76716150c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70121d322ad7d8f87ed8a493d9a91531"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a70121d322ad7d8f87ed8a493d9a91531">get_bases</a> (self)</td></tr>
 <tr class="separator:a70121d322ad7d8f87ed8a493d9a91531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a328279360f08154b464968ba5029afc9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a328279360f08154b464968ba5029afc9">typestring</a> (self)</td></tr>
@@ -156,8 +154,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>hasattr</b> (self, k)<
 <tr class="separator:a645e8940eb0f28f92e629b125d79e0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1474cad96213dedce62249375071e51c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a1474cad96213dedce62249375071e51c">__len__</a> (self)</td></tr>
 <tr class="separator:a1474cad96213dedce62249375071e51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a727a22d1550136cdd217dc06981483db"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a727a22d1550136cdd217dc06981483db">__iter__</a> (self)</td></tr>
-<tr class="separator:a727a22d1550136cdd217dc06981483db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa500118acb942ad788ee2694f764104e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#aa500118acb942ad788ee2694f764104e">__iter_basic__</a> (self)</td></tr>
+<tr class="separator:aa500118acb942ad788ee2694f764104e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad384e66a99054e3a8f12c83b6a84c93d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#ad384e66a99054e3a8f12c83b6a84c93d">__reduce__</a> (self)</td></tr>
 <tr class="separator:ad384e66a99054e3a8f12c83b6a84c93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc623fdd952face9c05101a11e71baed"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#afc623fdd952face9c05101a11e71baed">__setattr__</a> (self, key, value)</td></tr>
@@ -185,8 +183,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>hasattr</b> (self, k)<
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">An extension of the Python dict which allows for both tag and '.' usage.
-    This is an unordered dictionary. So indexing it will not produce deterministic results.
-    This has less overhead than ordering. If ordering is needed use DataOrdered().
+    This is an ordered dictionary. So indexing it will produce deterministic results.
    
     Assumptions:
     N/A
@@ -416,7 +413,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>hasattr</b> (self, k)<
 </div>
 </div>
 <a id="a727a22d1550136cdd217dc06981483db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a727a22d1550136cdd217dc06981483db">&#9670;&nbsp;</a></span>__iter__() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a727a22d1550136cdd217dc06981483db">&#9670;&nbsp;</a></span>__iter__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,14 +446,14 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>hasattr</b> (self, k)<
 </pre> 
 </div>
 </div>
-<a id="a727a22d1550136cdd217dc06981483db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a727a22d1550136cdd217dc06981483db">&#9670;&nbsp;</a></span>__iter__() <span class="overload">[2/2]</span></h2>
+<a id="aa500118acb942ad788ee2694f764104e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa500118acb942ad788ee2694f764104e">&#9670;&nbsp;</a></span>__iter_basic__()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def SUAVE.Core.DataOrdered.DataOrdered.__iter__ </td>
+          <td class="memname">def SUAVE.Core.DataOrdered.DataOrdered.__iter_basic__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -582,41 +579,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>hasattr</b> (self, k)<
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Reduction function used for pickling data
-    
-    Assumptions:
-    N/A
-    
-    Source:
-    N/A
-    
-    Inputs:
-    N/A
-    
-    Outputs:
-    N/A
-    
-    Properties Used:
-    N/A    
-</pre> 
-</div>
-</div>
-<a id="a14e6ece7703001986b937d76716150c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e6ece7703001986b937d76716150c6">&#9670;&nbsp;</a></span>__repr__()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Core.DataOrdered.DataOrdered.__repr__ </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">This function is used for printing the dataname of the class
+<pre class="fragment">Reduction function used for making configs
     
     Assumptions:
     N/A
@@ -675,8 +638,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>hasattr</b> (self, k)<
     N/A
     
     Inputs:
-    k        [key]
-    v        [value]
+    key        [key]
+    value        [value]
     
     Outputs:
     N/A
