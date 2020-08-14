@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://suave.stanford.edu/assets/css/main.css" />
+		<link href="https://suave.stanford.edu/assets/css/prism.css" rel="stylesheet" />
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
@@ -93,15 +94,15 @@
 									<h4 id="header-and-imports">Header and Imports</h4>
 									<p>The header contains the file name and information on who created it and when it was last modified. If you plan to add your other files to the main SUAVE repository, a similar header should be created with matching style. A line only needs to be added to the modified section when significant changes are made. This would be to identify you as a key person to check with if someone has questions about the file.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code"># tut_mission_B737.py
+<pre class="highlight_code"><code class="language-python"># tut_mission_B737.py
 # 
 # Created:  Aug 2014, SUAVE Team
 # Modified: Aug 2017, SUAVE Team
 #           Mar 2020, E. Botero
-</div></div></pre></code><p></p>
+</pre></code><p></p>
 									<p>The imports contain two sections. The first is generally used Python libraries, which are not specific to SUAVE. Two are imported here. The first is numpy, which a common numerical programming package used in scientific computing. The second is matplotlib, which allows plotting of the results.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code"># General Python Imports
+<pre class="highlight_code"><code class="language-python"># General Python Imports
 import numpy as np
 # Numpy is a commonly used mathematically computing package. It contains many frequently used
 # mathematical functions and is faster than native Python, especially when using vectorized
@@ -109,12 +110,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 # Matplotlib's pyplot can be used to generate a large variety of plots. Here it is used to create
 # visualizations of the aircraft's performance throughout the mission.
-</div></div></pre></code><p></p>
+</pre></code><p></p>
 									<p>Next is the SUAVE imports. SUAVE is imported directly first, which allows us to grab individual SUAVE classes later on without importing each one at the top. Next, the Data and Units modules are imported. Data is a SUAVE-specific data structure that operates much like a dictionary but has some special features as described in the comments. The Units module is a standardized way to do unit conversions, also further described in the comments. After that is the turbofan sizing method. This method is used to size the design mass flow, and does not specify any geometric properties.</p>
 									
 
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code"># SUAVE Imports
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python"># SUAVE Imports
 import SUAVE
 from SUAVE.Core import Data, Units 
 # The Data import here is a native SUAVE data structure that functions similarly to a dictionary.
@@ -132,7 +133,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 
 									<h4 id="main">main</h4>
 									<p>The main function builds the vehicle, runs the mission, and plots the results by calling the required functions in sequence. The details of each call can be seen in the comments.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def main():
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def main():
     """This function gets the vehicle configuration, analysis settings, and then runs the mission.
     Once the mission is complete, the results are plotted."""
     
@@ -162,7 +163,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 
 <h4>full_setup</h4>
 <p>This function builds the vehicle configurations, their analyses, and the mission. The mission is built here because the missions are attached to the analyses. In the context of SUAVE, configurations refer to changes in the vehicle in relation to its baseline setup. These can range for flap deflections to a different number of engines (something which may be more relevant for eVTOL concepts).</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def full_setup():
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def full_setup():
     """This function gets the baseline vehicle and creates modifications for different 
     configurations, as well as the mission and analyses to go with those configurations."""
 
@@ -186,7 +187,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 
 <h4>analyses_setup</h4>
 <p>This function assigns a set of analyses to each configuration. In this tutorial, all configurations have the same analyses set. If you would like a different analyses set to be used for a particular configuration,  this is the place to call that function.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def analyses_setup(configs):
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def analyses_setup(configs):
     """Set up analyses for each of the different configurations."""
 
     analyses = SUAVE.Analyses.Analysis.Container()
@@ -209,7 +210,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 	<li>Planet - this is needed so that we can attach an atmosphere.</li>
 	<li>Atmosphere - this sets the atmospheric conditions that the aircraft will fly through. The US 1976 standard atmosphere is a common choice for performance analysis.</li>
 </ol>	
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def base_analysis(vehicle):
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def base_analysis(vehicle):
     """This is the baseline set of analyses to be used with this vehicle. Of these, the most
     commonly changed are the weights and aerodynamics methods."""
 
@@ -258,10 +259,10 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 <h4>vehicle_setup</h4>
 <p>This function is where the baseline vehicle is defined. The order of the components added in this section is arbitrary. To start, we create a vehicle instance and add a tag. This tag can be any string.</p>
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code">    vehicle = SUAVE.Vehicle()
-    vehicle.tag = 'Boeing_737-800'  <code="highlight_code"></div></div></pre></code><p></p>
+    vehicle.tag = 'Boeing_737-800'  <code class="language-python"></div></div></pre></code><p></p>
 
 <p>The next step is to define the high-level vehicle parameters. This consists of the items shown below. Units.lb could be used here to automatically convert values from pounds to kilograms. If a conversion from pounds to Newtons is desired in another context, Units.lbf can be used.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    # Vehicle level mass properties
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    # Vehicle level mass properties
     # The maximum takeoff gross weight is used by a number of methods, most notably the weight
     # method. However, it does not directly inform mission analysis.
     vehicle.mass_properties.max_takeoff               = 79015.8 * Units.kilogram 
@@ -291,7 +292,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     vehicle.systems.accessories    = "medium range"</div></div></pre></code><p></p>
     
 <p>Next the landing gear are defined. The values shown here are not actually used in the calculation performed by this tutorial script, but may be used for noise analysis.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    # The settings here can be used for noise analysis, but are not used in this tutorial
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    # The settings here can be used for noise analysis, but are not used in this tutorial
     landing_gear = SUAVE.Components.Landing_Gear.Landing_Gear()
     landing_gear.tag = "main_landing_gear"
     
@@ -306,7 +307,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     vehicle.landing_gear = landing_gear</div></div></pre></code><p></p>
     
 <p>The main wing is now defined. Note that the Main_Wing class is used. This will automatically let certain analyses know that this is the main wing (or potentially one of them). The tag 'main_wing' may still be in use with some older analysis, but efforts are being made to remove dependence of analyses on this tag. Other notes on this setup can be seen in the comments.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    # This main wing is approximated as a simple trapezoid. A segmented wing can also be created if
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    # This main wing is approximated as a simple trapezoid. A segmented wing can also be created if
     # desired. Segmented wings appear in later tutorials, and a version of the 737 with segmented
     # wings can be found in the SUAVE testing scripts.
     
@@ -341,7 +342,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     wing.dynamic_pressure_ratio  = 1.0</div></div></pre></code><p></p>
     
 <p>The control surfaces follow the general geometric definition. For the main wing, these are used in high lift calculations and if export to AVL is desired. Span fractions include the centerbody.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    # Information in this section is used for high lift calculations and when conversion to AVL
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    # Information in this section is used for high lift calculations and when conversion to AVL
     # is desired.
     
     # Deflections will typically be specified separately in individual vehicle configurations.
@@ -376,15 +377,15 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     vehicle.append_component(wing)</div></div></pre></code><p></p>
     
 <p>Next is the horizontal stabilizer. This is built in nearly the same way as the main wing, but now uses the Horizontal_Tail class.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    wing = SUAVE.Components.Wings.Horizontal_Tail()
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    wing = SUAVE.Components.Wings.Horizontal_Tail()
     wing.tag = 'horizontal_stabilizer'</div></div></pre></code><p></p>
     
 <p>The vertical stabilizer also uses a different class, and otherwise has one additional field to designate it as a t tail or not. This difference is used in the weight calculation.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    wing = SUAVE.Components.Wings.Vertical_Tail()</div></div></pre></code><p></p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    wing.t_tail                  = False</div></div></pre></code><p></p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    wing = SUAVE.Components.Wings.Vertical_Tail()</div></div></pre></code><p></p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    wing.t_tail                  = False</div></div></pre></code><p></p>
 
 <p>With the wings complete, we now move to the fuselage. A number of geometric parameters are defined here, with unusual ones described in the comments.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    fuselage = SUAVE.Components.Fuselages.Fuselage()
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    fuselage = SUAVE.Components.Fuselages.Fuselage()
     fuselage.tag = 'fuselage'
     
     # Number of coach seats is used in some weights methods
@@ -424,7 +425,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     vehicle.append_component(fuselage)</div></div></pre></code><p></p>
     
 <p>Next is the turbofan. It is created as a Turbofan energy network, which determines its behavior. More details on the turbofan will be provided in later tutorials, and more information on energy networks in general can be found in the documentation section. The high-level parameters are reproduced here.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    turbofan = SUAVE.Components.Energy.Networks.Turbofan()
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    turbofan = SUAVE.Components.Energy.Networks.Turbofan()
     # For some methods, the 'turbofan' tag is still necessary. This will be changed in the
     # future to allow arbitrary tags.
     turbofan.tag = 'turbofan'
@@ -443,7 +444,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     turbofan.working_fluid = SUAVE.Attributes.Gases.Air()</div></div></pre></code><p></p>
     
 <p>One component of particular interest is the thrust component. This is a bit different than the other components in the list since it is not a physical item. It is used to size the design mass flow of the engine, which determines what throttle is needed for a particular thrust. For this network, the thrust and mass flow scale linearly with throttle at given conditions.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">    # ------------------------------------------------------------------
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    # ------------------------------------------------------------------
     #Component 10 : thrust (to compute the thrust)
     thrust = SUAVE.Components.Energy.Processes.Thrust()       
     thrust.tag ='compute_thrust'
@@ -460,7 +461,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     
 <h4>configs_setup</h4>
 <p>This function is where the different vehicle configurations (labeled configs here) are defined. In this case, these configs only change flap and slat settings. To start, the base configuration is defined as simply matching the baseline vehicle. The configs are defined as containers, which are SUAVE Data classes with a few extra features such as append. The cruise config is created in almost the same way, but demonstrates that configs can be used to create a new config as well. The first config to include changes is then the takeoff config. This shows how vehicle parameters can be changed. The remaining configs follow a similar pattern.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def configs_setup(vehicle):
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def configs_setup(vehicle):
     """This function sets up vehicle configurations for use in different parts of the mission.
     Here, this is mostly in terms of high lift settings."""
     
@@ -494,7 +495,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     
 <h4>simple_sizing</h4>
 <p>This function modifies the base and landing configurations according to a few sizing relations. These relationships could be replaced with others depending on your needs. Additionally, a few functions exist to more fully size the wing and fuselage based on a smaller number of inputs. They exist <a href="https://github.com/suavecode/SUAVE/tree/develop/trunk/SUAVE/Methods/Geometry/Two_Dimensional/Planform">here</a>.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def simple_sizing(configs):
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def simple_sizing(configs):
     """This function applies a few basic geometric sizing relations and modifies the landing
     configuration."""
 
@@ -534,7 +535,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     
 <h4>mission_setup</h4>
 <p>The mission setup describes the mission profile that is used for computing aircraft performance. It consists of a series of segments that are then simulated sequentially. More information on the details of the mission solver can be found here. This also contains a starting airport, which may be used with other types of analysis but does not affect to flown mission by default.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def mission_setup(analyses):
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def mission_setup(analyses):
     """This function defines the baseline mission that will be flown by the aircraft in order
     to compute performance."""
 
@@ -588,7 +589,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     
 <h4>missions_setup</h4>
 <p>This function allows the bundling of multiple missions into a missions container, but only contains the base mission in this tutorial. If multiple missions are added here, they still must be called individually for evaluation.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def missions_setup(base_mission):
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def missions_setup(base_mission):
     """This allows multiple missions to be incorporated if desired, but only one is used here."""
 
     # Setup the mission container
@@ -604,38 +605,13 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     return missions  </div></div></pre></code><p></p>
     
 <h4>plot_mission</h4>
-<p>The last function in this file is used to plot the performance results from the mission evaluation. Results are stored by segment, so each segment is extracted individually. The Units module is also used to convert from metric to the desired output units. Other options in this function are common Matplotlib features to produce plots in the chosen format.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code="highlight_code">def plot_mission(results,line_style='bo-'):
-    """This function plots the results of the mission analysis and saves those results to
-    PDF and png files."""
+<p>The last function in this file is used to plot the performance results from the mission evaluation. The results shown are not an exhaustive list of SUAVE outputs, and custom plotting routines can be created.</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">def plot_mission(results,line_style='bo-'):
+    """This function plots the results of the mission analysis and saves those results to 
+    png files."""
 
-    axis_font = {'fontname':'Arial', 'size':'14'}    
-
-    # ------------------------------------------------------------------
-    #   Aerodynamics
-    # ------------------------------------------------------------------
-
-
-    fig = plt.figure("Aerodynamic Forces",figsize=(8,6))
-    for segment in results.segments.values():
-
-        time   = segment.conditions.frames.inertial.time[:,0] / Units.min
-        Thrust = segment.conditions.frames.body.thrust_force_vector[:,0] / Units.lbf
-        eta    = segment.conditions.propulsion.throttle[:,0]
-
-        axes = fig.add_subplot(2,1,1)
-        axes.plot( time , Thrust , line_style )
-        axes.set_ylabel('Thrust (lbf)',axis_font)
-        axes.grid(True)
-
-        axes = fig.add_subplot(2,1,2)
-        axes.plot( time , eta , line_style )
-        axes.set_xlabel('Time (min)',axis_font)
-        axes.set_ylabel('Throttle',axis_font)
-        axes.grid(True)	
-
-        plt.savefig("B737_engine.pdf")
-        plt.savefig("B737_engine.png")</div></div></pre></code><p></p>
+    # Plot Flight Conditions 
+    plot_flight_conditions(results, line_style)</div></div></pre></code><p></p>
 
 									<p>This section should generate the plots below if the mission analysis executes correctly. The results show the aerodynamic, propulsion, and mission properties of the B737-800 for the defined mission.</p>
 
@@ -657,19 +633,19 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 
 									<p>2) Modify the parameters of the main wing</p>
 
-									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>wing.aspect_ratio            = 10.12      
+									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">wing.aspect_ratio            = 10.12      
 wing.spans.projected         = 40.0  * Units.meter
 wing.areas.reference         = 158.0 * Units['meters**2']</code></pre></div></div><p></p>
 
 									<p>You may also need to update the reference area for the aircraft.</p>
 
-									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>vehicle.reference_area         =     158.0</code></pre></div></div><p></p>
+									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">vehicle.reference_area         =     158.0</code></pre></div></div><p></p>
 
 									<p>3) Update the mission parameters by moving to the mission_setup function</p>
 
 									<p>4) First update the end altitude of the final climb segment. Although the original script has the altitude stated in m, courtesy of the Units package it is easy to modify the altitude to 25,000 ft without worrying about the units conversion as shown below.</p>
 
-									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
+									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">segment = Segments.Climb.Constant_Speed_Constant_Rate(base_segment)
 segment.tag = "climb_3"
 
 segment.analyses.extend( analyses.cruise )
@@ -682,7 +658,7 @@ mission.append_segment(segment)</code></pre></div></div><p></p>
 
 									<p>5) Next update the cruise segment velocity to  the new speed value</p>
 
-									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
+									<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">segment = Segments.Cruise.Constant_Speed_Constant_Altitude(base_segment)
 segment.tag = "cruise"
 
 segment.analyses.extend( analyses.cruise )
@@ -755,6 +731,6 @@ mission.append_segment(segment)</code></pre></div></div><p></p>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+	                <script src="https://suave.stanford.edu/assets/js/prism.js"></script>
 	</body>
 </html>
