@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Concorde - SUAVE Tutorial</title>
+		<title>Creating and Using a New Analysis</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://suave.stanford.edu/assets/css/main.css" />
+		<link href="https://suave.stanford.edu/assets/css/prism.css" rel="stylesheet" />
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132339206-1"></script>
@@ -67,72 +68,109 @@
 							<!-- Content -->
 
 								<article>
-								<h2 id="concorde-tutorial">Concorde Tutorial</h2>
+									<header>
+										<h2>Creating and Using a New Analysis</h2>
+									</header>
 
-<p>This tutorial gives an overview of changes made to the setup to evaluate a supersonic mission.</p>
+									<p>This tutorial is designed to provide the information needed to modify a SUAVE aerodynamic analysis and create new ones. Many of the items discussed here also apply to other analysis types within SUAVE. For this tutorial, the Concorde is used to demonstrate switching the aerodynamic analysis to one that can handle supersonic conditions.</p>
 
-<h3 id="aerodynamics-module">Aerodynamics Module:</h3>
+									<h3 id="running-the-tutorial-file">Baseline Aerodynamic Analysis</h3>
+									
+									<p>The basic aerodynamic analysis used in SUAVE is called Fidelity_Zero. It is based on a mix of low fidelity physical and empirical methods, similar to what you might find in a typical conceptual design textbook. This is what is used for the 737 in the previous tutorial, and is specified in the analysis settings:</p>
+									
+<pre class="highlight_code"><code class="language-python">def base_analysis(vehicle):
+...
+    # ------------------------------------------------------------------
+    #  Aerodynamics Analysis
+    aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()
+    aerodynamics.geometry = vehicle
+    analyses.append(aerodynamics)
+...
+</pre></code><p></p>
+									<p>In the SUAVE code structure, the analysis is broken into two sections. One is what you see above, which is the analysis class. The other is the individual methods that are used in the analysis class, which are stored in separate Methods folders. The purpose of splitting them is to make it easier for the different analysis classes to share methods. We will start with an explanation of the individual bits of the analysis class in the file trunk/Analyses/Aerodynamics/Fidelity_Zero.py.</p>
 
-<p>To allow aerodynamic calculations in supersonic flight, we use the zero fidelity supersonic module. This is quite easy to swap with the subsonic zero fidelity model. This model and the zero fidelity subsonic module are in the same directory, so they can be switched by changing a single line in the analysis section:</p>
+<p>The first section is the imports. These are mix of standard imports and a few specific items needed for the analysis. They are described individually as they appear in the body of the class. The first function in the fidelity zero class is __defaults__. This contains the primary functionality as it sets the default settings and the methods that will be used to compute aerodynamics.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()
-</code></pre></div></div>
+<p>The settings begin as below:</p>
 
-<p>to</p>
+<pre class="highlight_code"><code class="language-python"># correction factors
+settings = self.settings
+settings.fuselage_lift_correction           = 1.14
+settings.trim_drag_correction_factor        = 1.02
+settings.wing_parasite_drag_form_factor     = 1.1
+</pre></code><p></p>
+									<p>self.settings is inherited from the base Markup class and therefore is not redefined. Instead, these values and several more are added. Items in this group control how the aerodynamic methods operate. Variables that are set to None typically mean that a method specific default will be used instead. For example, span efficiency controls whether or not a blanket span efficiency is used to override the drag output for the vortex lattice method.</p>
+									
+<p>The next group builds the evaluation procedure. It is constructed as a set of processes which include a number of functions from the methods group. The Process class is essentially a container for all the functions added to it, and will evaluate those functions in the order they are added. Another process can also be added instead of a function, as is initially done with compute.drag.parasite. There is also a special type of process class called Process_Geometry, which will iterate through the vehicle geometry and apply the submethod to all components in the specified group. Altogether, this code block creates a process for lift and drag and sets up the analysis to run the relevant methods in the order shown (however they are not run as we step through this code block). self.process.compute is a process itself as well.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>aerodynamics = SUAVE.Analyses.Aerodynamics.Supersonic_Zero()
-</code></pre></div></div>
-<p>The supersonic aerodynamics module can still handle the subsonic portions of the flight.</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python"># build the evaluation process
+compute = self.process.compute
 
-<h3 id="wing-additions">Wing Additions:</h3>
+compute.lift = Process()
 
-<p>Some of the calculations are changed to account for different properties that are not automatically captured in the model.</p>
+compute.lift.inviscid_wings                = Vortex_Lattice()
+compute.lift.vortex                        = SUAVE.Methods.skip
+compute.lift.fuselage                      = Common.Lift.fuselage_correction
+compute.lift.total                         = Common.Lift.aircraft_total
 
-<ul>
-  <li>Vortex lift is set to true. This causes the vortex lift module to add a CL increment to the aircraft.</li>
-  <li>High Mach is set to true. This changes the way that high subsonic compressibility drag is calculated and brings it more in line with Concorde behavior.</li>
-</ul>
+compute.drag = Process()
+compute.drag.parasite                      = Process()
+compute.drag.parasite.wings                = Process_Geometry('wings')
+compute.drag.parasite.wings.wing           = Common.Drag.parasite_drag_wing 
+compute.drag.parasite.fuselages            = Process_Geometry('fuselages')
+compute.drag.parasite.fuselages.fuselage   = Common.Drag.parasite_drag_fuselage
+compute.drag.parasite.propulsors           = Process_Geometry('propulsors')
+</div></div></pre></code><p></p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>    wing.vortex_lift             = True
-</code></pre></div></div>
+<p>The other function in this class is the initialize function. This allows a surrogate of the lift model to be built. A surrogate is often used here in order to avoid the time required to evaluate the vortex lattice every time the aerodynamic analysis is called.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>    wing.high_mach               = True
-</code></pre></div></div>
+<h3 id="main">Changes for Supersonic Analysis</h3>
+									<p>The next question is how to change this analysis class to allow for calculations in supersonic conditions. For this, we switch over to the Supersonic_Zero class and examine the differences. Generally, changes that are required are updates to the settings and changes in which methods are used. The primary settings additions that are needed for this analysis type are those that control the transonic drag rise and wave drag scaling.</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python"># this multiplier is used to determine the volume wave drag at the peak Mach number
+# by multiplying the volume wave drag at the end drag rise Mach number
+settings.peak_mach_number                      = 1.04
+settings.cross_sectional_area_calculation_type = 'Fixed'
+# 'Fixed' means that the area is not able to vary with Mach number, so the number at the desired cruise condition should
+# be used
+# 'OpenVSP' is a desired future possibility. This would allow the cross sectional area to vary with Mach number, but is 
+# much more computationally intensive.        
+settings.volume_wave_drag_scaling    = 3.7 # 1.8-2.2 are given as typical for an SST, but 3.7 was found to be more accurate 
+# This may be due to added propulsion effects
+settings.fuselage_parasite_drag_begin_blend_mach = 0.91
+settings.fuselage_parasite_drag_end_blend_mach   = 0.99
+</div></div></pre></code><p></p>
 
-<p>Note also that Concorde does not have a horizontal tail, so this is not included in the vehicle setup.</p>
+<p>For the methods, a subset must be swapped. Two groups of methods are imported this time. The first is designated as Common, which is the same group as was used in Fidelity_Zero. The second is designated as Methods, and contains methods specific to the supersonic case. These new methods replace their subsonic-only variants. Once all of these methods have been replaced, the new analysis class is ready.</p>
 
-<h3 id="turbojet-module">Turbojet Module:</h3>
+<p>In order for the new analysis class and any new methods created to function properly, they must also be added to the relevant __init__.py files that link together SUAVE as a library. This requires adding a line to trunk/Analyses/Aerodynamics/__init__.py:</p>
 
-<p>Since Concorde has a diverging nozzle that allows for supersonic outflow, a modified turbojet is used that can account for this. This turbojet component is again switched out with a single line.</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">from .Supersonic_Zero              import Supersonic_Zero
+</div></div></pre></code><p></p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>nozzle = SUAVE.Components.Energy.Converters.Supersonic_Nozzle()
-</code></pre></div></div>
+<p>and to trunk/Methods/Aerodynamics/__init__.py:</p>
 
-<p>instead of</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">from . import Supersonic_Zero</div></div></pre></code><p></p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()  
-</code></pre></div></div>
+<p>New files must also be created for the supersonic methods folder structure, which can be found as trunk/Methods/Aerodynamics/Supersonic_Zero/__init__.py, trunk/Methods/Aerodynamics/Supersonic_Zero/Lift/__init__.py, and trunk/Methods/Aerodynamics/Supersonic_Zero/Lift/__init__.py.</p>
 
-<h3 id="mission-segments">Mission Segments:</h3>
+<p>Once all of the files are ready, a couple modifications are needed in the vehicle and analysis setup. These can be seen the tut_concorde.py tutorial file. First, to switch the analysis type used, we replace</p>
 
-<p>The mission typically flown by Concorde calls for mission segments that are not utilized in the Boeing 737 case. These are Mach number dependent, and require different inputs from the segments previously given. The new mission segments are linear Mach constant rate (climb and descent). Both require a starting and ending Mach number, which will vary linearly in time over the descent. For an example, check the third climb segment:</p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()</div></div></pre></code><p></p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>segment = Segments.Climb.Linear_Mach_Constant_Rate(base_segment)
-segment.tag = "climb_3"
+<p>with</p>
 
-segment.analyses.extend( analyses.cruise )
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">aerodynamics = SUAVE.Analyses.Aerodynamics.Supersonic_Zero()</div></div></pre></code><p></p>
 
-segment.altitude_end = 7.60   * Units.km
-segment.mach_start   = 0.64
-segment.mach_end     = 1.0
-segment.climb_rate   = 5.05  * Units['m/s']
-</code></pre></div></div>
+<p>Then, to use the special analysis capabilities, a couple settings are added to the main wing:</p>
 
-<h3 id="takeoff-and-landing-configuration">Takeoff and Landing Configuration</h3>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">wing.vortex_lift             = True
+wing.high_mach               = True
+</div></div></pre></code><p></p>
 
-<p>Since Concorde does not have flaps or slats, specific takeoff and landing configurations are not used.</p>
+<p>This turns on the vortex lift correction at low speeds and changes the compressibility equations at high subsonic speeds to better match Concorde-type behavior.</p>
 
-<br>
+<p>You can run the tut_concorde.py tutorial file to see the results of these changes. If you have any more questions on how to modify the aerodynamic analyses or any other types of analyses, please let us know on our forum.</p>
+									<br>
 								</article>
 
 						</div>
@@ -189,6 +227,6 @@ segment.climb_rate   = 5.05  * Units['m/s']
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+	                <script src="https://suave.stanford.edu/assets/js/prism.js"></script>
 	</body>
 </html>
