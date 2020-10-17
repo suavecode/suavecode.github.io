@@ -87,9 +87,9 @@
     analyses.append(aerodynamics)
 ...
 </pre></code><p></p>
-									<p>In the SUAVE code structure, the analysis is broken into two sections. One of what you see above, which is the analysis class. The other is the individual methods that are used be the analysis class, which are stored in separate Methods folders. The purpose of splitting them is to make it easier for the different analysis classes to share methods. We will start with an explanation of the individual bits of the analysis class in the file trunk/Analyses/Aerodynamics/Fidelity_Zero.py.</p>
+									<p>In the SUAVE code structure, the analysis is broken into two sections. One is what you see above, which is the analysis class. The other is the individual methods that are used in the analysis class, which are stored in separate Methods folders. The purpose of splitting them is to make it easier for the different analysis classes to share methods. We will start with an explanation of the individual bits of the analysis class in the file trunk/Analyses/Aerodynamics/Fidelity_Zero.py.</p>
 
-<p>The first section is the imports. These are mix of standard imports and a few specific items needed for the analysis. They will be described individual as they appear in the body of the class. The first function in the fidelity zero class is __defaults__. This contains the primary functionality as it sets the default settings and the methods that will be used to compute aerodynamics.</p>
+<p>The first section is the imports. These are mix of standard imports and a few specific items needed for the analysis. They are described individually as they appear in the body of the class. The first function in the fidelity zero class is __defaults__. This contains the primary functionality as it sets the default settings and the methods that will be used to compute aerodynamics.</p>
 
 <p>The settings begin as below:</p>
 
@@ -153,11 +153,15 @@ settings.fuselage_parasite_drag_end_blend_mach   = 0.99
 
 <p>New files must also be created for the supersonic methods folder structure, which can be found as trunk/Methods/Aerodynamics/Supersonic_Zero/__init__.py, trunk/Methods/Aerodynamics/Supersonic_Zero/Lift/__init__.py, and trunk/Methods/Aerodynamics/Supersonic_Zero/Lift/__init__.py.</p>
 
-<p>Once all of the files are ready, a couple modifications are needed in the vehicle and analysis set up. These can be seen the tut_concorde.py tutorial file. First, to switch the analysis type used, we replace</p>
+<p>Once all of the files are ready, a couple modifications are needed in the vehicle and analysis setup. These can be seen the tut_concorde.py tutorial file. First, to switch the analysis type used, we replace</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">aerodynamics = SUAVE.Analyses.Aerodynamics.Fidelity_Zero()</div></div></pre></code><p></p>
 
 <p>with</p>
+
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">aerodynamics = SUAVE.Analyses.Aerodynamics.Supersonic_Zero()</div></div></pre></code><p></p>
+
+<p>Then, to use the special analysis capabilities, a couple settings are added to the main wing:</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">wing.vortex_lift             = True
 wing.high_mach               = True
