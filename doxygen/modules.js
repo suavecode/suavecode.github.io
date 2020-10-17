@@ -9,8 +9,8 @@ var modules =
     [ "Methods", "group__Methods.html", "group__Methods" ],
     [ "Gas_Dymamics", "group__Methods-Aerodynamics-Common-Gas__Dynamics.html", "group__Methods-Aerodynamics-Common-Gas__Dynamics" ],
     [ "Optimization", "group__Optimization.html", "group__Optimization" ],
+    [ "Plots", "group__Plots.html", "group__Plots" ],
     [ "Plugins", "group__Plugins.html", "group__Plugins" ],
-    [ "Sizing", "group__Sizing.html", "group__Sizing" ],
     [ "Surrogate", "group__Surrogate.html", "group__Surrogate" ],
     [ "Vehicle", "group__Vehicle.html", "group__Vehicle" ]
 ];

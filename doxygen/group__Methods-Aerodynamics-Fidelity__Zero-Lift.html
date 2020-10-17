@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -112,12 +112,10 @@ $(document).ready(function(){initNavTree('group__Methods-Aerodynamics-Fidelity__
 Functions</h2></td></tr>
 <tr class="memitem:gaba1f06c8eee68017b66b4f853272463b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Fidelity__Zero-Lift.html#gaba1f06c8eee68017b66b4f853272463b">SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.compute_flap_lift.compute_flap_lift</a> (t_c, flap_type, flap_chord, flap_angle, sweep, wing_Sref, wing_affected_area)</td></tr>
 <tr class="separator:gaba1f06c8eee68017b66b4f853272463b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4adc3f3425f18c8b914194a7b233fe31"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Fidelity__Zero-Lift.html#ga4adc3f3425f18c8b914194a7b233fe31">SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.compute_max_lift_coeff.compute_max_lift_coeff</a> (vehicle, conditions=None)</td></tr>
-<tr class="separator:ga4adc3f3425f18c8b914194a7b233fe31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7be432a94aedc5974f02a9a210b7b7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Fidelity__Zero-Lift.html#gadf7be432a94aedc5974f02a9a210b7b7">SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.compute_max_lift_coeff.compute_max_lift_coeff</a> (state, settings, geometry)</td></tr>
+<tr class="separator:gadf7be432a94aedc5974f02a9a210b7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f976657004084baf27a29d8bbf567be"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Fidelity__Zero-Lift.html#ga0f976657004084baf27a29d8bbf567be">SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.compute_slat_lift.compute_slat_lift</a> (slat_angle, sweep_angle)</td></tr>
 <tr class="separator:ga0f976657004084baf27a29d8bbf567be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga987c51069000f6e459d2754ed2533125"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Fidelity__Zero-Lift.html#ga987c51069000f6e459d2754ed2533125">SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.wing_compressibility_correction.wing_compressibility_correction</a> (state, settings, geometry)</td></tr>
-<tr class="separator:ga987c51069000f6e459d2754ed2533125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions to perform low-fidelity lift calculations. </p>
@@ -202,8 +200,8 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="ga4adc3f3425f18c8b914194a7b233fe31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4adc3f3425f18c8b914194a7b233fe31">&#9670;&nbsp;</a></span>compute_max_lift_coeff()</h2>
+<a id="gadf7be432a94aedc5974f02a9a210b7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf7be432a94aedc5974f02a9a210b7b7">&#9670;&nbsp;</a></span>compute_max_lift_coeff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,13 +210,19 @@ N/A
           <td class="memname">def SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.compute_max_lift_coeff.compute_max_lift_coeff </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>vehicle</em>, </td>
+          <td class="paramname"><em>state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>conditions</em> = <code>None</code>&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>geometry</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -236,7 +240,7 @@ Source:
 Unknown
 
 Inputs:
-vehicle.max_lift_coefficient_factor        [Unitless]
+analyses.max_lift_coefficient_factor       [Unitless]
 vehicle.reference_area                     [m^2]
 vehicle.wings.                             
   areas.reference                          [m^2]
@@ -302,63 +306,6 @@ sweep_angle  [radians]
 
 Outputs:
 dcl_slat     [Unitless]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
-<a id="ga987c51069000f6e459d2754ed2533125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga987c51069000f6e459d2754ed2533125">&#9670;&nbsp;</a></span>wing_compressibility_correction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Aerodynamics.Fidelity_Zero.Lift.wing_compressibility_correction.wing_compressibility_correction </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>geometry</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Corrects a wings lift based on compressibility
-
-Assumptions:
-subsonic
-
-Source:
-https://stanford.edu/~cantwell/AA200_Course_Material/AA200_Course_Notes/
-
-Inputs:
-settings.fuselage_lift_correction  [-]
-state.conditions.
-  freestream.mach_number           [-]
-  aerodynamics.angle_of_attack     [radians]
-  aerodynamics.lift_coefficient    [-]
-
-Outputs:
-state.conditions.aerodynamics.
-  lift_breakdown.compressible_wings [-] CL for the wings
-  lift_coefficient                  [-]
-wings_lift_comp                     [-]
 
 Properties Used:
 N/A

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -110,10 +110,8 @@ $(document).ready(function(){initNavTree('group__Methods-Center__of__Gravity.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab07340ed39f8011a722913b0359beec9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Center__of__Gravity.html#gab07340ed39f8011a722913b0359beec9">SUAVE.Methods.Center_of_Gravity.compute_aircraft_center_of_gravity.compute_aircraft_center_of_gravity</a> (vehicle, nose_load_fraction=.06)</td></tr>
-<tr class="separator:gab07340ed39f8011a722913b0359beec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3b24268349627cb2f3db8131229b94f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Center__of__Gravity.html#gaa3b24268349627cb2f3db8131229b94f">SUAVE.Methods.Center_of_Gravity.compute_component_centers_of_gravity.compute_component_centers_of_gravity</a> (vehicle, compute_propulsor_origin=False)</td></tr>
-<tr class="separator:gaa3b24268349627cb2f3db8131229b94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae312c0bb7a3b272dedf760319d66bd14"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Center__of__Gravity.html#gae312c0bb7a3b272dedf760319d66bd14">SUAVE.Methods.Center_of_Gravity.compute_component_centers_of_gravity.compute_component_centers_of_gravity</a> (vehicle, nose_load=0.06)</td></tr>
+<tr class="separator:gae312c0bb7a3b272dedf760319d66bd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e046a4780e00922be1aa52ab2caf1b7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Center__of__Gravity.html#ga6e046a4780e00922be1aa52ab2caf1b7">SUAVE.Methods.Center_of_Gravity.compute_fuel_center_of_gravity_longitudinal_range.plot_cg_map</a> (masses, cg_mins, cg_maxes, empty_mass=0, empty_cg=0)</td></tr>
 <tr class="separator:ga6e046a4780e00922be1aa52ab2caf1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa80111cbbe76730ccddcbba6b613240e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Center__of__Gravity.html#gaa80111cbbe76730ccddcbba6b613240e">SUAVE.Methods.Center_of_Gravity.compute_fuel_center_of_gravity_longitudinal_range.compute_fuel_center_of_gravity_longitudinal_range</a> (vehicle)</td></tr>
@@ -125,54 +123,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Description. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gab07340ed39f8011a722913b0359beec9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab07340ed39f8011a722913b0359beec9">&#9670;&nbsp;</a></span>compute_aircraft_center_of_gravity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Center_of_Gravity.compute_aircraft_center_of_gravity.compute_aircraft_center_of_gravity </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>vehicle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>nose_load_fraction</em> = <code>.06</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">This computes the CG for the vehicle from the assigned vehicle mass 
-properties and locations
-    
-Assumptions:
-None
-    
-Source:
-N/A
-    
-Inputs:
-vehicle
-nose_load_fraction
-    
-Outputs:
-vehicle.mass_properties.center_of_gravity      [meters]
-    
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
-<a id="gaa3b24268349627cb2f3db8131229b94f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa3b24268349627cb2f3db8131229b94f">&#9670;&nbsp;</a></span>compute_component_centers_of_gravity()</h2>
+<a id="gae312c0bb7a3b272dedf760319d66bd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae312c0bb7a3b272dedf760319d66bd14">&#9670;&nbsp;</a></span>compute_component_centers_of_gravity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +139,7 @@ N/A
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>compute_propulsor_origin</em> = <code>False</code>&#160;</td>
+          <td class="paramname"><em>nose_load</em> = <code>0.06</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -151,12 +151,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acb0b333f0664e897af228b7636682b7b"><td class="memItemLeft" align="right" valign="top"><a id="acb0b333f0664e897af228b7636682b7b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
 <tr class="separator:acb0b333f0664e897af228b7636682b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2cccd337ca32296250e3a064452d2e"><td class="memItemLeft" align="right" valign="top"><a id="afa2cccd337ca32296250e3a064452d2e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>keep_files</b></td></tr>
-<tr class="separator:afa2cccd337ca32296250e3a064452d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad0f326ce4bd4fcbd2c5951ca881de5"><td class="memItemLeft" align="right" valign="top"><a id="a8ad0f326ce4bd4fcbd2c5951ca881de5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>save_regression_results</b></td></tr>
-<tr class="separator:a8ad0f326ce4bd4fcbd2c5951ca881de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e02a873dd1c9343fd8aad6958cc6745"><td class="memItemLeft" align="right" valign="top"><a id="a5e02a873dd1c9343fd8aad6958cc6745"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>current_status</b></td></tr>
 <tr class="separator:a5e02a873dd1c9343fd8aad6958cc6745"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +172,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8eea7bc16140884d265413b200d0b8d4"><td class="memItemLeft" align="right" valign="top"><a id="a8eea7bc16140884d265413b200d0b8d4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b></td></tr>
 <tr class="separator:a8eea7bc16140884d265413b200d0b8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2cccd337ca32296250e3a064452d2e"><td class="memItemLeft" align="right" valign="top"><a id="afa2cccd337ca32296250e3a064452d2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>keep_files</b></td></tr>
+<tr class="separator:afa2cccd337ca32296250e3a064452d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad0f326ce4bd4fcbd2c5951ca881de5"><td class="memItemLeft" align="right" valign="top"><a id="a8ad0f326ce4bd4fcbd2c5951ca881de5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>save_regression_results</b></td></tr>
+<tr class="separator:a8ad0f326ce4bd4fcbd2c5951ca881de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d2e9deaab9a701dc9d2f507a1a6aad"><td class="memItemLeft" align="right" valign="top"><a id="ad5d2e9deaab9a701dc9d2f507a1a6aad"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>regression_flag</b></td></tr>
 <tr class="separator:ad5d2e9deaab9a701dc9d2f507a1a6aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,14 +325,14 @@ Inputs:
 self.training.
   coefficients     [-] CM, Cm_alpha, Cn_beta 
   neutral point    [meters] NP
-  grid_points      [radians,-] angles of attack and mach numbers 
+  grid_points      [radians,-] angles of attack and Mach numbers 
 
 Outputs:
 self.surrogates.
-  moment_coefficient             &lt;Guassian process surrogate&gt;
-  Cm_alpha_moment_coefficient    &lt;Guassian process surrogate&gt;
-  Cn_beta_moment_coefficient     &lt;Guassian process surrogate&gt;
-  neutral_point                  &lt;Guassian process surrogate&gt;       
+  moment_coefficient           
+  Cm_alpha_moment_coefficient  
+  Cn_beta_moment_coefficient   
+  neutral_point                      
 
 Properties Used:
 No others
@@ -427,7 +427,7 @@ Inputs:
 None
 
 Outputs:
-self.tag = 'avl_analysis_of_{}'.format(geometry.tag)
+self.tag = 'avl_analysis_of_{}'.format( )
 
 Properties Used:
 self.geometry.tag
@@ -466,7 +466,7 @@ Outputs:
 self.training.
   coefficients     [-] CM, Cm_alpha, Cn_beta
   neutral point    [-] NP
-  grid_points      [radians,-] angles of attack and mach numbers 
+  grid_points      [radians,-] angles of attack and Mach numbers 
 
 Properties Used:
 self.geometry.tag  &lt;string&gt;

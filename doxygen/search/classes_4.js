@@ -8,6 +8,5 @@ var searchData=
   ['diffed_5fdata',['Diffed_Data',['../classSUAVE_1_1Core_1_1Diffed__Data_1_1Diffed__Data.html',1,'SUAVE::Core::Diffed_Data']]],
   ['dimensionalityerror',['DimensionalityError',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError.html',1,'SUAVE::Plugins::pint::unit']]],
   ['dimensiondefinition',['DimensionDefinition',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionDefinition.html',1,'SUAVE::Plugins::pint::unit']]],
-  ['dual_5fbattery_5fducted_5ffan',['Dual_Battery_Ducted_Fan',['../classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Dual__Battery__Ducted__Fan_1_1Dual__Battery__Ducted__Fan.html',1,'SUAVE::Components::Energy::Networks::Dual_Battery_Ducted_Fan']]],
   ['ducted_5ffan',['Ducted_Fan',['../classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html',1,'SUAVE::Components::Energy::Networks::Ducted_Fan']]]
 ];

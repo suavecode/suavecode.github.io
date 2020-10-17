@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -110,14 +110,14 @@ $(document).ready(function(){initNavTree('group__Methods-Weights-Buildups-Electr
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga2627e58bac5e90df5af3804245f074a5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Buildups-Electric__Multicopter.html#ga2627e58bac5e90df5af3804245f074a5">SUAVE.Methods.Weights.Buildups.Electric_Multicopter.empty.empty</a> (config, speed_of_sound=340.294, max_tip_mach=0.65, disk_area_factor=1.15, max_thrust_to_weight_ratio=1.1, motor_efficiency=0.85 *0.98)</td></tr>
-<tr class="separator:ga2627e58bac5e90df5af3804245f074a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b13dad1ee408d53c2058d82e8030b14"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Buildups-Electric__Multicopter.html#ga5b13dad1ee408d53c2058d82e8030b14">SUAVE.Methods.Weights.Buildups.Electric_Multicopter.empty.empty</a> (config, settings, speed_of_sound=340.294, max_tip_mach=0.65, disk_area_factor=1.15, max_thrust_to_weight_ratio=1.1, motor_efficiency=0.85 *0.98)</td></tr>
+<tr class="separator:ga5b13dad1ee408d53c2058d82e8030b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>contains methods and attributes used for estimating electric helicopter weights on a component-by-component basis. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga2627e58bac5e90df5af3804245f074a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2627e58bac5e90df5af3804245f074a5">&#9670;&nbsp;</a></span>empty()</h2>
+<a id="ga5b13dad1ee408d53c2058d82e8030b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b13dad1ee408d53c2058d82e8030b14">&#9670;&nbsp;</a></span>empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,6 +127,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -165,15 +171,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">weight = SUAVE.Methods.Weights.Buildups.Electric_Multicopter.empty(
-        config,
-        speed_of_sound              = 340.294,
-        maximumTipMach              = 0.65,
-        disk_area_factor            = 1.15,
-        max_thrust_to_weight_ratio  = 1.1,
-        motor_efficiency            = 0.85 * 0.98)
-
-    Calculates the empty fuselage mass for an electric helicopter including
+<pre class="fragment">Calculates the empty fuselage mass for an electric helicopter including
     seats, avionics, servomotors, ballistic recovery system, rotor and hub
     assembly, transmission, and landing gear. Additionally incorporates
     results of the following common buildup scripts: 

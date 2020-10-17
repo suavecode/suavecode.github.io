@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -121,10 +121,12 @@ Inheritance diagram for SUAVE.Analyses.Aerodynamics.Vortex_Lattice.Vortex_Lattic
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a626460308767892310bb8ec904f3d3b9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a626460308767892310bb8ec904f3d3b9">__defaults__</a> (self)</td></tr>
 <tr class="separator:a626460308767892310bb8ec904f3d3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c19cbcf11eb96e5e5a5d3273784076"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#ad5c19cbcf11eb96e5e5a5d3273784076">initialize</a> (self)</td></tr>
-<tr class="separator:ad5c19cbcf11eb96e5e5a5d3273784076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a655b0e93dd39403e711bc83c054cfef2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a655b0e93dd39403e711bc83c054cfef2">evaluate</a> (self, state, settings, geometry)</td></tr>
-<tr class="separator:a655b0e93dd39403e711bc83c054cfef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb80f709230f44861c0cb2735d9312ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#abb80f709230f44861c0cb2735d9312ca">initialize</a> (self, use_surrogate, vortex_distribution_flag, n_sw, n_cw, include_slipstream_effect)</td></tr>
+<tr class="separator:abb80f709230f44861c0cb2735d9312ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5f494416aa8357db4805bdbe843229"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a9d5f494416aa8357db4805bdbe843229">evaluate_surrogate</a> (self, state, settings, geometry)</td></tr>
+<tr class="separator:a9d5f494416aa8357db4805bdbe843229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3348cade0e95c87c6079e600c4d49998"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a3348cade0e95c87c6079e600c4d49998">evaluate_no_surrogate</a> (self, state, settings, geometry)</td></tr>
+<tr class="separator:a3348cade0e95c87c6079e600c4d49998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a6045fc661f688b4aad3bf9e426950"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#aa7a6045fc661f688b4aad3bf9e426950">sample_training</a> (self)</td></tr>
 <tr class="separator:aa7a6045fc661f688b4aad3bf9e426950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a707b374ab283c62f6f1d4fe917854875"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a707b374ab283c62f6f1d4fe917854875">build_surrogate</a> (self)</td></tr>
@@ -160,9 +162,24 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4cf185a79623d40e09fe08f6a474aaaf"><td class="memItemLeft" align="right" valign="top"><a id="a4cf185a79623d40e09fe08f6a474aaaf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>training</b></td></tr>
 <tr class="separator:a4cf185a79623d40e09fe08f6a474aaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae533b087904b041638128a28bfedbeac"><td class="memItemLeft" align="right" valign="top"><a id="ae533b087904b041638128a28bfedbeac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hsub_min</b></td></tr>
+<tr class="separator:ae533b087904b041638128a28bfedbeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e7bf0ab41177da2ecef966515e8aa6"><td class="memItemLeft" align="right" valign="top"><a id="a98e7bf0ab41177da2ecef966515e8aa6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hsub_max</b></td></tr>
+<tr class="separator:a98e7bf0ab41177da2ecef966515e8aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2881b16742a185002e29a17c86acd4"><td class="memItemLeft" align="right" valign="top"><a id="a7d2881b16742a185002e29a17c86acd4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hsup_min</b></td></tr>
+<tr class="separator:a7d2881b16742a185002e29a17c86acd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af73cb26552c05b1050c53b7e3cac01"><td class="memItemLeft" align="right" valign="top"><a id="a6af73cb26552c05b1050c53b7e3cac01"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hsup_max</b></td></tr>
+<tr class="separator:a6af73cb26552c05b1050c53b7e3cac01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f3f00161e75df559ec9a6a1d8bdf4d4"><td class="memItemLeft" align="right" valign="top"><a id="a2f3f00161e75df559ec9a6a1d8bdf4d4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>surrogates</b></td></tr>
 <tr class="separator:a2f3f00161e75df559ec9a6a1d8bdf4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ca21090e24ffb3170e160efb29084a"><td class="memItemLeft" align="right" valign="top"><a id="ae7ca21090e24ffb3170e160efb29084a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>evaluate</b></td></tr>
+<tr class="separator:ae7ca21090e24ffb3170e160efb29084a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics.html">SUAVE.Analyses.Aerodynamics.Aerodynamics.Aerodynamics</a></td></tr>
 <tr class="memitem:a40b22553e887d6e65aea80b4f3f20581 inherit pub_attribs_classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Aerodynamics_1_1Aerodynamics"><td class="memItemLeft" align="right" valign="top"><a id="a40b22553e887d6e65aea80b4f3f20581"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
@@ -257,26 +274,99 @@ see properties used
 
 Outputs:
 self.surrogates.
-  lift_coefficient       &lt;np.poly1d&gt;
-  wing_lift_coefficients &lt;np.poly1d&gt; (multiple surrogates)
+  lift_coefficient            
+  wing_lift_coefficient       
+  drag_coefficient            
+  wing_drag_coefficient
 
 Properties Used:
-self.
-  training.
-    angle_of_attack        [radians]
-    lift_coefficient       [-]
-    wing_lift_coefficients [-] (wing specific)
+self.training.
+  lift_coefficient            [-] 
+  wing_lift_coefficient       [-] (wing specific)
+  drag_coefficient            [-] 
+  wing_drag_coefficient       [-] (wing specific)
 </pre> 
 </div>
 </div>
-<a id="a655b0e93dd39403e711bc83c054cfef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a655b0e93dd39403e711bc83c054cfef2">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="a3348cade0e95c87c6079e600c4d49998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3348cade0e95c87c6079e600c4d49998">&#9670;&nbsp;</a></span>evaluate_no_surrogate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def SUAVE.Analyses.Aerodynamics.Vortex_Lattice.Vortex_Lattice.evaluate </td>
+          <td class="memname">def SUAVE.Analyses.Aerodynamics.Vortex_Lattice.Vortex_Lattice.evaluate_no_surrogate </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>geometry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Evaluates lift and drag directly using VLM
+
+Assumptions:
+no changes to initial geometry or settings
+
+Source:
+N/A
+
+Inputs:
+state.conditions.
+  angle_of_attack                         [radians]
+  
+Outputs:
+conditions.aerodynamics.lift_breakdown.
+  inviscid_wings_lift[wings.*.tag]        [-] CL (wing specific)
+  inviscid_wings_lift.total               [-] CL
+  inviscid_wings_sectional                [-] Cly  
+  compressible_wing                       [-] CL (wing specific)
+conditions.aerodynamics.drag_breakdown.induced.
+  total                                   [-] CDi 
+  inviscid                                [-] CDi 
+  wings_sectional_drag                    [-] CDiy (wing specific)
+  induced.inviscid_wings                  [-] CDi  (wing specific)        
+    
+conditions.aerodynamics.
+  pressure_coefficient                    [-] CP
+ 
+Properties Used:
+self.surrogates.
+  lift_coefficient                        [-] CL
+  wing_lift_coefficient[wings.*.tag]      [-] CL (wing specific)
+</pre> 
+</div>
+</div>
+<a id="a9d5f494416aa8357db4805bdbe843229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5f494416aa8357db4805bdbe843229">&#9670;&nbsp;</a></span>evaluate_surrogate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Analyses.Aerodynamics.Vortex_Lattice.Vortex_Lattice.evaluate_surrogate </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -321,21 +411,25 @@ state.conditions.
 
 Outputs:
 conditions.aerodynamics.lift_breakdown.
-  inviscid_wings_lift[wings.*.tag]   [-] CL (wing specific)
-  inviscid_wings_lift.total          [-] CL
-conditions.aerodynamics.
-  lift_coefficient_wing              [-] CL (wing specific)
-inviscid_wings_lift                  [-] CL
-
+  inviscid_wings[wings.*.tag]             [-] CL (wing specific)
+  inviscid_wings_lift.total               [-] CL
+  compressible_wing                       [-] CL (wing specific)
+conditions.aerodynamics.lift_coefficient  [-] CL
+conditions.aerodynamics.drag_breakdown.induced.
+  total                                   [-] CDi 
+  inviscid                                [-] CDi 
+  wings_sectional_drag                    [-] CDiy (wing specific)
+  inviscid_wings                          [-] CDi (wing specific)
+  
 Properties Used:
 self.surrogates.
-  lift_coefficient                   [-] CL
-  wing_lift_coefficient[wings.*.tag] [-] CL (wing specific)
+  lift_coefficient                        [-] CL
+  wing_lift_coefficient[wings.*.tag]      [-] CL (wing specific)
 </pre> 
 </div>
 </div>
-<a id="ad5c19cbcf11eb96e5e5a5d3273784076"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5c19cbcf11eb96e5e5a5d3273784076">&#9670;&nbsp;</a></span>initialize()</h2>
+<a id="abb80f709230f44861c0cb2735d9312ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb80f709230f44861c0cb2735d9312ca">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,8 +438,42 @@ self.surrogates.
           <td class="memname">def SUAVE.Analyses.Aerodynamics.Vortex_Lattice.Vortex_Lattice.initialize </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>use_surrogate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>vortex_distribution_flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>n_sw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>n_cw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>include_slipstream_effect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -397,7 +525,10 @@ see properties used
 Outputs:
 self.training.
   lift_coefficient            [-] 
-  wing_lift_coefficients      [-] (wing specific)
+  wing_lift_coefficient       [-] (wing specific)
+  drag_coefficient            [-]         CL_surrogate_sub               = RectBivariateSpline(AoA_data, mach_data_sub, CL_data_sub)  
+
+  wing_drag_coefficient       [-] (wing specific)
 
 Properties Used:
 self.geometry.wings.*.tag

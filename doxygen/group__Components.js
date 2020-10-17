@@ -11,6 +11,9 @@ var group__Components =
     [ "Wings", "group__Components-Wings.html", "group__Components-Wings" ],
     [ "Component", "classSUAVE_1_1Components_1_1Component_1_1Component.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Component_1_1Component.html#a2d9252624c70b5d919bc9ec4809aaeff", null ],
+      [ "generative_design_characteristics", "classSUAVE_1_1Components_1_1Component_1_1Component.html#a9b0142ce837eb8fd7f11b0581acee372", null ],
+      [ "generative_design_max_per_vehicle", "classSUAVE_1_1Components_1_1Component_1_1Component.html#ae7305ad76eff4eb0eeb3ef2eaa198cbb", null ],
+      [ "generative_design_special_parent", "classSUAVE_1_1Components_1_1Component_1_1Component.html#aa6dedec164a94dbb1d776aeb42589475", null ],
       [ "origin", "classSUAVE_1_1Components_1_1Component_1_1Component.html#a73f01c28d509653b176d616ddf5774d6", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Component_1_1Component.html#a03eb542a5d248132cad459e2b1da0712", null ]
     ] ],
@@ -32,7 +35,6 @@ var group__Components =
     ] ],
     [ "Lofted_Body", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body.html#a9a41b92aeca26b01f43527677f0f715a", null ],
-      [ "Sections", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body.html#a436ac8f3ad1b562b09051693377b70df", null ],
       [ "Segments", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body.html#ad997a3fd0531a8c08fe66cd427b27391", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body.html#a9be10450331f26faa3e4f6e222e12ee1", null ]
     ] ],
@@ -44,18 +46,13 @@ var group__Components =
     ] ],
     [ "Section", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html#a18e362879f7fe5a3c64d9320eff94a07", null ],
-      [ "Curves", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html#a5fea20dce1b6cebb2ea0bde9f41d7393", null ],
       [ "next", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html#afc04bc14b1deba0e6a9a3b7e2a7f1973", null ],
       [ "prev", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html#a4a00ad1e29432ac6ff0a0b7a30f8e3eb", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html#adcd5d2ed1bb07f1fe5cd326c10341d85", null ]
     ] ],
-    [ "Curve", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Curve.html", [
-      [ "__defaults__", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Curve.html#a843aec6fd606521a8c2336e992438158", null ],
-      [ "points", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Curve.html#a3f471917d7e9ebdab3b61771389ddd21", null ],
-      [ "tag", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Curve.html#aa3d06b7633c0175e5b5020576d767c89", null ]
+    [ "Section_Container", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container.html", [
+      [ "get_children", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container.html#a345540bcc35295bf4ac162292381fa8c", null ]
     ] ],
-    [ "SectionContainer", "classSUAVE_1_1Components_1_1Lofted__Body_1_1SectionContainer.html", null ],
-    [ "CurveContainer", "classSUAVE_1_1Components_1_1Lofted__Body_1_1CurveContainer.html", null ],
     [ "Mass_Properties", "classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties.html#ac9cfb57a83a0c203a8d0c99b5b5202c2", null ],
       [ "center_of_gravity", "classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties.html#a466525e75a39a1e738884a13296c29d1", null ],
@@ -71,6 +68,7 @@ var group__Components =
       [ "tag", "classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component.html#a262d78a38d51f7f484f930155843edff", null ]
     ] ],
     [ "Container", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html", [
-      [ "sum_mass", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html#ae51f620275537cac1c60ba136c68735e", null ]
+      [ "sum_mass", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html#ae51f620275537cac1c60ba136c68735e", null ],
+      [ "total_moment", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html#a7c5629c0cc965bad4c8799fd7616f3e4", null ]
     ] ]
 ];

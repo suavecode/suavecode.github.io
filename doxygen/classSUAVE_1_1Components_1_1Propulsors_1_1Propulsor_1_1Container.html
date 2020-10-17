@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -118,11 +118,15 @@ Inheritance diagram for SUAVE.Components.Propulsors.Propulsor.Container:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a36a16c1656b07b2be4ac4e2e9bde3b2e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Container.html#a36a16c1656b07b2be4ac4e2e9bde3b2e">get_children</a> (self)</td></tr>
+<tr class="separator:a36a16c1656b07b2be4ac4e2e9bde3b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42e24eef8ee7108c8f99379060824724"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Container.html#a42e24eef8ee7108c8f99379060824724">evaluate_thrust</a> (self, state)</td></tr>
 <tr class="separator:a42e24eef8ee7108c8f99379060824724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSUAVE_1_1Components_1_1Physical__Component_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSUAVE_1_1Components_1_1Physical__Component_1_1Container')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html">SUAVE.Components.Physical_Component.Container</a></td></tr>
 <tr class="memitem:ae51f620275537cac1c60ba136c68735e inherit pub_methods_classSUAVE_1_1Components_1_1Physical__Component_1_1Container"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html#ae51f620275537cac1c60ba136c68735e">sum_mass</a> (self)</td></tr>
 <tr class="separator:ae51f620275537cac1c60ba136c68735e inherit pub_methods_classSUAVE_1_1Components_1_1Physical__Component_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5629c0cc965bad4c8799fd7616f3e4 inherit pub_methods_classSUAVE_1_1Components_1_1Physical__Component_1_1Container"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html#a7c5629c0cc965bad4c8799fd7616f3e4">total_moment</a> (self)</td></tr>
+<tr class="separator:a7c5629c0cc965bad4c8799fd7616f3e4 inherit pub_methods_classSUAVE_1_1Components_1_1Physical__Component_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -170,6 +174,7 @@ Additional Inherited Members</h2></td></tr>
 
 Assumptions:
 Propulsor has "evaluate_thrust" method
+If multiple propulsors are attached their masses will be summed
 
 Source:
 N/A
@@ -180,6 +185,40 @@ State variables
 Outputs:
 Results of the "evaluate_thrust" method
 
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="a36a16c1656b07b2be4ac4e2e9bde3b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a16c1656b07b2be4ac4e2e9bde3b2e">&#9670;&nbsp;</a></span>get_children()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Propulsors.Propulsor.Container.get_children </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Returns the components that can go inside
+
+Assumptions:
+None
+    
+Source:
+N/A
+    
+Inputs:
+None
+    
+Outputs:
+None
+    
 Properties Used:
 N/A
 </pre> 

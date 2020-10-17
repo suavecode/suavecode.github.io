@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.1.0</span>
+   &#160;<span id="projectnumber">2.2.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -116,8 +116,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaf79b9d073d3341d628c056ca69469809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga94172601f2f840265bd87601800de860"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-BWB.html#ga94172601f2f840265bd87601800de860">SUAVE.Methods.Weights.Correlations.BWB.empty.empty</a> (vehicle)</td></tr>
 <tr class="separator:ga94172601f2f840265bd87601800de860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49462fb84af76259349c80f42402decf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Weights-Correlations-BWB.html#ga49462fb84af76259349c80f42402decf">SUAVE.Methods.Weights.Correlations.BWB.systems.systems</a> (num_seats, ctrl_type, S_h, S_gross_w, ac_type)</td></tr>
-<tr class="separator:ga49462fb84af76259349c80f42402decf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provides structural weight correlations for a BWB concept. </p>
@@ -253,7 +251,8 @@ N/A
 
 Assumptions:
      calculated aircraft weight from correlations created per component of historical aircraft
-  
+     The wings are made out of aluminum
+     
 Source: 
     N/A
      
@@ -298,81 +297,6 @@ Outputs:
         wt_fuel - weight of the fuel carried                                                           [kilogram]
         wt_empty - operating empty weight of the aircraft                                              [kilograms]
 
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
-<a id="ga49462fb84af76259349c80f42402decf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49462fb84af76259349c80f42402decf">&#9670;&nbsp;</a></span>systems()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Weights.Correlations.BWB.systems.systems </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>num_seats</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ctrl_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>S_h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>S_gross_w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ac_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Calculate the weight of the different engine systems on the aircraft
-
-Assumptions:
-    numbers based on FAA regulations and correlations from previous aircraft
-            
-Source:
-    N/A  
-
-Inputs:
-    num_seats - total number of seats on the aircraft                                                   [dimensionless]
-    ctrl_type - specifies if the control system is fully power, partially powered, or not powered       [dimensionless]
-    S_h - area of the BWB outer aileron                                                                 [meters**2]
-    S_gross_w - area of the wing                                                                        [meters**2]
-    ac_type - determines type of instruments, electronics, and operating items based on type of vehicle [dimensionless]
-
-Outputs:
-    output - a data dictionary with fields:
-        wt_flt_ctrl - weight of the flight control system                                               [kilograms]
-        wt_apu - weight of the apu                                                                      [kilograms]
-        wt_hyd_pnu - weight of the hydraulics and pneumatics                                            [kilograms]
-        wt_instruments - weight of the instruments and navigational equipment                           [kilograms]
-        wt_avionics - weight of the avionics                                                            [kilograms]
-        wt_opitems - weight of the optional items based on the type of aircraft                         [kilograms]
-        wt_elec - weight of the electrical items                                                        [kilograms]
-        wt_ac - weight of the air conditioning and anti-ice system                                      [kilograms]
-        wt_furnish - weight of the furnishings in the fuselage                                          [kilograms]
-    
 Properties Used:
 N/A
 </pre> 
