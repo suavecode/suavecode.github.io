@@ -68,7 +68,7 @@
 
 								<article>
 									<h3 id="regional-jet-optimization-tutorial">Regional Jet Optimization Tutorial</h3>
-<p>This tutorial assumes familiarity with SUAVE and knowledge of the information in the Boeing 737-800 analysis tutorial. It provides a specific case of the more general information provided in the optimization structure tutorial, and some more information on how to modify the code for different uses.</p>
+<p>This tutorial assumes familiarity with SUAVE and knowledge of the information in the Boeing 737-800 analysis tutorial. It provides a specific case of the more general optimization capabilities in SUAVE, and provides more information on how to modify the code for different uses.</p>
 
 <p>Some important files for the optimization problem can be seen below</p>
 
@@ -79,13 +79,15 @@
 
 <p>In order to ensure that the subfunctions can communicate with eachother, and that SUAVE can communicate with the external optimizer, a special data object called the “Nexus” is used. The nexus object contains all of the vehicles, missions, results, and other important information. It alters these values at each optimizer iteration, depending on the input parameters defined in Optimize.py.</p>
 
-<p>In this particular setup, there are two design variables: wing area and cruise altitude. The objective is fuel burn, and there is only one constraint: fuel margin. The default inputs are defined in the following lines.</p>
+<p>In this particular setup, there are two design variables: wing area and cruise altitude. The objective is to minimize fuel burn, and there is only one constraint: fuel margin. The default inputs are defined in the following lines.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># [ tag, initial, (lb,ub), scaling, units]
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+#   [ tag                   , initial,        lb,ub)        , scaling , units ]
 problem.inputs = np.array([
-	[ 'wing_area'      ,  95., ( 90., 130.), 100., Units.meter**2],
-	[ 'cruise_altitude',  11., (  9.,  14.),  10., Units.km      ],
+    [ 'wing_area'           ,  100   , (   90. ,   130.   ) ,   100.  , Units.meter**2],
+    [ 'cruise_altitude'     ,  11    , (   9   ,    14.   ) ,   10.   , Units.km],
 ])
+
 </code></pre></div></div>
 
 <p>Each input parameter takes in 5 values; a tag (an identification to communicate between the optimizer and SUAVE), an initial value, set of bounds, a scale factor (many optimizers tend to be more effective when the input values are of order 1), as well as the units used.</p>
@@ -103,7 +105,7 @@ problem.constraints = np.array([
 ])
 </code></pre></div></div>
 
-<p>Note that in this case, only a single constraint is used; Multiple constraints may be used using a list format, similar to the input variables.</p>
+<p>Note that in this case, only a single constraint is used. Multiple constraints may be used using a list format, similar to the input variables.</p>
 
 <p>This file also defines the “aliasing,” i.e. how the design variables, constraints, and objective map to the variables used in Procedure.py (which is where the problem is evaluated). The aliases for this problem are defined in the lines below.  Note that the first entry refers to the tag defined in either problem.inputs, problem.objective, or problem.constraints.</p>
 
