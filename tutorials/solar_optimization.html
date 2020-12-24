@@ -79,20 +79,20 @@
 
 <p>Let’s pose the optimization problem first and then setup the rest. We start with the <em>Nexus</em> first as usual. With this design problem there are things you are uncertain of and want to solve for.</p>
 
-<p>You’re not sure if you really need any solar panels on the airplane, so to start there will be none. The solar ratio is the ratio of wing area to solar area. A value of 1 would the whole top of the wing covered with solar panels.</p>
+<p>You’re not sure if you really need any solar panels on the airplane, so to start there will be none. The solar ratio is the ratio of wing area to solar area. A value of 1 would indicate that the entire top of the wing is covered with solar panels.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
-	  # [ tag , initial, [lb,ub], scaling, units ]
+    # [ tag , initial, [lb,ub], scaling, units ]
     problem.inputs = np.array([
-        [ 'wing_area'       ,   0.5, (  0.1,    1.5 ),    0.5, Units.meter      ],
-        [ 'aspect_ratio'    ,  10.0, (  5.0,   20.0 ),   10.0, Units.less       ], 
-        [ 'dynamic_pressure', 125.0, (  1.0, 2000.0 ),  125.0, Units.pascals    ], 
-        [ 'solar_ratio'     ,   0.0, (  0.0,    0.97),    1.0, Units.less       ], 
-        [ 'kv'              , 800.0, ( 10.0, 1500.0 ),  800.0, Units['rpm/volt']], 
+        [ 'wing_area'       ,   0.62, (  0.1,    1.5 ),    0.5, Units.meter      ],
+        [ 'aspect_ratio'    ,   13.5, (  5.0,   20.0 ),   10.0, Units.less       ], 
+        [ 'dynamic_pressure',  115.0, (  1.0, 2000.0 ),  125.0, Units.pascals    ], 
+        [ 'solar_ratio'     ,    0.0, (  0.0,    0.97),    1.0, Units.less       ], 
+        [ 'kv'              ,  900.0, ( 10.0, 1500.0 ),  800.0, Units['rpm/volt']], 
     ])
 </code></pre></div></div>
 
-<p>Next come the constraints. The first constraint is that the battery energy can never go negative, the math behind this will be elaborated on later. The next constraint is that the plane must have a battery. Finally there are limits to coefficients of lift and throttle settings.</p>
+<p>Next come the constraints. The first constraint is that the battery energy can never go negative; the math behind this will be elaborated on later. The next constraint is that the plane must have a battery. Finally there are limits to coefficients of lift and throttle settings.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
       # [ tag, sense, edge, scaling, units ]
@@ -118,10 +118,10 @@
 
 <h3 id="vehiclespy">Vehicles.py:</h3>
 
-<p>Next, you will setup the vehicle. This is very similar to the prior Solar UAV tutorial. So we will gloss over this, the one noticeable difference is that a lower fidelity energy network is used. This means that most components operate with prescribed efficiencies. For example:</p>
+<p>Next, you will setup the vehicle. This is very similar to the prior Solar UAV tutorial, so we will gloss over this. The one noticeable difference is that a lower fidelity energy network is used. This means that most components operate with prescribed efficiencies. For example:</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
-    # Component 4 the Motor
+    # Component 5 the Motor
     motor = SUAVE.Components.Energy.Converters.Motor_Lo_Fid()
     kv                         = 800. * Units['rpm/volt'] # RPM/volt is standard
     motor                      = size_from_kv(motor, kv)    
