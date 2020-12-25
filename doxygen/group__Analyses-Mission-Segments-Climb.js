@@ -1,5 +1,12 @@
 var group__Analyses_Mission_Segments_Climb =
 [
+    [ "Constant_CAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html", [
+      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a67648adcfd80860c4547d8542140045d", null ],
+      [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a7e6109ee21130902524024e44bfe46b7", null ],
+      [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a8a3c287e13cc48b3bfd1a57f987902fc", null ],
+      [ "climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a27b556c513b45a755d63e7dc2fc575ae", null ],
+      [ "equivalent_air_speed", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#af510092cc217056c5edcb4776fc8b003", null ]
+    ] ],
     [ "Constant_Dynamic_Pressure_Constant_Angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_61b566f355ab199459fb54d7274e572f.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_61b566f355ab199459fb54d7274e572f.html#adc5246f0192b0ccfd3a019ec63035c83", null ],
       [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_61b566f355ab199459fb54d7274e572f.html#acbde920a943796262c2a8a33d4c2ca7c", null ],
@@ -102,7 +109,7 @@ var group__Analyses_Mission_Segments_Climb =
       [ "algorithm", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#add4e2c2ac32d02c3f60af84ff003dd13", null ],
       [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a67c54349794979fface04e372950d873", null ],
       [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#ab5897ad1dd6b81818ed7fb3e327fc966", null ],
-      [ "CL_limit", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a4264e59908c0bfbd8d108aa29ac26390", null ],
+      [ "lift_coefficient_limit", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a4bedff47f5f538e355e2eb412b217550", null ],
       [ "minimize", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a76881a8d85487cf9895c5fedf03c73af", null ],
       [ "objective", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a2fc312d71dbe50df791b4a39236a843d", null ],
       [ "seed_climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a7b31e6a6176ef917ee71d0979a7200fd", null ]

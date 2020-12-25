@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -247,17 +247,18 @@ N/A
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This is for a BWB aircraft configuration. 
+<pre class="fragment">This is for a BWB aircraft configuration.
 
 Assumptions:
-     calculated aircraft weight from correlations created per component of historical aircraft
-     The wings are made out of aluminum
-     
-Source: 
+     Calculated aircraft weight from correlations created per component of historical aircraft
+     The wings are made out of aluminum.
+     A wing with the tag 'main_wing' exists.
+
+Source:
     N/A
-     
+
 Inputs:
-    engine - a data dictionary with the fields:                    
+    engine - a data dictionary with the fields:
         thrust_sls - sea level static thrust of a single engine                                        [Newtons]
 
     wing - a data dictionary with the fields:
@@ -269,7 +270,7 @@ Inputs:
         mac - mean aerodynamic chord of the wing                                                       [meters]
         r_c - wing root chord                                                                          [meters]
 
-    aircraft - a data dictionary with the fields:                    
+    aircraft - a data dictionary with the fields:
         Nult - ultimate load of the aircraft                                                           [dimensionless]
         Nlim - limit load factor at zero fuel weight of the aircraft                                   [dimensionless]
         TOW - maximum takeoff weight of the aircraft                                                   [kilograms]
@@ -279,7 +280,7 @@ Inputs:
         wt_cargo - weight of the bulk cargo being carried on the aircraft                              [kilograms]
         num_seats - number of seats installed on the aircraft                                          [dimensionless]
         ctrl - specifies if the control system is "fully powered", "partially powered", or not powered [dimensionless]
-        ac - determines type of instruments, electronics, and operating items based on types: 
+        ac - determines type of instruments, electronics, and operating items based on types:
             "short-range", "medium-range", "long-range", "business", "cargo", "commuter", "sst"        [dimensionless]
 
      fuselage - a data dictionary with the fields:
@@ -287,8 +288,8 @@ Inputs:
         diff_p - Maximum fuselage pressure differential                                                [Pascal]
         width - width of the fuselage                                                                  [meters]
         height - height of the fuselage                                                                [meters]
-        length - length of the fuselage                                                                [meters]   
-    
+        length - length of the fuselage                                                                [meters]
+
 Outputs:
     output - a data dictionary with fields:
         wt_payload - weight of the passengers plus baggage and paid cargo                              [kilograms]

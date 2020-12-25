@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['landing_5fgear',['landing_gear',['../group__Methods-Weights-Correlations-Common.html#ga8a44f526125ceed65e6d2f27fe5aa82c',1,'SUAVE.Methods.Weights.Correlations.Common.landing_gear.landing_gear()'],['../group__Methods-Weights-Correlations-General__Aviation.html#ga8bece6cdd79554dc2707bafbac6204b3',1,'SUAVE.Methods.Weights.Correlations.General_Aviation.landing_gear.landing_gear()']]],
+  ['landing_5fgear',['landing_gear',['../group__Methods-Weights-Correlations-Common.html#ga42672c79ab61f01f25b8ce74ebc1257c',1,'SUAVE.Methods.Weights.Correlations.Common.landing_gear.landing_gear()'],['../group__Methods-Weights-Correlations-General__Aviation.html#ga8bece6cdd79554dc2707bafbac6204b3',1,'SUAVE.Methods.Weights.Correlations.General_Aviation.landing_gear.landing_gear()']]],
+  ['landing_5fgear_5fflops',['landing_gear_FLOPS',['../group__Methods-Weights-Correlations-FLOPS.html#gafcd2b158260d211ab8f71a855cfb88b3',1,'SUAVE::Methods::Weights::Correlations::FLOPS::landing_gear']]],
+  ['landing_5fgear_5fraymer',['landing_gear_Raymer',['../group__Methods-Weights-Correlations-Raymer.html#ga0319d2ceae77def47cc5a4f49d83521c',1,'SUAVE::Methods::Weights::Correlations::Raymer::landing_gear']]],
   ['larminie',['larminie',['../group__Methods-Power-Fuel__Cell-Discharge.html#gab8870acc8ac36d11ca9a7a8c9e67da1a',1,'SUAVE::Methods::Power::Fuel_Cell::Discharge::larminie']]],
   ['lateral_5fdirectional',['lateral_directional',['../group__Methods-Flight__Dynamics-Dynamic__Stability-Full__Linearized__Equations.html#ga509c906325361dbec974fd9560837381',1,'SUAVE::Methods::Flight_Dynamics::Dynamic_Stability::Full_Linearized_Equations::lateral_directional']]],
   ['latin_5fhypercube_5fsampling',['latin_hypercube_sampling',['../group__Methods-Utilities.html#gad7f4326f99edc2e3d142e7d2a0fffcf0',1,'SUAVE::Methods::Utilities::latin_hypercube_sampling']]],

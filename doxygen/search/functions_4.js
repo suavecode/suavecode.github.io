@@ -7,6 +7,7 @@ var searchData=
   ['deep_5fset',['deep_set',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a84ba0de5ac002c9fd4fc2953f5d452d4',1,'SUAVE.Core.Data.Data.deep_set()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#afa98044ceb5edb5a614a5d058c6b93a1',1,'SUAVE.Core.DataOrdered.DataOrdered.deep_set()']]],
   ['default_5fformat',['default_format',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#add51f2c695a5642f18b8e8c1bfe18b92',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],
   ['define',['define',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#ad425bb5f74509eb34c5719e602973151',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],
+  ['determine_5ffuselage_5fchord',['determine_fuselage_chord',['../group__Methods-Weights-Correlations-FLOPS.html#gae5e92af22c52818904fb68c652eb7482',1,'SUAVE::Methods::Weights::Correlations::FLOPS::wing']]],
   ['dimensionality',['dimensionality',['../classSUAVE_1_1Plugins_1_1pint_1_1quantity_1_1__Quantity.html#a7b58beaba890bc04287d88868ff53992',1,'SUAVE::Plugins::pint::quantity::_Quantity']]],
   ['dimensionless',['dimensionless',['../classSUAVE_1_1Plugins_1_1pint_1_1quantity_1_1__Quantity.html#aaab2af1a8b18cfe97737c2b9a5030cb2',1,'SUAVE::Plugins::pint::quantity::_Quantity']]],
   ['disable_5fcontexts',['disable_contexts',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#a0bb62e9743a85b15186679308dda1c13',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],

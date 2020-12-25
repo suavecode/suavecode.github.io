@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -140,24 +140,24 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad229256577c0c4eaf1c187f51cb30c16"><td class="memItemLeft" align="right" valign="top"><a id="ad229256577c0c4eaf1c187f51cb30c16"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>motor_lift</b></td></tr>
-<tr class="separator:ad229256577c0c4eaf1c187f51cb30c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f8f7fcd596ae812f0c549a18c44086"><td class="memItemLeft" align="right" valign="top"><a id="a19f8f7fcd596ae812f0c549a18c44086"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>motor_forward</b></td></tr>
-<tr class="separator:a19f8f7fcd596ae812f0c549a18c44086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6754078819a1dcc04d62c4d3355f42"><td class="memItemLeft" align="right" valign="top"><a id="a1e6754078819a1dcc04d62c4d3355f42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rotor_motor</b></td></tr>
+<tr class="separator:a1e6754078819a1dcc04d62c4d3355f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34885aedb16ccb00e61b1bdebab67413"><td class="memItemLeft" align="right" valign="top"><a id="a34885aedb16ccb00e61b1bdebab67413"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>propeller_motor</b></td></tr>
+<tr class="separator:a34885aedb16ccb00e61b1bdebab67413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d818962453d346eb49de4609145e64"><td class="memItemLeft" align="right" valign="top"><a id="a96d818962453d346eb49de4609145e64"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>rotor</b></td></tr>
 <tr class="separator:a96d818962453d346eb49de4609145e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592d2c7d8b8ec5ddaccd79c0e2d65229"><td class="memItemLeft" align="right" valign="top"><a id="a592d2c7d8b8ec5ddaccd79c0e2d65229"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>propeller</b></td></tr>
 <tr class="separator:a592d2c7d8b8ec5ddaccd79c0e2d65229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa08595daadbe1818d92a1f7044fa2b68"><td class="memItemLeft" align="right" valign="top"><a id="aa08595daadbe1818d92a1f7044fa2b68"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>esc_lift</b></td></tr>
-<tr class="separator:aa08595daadbe1818d92a1f7044fa2b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1dad0936b7c880d50e152ee4fd11df9"><td class="memItemLeft" align="right" valign="top"><a id="ae1dad0936b7c880d50e152ee4fd11df9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>esc_forward</b></td></tr>
-<tr class="separator:ae1dad0936b7c880d50e152ee4fd11df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0791aa9316314d2c9764c844aa617d7"><td class="memItemLeft" align="right" valign="top"><a id="aa0791aa9316314d2c9764c844aa617d7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rotor_esc</b></td></tr>
+<tr class="separator:aa0791aa9316314d2c9764c844aa617d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50e197ba4885b802ae06c49b458d8fb"><td class="memItemLeft" align="right" valign="top"><a id="ac50e197ba4885b802ae06c49b458d8fb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>propeller_esc</b></td></tr>
+<tr class="separator:ac50e197ba4885b802ae06c49b458d8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeddbbf743e5ea34395a7ba850550a959"><td class="memItemLeft" align="right" valign="top"><a id="aeddbbf743e5ea34395a7ba850550a959"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>avionics</b></td></tr>
 <tr class="separator:aeddbbf743e5ea34395a7ba850550a959"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,33 +167,39 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a54d60ced5affa80710dba00c87b80c18"><td class="memItemLeft" align="right" valign="top"><a id="a54d60ced5affa80710dba00c87b80c18"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>battery</b></td></tr>
 <tr class="separator:a54d60ced5affa80710dba00c87b80c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdd7438c47cf2d31cc54ec948114a2a5"><td class="memItemLeft" align="right" valign="top"><a id="afdd7438c47cf2d31cc54ec948114a2a5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>nacelle_diameter_lift</b></td></tr>
-<tr class="separator:afdd7438c47cf2d31cc54ec948114a2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448bcbe530fa051b122a36c4fd9ed00b"><td class="memItemLeft" align="right" valign="top"><a id="a448bcbe530fa051b122a36c4fd9ed00b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>nacelle_diameter_forward</b></td></tr>
-<tr class="separator:a448bcbe530fa051b122a36c4fd9ed00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ffeeb8603dbf73e0799a639aacf8b94"><td class="memItemLeft" align="right" valign="top"><a id="a1ffeeb8603dbf73e0799a639aacf8b94"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>engine_length_lift</b></td></tr>
-<tr class="separator:a1ffeeb8603dbf73e0799a639aacf8b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a470ca38839702edfe5ea8271ed5cc716"><td class="memItemLeft" align="right" valign="top"><a id="a470ca38839702edfe5ea8271ed5cc716"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>engine_length_forward</b></td></tr>
-<tr class="separator:a470ca38839702edfe5ea8271ed5cc716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abca917bbf68919d43e8549ed0068da1d"><td class="memItemLeft" align="right" valign="top"><a id="abca917bbf68919d43e8549ed0068da1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_engines_lift</b></td></tr>
-<tr class="separator:abca917bbf68919d43e8549ed0068da1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7809b8cfaf5834521c555d6cb715949"><td class="memItemLeft" align="right" valign="top"><a id="ab7809b8cfaf5834521c555d6cb715949"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_engines_forward</b></td></tr>
-<tr class="separator:ab7809b8cfaf5834521c555d6cb715949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af449ef19633c10f2cfddb4b94e6b67e4"><td class="memItemLeft" align="right" valign="top"><a id="af449ef19633c10f2cfddb4b94e6b67e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rotor_nacelle_diameter</b></td></tr>
+<tr class="separator:af449ef19633c10f2cfddb4b94e6b67e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7b38423d39417f9adfb285435224870"><td class="memItemLeft" align="right" valign="top"><a id="ac7b38423d39417f9adfb285435224870"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>propeller_nacelle_diameter</b></td></tr>
+<tr class="separator:ac7b38423d39417f9adfb285435224870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad1d8b6e97956bc1c28194054293554"><td class="memItemLeft" align="right" valign="top"><a id="a8ad1d8b6e97956bc1c28194054293554"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rotor_engine_length</b></td></tr>
+<tr class="separator:a8ad1d8b6e97956bc1c28194054293554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7e4f7428e1a942699e9f9db158b461"><td class="memItemLeft" align="right" valign="top"><a id="a9e7e4f7428e1a942699e9f9db158b461"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>propeller_engine_length</b></td></tr>
+<tr class="separator:a9e7e4f7428e1a942699e9f9db158b461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb120885573f8f8cbf2e38c591076006"><td class="memItemLeft" align="right" valign="top"><a id="abb120885573f8f8cbf2e38c591076006"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_rotor_engines</b></td></tr>
+<tr class="separator:abb120885573f8f8cbf2e38c591076006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3d3a6f2a7071fa3a483141562f7eb3"><td class="memItemLeft" align="right" valign="top"><a id="a1c3d3a6f2a7071fa3a483141562f7eb3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_propeller_engines</b></td></tr>
+<tr class="separator:a1c3d3a6f2a7071fa3a483141562f7eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb0436e7b7f0313cd88ccf25c40b901"><td class="memItemLeft" align="right" valign="top"><a id="a3eb0436e7b7f0313cd88ccf25c40b901"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>voltage</b></td></tr>
 <tr class="separator:a3eb0436e7b7f0313cd88ccf25c40b901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6e2214f2a288f4b2f40c18ba715fe44"><td class="memItemLeft" align="right" valign="top"><a id="aa6e2214f2a288f4b2f40c18ba715fe44"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>thrust_angle_lift</b></td></tr>
-<tr class="separator:aa6e2214f2a288f4b2f40c18ba715fe44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc632896aa87aedb485579f3ca54037"><td class="memItemLeft" align="right" valign="top"><a id="aadc632896aa87aedb485579f3ca54037"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>thrust_angle_forward</b></td></tr>
-<tr class="separator:aadc632896aa87aedb485579f3ca54037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd57b7622d65ffc662331fc2af7094b"><td class="memItemLeft" align="right" valign="top"><a id="afbd57b7622d65ffc662331fc2af7094b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rotor_thrust_angle</b></td></tr>
+<tr class="separator:afbd57b7622d65ffc662331fc2af7094b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88de4a270d24c0bc4dea0cf12a18538"><td class="memItemLeft" align="right" valign="top"><a id="aa88de4a270d24c0bc4dea0cf12a18538"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>propeller_thrust_angle</b></td></tr>
+<tr class="separator:aa88de4a270d24c0bc4dea0cf12a18538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf325fc481f3fb389317f2ea73e10140"><td class="memItemLeft" align="right" valign="top"><a id="aaf325fc481f3fb389317f2ea73e10140"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rotor_pitch_command</b></td></tr>
+<tr class="separator:aaf325fc481f3fb389317f2ea73e10140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cd25d9a709aad7ed3adecf005f7c9d"><td class="memItemLeft" align="right" valign="top"><a id="a66cd25d9a709aad7ed3adecf005f7c9d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>propeller_pitch_command</b></td></tr>
+<tr class="separator:a66cd25d9a709aad7ed3adecf005f7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc796b626f64864a6b4b38d77e49248"><td class="memItemLeft" align="right" valign="top"><a id="affc796b626f64864a6b4b38d77e49248"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
 <tr class="separator:affc796b626f64864a6b4b38d77e49248"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +225,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ace561d0f1785a664db4b0819bbd52ac1 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="ace561d0f1785a664db4b0819bbd52ac1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>engine_length</b></td></tr>
 <tr class="separator:ace561d0f1785a664db4b0819bbd52ac1 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4bb759ed381dabbe1f40027aa20230a inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="ab4bb759ed381dabbe1f40027aa20230a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>wing_mounted</b></td></tr>
+<tr class="separator:ab4bb759ed381dabbe1f40027aa20230a inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a272c60a24251274736178759b23670 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memItemLeft" align="right" valign="top"><a id="a7a272c60a24251274736178759b23670"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>areas</b></td></tr>
 <tr class="separator:a7a272c60a24251274736178759b23670 inherit pub_attribs_classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,18 +358,18 @@ Public Attributes</h2></td></tr>
     results.thrust_force_vector [Newtons]
     results.vehicle_mass_rate   [kg/s]
     conditions.propulsion:
-rpm_lift                 [radians/sec]
+rotor_rpm                [radians/sec]
 rpm _forward             [radians/sec]
-current_lift             [amps]
-current_forward          [amps]
+rotor_current_draw       [amps]
+propeller_current_draw   [amps]
 battery_draw             [watts]
 battery_energy           [joules]
 voltage_open_circuit     [volts]
 voltage_under_load       [volts]
-motor_torque_lift        [N-M]
-motor_torque_forward     [N-M]
-propeller_torque_lift    [N-M]
-propeller_torque_forward [N-M]
+rotor_motor_torque        [N-M]
+propeller_motor_torque     [N-M]
+rotor_torque    [N-M]
+propeller_torque [N-M]
     
     Properties Used:
     Defaulted values
@@ -403,10 +412,10 @@ propeller_torque_forward [N-M]
     
     Inputs:
     state.conditions.propulsion:
-motor_torque_forward                  [N-m]
-motor_torque_lift                     [N-m]
-propeller_torque_forward              [N-m]
-propeller_torque_lift                 [N-m]
+propeller_motor_torque                [N-m]
+rotor_motor_torque                    [N-m]
+propeller_torque                      [N-m]
+rotor_torque                          [N-m]
 voltage_under_load                    [volts]
     state.unknowns.battery_voltage_under_load [volts]
     
@@ -454,10 +463,10 @@ voltage_under_load                    [volts]
     
     Inputs:
     state.conditions.propulsion:
-motor_torque_forward                  [N-m]
-motor_torque_lift                     [N-m]
-propeller_torque_forward              [N-m]
-propeller_torque_lift                 [N-m]
+propeller_motor_torque                [N-m]
+rotor_motor_torque                    [N-m]
+propeller_torque                      [N-m]
+rotor_torque                          [N-m]
 voltage_under_load                    [volts]
     state.unknowns.battery_voltage_under_load [volts]
     
@@ -505,10 +514,10 @@ voltage_under_load                    [volts]
     
     Inputs:
     state.conditions.propulsion:
-motor_torque_forward                  [N-m]
-motor_torque_lift                     [N-m]
-propeller_torque_forward              [N-m]
-propeller_torque_lift                 [N-m]
+propeller_motor_torque                [N-m]
+rotor_motor_torque                    [N-m]
+propeller_torque                      [N-m]
+rotor_torque                          [N-m]
 voltage_under_load                    [volts]
     state.unknowns.battery_voltage_under_load [volts]
     
@@ -557,14 +566,14 @@ voltage_under_load                    [volts]
     Inputs:
     state.unknowns.propeller_power_coefficient [None]
     state.unknowns.battery_voltage_under_load  [volts]
-    state.unknowns.throttle_lift              [0-1]
-    state.unknowns.throttle            [0-1]
+    state.unknowns.throttle_lift               [0-1]
+    state.unknowns.throttle                    [0-1]
     
     Outputs:
     state.conditions.propulsion.propeller_power_coefficient [None]
     state.conditions.propulsion.battery_voltage_under_load  [volts]
-    state.conditions.propulsion.throttle_lift              [0-1]
-    state.conditions.propulsion.throttle            [0-1]
+    state.conditions.propulsion.throttle_lift               [0-1]
+    state.conditions.propulsion.throttle                    [0-1]
     
     Properties Used:
     N/A
@@ -657,14 +666,14 @@ voltage_under_load                    [volts]
     N/A
     
     Inputs:
-    state.unknowns.propeller_power_coefficient_lift[None]
+    state.unknowns.rotor_power_coefficient[None]
     state.unknowns.propeller_power_coefficient [None]
     state.unknowns.battery_voltage_under_load  [volts]
     state.unknowns.throttle_lift               [0-1]
     state.unknowns.throttle                    [0-1]
     
     Outputs:
-    state.conditions.propulsion.propeller_power_coefficient_lift [None]
+    state.conditions.propulsion.rotor_power_coefficient [None]
     state.conditions.propulsion.propeller_power_coefficient [None]
     state.conditions.propulsion.battery_voltage_under_load  [volts]
     state.conditions.propulsion.throttle_lift              [0-1]

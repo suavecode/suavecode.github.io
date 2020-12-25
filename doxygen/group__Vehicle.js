@@ -14,6 +14,7 @@ var group__Vehicle =
       [ "landing_gear", "classSUAVE_1_1Vehicle_1_1Vehicle.html#a0f7d7dd2ed5b6bf65ac9ec88c971d53f", null ],
       [ "mass_properties", "classSUAVE_1_1Vehicle_1_1Vehicle.html#aa8694bc77300ae2ff815e9d59f3775e3", null ],
       [ "passengers", "classSUAVE_1_1Vehicle_1_1Vehicle.html#afc67cdf2695b8ecc92f5f067639c3ada", null ],
+      [ "payload", "classSUAVE_1_1Vehicle_1_1Vehicle.html#afebfa5278a827144682c786b58939be9", null ],
       [ "performance", "classSUAVE_1_1Vehicle_1_1Vehicle.html#a2de4d7b944e7b6b9561afa7018e77e1e", null ],
       [ "propulsors", "classSUAVE_1_1Vehicle_1_1Vehicle.html#a50c78d84e282ec3b88d50d5596cdba2c", null ],
       [ "reference_area", "classSUAVE_1_1Vehicle_1_1Vehicle.html#a60668c7b9710b4df0a667ec8e9c0d7dd", null ],

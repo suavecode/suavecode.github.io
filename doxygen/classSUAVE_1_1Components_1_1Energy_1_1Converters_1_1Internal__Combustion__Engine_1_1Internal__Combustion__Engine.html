@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d31fb2f945861d75fbaa9bd8513476c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94db95474312b1191020a2238ae8ba99"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine.html#a94db95474312b1191020a2238ae8ba99">power</a> (self, conditions)</td></tr>
 <tr class="separator:a94db95474312b1191020a2238ae8ba99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818e3b25ab8e4270180ba1c21cc43a15"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine.html#a818e3b25ab8e4270180ba1c21cc43a15">calculate_throttle</a> (self, conditions)</td></tr>
+<tr class="separator:a818e3b25ab8e4270180ba1c21cc43a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -133,9 +135,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af3d22be14ee81f4d17820b5ac5ae187d"><td class="memItemLeft" align="right" valign="top"><a id="af3d22be14ee81f4d17820b5ac5ae187d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>flat_rate_altitude</b></td></tr>
 <tr class="separator:af3d22be14ee81f4d17820b5ac5ae187d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41157080ba1be86bba1553e586d0b27b"><td class="memItemLeft" align="right" valign="top"><a id="a41157080ba1be86bba1553e586d0b27b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b></td></tr>
-<tr class="separator:a41157080ba1be86bba1553e586d0b27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf36efe72b5a047122c6155338b2964"><td class="memItemLeft" align="right" valign="top"><a id="a3bf36efe72b5a047122c6155338b2964"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rated_speed</b></td></tr>
+<tr class="separator:a3bf36efe72b5a047122c6155338b2964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf1dcf6195a11907bcf848bcfe5ed37a"><td class="memItemLeft" align="right" valign="top"><a id="adf1dcf6195a11907bcf848bcfe5ed37a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>power_specific_fuel_consumption</b></td></tr>
 <tr class="separator:adf1dcf6195a11907bcf848bcfe5ed37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,6 +223,54 @@ N/A
 
 </div>
 </div>
+<a id="a818e3b25ab8e4270180ba1c21cc43a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818e3b25ab8e4270180ba1c21cc43a15">&#9670;&nbsp;</a></span>calculate_throttle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Components.Energy.Converters.Internal_Combustion_Engine.Internal_Combustion_Engine.calculate_throttle </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>conditions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">The internal combustion engine output power and specific power consumption
+
+source: 
+
+Inputs:
+    Engine:
+sea-level power
+flat rate altitude
+rated_speed (RPM)
+throttle setting
+inputs.power
+    Freestream conditions:
+altitude
+delta_isa
+Outputs:
+    Brake power (or Shaft power)
+    Power (brake) specific fuel consumption
+    Fuel flow
+    Torque
+    throttle setting
+</pre> 
+</div>
+</div>
 <a id="a94db95474312b1191020a2238ae8ba99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94db95474312b1191020a2238ae8ba99">&#9670;&nbsp;</a></span>power()</h2>
 
@@ -251,8 +301,9 @@ Inputs:
     Engine:
 sea-level power
 flat rate altitude
-speed (RPM)
+rated_speed (RPM)
 throttle setting
+inputs.speed (RPM)
     Freestream conditions:
 altitude
 delta_isa

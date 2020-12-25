@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -110,6 +110,8 @@ $(document).ready(function(){initNavTree('group__Methods-Missions-Segments-Desce
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga9601cd791273c490a10467e6aefeaa3e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Descent.html#ga9601cd791273c490a10467e6aefeaa3e">SUAVE.Methods.Missions.Segments.Descent.Constant_CAS_Constant_Rate.initialize_conditions</a> (segment)</td></tr>
+<tr class="separator:ga9601cd791273c490a10467e6aefeaa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf838417b317552701252b4a4088ad671"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Descent.html#gaf838417b317552701252b4a4088ad671">SUAVE.Methods.Missions.Segments.Descent.Constant_EAS_Constant_Rate.initialize_conditions</a> (segment)</td></tr>
 <tr class="separator:gaf838417b317552701252b4a4088ad671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6c9b018b7f2c6fd8fb86153bd10ce32"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Descent.html#gad6c9b018b7f2c6fd8fb86153bd10ce32">SUAVE.Methods.Missions.Segments.Descent.Constant_Speed_Constant_Angle.initialize_conditions</a> (segment)</td></tr>
@@ -160,49 +162,8 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="ga709d141110269a5584e1e1e5ad75db85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga709d141110269a5584e1e1e5ad75db85">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Missions.Segments.Descent.Constant_Speed_Constant_Rate.initialize_conditions </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>segment</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Sets the specified conditions which are given for the segment type.
-
-Assumptions:
-Constant speed and constant descent rate
-
-Source:
-N/A
-
-Inputs:
-segment.descent_rate                                [meters/second]
-segment.altitude_start                              [meters]
-segment.altitude_end                                [meters]
-segment.air_speed                                   [meters/second]
-segment.state.numerics.dimensionless.control_points [array]
-
-Outputs:
-conditions.frames.inertial.velocity_vector  [meters/second]
-conditions.frames.inertial.position_vector  [meters]
-conditions.freestream.altitude              [meters]
-conditions.frames.inertial.time             [seconds]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
 <a id="gad6c9b018b7f2c6fd8fb86153bd10ce32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad6c9b018b7f2c6fd8fb86153bd10ce32">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6c9b018b7f2c6fd8fb86153bd10ce32">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,8 +203,49 @@ N/A
 </pre> 
 </div>
 </div>
+<a id="ga709d141110269a5584e1e1e5ad75db85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga709d141110269a5584e1e1e5ad75db85">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Descent.Constant_Speed_Constant_Rate.initialize_conditions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the specified conditions which are given for the segment type.
+
+Assumptions:
+Constant speed and constant descent rate
+
+Source:
+N/A
+
+Inputs:
+segment.descent_rate                                [meters/second]
+segment.altitude_start                              [meters]
+segment.altitude_end                                [meters]
+segment.air_speed                                   [meters/second]
+segment.state.numerics.dimensionless.control_points [array]
+
+Outputs:
+conditions.frames.inertial.velocity_vector  [meters/second]
+conditions.frames.inertial.position_vector  [meters]
+conditions.freestream.altitude              [meters]
+conditions.frames.inertial.time             [seconds]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
 <a id="gaf838417b317552701252b4a4088ad671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf838417b317552701252b4a4088ad671">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf838417b317552701252b4a4088ad671">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,8 +285,49 @@ N/A
 </pre> 
 </div>
 </div>
+<a id="ga9601cd791273c490a10467e6aefeaa3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9601cd791273c490a10467e6aefeaa3e">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Descent.Constant_CAS_Constant_Rate.initialize_conditions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the specified conditions which are given for the segment type.
+
+Assumptions:
+Constant EAS speed and constant descent rate
+
+Source:
+N/A
+
+Inputs:
+segment.equivalent_air_speed                        [meters/second]
+segment.altitude_start                              [meters]
+segment.altitude_end                                [meters]
+segment.descent_rate                                [meters/second]
+segment.state.numerics.dimensionless.control_points [array]
+
+Outputs:
+conditions.frames.inertial.velocity_vector  [meters/second]
+conditions.frames.inertial.position_vector  [meters]
+conditions.freestream.altitude              [meters]
+conditions.frames.inertial.time             [seconds]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
 <a id="ga8a3eb0f2d72ac083762d76c50e462263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8a3eb0f2d72ac083762d76c50e462263">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a3eb0f2d72ac083762d76c50e462263">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

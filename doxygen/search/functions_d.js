@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['nacelle_5fflops',['nacelle_FLOPS',['../group__Methods-Weights-Correlations-FLOPS.html#gac8dcf76be79986360be5b81193880c36',1,'SUAVE::Methods::Weights::Correlations::FLOPS::prop_system']]],
+  ['nacelle_5fraymer',['nacelle_Raymer',['../group__Methods-Weights-Correlations-Raymer.html#gaafceb3ad39b5ad39d0e4aed608688c21',1,'SUAVE::Methods::Weights::Correlations::Raymer::prop_system']]],
   ['nasa_5fmotor',['nasa_motor',['../group__Methods-Weights-Correlations-Propulsion.html#gacfa3e8be417d0f1bd08a7c9e52c8aa60',1,'SUAVE::Methods::Weights::Correlations::Propulsion::nasa_motor']]],
   ['new_5fchild',['new_child',['../classSUAVE_1_1Plugins_1_1pint_1_1compat_1_1ChainMap.html#a7eeedde1c0cba8c8db7f7f854ee11666',1,'SUAVE::Plugins::pint::compat::ChainMap']]],
   ['new_5felement',['new_element',['../classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html#ab2f9787baaa120ff1560f526463d17f2',1,'SUAVE::Input_Output::XML::Data::Data']]],

@@ -30,6 +30,7 @@ var group__Analyses_Mission_Segments_Conditions =
       [ "max_evaluations", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html#ad8a887dd8188a97d0df901c96230fd8c", null ],
       [ "number_control_points", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html#a97aeaf47ad936d48abaef004187cecc4", null ],
       [ "solver_jacobian", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html#a7561d89f9d24e31e15504fddec3db13e", null ],
+      [ "step_size", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html#a4adef8d2cc8acb4a2c4726025f1c4892", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html#aa7c571767bdb92e05cf2e5898a56f0ae", null ],
       [ "time", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html#ab7cf6d3161d03acdb40e2ab9a3f0d354", null ],
       [ "tolerance_solution", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html#ae026b6b1f8fb29b69ddbc0729f441aed", null ]
