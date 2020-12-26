@@ -87,6 +87,9 @@ var annotated_dup =
               [ "Aerodynamic", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Aerodynamic_1_1Aerodynamic.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Aerodynamic_1_1Aerodynamic" ]
             ] ],
             [ "Climb", null, [
+              [ "Constant_CAS_Constant_Rate", null, [
+                [ "Constant_CAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate" ]
+              ] ],
               [ "Constant_Dynamic_Pressure_Constant_Angle", null, [
                 [ "Constant_Dynamic_Pressure_Constant_Angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_61b566f355ab199459fb54d7274e572f.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_61b566f355ab199459fb54d7274e572f" ]
               ] ],
@@ -187,6 +190,9 @@ var annotated_dup =
               ] ]
             ] ],
             [ "Descent", null, [
+              [ "Constant_CAS_Constant_Rate", null, [
+                [ "Constant_CAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate" ]
+              ] ],
               [ "Constant_EAS_Constant_Rate", null, [
                 [ "Constant_EAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__EAS__Constant__Rate_1_1Constant__EAS__Constant__Rate.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__EAS__Constant__Rate_1_1Constant__EAS__Constant__Rate" ]
               ] ],
@@ -239,6 +245,9 @@ var annotated_dup =
               [ "Set_Speed_Set_Altitude", null, [
                 [ "Set_Speed_Set_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude_1_1Set__Speed__Set__Altitude.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude_1_1Set__Speed__Set__Altitude" ]
               ] ],
+              [ "Set_Speed_Set_Altitude_No_Propulsion", null, [
+                [ "Set_Speed_Set_Altitude_No_Propulsion", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude__No_660be05666a18eb7201c7425b4456ff1.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude__No_660be05666a18eb7201c7425b4456ff1" ]
+              ] ],
               [ "Set_Speed_Set_Throttle", null, [
                 [ "Set_Speed_Set_Throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle" ]
               ] ]
@@ -258,9 +267,12 @@ var annotated_dup =
           [ "Sequential_Segments", null, [
             [ "Sequential_Segments", "classSUAVE_1_1Analyses_1_1Mission_1_1Sequential__Segments_1_1Sequential__Segments.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Sequential__Segments_1_1Sequential__Segments" ]
           ] ],
-          [ "Vary_Cruise", null, [
+          [ "Variable_Range_Cruise", null, [
+            [ "Given_State_of_Charge", null, [
+              [ "Given_State_of_Charge", "classSUAVE_1_1Analyses_1_1Mission_1_1Variable__Range__Cruise_1_1Given__State__of__Charge_1_1Given__State__of__Charge.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Variable__Range__Cruise_1_1Given__State__of__Charge_1_1Given__State__of__Charge" ]
+            ] ],
             [ "Given_Weight", null, [
-              [ "Given_Weight", "classSUAVE_1_1Analyses_1_1Mission_1_1Vary__Cruise_1_1Given__Weight_1_1Given__Weight.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Vary__Cruise_1_1Given__Weight_1_1Given__Weight" ]
+              [ "Given_Weight", "classSUAVE_1_1Analyses_1_1Mission_1_1Variable__Range__Cruise_1_1Given__Weight_1_1Given__Weight.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Variable__Range__Cruise_1_1Given__Weight_1_1Given__Weight" ]
             ] ]
           ] ]
         ] ],
@@ -551,6 +563,9 @@ var annotated_dup =
             ] ],
             [ "Internal_Combustion_Propeller", null, [
               [ "Internal_Combustion_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller_1_1Internal__Combustion__Propeller.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller_1_1Internal__Combustion__Propeller" ]
+            ] ],
+            [ "Internal_Combustion_Propeller_Constant_Speed", null, [
+              [ "Internal_Combustion_Propeller_Constant_Speed", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76" ]
             ] ],
             [ "Lift_Cruise", null, [
               [ "Lift_Cruise", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise" ]

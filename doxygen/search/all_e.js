@@ -4,6 +4,8 @@ var searchData=
   ['networks',['Networks',['../group__Components-Energy-Networks.html',1,'']]],
   ['noise',['Noise',['../group__Methods-Noise.html',1,'']]],
   ['noise_20tools',['Noise Tools',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html',1,'']]],
+  ['nacelle_5fflops',['nacelle_FLOPS',['../group__Methods-Weights-Correlations-FLOPS.html#gac8dcf76be79986360be5b81193880c36',1,'SUAVE::Methods::Weights::Correlations::FLOPS::prop_system']]],
+  ['nacelle_5fraymer',['nacelle_Raymer',['../group__Methods-Weights-Correlations-Raymer.html#gaafceb3ad39b5ad39d0e4aed608688c21',1,'SUAVE::Methods::Weights::Correlations::Raymer::prop_system']]],
   ['nasa_5fmotor',['nasa_motor',['../group__Methods-Weights-Correlations-Propulsion.html#gacfa3e8be417d0f1bd08a7c9e52c8aa60',1,'SUAVE::Methods::Weights::Correlations::Propulsion::nasa_motor']]],
   ['ndarray',['ndarray',['../classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1ndarray.html',1,'SUAVE.Plugins.pint.testsuite.ndarray'],['../classSUAVE_1_1Plugins_1_1pint_1_1util_1_1ndarray.html',1,'SUAVE.Plugins.pint.util.ndarray']]],
   ['new_5fchild',['new_child',['../classSUAVE_1_1Plugins_1_1pint_1_1compat_1_1ChainMap.html#a7eeedde1c0cba8c8db7f7f854ee11666',1,'SUAVE::Plugins::pint::compat::ChainMap']]],

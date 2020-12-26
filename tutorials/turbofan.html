@@ -79,17 +79,22 @@
 #   Turbofan Network
 # ------------------------------------------------------------------    
 
-#instantiate the gas turbine network
 turbofan = SUAVE.Components.Energy.Networks.Turbofan()
+# For some methods, the 'turbofan' tag is still necessary. This will be changed in the
+# future to allow arbitrary tags.
 turbofan.tag = 'turbofan'
 
-# setup
+# High-level setup
+turbofan.number_of_engines = 2
 turbofan.bypass_ratio      = 5.4
-turbofan.number_of_engines = 2.0
-turbofan.engine_length     = 2.5
-turbofan.nacelle_diameter  = 1.580
+turbofan.engine_length     = 2.71 * Units.meter
+turbofan.nacelle_diameter  = 2.05 * Units.meter
+turbofan.origin            = [[13.72, 4.86,-1.9],[13.72, -4.86,-1.9]] * Units.meter
 
-# working fluid
+# Approximate the wetted area
+turbofan.areas.wetted      = 1.1*np.pi*turbofan.nacelle_diameter*turbofan.engine_length
+
+# Establish the correct working fluid
 turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
 </code></pre></div></div>
 
@@ -101,14 +106,12 @@ turbofan.working_fluid = SUAVE.Attributes.Gases.Air()
 
 <h4 id="ram">Ram</h4>
 
-<p>The ‘Ram’ component is used to convert the freestream quantities that are passed into the turbofan network into stagnation quantities. As the turbofan network is based on a 1D gasdynamic analysis, most of the energy transfer across the different components are modelled as changes in the stagnation quantities. Thus the Ram component acts as a preprocessor converting the input conditions into quantities required by the network.</p>
+<p>The ‘Ram’ component is used to convert the freestream quantities that are passed into the turbofan network into stagnation quantities. As the turbofan network is based on a 1D gasdynamic analysis, most of the energy transfer across the different components are modelled as changes in the stagnation quantities. Thus the Ram component acts as a preprocessor, converting the input conditions into quantities required by the network.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
 #   Component 1 - Ram
 
-# to convert freestream static to stagnation quantities
-
-# instantiate
+# Converts freestream static to stagnation quantities
 ram = SUAVE.Components.Energy.Converters.Ram()
 ram.tag = 'ram'
 
@@ -121,45 +124,48 @@ turbofan.append(ram)
 <p>The ‘Nozzle’ component is used to model the inlet diffuser, the outlet fan, and the compressor nozzles as shown below.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+# ------------------------------------------------------------------
 #  Component 2 - Inlet Nozzle
 
-# instantiate
+# Create component
 inlet_nozzle = SUAVE.Components.Energy.Converters.Compression_Nozzle()
 inlet_nozzle.tag = 'inlet_nozzle'
 
-# setup
+# Specify performance
 inlet_nozzle.polytropic_efficiency = 0.98
 inlet_nozzle.pressure_ratio        = 0.98
 
-# add to network
+# Add to network
 turbofan.append(inlet_nozzle)
+
 
 # ------------------------------------------------------------------
 #  Component 8 - Core Nozzle
 
-# instantiate
+# Create component
 nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
 nozzle.tag = 'core_nozzle'
 
-# setup
+# Specify performance
 nozzle.polytropic_efficiency = 0.95
 nozzle.pressure_ratio        = 0.99    
 
-# add to network
+# Add to network
 turbofan.append(nozzle)
+
 
 # ------------------------------------------------------------------
 #  Component 9 - Fan Nozzle
 
-# instantiate
+# Create component
 nozzle = SUAVE.Components.Energy.Converters.Expansion_Nozzle()   
 nozzle.tag = 'fan_nozzle'
 
-# setup
+# Specify performance
 nozzle.polytropic_efficiency = 0.95
 nozzle.pressure_ratio        = 0.99    
 
-# add to network
+# Add to network
 turbofan.append(nozzle)
 </code></pre></div></div>
 
@@ -168,31 +174,33 @@ turbofan.append(nozzle)
 <p>Two compressors are used in the turbofan model, a low and a high pressure compressor.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+# ------------------------------------------------------------------
 #  Component 3 - Low Pressure Compressor
 
-# instantiate 
+# Create component
 compressor = SUAVE.Components.Energy.Converters.Compressor()    
 compressor.tag = 'low_pressure_compressor'
 
-# setup
+# Specify performance
 compressor.polytropic_efficiency = 0.91
 compressor.pressure_ratio        = 1.14    
 
-# add to network
+# Add to network
 turbofan.append(compressor)
+    
 
 # ------------------------------------------------------------------
 #  Component 4 - High Pressure Compressor
 
-# instantiate
+# Create component
 compressor = SUAVE.Components.Energy.Converters.Compressor()    
 compressor.tag = 'high_pressure_compressor'
 
-# setup
+# Specify performance
 compressor.polytropic_efficiency = 0.91
 compressor.pressure_ratio        = 13.415    
 
-# add to network
+# Add to network
 turbofan.append(compressor)
 </code></pre></div></div>
 
@@ -203,36 +211,38 @@ turbofan.append(compressor)
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
 #  Component 10 - Fan
 
-# instantiate
+# Create component
 fan = SUAVE.Components.Energy.Converters.Fan()   
 fan.tag = 'fan'
 
-# setup
+# Specify performance
 fan.polytropic_efficiency = 0.93
 fan.pressure_ratio        = 1.7    
 
-# add to network
+# Add to network
 turbofan.append(fan)
 </code></pre></div></div>
 
 <h4 id="combustor">Combustor</h4>
 
-<p>The combustor component is where the the fuel to air ratio is computed. It is also used to compute the sfc and the thrust later in the network.</p>
+<p>The combustor component is where the fuel-to-air ratio is computed. It is also used to compute the sfc and the thrust later in the network.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+# ------------------------------------------------------------------
 #  Component 7 - Combustor
 
-# instantiate    
+# Create component    
 combustor = SUAVE.Components.Energy.Converters.Combustor()   
 combustor.tag = 'combustor'
 
-# setup
+# Specify performance
 combustor.efficiency                = 0.99 
-combustor.turbine_inlet_temperature = 1450
+combustor.alphac                    = 1.0   
+combustor.turbine_inlet_temperature = 1450 # K
 combustor.pressure_ratio            = 0.95
 combustor.fuel_data                 = SUAVE.Attributes.Propellants.Jet_A()    
 
-# add to network
+# Add to network
 turbofan.append(combustor)
 </code></pre></div></div>
 
@@ -240,75 +250,68 @@ turbofan.append(combustor)
 
 <p>The work done by the fan and the compressors is used to compute the turbine work required. This is used to compute the change in the stagnation quantities across the turbine.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
-#  Component 5 - Low Pressure Turbine
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>    # ------------------------------------------------------------------
+    #  Component 5 - Low Pressure Turbine
+    
+    # Create component
+    turbine = SUAVE.Components.Energy.Converters.Turbine()   
+    turbine.tag='low_pressure_turbine'
+    
+    # Specify performance
+    turbine.mechanical_efficiency = 0.99
+    turbine.polytropic_efficiency = 0.93     
+    
+    # Add to network
+    turbofan.append(turbine)
+      
+    # ------------------------------------------------------------------
+    #  Component 6 - High Pressure Turbine
+    
+    # Create component
+    turbine = SUAVE.Components.Energy.Converters.Turbine()   
+    turbine.tag='high_pressure_turbine'
 
-# instantiate
-turbine = SUAVE.Components.Energy.Converters.Turbine()   
-turbine.tag='low_pressure_turbine'
-
-# setup
-turbine.mechanical_efficiency = 0.99
-turbine.polytropic_efficiency = 0.93     
-
-# add to network
-turbofan.append(turbine)
-
-# ------------------------------------------------------------------
-#  Component 6 - High Pressure Turbine
-
-# instantiate
-turbine = SUAVE.Components.Energy.Converters.Turbine()   
-turbine.tag='high_pressure_turbine'
-
-# setup
-turbine.mechanical_efficiency = 0.99
-turbine.polytropic_efficiency = 0.93     
-
-# add to network
-turbofan.append(turbine)
+    # Specify performance
+    turbine.mechanical_efficiency = 0.99
+    turbine.polytropic_efficiency = 0.93     
+    
+    # Add to network
+    turbofan.append(turbine)  
+    
 </code></pre></div></div>
 
 <h4 id="thrust">Thrust</h4>
 
 <p>The thrust component takes in the initial (inputs of the inlet nozzle) and final (exit of the fan and core exirt nozzles) stagnation quantities of the network and the fuel to air ratio and computes the specific fuel conspumption (sfc) and thrust generated by the network (turbofan engine).</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># ------------------------------------------------------------------
-#  Component 10 - Thrust
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+# ------------------------------------------------------------------
+#  Component 11 - thrust (to compute the thrust)
 
-# to compute thrust
-
-# instantiate
 thrust = SUAVE.Components.Energy.Processes.Thrust()       
-thrust.tag ='thrust'
+thrust.tag ='compute_thrust'
 
-# setup
-thrust.total_design =42383.01
+# Design thrust is used to determine mass flow at full throttle
+thrust.total_design             = 2*24000. * Units.N #Newtons
 
-# add to network
+# Add to network
 turbofan.thrust = thrust   
 </code></pre></div></div>
 
 <h3 id="sizing-the-turbofan">Sizing the Turbofan</h3>
 
-<p>Once the network is built, it is essential to size the engine with a set of sizing conditions. The sizing function ‘turbofan_sizing’ takes in the model of the turbofan and the mach number and the altitude for which the turbofan is sized. The sizing thrust is an engine/network property (defined in the ‘Setting up the Turbofan model’ section above). The function takes these quantities and computes the design mass flow rate through the components. Once sized, the network/engine can be added to the vehicle as shown in the  B737 tutorial.</p>
+<p>Once the network is built, it is essential to size the engine with a set of sizing conditions. The sizing function ‘turbofan_sizing’ takes in the model of the turbofan, the mach number, and the altitude for which the turbofan is sized. The sizing thrust is an engine/network property (defined in the ‘Setting up the Turbofan model’ section above). The function takes these quantities and computes the design mass flow rate through the components. Once sized, the network/engine can be added to the vehicle as shown in the  B737 tutorial.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>#bypass ratio  closer to fan
-
-#design sizing conditions
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+# Design sizing conditions are also used to determine mass flow
 altitude      = 35000.0*Units.ft
-mach_number   = 0.78 
-isa_deviation = 0.
+mach_number   = 0.78     
 
-# add to network
-turbofan.thrust = thrust
-
-#size the turbofan (for thrust)
+# Determine turbofan behavior at the design condition
 turbofan_sizing(turbofan,mach_number,altitude)   
 
-#compute the turbofan diameter and engine length
-#note that the second input is to maintain a common interface with other sizing methods
-compute_turbofan_geometry(turbofan,None)
+# Add turbofan network to the vehicle 
+vehicle.append_component(turbofan) 
 </code></pre></div></div>
 <br>
 								</article>

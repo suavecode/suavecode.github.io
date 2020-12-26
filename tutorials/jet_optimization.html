@@ -68,7 +68,7 @@
 
 								<article>
 									<h3 id="regional-jet-optimization-tutorial">Regional Jet Optimization Tutorial</h3>
-<p>This tutorial assumes familiarity with SUAVE and knowledge of the information in the Boeing 737-800 analysis tutorial. It provides a specific case of the more general information provided in the optimization structure tutorial, and some more information on how to modify the code for different uses.</p>
+<p>This tutorial assumes familiarity with SUAVE and knowledge of the information in the Boeing 737-800 analysis tutorial. It provides a specific case of the more general optimization capabilities in SUAVE, and provides more information on how to modify the code for different uses.</p>
 
 <p>Some important files for the optimization problem can be seen below</p>
 
@@ -79,41 +79,47 @@
 
 <p>In order to ensure that the subfunctions can communicate with eachother, and that SUAVE can communicate with the external optimizer, a special data object called the “Nexus” is used. The nexus object contains all of the vehicles, missions, results, and other important information. It alters these values at each optimizer iteration, depending on the input parameters defined in Optimize.py.</p>
 
-<p>In this particular setup, there are two design variables: wing area and cruise altitude. The objective is fuel burn, and there is only one constraint: fuel margin. The default inputs are defined in the following lines.</p>
+<p>In this particular setup, there are two design variables: wing area and cruise altitude. The objective is to minimize fuel burn, and there is only one constraint: fuel margin. The default inputs are defined in the following lines.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># [ tag, initial, (lb,ub), scaling, units]
-problem.inputs = np.array([
-	[ 'wing_area'      ,  95., ( 90., 130.), 100., Units.meter**2],
-	[ 'cruise_altitude',  11., (  9.,  14.),  10., Units.km      ],
-])
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+    #   [ tag                   , initial,     (lb , ub)        , scaling , units ]
+    problem.inputs = np.array([
+	[ 'wing_area'           ,  80    , (   50. ,   130.   ) ,   100.  , Units.meter**2],
+	[ 'cruise_altitude'     ,   8    , (    6. ,    12.   ) ,   10.   , Units.km],
+    ])
+
+
 </code></pre></div></div>
 
 <p>Each input parameter takes in 5 values; a tag (an identification to communicate between the optimizer and SUAVE), an initial value, set of bounds, a scale factor (many optimizers tend to be more effective when the input values are of order 1), as well as the units used.</p>
 
 <p>The objective and constraints are defined in the lines below.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code># [ tag, scaling, units ]
-problem.objective = np.array([
-	[ 'fuel_burn', 10000, Units.kg ]
-])
-
-# [ tag, sense, edge, scaling, units ]
-problem.constraints = np.array([
-	[ 'design_range_fuel_margin' , '&gt;', 0., 1E-1, Units.less],
-])
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+	# [ tag, scaling, units ]
+	problem.objective = np.array([
+		[ 'fuel_burn', 10000, Units.kg ]
+	])
+	
+	# [ tag, sense, edge, scaling, units ]
+	problem.constraints = np.array([
+		[ 'design_range_fuel_margin' , '&gt;', 0., 1E-1, Units.less],
+	])
+	
 </code></pre></div></div>
 
-<p>Note that in this case, only a single constraint is used; Multiple constraints may be used using a list format, similar to the input variables.</p>
+<p>Note that in this case, only a single constraint is used. Multiple constraints may be used using a list format, similar to the input variables.</p>
 
 <p>This file also defines the “aliasing,” i.e. how the design variables, constraints, and objective map to the variables used in Procedure.py (which is where the problem is evaluated). The aliases for this problem are defined in the lines below.  Note that the first entry refers to the tag defined in either problem.inputs, problem.objective, or problem.constraints.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>problem.aliases = [
-	[ 'wing_area'                        ,   ['vehicle_configurations.*.wings.main_wing.areas.reference',
-	                                          'vehicle_configurations.*.reference_area'                    ]],  
-	[ 'cruise_altitude'                  ,    'missions.base.segments.climb_5.altitude_end'                 ],
-	[ 'fuel_burn'                        ,    'summary.base_mission_fuelburn'                               ],
-	[ 'design_range_fuel_margin'         ,    'summary.max_zero_fuel_margin'                                ],
-]    
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+	problem.aliases = [
+		[ 'wing_area'                        ,   ['vehicle_configurations.*.wings.main_wing.areas.reference',
+							  'vehicle_configurations.*.reference_area'                    ]],  
+		[ 'cruise_altitude'                  ,    'missions.base.segments.climb_5.altitude_end'                 ],
+		[ 'fuel_burn'                        ,    'summary.base_mission_fuelburn'                               ],
+		[ 'design_range_fuel_margin'         ,    'summary.max_zero_fuel_margin'                                ],
+	]    
 </code></pre></div></div>
 
 <p>Note that, sometimes, a single input can map to multiple outputs, such as the “wing_area” design variable; in this case, use a list for the outputs, as seen above. The use of a wild card “*”, can also allow values to map to multiple outputs. Values to be outputted cannot contain wild cards as that would be ambiguous to an optimizer.</p>
@@ -172,7 +178,8 @@ problem.constraints = np.array([
 <h3 id="running-a-sweep-of-the-inputs">Running a Sweep of the Inputs</h3>
 <p>Now try running a 2D sweep of the problem to observe the shape of the design space: comment <code class="highlighter-rouge">output = problem.objective</code> then uncomment the following (the next line down in the code).</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>variable_sweep(problem)
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+	variable_sweep(problem)
 </code></pre></div></div>
 
 <p>Then run the program again. This could take a few minutes. The results should look like the plot below.</p>
@@ -189,35 +196,16 @@ problem.constraints = np.array([
 
 <p>Now try running an Optimization. Recomment <code class="highlighter-rouge">variable_sweep(problem)</code> then uncomment the lines below:</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>output = scipy_setup.SciPy_Solve(problem,solver='SLSQP')
-print output
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
+	output = scipy_setup.SciPy_Solve(problem,solver='SLSQP')
+	print output
 </code></pre></div></div>
 
 <p>and run the file again.</p>
 
-<p>From the default inputs, the terminal (or IDE output) should display an optimum of [ 1.08980937  1.02089232], which corresponds to a wing area of 109 m^2, and 10.2 km. It appears to have found the local minimum.</p>
+<p>From the default inputs, the terminal (or IDE output) should display an optimum of [0.57213139 0.75471681] which corresponds to a wing area of 58 m^2, and 7.5 km. It appears to have found a minima. Keep in mind that in designing a real regional jet the desingers would incorporate additional constraints and analyses. These additional constraints change the final design considerably</p>
 
-<p>Now try starting the optimization from a different initial guess. You can either modify the input parameters in the initial formulation (the relevant lines are repeated below with the modification)</p>
-
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>#   [ tag                            , initial, (lb,ub)             , scaling , units ]
-problem.inputs = np.array([
-    [ 'wing_area'                    ,  128   , (   90. ,   130.   ) ,   100. , Units.meter**2],
-    [ 'cruise_altitude'              ,  13.8  , (   9   ,    14.   ) ,   10.  , Units.km],
-])
 </code></pre></div></div>
-
-<p>or set up the optimization problem and change the inputs manually by uncommenting the following lines.</p>
-
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>inputs                                   = [1.28, 1.38]
-scaling                                  = problem.optimization_problem.inputs[:,3] # have to 
-										   rescale inputs to start problem from here
-scaled_inputs                            = np.multiply(inputs,scaling)
-problem.optimization_problem.inputs[:,1] = scaled_inputs
-output = scipy_setup.SciPy_Solve(problem,solver='SLSQP')
-print output        
-</code></pre></div></div>
-
-<p>This starts the optimization problem above the feasible region (wing area = 128 m^2, altitude = 13.8 km), and results in a fuel burn that is 30 kg lower than the result using the initial guess. This illustrates the important of choosing a starting point when running optimization problem. Additionally, this demonstrates SUAVE’s ability to handle infeasible cases, showing that it can converge to a feasible case even when starting from an infeasible set of initial inputs.</p>
 
 <p>At this point, you can explore other starting points, or alter the vehicle or mission properties in Vehicles.py or Missions.py. Additionally, feel free to start using this as the basis for creating custom optimization scripts.</p>
 

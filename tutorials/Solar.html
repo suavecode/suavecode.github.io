@@ -75,7 +75,7 @@
 <ul>
   <li>Solar missions,</li>
   <li>Human powered/solar weight estimation,</li>
-  <li>Boundary layer transition</li>
+  <li>Boundary layer transition,</li>
   <li>Solar panels,</li>
   <li>Batteries,</li>
   <li>Electric motors,</li>
@@ -93,7 +93,7 @@
 
 <h2 id="setup">Setup</h2>
 
-<p>This tutorial highlights the differences between setting up a typical aircraft like a Boeing 737 and a solar UAV.</p>
+<p>This tutorial highlights the differences between setting up a typical commercial aircraft like a Boeing 737 and a solar UAV.</p>
 
 <h3 id="mission-setup">Mission Setup</h3>
 
@@ -104,12 +104,12 @@ segment.start_time                           = time.strptime("Tue, Jun 21 11:30:
 segment.altitude                             = 15.0  * Units.km 
 segment.mach                                 = 0.12
 segment.distance                             = 3050.0 * Units.km
-segment.battery_energy                       = vehicle.propulsors.network.battery.max_energy*0.2 #Set the battery charge to start
-segment.latitude                             = 37.4300
-segment.longitude                            = -122.1700
+segment.battery_energy                       = vehicle.propulsors.solar.battery.max_energy*0.2 #Charge the battery to start
+segment.latitude                             = 37.4300   # this defaults to degrees (do not use Units.degrees)
+segment.longitude                            = -122.1700 # this defaults to degrees
 </code></pre></div></div>
 
-<p>Additionally, this mission is highly simplified. It consists of only one mission segment. To provide ample resolution the number of control points have been increased to 64.</p>
+<p>Additionally, this mission is highly simplified. It consists of only one mission segment. To provide ample resolution, the number of control points has been increased to 64.</p>
 
 <h3 id="structural-weight-sizing">Structural Weight Sizing</h3>
 
@@ -121,7 +121,7 @@ wing.number_end_ribs         = 2.
 
 <h3 id="wing-boundary-layer-transition">Wing Boundary Layer Transition</h3>
 
-<p>The transition location of the boundary layer can have a great impact on the drag of the wing. This is especially important in properly designed low Reynolds number flows when laminar flow can be extended for larger percentages of the surface. The code snippet below is how surfaces have transition points set. These are estimates provided from the designer based on experience.</p>
+<p>The transition location of the boundary layer can have a great impact on the drag of the wing. This is especially important in properly designed, low Reynolds number flows, where laminar flow can be extended for larger regions of the surface. The code snippet below is how surfaces have transition points set. These are estimates provided from the designer based on experience.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre><code>wing.transition_x_upper      = 0.6
 wing.transition_x_lower      = 1.0
@@ -138,12 +138,13 @@ panel.mass_properties.mass = panel.area*(0.60 * Units.kg)
 
 <h3 id="batteries">Batteries</h3>
 
-<p>The batteries are set up with knowledge of the mass of the battery and the specific energy. In this case a futuristic specific energy of 450 Watt-hr/kg is set for lithium ion type batteries. The resistance of the batteries is another important input to determine charging and discharging losses.</p>
+<p>The batteries are set up with knowledge of the mass of the battery and the specific energy. In this case a futuristic specific energy of 600 Watt-hr/kg is set for lithium ion type batteries. The resistance of the batteries is another important input to determine charging and discharging losses.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre><code>bat = SUAVE.Components.Energy.Storages.Batteries.Constant_Mass.Lithium_Ion()
-bat.mass_properties.mass = 55.0 * Units.kg
-bat.specific_energy      = 450.*Units.Wh/Units.kg
+bat.mass_properties.mass = 90.0 * Units.kg
+bat.specific_energy      = 600. * Units.Wh/Units.kg
 bat.resistance           = 0.05
+bat.max_voltage          = 45.0
 initialize_from_mass(bat,bat.mass_properties.mass)
 net.battery              = bat
 </code></pre></div></div>
@@ -152,8 +153,7 @@ net.battery              = bat
 
 <p>To setup the propeller we will actually design an optimized propeller. This is done through the methods provided by Adkins and Liebeck. The attributes of the propeller design are then seeded to the motor and network to accelerate convergence of the propeller and motor models.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>prop_attributes = Data()
-prop = SUAVE.Components.Energy.Converters.Propeller()
+<div class="highlight_code"><div class="highlight_code"><pre><code>prop = SUAVE.Components.Energy.Converters.Propeller()
 prop.number_blades       = 2.0
 prop.freestream_velocity = 40.0 * Units['m/s']# freestream
 prop.angular_velocity    = 150. * Units['rpm']
@@ -172,8 +172,7 @@ net.propeller            = prop
 
 <p>This motor model relies on data that is generally available from motor manufacturers. This includes the resistance, no load current, and the speed constant. Additionally, any gearbox is specified here and basic information about the propeller is entered here to help inform the solver when converging the motor and propeller analyses.</p>
 
-<div class="highlight_code"><div class="highlight_code"><pre><code>
-motor = SUAVE.Components.Energy.Converters.Motor()
+<div class="highlight_code"><div class="highlight_code"><pre><code>motor = SUAVE.Components.Energy.Converters.Motor()
 motor.resistance           = 0.008
 motor.no_load_current      = 4.5  * Units.ampere
 motor.speed_constant       = 120. * Units['rpm'] # RPM/volt converted to (rad/s)/volt    
@@ -196,11 +195,8 @@ net.motor                  = motor
 
 <p>If all went well the script ran and it provided you with more plots than you ever wanted. Here are some of the plots that were generated when we ran it:</p>
 
-<p><img src="/images/solar_flux.png" alt="solar_flux" /></p>
+<p><img src="/images/Solar_Flux_Power_Energy.png" alt="solar_flux" /></p>
 
-<p><img src="/images/battery_charging.png" alt="battery charging" /></p>
-
-<p><img src="/images/battery_energy.png" alt="battery energy" /></p>
 
 <br>
 								</article>

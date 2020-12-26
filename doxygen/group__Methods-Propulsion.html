@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -116,6 +116,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga3e6153003ae73397bf8d06367e10e9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaceccf2f0fd7ef2c51ac7752700230dc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#gaaceccf2f0fd7ef2c51ac7752700230dc">SUAVE.Methods.Propulsion.electric_motor_sizing.size_from_kv</a> (motor)</td></tr>
 <tr class="separator:gaaceccf2f0fd7ef2c51ac7752700230dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfa7508a797c8be14c4ea5bab83b05c7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#gabfa7508a797c8be14c4ea5bab83b05c7">SUAVE.Methods.Propulsion.electric_motor_sizing.size_from_mass</a> (motor)</td></tr>
+<tr class="separator:gabfa7508a797c8be14c4ea5bab83b05c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a7a8cf66349899da013fd287f10a6f7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#ga2a7a8cf66349899da013fd287f10a6f7">SUAVE.Methods.Propulsion.electric_motor_sizing.size_optimal_motor</a> (motor, prop)</td></tr>
+<tr class="separator:ga2a7a8cf66349899da013fd287f10a6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4466f11794955e948b98afa5d36ef2e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#gab4466f11794955e948b98afa5d36ef2e">SUAVE.Methods.Propulsion.electric_motor_sizing.optimize_kv</a> (io, v, omeg, etam, Q, kv_lower_bound=0.01, Res_lower_bound=0.001, kv_upper_bound=100, Res_upper_bound=10)</td></tr>
+<tr class="separator:gab4466f11794955e948b98afa5d36ef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae720e196160d2c3fdc45c57ff3e2f4bb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#gae720e196160d2c3fdc45c57ff3e2f4bb">SUAVE.Methods.Propulsion.fm_id.fm_id</a> (M, gamma)</td></tr>
 <tr class="memdesc:gae720e196160d2c3fdc45c57ff3e2f4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">fm_id.py  <a href="group__Methods-Propulsion.html#gae720e196160d2c3fdc45c57ff3e2f4bb">More...</a><br /></td></tr>
 <tr class="separator:gae720e196160d2c3fdc45c57ff3e2f4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -530,6 +536,88 @@ Outputs:
 M2            [dimensionless]      </pre> 
 </div>
 </div>
+<a id="gab4466f11794955e948b98afa5d36ef2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4466f11794955e948b98afa5d36ef2e">&#9670;&nbsp;</a></span>optimize_kv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Propulsion.electric_motor_sizing.optimize_kv </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>omeg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>etam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>kv_lower_bound</em> = <code>0.01</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Res_lower_bound</em> = <code>0.001</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>kv_upper_bound</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Res_upper_bound</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Optimizer for compute_optimal_motor_parameters function  
+
+Source:
+N/A
+
+Inputs:
+motor    (to be modified)
+
+Outputs:
+motor.
+  speed_constant     [untiless]
+  no_load_current    [amps]
+</pre> 
+</div>
+</div>
 <a id="ga448bd8878bb3fb399e1ef118fe928543"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga448bd8878bb3fb399e1ef118fe928543">&#9670;&nbsp;</a></span>pressure_ratio_isentropic()</h2>
 
@@ -848,6 +936,92 @@ motor.
   resistance         [ohms]
   no_load_current    [amps]
   mass               [kg]</pre> 
+</div>
+</div>
+<a id="gabfa7508a797c8be14c4ea5bab83b05c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfa7508a797c8be14c4ea5bab83b05c7">&#9670;&nbsp;</a></span>size_from_mass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Propulsion.electric_motor_sizing.size_from_mass </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>motor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sizes motor from mass
+
+Source:
+Gur, O., Rosen, A, AIAA 2008-5916.
+
+Inputs:
+motor.    (to be modified)
+  mass               [kg]
+
+Outputs:
+motor.
+  resistance         [ohms]
+  no_load_current    [amps] 
+</pre> 
+</div>
+</div>
+<a id="ga2a7a8cf66349899da013fd287f10a6f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a7a8cf66349899da013fd287f10a6f7">&#9670;&nbsp;</a></span>size_optimal_motor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Propulsion.electric_motor_sizing.size_optimal_motor </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>motor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>prop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Optimizes the motor to obtain the best combination of speed constant and resistance values
+by essentially sizing the motor for a design RPM value. Note that this design RPM 
+value can be compute from design tip mach  
+
+Assumptions:
+motor design performance occurs at 90% nominal voltage to account for off design conditions 
+
+Source:
+N/A
+
+Inputs:
+prop.
+  design_torque          [Nm]
+  angular_velocity       [rad/s]
+  origin                 [m]
+  
+motor.     
+  no_load_current        [amps]
+  mass_properties.mass   [kg]
+  
+Outputs:
+motor.
+  speed_constant         [untiless]
+  design_torque          [Nm] 
+  motor.resistance       [Ohms]
+  motor.angular_velocity [rad/s]
+  motor.origin           [m]
+</pre> 
 </div>
 </div>
 <a id="ga073857d84ade0f28134bf8340dfc3330"></a>

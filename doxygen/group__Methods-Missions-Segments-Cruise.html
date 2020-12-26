@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -152,6 +152,10 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>SUAVE.Methods.Missions
 <tr class="separator:ga6e72808af73f68c8b85178ef8e054ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab9cd744963f58e79de0e31b719c8a5b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Cruise.html#gaab9cd744963f58e79de0e31b719c8a5b">SUAVE.Methods.Missions.Segments.Cruise.Variable_Cruise_Distance.residual_landing_weight</a> (segment)</td></tr>
 <tr class="separator:gaab9cd744963f58e79de0e31b719c8a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48d38d17606e2b0a53b19a6aaae0d51e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Cruise.html#ga48d38d17606e2b0a53b19a6aaae0d51e">SUAVE.Methods.Missions.Segments.Cruise.Variable_Cruise_Distance.residual_state_of_charge</a> (segment)</td></tr>
+<tr class="separator:ga48d38d17606e2b0a53b19a6aaae0d51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e0a1945e924aacb50a5b42284a6e483"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Cruise.html#ga9e0a1945e924aacb50a5b42284a6e483">SUAVE.Methods.Missions.Segments.Single_Point.Set_Speed_Set_Altitude_No_Propulsion.unpack_unknowns</a> (segment)</td></tr>
+<tr class="separator:ga9e0a1945e924aacb50a5b42284a6e483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5614ac9012f5178df121df650ba98f02"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Cruise.html#ga5614ac9012f5178df121df650ba98f02">SUAVE.Methods.Missions.Segments.Transition.Constant_Acceleration_Constant_Angle_Linear_Climb.residual_total_forces</a> (segment)</td></tr>
 <tr class="separator:ga5614ac9012f5178df121df650ba98f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17c347be29f6734619ac52092c16a54b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Cruise.html#ga17c347be29f6734619ac52092c16a54b">SUAVE.Methods.Missions.Segments.Transition.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude.residual_total_forces</a> (segment)</td></tr>
@@ -592,6 +596,42 @@ N/A
 </pre> 
 </div>
 </div>
+<a id="ga48d38d17606e2b0a53b19a6aaae0d51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48d38d17606e2b0a53b19a6aaae0d51e">&#9670;&nbsp;</a></span>residual_state_of_charge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Cruise.Variable_Cruise_Distance.residual_state_of_charge </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This is a method that allows your vehicle to land at a prescribed state of charge.
+This takes the final weight and compares it against the prescribed state of charge.
+
+Assumptions:
+N/A
+
+Source:
+N/A
+
+Inputs:
+segment.state.segments[-1].conditions.propulsion.state_of_charge [None]
+segment.target_state_of_charge                                   [None]
+
+Outputs:
+segment.state.residuals.state_of_charge                          [None]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
 <a id="gaafbd9d1fb34d3aefa0577719d85900d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaafbd9d1fb34d3aefa0577719d85900d3">&#9670;&nbsp;</a></span>residual_total_forces() <span class="overload">[1/5]</span></h2>
 
@@ -839,7 +879,7 @@ N/A
 </div>
 </div>
 <a id="gad28061436854da468ebbbcdd4aa7e489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad28061436854da468ebbbcdd4aa7e489">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad28061436854da468ebbbcdd4aa7e489">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -872,8 +912,42 @@ N/A
     N/A</pre> 
 </div>
 </div>
+<a id="ga9e0a1945e924aacb50a5b42284a6e483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e0a1945e924aacb50a5b42284a6e483">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Single_Point.Set_Speed_Set_Altitude_No_Propulsion.unpack_unknowns </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Unpacks the throttle setting and body angle from the solver to the mission
+
+    Assumptions:
+    N/A
+    
+    Inputs:
+        state.unknowns:
+            throttle    [Unitless]
+            body_angle  [Radians]
+        
+    Outputs:
+        state.conditions:
+            propulsion.throttle            [Unitless]
+            frames.body.inertial_rotations [Radians]
+
+    Properties Used:
+    N/A</pre> 
+</div>
+</div>
 <a id="gabf1dcca43c3a644839b1822542decfab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf1dcca43c3a644839b1822542decfab">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf1dcca43c3a644839b1822542decfab">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

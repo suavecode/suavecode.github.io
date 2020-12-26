@@ -100,7 +100,7 @@
 # Modified: Aug 2017, SUAVE Team
 #           Mar 2020, E. Botero
 </pre></code><p></p>
-									<p>The imports contain two sections. The first is generally used Python libraries, which are not specific to SUAVE. Two are imported here. The first is numpy, which a common numerical programming package used in scientific computing. The second is matplotlib, which allows plotting of the results.</p>
+									<p>The imports contain two sections. The first is generally used Python libraries, which are not specific to SUAVE. Two are imported here. The first is numpy, which is a common numerical programming package used in scientific computing. The second is matplotlib, which allows plotting of the results.</p>
 
 <pre class="highlight_code"><code class="language-python"># General Python Imports
 import numpy as np
@@ -126,6 +126,9 @@ from SUAVE.Core import Data, Units
 #   This is because SUAVE functions generally operate using metric units, so inputs must be 
 #   converted. To use a length of 20 feet, set l = 20 * Units.ft . Additionally, to convert to SUAVE
 #   output back to a desired units, use l_ft = l_m / Units.ft
+from SUAVE.Plots.Mission_Plots import *
+# These are a variety of plotting routines that simplify the plotting process for commonly 
+# requested metrics. Plots of specifically desired metrics can also be manually created.
 from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 # Rather than conventional sizing, this script builds the turbofan energy network. This process is
 # covered in more detail in a separate tutorial. It does not size the turbofan geometry.
@@ -333,7 +336,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     wing.areas.reference         = 124.862 * Units['meters**2']  
     wing.twists.root             = 4.0 * Units.degrees
     wing.twists.tip              = 0.0 * Units.degrees
-    wing.origin                  = [13.61,0,-1.27] # meters
+    wing.origin                  = [[13.61, 0, -1.27]] * Units.meter
     wing.vertical                = False
     wing.symmetric               = True
     # The high lift flag controls aspects of maximum lift coefficient calculations
@@ -349,8 +352,8 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     
     flap                       = SUAVE.Components.Wings.Control_Surfaces.Flap() 
     flap.tag                   = 'flap' 
-    flap.span_fraction_start   = 0.10 
-    flap.span_fraction_end     = 0.75   
+    flap.span_fraction_start   = 0.20 
+    flap.span_fraction_end     = 0.70   
     flap.deflection            = 0.0 * Units.degrees
     # Flap configuration types are used in computing maximum CL and noise
     flap.configuration_type    = 'double_slotted'
@@ -380,7 +383,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    wing = SUAVE.Components.Wings.Horizontal_Tail()
     wing.tag = 'horizontal_stabilizer'</div></div></pre></code><p></p>
     
-<p>The vertical stabilizer also uses a different class, and otherwise has one additional field to designate it as a t tail or not. This difference is used in the weight calculation.</p>
+<p>The vertical stabilizer also uses a different class, and otherwise has one additional field to designate it as a t-tail or not. This difference is used in the weight calculation.</p>
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    wing = SUAVE.Components.Wings.Vertical_Tail()</div></div></pre></code><p></p>
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    wing.t_tail                  = False</div></div></pre></code><p></p>
 
@@ -424,7 +427,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     # add to vehicle
     vehicle.append_component(fuselage)</div></div></pre></code><p></p>
     
-<p>Next is the turbofan. It is created as a Turbofan energy network, which determines its behavior. More details on the turbofan will be provided in later tutorials, and more information on energy networks in general can be found in the documentation section. The high-level parameters are reproduced here.</p>
+<p>Next is the turbofan. It is created as a Turbofan energy network, which determines its behavior. More details on the turbofan are provided in the Turbofan Modeling Tutorial, and more information on energy networks in general can be found in the documentation section. The high-level parameters are reproduced here.</p>
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    turbofan = SUAVE.Components.Energy.Networks.Turbofan()
     # For some methods, the 'turbofan' tag is still necessary. This will be changed in the
     # future to allow arbitrary tags.
@@ -435,7 +438,7 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     turbofan.bypass_ratio      = 5.4
     turbofan.engine_length     = 2.71 * Units.meter
     turbofan.nacelle_diameter  = 2.05 * Units.meter
-    turbofan.origin            = [[13.72, 4.86,-1.9],[13.72, -4.86,-1.9]] # meters
+    turbofan.origin            = [[13.72, 4.86,-1.9],[13.72, -4.86,-1.9]] * Units.meter
     
     # Approximate the wetted area
     turbofan.areas.wetted      = 1.1*np.pi*turbofan.nacelle_diameter*turbofan.engine_length
@@ -444,20 +447,22 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
     turbofan.working_fluid = SUAVE.Attributes.Gases.Air()</div></div></pre></code><p></p>
     
 <p>One component of particular interest is the thrust component. This is a bit different than the other components in the list since it is not a physical item. It is used to size the design mass flow of the engine, which determines what throttle is needed for a particular thrust. For this network, the thrust and mass flow scale linearly with throttle at given conditions.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">    # ------------------------------------------------------------------
-    #Component 10 : thrust (to compute the thrust)
-    thrust = SUAVE.Components.Energy.Processes.Thrust()       
-    thrust.tag ='compute_thrust'
- 
-    # Design thrust is used to determine mass flow at full throttle
-    thrust.total_design             = 2*24000. * Units.N #Newtons
- 
-    # Design sizing conditions are also used to determine mass flow
-    altitude      = 35000.0*Units.ft
-    mach_number   = 0.78 
-    
-    # Add to network
-    turbofan.thrust = thrust</div></div></pre></code><p></p>
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code class="language-python">
+# ------------------------------------------------------------------
+#  Component 11 - thrust (to compute the thrust)
+
+thrust = SUAVE.Components.Energy.Processes.Thrust()       
+thrust.tag ='compute_thrust'
+
+# Design thrust is used to determine mass flow at full throttle
+thrust.total_design             = 2*24000. * Units.N #Newtons
+
+# Design sizing conditions are also used to determine mass flow
+altitude      = 35000.0*Units.ft
+mach_number   = 0.78 
+
+# Add to network
+turbofan.thrust = thrust</div></div></pre></code><p></p>
     
 <h4>configs_setup</h4>
 <p>This function is where the different vehicle configurations (labeled configs here) are defined. In this case, these configs only change flap and slat settings. To start, the base configuration is defined as simply matching the baseline vehicle. The configs are defined as containers, which are SUAVE Data classes with a few extra features such as append. The cruise config is created in almost the same way, but demonstrates that configs can be used to create a new config as well. The first config to include changes is then the takeoff config. This shows how vehicle parameters can be changed. The remaining configs follow a similar pattern.</p>
@@ -615,13 +620,15 @@ from SUAVE.Methods.Propulsion.turbofan_sizing import turbofan_sizing
 
 									<p>This section should generate the plots below if the mission analysis executes correctly. The results show the aerodynamic, propulsion, and mission properties of the B737-800 for the defined mission.</p>
 
-									<p><img src="/images/B737_mission.png" alt="B737 mission" /></p>
+									<p><img src="/images/B737_Aircraft_Velocities.png" alt="B737 Conditions" /></p>
+									
+									<p><img src="/images/B737_Altitude_SFC_Weight.png" alt="B737 Mission" /></p>
+									
+									<p><img src="/images/B737_Aerodynamic_Coefficients.png" alt="B737 Aerodynamic Coefficients" /></p>
 
-									<p><img src="/images/B737_aero.png" alt="B737 Aerodynamics" /></p>
+									<p><img src="/images/B737_Aerodynamic_Forces.png" alt="B737 Aerodynamic Forces" /></p>
 
-									<p><img src="/images/B737_engine.png" alt="B737 Propulsion" /></p>
-
-									<p><img src="/images/B737_drag.png" alt="B737 Drag" /></p>
+									<p><img src="/images/B737_Drag_Components.png" alt="B737 Drag" /></p>
 
 									<h3 id="modifying-the-aircrafts-geometry-or-mission-">Modifying the Aircraft's Geometry or Mission:</h3>
 

@@ -7,7 +7,8 @@ var hierarchy =
     [ "Container", null, [
       [ "SUAVE.Analyses.Mission.Mission.Mission", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission.html", [
         [ "SUAVE.Analyses.Mission.All_At_Once.All_At_Once", "classSUAVE_1_1Analyses_1_1Mission_1_1All__At__Once_1_1All__At__Once.html", [
-          [ "SUAVE.Analyses.Mission.Vary_Cruise.Given_Weight.Given_Weight", "classSUAVE_1_1Analyses_1_1Mission_1_1Vary__Cruise_1_1Given__Weight_1_1Given__Weight.html", null ]
+          [ "SUAVE.Analyses.Mission.Variable_Range_Cruise.Given_State_of_Charge.Given_State_of_Charge", "classSUAVE_1_1Analyses_1_1Mission_1_1Variable__Range__Cruise_1_1Given__State__of__Charge_1_1Given__State__of__Charge.html", null ],
+          [ "SUAVE.Analyses.Mission.Variable_Range_Cruise.Given_Weight.Given_Weight", "classSUAVE_1_1Analyses_1_1Mission_1_1Variable__Range__Cruise_1_1Given__Weight_1_1Given__Weight.html", null ]
         ] ],
         [ "SUAVE.Analyses.Mission.Sequential_Segments.Sequential_Segments", "classSUAVE_1_1Analyses_1_1Mission_1_1Sequential__Segments_1_1Sequential__Segments.html", null ]
       ] ]
@@ -168,6 +169,7 @@ var hierarchy =
               [ "SUAVE.Analyses.Mission.Segments.Climb.Constant_Throttle_Constant_Speed.Constant_Throttle_Constant_Speed", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Throttle__Constant__Speed_1_02b90ea2f234e748373e0a5403527689.html", null ],
               [ "SUAVE.Analyses.Mission.Segments.Climb.Optimized.Optimized", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html", null ],
               [ "SUAVE.Analyses.Mission.Segments.Climb.Unknown_Throttle.Unknown_Throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Unknown__Throttle_1_1Unknown__Throttle.html", [
+                [ "SUAVE.Analyses.Mission.Segments.Climb.Constant_CAS_Constant_Rate.Constant_CAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Climb.Constant_Dynamic_Pressure_Constant_Angle.Constant_Dynamic_Pressure_Constant_Angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_61b566f355ab199459fb54d7274e572f.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Climb.Constant_Dynamic_Pressure_Constant_Rate.Constant_Dynamic_Pressure_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_1a3019722a97e8cea99fa0e052a34a68.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Climb.Constant_EAS_Constant_Rate.Constant_EAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__EAS__Constant__Rate_1_1Constant__EAS__Constant__Rate.html", null ],
@@ -178,6 +180,7 @@ var hierarchy =
                 [ "SUAVE.Analyses.Mission.Segments.Climb.Constant_Speed_Constant_Rate.Constant_Speed_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__Constant__Rate_1_1Constant__Speed__Constant__Rate.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Climb.Linear_Mach_Constant_Rate.Linear_Mach_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Linear__Mach__Constant__Rate_1_1Linear__Mach__Constant__Rate.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Climb.Linear_Speed_Constant_Rate.Linear_Speed_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Linear__Speed__Constant__Rate_1_1Linear__Speed__Constant__Rate.html", null ],
+                [ "SUAVE.Analyses.Mission.Segments.Descent.Constant_CAS_Constant_Rate.Constant_CAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Descent.Constant_Speed_Constant_Angle.Constant_Speed_Constant_Angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle_1_113016f07454f53dbac238312756446d6.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Descent.Constant_Speed_Constant_Angle_Noise.Constant_Speed_Constant_Angle_Noise", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Angle__Noa39040ebc44f8c6e229921b8045d6b6f.html", null ],
                 [ "SUAVE.Analyses.Mission.Segments.Descent.Constant_Speed_Constant_Rate.Constant_Speed_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__Speed__Constant__Rate_1_1Constant__Speed__Constant__Rate.html", null ],
@@ -205,6 +208,7 @@ var hierarchy =
                 [ "SUAVE.Analyses.Mission.Segments.Hover.Descent.Descent", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Hover_1_1Descent_1_1Descent.html", null ]
               ] ],
               [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Altitude.Set_Speed_Set_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude_1_1Set__Speed__Set__Altitude.html", null ],
+              [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Altitude_No_Propulsion.Set_Speed_Set_Altitude_No_Propulsion", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude__No_660be05666a18eb7201c7425b4456ff1.html", null ],
               [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Throttle.Set_Speed_Set_Throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle.html", null ],
               [ "SUAVE.Analyses.Mission.Segments.Transition.Constant_Acceleration_Constant_Angle_Linear_Climb.Constant_Acceleration_Constant_Angle_Linear_Climb", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html", null ],
               [ "SUAVE.Analyses.Mission.Segments.Transition.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html", null ],
@@ -346,6 +350,7 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Networks.Battery_Propeller.Battery_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html", null ],
             [ "SUAVE.Components.Energy.Networks.Ducted_Fan.Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ducted__Fan_1_1Ducted__Fan.html", null ],
             [ "SUAVE.Components.Energy.Networks.Internal_Combustion_Propeller.Internal_Combustion_Propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller_1_1Internal__Combustion__Propeller.html", null ],
+            [ "SUAVE.Components.Energy.Networks.Internal_Combustion_Propeller_Constant_Speed.Internal_Combustion_Propeller_Constant_Speed", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html", null ],
             [ "SUAVE.Components.Energy.Networks.Lift_Cruise.Lift_Cruise", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html", null ],
             [ "SUAVE.Components.Energy.Networks.Liquid_Rocket.Liquid_Rocket", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket.html", null ],
             [ "SUAVE.Components.Energy.Networks.Propulsor_Surrogate.Propulsor_Surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html", null ],

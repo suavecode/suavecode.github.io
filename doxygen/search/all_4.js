@@ -14,6 +14,7 @@ var searchData=
   ['define',['define',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#ad425bb5f74509eb34c5719e602973151',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],
   ['definition',['Definition',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1Definition.html',1,'SUAVE::Plugins::pint::unit']]],
   ['descent',['Descent',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Hover_1_1Descent_1_1Descent.html',1,'SUAVE::Analyses::Mission::Segments::Hover::Descent']]],
+  ['determine_5ffuselage_5fchord',['determine_fuselage_chord',['../group__Methods-Weights-Correlations-FLOPS.html#gae5e92af22c52818904fb68c652eb7482',1,'SUAVE::Methods::Weights::Correlations::FLOPS::wing']]],
   ['diffed_5fdata',['Diffed_Data',['../classSUAVE_1_1Core_1_1Diffed__Data_1_1Diffed__Data.html',1,'SUAVE::Core::Diffed_Data']]],
   ['dimensionality',['dimensionality',['../classSUAVE_1_1Plugins_1_1pint_1_1quantity_1_1__Quantity.html#a7b58beaba890bc04287d88868ff53992',1,'SUAVE::Plugins::pint::quantity::_Quantity']]],
   ['dimensionalityerror',['DimensionalityError',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError.html',1,'SUAVE::Plugins::pint::unit']]],

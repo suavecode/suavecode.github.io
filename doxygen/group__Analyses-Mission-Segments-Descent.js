@@ -1,5 +1,12 @@
 var group__Analyses_Mission_Segments_Descent =
 [
+    [ "Constant_CAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html", [
+      [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#ae7f3e00ae8cf3f69347dc5ddc90deec0", null ],
+      [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a279b6c675188bf2d3fb5f6e54626138f", null ],
+      [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a4fd055a4f4738de0f8c601b56c420bd2", null ],
+      [ "calibrated_airspeed", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a3786a0dfe8e33ed58e0edd3d6bd904ee", null ],
+      [ "descent_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#ae788bc897eee529fd21767ad212a1f54", null ]
+    ] ],
     [ "Constant_EAS_Constant_Rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__EAS__Constant__Rate_1_1Constant__EAS__Constant__Rate.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__EAS__Constant__Rate_1_1Constant__EAS__Constant__Rate.html#a7615c15af3da139e2fb65d2cc68837b7", null ],
       [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Descent_1_1Constant__EAS__Constant__Rate_1_1Constant__EAS__Constant__Rate.html#ae75a8b7764cc805f814f91291bac2e3f", null ],

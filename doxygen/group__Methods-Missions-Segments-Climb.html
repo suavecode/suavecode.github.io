@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -116,6 +116,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga940322075977d776d495e4d96e6c7a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1511b51c4aa33929b469c0bc92ddfe22"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Climb.html#ga1511b51c4aa33929b469c0bc92ddfe22">SUAVE.Methods.Missions.Segments.Climb.Common.update_differentials_altitude</a> (segment)</td></tr>
 <tr class="separator:ga1511b51c4aa33929b469c0bc92ddfe22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae81d9cbc3d8a0247d526c55282350167"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Climb.html#gae81d9cbc3d8a0247d526c55282350167">SUAVE.Methods.Missions.Segments.Climb.Constant_CAS_Constant_Rate.initialize_conditions</a> (segment)</td></tr>
+<tr class="separator:gae81d9cbc3d8a0247d526c55282350167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac412aa6d758b00a3afea98b7481efe9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Climb.html#gaac412aa6d758b00a3afea98b7481efe9">SUAVE.Methods.Missions.Segments.Climb.Constant_Dynamic_Pressure_Constant_Angle.initialize_conditions_unpack_unknowns</a> (segment)</td></tr>
 <tr class="separator:gaac412aa6d758b00a3afea98b7481efe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1cd6e02a6f48be1747d2a5de1933ea33"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Climb.html#ga1cd6e02a6f48be1747d2a5de1933ea33">SUAVE.Methods.Missions.Segments.Climb.Constant_Dynamic_Pressure_Constant_Angle.residual_total_forces</a> (segment)</td></tr>
@@ -164,6 +166,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>SUAVE.Methods.Missions
 <tr class="separator:ga4f1df8d21ba60ace73725c24658fe34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2452cb06a9f3c9b0342410237527d9c3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Climb.html#ga2452cb06a9f3c9b0342410237527d9c3">SUAVE.Methods.Missions.Segments.Climb.Optimized.solve_linear_speed_constant_rate</a> (segment)</td></tr>
 <tr class="separator:ga2452cb06a9f3c9b0342410237527d9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8178a1d5bdc03afcfc4ffc4f3fea84b9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Missions-Segments-Climb.html#ga8178a1d5bdc03afcfc4ffc4f3fea84b9">SUAVE.Methods.Missions.Segments.Single_Point.Set_Speed_Set_Altitude_No_Propulsion.residual_total_force</a> (segment)</td></tr>
+<tr class="separator:ga8178a1d5bdc03afcfc4ffc4f3fea84b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Climb mission methods containing the functions for setting up and solving a mission. </p>
@@ -245,7 +249,7 @@ Position of the flyover microphone is 6500 meters
 </div>
 </div>
 <a id="ga0cec13f8ee7fbc465c141040c2c41b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0cec13f8ee7fbc465c141040c2c41b93">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[1/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cec13f8ee7fbc465c141040c2c41b93">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,49 +290,8 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="gacec348ec4bd4e5b79aa8de9f5e112599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacec348ec4bd4e5b79aa8de9f5e112599">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[2/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Constant_Speed_Constant_Rate.initialize_conditions </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>segment</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Sets the specified conditions which are given for the segment type.
-
-Assumptions:
-Constant true airspeed, with a constant rate of climb
-
-Source:
-N/A
-
-Inputs:
-segment.climb_rate                                  [meters/second]
-segment.air_speed                                   [meters/second]
-segment.altitude_start                              [meters]
-segment.altitude_end                                [meters]
-segment.state.numerics.dimensionless.control_points [Unitless]
-conditions.freestream.density                       [kilograms/meter^3]
-
-Outputs:
-conditions.frames.inertial.velocity_vector  [meters/second]
-conditions.frames.inertial.position_vector  [meters]
-conditions.freestream.altitude              [meters]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
 <a id="gab82c682141a52f20a5c48745fe9cee7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab82c682141a52f20a5c48745fe9cee7c">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[3/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab82c682141a52f20a5c48745fe9cee7c">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[2/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,14 +331,14 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="gae1e7d66b8a72ca3c7ca5723d33160c5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae1e7d66b8a72ca3c7ca5723d33160c5f">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[4/11]</span></h2>
+<a id="gacec348ec4bd4e5b79aa8de9f5e112599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacec348ec4bd4e5b79aa8de9f5e112599">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[3/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Constant_Dynamic_Pressure_Constant_Rate.initialize_conditions </td>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Constant_Speed_Constant_Rate.initialize_conditions </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>segment</em></td><td>)</td>
@@ -386,14 +349,14 @@ N/A
 <pre class="fragment">Sets the specified conditions which are given for the segment type.
 
 Assumptions:
-Constant dynamic pressure and constant rate of climb
+Constant true airspeed, with a constant rate of climb
 
 Source:
 N/A
 
 Inputs:
 segment.climb_rate                                  [meters/second]
-segment.dynamic_pressure                            [pascals]
+segment.air_speed                                   [meters/second]
 segment.altitude_start                              [meters]
 segment.altitude_end                                [meters]
 segment.state.numerics.dimensionless.control_points [Unitless]
@@ -410,7 +373,7 @@ N/A
 </div>
 </div>
 <a id="ga8423dc5828181d461be290cc8fa07aac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8423dc5828181d461be290cc8fa07aac">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[5/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8423dc5828181d461be290cc8fa07aac">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,8 +413,49 @@ N/A
 </pre> 
 </div>
 </div>
+<a id="gae1e7d66b8a72ca3c7ca5723d33160c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1e7d66b8a72ca3c7ca5723d33160c5f">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Constant_Dynamic_Pressure_Constant_Rate.initialize_conditions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the specified conditions which are given for the segment type.
+
+Assumptions:
+Constant dynamic pressure and constant rate of climb
+
+Source:
+N/A
+
+Inputs:
+segment.climb_rate                                  [meters/second]
+segment.dynamic_pressure                            [pascals]
+segment.altitude_start                              [meters]
+segment.altitude_end                                [meters]
+segment.state.numerics.dimensionless.control_points [Unitless]
+conditions.freestream.density                       [kilograms/meter^3]
+
+Outputs:
+conditions.frames.inertial.velocity_vector  [meters/second]
+conditions.frames.inertial.position_vector  [meters]
+conditions.freestream.altitude              [meters]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
 <a id="ga9a2e3bf3d6dafe8180bc62f8273406dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9a2e3bf3d6dafe8180bc62f8273406dc">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a2e3bf3d6dafe8180bc62f8273406dc">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,7 +496,7 @@ N/A
 </div>
 </div>
 <a id="ga35332679ca247bda50214d311a177d99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga35332679ca247bda50214d311a177d99">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35332679ca247bda50214d311a177d99">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,7 +537,7 @@ N/A
 </div>
 </div>
 <a id="gacaf2bb91cc18422b48bba0c71112c7c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacaf2bb91cc18422b48bba0c71112c7c4">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gacaf2bb91cc18422b48bba0c71112c7c4">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -573,49 +577,8 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="ga20eade063eeffaf3b2e177e543e01900"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20eade063eeffaf3b2e177e543e01900">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[9/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Linear_Mach_Constant_Rate.initialize_conditions </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>segment</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Sets the specified conditions which are given for the segment type.
-
-Assumptions:
-Linearly changing mach number, with a constant rate of climb
-
-Source:
-N/A
-
-Inputs:
-segment.climb_rate                                  [meters/second]
-segment.mach_start                                  [Unitless]
-segment.mach_end                                    [Unitless]
-segment.altitude_end                                [meters]
-segment.state.numerics.dimensionless.control_points [Unitless]
-conditions.freestream.density                       [kilograms/meter^3]
-
-Outputs:
-conditions.frames.inertial.velocity_vector  [meters/second]
-conditions.frames.inertial.position_vector  [meters]
-conditions.freestream.altitude              [meters]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
 <a id="ga28af3072b0f5324d9c40d5337bcb429b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28af3072b0f5324d9c40d5337bcb429b">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[10/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28af3072b0f5324d9c40d5337bcb429b">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[9/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,8 +618,90 @@ N/A
 </pre> 
 </div>
 </div>
+<a id="ga20eade063eeffaf3b2e177e543e01900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20eade063eeffaf3b2e177e543e01900">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[10/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Linear_Mach_Constant_Rate.initialize_conditions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the specified conditions which are given for the segment type.
+
+Assumptions:
+Linearly changing mach number, with a constant rate of climb
+
+Source:
+N/A
+
+Inputs:
+segment.climb_rate                                  [meters/second]
+segment.mach_start                                  [Unitless]
+segment.mach_end                                    [Unitless]
+segment.altitude_end                                [meters]
+segment.state.numerics.dimensionless.control_points [Unitless]
+conditions.freestream.density                       [kilograms/meter^3]
+
+Outputs:
+conditions.frames.inertial.velocity_vector  [meters/second]
+conditions.frames.inertial.position_vector  [meters]
+conditions.freestream.altitude              [meters]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="gae81d9cbc3d8a0247d526c55282350167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae81d9cbc3d8a0247d526c55282350167">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[11/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Constant_CAS_Constant_Rate.initialize_conditions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Sets the specified conditions which are given for the segment type.
+
+Assumptions:
+Constant CAS airspeed with a constant rate of climb
+
+Source:
+N/A
+
+Inputs:
+segment.climb_rate                                  [meters/second]
+segment.calibrated_air_speed                        [meters/second]
+segment.altitude_start                              [meters]
+segment.altitude_end                                [meters]
+segment.state.numerics.dimensionless.control_points [Unitless]
+conditions.freestream.density                       [kilograms/meter^3]
+
+Outputs:
+conditions.frames.inertial.velocity_vector  [meters/second]
+conditions.frames.inertial.position_vector  [meters]
+conditions.freestream.altitude              [meters]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
 <a id="gad4ac2eef84f78bbaf8b6f045356a5416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad4ac2eef84f78bbaf8b6f045356a5416">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[11/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4ac2eef84f78bbaf8b6f045356a5416">&#9670;&nbsp;</a></span>initialize_conditions() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -762,6 +807,42 @@ N/A
     
     Outputs:
     state.objective_value [float]</pre> 
+</div>
+</div>
+<a id="ga8178a1d5bdc03afcfc4ffc4f3fea84b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8178a1d5bdc03afcfc4ffc4f3fea84b9">&#9670;&nbsp;</a></span>residual_total_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Single_Point.Set_Speed_Set_Altitude_No_Propulsion.residual_total_force </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Takes the summation of forces and makes a residual from the accelerations.
+
+Assumptions:
+No higher order terms.
+
+Source:
+N/A
+
+Inputs:
+segment.state.conditions.frames.inertial.total_force_vector   [Newtons]
+segment.state.conditions.frames.inertial.acceleration_vector  [meter/second^2]
+segment.state.conditions.weights.total_mass                   [kilogram]
+
+Outputs:
+segment.state.residuals.force                                 [Unitless]
+
+Properties Used:
+N/A
+</pre> 
 </div>
 </div>
 <a id="ga940322075977d776d495e4d96e6c7a5f"></a>
@@ -912,44 +993,8 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="ga2ee3be62c3fb9a360a31a35d6a294ee7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2ee3be62c3fb9a360a31a35d6a294ee7">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Common.unpack_unknowns </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>segment</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Unpacks the unknowns set in the mission to be available for the mission.
-
-Assumptions:
-N/A
-
-Source:
-N/A
-
-Inputs:
-segment.state.unknowns.throttle            [Unitless]
-segment.state.unknowns.body_angle          [Radians]
-
-Outputs:
-segment.state.conditions.propulsion.throttle            [Unitless]
-segment.state.conditions.frames.body.inertial_rotations [Radians]
-
-Properties Used:
-N/A
-</pre> 
-</div>
-</div>
 <a id="ga45db4de631268261e517f5bfbd83d8ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga45db4de631268261e517f5bfbd83d8ea">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45db4de631268261e517f5bfbd83d8ea">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -985,6 +1030,42 @@ Outputs:
 segment.state.conditions.propulsion.throttle            [Unitless]
 segment.state.conditions.frames.body.inertial_rotations [Radians]
 conditions.frames.inertial.velocity_vector              [meters/second]
+
+Properties Used:
+N/A
+</pre> 
+</div>
+</div>
+<a id="ga2ee3be62c3fb9a360a31a35d6a294ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ee3be62c3fb9a360a31a35d6a294ee7">&#9670;&nbsp;</a></span>unpack_unknowns() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Missions.Segments.Climb.Common.unpack_unknowns </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Unpacks the unknowns set in the mission to be available for the mission.
+
+Assumptions:
+N/A
+
+Source:
+N/A
+
+Inputs:
+segment.state.unknowns.throttle            [Unitless]
+segment.state.unknowns.body_angle          [Radians]
+
+Outputs:
+segment.state.conditions.propulsion.throttle            [Unitless]
+segment.state.conditions.frames.body.inertial_rotations [Radians]
 
 Properties Used:
 N/A

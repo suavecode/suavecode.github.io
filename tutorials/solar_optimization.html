@@ -79,20 +79,20 @@
 
 <p>Let’s pose the optimization problem first and then setup the rest. We start with the <em>Nexus</em> first as usual. With this design problem there are things you are uncertain of and want to solve for.</p>
 
-<p>You’re not sure if you really need any solar panels on the airplane, so to start there will be none. The solar ratio is the ratio of wing area to solar area. A value of 1 would the whole top of the wing covered with solar panels.</p>
+<p>You’re not sure if you really need any solar panels on the airplane, so to start there will be none. The solar ratio is the ratio of wing area to solar area. A value of 1 would indicate that the entire top of the wing is covered with solar panels.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
-	  # [ tag , initial, [lb,ub], scaling, units ]
+    # [ tag , initial, [lb,ub], scaling, units ]
     problem.inputs = np.array([
-        [ 'wing_area'       ,   0.5, (  0.1,    1.5 ),    0.5, Units.meter      ],
-        [ 'aspect_ratio'    ,  10.0, (  5.0,   20.0 ),   10.0, Units.less       ], 
-        [ 'dynamic_pressure', 125.0, (  1.0, 2000.0 ),  125.0, Units.pascals    ], 
-        [ 'solar_ratio'     ,   0.0, (  0.0,    0.97),    1.0, Units.less       ], 
-        [ 'kv'              , 800.0, ( 10.0, 1500.0 ),  800.0, Units['rpm/volt']], 
+	[ 'wing_area'       ,    0.5, (  0.1,      1.5 ),    0.5, Units.meter      ],
+	[ 'aspect_ratio'    ,   10.0, (  5.0,     20.0 ),   10.0, Units.less       ], 
+	[ 'dynamic_pressure',  125.0, (  1.0,   2000.0 ),  125.0, Units.pascals    ], 
+	[ 'solar_ratio'     ,    0.0, (  0.0,      0.97),    1.0, Units.less       ], 
+	[ 'kv'              ,  800.0, ( 10.0,  10000.0 ),  800.0, Units['rpm/volt']], 
     ])
 </code></pre></div></div>
 
-<p>Next come the constraints. The first constraint is that the battery energy can never go negative, the math behind this will be elaborated on later. The next constraint is that the plane must have a battery. Finally there are limits to coefficients of lift and throttle settings.</p>
+<p>Next come the constraints. The first constraint is that the battery energy can never go negative; the math behind this will be elaborated on later. The next constraint is that the plane must have a battery. Finally there are limits to coefficients of lift and throttle settings.</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
       # [ tag, sense, edge, scaling, units ]
@@ -118,18 +118,17 @@
 
 <h3 id="vehiclespy">Vehicles.py:</h3>
 
-<p>Next, you will setup the vehicle. This is very similar to the prior Solar UAV tutorial. So we will gloss over this, the one noticeable difference is that a lower fidelity energy network is used. This means that most components operate with prescribed efficiencies. For example:</p>
+<p>Next, you will setup the vehicle. This is very similar to the prior Solar UAV tutorial, so we will gloss over this. The one noticeable difference is that a lower fidelity energy network is used. This means that most components operate with prescribed efficiencies. For example:</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
-    # Component 4 the Motor
+   # Component 5 the Motor
     motor = SUAVE.Components.Energy.Converters.Motor_Lo_Fid()
-    kv                         = 800. * Units['rpm/volt'] # RPM/volt is standard
-    motor                      = size_from_kv(motor, kv)    
+    motor.speed_constant       = 900. * Units['rpm/volt'] # RPM/volt is standard
+    motor                      = size_from_kv(motor)    
     motor.gear_ratio           = 1. # Gear ratio, no gearbox
     motor.gearbox_efficiency   = 1. # Gear box efficiency, no gearbox
-    motor.motor_efficiency     = 0.825;
-    net.motor                  = motor  
-    ])
+    motor.motor_efficiency     = 0.8;
+    net.motor                  = motor   
 </code></pre></div></div>
 
 <h3 id="missionspy">Missions.py:</h3>
@@ -276,38 +275,42 @@ def post_process(nexus):
 <p>Let’s look at the results:</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
-Optimization terminated successfully.    (Exit mode 0)
-            Current function value: [0.0]
-            Iterations: 4
-            Function evaluations: 29
-            Gradient evaluations: 4
-[ 1.12963146  1.43880081  1.39329626  0.65589785  0.97171879]
-Design Variable Table:
 
-[['wing_area' 0.5648157324099996 (0.1, 1.5) 0.5 1.0]
- ['aspect_ratio' 14.388008119672202 (5.0, 20.0) 10.0 1.0]
- ['dynamic_pressure' 174.16203234031317 (1.0, 2000.0) 125.0 1.0]
- ['solar_ratio' 0.6558978486767236 (0.0, 0.97) 1.0 1.0]
- ['kv' 777.3750338508712 (10.0, 1500.0) 800.0 0.10471975511965977]]
+	Optimization terminated successfully.    (Exit mode 0)
+		    Current function value: 0.0
+		    Iterations: 6
+		    Function evaluations: 43
+		    Gradient evaluations: 6
+	Design Variable Table:
+	
+	[['wing_area' 0.47033164669264826 (0.1, 1.5) 0.5 1.0]
+	 ['aspect_ratio' 9.803406982966878 (5.0, 20.0) 10.0 1.0]
+	 ['dynamic_pressure' 120.77967631598601 (1.0, 2000.0) 125.0 1.0]
+	 ['solar_ratio' 0.09461785224148354 (0.0, 0.97) 1.0 1.0]
+	 ['kv' 833.2503881434465 (10.0, 10000.0) 800.0 0.10471975511965977]]
+	
+	Constraint Table:
+	
+	[['energy_constraint' 4.835975275289128e-08 '=' 0.0 1.0
+	  &lt;Quantity(1.0, 'less')&gt;]
+	 ['battery_mass' 2.046103692285638 '>' 0.0 1.0
+	  &lt;Quantity(1.0, 'kilogram')&gt;]
+	 ['CL' 0.5131461964430024 '&gt;' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;
+	 ['Throttle_min' 0.321677340768132 '>' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]
+	 ['Throttle_max' 0.578322659231868 '>' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]]
 
-Constraint Table:
-
-[['energy_constraint' 0.0 '=' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]
- ['battery_mass' 4.939962596982861 '&gt;' 0.0 1.0 &lt;Quantity(1.0, 'kilogram')&gt;]
- ['CL' 0.5309682332699428 '&gt;' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]
- ['Throttle_min' 0.7319219623084848 '&gt;' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]
- ['Throttle_max' 0.1680780376915152 '&gt;' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]]
 </code></pre></div></div>
 
 <p>Okay looks like SciPy found a feasible solution without too much time. Now let’s review the plots.</p>
 
-<p><img src="/images/opt_battery_energy.png" alt="battery_energy" /></p>
+<p><img src="/images/Opt_Electronic_Conditions.png" alt="Electronics" /></p>
 
-<p>So we can tell now that the battery energy doesn’t go all the way to zero. Let’s look at how the solar flux varies throughout the day and how that affects the draw from the battery.</p>
+<p>So we can tell now that the battery energy doesn’t go all the way to zero. One thing to note, because we have a solar UAV the voltage is regulated differently and the C-rate doesn't apply in the same way. 
 
-<p><img src="/images/opt_solar_flux.png" alt="solar flux" /></p>
+Let’s look at how the solar flux varies throughout the day and how that affects the draw from the battery.</p>
 
-<p><img src="/images/opt_battery_draw.png" alt="battery draw" /></p>
+<p><img src="/images/Opt_solar_flux.png" alt="Solar Flux" /></p>
+
 
 <p>So maybe those solar panels actually are worth it. They seem to decrease the load on the battery considerably during the daytime.</p>
 

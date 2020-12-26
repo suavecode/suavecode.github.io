@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.2.0</span>
+   &#160;<span id="projectnumber">2.3.0</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -110,12 +110,6 @@ $(document).ready(function(){initNavTree('group__Plots.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga769f5bed846325cb5cceb1fad401b3d1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plots.html#ga769f5bed846325cb5cceb1fad401b3d1">SUAVE.Plots.Geometry_Plots.plot_vehicle_vlm_panelization</a> (vlm_geometry, save_figure=False, save_filename=&quot;VLM_Panelization&quot;)</td></tr>
-<tr class="separator:ga769f5bed846325cb5cceb1fad401b3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74223a50e69b798d49f2cf1553f1c950"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plots.html#ga74223a50e69b798d49f2cf1553f1c950">SUAVE.Plots.Geometry_Plots.plot_airfoil</a> (airfoil_names, line_color='k-', save_figure=False, save_filename=&quot;Airfoil_Geometry&quot;, file_type=&quot;.png&quot;)</td></tr>
-<tr class="separator:ga74223a50e69b798d49f2cf1553f1c950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0146a62ca5e4e70b5dd5e2c73853a56"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plots.html#gac0146a62ca5e4e70b5dd5e2c73853a56">SUAVE.Plots.Geometry_Plots.plot_propeller_geometry</a> (prop, line_color='bo-', save_figure=False, save_filename=&quot;Propeller_Geometry&quot;, file_type=&quot;.png&quot;)</td></tr>
-<tr class="separator:gac0146a62ca5e4e70b5dd5e2c73853a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7be55e13b41021e4057b43adb5cc6d89"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plots.html#ga7be55e13b41021e4057b43adb5cc6d89">SUAVE.Plots.Mission_Plots.plot_altitude_sfc_weight</a> (results, line_color='bo-', save_figure=False, save_filename=&quot;Altitude_SFC_Weight&quot;, file_type=&quot;.png&quot;)</td></tr>
 <tr class="separator:ga7be55e13b41021e4057b43adb5cc6d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26126c579abbc832b83a59c364718e39"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plots.html#ga26126c579abbc832b83a59c364718e39">SUAVE.Plots.Mission_Plots.plot_aircraft_velocities</a> (results, line_color='bo-', save_figure=False, save_filename=&quot;Aircraft_Velocities&quot;, file_type=&quot;.png&quot;)</td></tr>
@@ -334,68 +328,6 @@ results.segments.condtions.freestream.
     velocity
     density
     mach_number 
-
-Outputs: 
-Plots
-
-Properties Used:
-N/A 
-</pre> 
-</div>
-</div>
-<a id="ga74223a50e69b798d49f2cf1553f1c950"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga74223a50e69b798d49f2cf1553f1c950">&#9670;&nbsp;</a></span>plot_airfoil()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Plots.Geometry_Plots.plot_airfoil </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>airfoil_names</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>line_color</em> = <code>'k-'</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>save_figure</em> = <code>False</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>save_filename</em> = <code>&quot;Airfoil_Geometry&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>file_type</em> = <code>&quot;.png&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">This plots all airfoil defined in the list "airfoil_names" 
-
-Assumptions:
-None
-
-Source:
-None
-
-Inputs:
-airfoil_geometry_files   &lt;list of strings&gt;
 
 Outputs: 
 Plots
@@ -937,68 +869,6 @@ N/A
 </pre> 
 </div>
 </div>
-<a id="gac0146a62ca5e4e70b5dd5e2c73853a56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac0146a62ca5e4e70b5dd5e2c73853a56">&#9670;&nbsp;</a></span>plot_propeller_geometry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Plots.Geometry_Plots.plot_propeller_geometry </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>prop</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>line_color</em> = <code>'bo-'</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>save_figure</em> = <code>False</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>save_filename</em> = <code>&quot;Propeller_Geometry&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>file_type</em> = <code>&quot;.png&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">This plots the geoemtry of a propeller or rotor
-
-Assumptions:
-None
-
-Source:
-None
-
-Inputs:
-SUAVE.Components.Energy.Converters.Propeller()
-
-Outputs: 
-Plots
-
-Properties Used:
-N/A 
-</pre> 
-</div>
-</div>
 <a id="gad16b242ad0ccdfe0c621274b8656e7ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad16b242ad0ccdfe0c621274b8656e7ca">&#9670;&nbsp;</a></span>plot_solar_flux()</h2>
 
@@ -1123,59 +993,6 @@ results.segments.conditions.stability.
        static_margin 
    aerodynamics.
        angle_of_attack
-Outputs: 
-Plots
-
-Properties Used:
-N/A 
-</pre> 
-</div>
-</div>
-<a id="ga769f5bed846325cb5cceb1fad401b3d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga769f5bed846325cb5cceb1fad401b3d1">&#9670;&nbsp;</a></span>plot_vehicle_vlm_panelization()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def SUAVE.Plots.Geometry_Plots.plot_vehicle_vlm_panelization </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>vlm_geometry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>save_figure</em> = <code>False</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>save_filename</em> = <code>&quot;VLM_Panelization&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<h2></h2>
-<h2>Vortex Lattice Method Panelization </h2>
-<pre class="fragment">This plots vortex lattice panels created when Fidelity Zero  Aerodynamics 
-Routine is initialized
-
-Assumptions:
-None
-
-Source:
-None
-
-Inputs:
-airfoil_geometry_files   &lt;list of strings&gt;
-
 Outputs: 
 Plots
 
