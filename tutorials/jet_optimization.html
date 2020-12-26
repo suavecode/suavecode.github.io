@@ -184,11 +184,11 @@
 
 <p>Then run the program again. This could take a few minutes. The results should look like the plot below.</p>
 
-<p><img src="/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps.png" alt="2D Sweep" /></p>
+<p><img src="/images/wing_area_v_cruise_altitude_v_fuel_burn_5_steps.png" alt="2D Sweep" width="500" /></p>
 
 <p>The labeled lines depict the fuel margin (i.e. fraction of the aircraft remaining weight that can be loaded with fuel). Positive values indicate a feasible design. Fuel burn is shown in the colored contours. Note that a smoother plot may be created by changing the number of points in the sweep function, but this will take more time. A carpet plot run using 400 points on can be seen below. A local minimum is now visible.</p>
 
-<p><img src="/images/wing_area_v_cruise_altitude_v_fuel_burn.png" alt="2D Sweep_20" /></p>
+<p><img src="/images/wing_area_v_cruise_altitude_v_fuel_burn.png" alt="2D Sweep_20" width="500" /></p>
 
 <p>Note: If you run this 400 point case yourself you may see messages indicating that a segment did not converge. This is normal and can happen when a mission is run far from a feasible point. In this case, it does not have a negative impact on the results.</p>
 
@@ -203,9 +203,7 @@
 
 <p>and run the file again.</p>
 
-<p>From the default inputs, the terminal (or IDE output) should display an optimum of [0.57213139 0.75471681] which corresponds to a wing area of 58 m^2, and 7.5 km. It appears to have found a minima. Keep in mind that in designing a real regional jet the desingers would incorporate additional constraints and analyses. These additional constraints change the final design considerably</p>
-
-</code></pre></div></div>
+<p>From the default inputs, the terminal (or IDE output) should display an optimum of [0.57213139 0.75471681] which corresponds to a wing area of 58 m^2, and 7.5 km. It appears to have found a minima. Keep in mind that in designing a real regional jet the desingers would incorporate additional constraints and analyses. These additional constraints change the final design considerably </p>
 
 <p>At this point, you can explore other starting points, or alter the vehicle or mission properties in Vehicles.py or Missions.py. Additionally, feel free to start using this as the basis for creating custom optimization scripts.</p>
 

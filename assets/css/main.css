@@ -2747,6 +2747,7 @@ input, select, textarea {
 			.wrapper.style3 .button {
 				background: #fff;
 				color: #474747;
+				vertical-align: middle;
 			}
 
 				.wrapper.style3 .button:hover {
