@@ -13,6 +13,7 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Batt
     [ "nacelle_diameter", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a3abf88a71b11fcd466d8a8dc8ad690b1", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a7c1f68607a9955130e4f8e42cf2e25f0", null ],
     [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac733d4d41de9f7c20bf5153d3b7a5bfd", null ],
+    [ "pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a3e07b16c1d81fe2471a2335ca7432adb", null ],
     [ "propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a5824fa11492359db3f481fc18effc0ee", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac13048ae157a044a18338d455ab86c86", null ],
     [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a57899f04a912f824be02d29fdc6ec5f4", null ],

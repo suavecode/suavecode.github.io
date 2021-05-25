@@ -14,15 +14,18 @@ var classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller =
     [ "hub_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#af15e2a3b5c99a944ab1217ef85964276", null ],
     [ "induced_hover_velocity", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a0c6329f13ba3996b6607f225404e0b28", null ],
     [ "induced_power_factor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a31f26239a401ad9a497e0728f8c24fb7", null ],
-    [ "mid_chord_aligment", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#ae829e997a2b90ed7a2beec5f8ca2af37", null ],
+    [ "mid_chord_alignment", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a48ee138a5541844139a9627e165fc3fd", null ],
+    [ "nonuniform_freestream", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a4a76541b4b6f62110b69c13821c2d712", null ],
     [ "number_azimuthal_stations", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a23b66de5e4e641810f69e0b46f298367", null ],
-    [ "number_blades", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a2e6025c11a23ac371a3793c18d603e8d", null ],
+    [ "number_of_blades", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a3a31c14197d21d8912dd62c1ea36b71c", null ],
     [ "pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#acf5441a4996201640b3ca03e26df8631", null ],
     [ "profile_drag_coefficient", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a8c54d13e4befd7c9a58a66ebca09e5be", null ],
     [ "radius_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a073eb4c90b569f44d9ad8b50feb22654", null ],
     [ "rotation", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#ac4894955f6bb299a5dc06c5262bb0215", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a6ce5409c63d254968557890c47d27a21", null ],
+    [ "thickness_to_chord", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#aecef539a3ba2f01701b975f6a7fad308", null ],
     [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#acd508103c9560b9c36a71f9c99028827", null ],
     [ "tip_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#ad26ac0888d1ab61f171ec398816bd08a", null ],
-    [ "twist_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a7c2229dddac9c24ab1b0b10fb0dda745", null ]
+    [ "twist_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a7c2229dddac9c24ab1b0b10fb0dda745", null ],
+    [ "VTOL_flag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller_1_1Propeller.html#a288e250bf04fb4de864df86825664390", null ]
 ];

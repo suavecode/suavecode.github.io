@@ -5,6 +5,7 @@ var classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor =
     [ "omega", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#ad9ab86d7bab611ffdc596a6c65dc86c2", null ],
     [ "torque", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a1e9aefb10ee059b66793dff9bb6a5712", null ],
     [ "voltage_current", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a8c1e0e7b0011c6a14ac0897820fc4cb8", null ],
+    [ "efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a864c24ffa4c02e3cc66bd83e2f94b6d6", null ],
     [ "expected_current", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a4f7b6aa5b6e6bb31cfec03cbcf5aad35", null ],
     [ "gear_ratio", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a79e6c4ee71fb685fbd9bba825ec65b0d", null ],
     [ "gearbox_efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a3dcd5ec5090f588d31f63965299cd825", null ],

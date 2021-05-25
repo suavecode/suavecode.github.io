@@ -16,6 +16,7 @@ var group__Optimization =
       [ "evaluation_count", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a0e0a0b0d2ba3e3cd1381569156f1f2ff", null ],
       [ "fidelity_level", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#aea9b128c29d6dc551ac15263d0e2267c", null ],
       [ "force_evaluate", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a1b71ecd9205cdee6e020beb50922e180", null ],
+      [ "hard_bounded_inputs", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a9b62669b43a4ee0837fb3c0b689b4baa", null ],
       [ "last_fidelity", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#ac4c2045d9bc469e48c23a7b5f96ecb84", null ],
       [ "last_inputs", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a4a62b5f7d690c3b4390ccd4f54fd6a45", null ],
       [ "missions", "classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a3b13fe94b3835bb58af3aca92ec95a16", null ],

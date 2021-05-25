@@ -1,18 +1,7 @@
 var searchData=
 [
-  ['planets',['Planets',['../group__Attributes-Planets.html',1,'']]],
-  ['propellants',['Propellants',['../group__Attributes-Propellants.html',1,'']]],
-  ['peripherals',['Peripherals',['../group__Components-Energy-Peripherals.html',1,'']]],
-  ['processes',['Processes',['../group__Components-Energy-Processes.html',1,'']]],
-  ['payloads',['Payloads',['../group__Components-Payloads.html',1,'']]],
-  ['propulsors',['Propulsors',['../group__Components-Propulsors.html',1,'']]],
-  ['propulsion',['Propulsion',['../group__Methods-Geometry-Two__Dimensional-Cross__Section-Propulsion.html',1,'']]],
-  ['planform',['Planform',['../group__Methods-Geometry-Two__Dimensional-Planform.html',1,'']]],
-  ['performance',['Performance',['../group__Methods-Performance.html',1,'']]],
-  ['power',['Power',['../group__Methods-Power.html',1,'']]],
-  ['propulsion',['Propulsion',['../group__Methods-Propulsion.html',1,'']]],
-  ['propulsion',['Propulsion',['../group__Methods-Weights-Correlations-Propulsion.html',1,'']]],
-  ['package_5fsetups',['Package_Setups',['../group__Optimization-Package__Setups.html',1,'']]],
-  ['plots',['Plots',['../group__Plots.html',1,'']]],
-  ['plugins',['Plugins',['../group__Plugins.html',1,'']]]
+  ['openvsp_1810',['OpenVSP',['../group__Input__Output-OpenVSP.html',1,'']]],
+  ['openvsp_5fwave_5fdrag_1811',['OpenVSP_Wave_Drag',['../group__Methods-Aerodynamics-OpenVSP__Wave__Drag.html',1,'']]],
+  ['operating_20costs_1812',['Operating Costs',['../group__Methods-Costs-Operating__Costs.html',1,'']]],
+  ['optimization_1813',['Optimization',['../group__Optimization.html',1,'']]]
 ];

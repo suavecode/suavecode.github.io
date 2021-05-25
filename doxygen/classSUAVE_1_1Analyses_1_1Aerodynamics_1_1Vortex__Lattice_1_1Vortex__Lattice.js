@@ -4,7 +4,7 @@ var classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice
     [ "build_surrogate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a707b374ab283c62f6f1d4fe917854875", null ],
     [ "evaluate_no_surrogate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a3348cade0e95c87c6079e600c4d49998", null ],
     [ "evaluate_surrogate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a9d5f494416aa8357db4805bdbe843229", null ],
-    [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#afe55ea16c9dd0f6d7a9ead8f016972a0", null ],
+    [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a78b1a0dac70d2aae72c847e705b36886", null ],
     [ "sample_training", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#aa7a6045fc661f688b4aad3bf9e426950", null ],
     [ "evaluate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#ae7ca21090e24ffb3170e160efb29084a", null ],
     [ "geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a070b444364458c846683fb0870d4fd40", null ],

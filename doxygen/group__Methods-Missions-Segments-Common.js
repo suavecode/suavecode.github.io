@@ -1,5 +1,6 @@
 var group__Methods_Missions_Segments_Common =
 [
+    [ "compute_noise", "group__Methods-Missions-Segments-Common.html#gab25b3bf4461f86b25c9272cdc8954204", null ],
     [ "expand_sub_segments", "group__Methods-Missions-Segments-Common.html#ga6daa88d9829c3d1d2a547810947d4a3c", null ],
     [ "finalize_sub_segments", "group__Methods-Missions-Segments-Common.html#ga12ffcf4ab47cd7d28f1a9a171a6519a8", null ],
     [ "initialize_battery", "group__Methods-Missions-Segments-Common.html#ga2d1fbae1a3d75b6bff959416cea6b2bc", null ],

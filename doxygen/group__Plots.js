@@ -11,6 +11,7 @@ var group__Plots =
     [ "plot_flight_conditions", "group__Plots.html#gad3ba1146f7c63ea23a36defb52cf5519", null ],
     [ "plot_lift_cruise_network", "group__Plots.html#gabbbdfb4249cf0e6898bfbf05651cec1d", null ],
     [ "plot_propeller_conditions", "group__Plots.html#ga140263bc536cb1990fa82fdbed7e0ca7", null ],
+    [ "plot_propeller_performance", "group__Plots.html#gab2cbfe5c0d849ced262c6f55c7deec11", null ],
     [ "plot_solar_flux", "group__Plots.html#gad16b242ad0ccdfe0c621274b8656e7ca", null ],
     [ "plot_stability_coefficients", "group__Plots.html#ga9c1a8297e70341c13527ec3f469c3465", null ],
     [ "set_axes", "group__Plots.html#gabb79c0502b3c4544e0a4c2ab9471c45d", null ]

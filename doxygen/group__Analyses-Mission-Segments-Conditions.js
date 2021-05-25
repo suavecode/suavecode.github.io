@@ -4,6 +4,7 @@ var group__Analyses_Mission_Segments_Conditions =
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html#a9ec64a71eda479dcc96205ddf7f5e5ab", null ],
       [ "aerodynamics", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html#a07fe15613d8fc3bc3db2c7374b0ea8c3", null ],
       [ "freestream", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html#a139f1fce458dda0ca1ce1fdf46ed1365", null ],
+      [ "noise", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html#a626718038897e77f0da4192c4beecded", null ],
       [ "propulsion", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html#accc2c5673276771640f4386881624a8f", null ],
       [ "stability", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html#a1d1900314c6bf1ec5e76cb6bd1b9acbf", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Aerodynamics_1_1Aerodynamics.html#a13da6892fa732bdd73c6943955a0880f", null ]
@@ -12,6 +13,7 @@ var group__Analyses_Mission_Segments_Conditions =
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic.html#a33cf70b301c2bd4dec84cdf25e0d4654", null ],
       [ "energies", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic.html#ad76601aa5a94ec946eb91150a546bf8e", null ],
       [ "frames", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic.html#a97e7b9dac9d400c0849a3eb266c085ab", null ],
+      [ "noise", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic.html#ab027ccf1001b6092fe3f7f25bb356c2e", null ],
       [ "tag", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic.html#ae8c92aa04bb8f8c0071610aeb08ed6fc", null ],
       [ "weights", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic.html#aa57f1b5fa9100be9fad142509009b15a", null ]
     ] ],

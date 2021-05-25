@@ -1,27 +1,7 @@
 var searchData=
 [
-  ['costs',['Costs',['../group__Analyses-Costs.html',1,'']]],
-  ['climb',['Climb',['../group__Analyses-Mission-Segments-Climb.html',1,'']]],
-  ['conditions',['Conditions',['../group__Analyses-Mission-Segments-Conditions.html',1,'']]],
-  ['cruise',['Cruise',['../group__Analyses-Mission-Segments-Cruise.html',1,'']]],
-  ['constants',['Constants',['../group__Attributes-Constants.html',1,'']]],
-  ['components',['Components',['../group__Components.html',1,'']]],
-  ['configs',['Configs',['../group__Components-Configs.html',1,'']]],
-  ['costs',['Costs',['../group__Components-Costs.html',1,'']]],
-  ['converters',['Converters',['../group__Components-Energy-Converters.html',1,'']]],
-  ['constant_5fmass',['Constant_Mass',['../group__Components-Energy-Storages-Batteries-Constant__Mass.html',1,'']]],
-  ['control_5fsurfaces',['Control_Surfaces',['../group__Components-Wings-Control__Surfaces.html',1,'']]],
-  ['core',['Core',['../group__Core.html',1,'']]],
-  ['common',['Common',['../group__Methods-Aerodynamics-Common.html',1,'']]],
-  ['center_5fof_5fgravity',['Center_of_Gravity',['../group__Methods-Center__of__Gravity.html',1,'']]],
-  ['costs',['Costs',['../group__Methods-Costs.html',1,'']]],
-  ['cross_20section',['Cross Section',['../group__Methods-Geometry-Two__Dimensional-Cross__Section.html',1,'']]],
-  ['climb',['Climb',['../group__Methods-Missions-Segments-Climb.html',1,'']]],
-  ['common',['Common',['../group__Methods-Missions-Segments-Common.html',1,'']]],
-  ['cruise',['Cruise',['../group__Methods-Missions-Segments-Cruise.html',1,'']]],
-  ['correlations',['Correlations',['../group__Methods-Noise-Correlations.html',1,'']]],
-  ['chebyshev',['Chebyshev',['../group__Methods-Utilities-Chebyshev.html',1,'']]],
-  ['common',['Common',['../group__Methods-Weights-Buildups-Common.html',1,'']]],
-  ['correlations',['Correlations',['../group__Methods-Weights-Correlations.html',1,'']]],
-  ['common',['Common',['../group__Methods-Weights-Correlations-Common.html',1,'']]]
+  ['batteries_1747',['Batteries',['../group__Components-Energy-Storages-Batteries.html',1,'']]],
+  ['battery_1748',['Battery',['../group__Methods-Power-Battery.html',1,'']]],
+  ['buildups_1749',['Buildups',['../group__Methods-Weights-Buildups.html',1,'']]],
+  ['bwb_1750',['BWB',['../group__Methods-Weights-Correlations-BWB.html',1,'']]]
 ];

@@ -1,25 +1,26 @@
 /*
-@ @licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2017 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
@@ -41,21 +42,20 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-".html",
-"classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_61b566f355ab199459fb54d7274e572f.html#af9dae09118f0cb83578c8ea0628f4ac3",
-"classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Hover_1_1Climb_1_1Climb.html#a927c7c629a6350300bd748d1f5715a63",
-"classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html",
-"classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html#a167de0d8770cf94173f256e36921e3ed",
-"classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a9aa5e4c3240b6f6ee44b77d56486639e",
-"classSUAVE_1_1Components_1_1Energy_1_1Processes_1_1Thrust_1_1Thrust.html#a4a6b965d0e738d3cd7cf259b2157dfd3",
-"classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html#a140e95184807806f674ada3a7f7d783a",
-"classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html#a1e74b5c3cbee04e629ebf425b6ee75d4",
-"classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestContexts.html#ae3ee63e98e04f487e249f2976ecd27e4",
-"classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError.html#a3b3c56f399f2d5b514be24e65815fbe2",
-"group__Input__Output-D3JS.html#ga9bc8f9958b66a34948ab0e91b0c0f34b",
-"group__Methods-Missions-Segments-Common.html#ga98e8a131c94c8ca91ea43796253af27b",
-"group__Optimization-Package__Setups.html#gaa25a2e15b4183507a2a1ec0725bfe9ce"
+"annotated.html",
+"classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Linear__Speed__Constant__Rate_1_1Linear__Speed__Constant__Rate.html#ace9b207639faf169ec2b5d7232d2f851",
+"classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Lift__Cruise__Optimized_1_1Lift__Cruise__Optimized.html",
+"classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__LH2_1_1LOX__LH2.html#a98e00b09f11347a0054da3af2dcd350f",
+"classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine.html#a818e3b25ab8e4270180ba1c21cc43a15",
+"classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#af449ef19633c10f2cfddb4b94e6b67e4",
+"classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Variable__Mass_1_1Aluminum__Air_1_1Aluminum__Air.html#aa5bcfff381331da45e98ebdbf5423dae",
+"classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a9c8581500143469644736a6a346fb574",
+"classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a070abc2a7311764ba5e1a1946d87b144",
+"classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__measurement_1_1TestMeasurement.html#aa1a558d8d38c7481fe6a1a6f8e37f178",
+"classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#a2ede2984b7a1e8ca34a8ecbb9f0e503e",
+"group__Input__Output-Results.html#gaa252f45d1c331a593f1a5f6831599544",
+"group__Methods-Missions-Segments-Descent.html#ga8a3eb0f2d72ac083762d76c50e462263",
+"group__Plots.html#gabbbdfb4249cf0e6898bfbf05651cec1d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

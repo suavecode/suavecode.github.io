@@ -1,10 +1,10 @@
 var hierarchy =
 [
     [ "SUAVE.Optimization.Package_Setups.additive_setup.Additive_Solver", "classSUAVE_1_1Optimization_1_1Package__Setups_1_1additive__setup_1_1Additive__Solver.html", null ],
-    [ "Container", null, [
+    [ "Lofted_Body.Segment.Container", null, [
       [ "SUAVE.Components.Fuselages.Segment.Segment_Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment__Container.html", null ]
     ] ],
-    [ "Container", null, [
+    [ "Segments.Simple.Container", null, [
       [ "SUAVE.Analyses.Mission.Mission.Mission", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission.html", [
         [ "SUAVE.Analyses.Mission.All_At_Once.All_At_Once", "classSUAVE_1_1Analyses_1_1Mission_1_1All__At__Once_1_1All__At__Once.html", [
           [ "SUAVE.Analyses.Mission.Variable_Range_Cruise.Given_State_of_Charge.Given_State_of_Charge", "classSUAVE_1_1Analyses_1_1Mission_1_1Variable__Range__Cruise_1_1Given__State__of__Charge_1_1Given__State__of__Charge.html", null ],
@@ -30,7 +30,7 @@ var hierarchy =
       ] ],
       [ "SUAVE.Core.Diffed_Data.Container", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Container.html", null ]
     ] ],
-    [ "ContentHandler", null, [
+    [ "xml.sax.handler.ContentHandler", null, [
       [ "SUAVE.Input_Output.XML.load.TreeBuilder", "classSUAVE_1_1Input__Output_1_1XML_1_1load_1_1TreeBuilder.html", null ]
     ] ],
     [ "SUAVE.Methods.Aerodynamics.Supersonic_Zero.Drag.Cubic_Spline_Blender.Cubic_Spline_Blender", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1Supersonic__Zero_1_1Drag_1_1Cubic__Spline__Blender_1_1Cubic__Spline__Blender.html", null ],
@@ -90,13 +90,7 @@ var hierarchy =
       [ "SUAVE.Plugins.pint.unit.UnitRegistry", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html", null ],
       [ "SUAVE.Plugins.pint.util.ndarray", "classSUAVE_1_1Plugins_1_1pint_1_1util_1_1ndarray.html", null ]
     ] ],
-    [ "TestCase", null, [
-      [ "SUAVE.Plugins.pint.testsuite.test_contexts.TestContexts", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestContexts.html", null ],
-      [ "SUAVE.Plugins.pint.testsuite.test_issues.TestIssues", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__issues_1_1TestIssues.html", null ],
-      [ "SUAVE.Plugins.pint.testsuite.test_unit.TestConverter", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestConverter.html", null ],
-      [ "SUAVE.Plugins.pint.testsuite.test_unit.TestDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestDefinition.html", null ],
-      [ "SUAVE.Plugins.pint.testsuite.test_unit.TestUnitsContainer", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestUnitsContainer.html", null ],
-      [ "SUAVE.Plugins.pint.testsuite.test_util.TestStringProcessor", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__util_1_1TestStringProcessor.html", null ],
+    [ "unittest.TestCase", null, [
       [ "SUAVE.Plugins.pint.testsuite.TestCase", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1TestCase.html", [
         [ "SUAVE.Plugins.pint.testsuite.test_contexts.TestDefinedContexts", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestDefinedContexts.html", null ],
         [ "SUAVE.Plugins.pint.testsuite.test_issues.TestIssuesNP", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__issues_1_1TestIssuesNP.html", null ],
@@ -114,7 +108,13 @@ var hierarchy =
           [ "SUAVE.Plugins.pint.testsuite.test_umath.TestTrigUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestTrigUfuncs.html", null ]
         ] ],
         [ "SUAVE.Plugins.pint.testsuite.test_unit.TestRegistry", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestRegistry.html", null ]
-      ] ]
+      ] ],
+      [ "SUAVE.Plugins.pint.testsuite.test_contexts.TestContexts", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestContexts.html", null ],
+      [ "SUAVE.Plugins.pint.testsuite.test_issues.TestIssues", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__issues_1_1TestIssues.html", null ],
+      [ "SUAVE.Plugins.pint.testsuite.test_unit.TestConverter", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestConverter.html", null ],
+      [ "SUAVE.Plugins.pint.testsuite.test_unit.TestDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestDefinition.html", null ],
+      [ "SUAVE.Plugins.pint.testsuite.test_unit.TestUnitsContainer", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestUnitsContainer.html", null ],
+      [ "SUAVE.Plugins.pint.testsuite.test_util.TestStringProcessor", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__util_1_1TestStringProcessor.html", null ]
     ] ],
     [ "ValueError", null, [
       [ "SUAVE.Plugins.pint.unit.DimensionalityError", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError.html", null ],
@@ -217,7 +217,8 @@ var hierarchy =
           ] ]
         ] ],
         [ "SUAVE.Analyses.Noise.Noise.Noise", "classSUAVE_1_1Analyses_1_1Noise_1_1Noise_1_1Noise.html", [
-          [ "SUAVE.Analyses.Noise.Fidelity_One.Fidelity_One", "classSUAVE_1_1Analyses_1_1Noise_1_1Fidelity__One_1_1Fidelity__One.html", null ]
+          [ "SUAVE.Analyses.Noise.Fidelity_One.Fidelity_One", "classSUAVE_1_1Analyses_1_1Noise_1_1Fidelity__One_1_1Fidelity__One.html", null ],
+          [ "SUAVE.Analyses.Noise.Fidelity_Zero.Fidelity_Zero", "classSUAVE_1_1Analyses_1_1Noise_1_1Fidelity__Zero_1_1Fidelity__Zero.html", null ]
         ] ],
         [ "SUAVE.Analyses.Planets.Planet.Planet", "classSUAVE_1_1Analyses_1_1Planets_1_1Planet_1_1Planet.html", null ],
         [ "SUAVE.Analyses.Sizing.Sizing.Sizing", "classSUAVE_1_1Analyses_1_1Sizing_1_1Sizing_1_1Sizing.html", null ],
@@ -227,11 +228,9 @@ var hierarchy =
         ] ],
         [ "SUAVE.Analyses.Weights.Weights.Weights", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights_1_1Weights.html", [
           [ "SUAVE.Analyses.Weights.Weights_BWB.Weights_BWB", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__BWB_1_1Weights__BWB.html", null ],
-          [ "SUAVE.Analyses.Weights.Weights_Electric_Lift_Cruise.Weights_Electric_Lift_Cruise", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Lift__Cruise_1_1Weights__Electric__Lift__Cruise.html", null ],
-          [ "SUAVE.Analyses.Weights.Weights_Electric_Multicopter.Weights_Electric_Multicopter", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Multicopter_1_1Weights__Electric__Multicopter.html", null ],
-          [ "SUAVE.Analyses.Weights.Weights_Electric_Vectored_Thrust.Weights_Electric_Vectored_Thrust", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Electric__Vectored__Thrust_1_1Weights__Electric__Vectored__Thrust.html", null ],
           [ "SUAVE.Analyses.Weights.Weights_Transport.Weights_Transport", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__Transport_1_1Weights__Transport.html", null ],
-          [ "SUAVE.Analyses.Weights.Weights_UAV.Weights_UAV", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__UAV_1_1Weights__UAV.html", null ]
+          [ "SUAVE.Analyses.Weights.Weights_UAV.Weights_UAV", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__UAV_1_1Weights__UAV.html", null ],
+          [ "SUAVE.Analyses.Weights.Weights_eVTOL.Weights_eVTOL", "classSUAVE_1_1Analyses_1_1Weights_1_1Weights__eVTOL_1_1Weights__eVTOL.html", null ]
         ] ]
       ] ],
       [ "SUAVE.Analyses.Mission.Segments.Conditions.Conditions.Conditions", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html", [
@@ -263,13 +262,13 @@ var hierarchy =
       [ "SUAVE.Attributes.Propellants.Propellant.Propellant", "classSUAVE_1_1Attributes_1_1Propellants_1_1Propellant_1_1Propellant.html", [
         [ "SUAVE.Attributes.Propellants.Aviation_Gasoline.Aviation_Gasoline", "classSUAVE_1_1Attributes_1_1Propellants_1_1Aviation__Gasoline_1_1Aviation__Gasoline.html", null ],
         [ "SUAVE.Attributes.Propellants.Gaseous_H2.Gaseous_H2", "classSUAVE_1_1Attributes_1_1Propellants_1_1Gaseous__H2_1_1Gaseous__H2.html", null ],
+        [ "SUAVE.Attributes.Propellants.JP7.JP7", "classSUAVE_1_1Attributes_1_1Propellants_1_1JP7_1_1JP7.html", null ],
         [ "SUAVE.Attributes.Propellants.Jet_A1.Jet_A1", "classSUAVE_1_1Attributes_1_1Propellants_1_1Jet__A1_1_1Jet__A1.html", null ],
         [ "SUAVE.Attributes.Propellants.Jet_A.Jet_A", "classSUAVE_1_1Attributes_1_1Propellants_1_1Jet__A_1_1Jet__A.html", null ],
-        [ "SUAVE.Attributes.Propellants.JP7.JP7", "classSUAVE_1_1Attributes_1_1Propellants_1_1JP7_1_1JP7.html", null ],
-        [ "SUAVE.Attributes.Propellants.Liquid_H2.Liquid_H2", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html", null ],
-        [ "SUAVE.Attributes.Propellants.Liquid_Natural_Gas.Liquid_Natural_Gas", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__Natural__Gas_1_1Liquid__Natural__Gas.html", null ],
         [ "SUAVE.Attributes.Propellants.LOX_LH2.LOX_LH2", "classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__LH2_1_1LOX__LH2.html", null ],
-        [ "SUAVE.Attributes.Propellants.LOX_RP1.LOX_RP1", "classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__RP1_1_1LOX__RP1.html", null ]
+        [ "SUAVE.Attributes.Propellants.LOX_RP1.LOX_RP1", "classSUAVE_1_1Attributes_1_1Propellants_1_1LOX__RP1_1_1LOX__RP1.html", null ],
+        [ "SUAVE.Attributes.Propellants.Liquid_H2.Liquid_H2", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__H2_1_1Liquid__H2.html", null ],
+        [ "SUAVE.Attributes.Propellants.Liquid_Natural_Gas.Liquid_Natural_Gas", "classSUAVE_1_1Attributes_1_1Propellants_1_1Liquid__Natural__Gas_1_1Liquid__Natural__Gas.html", null ]
       ] ],
       [ "SUAVE.Attributes.Solids.Solid.Solid", "classSUAVE_1_1Attributes_1_1Solids_1_1Solid_1_1Solid.html", [
         [ "SUAVE.Attributes.Solids.Acrylic.Acrylic", "classSUAVE_1_1Attributes_1_1Solids_1_1Acrylic_1_1Acrylic.html", null ],
@@ -299,7 +298,6 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Converters.Combustor.Combustor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html", null ],
             [ "SUAVE.Components.Energy.Converters.Compression_Nozzle.Compression_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html", null ],
             [ "SUAVE.Components.Energy.Converters.Compressor.Compressor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compressor_1_1Compressor.html", null ],
-            [ "SUAVE.Components.Energy.Converters.de_Laval_Nozzle.de_Laval_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1de__Laval__Nozzle_1_1de__Laval__Nozzle.html", null ],
             [ "SUAVE.Components.Energy.Converters.Expansion_Nozzle.Expansion_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Expansion__Nozzle_1_1Expansion__Nozzle.html", null ],
             [ "SUAVE.Components.Energy.Converters.Fan.Fan", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Fan_1_1Fan.html", null ],
             [ "SUAVE.Components.Energy.Converters.Fuel_Cell.Fuel_Cell", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Fuel__Cell_1_1Fuel__Cell.html", null ],
@@ -317,6 +315,7 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Converters.Solar_Panel.Solar_Panel", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Solar__Panel_1_1Solar__Panel.html", null ],
             [ "SUAVE.Components.Energy.Converters.Supersonic_Nozzle.Supersonic_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html", null ],
             [ "SUAVE.Components.Energy.Converters.Turbine.Turbine", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html", null ],
+            [ "SUAVE.Components.Energy.Converters.de_Laval_Nozzle.de_Laval_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1de__Laval__Nozzle_1_1de__Laval__Nozzle.html", null ],
             [ "SUAVE.Components.Energy.Distributors.Electronic_Speed_Controller.Electronic_Speed_Controller", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html", null ],
             [ "SUAVE.Components.Energy.Distributors.Solar_Logic.Solar_Logic", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Solar__Logic_1_1Solar__Logic.html", null ],
             [ "SUAVE.Components.Energy.Peripherals.Avionics.Avionics", "classSUAVE_1_1Components_1_1Energy_1_1Peripherals_1_1Avionics_1_1Avionics.html", null ],
@@ -353,7 +352,9 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Networks.Internal_Combustion_Propeller_Constant_Speed.Internal_Combustion_Propeller_Constant_Speed", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html", null ],
             [ "SUAVE.Components.Energy.Networks.Lift_Cruise.Lift_Cruise", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html", null ],
             [ "SUAVE.Components.Energy.Networks.Liquid_Rocket.Liquid_Rocket", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket.html", null ],
-            [ "SUAVE.Components.Energy.Networks.Propulsor_Surrogate.Propulsor_Surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html", null ],
+            [ "SUAVE.Components.Energy.Networks.Propulsor_Surrogate.Propulsor_Surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html", [
+              [ "SUAVE.Components.Energy.Networks.PyCycle.PyCycle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html", null ]
+            ] ],
             [ "SUAVE.Components.Energy.Networks.Ramjet.Ramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Ramjet_1_1Ramjet.html", null ],
             [ "SUAVE.Components.Energy.Networks.Scramjet.Scramjet", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Scramjet_1_1Scramjet.html", null ],
             [ "SUAVE.Components.Energy.Networks.Serial_Hybrid_Ducted_Fan.Serial_Hybrid_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Serial__Hybrid__Ducted__Fan_1_1Serial__Hybrid__Ducted__Fan.html", null ],

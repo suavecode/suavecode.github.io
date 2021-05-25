@@ -14,9 +14,9 @@ var classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor =
     [ "hub_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#af854269995b7d5a41d2d1e3a433342da", null ],
     [ "induced_hover_velocity", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a272e0608d00e12db54d8e8298f35c67f", null ],
     [ "induced_power_factor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#afd0e03d06cf0260cdbcd8ff733d9b36b", null ],
-    [ "mid_chord_aligment", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a6ec61cf9a683353e215bbd865396e0ce", null ],
+    [ "mid_chord_alignment", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#aa7c100379687848ed0d25d3bad55734a", null ],
     [ "number_azimuthal_stations", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a505d07e53ac3fa2d774ddea754c7bf7e", null ],
-    [ "number_blades", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a86671659dc4c44d63c595cdc01b7e298", null ],
+    [ "number_of_blades", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a394f69d9588f6e7701bae9c72d9d6e4e", null ],
     [ "pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a5517a7081277b0b5ccb26f96651080c0", null ],
     [ "profile_drag_coefficient", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab0ef9bdfd91458a665946ac271792c41", null ],
     [ "radius_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a49e083b347b7e12ac11efee651c9512e", null ],
@@ -24,5 +24,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor =
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ac3348559a077a26203eaea601350a0cc", null ],
     [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a40d5fe462aab26f30f12b223d793d7cc", null ],
     [ "tip_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a710f9e1f5b9696d106a8fab0aa4b238e", null ],
-    [ "twist_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a95d4b9e108a813756c3a39036139d351", null ]
+    [ "twist_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a95d4b9e108a813756c3a39036139d351", null ],
+    [ "VTOL_flag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a1fc1889f4544152f7241710a97bda0c5", null ]
 ];

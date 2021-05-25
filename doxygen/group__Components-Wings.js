@@ -77,6 +77,7 @@ var group__Components_Wings =
       [ "Segments", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a9d72647f10ef4f7864b26cc314789bbb", null ],
       [ "spans", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a9c8581500143469644736a6a346fb574", null ],
       [ "sweeps", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a9c95d8e5232adf728ae14f240d20e37a", null ],
+      [ "symbolic", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a5a85fc2af0705f26604cbfd2ef9d0b9f", null ],
       [ "symmetric", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a868aa0c0bd1e95b99eebe899c0e68c27", null ],
       [ "t_tail", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#ac02d70ef5a4c6491d94ef4ceb6bdd8a6", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#a82a4410a681cbee9d280a7742d3f8f21", null ],

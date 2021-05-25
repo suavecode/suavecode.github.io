@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['landing_20gear',['Landing Gear',['../group__components-landing__gear.html',1,'']]],
-  ['lift',['Lift',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html',1,'']]],
-  ['lift',['Lift',['../group__Methods-Aerodynamics-Fidelity__Zero-Lift.html',1,'']]],
-  ['lifting_5fline',['Lifting_Line',['../group__Methods-Aerodynamics-Lifting__Line.html',1,'']]],
-  ['lift',['Lift',['../group__Methods-Aerodynamics-Supersonic__Zero-Lift.html',1,'']]]
+  ['industrial_20costs_1797',['Industrial Costs',['../group__Methods-Costs-Industrial__Costs.html',1,'']]],
+  ['input_5foutput_1798',['Input_Output',['../group__Input__Output.html',1,'']]]
 ];
