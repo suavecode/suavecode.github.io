@@ -92,8 +92,8 @@ input, select, textarea {
 	}
 
 	body {
-		/*background: #f7f7f7 url("images/bg01.png");*/
-		background: #ffffff url("images/bg01.png");
+		background: #f7f7f7 url("images/bg01.png");
+		/*background: #ffffff url("images/bg01.png");*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2677,7 +2677,7 @@ input, select, textarea {
 
 	#banner {
 		background-color: rgba(0,0,0,0);
-		background-image: url("https://suave.stanford.edu/../images/SUAVE_2_3_Logo.png");
+		background-image: url("https://suave.stanford.edu/../images/logo_no_text.svg");
 		background-position: center top;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -2692,9 +2692,9 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			background: #212121;
-			background: rgba(77, 79, 83, 0.7);
+			background: rgba(77, 79, 83, 0.8);
 			color: #fff;
-			padding: 0.3em 0;
+			padding: 0.8em 0;
 		}
 
 			#banner header h2 {
