@@ -8,5 +8,6 @@ var classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam =
     [ "compute_gamma", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#a66d54aac1e188e801ca276ca2d48fdd8", null ],
     [ "compute_speed_of_sound", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#a86ba9c1313cae71b544a4be1edf05bad", null ],
     [ "gas_specific_constant", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#ab45dc8c7c1186e41c21deb0a2ff1d82e", null ],
-    [ "molecular_mass", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#a54398bd1c5ff2db7e010ce52851621b0", null ]
+    [ "molecular_mass", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#a54398bd1c5ff2db7e010ce52851621b0", null ],
+    [ "tag", "classSUAVE_1_1Attributes_1_1Gases_1_1Steam_1_1Steam.html#a0bb346fc022f10b6a2575b9472678e41", null ]
 ];

@@ -6,7 +6,7 @@ var group__Methods_Aerodynamics_Common_Fidelity__Zero_Drag =
     [ "induced_drag_aircraft", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#gaa045d2ec0dd318f054992b90a5c77a7b", null ],
     [ "miscellaneous_drag_aircraft_ESDU", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga1ab07fbded997c9136f554f34dbe2a17", null ],
     [ "parasite_drag_fuselage", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga6f2ba6214fc6c9cf197abd4314974783", null ],
-    [ "parasite_drag_propulsor", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga56def445cac037d343c05611841367e5", null ],
+    [ "parasite_drag_nacelle", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#gab1e2d3cc135b4bd5576dd80221e9ef16", null ],
     [ "parasite_drag_pylon", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga4b936aba6e18986d224e4da07a539ef8", null ],
     [ "parasite_drag_wing", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga56e33b81d00acf5955c775938336000e", null ],
     [ "parasite_total", "group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#gade82a1b666fd867c5687b582e5429836", null ],

@@ -9,6 +9,7 @@ var classSUAVE_1_1Core_1_1Data_1_1Data =
     [ "__setattr__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#aaceda3bf72e5beb15e59bf079edba2ce", null ],
     [ "__str__", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a7847accf45dc18262cb7ceca42f74156", null ],
     [ "append", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a69c46e0c3a6b4e0edc62596ab0af232b", null ],
+    [ "append_or_update", "classSUAVE_1_1Core_1_1Data_1_1Data.html#ad78beab7014e25a1b0d11b094a8df22b", null ],
     [ "dataname", "classSUAVE_1_1Core_1_1Data_1_1Data.html#ad25649de315ac95f3059ee0cad6294c6", null ],
     [ "deep_get", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a3bbf5c11c2462b89b0a3df6dcaacf501", null ],
     [ "deep_set", "classSUAVE_1_1Core_1_1Data_1_1Data.html#a84ba0de5ac002c9fd4fc2953f5d452d4", null ],

@@ -1,6 +1,5 @@
 var group__Methods_Propulsion =
 [
-    [ "BEM_read", "group__Methods-Propulsion.html#gae198f3808f41194e690b4ea8c4137c5f", null ],
     [ "ducted_fan_sizing", "group__Methods-Propulsion.html#ga3e6153003ae73397bf8d06367e10e9ba", null ],
     [ "exit_Mach_shock", "group__Methods-Propulsion.html#gaacf435ba19015caf25a08dae08baa6a3", null ],
     [ "fm_id", "group__Methods-Propulsion.html#gae720e196160d2c3fdc45c57ff3e2f4bb", null ],

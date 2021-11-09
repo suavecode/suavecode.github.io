@@ -1,9 +1,17 @@
 var group__Components_Wings =
 [
-    [ "Airfoils", "group__Components-Wings-Airfoils.html", "group__Components-Wings-Airfoils" ],
     [ "Control_Surfaces", "group__Components-Wings-Control__Surfaces.html", "group__Components-Wings-Control__Surfaces" ],
-    [ "Segment_Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment__Container.html", [
-      [ "get_children", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment__Container.html#a48accd677d8fafff1c03827d061c11cf", null ]
+    [ "Segment_Container", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment__Container.html", [
+      [ "get_children", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment__Container.html#ad286fe85b5f22aa51c309832f5e0bd96", null ]
+    ] ],
+    [ "All_Moving_Surface", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#a9e8c83a908f45487b6e809154f11ce5e", null ],
+      [ "deflection", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#ad2c06cfe7fe8d969f24ab10f40e0c3ed", null ],
+      [ "hinge_fraction", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#afc889b952ed9179374acbdbcc6f7e119", null ],
+      [ "hinge_vector", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#aef372fef97f71e9592a260f0f9f5ff4f", null ],
+      [ "sign_duplicate", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#a3d6aabd20aedb6ccb0706209e1bc1fc6", null ],
+      [ "tag", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#ac4f515556bbfc151a272c20870ed3c78", null ],
+      [ "use_constant_hinge_fraction", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#a60d0c3419c3460fbeedc517ce7688404", null ]
     ] ],
     [ "Horizontal_Tail", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Horizontal__Tail_1_1Horizontal__Tail.html#a674bb83b6f89d403ae41c506caaedc1d", null ],
@@ -27,10 +35,9 @@ var group__Components_Wings =
     [ "Segment", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a61224a8134dae53d9b10a6db3a4af800", null ],
       [ "append_airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a47fc0861956a7eae28e13a4f5e1ee7c7", null ],
-      [ "append_control_surface", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#aaab654b3bbb6547ca992644fc3dbd300", null ],
       [ "Airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#afea77873575432d9f76c0216b53913b0", null ],
       [ "areas", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a58c917c9cc37d7f2de79a05e1398a23d", null ],
-      [ "control_surfaces", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a18d1010aa92045660148a35417f8b9bf", null ],
+      [ "chords", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a8da90f02eb421dec5c2edcba02545053", null ],
       [ "dihedral_outboard", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a9f87970e346855bfdc2b7184e8a44dad", null ],
       [ "generative_design_char_max_bounds", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a3384243281940903bbc4dae5893b6665", null ],
       [ "generative_design_char_min_bounds", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a4ff7d31163654d471a261bb7793d1e40", null ],
@@ -42,11 +49,23 @@ var group__Components_Wings =
       [ "root_chord_percent", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#ada3a394de76d358909b23d1c3ad128e3", null ],
       [ "sweeps", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a9b3b815e75c41ec078bc0731f512aa63", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#ad9267b68b97363a777b56fac8d0712ee", null ],
+      [ "taper", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#a182b3c789492877b842df35c01982c5e", null ],
       [ "thickness_to_chord", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#aecd440f8429c47d647d8b39140d49455", null ],
       [ "twist", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html#afd7bcd8236516d3e8eb7cd8e93dc90ee", null ]
     ] ],
     [ "Segment_Container", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment__Container.html", [
       [ "get_children", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment__Container.html#a36f10de9f1b090401d0295b4e13f86bf", null ]
+    ] ],
+    [ "Stabilator", "classSUAVE_1_1Components_1_1Wings_1_1Stabilator_1_1Stabilator.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Stabilator_1_1Stabilator.html#a0122d3061c59cd1748857025837e7c07", null ],
+      [ "sign_duplicate", "classSUAVE_1_1Components_1_1Wings_1_1Stabilator_1_1Stabilator.html#a68b5c6568449beee450e5aaccdf87e27", null ],
+      [ "tag", "classSUAVE_1_1Components_1_1Wings_1_1Stabilator_1_1Stabilator.html#a6394903d4bee3041b13fd84e3d115a9d", null ]
+    ] ],
+    [ "Vertical_Tail_All_Moving", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail__All__Moving_1_1Vertical__Tail__All__Moving.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail__All__Moving_1_1Vertical__Tail__All__Moving.html#a8d78f0bdb7134d85b46ad81e996d2586", null ],
+      [ "make_x_z_reflection", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail__All__Moving_1_1Vertical__Tail__All__Moving.html#a9b99dae4a164f4935bca8f62bf7f11bb", null ],
+      [ "sign_duplicate", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail__All__Moving_1_1Vertical__Tail__All__Moving.html#a7d88c7dd8524a367a5ff74b60f47aac8", null ],
+      [ "tag", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail__All__Moving_1_1Vertical__Tail__All__Moving.html#a8d726769dc3a3b89d6cc6c42ff9b23e2", null ]
     ] ],
     [ "Wing", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html#ab53e649ccbbc13673b6aacc081dc59dc", null ],

@@ -14,5 +14,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor =
     [ "propeller_Cp", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a16cb7590afcba652e316f45f8a761a31", null ],
     [ "propeller_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a683409fa2bccf383f2f54484848021d2", null ],
     [ "resistance", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a13e5285d973e90a3b4caea45ed2d9d55", null ],
-    [ "speed_constant", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#adea69680702442a7a3d8489722c208d6", null ]
+    [ "speed_constant", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#adea69680702442a7a3d8489722c208d6", null ],
+    [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a6e2d5041adfcd056e5589e90a2baa3d5", null ]
 ];

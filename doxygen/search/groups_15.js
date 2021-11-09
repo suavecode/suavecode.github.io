@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xml_1854',['XML',['../group__Input__Output-XML.html',1,'']]]
+  ['zero_20fidelity_20zero',['Zero Fidelity Zero',['../group__Methods-Noise-Fidelity.html',1,'']]]
 ];

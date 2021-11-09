@@ -2,10 +2,10 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Prop
 [
     [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a2a2b2213ef2a6209d93bfdd303ee0ec3", null ],
     [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a8a99a0cb8a0b1b011245c26ef3141ce9", null ],
-    [ "engine", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a205a65dc866cdaf2becedb9ba73d91c1", null ],
     [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a6e93fea4e8629a4a86bc543ae68d51c5", null ],
+    [ "engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#adae0397484bf7f9acd5c81eba8cbb9b5", null ],
+    [ "identical_propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a48a37e77bd287c745f6f619cdd6f3f7f", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a059983294b8be3d2f8e7067828ade149", null ],
-    [ "propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#acd2cc6d09225df0f601f931d12c7d7ee", null ],
-    [ "rated_speed", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a3bb91d6b3b6c0fa3a1cfbb30f8dd8167", null ],
-    [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a230c91a68f4bb0361b97223cd04e28a2", null ]
+    [ "propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a264d51095123251c370ec27e46301b0d", null ],
+    [ "rated_speed", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Internal__Combustion__Propeller__Constant__Spefd0f47b019fa78b7cc3bc47b5f2c3d76.html#a3bb91d6b3b6c0fa3a1cfbb30f8dd8167", null ]
 ];

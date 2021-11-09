@@ -7,7 +7,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1So
     [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#ae59b65392146034a9b407394de7c336f", null ],
     [ "esc", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#ae7fc5861cb4a944129c9749270885b0e", null ],
     [ "motor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#acae5bbd194cad986cfd52f880a22935f", null ],
-    [ "nacelle_dia", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#acc0224108fa8af8cf4f290ccb30c0272", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#a4a5ad2f9600fa7bcd88310f7f972700e", null ],
     [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#a233c717fad987512c42cb83c53e4c651", null ],
     [ "propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#a8e2853156ffcf1aef68eb1108d852da4", null ],

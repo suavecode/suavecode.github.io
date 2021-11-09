@@ -1,6 +1,7 @@
 var classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail =
 [
     [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html#a140e95184807806f674ada3a7f7d783a", null ],
+    [ "make_x_z_reflection", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html#a979d5913a2fe9409c9cecaf5974aae92", null ],
     [ "generative_design_char_max_bounds", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html#a56c4d3abe1bfd26666719457a65ce03d", null ],
     [ "generative_design_char_min_bounds", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html#a85e12410050b7aea67dea950eae92c79", null ],
     [ "generative_design_max_per_vehicle", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html#a00a6c7ea87d6c65c68d807be5404f7ac", null ],

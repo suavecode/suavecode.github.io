@@ -1,6 +1,7 @@
 var group__Methods_Aerodynamics =
 [
     [ "AERODAS", "group__Methods-Aerodynamics-AERODAS.html", "group__Methods-Aerodynamics-AERODAS" ],
+    [ "Airfoil_Panel_Method", "group__Methods-Aerodynamics-Airfoil__Panel__Method.html", "group__Methods-Aerodynamics-Airfoil__Panel__Method" ],
     [ "AVL", "group__Methods-Aerodynamics-AVL.html", "group__Methods-Aerodynamics-AVL" ],
     [ "Common", "group__Methods-Aerodynamics-Common.html", "group__Methods-Aerodynamics-Common" ],
     [ "Fidelity_Zero", "group__Methods-Aerodynamics-Fidelity__Zero.html", "group__Methods-Aerodynamics-Fidelity__Zero" ],

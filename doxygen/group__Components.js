@@ -1,12 +1,14 @@
 var group__Components =
 [
+    [ "Airfoils", "group__Components-Airfoils.html", null ],
     [ "Configs", "group__Components-Configs.html", "group__Components-Configs" ],
     [ "Costs", "group__Components-Costs.html", "group__Components-Costs" ],
     [ "Energy", "group__Components-Energy.html", "group__Components-Energy" ],
     [ "Fuselages", "group__components-fuselages.html", "group__components-fuselages" ],
     [ "Landing Gear", "group__components-landing__gear.html", null ],
+    [ "Components-Lofted_Body_Segment", "group__components-Lofted__Body__Segment.html", null ],
+    [ "Nacelles", "group__Components-Nacelles.html", null ],
     [ "Payloads", "group__Components-Payloads.html", "group__Components-Payloads" ],
-    [ "Propulsors", "group__Components-Propulsors.html", "group__Components-Propulsors" ],
     [ "Systems", "group__Components-Systems.html", "group__Components-Systems" ],
     [ "Wings", "group__Components-Wings.html", "group__Components-Wings" ],
     [ "Component", "classSUAVE_1_1Components_1_1Component_1_1Component.html", [

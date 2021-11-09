@@ -6,6 +6,7 @@ var classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1
     [ "deflection", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html#ab384c96474818b75e512327dac1a124c", null ],
     [ "gain", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html#a068ded7bfe62fcd99af1546b09e7f413", null ],
     [ "hinge_fraction", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html#a107e91da9b6a9de5e54ea935466dfc1a", null ],
+    [ "sign_duplicate", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html#a87b559559bd66b520f6ed249248891e1", null ],
     [ "span", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html#aa494855dfe72d9fd9e794d242c612d5a", null ],
     [ "span_fraction_end", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html#a61ea28b90ef5f20680789b261146b9d9", null ],
     [ "span_fraction_start", "classSUAVE_1_1Components_1_1Wings_1_1Control__Surfaces_1_1Control__Surface_1_1Control__Surface.html#a84befa5459c4e7bb0ed4aaa5785d61c4", null ],

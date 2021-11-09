@@ -12,7 +12,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan =
     [ "generative_design_characteristics", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a508c85b29be7c6e600210bf518914bae", null ],
     [ "generative_design_max_per_vehicle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a201434e46f84981c1aaaac4193bf3fa4", null ],
     [ "generative_design_minimum", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a021072fa2d0d835bc556164d9674d189", null ],
-    [ "nacelle_diameter", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a1bf3a72eac55b30fc00ddc8cdc099d26", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#ac838a4ddc129e87df7fe82977d42caad", null ],
     [ "OpenVSP_flow_through", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#ad71e3cc0e8a88d101a605d3e52c28dc8", null ],
     [ "SFC_adjustment", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a03e991a7a9e667101a88861cd7f88595", null ],

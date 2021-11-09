@@ -8,7 +8,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle =
     [ "evaluation_mach_alt", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a9b458518eb0ff7aafb6a995d74ed2f34", null ],
     [ "evaluation_throttles", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#ae423f0d95c870abde894925012141f7c", null ],
     [ "input_file", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a2b87646d410df21857f3f66bf8f03abd", null ],
-    [ "nacelle_diameter", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a64e56c686db4d1fef60f957080a31fd8", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#aadf59b826fd42735bf67ff390bf6113b", null ],
     [ "save_deck", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#add43c2d818748d0ef0c5eca051dc7765", null ],
     [ "sfc_anchor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#abd577dd0c97be86592d2ea35af36cd80", null ],

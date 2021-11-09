@@ -1,0 +1,10 @@
+var classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c =
+[
+    [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html#a593c7ce96479c1e002693a62a4f7d400", null ],
+    [ "resistance", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html#a510bcedb13957455d6f7f20f17e0eccb", null ],
+    [ "specific_energy", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html#a29e2216e6b5ceb2b60845e74562b5286", null ],
+    [ "specific_heat_capacity", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html#a9e8e56bfe8ee6fe51b742c19c604fdf3", null ],
+    [ "specific_power", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html#ac1697dabfa14cc68abf5fe06d62d9923", null ],
+    [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html#a90dde75166c954655314864f5429bb7b", null ],
+    [ "watt_hour_rating", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html#a4f3f9268c603a1d09ecced518b960cdf", null ]
+];
