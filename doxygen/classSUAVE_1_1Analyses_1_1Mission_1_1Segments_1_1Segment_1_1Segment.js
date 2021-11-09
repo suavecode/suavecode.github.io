@@ -1,7 +1,6 @@
 var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment =
 [
     [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html#aedc70c28743a1190d7b5b773d8b2b548", null ],
-    [ "compile", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html#aec843c0340b90e2c9b8f9cb94821b285", null ],
     [ "converge", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html#a4175e96a7e4e98d141c3cdb0500dfe88", null ],
     [ "evaluate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html#a473372a75a561da7d96c9295b87db9a1", null ],
     [ "finalize", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html#aff1929fe616e571238044187976708f8", null ],

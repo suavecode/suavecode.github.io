@@ -79,8 +79,8 @@ var annotated_dup =
             [ "All_At_Once", "classSUAVE_1_1Analyses_1_1Mission_1_1All__At__Once_1_1All__At__Once.html", "classSUAVE_1_1Analyses_1_1Mission_1_1All__At__Once_1_1All__At__Once" ]
           ] ],
           [ "Mission", null, [
-            [ "Mission", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission" ],
-            [ "Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Container.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Container" ]
+            [ "Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Container.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Container" ],
+            [ "Mission", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission" ]
           ] ],
           [ "Segments", null, [
             [ "Aerodynamic", null, [
@@ -144,7 +144,8 @@ var annotated_dup =
                 [ "Basic", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Basic_1_1Basic" ]
               ] ],
               [ "Conditions", null, [
-                [ "Conditions", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions" ]
+                [ "Conditions", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions" ],
+                [ "expanded_array", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1expanded__array.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1expanded__array" ]
               ] ],
               [ "Numerics", null, [
                 [ "Numerics", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Numerics_1_1Numerics" ]
@@ -153,8 +154,8 @@ var annotated_dup =
                 [ "Residuals", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Residuals_1_1Residuals.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Residuals_1_1Residuals" ]
               ] ],
               [ "State", null, [
-                [ "State", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1State.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1State" ],
-                [ "Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1Container.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1Container" ]
+                [ "Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1Container.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1Container" ],
+                [ "State", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1State.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1State_1_1State" ]
               ] ],
               [ "Unknowns", null, [
                 [ "Unknowns", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Unknowns_1_1Unknowns.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Unknowns_1_1Unknowns" ]
@@ -213,6 +214,9 @@ var annotated_dup =
               ] ]
             ] ],
             [ "Ground", null, [
+              [ "Battery_Charge_Discharge", null, [
+                [ "Battery_Charge_Discharge", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Ground_1_1Battery__Charge__Discharge_1_1Battery__Charge__Discharge.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Ground_1_1Battery__Charge__Discharge_1_1Battery__Charge__Discharge" ]
+              ] ],
               [ "Ground", null, [
                 [ "Ground", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Ground_1_1Ground_1_1Ground.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Ground_1_1Ground_1_1Ground" ]
               ] ],
@@ -235,8 +239,8 @@ var annotated_dup =
               ] ]
             ] ],
             [ "Segment", null, [
-              [ "Segment", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment" ],
-              [ "Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Container.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Container" ]
+              [ "Container", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Container.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Container" ],
+              [ "Segment", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Segment_1_1Segment" ]
             ] ],
             [ "Simple", null, [
               [ "Simple", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Simple_1_1Simple.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Simple_1_1Simple" ]
@@ -453,6 +457,11 @@ var annotated_dup =
         ] ]
       ] ],
       [ "Components", null, [
+        [ "Airfoils", null, [
+          [ "Airfoil", null, [
+            [ "Airfoil", "classSUAVE_1_1Components_1_1Airfoils_1_1Airfoil_1_1Airfoil.html", "classSUAVE_1_1Components_1_1Airfoils_1_1Airfoil_1_1Airfoil" ]
+          ] ]
+        ] ],
         [ "Component", null, [
           [ "Component", "classSUAVE_1_1Components_1_1Component_1_1Component.html", "classSUAVE_1_1Components_1_1Component_1_1Component" ],
           [ "Container", "classSUAVE_1_1Components_1_1Component_1_1Container.html", null ]
@@ -464,11 +473,16 @@ var annotated_dup =
         ] ],
         [ "Costs", null, [
           [ "Costs", null, [
-            [ "Operating_Costs", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Operating__Costs.html", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Operating__Costs" ],
-            [ "Industrial_Costs", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Industrial__Costs.html", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Industrial__Costs" ]
+            [ "Industrial_Costs", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Industrial__Costs.html", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Industrial__Costs" ],
+            [ "Operating_Costs", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Operating__Costs.html", "classSUAVE_1_1Components_1_1Costs_1_1Costs_1_1Operating__Costs" ]
           ] ]
         ] ],
         [ "Energy", null, [
+          [ "Charging", null, [
+            [ "Charging", null, [
+              [ "Charging", "classSUAVE_1_1Components_1_1Energy_1_1Charging_1_1Charging_1_1Charging.html", "classSUAVE_1_1Components_1_1Energy_1_1Charging_1_1Charging_1_1Charging" ]
+            ] ]
+          ] ],
           [ "Converters", null, [
             [ "Combustor", null, [
               [ "Combustor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor" ]
@@ -499,6 +513,9 @@ var annotated_dup =
             ] ],
             [ "Internal_Combustion_Engine", null, [
               [ "Internal_Combustion_Engine", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine" ]
+            ] ],
+            [ "Lift_Rotor", null, [
+              [ "Lift_Rotor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Lift__Rotor_1_1Lift__Rotor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Lift__Rotor_1_1Lift__Rotor" ]
             ] ],
             [ "Motor", null, [
               [ "Motor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor" ]
@@ -542,13 +559,13 @@ var annotated_dup =
               [ "Solar_Logic", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Solar__Logic_1_1Solar__Logic.html", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Solar__Logic_1_1Solar__Logic" ]
             ] ]
           ] ],
-          [ "Energy", null, [
-            [ "Energy", "classSUAVE_1_1Components_1_1Energy_1_1Energy_1_1Energy.html", "classSUAVE_1_1Components_1_1Energy_1_1Energy_1_1Energy" ]
-          ] ],
           [ "Energy_Component", null, [
             [ "Energy_Component", "classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component.html", "classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component" ]
           ] ],
           [ "Networks", null, [
+            [ "Battery_Cell_Cycler", null, [
+              [ "Battery_Cell_Cycler", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Cell__Cycler_1_1Battery__Cell__Cycler.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Cell__Cycler_1_1Battery__Cell__Cycler" ]
+            ] ],
             [ "Battery_Ducted_Fan", null, [
               [ "Battery_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan_1_1Battery__Ducted__Fan.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Ducted__Fan_1_1Battery__Ducted__Fan" ]
             ] ],
@@ -569,6 +586,10 @@ var annotated_dup =
             ] ],
             [ "Liquid_Rocket", null, [
               [ "Liquid_Rocket", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Liquid__Rocket_1_1Liquid__Rocket" ]
+            ] ],
+            [ "Network", null, [
+              [ "Container", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Network_1_1Container.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Network_1_1Container" ],
+              [ "Network", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Network_1_1Network.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Network_1_1Network" ]
             ] ],
             [ "Propulsor_Surrogate", null, [
               [ "Propulsor_Surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate" ]
@@ -596,9 +617,6 @@ var annotated_dup =
             ] ],
             [ "Turbojet_Super", null, [
               [ "Turbojet_Super", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super" ]
-            ] ],
-            [ "Vectored_Thrust", null, [
-              [ "Vectored_Thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Vectored__Thrust_1_1Vectored__Thrust" ]
             ] ]
           ] ],
           [ "Peripherals", null, [
@@ -629,6 +647,12 @@ var annotated_dup =
                 [ "Lithium_Ion", null, [
                   [ "Lithium_Ion", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion_1_1Lithium__Ion.html", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion_1_1Lithium__Ion" ]
                 ] ],
+                [ "Lithium_Ion_LiFePO4_18650", null, [
+                  [ "Lithium_Ion_LiFePO4_18650", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c.html", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Lc7c774ecc0e754e494e2e31ae8c98a5c" ]
+                ] ],
+                [ "Lithium_Ion_LiNiMnCoO2_18650", null, [
+                  [ "Lithium_Ion_LiNiMnCoO2_18650", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Ld01c6b6bada918794df8f70f8e6c1443.html", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Ion__Ld01c6b6bada918794df8f70f8e6c1443" ]
+                ] ],
                 [ "Lithium_Sulfur", null, [
                   [ "Lithium_Sulfur", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Sulfur_1_1Lithium__Sulfur.html", "classSUAVE_1_1Components_1_1Energy_1_1Storages_1_1Batteries_1_1Constant__Mass_1_1Lithium__Sulfur_1_1Lithium__Sulfur" ]
                 ] ]
@@ -654,12 +678,8 @@ var annotated_dup =
         ] ],
         [ "Fuselages", null, [
           [ "Fuselage", null, [
-            [ "Fuselage", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage" ],
-            [ "Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container" ]
-          ] ],
-          [ "Segment", null, [
-            [ "Segment", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment" ],
-            [ "Segment_Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment__Container.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Segment_1_1Segment__Container" ]
+            [ "Container", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Container" ],
+            [ "Fuselage", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage.html", "classSUAVE_1_1Components_1_1Fuselages_1_1Fuselage_1_1Fuselage" ]
           ] ]
         ] ],
         [ "Landing_Gear", null, [
@@ -675,28 +695,33 @@ var annotated_dup =
         ] ],
         [ "Lofted_Body", null, [
           [ "Lofted_Body", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Lofted__Body" ],
-          [ "Segment", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Segment.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Segment" ],
           [ "Section", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section" ],
-          [ "Section_Container", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container" ]
+          [ "Section_Container", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Section__Container" ],
+          [ "Segment", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Segment.html", "classSUAVE_1_1Components_1_1Lofted__Body_1_1Segment" ]
+        ] ],
+        [ "Lofted_Body_Segment", null, [
+          [ "Segment", null, [
+            [ "Segment", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment.html", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment" ],
+            [ "Segment_Container", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment__Container.html", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment__Container" ]
+          ] ]
         ] ],
         [ "Mass_Properties", null, [
           [ "Mass_Properties", "classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties.html", "classSUAVE_1_1Components_1_1Mass__Properties_1_1Mass__Properties" ]
         ] ],
+        [ "Nacelles", null, [
+          [ "Nacelle", null, [
+            [ "Nacelle", "classSUAVE_1_1Components_1_1Nacelles_1_1Nacelle_1_1Nacelle.html", "classSUAVE_1_1Components_1_1Nacelles_1_1Nacelle_1_1Nacelle" ]
+          ] ]
+        ] ],
         [ "Payloads", null, [
           [ "Payload", null, [
-            [ "Payload", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload.html", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload" ],
-            [ "Container", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Container.html", null ]
+            [ "Container", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Container.html", null ],
+            [ "Payload", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload.html", "classSUAVE_1_1Components_1_1Payloads_1_1Payload_1_1Payload" ]
           ] ]
         ] ],
         [ "Physical_Component", null, [
-          [ "Physical_Component", "classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component.html", "classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component" ],
-          [ "Container", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container" ]
-        ] ],
-        [ "Propulsors", null, [
-          [ "Propulsor", null, [
-            [ "Propulsor", "classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor.html", "classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Propulsor" ],
-            [ "Container", "classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Container.html", "classSUAVE_1_1Components_1_1Propulsors_1_1Propulsor_1_1Container" ]
-          ] ]
+          [ "Container", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container.html", "classSUAVE_1_1Components_1_1Physical__Component_1_1Container" ],
+          [ "Physical_Component", "classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component.html", "classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component" ]
         ] ],
         [ "Systems", null, [
           [ "System", null, [
@@ -704,10 +729,8 @@ var annotated_dup =
           ] ]
         ] ],
         [ "Wings", null, [
-          [ "Airfoils", null, [
-            [ "Airfoil", null, [
-              [ "Airfoil", "classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil.html", "classSUAVE_1_1Components_1_1Wings_1_1Airfoils_1_1Airfoil_1_1Airfoil" ]
-            ] ]
+          [ "All_Moving_Surface", null, [
+            [ "All_Moving_Surface", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface" ]
           ] ],
           [ "Control_Surfaces", null, [
             [ "Aileron", null, [
@@ -740,12 +763,18 @@ var annotated_dup =
             [ "Segment", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment.html", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment" ],
             [ "Segment_Container", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment__Container.html", "classSUAVE_1_1Components_1_1Wings_1_1Segment_1_1Segment__Container" ]
           ] ],
+          [ "Stabilator", null, [
+            [ "Stabilator", "classSUAVE_1_1Components_1_1Wings_1_1Stabilator_1_1Stabilator.html", "classSUAVE_1_1Components_1_1Wings_1_1Stabilator_1_1Stabilator" ]
+          ] ],
           [ "Vertical_Tail", null, [
             [ "Vertical_Tail", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail.html", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail_1_1Vertical__Tail" ]
           ] ],
+          [ "Vertical_Tail_All_Moving", null, [
+            [ "Vertical_Tail_All_Moving", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail__All__Moving_1_1Vertical__Tail__All__Moving.html", "classSUAVE_1_1Components_1_1Wings_1_1Vertical__Tail__All__Moving_1_1Vertical__Tail__All__Moving" ]
+          ] ],
           [ "Wing", null, [
-            [ "Wing", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing" ],
-            [ "Container", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container.html", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container" ]
+            [ "Container", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container.html", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Container" ],
+            [ "Wing", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing.html", "classSUAVE_1_1Components_1_1Wings_1_1Wing_1_1Wing" ]
           ] ]
         ] ]
       ] ],
@@ -760,16 +789,16 @@ var annotated_dup =
           [ "Data", "classSUAVE_1_1Core_1_1Data_1_1Data.html", "classSUAVE_1_1Core_1_1Data_1_1Data" ]
         ] ],
         [ "DataOrdered", null, [
-          [ "Property", "classSUAVE_1_1Core_1_1DataOrdered_1_1Property.html", "classSUAVE_1_1Core_1_1DataOrdered_1_1Property" ],
-          [ "DataOrdered", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered" ]
+          [ "DataOrdered", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html", "classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered" ],
+          [ "Property", "classSUAVE_1_1Core_1_1DataOrdered_1_1Property.html", "classSUAVE_1_1Core_1_1DataOrdered_1_1Property" ]
         ] ],
         [ "Diffed_Data", null, [
-          [ "Diffed_Data", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Diffed__Data.html", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Diffed__Data" ],
-          [ "Container", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Container.html", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Container" ]
+          [ "Container", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Container.html", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Container" ],
+          [ "Diffed_Data", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Diffed__Data.html", "classSUAVE_1_1Core_1_1Diffed__Data_1_1Diffed__Data" ]
         ] ],
         [ "redirect", null, [
-          [ "output", "classSUAVE_1_1Core_1_1redirect_1_1output.html", "classSUAVE_1_1Core_1_1redirect_1_1output" ],
-          [ "folder", "classSUAVE_1_1Core_1_1redirect_1_1folder.html", "classSUAVE_1_1Core_1_1redirect_1_1folder" ]
+          [ "folder", "classSUAVE_1_1Core_1_1redirect_1_1folder.html", "classSUAVE_1_1Core_1_1redirect_1_1folder" ],
+          [ "output", "classSUAVE_1_1Core_1_1redirect_1_1output.html", "classSUAVE_1_1Core_1_1redirect_1_1output" ]
         ] ]
       ] ],
       [ "Input_Output", null, [
@@ -780,8 +809,8 @@ var annotated_dup =
         ] ],
         [ "XML", null, [
           [ "Data", null, [
-            [ "Data", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data" ],
-            [ "Attributes", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Attributes.html", null ]
+            [ "Attributes", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Attributes.html", null ],
+            [ "Data", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html", "classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data" ]
           ] ],
           [ "load", null, [
             [ "TreeBuilder", "classSUAVE_1_1Input__Output_1_1XML_1_1load_1_1TreeBuilder.html", "classSUAVE_1_1Input__Output_1_1XML_1_1load_1_1TreeBuilder" ]
@@ -799,8 +828,8 @@ var annotated_dup =
                 [ "Body", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Body_1_1Body.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Body_1_1Body" ]
               ] ],
               [ "Cases", null, [
-                [ "Run_Case", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Run__Case.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Run__Case" ],
-                [ "Container", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Container.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Container" ]
+                [ "Container", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Container.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Container" ],
+                [ "Run_Case", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Run__Case.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Cases_1_1Run__Case" ]
               ] ],
               [ "Configuration", null, [
                 [ "Configuration", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Configuration_1_1Configuration.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Configuration_1_1Configuration" ]
@@ -812,11 +841,11 @@ var annotated_dup =
                 [ "Settings", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Settings_1_1Settings" ]
               ] ],
               [ "Wing", null, [
-                [ "Wing", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing" ],
-                [ "Section", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section" ],
                 [ "Control_Surface", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface" ],
                 [ "Control_Surface_Data", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Data.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Data" ],
-                [ "Control_Surface_Results", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Results.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Results" ]
+                [ "Control_Surface_Results", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Results.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Control__Surface__Results" ],
+                [ "Section", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Section" ],
+                [ "Wing", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing.html", "classSUAVE_1_1Methods_1_1Aerodynamics_1_1AVL_1_1Data_1_1Wing_1_1Wing" ]
               ] ]
             ] ]
           ] ],
@@ -873,9 +902,9 @@ var annotated_dup =
           ] ],
           [ "testsuite", null, [
             [ "test_contexts", null, [
-              [ "TestHandler", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestHandler.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestHandler" ],
               [ "TestContexts", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestContexts.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestContexts" ],
-              [ "TestDefinedContexts", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestDefinedContexts.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestDefinedContexts" ]
+              [ "TestDefinedContexts", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestDefinedContexts.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestDefinedContexts" ],
+              [ "TestHandler", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestHandler.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__contexts_1_1TestHandler" ]
             ] ],
             [ "test_issues", null, [
               [ "TestIssues", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__issues_1_1TestIssues.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__issues_1_1TestIssues" ],
@@ -885,29 +914,29 @@ var annotated_dup =
               [ "TestMeasurement", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__measurement_1_1TestMeasurement.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__measurement_1_1TestMeasurement" ]
             ] ],
             [ "test_numpy", null, [
+              [ "TestBitTwiddlingUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestBitTwiddlingUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestBitTwiddlingUfuncs" ],
               [ "TestNumpyMethods", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestNumpyMethods.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestNumpyMethods" ],
-              [ "TestNumpyNotSupported", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestNumpyNotSupported.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestNumpyNotSupported" ],
-              [ "TestBitTwiddlingUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestBitTwiddlingUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestBitTwiddlingUfuncs" ]
+              [ "TestNumpyNotSupported", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestNumpyNotSupported.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__numpy_1_1TestNumpyNotSupported" ]
             ] ],
             [ "test_pitheorem", null, [
               [ "TestPiTheorem", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__pitheorem_1_1TestPiTheorem.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__pitheorem_1_1TestPiTheorem" ]
             ] ],
             [ "test_quantity", null, [
-              [ "TestQuantity", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestQuantity.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestQuantity" ],
-              [ "TestDimensions", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestDimensions.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestDimensions" ]
+              [ "TestDimensions", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestDimensions.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestDimensions" ],
+              [ "TestQuantity", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestQuantity.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__quantity_1_1TestQuantity" ]
             ] ],
             [ "test_umath", null, [
-              [ "TestUFuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs" ],
+              [ "TestComparisonUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestComparisonUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestComparisonUfuncs" ],
+              [ "TestFloatingUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestFloatingUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestFloatingUfuncs" ],
               [ "TestMathUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestMathUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestMathUfuncs" ],
               [ "TestTrigUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestTrigUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestTrigUfuncs" ],
-              [ "TestComparisonUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestComparisonUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestComparisonUfuncs" ],
-              [ "TestFloatingUfuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestFloatingUfuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestFloatingUfuncs" ]
+              [ "TestUFuncs", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__umath_1_1TestUFuncs" ]
             ] ],
             [ "test_unit", null, [
               [ "TestConverter", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestConverter.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestConverter" ],
               [ "TestDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestDefinition.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestDefinition" ],
-              [ "TestUnitsContainer", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestUnitsContainer.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestUnitsContainer" ],
-              [ "TestRegistry", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestRegistry.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestRegistry" ]
+              [ "TestRegistry", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestRegistry.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestRegistry" ],
+              [ "TestUnitsContainer", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestUnitsContainer.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__unit_1_1TestUnitsContainer" ]
             ] ],
             [ "test_util", null, [
               [ "TestStringProcessor", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__util_1_1TestStringProcessor.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1test__util_1_1TestStringProcessor" ]
@@ -916,17 +945,17 @@ var annotated_dup =
             [ "TestCase", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1TestCase.html", "classSUAVE_1_1Plugins_1_1pint_1_1testsuite_1_1TestCase" ]
           ] ],
           [ "unit", null, [
-            [ "UndefinedUnitError", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UndefinedUnitError.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UndefinedUnitError" ],
-            [ "DimensionalityError", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError" ],
             [ "Converter", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1Converter.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1Converter" ],
-            [ "ScaleConverter", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1ScaleConverter.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1ScaleConverter" ],
-            [ "OffsetConverter", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1OffsetConverter.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1OffsetConverter" ],
             [ "Definition", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1Definition.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1Definition" ],
-            [ "PrefixDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1PrefixDefinition.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1PrefixDefinition" ],
-            [ "UnitDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitDefinition.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitDefinition" ],
+            [ "DimensionalityError", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionalityError" ],
             [ "DimensionDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionDefinition.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1DimensionDefinition" ],
-            [ "UnitsContainer", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitsContainer.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitsContainer" ],
-            [ "UnitRegistry", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry" ]
+            [ "OffsetConverter", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1OffsetConverter.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1OffsetConverter" ],
+            [ "PrefixDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1PrefixDefinition.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1PrefixDefinition" ],
+            [ "ScaleConverter", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1ScaleConverter.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1ScaleConverter" ],
+            [ "UndefinedUnitError", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UndefinedUnitError.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UndefinedUnitError" ],
+            [ "UnitDefinition", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitDefinition.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitDefinition" ],
+            [ "UnitRegistry", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry" ],
+            [ "UnitsContainer", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitsContainer.html", "classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitsContainer" ]
           ] ],
           [ "util", null, [
             [ "ndarray", "classSUAVE_1_1Plugins_1_1pint_1_1util_1_1ndarray.html", null ],
@@ -940,10 +969,10 @@ var annotated_dup =
         ] ]
       ] ],
       [ "Vehicle", null, [
-        [ "Vehicle", "classSUAVE_1_1Vehicle_1_1Vehicle.html", "classSUAVE_1_1Vehicle_1_1Vehicle" ],
-        [ "Vehicle_Mass_Properties", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties" ],
         [ "Costs", "classSUAVE_1_1Vehicle_1_1Costs.html", "classSUAVE_1_1Vehicle_1_1Costs" ],
-        [ "Vehicle_Mass_Container", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Container.html", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Container" ]
+        [ "Vehicle", "classSUAVE_1_1Vehicle_1_1Vehicle.html", "classSUAVE_1_1Vehicle_1_1Vehicle" ],
+        [ "Vehicle_Mass_Container", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Container.html", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Container" ],
+        [ "Vehicle_Mass_Properties", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties.html", "classSUAVE_1_1Vehicle_1_1Vehicle__Mass__Properties" ]
       ] ]
     ] ]
 ];

@@ -3,7 +3,6 @@ var group__Analyses_Mission_Segments_Transition =
     [ "Constant_Acceleration_Constant_Angle_Linear_Climb", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html", [
       [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html#a401f5d5529d22d5bb1030815a8e23535", null ],
       [ "acceleration", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html#ace5a252f6ba01615cbe914e35e4f6e18", null ],
-      [ "air_speed_start_vector", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html#af3ff76b4240f0f638211134a9fa698b2", null ],
       [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html#a30f50c155d138d070c7adb42369f767f", null ],
       [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html#a793d6afc8124dc9108e5803c99d08810", null ],
       [ "climb_angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html#ac3049b06489d272c11719565230ef478", null ],

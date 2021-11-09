@@ -1,6 +1,7 @@
 var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar =
 [
     [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a1b845035b4dfa9e54c0487e6d9c1c55b", null ],
+    [ "add_unknowns_and_residuals_to_segment", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ada03f4553fc9422b599efdfdbd8e1bbc", null ],
     [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a03837081f89d8b2f3e50455f44411e41", null ],
     [ "residuals", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#aab86666a7580790e990512521b58e5da", null ],
     [ "unpack_unknowns", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ad248090876d7a5f6246379b8c8b34a26", null ],
@@ -9,15 +10,14 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar =
     [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a9e7c3492cc016f11fd98c3a47317961f", null ],
     [ "esc", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a33cfb357ddf776d510b8501cdadfc777", null ],
     [ "generative_design_minimum", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a6bceea89276535bd146105703912d348", null ],
-    [ "motor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#aaedcd0dd93c8c610bdfb6760269bf3a1", null ],
-    [ "nacelle_diameter", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a072998c85626b49f300270c8e4b5a8c9", null ],
+    [ "identical_propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a67a5a544cf198ae0ab2cebdeeb2e184e", null ],
+    [ "motors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ac87d85cf853eefe27f353fc14f2ef2bf", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#af9d3157b48236320e321b822a10427fb", null ],
     [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ab2fe0fa4d19dc750a430fbd2d2c7fbd5", null ],
-    [ "propeller", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a9bfbd8f231fa46f7f693a7340556fb1a", null ],
+    [ "propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a0bf2d8b2fe4123b40999de39a4b58357", null ],
     [ "solar_flux", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ad9c27f16e7457864328b37d4111abda0", null ],
     [ "solar_logic", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a70294c7d2ddd2f3b719e7777e9845d6b", null ],
     [ "solar_panel", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#af1a064708a49ca2d7bb64912724e69b2", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#a28f5aacd5ba78c3de21f5af4f4808f9b", null ],
-    [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#aa67857ba62228b6135b4d8747b028bf9", null ],
     [ "use_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html#ac34ffb60cd093e18d6309e402937af34", null ]
 ];

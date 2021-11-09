@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['networks_1807',['Networks',['../group__Components-Energy-Networks.html',1,'']]],
-  ['noise_1808',['Noise',['../group__Analyses-Noise.html',1,'(Global Namespace)'],['../group__Methods-Noise.html',1,'(Global Namespace)']]],
-  ['noise_20tools_1809',['Noise Tools',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html',1,'']]]
+  ['openvsp',['OpenVSP',['../group__Input__Output-OpenVSP.html',1,'']]],
+  ['openvsp_5fwave_5fdrag',['OpenVSP_Wave_Drag',['../group__Methods-Aerodynamics-OpenVSP__Wave__Drag.html',1,'']]],
+  ['operating_20costs',['Operating Costs',['../group__Methods-Costs-Operating__Costs.html',1,'']]],
+  ['optimization',['Optimization',['../group__Optimization.html',1,'']]]
 ];

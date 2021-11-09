@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['uav_1847',['UAV',['../group__Methods-Weights-Correlations-UAV.html',1,'']]],
-  ['utilities_1848',['Utilities',['../group__Methods-Utilities.html',1,'']]]
+  ['vary_5frange_5fcruise',['Vary_Range_Cruise',['../group__Analyses-Mission-Variable__Range__Cruise.html',1,'']]],
+  ['variable_5fmass',['Variable_Mass',['../group__Components-Energy-Storages-Batteries-Variable__Mass.html',1,'']]],
+  ['variable_5fmass',['Variable_Mass',['../group__Methods-Power-Battery-Variable__Mass.html',1,'']]],
+  ['vehicle',['Vehicle',['../group__Vehicle.html',1,'']]]
 ];

@@ -12,7 +12,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turboje
     [ "generative_design_characteristics", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html#acfb8de3adcd832869962fd4ff93e9add", null ],
     [ "generative_design_max_per_vehicle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html#a163769caf5448859d08c213ce3fa89c2", null ],
     [ "generative_design_minimum", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html#acc973f5639f119d38b0c87f88fe47691", null ],
-    [ "nacelle_diameter", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html#a340e8cd76be09d536e71f40ef301a806", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html#aae19aad195489dfe7852a1442a8cf3fa", null ],
     [ "OpenVSP_flow_through", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html#af43fe7111125073b050e52bd534c93ef", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html#ad551ef45a70d71e80c6030f0af8470a3", null ]

@@ -12,7 +12,7 @@ var group__Methods_Aerodynamics_Supersonic__Zero_Drag =
     [ "lift_wave_drag", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga7574bcf470833883b3eb1698af863358", null ],
     [ "miscellaneous_drag_aircraft", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga857987b93648989ca62534896beef377", null ],
     [ "parasite_drag_fuselage", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga6bc7488251858a1e1526f90cb0ff59cc", null ],
-    [ "parasite_drag_propulsor", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga7d6bc8c6cc09e29a2ad852bea76a7318", null ],
+    [ "parasite_drag_nacelle", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga7f302a3327b02d452296d02fd4fba8bb", null ],
     [ "wave_drag_lift", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga725df02201031e5d83aa0f62ad26acfb", null ],
     [ "wave_drag_volume_raymer", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga970bdfcb873ebeef93ccb28b579da4a3", null ],
     [ "wave_drag_volume_sears_haack", "group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga100f5e320631d6231a7ad524621f4799", null ]
