@@ -69,26 +69,26 @@
 
 								<article>
 									<header>
-										<h2>SUAVE 2.4.0</h2>
-										<p>The Latest Evolution in Aerospace Design</p>
+										<h2>SUAVE 2.5.0</h2>
+										<p>The Latest in Aerospace Design</p>
 									</header>
 
-									<p>This release has major changes to both the aerodynamics, acoustics, and propeller models in SUAVE. A longer list of improvements can be found below:</p>
+									<p>This release has numerous changes. Unfortunately, some interfaces have been altered to support all these changes. We tried to make these interface alterations as user friendly and intuitive as possible. The next major release will be a 3.0 with significant changes.</p>
 									
 									
 									<ul>
-									<li>New VORLAX-based supersonic VLM</li>
-									<li>Aircraft Noise Analysis</li>	
-									<li>General VTOL weights buildup</li> 
-									<li>Electric performance diagrams</li> 
-									<li>Non-uniform inflow for BET analysis </li> 
-									<li>Updated propeller-wing interaction </li> 
-									<li>Direct use of polar data for propellers</li> 
-									<li>Interface to PyCycle</li> 	
-									<li>Airfoil Interpolator</li>
-									<li>New function for supersonic wave drag</li>
-									<li>Update OpenVSP interface</li>
-									<li>Bug Fixes, code clean up, and some speedups!</li> 
+									<li>VLM: Control surfaces, sideslip, rotation rate effects, and arbitrary discretization.</li>
+									<li>Nacelles are now independent geometric objects from networks</li>	
+									<li>Energy networks: fewer networks, propellers and motors can be appended arbitrarily, networks are no longer referred as propulsors, and integrating a mission with a network is much easier.</li> 
+									<li>Battery model rewrite</li> 
+									<li>New airfoil panel method </li> 
+									<li>Momentum wake effects from rotors </li> 
+									<li>Updates for both import and export of vehicles to OpenVSP (propellers/rotors are now seamless)</li> 
+									<li>New Noise models</li> 	
+									<li>Stability derivatives from VLM including with respect to control surface deflections</li>
+									<li>VTK file outputs for rotor wake simulations</li>
+									<li>New plotting functions</li>
+									<li>Under the hood fixes: hover corrections, FLOPS, CG, fineness ratio, propellers/rotors are merged, removed duplicated iterations, addressed many known issues</li> 
 									</ul>
 									
 									<br>
