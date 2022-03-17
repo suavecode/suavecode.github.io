@@ -3,7 +3,7 @@ var classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line =
     [ "__defaults__", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#abc3ceb23a334289decd8250a64881afa", null ],
     [ "build_surrogate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#a0e018378b71e78bff538a63240cdfbf5", null ],
     [ "evaluate", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#aa30085741f0c13bd0dbbd791143ce8da", null ],
-    [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#ae7de41a55617fb0c1f03de4fc7cbfd0f", null ],
+    [ "initialize", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#a2fcec3d2ae76562440b15041e0ddf04f", null ],
     [ "sample_training", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#a9d59f0ce54639d4ed61e8b57b46cfd0f", null ],
     [ "geometry", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#ae80fbcc2cd5c3e91f1df6b3a78370a94", null ],
     [ "settings", "classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#a0977b1b2a920ad1a843555615f9aa3e8", null ],

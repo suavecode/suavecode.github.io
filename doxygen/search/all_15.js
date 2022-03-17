@@ -17,7 +17,7 @@ var searchData=
   ['voltage',['voltage',['../classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Solar__Logic_1_1Solar__Logic.html#ab9170ae4fd2da9b58a8dabbffd81044a',1,'SUAVE::Components::Energy::Distributors::Solar_Logic::Solar_Logic']]],
   ['voltage_5fcurrent',['voltage_current',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a8c1e0e7b0011c6a14ac0897820fc4cb8',1,'SUAVE::Components::Energy::Converters::Motor::Motor']]],
   ['voltageout',['voltageout',['../classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html#a59e19c06939c4420d52a3f645e9b0c20',1,'SUAVE::Components::Energy::Distributors::Electronic_Speed_Controller::Electronic_Speed_Controller']]],
-  ['vortex',['vortex',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga5ac74a982bd0ebe7f53b69c4e43e8fed',1,'SUAVE::Methods::Aerodynamics::Common::Fidelity_Zero::Lift::compute_wake_induced_velocity']]],
+  ['vortex',['vortex',['../group__Methods-Propulsion-Rotor__Wake-Fidelity__One.html#ga17c3da1cdcb1727905ecd724a8b899bf',1,'SUAVE::Methods::Propulsion::Rotor_Wake::Fidelity_One::compute_wake_induced_velocity']]],
   ['vortex_5flattice',['Vortex_Lattice',['../classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html',1,'SUAVE::Analyses::Aerodynamics::Vortex_Lattice']]],
-  ['vsp_5fread',['vsp_read',['../group__Input__Output-OpenVSP.html#ga28c2088973f19644786b2cb657920dec',1,'SUAVE::Input_Output::OpenVSP::vsp_read']]]
+  ['vsp_5fread',['vsp_read',['../group__Input__Output-OpenVSP.html#gaa6ba161ce6d4c375110a3680ca512eb2',1,'SUAVE::Input_Output::OpenVSP::vsp_read']]]
 ];

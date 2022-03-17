@@ -4,5 +4,6 @@ var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Con
     [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a7e6109ee21130902524024e44bfe46b7", null ],
     [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a8a3c287e13cc48b3bfd1a57f987902fc", null ],
     [ "calibrated_air_speed", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a331a4f64462f27c2b6be5c2a4adafe57", null ],
-    [ "climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a27b556c513b45a755d63e7dc2fc575ae", null ]
+    [ "climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#a27b556c513b45a755d63e7dc2fc575ae", null ],
+    [ "true_course", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__CAS__Constant__Rate_1_1Constant__CAS__Constant__Rate.html#aece316b151733f0ad318fa76ffa44203", null ]
 ];

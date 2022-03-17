@@ -1,14 +1,22 @@
 var searchData=
 [
-  ['objective',['objective',['../classSUAVE_1_1Optimization_1_1Nexus_1_1Nexus.html#a1eda3512dfde03334eff1fff6c8d5784',1,'SUAVE.Optimization.Nexus.Nexus.objective()'],['../group__Methods-Missions-Segments-Climb.html#gabee9e9494aba31c073479f3959e47804',1,'SUAVE.Methods.Missions.Segments.Climb.Optimized.objective()']]],
-  ['oblique_5fshock_5frelations',['oblique_shock_relations',['../group__Methods-Aerodynamics-Common-Gas__Dynamics.html#gaba4cd75ec86510b8e824a5ced3cd0a89',1,'SUAVE::Methods::Aerodynamics::Common::Gas_Dynamics::Oblique_Shock']]],
-  ['omega',['omega',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#ad9ab86d7bab611ffdc596a6c65dc86c2',1,'SUAVE.Components.Energy.Converters.Motor.Motor.omega()'],['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html#a0e3d5a3b41ca71612ed130bfc64fc132',1,'SUAVE.Components.Energy.Converters.Motor_Lo_Fid.Motor_Lo_Fid.omega()']]],
-  ['ones_5frow',['ones_row',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html#a52e41e484aba6222e3b6bf431812280a',1,'SUAVE::Analyses::Mission::Segments::Conditions::Conditions::Conditions']]],
-  ['ones_5frow_5fm1',['ones_row_m1',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html#ab683000137a722593d20fd2453d2377a',1,'SUAVE::Analyses::Mission::Segments::Conditions::Conditions::Conditions']]],
-  ['ones_5frow_5fm2',['ones_row_m2',['../classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Conditions_1_1Conditions_1_1Conditions.html#a630662cbe9f70d6bb5a72a7561d8cb8c',1,'SUAVE::Analyses::Mission::Segments::Conditions::Conditions::Conditions']]],
-  ['operating_5fitems_5fflops',['operating_items_FLOPS',['../group__Methods-Weights-Correlations-FLOPS.html#ga5971789103f9526da2292712e9a96041',1,'SUAVE::Methods::Weights::Correlations::FLOPS::operating_items']]],
-  ['optimize',['optimize',['../classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html#a41444575f97d7ce4a60ab05e25d4c39f',1,'SUAVE::Optimization::Package_Setups::TRMM::Trust_Region_Optimization::Trust_Region_Optimization']]],
-  ['optimize_5fkv',['optimize_kv',['../group__Methods-Propulsion.html#gab4466f11794955e948b98afa5d36ef2e',1,'SUAVE::Methods::Propulsion::electric_motor_sizing']]],
-  ['orientation_5fproduct',['orientation_product',['../group__Methods-Geometry-Three__Dimensional.html#ga7a88f551f81b035a4d09bfcccbe4c71c',1,'SUAVE::Methods::Geometry::Three_Dimensional::orientation_product']]],
-  ['orientation_5ftranspose',['orientation_transpose',['../group__Methods-Geometry-Three__Dimensional.html#ga5b7b94ba73128099aa30725f46b4084d',1,'SUAVE::Methods::Geometry::Three_Dimensional::orientation_transpose']]]
+  ['nac_5fvel_5fto_5fbody',['nac_vel_to_body',['../classSUAVE_1_1Components_1_1Nacelles_1_1Nacelle_1_1Nacelle.html#a5ffbb24f270eb3aa06a5db2ac4f4e260',1,'SUAVE::Components::Nacelles::Nacelle::Nacelle']]],
+  ['nacelle_5fflops',['nacelle_FLOPS',['../group__Methods-Weights-Correlations-FLOPS.html#ga9997a6596142a993040d6c075d69cf2e',1,'SUAVE::Methods::Weights::Correlations::FLOPS::prop_system']]],
+  ['nacelle_5fraymer',['nacelle_Raymer',['../group__Methods-Weights-Correlations-Raymer.html#gaddfbc8ef52245b3332f4459387c889d6',1,'SUAVE::Methods::Weights::Correlations::Raymer::prop_system']]],
+  ['nasa_5fmotor',['nasa_motor',['../group__Methods-Weights-Correlations-Propulsion.html#gacfa3e8be417d0f1bd08a7c9e52c8aa60',1,'SUAVE::Methods::Weights::Correlations::Propulsion::nasa_motor']]],
+  ['new_5fchild',['new_child',['../classSUAVE_1_1Plugins_1_1pint_1_1compat_1_1ChainMap.html#a7eeedde1c0cba8c8db7f7f854ee11666',1,'SUAVE::Plugins::pint::compat::ChainMap']]],
+  ['new_5felement',['new_element',['../classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html#ab2f9787baaa120ff1560f526463d17f2',1,'SUAVE::Input_Output::XML::Data::Data']]],
+  ['new_5ffm_5fnode',['new_fm_node',['../group__Input__Output-FreeMind.html#gaf43ad7381411b769d5f77845db310576',1,'SUAVE::Input_Output::FreeMind::save']]],
+  ['new_5ftensor',['new_tensor',['../group__Methods-Geometry-Three__Dimensional.html#ga16788464c8acdf43da2e3f00c0e3b00c',1,'SUAVE::Methods::Geometry::Three_Dimensional::angles_to_dcms']]],
+  ['noise_5fairframe_5ffink',['noise_airframe_Fink',['../group__Methods-Noise-Fidelity__One-Airframe.html#ga702a77b2ac10121455091e79b3707128',1,'SUAVE::Methods::Noise::Fidelity_One::Airframe::noise_airframe_Fink']]],
+  ['noise_5fcertification_5flimits',['noise_certification_limits',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html#ga0315605f7f0309472b10d24acb13821f',1,'SUAVE::Methods::Noise::Fidelity_One::Noise_Tools::noise_certification_limits']]],
+  ['noise_5fclean_5fwing',['noise_clean_wing',['../group__Methods-Noise-Fidelity__One-Airframe.html#gae4e40c87edaeed794f229ff07eb102c7',1,'SUAVE::Methods::Noise::Fidelity_One::Airframe::noise_clean_wing']]],
+  ['noise_5fgeometric',['noise_geometric',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html#ga70dc77566e5b6ac7726497db66a92c77',1,'SUAVE::Methods::Noise::Fidelity_One::Noise_Tools::noise_geometric']]],
+  ['noise_5flanding_5fgear',['noise_landing_gear',['../group__Methods-Noise-Fidelity__One-Airframe.html#ga96efb073f88b68a0838ed850b492af3e',1,'SUAVE::Methods::Noise::Fidelity_One::Airframe::noise_landing_gear']]],
+  ['noise_5fleading_5fedge_5fslat',['noise_leading_edge_slat',['../group__Methods-Noise-Fidelity__One-Airframe.html#gacc9075bff25bfe9ef8dd91f7da32191e',1,'SUAVE::Methods::Noise::Fidelity_One::Airframe::noise_leading_edge_slat']]],
+  ['noise_5fsae',['noise_SAE',['../group__Methods-Noise-Fidelity__One-Engine.html#gaf1c733612790d7ce60f2dfbb140cbd4a',1,'SUAVE::Methods::Noise::Fidelity_One::Engine::noise_SAE']]],
+  ['noise_5fsource_5flocation',['noise_source_location',['../group__Methods-Noise-Fidelity__One-Engine.html#ga80902a73b33d0cded267184f4a46fdb6',1,'SUAVE::Methods::Noise::Fidelity_One::Engine::noise_source_location']]],
+  ['noise_5ftone_5fcorrection',['noise_tone_correction',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html#ga2e7b219f0aca430b099643652c0b2e6a',1,'SUAVE::Methods::Noise::Fidelity_One::Noise_Tools::noise_tone_correction']]],
+  ['noise_5ftrailing_5fedge_5fflap',['noise_trailing_edge_flap',['../group__Methods-Noise-Fidelity__One-Airframe.html#ga552c6d0103dab2cf012662a7649ae9e9',1,'SUAVE::Methods::Noise::Fidelity_One::Airframe::noise_trailing_edge_flap']]],
+  ['normal_5fshock',['normal_shock',['../group__Methods-Propulsion.html#gab5feaa0bf6416dfd4852ca8833236690',1,'SUAVE::Methods::Propulsion::nozzle_calculations']]]
 ];

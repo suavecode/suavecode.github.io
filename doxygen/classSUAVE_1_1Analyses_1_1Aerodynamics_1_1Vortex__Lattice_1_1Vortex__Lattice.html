@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -121,8 +121,8 @@ Inheritance diagram for SUAVE.Analyses.Aerodynamics.Vortex_Lattice.Vortex_Lattic
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a626460308767892310bb8ec904f3d3b9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a626460308767892310bb8ec904f3d3b9">__defaults__</a> (self)</td></tr>
 <tr class="separator:a626460308767892310bb8ec904f3d3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a411dff03e344e756c581d86c530d095b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a411dff03e344e756c581d86c530d095b">initialize</a> (self, use_surrogate, n_sw, n_cw, propeller_wake_model, use_bemt_wake_model, ito, wdt, nwts, mf, mn)</td></tr>
-<tr class="separator:a411dff03e344e756c581d86c530d095b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8002c8b452ee81424d933d6b1a86d9b3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a8002c8b452ee81424d933d6b1a86d9b3">initialize</a> (self, use_surrogate, n_sw, n_cw, propeller_wake_model, mf, mn, dcs)</td></tr>
+<tr class="separator:a8002c8b452ee81424d933d6b1a86d9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d5f494416aa8357db4805bdbe843229"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a9d5f494416aa8357db4805bdbe843229">evaluate_surrogate</a> (self, state, settings, geometry)</td></tr>
 <tr class="separator:a9d5f494416aa8357db4805bdbe843229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3348cade0e95c87c6079e600c4d49998"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Vortex__Lattice_1_1Vortex__Lattice.html#a3348cade0e95c87c6079e600c4d49998">evaluate_no_surrogate</a> (self, state, settings, geometry)</td></tr>
@@ -428,8 +428,8 @@ self.surrogates.
 </pre> 
 </div>
 </div>
-<a id="a411dff03e344e756c581d86c530d095b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a411dff03e344e756c581d86c530d095b">&#9670;&nbsp;</a></span>initialize()</h2>
+<a id="a8002c8b452ee81424d933d6b1a86d9b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8002c8b452ee81424d933d6b1a86d9b3">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,37 +468,19 @@ self.surrogates.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>use_bemt_wake_model</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ito</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>wdt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>nwts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>mf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mn</em>&#160;</td>
+          <td class="paramname"><em>mn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>dcs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -520,9 +502,6 @@ use_surrogate                                       [bool]
 n_sw                   number of spanwise vortices  [int]
 n_cw                   number of chordwise vortices [int]
 propeller_wake_model                                [bool] 
-ito                    initial timestep offset      [s]            
-wdt                    wake development time        [s]
-nwts                   number of wake timesteps     [int]
 
 Outputs:
 None

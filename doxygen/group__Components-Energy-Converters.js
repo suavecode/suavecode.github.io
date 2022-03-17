@@ -119,6 +119,19 @@ var group__Components_Energy_Converters =
       [ "speed_constant", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#adea69680702442a7a3d8489722c208d6", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html#a6e2d5041adfcd056e5589e90a2baa3d5", null ]
     ] ],
+    [ "Motor_HTS_Rotor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a8c1d226e62c5353683229f63512a32c2", null ],
+      [ "power", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#ab274712a99a4514602a43eb904f2f529", null ],
+      [ "current", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a1f22cd0a1883acbea06eed4e086519a7", null ],
+      [ "diameter", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a7058be3207193927b1004b44888582f3", null ],
+      [ "length", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#abc7b8c0166281be0d9a3b3bfe819d92a", null ],
+      [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#ab4637a093f22d0c088c7a7149b65d4a2", null ],
+      [ "R_value", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a17bc30f101708ae01d93b7223efff63c", null ],
+      [ "resistance", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a7c81f76881c5c64f439ae781800a75c2", null ],
+      [ "skin_temp", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a9abcff850151e2d428d76656f07802e2", null ],
+      [ "surface_area", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a619b6c2d47b287a04041bfd6ec95b108", null ],
+      [ "temperature", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html#a355ae1a43d8a38ce23dd2e0f0ffed461", null ]
+    ] ],
     [ "Motor_Lo_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html#a1b9bb23be0478adab9351cf9c715f123", null ],
       [ "current", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html#a55ff976700d1e5f089b06bb788c7cbd1", null ],
@@ -164,14 +177,13 @@ var group__Components_Energy_Converters =
       [ "body_to_prop_vel", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ac163bb5e35e09957e6b2087755472988", null ],
       [ "prop_vel_to_body", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ad3c38eab14def6849ff00209ee087e01", null ],
       [ "spin", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#acff541e7c6cf5860866bb4ecf785657b", null ],
-      [ "spin_HFW", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ae5144a37bda2f1ca2008fdc9245d53cb", null ],
+      [ "vec_to_prop_body", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a9bb145a01aee6777b39d161c1219de76", null ],
       [ "vec_to_vel", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab888f8c8473aded29f6768ac6f2ca39c", null ],
       [ "airfoil_geometry", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ad3e7fd29793aebf2e0030ca39191da54", null ],
       [ "airfoil_polar_stations", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ace1d4a9042bd1bb3abad66dbca318b64", null ],
       [ "airfoil_polars", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a99c9544c74ccb880ef7889c186a02942", null ],
       [ "axial_velocities_2d", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a0578a83ff843f3101ce93a1cda5926e8", null ],
       [ "azimuthal_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a53cd0718cff8304123ae6e9aaddf4b2f", null ],
-      [ "azimuthal_offset_angle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a8ca06d6fc5b034bf52bbb268b19a2980", null ],
       [ "blade_solidity", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a2a3d51e1b992fc03ee93b556068b6bdf", null ],
       [ "chord_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab54405a6aec7eded875833c01ef3defc", null ],
       [ "design_power", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a2ffb97db8a087618a72a74e840ae15db", null ],
@@ -179,13 +191,9 @@ var group__Components_Energy_Converters =
       [ "ducted", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a46afb4730adba1334f988a601d975cea", null ],
       [ "hub_radius", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#af854269995b7d5a41d2d1e3a433342da", null ],
       [ "induced_power_factor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#afd0e03d06cf0260cdbcd8ff733d9b36b", null ],
-      [ "mid_chord_alignment", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#aa7c100379687848ed0d25d3bad55734a", null ],
       [ "nonuniform_freestream", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ae7d80936fb7e2e7f7bc91f0be7a7ac69", null ],
       [ "number_azimuthal_stations", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a505d07e53ac3fa2d774ddea754c7bf7e", null ],
       [ "number_of_blades", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a394f69d9588f6e7701bae9c72d9d6e4e", null ],
-      [ "number_points_around_airfoil", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a7f76dbec17115cb4f7b131aa74180259", null ],
-      [ "number_rotor_rotations", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a7b7d99dde2c9e0e896bdb22d45a35179", null ],
-      [ "number_steps_per_rotation", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a315c162f0ee05015e42a112192816c55", null ],
       [ "orientation_euler_angles", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a360193846c73c22578e8c23689e65560", null ],
       [ "outputs", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ae5b03937fd1a0d5de70e65d3954b0da1", null ],
       [ "profile_drag_coefficient", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab0ef9bdfd91458a665946ac271792c41", null ],
@@ -201,9 +209,8 @@ var group__Components_Energy_Converters =
       [ "twist_distribution", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a95d4b9e108a813756c3a39036139d351", null ],
       [ "use_2d_analysis", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#ab74e0a390f3a2b3804affe0ad14c1466", null ],
       [ "variable_pitch", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a945d8572feec80accf27c653995b7b13", null ],
-      [ "wake_method", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a06d5e12e24d2e388e64825cccf543d47", null ],
-      [ "wake_settings", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a103189ff2bf59bc4acb567a7e00cbd76", null ],
-      [ "Wake_VD", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a87213cc6c0ac4d509711aca901544836", null ]
+      [ "vtk_airfoil_points", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#a73c12b2d81f90c9e72594192534691e4", null ],
+      [ "Wake", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Rotor_1_1Rotor.html#aee048062383d50f0744801ea8a8ced6f", null ]
     ] ],
     [ "Shaft_Power_Off_Take", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Shaft__Power__Off__Take_1_1Shaft__Power__Off__Take.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Shaft__Power__Off__Take_1_1Shaft__Power__Off__Take.html#a8c2af7487923df0d19f2f30c048f9297", null ],
@@ -236,5 +243,28 @@ var group__Components_Energy_Converters =
       [ "mechanical_efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html#a90ad790cc69e261b61cbcb157bd49e97", null ],
       [ "polytropic_efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html#a53934300dc270755531c70dd55414f25", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html#ae88373b058988671c08ab795093a403b", null ]
+    ] ],
+    [ "Turboelectric", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#aa7d48c0f2549de382dbf1190f659c9fc", null ],
+      [ "energy_calc", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a3dc70dad9e189aeb00d426753c349bd9", null ],
+      [ "discharge_model", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a35f2e81e970b0272824f6756f861bb64", null ],
+      [ "efficiency", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#aa8371a74d04ffc4a172a13baee11f547", null ],
+      [ "mass_density", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#aae97320c57d787fe924fdc5f66c882b2", null ],
+      [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a6c66152961c666557e748174b19596c4", null ],
+      [ "oxidizer", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a0984077678c3b036b2cb0bfa1e7e3a5d", null ],
+      [ "propellant", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a85a16a218033c86facab95ab463de288", null ],
+      [ "rated_power", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a48c3c6eb918e2629228f884018729473", null ],
+      [ "specific_power", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a8049a87803a6e510ec1309a72c0ec954", null ],
+      [ "volume", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html#a8b760c3cd83078ea1c004553acf6fe23", null ]
+    ] ],
+    [ "Cryogenic_Heat_Exchanger", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#ad8e6eb394110cac1a8c5fb6d487fe876", null ],
+      [ "energy_calc", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#aa2d2569d9695b40f072195ff7699aecb", null ],
+      [ "cryogen", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#ae0b9ae828a7012fb8d0b2951b1e8f624", null ],
+      [ "cryogen_inlet_temperature", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#a3b281b11b25b930ec097e7f4ae8acd83", null ],
+      [ "cryogen_is_fuel", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#a501f4f90b51e8b39160c438cf6425bad", null ],
+      [ "cryogen_outlet_temperature", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#a301aa7079efd4cdf85944e3f99774174", null ],
+      [ "cryogen_pressure", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#a5ccc502e6582ba60dc2e261d6d49cd6e", null ],
+      [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html#a85d743cb7df00c40f0d44c9abc9a5be6", null ]
     ] ]
 ];

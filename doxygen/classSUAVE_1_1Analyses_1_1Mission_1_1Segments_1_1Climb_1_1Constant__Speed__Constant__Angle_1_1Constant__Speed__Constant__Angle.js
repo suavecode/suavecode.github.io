@@ -4,5 +4,6 @@ var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__C
     [ "air_speed", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__Constant__Angle_1_1Constant__Speed__Constant__Angle.html#a074bc5776c3c78d43d5abb0a074a0156", null ],
     [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__Constant__Angle_1_1Constant__Speed__Constant__Angle.html#a5900968ee69b00b5f8e6b98f2da57e41", null ],
     [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__Constant__Angle_1_1Constant__Speed__Constant__Angle.html#acd39a3fecffc510bd6a15027cf48bedf", null ],
-    [ "climb_angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__Constant__Angle_1_1Constant__Speed__Constant__Angle.html#a3562b40f80a73b2a9a99f92ccb1168b4", null ]
+    [ "climb_angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__Constant__Angle_1_1Constant__Speed__Constant__Angle.html#a3562b40f80a73b2a9a99f92ccb1168b4", null ],
+    [ "true_course", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Speed__Constant__Angle_1_1Constant__Speed__Constant__Angle.html#a136b314afaddf561535f3804a9335a07", null ]
 ];

@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('group__Methods-Aerodynamics-Common-Gas
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Gas_Dymamics</div>  </div>
+<div class="title">Gas_Dymamics<div class="ingroups"><a class="el" href="group__Methods.html">Methods</a> &raquo; <a class="el" href="group__Methods-Aerodynamics.html">Aerodynamics</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -112,6 +112,8 @@ $(document).ready(function(){initNavTree('group__Methods-Aerodynamics-Common-Gas
 Functions</h2></td></tr>
 <tr class="memitem:gaba4cd75ec86510b8e824a5ced3cd0a89"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Gas__Dynamics.html#gaba4cd75ec86510b8e824a5ced3cd0a89">SUAVE.Methods.Aerodynamics.Common.Gas_Dynamics.Oblique_Shock.oblique_shock_relations</a> (M0, gamma, theta, beta)</td></tr>
 <tr class="separator:gaba4cd75ec86510b8e824a5ced3cd0a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf658ecdf28c8cffdcb868a717d2b23bd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-Common-Gas__Dynamics.html#gaf658ecdf28c8cffdcb868a717d2b23bd">SUAVE.Methods.Aerodynamics.Common.Gas_Dynamics.Oblique_Shock.theta_beta_mach</a> (M0, gamma, theta, n=0)</td></tr>
+<tr class="separator:gaf658ecdf28c8cffdcb868a717d2b23bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Gas Dynamics methods that are directly specified by analyses. </p>
@@ -180,6 +182,65 @@ Stagnation Pressure Ratio, Ptr       [-]
 Properties Used:
 N/A
 </pre> 
+</div>
+</div>
+<a id="gaf658ecdf28c8cffdcb868a717d2b23bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf658ecdf28c8cffdcb868a717d2b23bd">&#9670;&nbsp;</a></span>theta_beta_mach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Aerodynamics.Common.Gas_Dynamics.Oblique_Shock.theta_beta_mach </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>M0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>n</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Computes shock angle of an oblique shock
+
+    Assumptions:
+    None
+
+    Source:
+    Chapter 12 of:
+    https://web.stanford.edu/~cantwell/AA210A_Course_Material/AA210A_Course_Notes/
+
+    Inputs:
+    Mach, M0                             [-]
+    Isentropic Expansion Factor, gamma   [-]
+    Flow turn angle, theta               [rad]
+    Strong Shock (0 = weak), delta       [-]
+
+    Outputs:
+    Shock Angle, Beta                    [rad]
+    
+    Properties Used:
+    N/A</pre> 
 </div>
 </div>
 </div><!-- contents -->

@@ -30,6 +30,8 @@ var searchData=
   ['trust_5fregion',['Trust_Region',['../classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region_1_1Trust__Region.html',1,'SUAVE::Optimization::Package_Setups::TRMM::Trust_Region']]],
   ['trust_5fregion_5foptimization',['Trust_Region_Optimization',['../classSUAVE_1_1Optimization_1_1Package__Setups_1_1TRMM_1_1Trust__Region__Optimization_1_1Trust__Region__Optimization.html',1,'SUAVE::Optimization::Package_Setups::TRMM::Trust_Region_Optimization']]],
   ['turbine',['Turbine',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html',1,'SUAVE::Components::Energy::Converters::Turbine']]],
+  ['turboelectric',['Turboelectric',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html',1,'SUAVE::Components::Energy::Converters::Turboelectric']]],
+  ['turboelectric_5fhts_5fducted_5ffan',['Turboelectric_HTS_Ducted_Fan',['../classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html',1,'SUAVE::Components::Energy::Networks::Turboelectric_HTS_Ducted_Fan']]],
   ['turbofan',['Turbofan',['../classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html',1,'SUAVE::Components::Energy::Networks::Turbofan']]],
   ['turbojet_5fsuper',['Turbojet_Super',['../classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html',1,'SUAVE::Components::Energy::Networks::Turbojet_Super']]]
 ];

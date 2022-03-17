@@ -212,8 +212,7 @@ var hierarchy =
               [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Altitude_No_Propulsion.Set_Speed_Set_Altitude_No_Propulsion", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Altitude__No_660be05666a18eb7201c7425b4456ff1.html", null ],
               [ "SUAVE.Analyses.Mission.Segments.Single_Point.Set_Speed_Set_Throttle.Set_Speed_Set_Throttle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Single__Point_1_1Set__Speed__Set__Throttle_1_1Set__Speed__Set__Throttle.html", null ],
               [ "SUAVE.Analyses.Mission.Segments.Transition.Constant_Acceleration_Constant_Angle_Linear_Climb.Constant_Acceleration_Constant_Angle_Linear_Climb", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_2295952caac21c4a49a6ece0c9d2ce15.html", null ],
-              [ "SUAVE.Analyses.Mission.Segments.Transition.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html", null ],
-              [ "SUAVE.Analyses.Mission.Segments.Transition.Lift_Cruise_Optimized.Lift_Cruise_Optimized", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Lift__Cruise__Optimized_1_1Lift__Cruise__Optimized.html", null ]
+              [ "SUAVE.Analyses.Mission.Segments.Transition.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude.Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html", null ]
             ] ]
           ] ]
         ] ],
@@ -256,6 +255,9 @@ var hierarchy =
           [ "SUAVE.Attributes.Planets.Earth.Earth", "classSUAVE_1_1Attributes_1_1Planets_1_1Earth_1_1Earth.html", null ]
         ] ]
       ] ],
+      [ "SUAVE.Attributes.Cryogens.Cryogen.Cryogen", "classSUAVE_1_1Attributes_1_1Cryogens_1_1Cryogen_1_1Cryogen.html", [
+        [ "SUAVE.Attributes.Cryogens.Liquid_H2.Liquid_H2", "classSUAVE_1_1Attributes_1_1Cryogens_1_1Liquid__H2_1_1Liquid__H2.html", null ]
+      ] ],
       [ "SUAVE.Attributes.Gases.Gas.Gas", "classSUAVE_1_1Attributes_1_1Gases_1_1Gas_1_1Gas.html", [
         [ "SUAVE.Attributes.Gases.Air.Air", "classSUAVE_1_1Attributes_1_1Gases_1_1Air_1_1Air.html", null ],
         [ "SUAVE.Attributes.Gases.CO2.CO2", "classSUAVE_1_1Attributes_1_1Gases_1_1CO2_1_1CO2.html", null ],
@@ -279,6 +281,7 @@ var hierarchy =
         ] ],
         [ "SUAVE.Attributes.Solids.Bidirectional_Carbon_Fiber.Bidirectional_Carbon_Fiber", "classSUAVE_1_1Attributes_1_1Solids_1_1Bidirectional__Carbon__Fiber_1_1Bidirectional__Carbon__Fiber.html", null ],
         [ "SUAVE.Attributes.Solids.Carbon_Fiber_Honeycomb.Carbon_Fiber_Honeycomb", "classSUAVE_1_1Attributes_1_1Solids_1_1Carbon__Fiber__Honeycomb_1_1Carbon__Fiber__Honeycomb.html", null ],
+        [ "SUAVE.Attributes.Solids.Copper.Copper", "classSUAVE_1_1Attributes_1_1Solids_1_1Copper_1_1Copper.html", null ],
         [ "SUAVE.Attributes.Solids.Epoxy.Epoxy", "classSUAVE_1_1Attributes_1_1Solids_1_1Epoxy_1_1Epoxy.html", null ],
         [ "SUAVE.Attributes.Solids.Nickel.Nickel", "classSUAVE_1_1Attributes_1_1Solids_1_1Nickel_1_1Nickel.html", null ],
         [ "SUAVE.Attributes.Solids.Paint.Paint", "classSUAVE_1_1Attributes_1_1Solids_1_1Paint_1_1Paint.html", null ],
@@ -296,6 +299,9 @@ var hierarchy =
         ] ],
         [ "SUAVE.Components.Physical_Component.Physical_Component", "classSUAVE_1_1Components_1_1Physical__Component_1_1Physical__Component.html", [
           [ "SUAVE.Components.Energy.Energy_Component.Energy_Component", "classSUAVE_1_1Components_1_1Energy_1_1Energy__Component_1_1Energy__Component.html", [
+            [ "SUAVE.Analyses.Propulsion.Rotor_Wake_Fidelity_One.Rotor_Wake_Fidelity_One", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__One_1_1Rotor__Wake__Fidelity__One.html", null ],
+            [ "SUAVE.Analyses.Propulsion.Rotor_Wake_Fidelity_Two.Rotor_Wake_Fidelity_Two", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__Two_1_1Rotor__Wake__Fidelity__Two.html", null ],
+            [ "SUAVE.Analyses.Propulsion.Rotor_Wake_Fidelity_Zero.Rotor_Wake_Fidelity_Zero", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__Zero_1_1Rotor__Wake__Fidelity__Zero.html", null ],
             [ "SUAVE.Components.Energy.Charging.Charging.Charging", "classSUAVE_1_1Components_1_1Energy_1_1Charging_1_1Charging_1_1Charging.html", null ],
             [ "SUAVE.Components.Energy.Converters.Combustor.Combustor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Combustor_1_1Combustor.html", null ],
             [ "SUAVE.Components.Energy.Converters.Compression_Nozzle.Compression_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Compression__Nozzle_1_1Compression__Nozzle.html", null ],
@@ -308,6 +314,7 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Converters.Generator_Zero_Fid.Generator_Zero_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Generator__Zero__Fid_1_1Generator__Zero__Fid.html", null ],
             [ "SUAVE.Components.Energy.Converters.Internal_Combustion_Engine.Internal_Combustion_Engine", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Internal__Combustion__Engine_1_1Internal__Combustion__Engine.html", null ],
             [ "SUAVE.Components.Energy.Converters.Motor.Motor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html", null ],
+            [ "SUAVE.Components.Energy.Converters.Motor_HTS_Rotor.Motor_HTS_Rotor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html", null ],
             [ "SUAVE.Components.Energy.Converters.Motor_Lo_Fid.Motor_Lo_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html", null ],
             [ "SUAVE.Components.Energy.Converters.Propeller_Lo_Fid.Propeller_Lo_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Propeller__Lo__Fid_1_1Propeller__Lo__Fid.html", null ],
             [ "SUAVE.Components.Energy.Converters.Ram.Ram", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Ram_1_1Ram.html", null ],
@@ -320,7 +327,12 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Converters.Solar_Panel.Solar_Panel", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Solar__Panel_1_1Solar__Panel.html", null ],
             [ "SUAVE.Components.Energy.Converters.Supersonic_Nozzle.Supersonic_Nozzle", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Supersonic__Nozzle_1_1Supersonic__Nozzle.html", null ],
             [ "SUAVE.Components.Energy.Converters.Turbine.Turbine", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html", null ],
+            [ "SUAVE.Components.Energy.Converters.Turboelectric.Turboelectric", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html", null ],
+            [ "SUAVE.Components.Energy.Cooling.Cryocooler.Cryocooler", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryocooler_1_1Cryocooler.html", null ],
+            [ "SUAVE.Components.Energy.Cooling.Cryogenic_Heat_Exchanger.Cryogenic_Heat_Exchanger", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html", null ],
+            [ "SUAVE.Components.Energy.Distributors.Cryogenic_Lead.Cryogenic_Lead", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Cryogenic__Lead_1_1Cryogenic__Lead.html", null ],
             [ "SUAVE.Components.Energy.Distributors.Electronic_Speed_Controller.Electronic_Speed_Controller", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html", null ],
+            [ "SUAVE.Components.Energy.Distributors.HTS_DC_Supply.HTS_DC_Supply", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1HTS__DC__Supply_1_1HTS__DC__Supply.html", null ],
             [ "SUAVE.Components.Energy.Distributors.Solar_Logic.Solar_Logic", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Solar__Logic_1_1Solar__Logic.html", null ],
             [ "SUAVE.Components.Energy.Peripherals.Avionics.Avionics", "classSUAVE_1_1Components_1_1Energy_1_1Peripherals_1_1Avionics_1_1Avionics.html", null ],
             [ "SUAVE.Components.Energy.Peripherals.Payload.Payload", "classSUAVE_1_1Components_1_1Energy_1_1Peripherals_1_1Payload_1_1Payload.html", null ],
@@ -355,6 +367,7 @@ var hierarchy =
             [ "SUAVE.Components.Energy.Networks.Serial_Hybrid_Ducted_Fan.Serial_Hybrid_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Serial__Hybrid__Ducted__Fan_1_1Serial__Hybrid__Ducted__Fan.html", null ],
             [ "SUAVE.Components.Energy.Networks.Solar.Solar", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar_1_1Solar.html", null ],
             [ "SUAVE.Components.Energy.Networks.Solar_Low_Fidelity.Solar_Low_Fidelity", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html", null ],
+            [ "SUAVE.Components.Energy.Networks.Turboelectric_HTS_Ducted_Fan.Turboelectric_HTS_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html", null ],
             [ "SUAVE.Components.Energy.Networks.Turbofan.Turbofan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html", null ],
             [ "SUAVE.Components.Energy.Networks.Turbojet_Super.Turbojet_Super", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbojet__Super_1_1Turbojet__Super.html", null ]
           ] ],

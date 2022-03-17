@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('group__Methods-Propulsion.html','');})
 
 <div class="header">
   <div class="summary">
+<a href="#groups">Modules</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Propulsion<div class="ingroups"><a class="el" href="group__Methods.html">Methods</a></div></div>  </div>
@@ -108,6 +109,12 @@ $(document).ready(function(){initNavTree('group__Methods-Propulsion.html','');})
 <p>Description.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:group__Methods-Propulsion-Rotor__Wake"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion-Rotor__Wake.html">Rotor_Wake</a></td></tr>
+<tr class="memdesc:group__Methods-Propulsion-Rotor__Wake"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotor_Wake provides the functions needed to perform analyses. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3e6153003ae73397bf8d06367e10e9ba"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#ga3e6153003ae73397bf8d06367e10e9ba">SUAVE.Methods.Propulsion.ducted_fan_sizing.ducted_fan_sizing</a> (ducted_fan, mach_number=None, altitude=None, delta_isa=0, conditions=None)</td></tr>
@@ -143,6 +150,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga7343e43e60f66f0486c780fccae07fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f7790df2723b1121dbdbe0fd795adde"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#ga1f7790df2723b1121dbdbe0fd795adde">SUAVE.Methods.Propulsion.scramjet_sizing.scramjet_sizing</a> (scramjet, mach_number=None, altitude=None, delta_isa=0, conditions=None)</td></tr>
 <tr class="separator:ga1f7790df2723b1121dbdbe0fd795adde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d8c38e3c7b20af688906d6184625f32"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#ga1d8c38e3c7b20af688906d6184625f32">SUAVE.Methods.Propulsion.serial_HTS_turboelectric_sizing.serial_HTS_turboelectric_sizing</a> (Turboelectric_HTS_Ducted_Fan, mach_number=None, altitude=None, delta_isa=0, conditions=None, cryo_cold_temp=50.0, cryo_amb_temp=300.0)</td></tr>
+<tr class="separator:ga1d8c38e3c7b20af688906d6184625f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa391dbea29bed7099ae2de99774ac536"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#gaa391dbea29bed7099ae2de99774ac536">SUAVE.Methods.Propulsion.shock_train.shock_train</a> (M0, gamma, nbr_shocks, theta)</td></tr>
 <tr class="separator:gaa391dbea29bed7099ae2de99774ac536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga073857d84ade0f28134bf8340dfc3330"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Propulsion.html#ga073857d84ade0f28134bf8340dfc3330">SUAVE.Methods.Propulsion.turbofan_emission_index.turbofan_emission_index</a> (turbofan, state)</td></tr>
@@ -792,6 +801,91 @@ Ptr     [dimensionless]</pre>
 </div><div class="memdoc">
 <pre class="fragment">This function sizes a scramjet for the input design conditions.
 </pre> 
+</div>
+</div>
+<a id="ga1d8c38e3c7b20af688906d6184625f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d8c38e3c7b20af688906d6184625f32">&#9670;&nbsp;</a></span>serial_HTS_turboelectric_sizing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Propulsion.serial_HTS_turboelectric_sizing.serial_HTS_turboelectric_sizing </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Turboelectric_HTS_Ducted_Fan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mach_number</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>altitude</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>delta_isa</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>conditions</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cryo_cold_temp</em> = <code>50.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cryo_amb_temp</em> = <code>300.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">create and evaluate a serial hybrid network that follows the power flow:
+Turboelectric Generators -&gt; Motor Drivers -&gt; Electric Poropulsion Motors
+where the electric motors have cryogenically cooled HTS rotors that follow the power flow:
+Turboelectric Generators -&gt; Current Supplies -&gt; HTS Rotor Coils
+and
+Turboelectric Generators -&gt; Cryocooler &lt;- HTS Rotor Heat Load
+There is also the capability for the HTS components to be cryogenically cooled using liquid or gaseous cryogen, howver this is not sized other than applying a factor to the cryocooler required power.
+
+    Assumptions:
+    One powertrain model represents all engines in the model.
+    There are no transmission losses between components
+    the shaft torque and power required from the fan is the same as what would be required from the fan of a turbofan engine.
+
+    Source:
+    N/A
+
+    Inputs:
+    Turboelectric_HTS_Ducted_Fan    Serial HTYS hybrid ducted fan network object (to be modified)
+    mach_number
+    altitude                        [meters]
+    delta_isa                       temperature difference [K]
+    conditions                      ordered dict object
+
+    Outputs:
+    N/A
+
+    Properties Used:
+    N/A</pre> 
 </div>
 </div>
 <a id="gaa391dbea29bed7099ae2de99774ac536"></a>

@@ -19,7 +19,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Crui
     [ "lift_rotor_engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#ac1adc3c02c96e5c045f0d2653e564ddc", null ],
     [ "lift_rotor_esc", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#abb069135c531671bbc3d65d8d576ce78", null ],
     [ "lift_rotor_motors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#af10556f02c312779c7fb247eb2a59283", null ],
-    [ "lift_rotor_pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#ae2660a2fe083b94950ca040747bebdbc", null ],
     [ "lift_rotors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a8d581077a509860d450d74f9f1f01fce", null ],
     [ "number_of_lift_rotor_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#aec92578e267aba90e08b6f45362b4931", null ],
     [ "number_of_propeller_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a1c3d3a6f2a7071fa3a483141562f7eb3", null ],
@@ -27,7 +26,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Crui
     [ "propeller_engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a9e7e4f7428e1a942699e9f9db158b461", null ],
     [ "propeller_esc", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#ac50e197ba4885b802ae06c49b458d8fb", null ],
     [ "propeller_motors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a992162f38faa9e1e5dca3ecf980aee2a", null ],
-    [ "propeller_pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a66cd25d9a709aad7ed3adecf005f7c9d", null ],
     [ "propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#aceab308bd67644214f3bec3d53b9118a", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#affc796b626f64864a6b4b38d77e49248", null ],
     [ "voltage", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a3eb0436e7b7f0313cd88ccf25c40b901", null ]

@@ -8,5 +8,6 @@ var searchData=
   ['drag',['Drag',['../group__Methods-Aerodynamics-Supersonic__Zero-Drag.html',1,'']]],
   ['dynamic_5fstability',['Dynamic_Stability',['../group__Methods-Flight__Dynamics-Dynamic__Stability.html',1,'']]],
   ['descent',['Descent',['../group__Methods-Missions-Segments-Descent.html',1,'']]],
-  ['discharge',['Discharge',['../group__Methods-Power-Fuel__Cell-Discharge.html',1,'']]]
+  ['discharge',['Discharge',['../group__Methods-Power-Fuel__Cell-Discharge.html',1,'']]],
+  ['discharge',['Discharge',['../group__Methods-Power-Turboelectric-Discharge.html',1,'']]]
 ];

@@ -9,5 +9,6 @@ var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optim
     [ "lift_coefficient_limit", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a4bedff47f5f538e355e2eb412b217550", null ],
     [ "minimize", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a76881a8d85487cf9895c5fedf03c73af", null ],
     [ "objective", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a2fc312d71dbe50df791b4a39236a843d", null ],
-    [ "seed_climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a7b31e6a6176ef917ee71d0979a7200fd", null ]
+    [ "seed_climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a7b31e6a6176ef917ee71d0979a7200fd", null ],
+    [ "true_course", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Optimized_1_1Optimized.html#a99a803c7da9ff1095489dd8bb376e6ca", null ]
 ];

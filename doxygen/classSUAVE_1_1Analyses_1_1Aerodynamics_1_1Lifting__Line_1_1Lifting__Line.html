@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -121,8 +121,8 @@ Inheritance diagram for SUAVE.Analyses.Aerodynamics.Lifting_Line.Lifting_Line:</
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abc3ceb23a334289decd8250a64881afa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#abc3ceb23a334289decd8250a64881afa">__defaults__</a> (self)</td></tr>
 <tr class="separator:abc3ceb23a334289decd8250a64881afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7de41a55617fb0c1f03de4fc7cbfd0f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#ae7de41a55617fb0c1f03de4fc7cbfd0f">initialize</a> (self, use_surrogate, n_sw, n_cw, propeller_wake_model, use_bemt_wake_model, ito, wdt, nwts, mf, mn)</td></tr>
-<tr class="separator:ae7de41a55617fb0c1f03de4fc7cbfd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcec3d2ae76562440b15041e0ddf04f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#a2fcec3d2ae76562440b15041e0ddf04f">initialize</a> (self, use_surrogate, n_sw, n_cw, propeller_wake_model, mf, mn, dcs)</td></tr>
+<tr class="separator:a2fcec3d2ae76562440b15041e0ddf04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30085741f0c13bd0dbbd791143ce8da"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#aa30085741f0c13bd0dbbd791143ce8da">evaluate</a> (self, state, settings, geometry)</td></tr>
 <tr class="separator:aa30085741f0c13bd0dbbd791143ce8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d59f0ce54639d4ed61e8b57b46cfd0f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSUAVE_1_1Analyses_1_1Aerodynamics_1_1Lifting__Line_1_1Lifting__Line.html#a9d59f0ce54639d4ed61e8b57b46cfd0f">sample_training</a> (self)</td></tr>
@@ -342,8 +342,8 @@ self.surrogates.
 </pre> 
 </div>
 </div>
-<a id="ae7de41a55617fb0c1f03de4fc7cbfd0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7de41a55617fb0c1f03de4fc7cbfd0f">&#9670;&nbsp;</a></span>initialize()</h2>
+<a id="a2fcec3d2ae76562440b15041e0ddf04f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcec3d2ae76562440b15041e0ddf04f">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,37 +382,19 @@ self.surrogates.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>use_bemt_wake_model</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>ito</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>wdt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>nwts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>mf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mn</em>&#160;</td>
+          <td class="paramname"><em>mn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>dcs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

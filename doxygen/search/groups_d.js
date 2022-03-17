@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['propulsion',['Propulsion',['../group__Analyses-Propulsion.html',1,'']]],
   ['planets',['Planets',['../group__Attributes-Planets.html',1,'']]],
   ['propellants',['Propellants',['../group__Attributes-Propellants.html',1,'']]],
   ['peripherals',['Peripherals',['../group__Components-Energy-Peripherals.html',1,'']]],
@@ -13,5 +14,6 @@ var searchData=
   ['propulsion',['Propulsion',['../group__Methods-Weights-Correlations-Propulsion.html',1,'']]],
   ['package_5fsetups',['Package_Setups',['../group__Optimization-Package__Setups.html',1,'']]],
   ['plots',['Plots',['../group__Plots.html',1,'']]],
+  ['performance',['Performance',['../group__Plots-Performance.html',1,'']]],
   ['plugins',['Plugins',['../group__Plugins.html',1,'']]]
 ];

@@ -27,6 +27,8 @@ var searchData=
   ['miscellaneous_5fdrag_5faircraft',['miscellaneous_drag_aircraft',['../group__Methods-Aerodynamics-Supersonic__Zero-Drag.html#ga857987b93648989ca62534896beef377',1,'SUAVE::Methods::Aerodynamics::Supersonic_Zero::Drag::miscellaneous_drag_aircraft']]],
   ['miscellaneous_5fdrag_5faircraft_5fesdu',['miscellaneous_drag_aircraft_ESDU',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Drag.html#ga1ab07fbded997c9136f554f34dbe2a17',1,'SUAVE::Methods::Aerodynamics::Common::Fidelity_Zero::Drag::miscellaneous_drag_aircraft_ESDU']]],
   ['mission',['Mission',['../classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission.html',1,'SUAVE::Analyses::Mission::Mission']]],
+  ['mixed_5fnoise_5fcomponent',['mixed_noise_component',['../group__Methods-Noise-Fidelity__One-Engine.html#ga86562c9603fd0f1116bcd03912b0f2fa',1,'SUAVE::Methods::Noise::Fidelity_One::Engine::mixed_noise_component']]],
   ['motor',['Motor',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html',1,'SUAVE::Components::Energy::Converters::Motor']]],
+  ['motor_5fhts_5frotor',['Motor_HTS_Rotor',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html',1,'SUAVE::Components::Energy::Converters::Motor_HTS_Rotor']]],
   ['motor_5flo_5ffid',['Motor_Lo_Fid',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html',1,'SUAVE::Components::Energy::Converters::Motor_Lo_Fid']]]
 ];

@@ -3,5 +3,6 @@ var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Speed__
     [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Speed__Constant__Altitude_1f9238ad770ff99e466228b3c4a43d18b.html#ac08d33a39d5aac732a1834dc4c34a033", null ],
     [ "air_speed", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Speed__Constant__Altitude_1f9238ad770ff99e466228b3c4a43d18b.html#a894853f8ec11e54beaf3ce8c69424441", null ],
     [ "altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Speed__Constant__Altitude_1f9238ad770ff99e466228b3c4a43d18b.html#a3fef73e1e7145c5524bb8c149f92a216", null ],
-    [ "distance", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Speed__Constant__Altitude_1f9238ad770ff99e466228b3c4a43d18b.html#a19e019305903b3b2c83f96894694912a", null ]
+    [ "distance", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Speed__Constant__Altitude_1f9238ad770ff99e466228b3c4a43d18b.html#a19e019305903b3b2c83f96894694912a", null ],
+    [ "true_course", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Speed__Constant__Altitude_1f9238ad770ff99e466228b3c4a43d18b.html#a1c710338347061f4d253e265295ee518", null ]
 ];
