@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data',['Data',['../classSUAVE_1_1Core_1_1Data_1_1Data.html',1,'SUAVE.Core.Data.Data'],['../classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html',1,'SUAVE.Input_Output.XML.Data.Data']]],
+  ['data',['Data',['../classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html',1,'SUAVE.Input_Output.XML.Data.Data'],['../classSUAVE_1_1Core_1_1Data_1_1Data.html',1,'SUAVE.Core.Data.Data']]],
   ['dataordered',['DataOrdered',['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html',1,'SUAVE::Core::DataOrdered']]],
   ['de_5flaval_5fnozzle',['de_Laval_Nozzle',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1de__Laval__Nozzle_1_1de__Laval__Nozzle.html',1,'SUAVE::Components::Energy::Converters::de_Laval_Nozzle']]],
   ['definition',['Definition',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1Definition.html',1,'SUAVE::Plugins::pint::unit']]],

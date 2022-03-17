@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('group__Methods-Noise-Fidelity__Zero.ht
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Fidelity_Zero<div class="ingroups"><a class="el" href="group__Methods.html">Methods</a> &raquo; <a class="el" href="group__Methods-Noise.html">Noise</a></div></div>  </div>
 </div><!--header-->
@@ -105,7 +107,78 @@ $(document).ready(function(){initNavTree('group__Methods-Noise-Fidelity__Zero.ht
 
 <p>Correlation type methods for calculating noise.  
 <a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga9408ead0cc82e40fcb427b0f14ac2962"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Noise-Fidelity__Zero.html#ga9408ead0cc82e40fcb427b0f14ac2962">SUAVE.Methods.Noise.Fidelity_Zero.shevell.shevell</a> (weight_landing, number_of_engines, thrust_sea_level, thrust_landing)</td></tr>
+<tr class="separator:ga9408ead0cc82e40fcb427b0f14ac2962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Correlation type methods for calculating noise. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga9408ead0cc82e40fcb427b0f14ac2962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9408ead0cc82e40fcb427b0f14ac2962">&#9670;&nbsp;</a></span>shevell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Noise.Fidelity_Zero.shevell.shevell </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>weight_landing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>number_of_engines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>thrust_sea_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>thrust_landing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This uses correlations from Shevell, also used in AA241A/B, to calculate the sources for noise
+
+Assumptions:
+None
+
+Source:
+Stanford AA 241A/B Notes : http://aerodesign.stanford.edu/aircraftdesign/aircraftdesign.html
+
+Inputs:
+    weight_landing     [newtons]
+    number_of_engines  [int]
+    thrust_sea_level   [newtons]
+    thrust_landing     [newtons]
+
+Outputs:
+    output.
+        takeoff        [float]
+        side_line      [float]
+        landing        [float]
+
+Properties Used:
+    baseline noise = 101.
+    various tuned correlations
+</pre> 
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

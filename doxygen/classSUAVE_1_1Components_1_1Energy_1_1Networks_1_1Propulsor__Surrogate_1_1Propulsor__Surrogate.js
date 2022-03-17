@@ -11,6 +11,7 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Pr
     [ "input_file", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#aa50a9643ba03f73f53e997038f24ee72", null ],
     [ "negative_throttle_values", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#afa9fa26fa376c11f8be30aa2d1619ae9", null ],
     [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#abee949d1cdde57a683f87cbb0947c854", null ],
+    [ "orientation_euler_angles", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a7869d3f0f7290ad899809a0cc6f9470e", null ],
     [ "sealevel_static_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#acc0ab4f892a3ccd16721dcc076beb6fc", null ],
     [ "sfc_anchor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a7e1d09af601ff633fd64614d4456be42", null ],
     [ "sfc_anchor_conditions", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a8823c556243f9c01a4dcdb24f81f4f7c", null ],
@@ -23,7 +24,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Pr
     [ "thrust_anchor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a3bb1fae5f925f775c1d2dc6e915ea319", null ],
     [ "thrust_anchor_conditions", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a6d57549ba3e802d3d16581bb0efab747", null ],
     [ "thrust_anchor_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a40a31b560d4fbbd88dd5edd05614d21d", null ],
-    [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a987fb867374d30397995a8bc306c4887", null ],
     [ "thrust_input_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#ab9b162b21353393b828d783b50ff13d0", null ],
     [ "thrust_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#acc030cf367c0a0aed49beb116503287d", null ],
     [ "use_extended_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a6511d3ab97266a77e2ac6790e9bf5449", null ]

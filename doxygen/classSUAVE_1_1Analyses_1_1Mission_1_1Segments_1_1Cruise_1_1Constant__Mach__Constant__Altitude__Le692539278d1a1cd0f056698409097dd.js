@@ -3,5 +3,6 @@ var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Mach__C
     [ "__defaults__", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Mach__Constant__Altitude__Le692539278d1a1cd0f056698409097dd.html#a5f06895f4371cca8ef17c0bd8ee0cfb3", null ],
     [ "altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Mach__Constant__Altitude__Le692539278d1a1cd0f056698409097dd.html#a82967e479b30719add91689c5a5cee18", null ],
     [ "mach", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Mach__Constant__Altitude__Le692539278d1a1cd0f056698409097dd.html#adebcb0da04687157bd0833a1cedbbb07", null ],
-    [ "time", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Mach__Constant__Altitude__Le692539278d1a1cd0f056698409097dd.html#a1aa527b23bae81dfec302f67f54fed28", null ]
+    [ "time", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Mach__Constant__Altitude__Le692539278d1a1cd0f056698409097dd.html#a1aa527b23bae81dfec302f67f54fed28", null ],
+    [ "true_course", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Cruise_1_1Constant__Mach__Constant__Altitude__Le692539278d1a1cd0f056698409097dd.html#afdcbc2447c4b0f1cac35f703523a0806", null ]
 ];

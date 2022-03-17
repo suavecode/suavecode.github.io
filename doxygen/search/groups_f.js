@@ -18,5 +18,6 @@ var searchData=
   ['sizing',['Sizing',['../group__Methods-Power-Battery-Sizing.html',1,'']]],
   ['state_5festimation_5fmodels',['State_Estimation_Models',['../group__Methods-Power-Battery-State__Estimation__Models.html',1,'']]],
   ['sizing',['Sizing',['../group__Methods-Power-Fuel__Cell-Sizing.html',1,'']]],
+  ['sizing',['Sizing',['../group__Methods-Power-Turboelectric-Sizing.html',1,'']]],
   ['surrogate',['Surrogate',['../group__Surrogate.html',1,'']]]
 ];

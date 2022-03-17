@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('group__Methods-Noise-Fidelity__One-Air
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Airframe<div class="ingroups"><a class="el" href="group__Methods.html">Methods</a> &raquo; <a class="el" href="group__Methods-Noise.html">Noise</a> &raquo; <a class="el" href="group__Methods-Noise-Fidelity__One.html">Fidelity_One</a></div></div>  </div>
 </div><!--header-->
@@ -105,7 +107,545 @@ $(document).ready(function(){initNavTree('group__Methods-Noise-Fidelity__One-Air
 
 <p>Fidelity One level noise calculations for the airframe components.  
 <a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga702a77b2ac10121455091e79b3707128"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Noise-Fidelity__One-Airframe.html#ga702a77b2ac10121455091e79b3707128">SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_airframe_Fink.noise_airframe_Fink</a> (segment, analyses, config, settings, ioprint=0, filename=0)</td></tr>
+<tr class="separator:ga702a77b2ac10121455091e79b3707128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4e40c87edaeed794f229ff07eb102c7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Noise-Fidelity__One-Airframe.html#gae4e40c87edaeed794f229ff07eb102c7">SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_clean_wing.noise_clean_wing</a> (S, b, ND, IsHorz, velocity, viscosity, M, phi, theta, distance, frequency)</td></tr>
+<tr class="separator:gae4e40c87edaeed794f229ff07eb102c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96efb073f88b68a0838ed850b492af3e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Noise-Fidelity__One-Airframe.html#ga96efb073f88b68a0838ed850b492af3e">SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_landing_gear.noise_landing_gear</a> (D, H, wheels, M, velocity, phi, theta, distance, frequency)</td></tr>
+<tr class="separator:ga96efb073f88b68a0838ed850b492af3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc9075bff25bfe9ef8dd91f7da32191e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Noise-Fidelity__One-Airframe.html#gacc9075bff25bfe9ef8dd91f7da32191e">SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_leading_edge_slat.noise_leading_edge_slat</a> (SPL_wing, Sw, bw, velocity, viscosity, M, phi, theta, distance, frequency)</td></tr>
+<tr class="separator:gacc9075bff25bfe9ef8dd91f7da32191e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga552c6d0103dab2cf012662a7649ae9e9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Noise-Fidelity__One-Airframe.html#ga552c6d0103dab2cf012662a7649ae9e9">SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_trailing_edge_flap.noise_trailing_edge_flap</a> (Sf, cf, deltaf, slots, velocity, M, phi, theta, distance, frequency)</td></tr>
+<tr class="separator:ga552c6d0103dab2cf012662a7649ae9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Fidelity One level noise calculations for the airframe components. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga702a77b2ac10121455091e79b3707128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga702a77b2ac10121455091e79b3707128">&#9670;&nbsp;</a></span>noise_airframe_Fink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_airframe_Fink.noise_airframe_Fink </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>analyses</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ioprint</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>filename</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This computes the noise from different sources of the airframe for a given vehicle for a constant altitude flight. 
+
+Assumptions:
+    Correlation based 
+ 
+Source:
+    Fink, Martin R. Airframe noise prediction method. No. UTRC/R77-912607-11. UNITED 
+    TECHNOLOGIES RESEARCH CENTER EAST HARTFORD CT, 1977.  
+           
+Inputs:
+    vehicle  - SUAVE type vehicle
+
+    includes these fields:
+        S                          - Wing Area
+        bw                         - Wing Span
+        Sht                        - Horizontal tail area
+        bht                        - Horizontal tail span
+        Svt                        - Vertical tail area
+        bvt                        - Vertical tail span
+        deltaf                     - Flap deflection
+        Sf                         - Flap area
+        cf                         - Flap chord
+        slots                      - Number of slots (Flap type)
+        Dp                         - Main landing gear tyre diameter
+        Hp                         - Main lading gear strut length
+        Dn                         - Nose landing gear tyre diameter
+        Hn                         - Nose landing gear strut length
+        wheels                     - Number of wheels
+
+    airport   - SUAVE type airport data, with followig fields:
+        atmosphere                  - Airport atmosphere (SUAVE type)
+        altitude                    - Airport altitude
+        delta_isa                   - ISA Temperature deviation
+        
+    noise segment - flight path data, containing:
+        distance_vector             - distance from the source location to observer
+        angle                       - polar angle from the source to the observer
+        phi                         - azimuthal angle from the source to the observer
+
+
+Outputs: One Third Octave Band SPL [dB]
+    SPL_wing                        - Sound Pressure Level of the clean wing
+    SPLht                           - Sound Pressure Level of the horizontal tail
+    SPLvt                           - Sound Pressure Level of the vertical tail
+    SPL_flap                        - Sound Pressure Level of the flaps trailing edge
+    SPL_slat                        - Sound Pressure Level of the slat leading edge
+    SPL_main_landing_gear           - Sound Pressure Level og the main landing gear
+    SPL_nose_landing_gear           - Sound Pressure Level of the nose landing gear
+
+Properties Used:
+    N/A      </pre> 
+</div>
+</div>
+<a id="gae4e40c87edaeed794f229ff07eb102c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4e40c87edaeed794f229ff07eb102c7">&#9670;&nbsp;</a></span>noise_clean_wing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_clean_wing.noise_clean_wing </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>S</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ND</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>IsHorz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>velocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>viscosity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>frequency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This computes the 1/3 octave band sound pressure level and the overall sound pressure level from the clean wing,
+for a wing with area S (sq.ft) and span b (ft).  ND is a constant set to 0 for clean wings and set to 1 for propeller
+airplanes, jet transports with numerous large trailing edge flap tracks, flaps extended, or slats extended. ISHORZ must be set to 1.
+This function can be used for the horizontal tail by inserting the appropriate tail area and span. For a vertical tail, its appropriate
+area and height are used and ISHORZ must be set to 0.
+
+Assumptions:
+    Correlation based.  
+
+Source:
+   SAE Model
+   
+Inputs:
+        S                          - Wing Area [sq.ft]
+        b                          - Wing Span [ft]
+        ND                         - Costant from the method
+        IsHoriz                    - Costant from the method
+        deltaw                     - Wing Turbulent Boundary Layer thickness [ft]
+        velocity                   - Aircraft speed [kts]
+        viscosity                  - Dynamic viscosity
+        M                          - Mach number
+        phi                        - Azimuthal angle [rad]
+        theta                      - Polar angle [rad]
+        distance                   - Distance from airplane to observer, evaluated at retarded time [ft]
+        frequency                  - Frequency array [Hz]
+
+
+
+Outputs: One Third Octave Band SPL [dB]
+    SPL                              - Sound Pressure Level of the clean wing [dB]
+    OASPL                            - Overall Sound Pressure Level of the clean wing [dB]
+
+Properties Used:
+    None</pre> 
+</div>
+</div>
+<a id="ga96efb073f88b68a0838ed850b492af3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96efb073f88b68a0838ed850b492af3e">&#9670;&nbsp;</a></span>noise_landing_gear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_landing_gear.noise_landing_gear </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>H</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>wheels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>velocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>frequency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This calculates the Landing gear 1/3 octave band sound pressure level and overall sound pressure level
+for a tyre diameter D, a strut length H and WHEELS number of  wheels per unit.
+
+Assumptions:
+    Correlation based.
+
+Source:
+    None
+
+
+Inputs:
+    D         - Landing gear tyre diameter                                     [ft]
+    H         - Lading gear strut length                                       [ft]
+    wheels    - Number of wheels per unit                                      [-]
+    M         - Mach number                                                    [-]
+    velocity  - Aircraft speed                                                 [kts]
+    phi       - Azimuthal angle                                                [rad]
+    theta     - Polar angle                                                    [rad]
+    distance  - Distance from airplane to observer, evaluated at retarded time [ft]
+    frequemcy - Frequency array                                                [Hz] 
+
+Outputs: One Third Octave Band SPL [dB]
+    SPL           - Sound Pressure Level of the landing gear         [dB]
+    OASPL         - Overall Sound Pressure Level of the landing gear [dB]
+
+
+Source:
+    SAE ARP 876D
+
+Inputs:
+    Ce = wing chord length at the engine location - as figure 7.3 of the SAE ARP 876D                    [m]                          
+    Xe = fan exit location downstream of the leading edge (Xe&lt;Ce) - as figure 7.3 of the SAE ARP 876D    [m] 
+    Ye = separation distance from the wing chord line to nozzle lip - as figure 7.3 of the SAE ARP 876D  [m] 
+    theta_s                                                                                              [rad]
+    Diameter_mixed                                                                                       [m] 
+
+Outputs:
+    INST_s          [-]
+
+Properties Used: 
+    N/A </pre> 
+</div>
+</div>
+<a id="gacc9075bff25bfe9ef8dd91f7da32191e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc9075bff25bfe9ef8dd91f7da32191e">&#9670;&nbsp;</a></span>noise_leading_edge_slat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_leading_edge_slat.noise_leading_edge_slat </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>SPL_wing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Sw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>bw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>velocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>viscosity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>frequency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This calculates the noise from the slat leading edge as a 1/3 octave band sound pressure level. 
+
+ Assumptions:
+     Correlation based.
+     
+ Inputs:
+         SPL_wing                   - Sound Pressure Level of the clean wing                         [dB]
+         Sw                         - Wing Area                                                      [sq.ft]
+         bw                         - Wing Span                                                      [ft] 
+         velocity                   - Aircraft speed                                                 [kts]
+         viscosity                  - Dynamic viscosity                                              [kg m^-1s^-1]
+         M                          - Mach number                                                    [unitless]
+         phi                        - Azimuthal angle                                                [rad]
+         theta                      - Polar angle                                                    [rad]
+         distance                   - Distance from airplane to observer, evaluated at retarded time [ft]
+         frequency                  - Frequency array                                                [Hz]
+                                                                                                     
+ Outputs: One Third Octave Band SPL                                                                  [dB]
+     SPL                             - Sound Pressure Level of the slat leading edge                 [dB]
+
+Properties Used:
+    None    
+</pre> 
+</div>
+</div>
+<a id="ga552c6d0103dab2cf012662a7649ae9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga552c6d0103dab2cf012662a7649ae9e9">&#9670;&nbsp;</a></span>noise_trailing_edge_flap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SUAVE.Methods.Noise.Fidelity_One.Airframe.noise_trailing_edge_flap.noise_trailing_edge_flap </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>Sf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>deltaf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>slots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>velocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>theta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>frequency</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This calculates the noise from the flap trailing edge as a 1/3 octave band sound pressure level.
+
+Assumptions:
+    Correlation based.
+    
+Inputs:
+    Sf         - Flap area                                                      [sq.ft]
+    cf         - Flap chord                                                     [ft]
+    deltaf     - Flap deflection                                                [rad]
+    slots      - Number of slots                                                (Flap type)
+    velocity   - Aircraft speed                                                 [kts]
+    M          - Mach number                                                    [Unitless]
+    phi        - Azimuthal angle                                                [rad]
+    theta      - Polar angle                                                    [rad]
+    distance   - Distance from airplane to observer, evaluated at retarded time [ft]
+    frequency  - Frequency array                                                [Hz]
+    
+Outputs: One Third Octave Band SPL                                              [dB]
+    SPL                
+ 
+Properties Used:
+    N/A </pre> 
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

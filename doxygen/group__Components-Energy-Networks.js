@@ -42,11 +42,9 @@ var group__Components_Energy_Networks =
       [ "number_of_lift_rotor_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a19b07a35b2833427136ac01c03e570e0", null ],
       [ "number_of_propeller_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a23f26e4b4872c454d739741fe3726841", null ],
       [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac733d4d41de9f7c20bf5153d3b7a5bfd", null ],
-      [ "pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a3e07b16c1d81fe2471a2335ca7432adb", null ],
       [ "propeller_motors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#abf02002c57fdea9ded2b8ee7cb1ec9a2", null ],
       [ "propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a821bbc22f0d19a533fb2769c3d65a342", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac13048ae157a044a18338d455ab86c86", null ],
-      [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a57899f04a912f824be02d29fdc6ec5f4", null ],
       [ "use_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a7035798e0f8cd537c5f48e81d7308316", null ],
       [ "voltage", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a6d1abaa63d86e61e8a603c175e3de56f", null ]
     ] ],
@@ -102,7 +100,6 @@ var group__Components_Energy_Networks =
       [ "lift_rotor_engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#ac1adc3c02c96e5c045f0d2653e564ddc", null ],
       [ "lift_rotor_esc", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#abb069135c531671bbc3d65d8d576ce78", null ],
       [ "lift_rotor_motors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#af10556f02c312779c7fb247eb2a59283", null ],
-      [ "lift_rotor_pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#ae2660a2fe083b94950ca040747bebdbc", null ],
       [ "lift_rotors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a8d581077a509860d450d74f9f1f01fce", null ],
       [ "number_of_lift_rotor_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#aec92578e267aba90e08b6f45362b4931", null ],
       [ "number_of_propeller_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a1c3d3a6f2a7071fa3a483141562f7eb3", null ],
@@ -110,7 +107,6 @@ var group__Components_Energy_Networks =
       [ "propeller_engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a9e7e4f7428e1a942699e9f9db158b461", null ],
       [ "propeller_esc", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#ac50e197ba4885b802ae06c49b458d8fb", null ],
       [ "propeller_motors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a992162f38faa9e1e5dca3ecf980aee2a", null ],
-      [ "propeller_pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a66cd25d9a709aad7ed3adecf005f7c9d", null ],
       [ "propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#aceab308bd67644214f3bec3d53b9118a", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#affc796b626f64864a6b4b38d77e49248", null ],
       [ "voltage", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Lift__Cruise_1_1Lift__Cruise.html#a3eb0436e7b7f0313cd88ccf25c40b901", null ]
@@ -151,6 +147,7 @@ var group__Components_Energy_Networks =
       [ "input_file", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#aa50a9643ba03f73f53e997038f24ee72", null ],
       [ "negative_throttle_values", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#afa9fa26fa376c11f8be30aa2d1619ae9", null ],
       [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#abee949d1cdde57a683f87cbb0947c854", null ],
+      [ "orientation_euler_angles", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a7869d3f0f7290ad899809a0cc6f9470e", null ],
       [ "sealevel_static_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#acc0ab4f892a3ccd16721dcc076beb6fc", null ],
       [ "sfc_anchor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a7e1d09af601ff633fd64614d4456be42", null ],
       [ "sfc_anchor_conditions", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a8823c556243f9c01a4dcdb24f81f4f7c", null ],
@@ -163,7 +160,6 @@ var group__Components_Energy_Networks =
       [ "thrust_anchor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a3bb1fae5f925f775c1d2dc6e915ea319", null ],
       [ "thrust_anchor_conditions", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a6d57549ba3e802d3d16581bb0efab747", null ],
       [ "thrust_anchor_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a40a31b560d4fbbd88dd5edd05614d21d", null ],
-      [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a987fb867374d30397995a8bc306c4887", null ],
       [ "thrust_input_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#ab9b162b21353393b828d783b50ff13d0", null ],
       [ "thrust_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#acc030cf367c0a0aed49beb116503287d", null ],
       [ "use_extended_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Propulsor__Surrogate_1_1Propulsor__Surrogate.html#a6511d3ab97266a77e2ac6790e9bf5449", null ]
@@ -190,7 +186,6 @@ var group__Components_Energy_Networks =
       [ "thrust_anchor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a2bb0145f8091ced5d5aa8e7568a3ffba", null ],
       [ "thrust_anchor_conditions", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a696146a17b3580999c23ecab1adcaa4f", null ],
       [ "thrust_anchor_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a1067889138e26236bdebe755a1807e4d", null ],
-      [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#afab3174d12aefea12c02929e93abf537", null ],
       [ "thrust_input_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a2a7080250d43425ac5aa1020bfa8164e", null ],
       [ "thrust_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#ae3e83d6ed231cab191daf52f1ce470f5", null ],
       [ "use_extended_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a3486696470154cb5ea31c67360b01639", null ]
@@ -262,6 +257,21 @@ var group__Components_Energy_Networks =
       [ "solar_logic", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#a11fc9922ff807efcd9ef99e0c37d41c9", null ],
       [ "solar_panel", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#ac02569a947e971d2287c7480544ae722", null ],
       [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html#a77be18098afc3c7ce30d5e8f0e1a9b40", null ]
+    ] ],
+    [ "Turboelectric_HTS_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html", [
+      [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a0c60a605e062b9fea62e3369a5401772", null ],
+      [ "evaluate_thrust", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a8cd476e45727fc7a26ab0143a6324ab4", null ],
+      [ "ambient_skin", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a856d812d5835f911c1fc4c0934756550", null ],
+      [ "areas", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a17da6c772ea353bfd3489866ce04717c", null ],
+      [ "bypass_ratio", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a0bb2afa69065cbc649788ec16f714f56", null ],
+      [ "cryogen_proportion", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a185f7133eb47b8d0b669b9a5e5f93970", null ],
+      [ "engine_length", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a0853e52c3902be952f777df79bb95537", null ],
+      [ "has_additional_fuel_type", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a3da8b278abda6052c485a8c8dac15989", null ],
+      [ "leads", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#ac5334c58803636077fc957f7dad316dd", null ],
+      [ "number_of_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a3708a7aaed2ef24c421da27c53c6e9b0", null ],
+      [ "number_of_powersupplies", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#ad513ab8b1efbbf45ee373eb11d0dda49", null ],
+      [ "skin_temp", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a8c7ef4eae15eb26e5980307c65e6723c", null ],
+      [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html#a227f3987f1c9dd6dd2ff2d9ed6b980e6", null ]
     ] ],
     [ "Turbofan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html#a4ec9fd9367a661587c9067770654e380", null ],

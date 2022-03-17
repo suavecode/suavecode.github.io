@@ -262,9 +262,6 @@ var annotated_dup =
               ] ],
               [ "Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", null, [
                 [ "Constant_Acceleration_Constant_Pitchrate_Constant_Altitude", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Constant__Acceleration__Constant_5193e56b55371497cdd7346b5b49e506" ]
-              ] ],
-              [ "Lift_Cruise_Optimized", null, [
-                [ "Lift_Cruise_Optimized", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Lift__Cruise__Optimized_1_1Lift__Cruise__Optimized.html", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Transition_1_1Lift__Cruise__Optimized_1_1Lift__Cruise__Optimized" ]
               ] ]
             ] ]
           ] ],
@@ -298,6 +295,17 @@ var annotated_dup =
         ] ],
         [ "Process", null, [
           [ "Process", "classSUAVE_1_1Analyses_1_1Process_1_1Process.html", "classSUAVE_1_1Analyses_1_1Process_1_1Process" ]
+        ] ],
+        [ "Propulsion", null, [
+          [ "Rotor_Wake_Fidelity_One", null, [
+            [ "Rotor_Wake_Fidelity_One", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__One_1_1Rotor__Wake__Fidelity__One.html", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__One_1_1Rotor__Wake__Fidelity__One" ]
+          ] ],
+          [ "Rotor_Wake_Fidelity_Two", null, [
+            [ "Rotor_Wake_Fidelity_Two", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__Two_1_1Rotor__Wake__Fidelity__Two.html", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__Two_1_1Rotor__Wake__Fidelity__Two" ]
+          ] ],
+          [ "Rotor_Wake_Fidelity_Zero", null, [
+            [ "Rotor_Wake_Fidelity_Zero", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__Zero_1_1Rotor__Wake__Fidelity__Zero.html", "classSUAVE_1_1Analyses_1_1Propulsion_1_1Rotor__Wake__Fidelity__Zero_1_1Rotor__Wake__Fidelity__Zero" ]
+          ] ]
         ] ],
         [ "Settings", null, [
           [ "Settings", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings.html", "classSUAVE_1_1Analyses_1_1Settings_1_1Settings" ]
@@ -364,6 +372,14 @@ var annotated_dup =
           ] ],
           [ "Constant", null, [
             [ "Constant", "classSUAVE_1_1Attributes_1_1Constants_1_1Constant_1_1Constant.html", "classSUAVE_1_1Attributes_1_1Constants_1_1Constant_1_1Constant" ]
+          ] ]
+        ] ],
+        [ "Cryogens", null, [
+          [ "Cryogen", null, [
+            [ "Cryogen", "classSUAVE_1_1Attributes_1_1Cryogens_1_1Cryogen_1_1Cryogen.html", "classSUAVE_1_1Attributes_1_1Cryogens_1_1Cryogen_1_1Cryogen" ]
+          ] ],
+          [ "Liquid_H2", null, [
+            [ "Liquid_H2", "classSUAVE_1_1Attributes_1_1Cryogens_1_1Liquid__H2_1_1Liquid__H2.html", "classSUAVE_1_1Attributes_1_1Cryogens_1_1Liquid__H2_1_1Liquid__H2" ]
           ] ]
         ] ],
         [ "Gases", null, [
@@ -435,6 +451,9 @@ var annotated_dup =
           ] ],
           [ "Carbon_Fiber_Honeycomb", null, [
             [ "Carbon_Fiber_Honeycomb", "classSUAVE_1_1Attributes_1_1Solids_1_1Carbon__Fiber__Honeycomb_1_1Carbon__Fiber__Honeycomb.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Carbon__Fiber__Honeycomb_1_1Carbon__Fiber__Honeycomb" ]
+          ] ],
+          [ "Copper", null, [
+            [ "Copper", "classSUAVE_1_1Attributes_1_1Solids_1_1Copper_1_1Copper.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Copper_1_1Copper" ]
           ] ],
           [ "Epoxy", null, [
             [ "Epoxy", "classSUAVE_1_1Attributes_1_1Solids_1_1Epoxy_1_1Epoxy.html", "classSUAVE_1_1Attributes_1_1Solids_1_1Epoxy_1_1Epoxy" ]
@@ -520,6 +539,9 @@ var annotated_dup =
             [ "Motor", null, [
               [ "Motor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor" ]
             ] ],
+            [ "Motor_HTS_Rotor", null, [
+              [ "Motor_HTS_Rotor", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor" ]
+            ] ],
             [ "Motor_Lo_Fid", null, [
               [ "Motor_Lo_Fid", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid" ]
             ] ],
@@ -549,11 +571,28 @@ var annotated_dup =
             ] ],
             [ "Turbine", null, [
               [ "Turbine", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turbine_1_1Turbine" ]
+            ] ],
+            [ "Turboelectric", null, [
+              [ "Turboelectric", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric.html", "classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Turboelectric_1_1Turboelectric" ]
+            ] ]
+          ] ],
+          [ "Cooling", null, [
+            [ "Cryocooler", null, [
+              [ "Cryocooler", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryocooler_1_1Cryocooler.html", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryocooler_1_1Cryocooler" ]
+            ] ],
+            [ "Cryogenic_Heat_Exchanger", null, [
+              [ "Cryogenic_Heat_Exchanger", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger.html", "classSUAVE_1_1Components_1_1Energy_1_1Cooling_1_1Cryogenic__Heat__Exchanger_1_1Cryogenic__Heat__Exchanger" ]
             ] ]
           ] ],
           [ "Distributors", null, [
+            [ "Cryogenic_Lead", null, [
+              [ "Cryogenic_Lead", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Cryogenic__Lead_1_1Cryogenic__Lead.html", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Cryogenic__Lead_1_1Cryogenic__Lead" ]
+            ] ],
             [ "Electronic_Speed_Controller", null, [
               [ "Electronic_Speed_Controller", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller.html", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Electronic__Speed__Controller_1_1Electronic__Speed__Controller" ]
+            ] ],
+            [ "HTS_DC_Supply", null, [
+              [ "HTS_DC_Supply", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1HTS__DC__Supply_1_1HTS__DC__Supply.html", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1HTS__DC__Supply_1_1HTS__DC__Supply" ]
             ] ],
             [ "Solar_Logic", null, [
               [ "Solar_Logic", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Solar__Logic_1_1Solar__Logic.html", "classSUAVE_1_1Components_1_1Energy_1_1Distributors_1_1Solar__Logic_1_1Solar__Logic" ]
@@ -611,6 +650,9 @@ var annotated_dup =
             ] ],
             [ "Solar_Low_Fidelity", null, [
               [ "Solar_Low_Fidelity", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Solar__Low__Fidelity_1_1Solar__Low__Fidelity" ]
+            ] ],
+            [ "Turboelectric_HTS_Ducted_Fan", null, [
+              [ "Turboelectric_HTS_Ducted_Fan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turboelectric__HTS__Ducted__Fan_1_1Turboelectric__HTS__Ducted__Fan" ]
             ] ],
             [ "Turbofan", null, [
               [ "Turbofan", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan.html", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Turbofan_1_1Turbofan" ]

@@ -4,5 +4,6 @@ var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Mach__Co
     [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Mach__Constant__Angle_1_1Constant__Mach__Constant__Angle.html#a2db347c82878d9ba79771ddd4643eb78", null ],
     [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Mach__Constant__Angle_1_1Constant__Mach__Constant__Angle.html#a37f860123e25f89ff15c79df7eb58de9", null ],
     [ "climb_angle", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Mach__Constant__Angle_1_1Constant__Mach__Constant__Angle.html#ade53ee4189ecd0ab2a8f77b974ec5f15", null ],
-    [ "mach", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Mach__Constant__Angle_1_1Constant__Mach__Constant__Angle.html#a6765373b2bf85eb7955b411ea5daf00c", null ]
+    [ "mach", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Mach__Constant__Angle_1_1Constant__Mach__Constant__Angle.html#a6765373b2bf85eb7955b411ea5daf00c", null ],
+    [ "true_course", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Mach__Constant__Angle_1_1Constant__Mach__Constant__Angle.html#a1328a7be58ab100275a516e93a9fa509", null ]
 ];

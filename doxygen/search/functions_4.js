@@ -2,6 +2,7 @@ var searchData=
 [
   ['dataname',['dataname',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#ad25649de315ac95f3059ee0cad6294c6',1,'SUAVE.Core.Data.Data.dataname()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#ab3b0cfd61744c8fa12eb951699cdb2fa',1,'SUAVE.Core.DataOrdered.DataOrdered.dataname()']]],
   ['datcom',['datcom',['../group__Methods-Flight__Dynamics-Static__Stability-Approximations.html#ga38877c856f6e41a0969d9d7f12023907',1,'SUAVE::Methods::Flight_Dynamics::Static_Stability::Approximations::datcom']]],
+  ['dba_5fnoise',['dbA_noise',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html#gadaf4c1f708ce6f685beba70788ab3162',1,'SUAVE::Methods::Noise::Fidelity_One::Noise_Tools::dbA_noise']]],
   ['deep_5fget',['deep_get',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a3bbf5c11c2462b89b0a3df6dcaacf501',1,'SUAVE.Core.Data.Data.deep_get()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a89768631688e7af93fad7bb22a1aa5fd',1,'SUAVE.Core.DataOrdered.DataOrdered.deep_get()']]],
   ['deep_5fset',['deep_set',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a84ba0de5ac002c9fd4fc2953f5d452d4',1,'SUAVE.Core.Data.Data.deep_set()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#afa98044ceb5edb5a614a5d058c6b93a1',1,'SUAVE.Core.DataOrdered.DataOrdered.deep_set()']]],
   ['default_5fformat',['default_format',['../classSUAVE_1_1Plugins_1_1pint_1_1unit_1_1UnitRegistry.html#add51f2c695a5642f18b8e8c1bfe18b92',1,'SUAVE::Plugins::pint::unit::UnitRegistry']]],

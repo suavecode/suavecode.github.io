@@ -21,7 +21,6 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle =
     [ "thrust_anchor", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a2bb0145f8091ced5d5aa8e7568a3ffba", null ],
     [ "thrust_anchor_conditions", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a696146a17b3580999c23ecab1adcaa4f", null ],
     [ "thrust_anchor_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a1067889138e26236bdebe755a1807e4d", null ],
-    [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#afab3174d12aefea12c02929e93abf537", null ],
     [ "thrust_input_scale", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a2a7080250d43425ac5aa1020bfa8164e", null ],
     [ "thrust_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#ae3e83d6ed231cab191daf52f1ce470f5", null ],
     [ "use_extended_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1PyCycle_1_1PyCycle.html#a3486696470154cb5ea31c67360b01639", null ]

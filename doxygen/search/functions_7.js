@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['generate_5ffuselage_5fvortex_5fdistribution',['generate_fuselage_vortex_distribution',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga4543323e99053f5325fd802f0d8ac588',1,'SUAVE::Methods::Aerodynamics::Common::Fidelity_Zero::Lift::generate_vortex_distribution']]],
+  ['generate_5fbuilding_5fmicrophone_5fpoints',['generate_building_microphone_points',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html#ga4358b9c1e9d041c3ba8e64608154c49c',1,'SUAVE::Methods::Noise::Fidelity_One::Noise_Tools::generate_microphone_points']]],
+  ['generate_5ffidelity_5fone_5fwake_5fshape',['generate_fidelity_one_wake_shape',['../group__Methods-Propulsion-Rotor__Wake-Fidelity__One.html#ga71ac0b21c3b6e9932edad059e72c988a',1,'SUAVE::Methods::Propulsion::Rotor_Wake::Fidelity_One::generate_fidelity_one_wake_shape']]],
+  ['generate_5ffuselage_5fand_5fnacelle_5fvortex_5fdistribution',['generate_fuselage_and_nacelle_vortex_distribution',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga1252e2666c5fec0073eca38d7f39887f',1,'SUAVE::Methods::Aerodynamics::Common::Fidelity_Zero::Lift::generate_vortex_distribution']]],
+  ['generate_5fground_5fmicrophone_5fpoints',['generate_ground_microphone_points',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html#ga839682011109b34622019da19b522b24',1,'SUAVE::Methods::Noise::Fidelity_One::Noise_Tools::generate_microphone_points']]],
   ['generate_5fint_5fstations',['generate_int_stations',['../group__Methods-Weights-Correlations-FLOPS.html#ga3960adc19bb2b3fd1d95d5c2a262f28d',1,'SUAVE::Methods::Weights::Correlations::FLOPS::wing']]],
-  ['generate_5fpropeller_5fwake_5fdistribution',['generate_propeller_wake_distribution',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#ga53cdae0fb07969310fa79f707650c27e',1,'SUAVE::Methods::Aerodynamics::Common::Fidelity_Zero::Lift::generate_propeller_wake_distribution']]],
   ['generate_5fvortex_5fdistribution',['generate_vortex_distribution',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#gada1e7614461ed2dfe91a3f0f871babfc',1,'SUAVE::Methods::Aerodynamics::Common::Fidelity_Zero::Lift::generate_vortex_distribution']]],
   ['generate_5fwing_5fstations',['generate_wing_stations',['../group__Methods-Weights-Correlations-FLOPS.html#gad540171d902bb2006bcf718f8ba0915f',1,'SUAVE::Methods::Weights::Correlations::FLOPS::wing']]],
   ['generate_5fwing_5fvortex_5fdistribution',['generate_wing_vortex_distribution',['../group__Methods-Aerodynamics-Common-Fidelity__Zero-Lift.html#gaac458583b00e5463bc33ff7ad4214b00',1,'SUAVE::Methods::Aerodynamics::Common::Fidelity_Zero::Lift::generate_vortex_distribution']]],
@@ -25,5 +27,6 @@ var searchData=
   ['get_5fvalues',['get_values',['../group__Optimization.html#ga1aa3646193316aec4b76b6347e22f01b',1,'SUAVE::Optimization::helper_functions']]],
   ['get_5fvsp_5fmeasurements',['get_vsp_measurements',['../group__Input__Output-OpenVSP.html#gaa3e2952b8f6e058c6d0ff672d2bbb960',1,'SUAVE::Input_Output::OpenVSP::get_vsp_measurements']]],
   ['get_5fvsp_5ftrim_5ffrom_5fsuave_5ftrim',['get_vsp_trim_from_SUAVE_trim',['../group__Input__Output-OpenVSP.html#ga7a0e30cf615af5b8bec33e6a18ae6aab',1,'SUAVE::Input_Output::OpenVSP::vsp_wing']]],
-  ['graph',['graph',['../classSUAVE_1_1Plugins_1_1pint_1_1context_1_1ContextChain.html#ad1f3b9b56633a6940846b225b4e7025d',1,'SUAVE::Plugins::pint::context::ContextChain']]]
+  ['graph',['graph',['../classSUAVE_1_1Plugins_1_1pint_1_1context_1_1ContextChain.html#ad1f3b9b56633a6940846b225b4e7025d',1,'SUAVE::Plugins::pint::context::ContextChain']]],
+  ['ground_5fproximity_5feffect',['ground_proximity_effect',['../group__Methods-Noise-Fidelity__One-Engine.html#gad5c78faf395996a43add4d856ffab94b',1,'SUAVE::Methods::Noise::Fidelity_One::Engine::ground_proximity_effect']]]
 ];

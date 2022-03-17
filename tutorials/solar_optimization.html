@@ -275,29 +275,31 @@ def post_process(nexus):
 <p>Let’s look at the results:</p>
 
 <div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>
-
-	Optimization terminated successfully.    (Exit mode 0)
+	
+	Optimization terminated successfully    (Exit mode 0)
 		    Current function value: 0.0
-		    Iterations: 6
-		    Function evaluations: 43
-		    Gradient evaluations: 6
+		    Iterations: 11
+		    Function evaluations: 87
+		    Gradient evaluations: 11
 	Design Variable Table:
 	
-	[['wing_area' 0.47033164669264826 (0.1, 1.5) 0.5 1.0]
-	 ['aspect_ratio' 9.803406982966878 (5.0, 20.0) 10.0 1.0]
-	 ['dynamic_pressure' 120.77967631598601 (1.0, 2000.0) 125.0 1.0]
-	 ['solar_ratio' 0.09461785224148354 (0.0, 0.97) 1.0 1.0]
-	 ['kv' 833.2503881434465 (10.0, 10000.0) 800.0 0.10471975511965977]]
+	[['wing_area' 0.5752006084860377 0.1 1.5 0.5 1.0]
+	 ['aspect_ratio' 8.565954690253863 5.0 20.0 10.0 1.0]
+	 ['dynamic_pressure' 55.97515712027977 1.0 2000.0 125.0 1.0]
+	 ['solar_ratio' 0.8312208823908036 0.0 0.97 1.0 1.0]
+	 ['kv' 1492.0665786572088 10.0 10000.0 800.0 0.10471975511965977]]
+	
+	Objective Table:
+	
+	['Nothing' 0.0 1.0 1.0]
 	
 	Constraint Table:
 	
-	[['energy_constraint' 4.835975275289128e-08 '=' 0.0 1.0
-	  &lt;Quantity(1.0, 'less')&gt;]
-	 ['battery_mass' 2.046103692285638 '>' 0.0 1.0
-	  &lt;Quantity(1.0, 'kilogram')&gt;]
-	 ['CL' 0.5131461964430024 '&gt;' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;
-	 ['Throttle_min' 0.321677340768132 '>' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]
-	 ['Throttle_max' 0.578322659231868 '>' 0.0 1.0 &lt;Quantity(1.0, 'less')&gt;]]
+	[['energy_constraint' 0.0 '=' 0.0 1.0 1]
+	 ['battery_mass' 1.5944499541683659 '>' 0.0 1.0 1]
+	 ['CL' 0.00866061116778094 '>' 0.0 1.0 1]
+	 ['Throttle_min' 0.3067756978833726 '>' 0.0 1.0 1]
+	 ['Throttle_max' 0.5932243021166275 '>' 0.0 1.0 1]]
 
 </code></pre></div></div>
 

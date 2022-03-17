@@ -7,5 +7,6 @@ var searchData=
   ['measurement',['Measurement',['../classSUAVE_1_1Plugins_1_1pint_1_1measurement_1_1Measurement.html',1,'SUAVE::Plugins::pint::measurement']]],
   ['mission',['Mission',['../classSUAVE_1_1Analyses_1_1Mission_1_1Mission_1_1Mission.html',1,'SUAVE::Analyses::Mission::Mission']]],
   ['motor',['Motor',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor_1_1Motor.html',1,'SUAVE::Components::Energy::Converters::Motor']]],
+  ['motor_5fhts_5frotor',['Motor_HTS_Rotor',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__HTS__Rotor_1_1Motor__HTS__Rotor.html',1,'SUAVE::Components::Energy::Converters::Motor_HTS_Rotor']]],
   ['motor_5flo_5ffid',['Motor_Lo_Fid',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1Motor__Lo__Fid_1_1Motor__Lo__Fid.html',1,'SUAVE::Components::Energy::Converters::Motor_Lo_Fid']]]
 ];

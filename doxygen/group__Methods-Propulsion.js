@@ -1,5 +1,6 @@
 var group__Methods_Propulsion =
 [
+    [ "Rotor_Wake", "group__Methods-Propulsion-Rotor__Wake.html", "group__Methods-Propulsion-Rotor__Wake" ],
     [ "ducted_fan_sizing", "group__Methods-Propulsion.html#ga3e6153003ae73397bf8d06367e10e9ba", null ],
     [ "exit_Mach_shock", "group__Methods-Propulsion.html#gaacf435ba19015caf25a08dae08baa6a3", null ],
     [ "fm_id", "group__Methods-Propulsion.html#gae720e196160d2c3fdc45c57ff3e2f4bb", null ],
@@ -13,6 +14,7 @@ var group__Methods_Propulsion =
     [ "ramjet_sizing", "group__Methods-Propulsion.html#ga0b31c5b143439d1296cfdb8f7dc5d4a3", null ],
     [ "rayleigh", "group__Methods-Propulsion.html#ga7343e43e60f66f0486c780fccae07fd0", null ],
     [ "scramjet_sizing", "group__Methods-Propulsion.html#ga1f7790df2723b1121dbdbe0fd795adde", null ],
+    [ "serial_HTS_turboelectric_sizing", "group__Methods-Propulsion.html#ga1d8c38e3c7b20af688906d6184625f32", null ],
     [ "shock_train", "group__Methods-Propulsion.html#gaa391dbea29bed7099ae2de99774ac536", null ],
     [ "size_from_kv", "group__Methods-Propulsion.html#gaaceccf2f0fd7ef2c51ac7752700230dc", null ],
     [ "size_from_mass", "group__Methods-Propulsion.html#gabfa7508a797c8be14c4ea5bab83b05c7", null ],

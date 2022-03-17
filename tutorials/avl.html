@@ -125,8 +125,7 @@ further divided into sections at instances where the control surfaces begin and 
 <p>The above steps describing wing geometry parameterization are found in <strong>create_avl_datasturcture.py</strong> script. Along with 
 the creation of wing geometry, the SAUVE-AVL wrapper allows the user to refine the accuracy of the analysis by modifying the
 vortex spacing placed on the wings. The number of chordwise/spanwise horseshoe vertices can also be modified. This is located in the Analyses/Aerodynamics/<strong>AVL_Inviscid.py</strong> (for Aerodynamics)  and Analyses/Stability/<strong>AVL.py</strong> (for Stability) scripts below.</p>
-<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>  # Default spanwise vortex density 
-  self.settings.spanwise_vortex_density  = 1.5
+<div class="highlight_code"><div class="highlight_code"><pre class="highlight_code"><code>  aerodynamics.settings.number_spanwise_vortices  = 5
 </code></pre></div></div>
 
 <h4 id="geometry-creation---fuselage">Geometry Creation - Fuselage</h4>

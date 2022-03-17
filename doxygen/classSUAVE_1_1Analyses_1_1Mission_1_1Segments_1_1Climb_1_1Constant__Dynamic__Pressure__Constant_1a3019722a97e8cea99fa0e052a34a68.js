@@ -4,5 +4,6 @@ var classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic_
     [ "altitude_end", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_1a3019722a97e8cea99fa0e052a34a68.html#abb17767b2b4bbe63066f3f992c3ff5ea", null ],
     [ "altitude_start", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_1a3019722a97e8cea99fa0e052a34a68.html#a097ba6b578f8563acadd802d75edbb4f", null ],
     [ "climb_rate", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_1a3019722a97e8cea99fa0e052a34a68.html#a441914c37efbf0b4ee7680408eb159db", null ],
-    [ "dynamic_pressure", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_1a3019722a97e8cea99fa0e052a34a68.html#ad3f9933f7b8cda2f2b962ef2da11f19d", null ]
+    [ "dynamic_pressure", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_1a3019722a97e8cea99fa0e052a34a68.html#ad3f9933f7b8cda2f2b962ef2da11f19d", null ],
+    [ "true_course", "classSUAVE_1_1Analyses_1_1Mission_1_1Segments_1_1Climb_1_1Constant__Dynamic__Pressure__Constant_1a3019722a97e8cea99fa0e052a34a68.html#a7abcad81a21468da4431a531a7b541ec", null ]
 ];

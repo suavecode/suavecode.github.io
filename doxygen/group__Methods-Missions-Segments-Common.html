@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -275,7 +275,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Energy.py. </p>
-<p>Created: Jul 2014, SUAVE Team Modified: Jan 2016, E. Botero Jul 2017, E. Botero Aug 2021, M. Clarke Oct 2021, E. Botero </p><pre class="fragment">Sets the initial battery energy at the start of the mission
+<p>Created: Jul 2014, SUAVE Team Modified: Jan 2016, E. Botero Jul 2017, E. Botero Aug 2021, M. Clarke Oct 2021, E. Botero </p><h2>Dec 2021, S.CLaridge </h2>
+<h2>Initialize Battery </h2>
+<pre class="fragment">Sets the initial battery energy at the start of the mission
 
     Assumptions:
     N/A
@@ -1039,17 +1041,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Evaluates the energy network to find the thrust force and mass rate
-
     Inputs -
         segment.analyses.energy_network    [Function]
-
     Outputs -
         state.conditions:
-           frames.body.thrust_force_vector [Newtons]
-           weights.vehicle_mass_rate       [kg/s]
-
-
-    Assumptions -</pre> 
+           frames.body.thrust_force_vector          [Newtons]
+           weights.vehicle_mass_rate                [kg/s]
+           weights.vehicle_fuel_rate                [kg/s]
+           weights.vehicle_additional_fuel_rate     [kg/s]
+           weights.has_additional_fuel              
+    Assumptions -
+</pre> 
 </div>
 </div>
 <a id="ga36dcf82dc25085d74304894ba88f6731"></a>
@@ -1084,8 +1086,9 @@ Functions</h2></td></tr>
     Outputs:
     segment.state.conditions:
         weights.total_mass                   [kilograms]
+        weights.fuel_mass                    [kilograms]
+        weights.additional_fuel_mass         [kilograms]
         frames.inertial.gravity_force_vector [kilograms]
-
     Properties Used:
     N/A</pre> 
 </div>

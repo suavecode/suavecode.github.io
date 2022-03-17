@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -122,14 +122,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga51c715bd682c9cda6dca2b017265218f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga111943e9a93d2fb37656998659a3a5f0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-AVL.html#ga111943e9a93d2fb37656998659a3a5f0">SUAVE.Methods.Aerodynamics.AVL.read_results.read_results</a> (avl_object)</td></tr>
 <tr class="separator:ga111943e9a93d2fb37656998659a3a5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c754c0ccd7480bbb1a9cc8bacf3f696"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-AVL.html#ga6c754c0ccd7480bbb1a9cc8bacf3f696">SUAVE.Methods.Aerodynamics.AVL.run_analysis.run_analysis</a> (avl_object)</td></tr>
-<tr class="separator:ga6c754c0ccd7480bbb1a9cc8bacf3f696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedea12850c1354360c8749cad0959297"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-AVL.html#gaedea12850c1354360c8749cad0959297">SUAVE.Methods.Aerodynamics.AVL.run_analysis.run_analysis</a> (avl_object, print_output)</td></tr>
+<tr class="separator:gaedea12850c1354360c8749cad0959297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b721494da52b639d291d6fb7b9b8bf6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-AVL.html#ga7b721494da52b639d291d6fb7b9b8bf6">SUAVE.Methods.Aerodynamics.AVL.translate_data.translate_conditions_to_cases</a> (avl, conditions)</td></tr>
 <tr class="separator:ga7b721494da52b639d291d6fb7b9b8bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf8c2ef7143b8336ec7bfbe9027b8ac0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-AVL.html#gaaf8c2ef7143b8336ec7bfbe9027b8ac0">SUAVE.Methods.Aerodynamics.AVL.write_geometry.write_geometry</a> (avl_object, run_script_path)</td></tr>
 <tr class="separator:gaaf8c2ef7143b8336ec7bfbe9027b8ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2716d0d3c8eab5292c7503552975cc0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-AVL.html#gad2716d0d3c8eab5292c7503552975cc0">SUAVE.Methods.Aerodynamics.AVL.write_input_deck.write_input_deck</a> (avl_object, trim_aircraft)</td></tr>
-<tr class="separator:gad2716d0d3c8eab5292c7503552975cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2189eec905a618caa10b4c5681cbbe0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Methods-Aerodynamics-AVL.html#gad2189eec905a618caa10b4c5681cbbe0">SUAVE.Methods.Aerodynamics.AVL.write_input_deck.write_input_deck</a> (avl_object, trim_aircraft, control_surfaces)</td></tr>
+<tr class="separator:gad2189eec905a618caa10b4c5681cbbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions to AVL calculations. </p>
@@ -213,8 +213,8 @@ Properties Used:
 </pre> 
 </div>
 </div>
-<a id="ga6c754c0ccd7480bbb1a9cc8bacf3f696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c754c0ccd7480bbb1a9cc8bacf3f696">&#9670;&nbsp;</a></span>run_analysis()</h2>
+<a id="gaedea12850c1354360c8749cad0959297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedea12850c1354360c8749cad0959297">&#9670;&nbsp;</a></span>run_analysis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,8 +223,18 @@ Properties Used:
           <td class="memname">def SUAVE.Methods.Aerodynamics.AVL.run_analysis.run_analysis </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>avl_object</em></td><td>)</td>
+          <td class="paramname"><em>avl_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>print_output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -377,8 +387,8 @@ Properties Used:
 </pre> 
 </div>
 </div>
-<a id="gad2716d0d3c8eab5292c7503552975cc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad2716d0d3c8eab5292c7503552975cc0">&#9670;&nbsp;</a></span>write_input_deck()</h2>
+<a id="gad2189eec905a618caa10b4c5681cbbe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2189eec905a618caa10b4c5681cbbe0">&#9670;&nbsp;</a></span>write_input_deck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,7 +403,13 @@ Properties Used:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>trim_aircraft</em>&#160;</td>
+          <td class="paramname"><em>trim_aircraft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>control_surfaces</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

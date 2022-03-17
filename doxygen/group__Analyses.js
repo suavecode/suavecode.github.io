@@ -6,6 +6,7 @@ var group__Analyses =
     [ "Energy", "group__Analyses-Energy.html", "group__Analyses-Energy" ],
     [ "Mission", "group__Analyses-Mission.html", "group__Analyses-Mission" ],
     [ "Noise", "group__Analyses-Noise.html", "group__Analyses-Noise" ],
+    [ "Propulsion", "group__Analyses-Propulsion.html", "group__Analyses-Propulsion" ],
     [ "Sizing", "group__Analyses-Sizing.html", "group__Analyses-Sizing" ],
     [ "Stability", "group__Analyses-Stability.html", "group__Analyses-Stability" ],
     [ "Weights", "group__Analyses-Weights.html", "group__Analyses-Weights" ],

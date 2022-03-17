@@ -2,6 +2,7 @@ var group__Methods =
 [
     [ "Aerodynamics", "group__Methods-Aerodynamics.html", "group__Methods-Aerodynamics" ],
     [ "Center_of_Gravity", "group__Methods-Center__of__Gravity.html", "group__Methods-Center__of__Gravity" ],
+    [ "Cooling", "group__Methods-Cooling.html", "group__Methods-Cooling" ],
     [ "Costs", "group__Methods-Costs.html", "group__Methods-Costs" ],
     [ "Flight_Dynamics", "group__Methods-Flight__Dynamics.html", "group__Methods-Flight__Dynamics" ],
     [ "Geometry", "group__Methods-Geometry.html", "group__Methods-Geometry" ],

@@ -1,9 +1,6 @@
 var group__Components_Wings =
 [
     [ "Control_Surfaces", "group__Components-Wings-Control__Surfaces.html", "group__Components-Wings-Control__Surfaces" ],
-    [ "Segment_Container", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment__Container.html", [
-      [ "get_children", "classSUAVE_1_1Components_1_1Lofted__Body__Segment_1_1Segment_1_1Segment__Container.html#ad286fe85b5f22aa51c309832f5e0bd96", null ]
-    ] ],
     [ "All_Moving_Surface", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html", [
       [ "__defaults__", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#a9e8c83a908f45487b6e809154f11ce5e", null ],
       [ "deflection", "classSUAVE_1_1Components_1_1Wings_1_1All__Moving__Surface_1_1All__Moving__Surface.html#ad2c06cfe7fe8d969f24ab10f40e0c3ed", null ],

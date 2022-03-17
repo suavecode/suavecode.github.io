@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="suave_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SUAVE
-   &#160;<span id="projectnumber">2.5.0</span>
+   &#160;<span id="projectnumber">2.5.2</span>
    </div>
    <div id="projectbrief">An Aerospace Vehicle Environment for Designing Future Aircraft</div>
   </td>
@@ -187,12 +187,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3eb0436e7b7f0313cd88ccf25c40b901"><td class="memItemLeft" align="right" valign="top"><a id="a3eb0436e7b7f0313cd88ccf25c40b901"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>voltage</b></td></tr>
 <tr class="separator:a3eb0436e7b7f0313cd88ccf25c40b901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66cd25d9a709aad7ed3adecf005f7c9d"><td class="memItemLeft" align="right" valign="top"><a id="a66cd25d9a709aad7ed3adecf005f7c9d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>propeller_pitch_command</b></td></tr>
-<tr class="separator:a66cd25d9a709aad7ed3adecf005f7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2660a2fe083b94950ca040747bebdbc"><td class="memItemLeft" align="right" valign="top"><a id="ae2660a2fe083b94950ca040747bebdbc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>lift_rotor_pitch_command</b></td></tr>
-<tr class="separator:ae2660a2fe083b94950ca040747bebdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc796b626f64864a6b4b38d77e49248"><td class="memItemLeft" align="right" valign="top"><a id="affc796b626f64864a6b4b38d77e49248"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
 <tr class="separator:affc796b626f64864a6b4b38d77e49248"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -652,7 +646,7 @@ propeller_torque              [N-M]
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This packs the residuals to be send to the mission solver.
+<pre class="fragment">This packs the residuals to be sent to the mission solver.
     Use this if only the forward motors are operational
     
     Assumptions:
@@ -703,7 +697,7 @@ voltage_under_load                    [volts]
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This packs the residuals to be send to the mission solver.
+<pre class="fragment">This packs the residuals to be sent to the mission solver.
     Only the lift motors are operational
     
     Assumptions:
@@ -754,7 +748,7 @@ voltage_under_load                    [volts]
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This packs the residuals to be send to the mission solver.
+<pre class="fragment">This packs the residuals to be sent to the mission solver.
     Use this if all motors are operational
     
     Assumptions:
@@ -907,7 +901,7 @@ voltage_under_load                    [volts]
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">This is an extra set of unknowns which are unpacked from the mission solver and send to the network.
+<pre class="fragment">This is an extra set of unknowns which are unpacked from the mission solver and sent to the network.
     This uses all the motors.
     
     Assumptions:

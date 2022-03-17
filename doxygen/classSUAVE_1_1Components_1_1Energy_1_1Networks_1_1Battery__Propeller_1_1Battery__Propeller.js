@@ -18,11 +18,9 @@ var classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Batt
     [ "number_of_lift_rotor_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a19b07a35b2833427136ac01c03e570e0", null ],
     [ "number_of_propeller_engines", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a23f26e4b4872c454d739741fe3726841", null ],
     [ "payload", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac733d4d41de9f7c20bf5153d3b7a5bfd", null ],
-    [ "pitch_command", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a3e07b16c1d81fe2471a2335ca7432adb", null ],
     [ "propeller_motors", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#abf02002c57fdea9ded2b8ee7cb1ec9a2", null ],
     [ "propellers", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a821bbc22f0d19a533fb2769c3d65a342", null ],
     [ "tag", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#ac13048ae157a044a18338d455ab86c86", null ],
-    [ "thrust_angle", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a57899f04a912f824be02d29fdc6ec5f4", null ],
     [ "use_surrogate", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a7035798e0f8cd537c5f48e81d7308316", null ],
     [ "voltage", "classSUAVE_1_1Components_1_1Energy_1_1Networks_1_1Battery__Propeller_1_1Battery__Propeller.html#a6d1abaa63d86e61e8a603c175e3de56f", null ]
 ];

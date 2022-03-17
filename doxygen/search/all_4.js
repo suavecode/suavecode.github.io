@@ -2,10 +2,11 @@ var searchData=
 [
   ['descent',['Descent',['../group__Analyses-Mission-Segments-Descent.html',1,'']]],
   ['distributors',['Distributors',['../group__Components-Energy-Distributors.html',1,'']]],
-  ['data',['Data',['../classSUAVE_1_1Core_1_1Data_1_1Data.html',1,'SUAVE.Core.Data.Data'],['../classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html',1,'SUAVE.Input_Output.XML.Data.Data']]],
+  ['data',['Data',['../classSUAVE_1_1Input__Output_1_1XML_1_1Data_1_1Data.html',1,'SUAVE.Input_Output.XML.Data.Data'],['../classSUAVE_1_1Core_1_1Data_1_1Data.html',1,'SUAVE.Core.Data.Data']]],
   ['dataname',['dataname',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#ad25649de315ac95f3059ee0cad6294c6',1,'SUAVE.Core.Data.Data.dataname()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#ab3b0cfd61744c8fa12eb951699cdb2fa',1,'SUAVE.Core.DataOrdered.DataOrdered.dataname()']]],
   ['dataordered',['DataOrdered',['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html',1,'SUAVE::Core::DataOrdered']]],
   ['datcom',['datcom',['../group__Methods-Flight__Dynamics-Static__Stability-Approximations.html#ga38877c856f6e41a0969d9d7f12023907',1,'SUAVE::Methods::Flight_Dynamics::Static_Stability::Approximations::datcom']]],
+  ['dba_5fnoise',['dbA_noise',['../group__Methods-Noise-Fidelity__One-Noise__Tools.html#gadaf4c1f708ce6f685beba70788ab3162',1,'SUAVE::Methods::Noise::Fidelity_One::Noise_Tools::dbA_noise']]],
   ['de_5flaval_5fnozzle',['de_Laval_Nozzle',['../classSUAVE_1_1Components_1_1Energy_1_1Converters_1_1de__Laval__Nozzle_1_1de__Laval__Nozzle.html',1,'SUAVE::Components::Energy::Converters::de_Laval_Nozzle']]],
   ['deep_5fget',['deep_get',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a3bbf5c11c2462b89b0a3df6dcaacf501',1,'SUAVE.Core.Data.Data.deep_get()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#a89768631688e7af93fad7bb22a1aa5fd',1,'SUAVE.Core.DataOrdered.DataOrdered.deep_get()']]],
   ['deep_5fset',['deep_set',['../classSUAVE_1_1Core_1_1Data_1_1Data.html#a84ba0de5ac002c9fd4fc2953f5d452d4',1,'SUAVE.Core.Data.Data.deep_set()'],['../classSUAVE_1_1Core_1_1DataOrdered_1_1DataOrdered.html#afa98044ceb5edb5a614a5d058c6b93a1',1,'SUAVE.Core.DataOrdered.DataOrdered.deep_set()']]],
@@ -33,5 +34,6 @@ var searchData=
   ['drag',['Drag',['../group__Methods-Aerodynamics-Supersonic__Zero-Drag.html',1,'']]],
   ['dynamic_5fstability',['Dynamic_Stability',['../group__Methods-Flight__Dynamics-Dynamic__Stability.html',1,'']]],
   ['descent',['Descent',['../group__Methods-Missions-Segments-Descent.html',1,'']]],
-  ['discharge',['Discharge',['../group__Methods-Power-Fuel__Cell-Discharge.html',1,'']]]
+  ['discharge',['Discharge',['../group__Methods-Power-Fuel__Cell-Discharge.html',1,'']]],
+  ['discharge',['Discharge',['../group__Methods-Power-Turboelectric-Discharge.html',1,'']]]
 ];
